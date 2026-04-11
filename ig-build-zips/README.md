@@ -1,0 +1,1 @@
+Folder containing zip files of published NHSN IGs.

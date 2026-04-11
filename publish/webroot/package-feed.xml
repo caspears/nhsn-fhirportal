@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" version="2.0">
+    <channel>
+        <title>The CDC NHSN Public Health Reporting FHIR IG Packages</title>
+        <description>This suite contains FHIR packages developed by the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) to support public health reporting.</description>
+        <link>http://www.cdc.gov/nhsn/fhirportal</link>
+        <generator>HL7, Inc FHIR Publication tooling - Lantana Consulting Group Variant</generator>
+        <lastBuildDate></lastBuildDate>
+        <atom:link href="http://www.cdc.gov/nhsn/fhirportal/package-feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate></pubDate>
+        <language>en</language>
+        <ttl>600</ttl>
+    <item>
+      <title>gov.cdc.nhsn.measures#1.0.0</title>
+      <description>CDC National Healthcare Safety Network CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package, 1.0.0 - US Realm</description>
+      <link>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/1.0.0/package.tgz</link>
+      <guid isPermaLink="true">http://www.cdc.gov/nhsn/fhirportal/dqm/ig/1.0.0/package.tgz</guid>
+      <dc:creator>CDC National Healthcare Safety Network (NHSN)</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Mon, 15 Sep 2025 09:32:24 -0700</pubDate>
+      <fhir:details>Publication run at 09/15/2025 by SPEARS_7670 using Version 2.0.17 (Git# 85d3793a057a). Built 2025-09-15T17:32:24.000Z</fhir:details>
+    </item>
+        <item></item>
+    </channel>
+</rss>

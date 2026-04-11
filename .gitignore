@@ -1,3 +1,42 @@
+# Temporary folders and files #
+#####################
+temp
+template
+output
+fsh-generated
+dry_run
+bundles
+**/*.jar
+
+
+# Windows generated files #
+###########################
+**/Thumbs.db
+
+**/.index.db
+**/.index.json
+
+# VS Code & other generated files
+.vscode
+.jekyll-cache/
+
+
+# OS generated files #
+######################
+**/.DS_Store
+.DS_Store?
+
+# backup files #
+################
+*.bak
+
+
+
+# Node files
+node_modules/
+.idea/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
