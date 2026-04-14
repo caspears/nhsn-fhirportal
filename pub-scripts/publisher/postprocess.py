@@ -3,7 +3,7 @@ import os
 import logging
 import requests
 from pathlib import Path
-from .config import reduce_file_patterns, accessibility_update_file_patterns, web_config, ig_suite_package_list
+from .config import reduce_file_patterns, accessibility_update_file_patterns, web_config, ig_suite_package_set
 from .fix_accessibilities import fix_accessibilities_in_folder
 from .builder import config_data
 import json
@@ -150,7 +150,7 @@ def write_web_configs(ig_repo_path, dry_run: bool = False):
 
 #     ig_list = []
 
-#     for package_id, package_list in ig_suite_package_list.items():
+#     for package_id, package_list in ig_suite_package_set.items():
 #         if package_id == config_data.get("package-id", "Unknown"):
 #             # If the current IG is the same as the current suite IG, then use the local package-list.json file for feed entries instead of the package_list.json in the repo, which may be outdated due to changes in the publication request that have not been reflected in the repo's package-list.json
 #             # TODO, there may not be a need to populate this information as the publisher may have already done so. Need to verify

@@ -82,11 +82,13 @@ def repo_url_arg(string):
 
 
 def output_folder_arg(string):
+    #TODO THis currently requires the folder to not exist or allows for deletion before proceeding. Now the initialized files are stored in the repo and the folder must exist. Need to make a change to make sure the folder exists and has the appropriate feed and config files.
     """Argparse `type=` helper: ensure the output folder does not already exist.
     
     If folder exists, prompts user to delete it with a 5-second timeout.
     Returns the string if successful, otherwise implicitly returns None.
     """
+    
     p = Path(string)
     if p.is_dir():
         logger = logging.getLogger()

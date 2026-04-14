@@ -2,6 +2,10 @@
 
 This document provides both developer and user documentation for the `pub-scripts/publisher` script set in the NHSN Measures repository.
 
+# TODO CHeck to see if package-list.json is created in canonical IG folder.
+T=Missouri, C=us
+Fetch http://www.cdc.gov/nhsn/fhirportal/safr/ig/package-list.json for version check
+
 # TODO Address publication-feed and package-feed files for multiple IGs (Manual process?)
 # TODO Add all publications across all versions to the package-feed and publication-feed (How to manage this across IGs?), Perhaps pull from suite url if present? Or pull from package-list in the github repo of each IG? Would need a way to identify those and the correct branch.
 
@@ -78,7 +82,7 @@ The file contains the information required to release a new implementation guide
 ### For New IGs or to Change Structure or Defaults
 URL Forwarding (specifically useful for canonical uri forwarding to artifact web page) is currently configured to support Microsoft IIS 10.0 using web.config files. Earlier versions of IIS or different types of web servers (e.g. Apache) will require additional configuration or script updates. See [Maintaining a FHIR IG Publication](https://confluence.hl7.org/spaces/FHIR/pages/81027536/Maintaining+a+FHIR+IG+Publication#:~:text=the%20kind%20of%20server%20that%20hosts%20the%20web%20root) for more details on server configuration parameters for the `publish-setup.json` file. Additional template and setup will be required to enable to scripts to work with other web servers.
 
-Update the `pud-scripts/config.py` files ig_suite_package_list variable to include the package ids and their respective package list files. This will be necessary to update feed files (package-feed.xml and publication-feed.xml) used by an IG registries.
+Update the `pud-scripts/config.py` files ig_suite_package_set variable to include the package ids and their respective package list files. This will be necessary to update feed files (package-feed.xml and publication-feed.xml) used by an IG registries.
 
 ### For Fixing/Updating Multiple Version Publications
 

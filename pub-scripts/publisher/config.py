@@ -24,7 +24,7 @@ CQF_TOOLING_JAR_PREFIX = "tooling-cli-"
 pub_repos = {'ig-history': 'https://github.com/HL7/fhir-ig-history-template.git', 'ig-registry': 'https://github.com/FHIR/ig-registry.git'}
 
 # This is used to retrieve the package lists to build out the publication-feed.json and package-feed.json files
-ig_suite_package_list = {'gov.cdc.nhsn': 'https://github.com/lantanagroup/nhsn-measures/refs/heads/development/package.json', 'gov.cdc.nhsn.safr-content-ig': 'https://raw.githubusercontent.com/lantanagroup/safr-content-ig/refs/heads/development/package.json'}
+ig_suite_package_set = {'gov.cdc.nhsn': 'https://github.com/lantanagroup/nhsn-measures/refs/heads/development/package.json', 'gov.cdc.nhsn.safr-content-ig': 'https://raw.githubusercontent.com/lantanagroup/safr-content-ig/refs/heads/development/package.json'}
 
 reduce_file_patterns = ['**/*.ttl*', '**/*.r4b.tgz', '**/*.db', '**/qa-tx.html', '**/*.json1', '**/*.json2', '**/*.xml1', '**/*.xml2', '**/excels.zip']
 
@@ -75,8 +75,8 @@ publish_setup_template = '''
     "layout-rules": [
         {
             "npm": "{package-id-pattern}",
-            "canonical": "{ig_suite_url}/{4}",
-            "destination": "/{4}"
+            "canonical": "{ig_suite_url}/{4}/ig",
+            "destination": "/{4}/ig"
         }
     ]
 }'''

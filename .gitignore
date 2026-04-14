@@ -7,6 +7,13 @@ fsh-generated
 dry_run
 bundles
 **/*.jar
+publish/templates
+publish/temp
+publish/webroot
+publish/ig-history
+publish/ig-registry
+
+
 
 
 # Windows generated files #

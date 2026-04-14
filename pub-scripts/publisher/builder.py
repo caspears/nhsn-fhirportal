@@ -175,7 +175,8 @@ def initialize_output_folder(ig_repo_path, ig_publisher_url, dry_run: bool = Fal
     #if not dry_run:
     if config_data is None:
         initialize_config_data(ig_repo_path)
-    initialize_webroot(config_data=config_data, ig_repo_path=ig_repo_path)
+        # TODO Verify webroot does not require additional initialization
+    #initialize_webroot(config_data=config_data, ig_repo_path=ig_repo_path)
     #else:
     #    logger.info("[DRY RUN] Skipping load_configuration and initialize_webroot")
 
@@ -184,106 +185,107 @@ def initialize_publication_version(ig_repo_path, dry_run: bool = False):
     """Initialize the publication version by loading the configuration and writing the publication list."""
     logger = logging.getLogger()
     logger.info("Initializing publication version")
-    
-    update_package_list(ig_repo_path=ig_repo_path)
 
-def update_package_list(ig_repo_path):
-    """Update the package list in the webroot based on the provided configuration data."""
-    # TODO fix package-list initiation. Canonical is unknown
-    #TODO testing test with feed in repo
-    logger = logging.getLogger()
-    package_list_path = ig_repo_path.joinpath("package-list.json")
+# TODO No longer using package_list (not allowed) Check to see if package-registry is automatically updated.
+#     update_package_list(ig_repo_path=ig_repo_path)
 
-    #open the publication-request.json file in the ig_repo_path
-    publication_request_path = ig_repo_path.joinpath("publication-request.json")
-    if not publication_request_path.is_file():
-        logger.error(f"Publication request file not found at {publication_request_path}")
-        return
+# def update_package_list(ig_repo_path):
+#     """Update the package list in the webroot based on the provided configuration data."""
+#     # TODO fix package-list initiation. Canonical is unknown
+#     #TODO testing test with feed in repo
+#     logger = logging.getLogger()
+#     package_list_path = ig_repo_path.joinpath("package-list.json")
 
-    publication_request = None
-    try:
-        with open(publication_request_path, 'r', encoding='utf-8') as f_pr:
-            publication_request = json.load(f_pr)
+#     #open the publication-request.json file in the ig_repo_path
+#     publication_request_path = ig_repo_path.joinpath("publication-request.json")
+#     if not publication_request_path.is_file():
+#         logger.error(f"Publication request file not found at {publication_request_path}")
+#         return
+
+#     publication_request = None
+#     try:
+#         with open(publication_request_path, 'r', encoding='utf-8') as f_pr:
+#             publication_request = json.load(f_pr)
             
-    except Exception as e:
-        logger.error(f"Failed to read publication request: {e}") 
-        return
+#     except Exception as e:
+#         logger.error(f"Failed to read publication request: {e}") 
+#         return
 
-    # If the publication request file exists and is read successfully, check if the package list file exists. If it does not exist, initialize it with the publication request information. If it does exist, read the existing package list and append the new package information from the publication request to the list, then write it back to the package list file. This ensures that the package list is always up to date with the latest publication request information, and that there is a baseline package list file for the publisher to reference even if the publication request is not properly configured. The package information added to the list includes the package-id, title, canonical, introduction, and category from the publication request, using "unknown" for any missing fields.
-    if publication_request is not None:
-        if not package_list_path.is_file():
-            logger.error(f"Package list file not found at {package_list_path}")
-            # if the file does not exist, initialize it with the publication request information, using the package-id, title, canonical, introduction, and category if present in the publication request, otherwise use "unknown" for any missing fields. This ensures that there is at least a baseline package list file for the publisher to reference, even if the publication request is not properly configured.
+#     # If the publication request file exists and is read successfully, check if the package list file exists. If it does not exist, initialize it with the publication request information. If it does exist, read the existing package list and append the new package information from the publication request to the list, then write it back to the package list file. This ensures that the package list is always up to date with the latest publication request information, and that there is a baseline package list file for the publisher to reference even if the publication request is not properly configured. The package information added to the list includes the package-id, title, canonical, introduction, and category from the publication request, using "unknown" for any missing fields.
+#     if publication_request is not None:
+#         if not package_list_path.is_file():
+#             logger.error(f"Package list file not found at {package_list_path}")
+#             # if the file does not exist, initialize it with the publication request information, using the package-id, title, canonical, introduction, and category if present in the publication request, otherwise use "unknown" for any missing fields. This ensures that there is at least a baseline package list file for the publisher to reference, even if the publication request is not properly configured.
 
-            try:
-                package_list = [{
-                    "package-id": publication_request.get("package-id", "unknown"),
-                    "title": publication_request.get("title", "unknown"),
-                    "canonical": publication_request.get("canonical", "unknown"),
-                    "introduction": publication_request.get("introduction", "unknown"),
-                    "category": publication_request.get("category", "unknown")
-                }]
+#             try:
+#                 package_list = [{
+#                     "package-id": publication_request.get("package-id", "unknown"),
+#                     "title": publication_request.get("title", "unknown"),
+#                     "canonical": publication_request.get("canonical", "unknown"),
+#                     "introduction": publication_request.get("introduction", "unknown"),
+#                     "category": publication_request.get("category", "unknown")
+#                 }]
 
-                logger.info(f"Initialized package list at {package_list_path} with version: {publication_request.get('version', 'unknown')}, status: {publication_request.get('mode', 'unknown')}, date: {publication_request.get('date', 'unknown')}")
-            except Exception as e:
-                logger.error(f"Failed to initialize package list: {e}")
-                return
-        else:
-           # Open and read the package list file
-            try:
-                with open(package_list_path, 'r', encoding='utf-8') as f:
-                    package_list = json.load(f)
-            except Exception as e:
-                logger.error(f"Failed to read package list: {e}")
-                return
+#                 logger.info(f"Initialized package list at {package_list_path} with version: {publication_request.get('version', 'unknown')}, status: {publication_request.get('mode', 'unknown')}, date: {publication_request.get('date', 'unknown')}")
+#             except Exception as e:
+#                 logger.error(f"Failed to initialize package list: {e}")
+#                 return
+#         else:
+#            # Open and read the package list file
+#             try:
+#                 with open(package_list_path, 'r', encoding='utf-8') as f:
+#                     package_list = json.load(f)
+#             except Exception as e:
+#                 logger.error(f"Failed to read package list: {e}")
+#                 return
 
 
-        # Finish setting up the package-list data and then write to the package-list file in the ig_repo_path
-        # Verify that the package list file has the ci build configured (If not, read from the package-request file and update)
-        #Iterate through all of the package list "list" elements to see if there is a version = "current
-        ci_package_exists = False
-        for item in package_list.get("list", []):
-            if item.get("version") == "current":
-                logger.info("Package list already has a current version configured, skipping update.")
-                ci_package_exists = True
-                break
+#         # Finish setting up the package-list data and then write to the package-list file in the ig_repo_path
+#         # Verify that the package list file has the ci build configured (If not, read from the package-request file and update)
+#         #Iterate through all of the package list "list" elements to see if there is a version = "current
+#         ci_package_exists = False
+#         for item in package_list.get("list", []):
+#             if item.get("version") == "current":
+#                 logger.info("Package list already has a current version configured, skipping update.")
+#                 ci_package_exists = True
+#                 break
 
-        if(not ci_package_exists):
-            package_list.setdefault("list", []).append({
-                "version": "current",
-                "desc" : "Continuous Integration Build (latest in version control)",
-                "path": publication_request.get("ci-build", "unknown"),
-                "status": "ci-build",
-                "fhirversion": publication_request.get("fhirversion", "4.0.1")
-            })
+#         if(not ci_package_exists):
+#             package_list.setdefault("list", []).append({
+#                 "version": "current",
+#                 "desc" : "Continuous Integration Build (latest in version control)",
+#                 "path": publication_request.get("ci-build", "unknown"),
+#                 "status": "ci-build",
+#                 "fhirversion": publication_request.get("fhirversion", "4.0.1")
+#             })
         
-        #Check to see if the current publication request version is in the package list. If so, remove it
-        existing_versions = [item.get("version") for item in package_list.get("list", [])]
-        if publication_request.get("version") in existing_versions:
-            package_list["list"] = [item for item in package_list.get("list", []) if item.get("version") != publication_request.get("version")]
-            logger.info(f"Removed existing version {publication_request.get('version')} from package list to prepare for update.")
+#         #Check to see if the current publication request version is in the package list. If so, remove it
+#         existing_versions = [item.get("version") for item in package_list.get("list", [])]
+#         if publication_request.get("version") in existing_versions:
+#             package_list["list"] = [item for item in package_list.get("list", []) if item.get("version") != publication_request.get("version")]
+#             logger.info(f"Removed existing version {publication_request.get('version')} from package list to prepare for update.")
 
-        #If the publication request status is not "milestone", log a warning and do not add it to the package list, as the publisher will only reference versions with a status of "milestone" or "ci-build". This ensures that any versions that are not intended for publication do not accidentally get added to the package list and potentially published by the publisher.
-        if publication_request.get("mode") != "milestone":
-            logger.warning(f"Publication request version {publication_request.get('version', 'unknown')} has status {publication_request.get('mode', 'unknown')}, which is not 'milestone'. Will continue processing.")
+#         #If the publication request status is not "milestone", log a warning and do not add it to the package list, as the publisher will only reference versions with a status of "milestone" or "ci-build". This ensures that any versions that are not intended for publication do not accidentally get added to the package list and potentially published by the publisher.
+#         if publication_request.get("mode") != "milestone":
+#             logger.warning(f"Publication request version {publication_request.get('version', 'unknown')} has status {publication_request.get('mode', 'unknown')}, which is not 'milestone'. Will continue processing.")
 
-        if publication_request.get("status") != "release":
-            logger.warning(f"Publication request version {publication_request.get('version', 'unknown')} has status {publication_request.get('status', 'unknown')}, which is not 'release'. Will continue processing.")
+#         if publication_request.get("status") != "release":
+#             logger.warning(f"Publication request version {publication_request.get('version', 'unknown')} has status {publication_request.get('status', 'unknown')}, which is not 'release'. Will continue processing.")
 
-        # Add current publication request version using information from the publication request file, using "unknown" for any missing fields
-        package_list.setdefault("list", []).append({
-            "version": publication_request.get("version", "unknown"),
-            "desc" : publication_request.get("desc", "unknown"),
-            "path": publication_request.get("path", "unknown"),
-            "status": publication_request.get("status", "milestone"),
-            "fhirversion": publication_request.get("fhirversion", "4.0.1"),
-            "current": True
-        })
+#         # Add current publication request version using information from the publication request file, using "unknown" for any missing fields
+#         package_list.setdefault("list", []).append({
+#             "version": publication_request.get("version", "unknown"),
+#             "desc" : publication_request.get("desc", "unknown"),
+#             "path": publication_request.get("path", "unknown"),
+#             "status": publication_request.get("status", "milestone"),
+#             "fhirversion": publication_request.get("fhirversion", "4.0.1"),
+#             "current": True
+#         })
 
-        try:            
-            with open(package_list_path, 'w', encoding='utf-8') as f:
-                json.dump(package_list, f, indent=2)
-                logger.info(f"Updated package list at {package_list_path} with version: {publication_request.get('version', 'unknown')}, status: {publication_request.get('mode', 'unknown')}, date: {publication_request.get('date', 'unknown')}")
-        except Exception as e:
-            logger.error(f"Failed to write package list: {e}")
-            return
+#         try:            
+#             with open(package_list_path, 'w', encoding='utf-8') as f:
+#                 json.dump(package_list, f, indent=2)
+#                 logger.info(f"Updated package list at {package_list_path} with version: {publication_request.get('version', 'unknown')}, status: {publication_request.get('mode', 'unknown')}, date: {publication_request.get('date', 'unknown')}")
+#         except Exception as e:
+#             logger.error(f"Failed to write package list: {e}")
+#             return

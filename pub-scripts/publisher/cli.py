@@ -26,8 +26,8 @@ def main():
     """CLI entrypoint for the publisher package."""
     parser = argparse.ArgumentParser(description="""FHIR IG Publisher - Full Publication Setup Script""")
     parser.add_argument('ig_repo', type=repo_url_arg, help="Path to FHIR IG Repository", nargs='?')
-    parser.add_argument('output_path', type=output_folder_arg, help="Output Folder path", nargs='?')
-    #parser.add_argument('output_path', type=output_folder_arg_bypass, help="Output Folder path", nargs='?')
+    #parser.add_argument('output_path', type=output_folder_arg, help="Output Folder path", nargs='?')
+    parser.add_argument('output_path', type=output_folder_arg_bypass, help="Output Folder path", nargs='?')
     parser.add_argument('-b', '--branch', help="Repository Branch")
     parser.add_argument('-p', '--pauses', action='store_true', help='Enable pauses (wait for key press) between steps')
     parser.add_argument('-r', '--reduce', action='store_true', help='Reduce output size (postprocess removal of unneeded files)')
@@ -35,6 +35,8 @@ def main():
     parser.add_argument('-v', '--verbose', action='store_true', help='Enable DEBUG level logging')
     parser.add_argument('--dry-run', action='store_true', help='Simulate operations where possible and skip time-consuming operations')
 
+
+# TODO Need to allow optional output folder and default to ./publish
     args = parser.parse_args()
     if not (args.ig_repo and args.output_path):
         parser.print_help()

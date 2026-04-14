@@ -15,8 +15,8 @@
     "layout-rules": [
         {
             "npm": "gov.cdc.nhsn.*",
-            "canonical": "http://www.cdc.gov/nhsn/fhirportal/{4}",
-            "destination": "/{4}"
+            "canonical": "http://www.cdc.gov/nhsn/fhirportal/{4}/ig",
+            "destination": "/{4}/ig"
         }
     ]
 }
