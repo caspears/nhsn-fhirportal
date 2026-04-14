@@ -282,19 +282,21 @@ def initialize_webroot(config_data, ig_repo_path):
     except Exception as e:
         logger.error(f"An error occurred: {e}")
 
-    package_registry = package_registry_template
-    for key in config_data:
-       package_registry = package_registry.replace("{"+key+"}", str(config_data[key]))
+    if not Path("webroot/package-registry.json").exists():
+        package_registry = package_registry_template
+        for key in config_data:
+            package_registry = package_registry.replace("{"+key+"}", str(config_data[key]))
 
-    with open("webroot/package-registry.json", "w") as template_file:
-        template_file.write(package_registry)
+        with open("webroot/package-registry.json", "w") as template_file:
+            template_file.write(package_registry)
+    
+    if not Path("webroot/publish-setup.json").exists():
+        publish_setup = publish_setup_template
+        for key in config_data:
+            publish_setup = publish_setup.replace("{"+key+"}", str(config_data[key]))
 
-    publish_setup = publish_setup_template
-    for key in config_data:
-       publish_setup = publish_setup.replace("{"+key+"}", str(config_data[key]))
-
-    with open("webroot/publish-setup.json", "w") as template_file:
-        template_file.write(publish_setup)
+        with open("webroot/publish-setup.json", "w") as template_file:
+            template_file.write(publish_setup)
 
     # TODO, need to verify this works once the file is published on the 
     # If the package-feed.xml does not exist then initialize

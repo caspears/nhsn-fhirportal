@@ -1,20 +1,15 @@
 {
-  "packages" : [{
-    "path" : "fhirportal/package-list.json",
+  "packages" : [
+    {
+    "path" : "dqm/ig/package-list.json",
     "package-id" : "gov.cdc.nhsn.measures",
-    "title" : "CDC National Healthcare Safety Network Digital Quality Measures (dQM) Content Package, 1.0.0 - US Realm",
-    "canonical" : "http://www.cdc.gov/nhsn/fhirportal/measures/ig",
+    "title" : "NHSN Digital Quality Measures (dQM) Implementation Guide",
+    "canonical" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig",
     "category" : "Public Health",
-    "ci-build" : "https://measures-ci.nhsnlink.org/",
-    "version-count" : 1,
-    "latest" : {
-      "version" : "1.0.0",
-      "date" : "2025-09-15",
-      "path" : "http://www.cdc.gov/nhsn/fhirportal/safr/ig/1.0.0"
-    }
+    "ci-build" : "https://measures-ci.nhsnlink.org/"
   },
   {
-    "path" : "safr/package-list.json",
+    "path" : "safr/ig/package-list.json",
     "package-id" : "gov.cdc.nhsn.safr",
     "title" : "NHSN Situational Awareness Framework for Reporting (NHSN SAFR) Implementation Guide",
     "canonical" : "http://www.cdc.gov/nhsn/fhirportal/safr/ig",
