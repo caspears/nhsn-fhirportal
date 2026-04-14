@@ -24,7 +24,7 @@ CQF_TOOLING_JAR_PREFIX = "tooling-cli-"
 pub_repos = {'ig-history': 'https://github.com/HL7/fhir-ig-history-template.git', 'ig-registry': 'https://github.com/FHIR/ig-registry.git'}
 
 # This is used to retrieve the package lists to build out the publication-feed.json and package-feed.json files
-ig_suite_package_set = {'gov.cdc.nhsn': 'https://github.com/lantanagroup/nhsn-measures/refs/heads/development/package.json', 'gov.cdc.nhsn.safr-content-ig': 'https://raw.githubusercontent.com/lantanagroup/safr-content-ig/refs/heads/development/package.json'}
+ig_suite_package_list = {'gov.cdc.nhsn': 'https://github.com/lantanagroup/nhsn-measures/refs/heads/development/package.json', 'gov.cdc.nhsn.safr-content-ig': 'https://raw.githubusercontent.com/lantanagroup/safr-content-ig/refs/heads/development/package.json'}
 
 reduce_file_patterns = ['**/*.ttl*', '**/*.r4b.tgz', '**/*.db', '**/qa-tx.html', '**/*.json1', '**/*.json2', '**/*.xml1', '**/*.xml2', '**/excels.zip']
 
@@ -38,7 +38,8 @@ default_config = {  'server-type': 'asp-new',
                     'ig_suite_title': 'The CDC NHSN Public Health Reporting FHIR Implementation Guides', 
                     'ig_suite_description': 'This IG suite contains FHIR implementation guides developed by the CDC National Healthcare Safety Network (NHSN) to support public health reporting.',
                     'package_suite_title': 'The CDC NHSN Public Health Reporting FHIR IG Packages', 
-                    'package_suite_description': 'This suite contains FHIR packages developed by the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) to support public health reporting.'}
+                    'package_suite_description': 'This suite contains FHIR packages developed by the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) to support public health reporting.',
+                    'publish-path': '/ig'}
 
 canonical_patterns = ['ImplementationGuide-', 'StructureDefinition-', 'CodeSystem', 'ValueSet', 'SearchParameter', 'OperationDefinition', 'Library', 'Measure', 'ActivityDefinition', 'DeviceDefinition', 'EventDefinition', 'ObservationDefinition', 'PlanDefinition', 'Questionnaire', 'SpecimenDefinition']
 
@@ -245,6 +246,21 @@ def load_configuration(ig_repo_path):
         if key not in config_data:
             config_data[key] = default_config[key]
 
+
+    # Get publish path from publish_setup.json (using layout-rules.destination and package id) if it exists, otherwise default to 'webroot/ig'
+    publish_path = default_config['publish-path']
+    publish_setup_path = Path("webroot/publish-setup.json")
+    if publish_setup_path.exists():
+        with open(publish_setup_path, 'r') as file:
+            publish_setup = json.load(file)
+            if 'layout-rules' in publish_setup and 'destination' in publish_setup['layout-rules'][0]:
+                publish_path = publish_setup['layout-rules'][0]['destination']
+                # TODO Replace placeholders in the publish path with actual values from the config data (e.g. {4} with the appropriate value from the package id or canonical url)
+                publish_path = publish_setup['layout-rules'][0]['destination'].format('',*config_data['package-id'].split('.'))
+
+    config_data['publish-path'] = publish_path
+
+
     return config_data
 
 
@@ -281,87 +297,91 @@ def initialize_webroot(config_data, ig_repo_path):
         template_file.write(publish_setup)
 
     # TODO, need to verify this works once the file is published on the 
-    package_feed_url = default_config['ig_suite_url'] + '/package-feed.xml'
-    # Attempt to retrieve the package-feed.xml and publication-feed.xml files from the ig suite base URL, and if they do not exist, then see if they are in the repository; and if not, then use the default templates defined in this script. 
-    response = requests.get(package_feed_url)
-    if response.status_code == 200:
-        # Write the retrieved package-feed.xml content to the webroot
-        try:
-            with open("webroot/package-feed.xml", "w") as template_file:
-                template_file.write(response.text) 
-                logger.info(f"Successfully retrieved package-feed.xml from {package_feed_url} and wrote to webroot.")
-        except Exception as e:
-            logger.error(f"Failed to write retrieved package-feed.xml to webroot: {e}")
-
-    else:
-        logger.warning(f"Failed to retrieve package-feed.xml from {package_feed_url}: HTTP {response.status_code}")
-        # Since the package-feed.xml is not available at the ig suite base URL, check if it is available in the repository
-        if ig_repo_path.joinpath('package-feed.xml').exists():
-            try:
-                # Copy the package-feed.xml from the IG repository to the webroot
-                shutil.copy(ig_repo_path.joinpath('package-feed.xml'), "webroot/package-feed.xml")
-                logger.info(f"Successfully copied package-feed.xml from IG repository to webroot.")
-
-                # if base_web_config = Path('./webroot/ig/web.config').resolve()
-                # with open(str(ig_repo_path) + '/package-feed.xml', 'r') as file:
-                #     package_feed_content = file.read()
-                #     with open("webroot/package-feed.xml", "w") as template_file:
-                #         template_file.write(package_feed_content)
-                #         logger.info(f"Successfully retrieved package-feed.xml from IG repository and wrote to webroot.")
-            except Exception as e:
-                logger.warning(f"Failed to write package-feed.xml from IG repository to webroot: {e}")
-
-    # If the package-feed.xml does not exist (was not avilable at the ig suite base URL and was not in the IG repository), then use the default template to create a package-feed.xml file in the webroot with the appropriate values filled in from the configuration data. The same process is applied for the publication-feed.xml file, where it first attempts to retrieve it from the ig suite base URL, then checks the IG repository, and if it is not found in either location, it uses the default template to create the publication-feed.xml file in the webroot with values filled in from the configuration data.
+    # If the package-feed.xml does not exist then initialize
     if not Path("webroot/package-feed.xml").exists():
-        logger.warning("package-feed.xml not found at IG suite base URL or in IG repository. Using default template to create package-feed.xml in webroot.")
-        package_feed = package_feed_template
-        for key in config_data:
-            package_feed = package_feed.replace("{"+key+"}", str(config_data[key]))
+        package_feed_url = default_config['ig_suite_url'] + '/package-feed.xml'
+        # Attempt to retrieve the package-feed.xml and publication-feed.xml files from the ig suite base URL, and if they do not exist, then see if they are in the repository; and if not, then use the default templates defined in this script. 
+        response = requests.get(package_feed_url)
+        if response.status_code == 200:
+            # Write the retrieved package-feed.xml content to the webroot
+            try:
+                with open("webroot/package-feed.xml", "w") as template_file:
+                    template_file.write(response.text) 
+                    logger.info(f"Successfully retrieved package-feed.xml from {package_feed_url} and wrote to webroot.")
+            except Exception as e:
+                logger.error(f"Failed to write retrieved package-feed.xml to webroot: {e}")
 
-        with open("webroot/package-feed.xml", "w") as template_file:
-            template_file.write(package_feed)
+        else:
+            logger.warning(f"Failed to retrieve package-feed.xml from {package_feed_url}: HTTP {response.status_code}")
+            # Since the package-feed.xml is not available at the ig suite base URL, check if it is available in the repository
+            if ig_repo_path.joinpath('package-feed.xml').exists():
+                try:
+                    # Copy the package-feed.xml from the IG repository to the webroot
+                    shutil.copy(ig_repo_path.joinpath('package-feed.xml'), "webroot/package-feed.xml")
+                    logger.info(f"Successfully copied package-feed.xml from IG repository to webroot.")
+
+                    # if base_web_config = Path('./webroot/ig/web.config').resolve()
+                    # with open(str(ig_repo_path) + '/package-feed.xml', 'r') as file:
+                    #     package_feed_content = file.read()
+                    #     with open("webroot/package-feed.xml", "w") as template_file:
+                    #         template_file.write(package_feed_content)
+                    #         logger.info(f"Successfully retrieved package-feed.xml from IG repository and wrote to webroot.")
+                except Exception as e:
+                    logger.warning(f"Failed to write package-feed.xml from IG repository to webroot: {e}")
+
+        # If the package-feed.xml does not exist (was not available at the ig suite base URL and was not in the IG repository), then use the default template to create a package-feed.xml file in the webroot with the appropriate values filled in from the configuration data. The same process is applied for the publication-feed.xml file, where it first attempts to retrieve it from the ig suite base URL, then checks the IG repository, and if it is not found in either location, it uses the default template to create the publication-feed.xml file in the webroot with values filled in from the configuration data.
+        if not Path("webroot/package-feed.xml").exists():
+            logger.warning("package-feed.xml not found at IG suite base URL or in IG repository. Using default template to create package-feed.xml in webroot.")
+            package_feed = package_feed_template
+            for key in config_data:
+                package_feed = package_feed.replace("{"+key+"}", str(config_data[key]))
+
+            with open("webroot/package-feed.xml", "w") as template_file:
+                template_file.write(package_feed)
 
 
     # TODO, need to verify this works once the file is published on the 
-    publication_feed_url = default_config['ig_suite_url'] + '/publication-feed.xml'
-    # Attempt to retrieve the package-feed.xml and publication-feed.xml files from the ig suite base URL, and if they do not exist, then see if they are in the repository; and if not, then use the default templates defined in this script. 
-    response = requests.get(publication_feed_url)
-    if response.status_code == 200:
-        # Write the retrieved publication-feed.xml content to the webroot
-        try:
-            with open("webroot/publication-feed.xml", "w") as template_file:
-                template_file.write(response.text) 
-                logger.info(f"Successfully retrieved publication-feed.xml from {publication_feed_url} and wrote to webroot.")
-        except Exception as e:
-            logger.warning(f"Failed to write retrieved publication-feed.xml to webroot: {e}")
-
-    else:
-        logger.warning(f"Failed to retrieve publication-feed.xml from {publication_feed_url}: HTTP {response.status_code}")
-        # Since the publication-feed.xml is not available at the ig suite base URL, check if it is available in the repository
-        if ig_repo_path.joinpath('publication-feed.xml').exists():
-            try:
-                # Copy the publication-feed.xml from the IG repository to the webroot
-                shutil.copy(ig_repo_path.joinpath('publication-feed.xml'), "webroot/publication-feed.xml")
-                logger.info(f"Successfully copied publication-feed.xml from IG repository to webroot.")
-
-                # if base_web_config = Path('./webroot/ig/web.config').resolve()
-                # with open(str(ig_repo_path) + '/package-feed.xml', 'r') as file:
-                #     package_feed_content = file.read()
-                #     with open("webroot/package-feed.xml", "w") as template_file:
-                #         template_file.write(package_feed_content)
-                #         logger.info(f"Successfully retrieved package-feed.xml from IG repository and wrote to webroot.")
-            except Exception as e:
-                logger.warning(f"Failed to write publication-feed.xml from IG repository to webroot: {e}")
-
-    # If the package-feed.xml does not exist (was not avilable at the ig suite base URL and was not in the IG repository), then use the default template to create a package-feed.xml file in the webroot with the appropriate values filled in from the configuration data. The same process is applied for the publication-feed.xml file, where it first attempts to retrieve it from the ig suite base URL, then checks the IG repository, and if it is not found in either location, it uses the default template to create the publication-feed.xml file in the webroot with values filled in from the configuration data.
+    # If the publication-feed.xml does not exist then initialize
     if not Path("webroot/publication-feed.xml").exists():
-        logger.warning("publication-feed.xml not found at IG suite base URL or in IG repository. Using default template to create publication-feed.xml in webroot.")
-        publication_feed = publication_feed_template
-        for key in config_data:
-            publication_feed = publication_feed.replace("{"+key+"}", str(config_data[key]))
+        publication_feed_url = default_config['ig_suite_url'] + '/publication-feed.xml'
+        # Attempt to retrieve the package-feed.xml and publication-feed.xml files from the ig suite base URL, and if they do not exist, then see if they are in the repository; and if not, then use the default templates defined in this script. 
+        response = requests.get(publication_feed_url)
+        if response.status_code == 200:
+            # Write the retrieved publication-feed.xml content to the webroot
+            try:
+                with open("webroot/publication-feed.xml", "w") as template_file:
+                    template_file.write(response.text) 
+                    logger.info(f"Successfully retrieved publication-feed.xml from {publication_feed_url} and wrote to webroot.")
+            except Exception as e:
+                logger.warning(f"Failed to write retrieved publication-feed.xml to webroot: {e}")
 
-        with open("webroot/publication-feed.xml", "w") as template_file:
-            template_file.write(publication_feed)
+        else:
+            logger.warning(f"Failed to retrieve publication-feed.xml from {publication_feed_url}: HTTP {response.status_code}")
+            # Since the publication-feed.xml is not available at the ig suite base URL, check if it is available in the repository
+            if ig_repo_path.joinpath('publication-feed.xml').exists():
+                try:
+                    # Copy the publication-feed.xml from the IG repository to the webroot
+                    shutil.copy(ig_repo_path.joinpath('publication-feed.xml'), "webroot/publication-feed.xml")
+                    logger.info(f"Successfully copied publication-feed.xml from IG repository to webroot.")
+
+                    # if base_web_config = Path('./webroot/ig/web.config').resolve()
+                    # with open(str(ig_repo_path) + '/package-feed.xml', 'r') as file:
+                    #     package_feed_content = file.read()
+                    #     with open("webroot/package-feed.xml", "w") as template_file:
+                    #         template_file.write(package_feed_content)
+                    #         logger.info(f"Successfully retrieved package-feed.xml from IG repository and wrote to webroot.")
+                except Exception as e:
+                    logger.warning(f"Failed to write publication-feed.xml from IG repository to webroot: {e}")
+
+        # If the package-feed.xml does not exist (was not available at the ig suite base URL and was not in the IG repository), then use the default template to create a package-feed.xml file in the webroot with the appropriate values filled in from the configuration data. The same process is applied for the publication-feed.xml file, where it first attempts to retrieve it from the ig suite base URL, then checks the IG repository, and if it is not found in either location, it uses the default template to create the publication-feed.xml file in the webroot with values filled in from the configuration data.
+        if not Path("webroot/publication-feed.xml").exists():
+            logger.warning("publication-feed.xml not found at IG suite base URL or in IG repository. Using default template to create publication-feed.xml in webroot.")
+            publication_feed = publication_feed_template
+            for key in config_data:
+                publication_feed = publication_feed.replace("{"+key+"}", str(config_data[key]))
+
+            with open("webroot/publication-feed.xml", "w") as template_file:
+                template_file.write(publication_feed)
 
 
 

@@ -88,7 +88,6 @@ def output_folder_arg(string):
     If folder exists, prompts user to delete it with a 5-second timeout.
     Returns the string if successful, otherwise implicitly returns None.
     """
-    
     p = Path(string)
     if p.is_dir():
         logger = logging.getLogger()

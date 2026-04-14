@@ -4,6 +4,7 @@ import os
 import logging
 from pathlib import Path
 import shutil
+import json
 
 from .gitops import clone_repos
 from .builder import (
@@ -67,8 +68,10 @@ def main():
         logger.error(f"Could not change into output directory: {e}")
         return
 
-
     # Testing area (Test new features in an existing run, or test features in isolation by enabling/disabling steps here)
+    
+    # End testing area
+
 
     pause(args.pauses)
     
@@ -77,8 +80,9 @@ def main():
 
 
     log_milestone(logger, "Initialize in memory config data from IG repo")
-    initialize_config_data(ig_repo_path)
+    config_data = initialize_config_data(ig_repo_path)
     pause(args.pauses)
+    
 
     log_milestone(logger, "Output Folder Initialization")
     initialize_output_folder(ig_repo_path, IG_PUBLISHER_URL, dry_run=args.dry_run)
@@ -112,7 +116,7 @@ def main():
         pause(args.pauses)
 
     log_milestone(logger, "Post-process: Writing web.config")
-    write_web_configs(ig_repo_path=ig_repo_path, dry_run=args.dry_run)
+    write_web_configs(ig_repo_path=ig_repo_path, publish_path=config_data['publish-path'], dry_run=args.dry_run)
     pause(args.pauses)
 
     log_milestone(logger, "Post-process: Update IG Suite Feeds")
@@ -121,11 +125,11 @@ def main():
 
     if args.access and not args.dry_run:
         log_milestone(logger, "Post-process: Accessibility Modifications")
-        run_accessibility_fixer_on_webroot(dry_run=args.dry_run)
+        run_accessibility_fixer_on_webroot(publish_path=config_data['publish-path'], dry_run=args.dry_run)
         pause(args.pauses)
 
 
 
     log_milestone(logger, "Publication Setup Complete")
     end = time.time()
-    logger.info(f"Full execution time (in seconds): {end - start:.2f}")
+    logger.info(f"Full execution time: {end - start:.2f} seconds; {(end - start)/60:.2f} minutes")

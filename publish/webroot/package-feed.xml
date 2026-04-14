@@ -11,17 +11,6 @@
         <language>en</language>
         <ttl>600</ttl>
     <item>
-      <title>gov.cdc.nhsn.safr#1.0.0</title>
-      <description>CDC National Healthcare Safety Network Situational Awareness Framework for Reporting (NHSN SAFR) Implementation Guide, 1.0.0 - US Realm</description>
-      <link>http://www.cdc.gov/nhsn/fhirportal/safr/ig/1.0.0/package.tgz</link>
-      <guid isPermaLink="true">http://www.cdc.gov/nhsn/fhirportal/safr/ig/1.0.0/package.tgz</guid>
-      <dc:creator>CDC National Healthcare Safety Network (NHSN)</dc:creator>
-      <fhir:version>4.0.1</fhir:version>
-      <fhir:kind>IG</fhir:kind>
-      <pubDate>Fri, 10 Apr 2026 11:50:14 -0700</pubDate>
-      <fhir:details>Publication run at 10/04/2026 by SPEARS_7670 using Version 2.2.5 (Git# 85d3793a057a). Built 2026-04-06T15:23:27.464Z (4 days old) source id Unknown (todo)</fhir:details>
-    </item>
-    <item>
       <title>gov.cdc.nhsn.measures#1.0.0</title>
       <description>CDC National Healthcare Safety Network CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package, 1.0.0 - US Realm</description>
       <link>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/1.0.0/package.tgz</link>

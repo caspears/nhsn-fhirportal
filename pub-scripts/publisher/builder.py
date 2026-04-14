@@ -15,6 +15,7 @@ def initialize_config_data(ig_repo_path):
     """Initialize the global config_data variable."""
     global config_data
     config_data = load_configuration(str(Path(ig_repo_path).resolve()))
+    return config_data
 
 
 def run_command(cmd_list, cwd=None, dry_run=False):
@@ -175,7 +176,8 @@ def initialize_output_folder(ig_repo_path, ig_publisher_url, dry_run: bool = Fal
     #if not dry_run:
     if config_data is None:
         initialize_config_data(ig_repo_path)
-        # TODO Verify webroot does not require additional initialization
+    initialize_webroot(config_data=config_data, ig_repo_path=ig_repo_path)
+    # TODO Verify webroot does not require additional initialization
     #initialize_webroot(config_data=config_data, ig_repo_path=ig_repo_path)
     #else:
     #    logger.info("[DRY RUN] Skipping load_configuration and initialize_webroot")
@@ -185,9 +187,9 @@ def initialize_publication_version(ig_repo_path, dry_run: bool = False):
     """Initialize the publication version by loading the configuration and writing the publication list."""
     logger = logging.getLogger()
     logger.info("Initializing publication version")
-
+    
 # TODO No longer using package_list (not allowed) Check to see if package-registry is automatically updated.
-#     update_package_list(ig_repo_path=ig_repo_path)
+#    update_package_list(ig_repo_path=ig_repo_path)
 
 # def update_package_list(ig_repo_path):
 #     """Update the package list in the webroot based on the provided configuration data."""

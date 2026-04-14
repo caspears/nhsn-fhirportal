@@ -3,7 +3,7 @@ import os
 import logging
 import requests
 from pathlib import Path
-from .config import reduce_file_patterns, accessibility_update_file_patterns, web_config, ig_suite_package_set
+from .config import reduce_file_patterns, accessibility_update_file_patterns, web_config, ig_suite_package_list
 from .fix_accessibilities import fix_accessibilities_in_folder
 from .builder import config_data
 import json
@@ -23,12 +23,12 @@ def format_file_size(size_in_bytes: int) -> str:
     else:
         return f"{size_in_bytes / (1024**4):.2f} TB"
 
-def run_accessibility_fixer_on_webroot(dry_run: bool = False):
+def run_accessibility_fixer_on_webroot(publish_path, dry_run: bool = False):
     """Run accessibility fixer on each subfolder in webroot/ig."""
     logger = logging.getLogger()
-    webroot_ig = Path.cwd() / 'webroot' / 'ig'
+    webroot_ig = Path('./webroot/' + publish_path).resolve()
     if not webroot_ig.exists():
-        logger.error(f"webroot/ig not found at expected location: {webroot_ig.resolve()}")
+        logger.error(f"webroot ig folder not found at expected location: {webroot_ig.resolve()}")
         return
 
     logger.info(f"Running accessibility fixer on: {webroot_ig}")
@@ -100,10 +100,10 @@ def replace_strings_in_file(filepath, old_string, new_string):
         logger.error(f"An error occurred: {e} in file {filepath}")
 
 
-def write_web_configs(ig_repo_path, dry_run: bool = False):
+def write_web_configs(ig_repo_path, publish_path, dry_run: bool = False):
     """Generate web.config files for the IG and root version."""
     logger = logging.getLogger()
-    base_web_config = Path('./webroot/ig/web.config').resolve()
+    base_web_config = Path(f'./webroot/{publish_path}/web.config').resolve()
     logger.debug(f"Targeting web config: {base_web_config}")
 
     pub_req_path = Path(ig_repo_path) / 'publication-request.json'
@@ -115,7 +115,7 @@ def write_web_configs(ig_repo_path, dry_run: bool = False):
         logger.error(f"Failed to read {pub_req_path}: {e}")
         return
 
-    version_web_config = Path(f'./webroot/ig/{config_data["version"]}/web.config').resolve()
+    version_web_config = Path(f'./webroot/{publish_path}/{config_data["version"]}/web.config').resolve()
     logger.debug(f"Targeting version web config: {version_web_config}")
 
     if dry_run:
@@ -150,7 +150,7 @@ def write_web_configs(ig_repo_path, dry_run: bool = False):
 
 #     ig_list = []
 
-#     for package_id, package_list in ig_suite_package_set.items():
+#     for package_id, package_list in ig_suite_package_list.items():
 #         if package_id == config_data.get("package-id", "Unknown"):
 #             # If the current IG is the same as the current suite IG, then use the local package-list.json file for feed entries instead of the package_list.json in the repo, which may be outdated due to changes in the publication request that have not been reflected in the repo's package-list.json
 #             # TODO, there may not be a need to populate this information as the publisher may have already done so. Need to verify

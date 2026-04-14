@@ -19,17 +19,6 @@
     "title" : "NHSN Situational Awareness Framework for Reporting (NHSN SAFR) Implementation Guide",
     "canonical" : "http://www.cdc.gov/nhsn/fhirportal/safr/ig",
     "category" : "Public Health",
-    "ci-build" : "https://safr-ci.nhsnlink.org/",
-    "version-count" : 1,
-    "latest" : {
-      "version" : "1.0.0",
-      "date" : "2026-04-10",
-      "path" : "http://www.cdc.gov/nhsn/fhirportal/safr/ig/1.0.0"
-    },
-    "milestone" : {
-      "version" : "1.0.0",
-      "date" : "2026-04-10",
-      "path" : "http://www.cdc.gov/nhsn/fhirportal/safr/ig/1.0.0"
-    }
+    "ci-build" : "https://safr-ci.nhsnlink.org/"
   }]
 }
