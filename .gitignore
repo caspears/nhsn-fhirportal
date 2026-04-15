@@ -7,10 +7,10 @@ fsh-generated
 dry_run
 bundles
 **/*.jar
-publish/templates
-publish/webroot/
-publish/ig-history
-publish/ig-registry
+publish/*
+!publish/webroot/*.xml
+!publish/webroot/*.json
+
 
 
 
