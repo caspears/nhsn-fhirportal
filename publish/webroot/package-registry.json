@@ -1,12 +1,22 @@
 {
-  "packages" : [
-    {
+  "packages" : [{
     "path" : "dqm/ig/package-list.json",
     "package-id" : "gov.cdc.nhsn.measures",
     "title" : "NHSN Digital Quality Measures (dQM) Implementation Guide",
     "canonical" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig",
     "category" : "Public Health",
-    "ci-build" : "https://measures-ci.nhsnlink.org/"
+    "ci-build" : "https://measures-ci.nhsnlink.org/",
+    "version-count" : 1,
+    "latest" : {
+      "version" : "1.0.0",
+      "date" : "2025-09-15",
+      "path" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/1.0.0"
+    },
+    "milestone" : {
+      "version" : "1.0.0",
+      "date" : "2025-09-15",
+      "path" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/1.0.0"
+    }
   },
   {
     "path" : "safr/ig/package-list.json",
