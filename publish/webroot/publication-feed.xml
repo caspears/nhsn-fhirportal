@@ -11,7 +11,7 @@
         <language>en</language>
         <ttl>600</ttl>
         <item>
-            <title>gov.cdc.nhsn.measures#1.0.0</title>
+            <title>gov.cdc.nhsn.dqm1.0.0</title>
             <description>CDC National Healthcare Safety Network CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content IG, 1.0.0 - US Realm</description>
             <link>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/1.0.0//index.html</link>
             <guid isPermaLink="true">http://www.cdc.gov/nhsn/fhirportal/dqm/ig/1.0.0//index.html</guid>

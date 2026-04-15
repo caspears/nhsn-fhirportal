@@ -1,7 +1,7 @@
 {
   "packages" : [{
     "path" : "dqm/ig/package-list.json",
-    "package-id" : "gov.cdc.nhsn.measures",
+    "package-id" : "gov.cdc.nhsn.dqm",
     "title" : "NHSN Digital Quality Measures (dQM) Implementation Guide",
     "canonical" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig",
     "category" : "Public Health",
