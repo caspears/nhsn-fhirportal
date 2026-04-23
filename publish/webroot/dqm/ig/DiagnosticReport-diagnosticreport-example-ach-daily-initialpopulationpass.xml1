@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="diagnosticreport-example-ach-daily-initialpopulationpass"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-diagnosticreport-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport diagnosticreport-example-ach-daily-initialpopulationpass</b></p><a name="diagnosticreport-example-ach-daily-initialpopulationpass"> </a><a name="hcdiagnosticreport-example-ach-daily-initialpopulationpass"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-diagnosticreport-lab.html">ACH Daily Event Diagnostic Report (Lab)</a></p></div><h2><span title="Codes:{http://snomed.info/sct 258500001}">Nasopharyngeal swab</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td>ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN: 1000009001 (use: usual, ))</td></tr><tr><td>When For</td><td>2024-02-01 23:14:00-0500</td></tr><tr><td>Reported</td><td>2024-02-02 08:52:00-0500</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions:</b></p><ul><li><span title="Codes:{http://snomed.info/sct 840539006}">Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)</span></li></ul></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="Laboratory"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="258500001"/>
+      <display value="Nasopharyngeal swab (specimen)"/>
+    </coding>
+    <text value="Nasopharyngeal swab"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+    <display value="InitialPopulationPass, ACHDaily"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example-ach-daily-initialpopulationpass-1"/>
+    <display value="Hospital Admission"/>
+  </encounter>
+  <effectiveDateTime value="2024-02-01T23:14:00-05:00"/>
+  <issued value="2024-02-02T08:52:00-05:00"/>
+  <conclusionCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="840539006"/>
+      <display value="Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"/>
+    </coding>
+  </conclusionCode>
+</DiagnosticReport>

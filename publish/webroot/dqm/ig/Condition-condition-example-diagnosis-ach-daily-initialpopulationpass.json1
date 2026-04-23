@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Condition",
+  "id" : "condition-example-diagnosis-ach-daily-initialpopulationpass",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-example-diagnosis-ach-daily-initialpopulationpass</b></p><a name=\"condition-example-diagnosis-ach-daily-initialpopulationpass\"> </a><a name=\"hccondition-example-diagnosis-ach-daily-initialpopulationpass\"> </a><p><b>Original Resource ID</b>: eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm R06.02}\">Hyperglycemia</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-initialpopulationpass.html\">ACHDaily, InitialPopulationPass</a></p><p><b>encounter</b>: Emergency</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+    "valueString" : "eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "version" : "4.0.0",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }],
+    "text" : "Confirmed"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis",
+      "display" : "Encounter Diagnosis"
+    }],
+    "text" : "Encounter Diagnosis"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "R06.02",
+      "display" : "Shortness of breath"
+    }],
+    "text" : "Hyperglycemia"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-daily-initialpopulationpass",
+    "display" : "ACHDaily, InitialPopulationPass"
+  },
+  "encounter" : {
+    "display" : "Emergency"
+  }
+}

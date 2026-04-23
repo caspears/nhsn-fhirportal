@@ -1,0 +1,83 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "encounter-example-ach-daily-negativepcr-1",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-example-ach-daily-negativepcr-1</b></p><a name=\"encounter-example-ach-daily-negativepcr-1\"> </a><a name=\"hcencounter-example-ach-daily-negativepcr-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-encounter.html\">ACH Daily Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/123456789986\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-OBSENC\">ActCode OBSENC</a>: Observation Encounter (version = 9.0.0 )</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 32485007}\">Hospital admission (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>period</b>: 2024-01-01 08:00:00+0000 --&gt; 2024-01-02 06:00:00+0000</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 267036007}\">Shortness of breath</span></p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/admit-source outp}\">observation unit</span></td></tr></table><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Location-location-example-ach-daily-emergency.html\">EMERGENCY - PAVILION</a></p><p><b>period</b>: 2022-08-11 18:52:00+0000 --&gt; 2022-08-17 16:09:00+0000</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Location-location-example-ach-daily-hospital.html\">Health Hospital Location</a></p><p><b>period</b>: 2022-08-17 16:09:00+0000 --&gt; 2022-08-22 19:01:00+0000</p></blockquote></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+    "value" : "123456789986"
+  }],
+  "status" : "finished",
+  "_status" : {
+    "extension" : [{
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension",
+      "valueString" : "TRIAGED"
+    }]
+  },
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "version" : "9.0.0",
+    "code" : "OBSENC",
+    "display" : "Observation Encounter"
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "32485007",
+      "display" : "Hospital admission (procedure)"
+    }],
+    "text" : "Hospital admission (procedure)"
+  }],
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-daily-negativepcr",
+    "display" : "ACHDaily, NegativePCR"
+  },
+  "period" : {
+    "start" : "2024-01-01T08:00:00Z",
+    "end" : "2024-01-02T06:00:00Z"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "267036007",
+      "display" : "shortness of breath"
+    }],
+    "text" : "Shortness of breath"
+  }],
+  "hospitalization" : {
+    "admitSource" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/admit-source",
+        "code" : "outp",
+        "display" : "From outpatient department"
+      }],
+      "text" : "observation unit"
+    }
+  },
+  "location" : [{
+    "location" : {
+      "reference" : "Location/location-example-ach-daily-emergency",
+      "display" : "EMERGENCY - PAVILION"
+    },
+    "period" : {
+      "start" : "2022-08-11T18:52:00Z",
+      "end" : "2022-08-17T16:09:00Z"
+    }
+  },
+  {
+    "location" : {
+      "reference" : "Location/location-example-ach-daily-hospital",
+      "display" : "Health Hospital Location"
+    },
+    "period" : {
+      "start" : "2022-08-17T16:09:00Z",
+      "end" : "2022-08-22T19:01:00Z"
+    }
+  }]
+}

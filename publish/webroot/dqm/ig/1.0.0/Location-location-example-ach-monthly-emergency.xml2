@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="location-example-ach-monthly-emergency"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location location-example-ach-monthly-emergency</b></p><a name="location-example-ach-monthly-emergency"> </a><a name="hclocation-example-ach-monthly-emergency"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-location.html">ACH Monthly Event Location</a></p></div><p><b>identifier</b>: <code>http://www.example.com/location</code>/2934</p><p><b>status</b>: Active</p><p><b>name</b>: ACH Monthly Emergency Department</p><p><b>description</b>: ACH Monthly Emergency Department</p><p><b>type</b>: <span title="Codes:{https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html 1108-0}">Emergency Department</span></p></div>
+  </text>
+  <identifier>
+    <system value="http://www.example.com/location"/>
+    <value value="2934"/>
+  </identifier>
+  <status value="active"/>
+  <name value="ACH Monthly Emergency Department"/>
+  <description value="ACH Monthly Emergency Department"/>
+  <type>
+    <coding>
+      <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"/>
+      <code value="1108-0"/>
+      <display value="Emergency Department"/>
+    </coding>
+    <text value="Emergency Department"/>
+  </type>
+</Location>

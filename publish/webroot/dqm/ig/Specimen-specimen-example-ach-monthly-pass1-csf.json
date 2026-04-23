@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "specimen-example-ach-monthly-pass1-csf",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen specimen-example-ach-monthly-pass1-csf</b></p><a name=\"specimen-example-ach-monthly-pass1-csf\"> </a><a name=\"hcspecimen-example-ach-monthly-pass1-csf\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-specimen.html\">ACH Monthly Event Specimen</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798.32</code>/C104082902, <code>urn:oid:2.16.840.1.113883.19.5.1.798.800</code>/C10408290:42</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 258450006}\">Cerebrospinal fluid specimen (specimen)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>receivedTime</b>: 2024-02-02 18:20:00-0500</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-02-02 18:13:00-0500</td><td><span title=\"Codes:{http://snomed.info/sct 272005}\">Structure of superior articular process of lumbar vertebra</span></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:2.16.840.1.113883.19.5.1.798.32",
+    "value" : "C104082902",
+    "assigner" : {
+      "display" : "LIS"
+    }
+  },
+  {
+    "system" : "urn:oid:2.16.840.1.113883.19.5.1.798.800",
+    "value" : "C10408290:42"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "258450006",
+      "display" : "Cerebrospinal fluid specimen (specimen)"
+    }],
+    "text" : "Cerebrospinal fluid specimen (specimen)"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass1",
+    "display" : "Pass1 ACH"
+  },
+  "receivedTime" : "2024-02-02T18:20:00-05:00",
+  "collection" : {
+    "collectedDateTime" : "2024-02-02T18:13:00-05:00",
+    "bodySite" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "272005",
+        "display" : "Structure of superior articular process of lumbar vertebra (body structure)"
+      }],
+      "text" : "Structure of superior articular process of lumbar vertebra"
+    }
+  }
+}

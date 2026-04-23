@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-example-ach-daily-subject-influenzatherapeutic"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:1eaddf4c-2ec0-4dc4-b26f-9586d7a70099"/>
+  </identifier>
+  <type value="collection"/>
+  <timestamp value="2024-02-05T21:04:29.481+00:00"/>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MeasureReport/measurereport-example-ach-daily-influenzatherapeutic"/>
+    <resource>
+      <MeasureReport>
+        <id value="measurereport-example-ach-daily-influenzatherapeutic"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MeasureReport_measurereport-example-ach-daily-influenzatherapeutic"> </a><p class="res-header-id"><b>Generated Narrative: MeasureReport measurereport-example-ach-daily-influenzatherapeutic</b></p><a name="measurereport-example-ach-daily-influenzatherapeutic"> </a><a name="hcmeasurereport-example-ach-daily-influenzatherapeutic"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/davinci-deqm/STU3.1/StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a></p></div><p><b>DEQM Measure Scoring Extension</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}">Cohort</span></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Patient-patient-example-ach-daily-influenzatherapeutic.html">ACHDaily InfluenzaTherapeutic(official) Male, DoB: 2020-02-29 ( MRN: 1000009001 (use: usual, ))</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Encounter-encounter-example-ach-daily-influenzatherapeutic.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987 (use: usual, ); status = finished; class = Inpatient Acute (ActCode[9.0.0]#ACUTE); type = Emergency hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-04 12:00:00+0000; reasonCode = Fever with chills</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Coverage-coverage-example-ach-daily-influenzatherapeutic.html">Coverage: identifier = Member Number: 88800933501; status = active; type = preferred provider organization policy; subscriberId = 123456789; relationship = Self; period = 2023-01-01 --&gt; (ongoing)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Condition-condition-example-diagnosis-ach-daily-influenzatherapeutic.html">Condition Influenza due to identified novel influenza A virus</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-daily-influenzatherapeutic.html">MedicationAdministration: status = completed; medication[x] = -&gt;Oseltamivir 60 mg PO; effective[x] = 2024-01-01 20:00:00+0000 --&gt; 2024-01-04 20:00:09+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationRequest-medicationrequest-example-ach-daily-influenzatherapeutic.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002 (use: usual, ); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Oseltamivir 60 mg; authoredOn = 2024-01-01 11:45:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Immunization-immunization-example-ach-daily-influenzatherapeutic.html">Immunization: identifier = OID:1.3.6.1.4.1.21367.2005.3.7.1234; status = completed; vaccineCode = Fluvax; occurrence[x] = 2024-01-02; primarySource = true; lotNumber = AAJN11K; expirationDate = 2025-02-15; doseQuantity = 5 mg; note = Notes on administration of vaccine; isSubpotent = true</a></p><p><b>identifier</b>: <code>http://example.org/fhir/measurereport/id</code>/123456789-pass1</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href="Measure-NHSNAcuteCareHospitalDailyInitialPopulation.html">NHSN Acute Care Hospital Daily Initial Populationversion: null1.0.0)</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-influenzatherapeutic.html">ACHDaily InfluenzaTherapeutic(official) Male, DoB: 2020-02-29 ( MRN: 1000009001 (use: usual, ))</a></p><p><b>date</b>: 2024-01-06 00:04:29+0000</p><p><b>reporter</b>: <a href="Organization-organization-example-submitting-organization.html">Organization Example NHSN Submitter</a></p><p><b>period</b>: 2024-01-05 00:00:00+0000 --&gt; 2024-01-06 00:00:00+0000</p><p><b>improvementNotation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></td><td>1</td></tr></table></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href="Patient-patient-example-ach-daily-influenzatherapeutic.html">ACHDaily InfluenzaTherapeutic(official) Male, DoB: 2020-02-29 ( MRN: 1000009001 (use: usual, ))</a></li><li><a href="Encounter-encounter-example-ach-daily-influenzatherapeutic.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987 (use: usual, ); status = finished; class = Inpatient Acute (ActCode[9.0.0]#ACUTE); type = Emergency hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-04 12:00:00+0000; reasonCode = Fever with chills</a></li><li><a href="Coverage-coverage-example-ach-daily-influenzatherapeutic.html">Coverage: identifier = Member Number: 88800933501; status = active; type = preferred provider organization policy; subscriberId = 123456789; relationship = Self; period = 2023-01-01 --&gt; (ongoing)</a></li><li><a href="Condition-condition-example-diagnosis-ach-daily-influenzatherapeutic.html">Condition Influenza due to identified novel influenza A virus</a></li><li><a href="MedicationAdministration-medadmin-example-ach-daily-influenzatherapeutic.html">MedicationAdministration: status = completed; medication[x] = -&gt;Oseltamivir 60 mg PO; effective[x] = 2024-01-01 20:00:00+0000 --&gt; 2024-01-04 20:00:09+0000</a></li><li><a href="MedicationRequest-medicationrequest-example-ach-daily-influenzatherapeutic.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002 (use: usual, ); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Oseltamivir 60 mg; authoredOn = 2024-01-01 11:45:15+0000; courseOfTherapyType = Short course (acute) therapy</a></li><li><a href="Immunization-immunization-example-ach-daily-influenzatherapeutic.html">Immunization: identifier = OID:1.3.6.1.4.1.21367.2005.3.7.1234; status = completed; vaccineCode = Fluvax; occurrence[x] = 2024-01-02; primarySource = true; lotNumber = AAJN11K; expirationDate = 2025-02-15; doseQuantity = 5 mg; note = Notes on administration of vaccine; isSubpotent = true</a></li></ul></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+              <code value="cohort"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-minimal-patient"/>
+            </extension>
+            <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-encounter"/>
+            </extension>
+            <reference value="Encounter/encounter-example-ach-daily-influenzatherapeutic"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-coverage"/>
+            </extension>
+            <reference value="Coverage/coverage-example-ach-daily-influenzatherapeutic"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-condition"/>
+            </extension>
+            <reference value="Condition/condition-example-diagnosis-ach-daily-influenzatherapeutic"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-daily-influenzatherapeutic"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-request"/>
+            </extension>
+            <reference value="MedicationRequest/medicationrequest-example-ach-daily-influenzatherapeutic"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-immunization"/>
+            </extension>
+            <reference value="Immunization/immunization-example-ach-daily-influenzatherapeutic"/>
+          </valueReference>
+        </extension>
+        <identifier>
+          <system value="http://example.org/fhir/measurereport/id"/>
+          <value value="123456789-pass1"/>
+        </identifier>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalDailyInitialPopulation|1.0.0-cibuild"/>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+        </subject>
+        <date value="2024-01-06T00:04:29.481+00:00"/>
+        <reporter>
+          <reference value="Organization/organization-example-submitting-organization"/>
+        </reporter>
+        <period>
+          <start value="2024-01-05T00:00:00.000+00:00"/>
+          <end value="2024-01-06T00:00:00.000+00:00"/>
+        </period>
+        <improvementNotation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/measure-improvement-notation"/>
+            <code value="increase"/>
+          </coding>
+        </improvementNotation>
+        <group>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+                <display value="Initial Population"/>
+              </coding>
+            </code>
+            <count value="1"/>
+          </population>
+        </group>
+        <evaluatedResource>
+          <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Encounter/encounter-example-ach-daily-influenzatherapeutic"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Coverage/coverage-example-ach-daily-influenzatherapeutic"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Condition/condition-example-diagnosis-ach-daily-influenzatherapeutic"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-daily-influenzatherapeutic"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationRequest/medicationrequest-example-ach-daily-influenzatherapeutic"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Immunization/immunization-example-ach-daily-influenzatherapeutic"/>
+        </evaluatedResource>
+      </MeasureReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Patient/patient-example-ach-daily-influenzatherapeutic"/>
+    <resource>
+      <Patient>
+        <id value="patient-example-ach-daily-influenzatherapeutic"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-example-ach-daily-influenzatherapeutic"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-example-ach-daily-influenzatherapeutic</b></p><a name="patient-example-ach-daily-influenzatherapeutic"> </a><a name="hcpatient-example-ach-daily-influenzatherapeutic"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cross-measure-patient.html">Cross-Measure Patient Profile</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">ACHDaily InfluenzaTherapeutic(official) Male, DoB: 2020-02-29 ( MRN: 1000009001 (use: usual, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 999-999-9999(Home)</li><li>789 Alphabet Street Lansing MI 48864 US (home)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: mother">mother:</td><td colspan="3"><ul><li>Mama Bear</li><li>789 Alphabet Street Lansing MI 48864 US (home)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2135-2">Race &amp; Ethnicity - CDC 2135-2</a>: Hispanic or Latino</li><li>text: Hispanic or Latino</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9)."><a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a></td><td colspan="3">M</td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.">US Core Race Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2054-5">Race &amp; Ethnicity - CDC 2054-5</a>: Black or African American</li><li>text: Black or African American</li></ul></td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2054-5"/>
+              <display value="Black or African American"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Black or African American"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2135-2"/>
+              <display value="Hispanic or Latino"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Hispanic or Latino"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+          <valueCode value="M"/>
+        </extension>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical record number"/>
+            </coding>
+            <text value="MRN"/>
+          </type>
+          <system value="urn:oid:1.2.5.8.2.7"/>
+          <value value="1000009001"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="ACHDaily InfluenzaTherapeutic"/>
+          <family value="InfluenzaTherapeutic"/>
+          <given value="ACHDaily"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="999-999-9999"/>
+          <use value="home"/>
+        </telecom>
+        <gender value="male"/>
+        <birthDate value="2020-02-29"/>
+        <deceasedBoolean value="false"/>
+        <address>
+          <use value="home"/>
+          <line value="789 Alphabet Street"/>
+          <city value="Lansing"/>
+          <state value="MI"/>
+          <postalCode value="48864"/>
+          <country value="US"/>
+        </address>
+        <contact>
+          <relationship>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+              <code value="MTH"/>
+              <display value="mother"/>
+            </coding>
+          </relationship>
+          <name>
+            <text value="Mama Bear"/>
+            <family value="Bear"/>
+            <given value="Mama"/>
+          </name>
+          <address>
+            <use value="home"/>
+            <line value="789 Alphabet Street"/>
+            <city value="Lansing"/>
+            <state value="MI"/>
+            <postalCode value="48864"/>
+            <country value="US"/>
+          </address>
+        </contact>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Encounter/encounter-example-ach-daily-influenzatherapeutic"/>
+    <resource>
+      <Encounter>
+        <id value="encounter-example-ach-daily-influenzatherapeutic"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-example-ach-daily-influenzatherapeutic"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example-ach-daily-influenzatherapeutic</b></p><a name="encounter-example-ach-daily-influenzatherapeutic"> </a><a name="hcencounter-example-ach-daily-influenzatherapeutic"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-encounter.html">ACH Daily Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/123456789987 (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE">ActCode ACUTE</a>: Inpatient Acute (version = 9.0.0 )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 183452005}">Emergency hospital admission</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-influenzatherapeutic.html">ACHDaily, InfluenzaTherapeutic</a></p><p><b>period</b>: 2024-01-01 08:00:00+0000 --&gt; 2024-01-04 12:00:00+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 274640006}">Fever with chills</span></p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/admit-source gp}">Direct admission from doctor's office (in same system)</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition home}">Home</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-location-example-ach-daily-emergency.html">EMERGENCY - PAVILION</a></td><td>2024-01-14 08:00:00+0000 --&gt; 2024-01-22 12:00:00+0000</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="123456789987"/>
+        </identifier>
+        <status value="finished">
+          <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension">
+            <valueString value="TRIAGED"/>
+          </extension>
+        </status>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <version value="9.0.0"/>
+          <code value="ACUTE"/>
+          <display value="Inpatient Acute"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="183452005"/>
+            <display value="Emergency hospital admission (procedure)"/>
+          </coding>
+          <text value="Emergency hospital admission"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+          <display value="ACHDaily, InfluenzaTherapeutic"/>
+        </subject>
+        <period>
+          <start value="2024-01-01T08:00:00Z"/>
+          <end value="2024-01-04T12:00:00Z"/>
+        </period>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="274640006"/>
+            <display value="Fever with chills"/>
+          </coding>
+          <text value="Fever with chills"/>
+        </reasonCode>
+        <hospitalization>
+          <admitSource>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+              <code value="gp"/>
+              <display value="General Practitioner referral"/>
+            </coding>
+            <text value="Direct admission from doctor's office (in same system)"/>
+          </admitSource>
+          <dischargeDisposition>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+              <code value="home"/>
+              <display value="Home"/>
+            </coding>
+            <text value="Home"/>
+          </dischargeDisposition>
+        </hospitalization>
+        <location>
+          <location>
+            <reference value="Location/location-example-ach-daily-emergency"/>
+            <display value="EMERGENCY - PAVILION"/>
+          </location>
+          <period>
+            <start value="2024-01-14T08:00:00Z"/>
+            <end value="2024-01-22T12:00:00Z"/>
+          </period>
+        </location>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Coverage/coverage-example-ach-daily-influenzatherapeutic"/>
+    <resource>
+      <Coverage>
+        <id value="coverage-example-ach-daily-influenzatherapeutic"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Coverage_coverage-example-ach-daily-influenzatherapeutic"> </a><p class="res-header-id"><b>Generated Narrative: Coverage coverage-example-ach-daily-influenzatherapeutic</b></p><a name="coverage-example-ach-daily-influenzatherapeutic"> </a><a name="hccoverage-example-ach-daily-influenzatherapeutic"> </a><p><b>identifier</b>: Member Number/88800933501</p><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PPO}">PPO</span></p><p><b>subscriberId</b>: 123456789</p><p><b>beneficiary</b>: <a href="Patient-patient-example-ach-daily-influenzatherapeutic.html">ACHDaily InfluenzaTherapeutic(official) Male, DoB: 2020-02-29 ( MRN: 1000009001 (use: usual, ))</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span></p><p><b>period</b>: 2023-01-01 --&gt; (ongoing)</p><p><b>payor</b>: United Healthcare</p><h3>Classes</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value</b></td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/coverage-class group}">PPO</span></td><td>United Healthcare</td><td>United Healthcare</td></tr></table></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MB"/>
+              <display value="Member Number"/>
+            </coding>
+          </type>
+          <system value="http://example.org/fhir/memberidentifier"/>
+          <value value="88800933501"/>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <version value="9.0.0"/>
+            <code value="PPO"/>
+            <display value="preferred provider organization policy"/>
+          </coding>
+          <text value="PPO"/>
+        </type>
+        <subscriberId value="123456789"/>
+        <beneficiary>
+          <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+        </beneficiary>
+        <relationship>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+            <code value="self"/>
+          </coding>
+          <text value="Self"/>
+        </relationship>
+        <period>
+          <start value="2023-01-01"/>
+        </period>
+        <payor>
+          <display value="United Healthcare"/>
+        </payor>
+        <class>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
+              <code value="group"/>
+              <display value="Group"/>
+            </coding>
+            <text value="PPO"/>
+          </type>
+          <value value="United Healthcare"/>
+          <name value="United Healthcare"/>
+        </class>
+      </Coverage>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Condition/condition-example-diagnosis-ach-daily-influenzatherapeutic"/>
+    <resource>
+      <Condition>
+        <id value="condition-example-diagnosis-ach-daily-influenzatherapeutic"/>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-example-diagnosis-ach-daily-influenzatherapeutic"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-example-diagnosis-ach-daily-influenzatherapeutic</b></p><a name="condition-example-diagnosis-ach-daily-influenzatherapeutic"> </a><a name="hccondition-example-diagnosis-ach-daily-influenzatherapeutic"> </a><p><b>Original Resource ID</b>: eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm J09.X}">Influenza Type A</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-influenzatherapeutic.html">ACHDaily, InfluenzaTherapeutic</a></p><p><b>encounter</b>: Inpatient</p></div>
+        </text>
+        <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension">
+          <valueString value="eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3"/>
+        </extension>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <version value="4.0.0"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </coding>
+          <text value="Encounter Diagnosis"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="J09.X"/>
+            <display value="Influenza due to identified novel influenza A virus"/>
+          </coding>
+          <text value="Influenza Type A"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+          <display value="ACHDaily, InfluenzaTherapeutic"/>
+        </subject>
+        <encounter>
+          <display value="Inpatient"/>
+        </encounter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-daily-influenzatherapeutic"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-daily-influenzatherapeutic"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-daily-influenzatherapeutic"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-daily-influenzatherapeutic</b></p><a name="medadmin-example-ach-daily-influenzatherapeutic"> </a><a name="hcmedadmin-example-ach-daily-influenzatherapeutic"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-medicationadministration.html">ACH Daily Event Medication Administration</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href="Medication-medication-example-ach-daily-influenzatherapeutic.html">Oseltamivir 60 mg PO</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-influenzatherapeutic.html">ACHDaily, InfluenzaTherapeutic</a></p><p><b>effective</b>: 2024-01-01 20:00:00+0000 --&gt; 2024-01-04 20:00:09+0000</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-daily-influenzatherapeutic.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002 (use: usual, ); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Oseltamivir 60 mg; authoredOn = 2024-01-01 11:45:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>Oseltamivir 60 mg PO twice daily x 5 days</td><td><span title="Codes:{http://snomed.info/sct 385049006}">Capsule</span></td><td>60 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>
+        </text>
+        <status value="completed"/>
+        <medicationReference>
+          <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension">
+            <valueString value="Medication/eZeW55xkBH0DrR0Xj004fNid0iluLJl6nT2adScy2TI9SbXSOBJPdED7Qjms.Fj48j0.MQxtisgjhubwnqaIImzMAo7axKzx4khlfA7xEkUU3"/>
+          </extension>
+          <reference value="Medication/medication-example-ach-daily-influenzatherapeutic"/>
+          <display value="Oseltamivir 60 mg PO"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+          <display value="ACHDaily, InfluenzaTherapeutic"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2024-01-01T20:00:00Z"/>
+          <end value="2024-01-04T20:00:09Z"/>
+        </effectivePeriod>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-daily-influenzatherapeutic"/>
+        </request>
+        <dosage>
+          <text value="Oseltamivir 60 mg PO twice daily x 5 days"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="385049006"/>
+              <display value="Capsule"/>
+            </coding>
+          </route>
+          <dose>
+            <value value="60"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-daily-influenzatherapeutic"/>
+    <resource>
+      <MedicationRequest>
+        <id value="medicationrequest-example-ach-daily-influenzatherapeutic"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_medicationrequest-example-ach-daily-influenzatherapeutic"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-daily-influenzatherapeutic</b></p><a name="medicationrequest-example-ach-daily-influenzatherapeutic"> </a><a name="hcmedicationrequest-example-ach-daily-influenzatherapeutic"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-medicationrequest.html">ACH Daily Event Medication Request</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101903002 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient</span></p><p><b>medication</b>: <a href="Medication-medication-example-ach-daily-influenzatherapeutic.html">Oseltamivir 60 mg</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-influenzatherapeutic.html">ACHDaily, InfluenzaTherapeutic</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-daily-influenzatherapeutic.html">Hospital Encounter</a></p><p><b>authoredOn</b>: 2024-01-01 11:45:15+0000</p><p><b>requester</b>: Faculty Physician Um_Cln, MD</p><p><b>recorder</b>: Faculty Physician Um_Cln, MD</p><p><b>courseOfTherapyType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy acute}">Short course (acute) therapy</span></p><h3>DosageInstructions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>AsNeeded[x]</b></td><td><b>Route</b></td></tr><tr><td style="display: none">*</td><td>Oseltamivir 60 mg PO twice daily x 5 days</td><td>Code , 2 per 5 days</td><td>false</td><td><span title="Codes:{http://snomed.info/sct 26643006}">Oral use</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101903002"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="order"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-ach-daily-influenzatherapeutic"/>
+          <display value="Oseltamivir 60 mg"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+          <display value="ACHDaily, InfluenzaTherapeutic"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-daily-influenzatherapeutic"/>
+          <display value="Hospital Encounter"/>
+        </encounter>
+        <authoredOn value="2024-01-01T11:45:15Z"/>
+        <requester>
+          <type value="Practitioner"/>
+          <display value="Faculty Physician Um_Cln, MD"/>
+        </requester>
+        <recorder>
+          <type value="Practitioner"/>
+          <display value="Faculty Physician Um_Cln, MD"/>
+        </recorder>
+        <courseOfTherapyType>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+            <code value="acute"/>
+            <display value="Short course (acute) therapy"/>
+          </coding>
+          <text value="Short course (acute) therapy"/>
+        </courseOfTherapyType>
+        <dosageInstruction>
+          <text value="Oseltamivir 60 mg PO twice daily x 5 days"/>
+          <timing>
+            <repeat>
+              <boundsPeriod>
+                <start value="2024-01-01T12:30:15Z"/>
+                <end value="2024-01-06T12:30:15Z"/>
+              </boundsPeriod>
+              <frequency value="2"/>
+              <period value="5"/>
+              <periodUnit value="d"/>
+            </repeat>
+            <code>
+              <text value="Oseltamivir 60 mg PO twice daily x 5 days"/>
+            </code>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral use"/>
+            </coding>
+            <text value="Oral use"/>
+          </route>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Immunization/immunization-example-ach-daily-influenzatherapeutic"/>
+    <resource>
+      <Immunization>
+        <id value="immunization-example-ach-daily-influenzatherapeutic"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Immunization_immunization-example-ach-daily-influenzatherapeutic"> </a><p class="res-header-id"><b>Generated Narrative: Immunization immunization-example-ach-daily-influenzatherapeutic</b></p><a name="immunization-example-ach-daily-influenzatherapeutic"> </a><a name="hcimmunization-example-ach-daily-influenzatherapeutic"> </a><p><b>identifier</b>: <a href="http://terminology.hl7.org/5.0.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">URI</a>/urn:oid:1.3.6.1.4.1.21367.2005.3.7.1234</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{urn:oid:1.2.36.1.2001.1005.17 FLUVAX}">Fluvax</span></p><p><b>patient</b>: <a href="Patient-patient-example-ach-daily-influenzatherapeutic.html">ACHDaily InfluenzaTherapeutic(official) Male, DoB: 2020-02-29 ( MRN: 1000009001 (use: usual, ))</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-daily-influenzatherapeutic.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987 (use: usual, ); status = finished; class = Inpatient Acute (ActCode[9.0.0]#ACUTE); type = Emergency hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-04 12:00:00+0000; reasonCode = Fever with chills</a></p><p><b>occurrence</b>: 2024-01-02</p><p><b>primarySource</b>: true</p><p><b>lotNumber</b>: AAJN11K</p><p><b>expirationDate</b>: 2025-02-15</p><p><b>doseQuantity</b>: 5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p><p><b>note</b>: </p><blockquote><div><p>Notes on administration of vaccine</p>
+</div></blockquote><p><b>isSubpotent</b>: true</p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:1.3.6.1.4.1.21367.2005.3.7.1234"/>
+        </identifier>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="urn:oid:1.2.36.1.2001.1005.17"/>
+            <code value="FLUVAX"/>
+          </coding>
+          <text value="Fluvax"/>
+        </vaccineCode>
+        <patient>
+          <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+        </patient>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-daily-influenzatherapeutic"/>
+        </encounter>
+        <occurrenceDateTime value="2024-01-02"/>
+        <primarySource value="true"/>
+        <lotNumber value="AAJN11K"/>
+        <expirationDate value="2025-02-15"/>
+        <doseQuantity>
+          <value value="5"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="mg"/>
+        </doseQuantity>
+        <note>
+          <text value="Notes on administration of vaccine"/>
+        </note>
+        <isSubpotent value="true"/>
+      </Immunization>
+    </resource>
+  </entry>
+</Bundle>

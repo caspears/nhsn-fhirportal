@@ -1,0 +1,78 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "medicationrequest-example-ach-monthly-pass2-dex4-tablet",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-monthly-pass2-dex4-tablet</b></p><a name=\"medicationrequest-example-ach-monthly-pass2-dex4-tablet\"> </a><a name=\"hcmedicationrequest-example-ach-monthly-pass2-dex4-tablet\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-medicationrequest.html\">ACH Monthly Event MedicationRequest</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888892\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category outpatient}\">Outpatient</span></p><p><b>reported</b>: true</p><p><b>medication</b>: <a href=\"Medication-medication-example-dex4-tablet.html\">Dex4 4 gm chewable tablet X1</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass2.html\">Pass2 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass2-emergency.html\">Emergency Encounter</a></p><p><b>authoredOn</b>: 2024-01-31 04:46:00-0500</p><p><b>requester</b>: <a href=\"Patient-patient-example-ach-monthly-pass2.html\">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN:\u00a01601191902010308\u00a0(use:\u00a0usual,\u00a0))</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 4 gm chewable tablet X1</p><p><b>timing</b>: Once per 1 day</p><p><b>asNeeded</b>: false</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type calculated}\">calculated</span></td><td>4 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></td></tr></table></blockquote></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+    "value" : "101888892"
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+      "code" : "outpatient",
+      "display" : "Outpatient"
+    }],
+    "text" : "Outpatient"
+  }],
+  "reportedBoolean" : true,
+  "medicationReference" : {
+    "reference" : "Medication/medication-example-dex4-tablet",
+    "display" : "Dex4 4 gm chewable tablet X1"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass2",
+    "display" : "Pass2 ACH"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example-ach-monthly-pass2-emergency",
+    "display" : "Emergency Encounter"
+  },
+  "authoredOn" : "2024-01-31T04:46:00-05:00",
+  "requester" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass2"
+  },
+  "dosageInstruction" : [{
+    "text" : "4 gm chewable tablet X1",
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "asNeededBoolean" : false,
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "26643006",
+        "display" : "Oral Use"
+      }],
+      "text" : "Oral"
+    },
+    "doseAndRate" : [{
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+          "code" : "calculated",
+          "display" : "Calculated"
+        }],
+        "text" : "calculated"
+      },
+      "doseQuantity" : {
+        "value" : 4,
+        "unit" : "g",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g"
+      }
+    }]
+  }]
+}

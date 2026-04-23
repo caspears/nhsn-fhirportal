@@ -1,0 +1,2814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifact Listing - CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fhir-nhsn.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://www.cdc.gov/nhsn/index.html"><img alt="Visit the National Healthcare Safety Network website" src="assets\images\nhsn.png" width="137" height="50" />
+    <!--<img height="50" alt="Visit the National Healthcare Safety Network website" src="https://www.lantanagroup.com/wp-content/uploads/logo-transparent.png" width="190" height="42" /> --></a>
+</div>
+<!-- TODO: Push this into the base template, but it requires a "trusted" template -->
+<script type="text/javascript" src="cql.js"> </script>
+<img src="assets\images\header_top.png" width="100%" />
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - Release 1
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="use_cases.html">Actors and Use Cases</a>
+  </li>
+  <li>
+    <a href="validation-pre-qualification.html">Validation and Pre-Qualification</a>
+  </li>
+  <li>
+    <a href="specification.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifact-listing.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="license.html">License</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core IG 3.1.1</a>
+      </li>
+      <li>
+        <a href="https://www.fhir.org/guides/cqf/common/">Clinical Quality Framework</a>
+      </li>
+      <li>
+        <a href="https://hl7.org/fhir/us/davinci-deqm/STU3.1/index.html">Da Vinci DEQM IG 3.1</a>
+      </li>
+      <li>
+        <a href="https://hl7.org/fhir/us/qicore/STU4.1.1/">QI Core IG 4.1.1</a>
+      </li>
+      <li>
+        <a href="http://cql.hl7.org/index.html">CQL Spec</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/uv/cpg">FHIR Clinical Guidelines</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifact Listing</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:black;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:black;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:black;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:black;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:black;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. The current version which supersedes this version is <a data-no-external="true" href="http://www.cdc.gov/nhsn/fhirportal/dqm/ig">2.0.0</a>.  For a full list of available versions, see the <a data-no-external="true" href="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifact Listing</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#current-nhsn-report-submissions" id="markdown-toc-current-nhsn-report-submissions">Current NHSN Report Submissions</a></li>
+  <li><a href="#cross-measure-profiles" id="markdown-toc-cross-measure-profiles">Cross-Measure Profiles</a></li>
+  <li><a href="#acute-care-hospital-ach-monthly-reporting-profiles" id="markdown-toc-acute-care-hospital-ach-monthly-reporting-profiles">Acute Care Hospital (ACH) Monthly Reporting Profiles</a></li>
+  <li><a href="#ach-daily-event-reporting-profiles" id="markdown-toc-ach-daily-event-reporting-profiles">ACH Daily Event Reporting Profiles</a></li>
+  <li><a href="#terminology-profile-valuesets" id="markdown-toc-terminology-profile-valuesets">Terminology: Profile ValueSets</a></li>
+  <li><a href="#knowledge-artifacts-digital-quality-measures" id="markdown-toc-knowledge-artifacts-digital-quality-measures">Knowledge Artifacts: Digital Quality Measures</a></li>
+  <li><a href="#knowledge-artifacts-measure-libraries" id="markdown-toc-knowledge-artifacts-measure-libraries">Knowledge Artifacts: Measure Libraries</a></li>
+  <li><a href="#knowledge-artifacts-helper-and-external-libraries" id="markdown-toc-knowledge-artifacts-helper-and-external-libraries">Knowledge Artifacts: Helper and External Libraries</a></li>
+  <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a></li>
+  <li><a href="#cqf-tooling-extensions" id="markdown-toc-cqf-tooling-extensions">CQF Tooling Extensions</a></li>
+  <li><a href="#examples-ach-monthly-submission-instances" id="markdown-toc-examples-ach-monthly-submission-instances">Examples: ACH Monthly Submission Instances</a></li>
+  <li><a href="#examples-ach-daily-submission-instances" id="markdown-toc-examples-ach-daily-submission-instances">Examples: ACH Daily Submission Instances</a></li>
+</ul>
+
+</div>
+
+<p>This page provides an organized list of the primary Fast Healthcare Interoperability Resources (FHIR) artifacts defined as part of this implementation guide.</p>
+
+<!-- Taken from xslt - If there is a description in the group, then show the descriptions table column. Not sure if this is needed
+<xsl:variable name="showDescriptions" select="count(parent::f:definition/f:resource[f:groupingId/@value=current()/@id]/f:description/@value)!=0"/> -->
+
+<h3 id="current-nhsn-report-submissions">Current NHSN Report Submissions</h3>
+
+<p><p><strong>Note:</strong> By default, a modifier extension may not be included in Report Submission Bundle data for NHSN until NHSN accepts the meaning of the said. See <a href="https://build.fhir.org/extensibility.html#modifierExtension">Modifier Extensions</a> for additional information.</p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-nhsn-measurereport-bundle.html">NHSN MeasureReport Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile defines a valid Submission Bundle to NHSN with all resources contained within. The Bundle is comprised of entry slices representing the data source Organization, a Patients of Interest (POI) List, one Subject List MeasureReport per reportable measure, an Individual MeasureReport List, individual MeasureReports, and the underlying patient-centric clinical information.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-nhsn-submission-header-bundle.html">NHSN Submission Header Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile defines a valid Submission Header Bundle. The Bundle is comprised of entry slices representing a Patient, individual MeasureReports, and the underlying patient-centric clinical information.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-nhsn-subject-bundle.html">NHSN Subject Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile defines a valid subject-specific dQM Bundle. The Bundle is comprised of entry slices representing a Patient, individual MeasureReports, and the underlying patient-centric clinical information.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-subjectlist-measurereport.html">Subject-List MeasureReport Profile</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>A Subject-List MeasureReport contains the count of subjects (i.e. patients) in the Initial Population. It also references the Individual MeasureReport List.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ip-measurereport-list.html">NHSN Individual MeasureReport List</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>An Individual MeasureReport List contains references to all Individual MeasureReports for a given NHSN measure; each MeasureReport pertains to an individual patient within the Initial Population of a given measure.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-poi-list.html">Patients-Of-Interest List</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>A Patients of Interest List defines all individual Patients considered for inclusion in NHSN Measure reporting.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="cross-measure-profiles">Cross-Measure Profiles</h3>
+
+<p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-cross-measure-patient.html">Cross-Measure Patient Profile</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains NHSN-specific Required and Must-Support elements for reporting Patient information on public-health surveillance measures to <a href="https://www.cdc.gov/nhsn/index.html">NHSN</a>.</p>
+
+<p>This profile is based on <a href="https://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html">US Core Patient 3.1.1</a>.</p>
+
+<p>NHSN only recognizes the data element 'sex', with male and female as the only accepted responses. These data are mapped from either the patient.extension (birthsex), or patient.gender FHIR standard data elements. These two FHIR standard data elements provide male/female options, per US Core 3.1.1.</p>
+
+<p>For data submitted for patient.gender, and/or patient.extension (birthsex) that do not align with male or female, NHSN will label those responses as not reported. As national standards update, this resource will also be updated.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-nhsn-submitting-organization.html">NHSN Submitting Organization</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile includes the name and identifier of the organization submitting the report Bundle, and may include other information about the organization.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-nhsn-submitting-device.html">NHSN Submitting Device</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile includes the name and version of the device or software submitting the report Bundle, and may include other information about the device.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="acute-care-hospital-ach-monthly-reporting-profiles">Acute Care Hospital (ACH) Monthly Reporting Profiles</h3>
+
+<p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-encounter.html">ACH Monthly Event Encounter</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting encounter information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-encounter.html">HL7 FHIR® US Core Encounter Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-location.html">ACH Monthly Event Location</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting location information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-location.html">HL7 FHIR® US Core Location Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-observation-lab.html">ACH Monthly Event Lab Result Observation</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting laboratory result information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-observation-lab.html">HL7 FHIR® US Core Lab Observation Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-observation-vitals.html">ACH Monthly Event Observation - Vital Signs</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting observation-vital signs information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="https://hl7.org/fhir/R4/vitalsigns.html">HL7 FHIR® R4 Observation Vital Signs Profile v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-observation.html">ACH Monthly Event Observation</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting observation information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-observation-lab.html">HL7 FHIR® R4 Observation Resource v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-servicerequest.html">ACH Monthly Event ServiceRequest</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting order information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/R4/servicerequest.html">HL7 FHIR® R4 ServiceRequest Profile v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-specimen.html">ACH Monthly Event Specimen</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting specimen information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/R4/specimen.html">HL7 FHIR® R4 Specimen Profile v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-condition.html">ACH Monthly Event Condition</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting patient condition information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-condition.html">HL7 FHIR® US Core Condition Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-procedure.html">ACH Monthly Event Procedure</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting procedure information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/R4/servicerequest.html">HL7 FHIR® US Core Procedure Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-coverage.html">ACH Monthly Event Coverage</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting coverage information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/R4/coverage.html">HL7 FHIR® R4 Coverage Profile v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-device.html">ACH Monthly Event Device</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting device information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile covers both implantable and other types of devices and is based on the <a href="https://hl7.org/fhir/R4/device.html">HL7 FHIR® R4 Device Resource v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-diagnosticreport.html">ACH Monthly Event General Diagnostic Report</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting general diagnostic report information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="https://hl7.org/fhir/R4/diagnosticreport.html">HL7 FHIR® R4 DiagnosticReport Resource v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-diagnosticreport-lab.html">ACH Monthly Event Diagnostic Report (Lab)</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting diagnostic report lab information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-diagnosticreport-lab.html">HL7 FHIR® US Core Diagnostic Report - Lab Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-diagnosticreport-note.html">ACH Monthly Event Diagnostic Report - Report and Note</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting diagnostic report- report and note information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="https://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-diagnosticreport-note.html">HL7 FHIR® US Core Diagnostic Report - Report and Note Exchange</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-medication.html">ACH Monthly Event Medication</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting medication information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-medication.html">HL7 FHIR® US Core Medication Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting medication administration information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/R4/medicationadministration.html">HL7 FHIR® R4 MedicationAdministration Resource v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-monthly-medicationrequest.html">ACH Monthly Event MedicationRequest</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting medication request (order) information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-medicationrequest.html">HL7 FHIR® US Core MedicationRequest Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="ach-daily-event-reporting-profiles">ACH Daily Event Reporting Profiles</h3>
+
+<p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-encounter.html">ACH Daily Event Encounter</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting encounter information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-encounter.html">HL7 FHIR® US Core Encounter Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-location.html">ACH Daily Event Location</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting location information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-location.html">HL7 FHIR® US Core Location Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-observation-lab.html">ACH Daily Event Lab Result Observation</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting COVID-19, Influenza, and Respiratory Syncytial Virus (RSV) Daily laboratory result information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-observation-lab.html">HL7 FHIR® US Core Laboratory Result Observation Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-servicerequest.html">ACH Daily Event ServiceRequest</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting COVID-19, Influenza, and Respiratory Syncytial Virus (RSV) laboratory order information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/R4/servicerequest.html">HL7 FHIR R4 ServiceRequest Resource v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-specimen.html">ACH Daily Event Specimen</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting COVID-19, Influenza, and Respiratory Syncytial Virus (RSV) specimen information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/R4/specimen.html">HL7 FHIR R4 Specimen Resource v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-procedure.html">ACH Daily Event Procedure</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting transmission-based precaution procedure information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-procedure.html">HL7 FHIR® US Core Procedure Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-diagnosticreport-lab.html">ACH Daily Event Diagnostic Report (Lab)</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting diagnostic report lab information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-diagnosticreport-lab.html">HL7 FHIR® US Core Diagnostic Report - Lab Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-medication.html">ACH Daily Event Medication</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting medication information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-medication.html">HL7 FHIR® US Core Medication Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-medicationadministration.html">ACH Daily Event Medication Administration</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting medication administration information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/R4/medicationadministration.html">HL7 FHIR R4 MedicationAdministration Resource v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-medicationrequest.html">ACH Daily Event Medication Request</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting medication request (order) information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-medicationrequest.html">HL7 FHIR® US Core MedicationRequest Profile v3.1.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-ach-daily-observation.html">ACH Daily Event Observation</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This profile contains Required and Must Support data elements for reporting observation information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the <a href="https://hl7.org/fhir/R4/observation.html">HL7 FHIR® R4 Observation Resource v4.0.1</a>.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="terminology-profile-valuesets">Terminology: Profile ValueSets</h3>
+
+<p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="ValueSet-ach-monthly-encounter-status.html">ACH Monthly Encounter Status ValueSet</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>A set of codes indicating the status of the encounter.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="ValueSet-ach-monthly-encounter-class.html">ACH Monthly Encounter Class ValueSet</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>A set of codes indicating the encounter class that represent inpatient, emergency, observation and short stay concepts.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="ValueSet-ach-daily-diagnostic-report-status.html">ACH Daily Diagnostic Report Status ValueSet</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>A set of codes indicating the status of the diagnostic report.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="ValueSet-ach-daily-encounter-status.html">ACH Daily Encounter Status ValueSet</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>A set of codes indicating the status of the encounter.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="ValueSet-ach-daily-encounter-class.html">ACH Daily Encounter Class ValueSet</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>A set of codes indicating the encounter class that represent inpatient, observation and short stay concepts.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="knowledge-artifacts-digital-quality-measures">Knowledge Artifacts: Digital Quality Measures</h3>
+
+<p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.html">NHSN ACH Monthly Initial Population Measure</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>The ACH Monthly Initial Population includes all encounters for patients of any age in an emergency department (ED), observation, or inpatient location or all encounters for patients of any age with an ED, observation, inpatient, or short stay status during the measurement period.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Measure-NHSNAcuteCareHospitalDailyInitialPopulation.html">NHSN ACH Daily Initial Population Measure</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>All encounters with an inpatient, observation, or short stay status for patients of any age during the measurement period.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="knowledge-artifacts-measure-libraries">Knowledge Artifacts: Measure Libraries</h3>
+
+<p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Library-NHSNAcuteCareHospitalMonthlyInitialPopulation.html">NHSN ACH Monthly Initial Population Library</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Library of NHSN dQM ACH Monthly Initial Population Measure</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Library-NHSNAcuteCareHospitalDailyInitialPopulation.html">NHSN ACH Daily Initial Population Library</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Library of NHSN ACH Daily Initial Population Measure</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="knowledge-artifacts-helper-and-external-libraries">Knowledge Artifacts: Helper and External Libraries</h3>
+
+<p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Library-SharedResourceCreation.html">Shared Resource Creation</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>A library used to remove data elements from FHIR resources that are deemed unnecessary and/or unwanted by NHSN.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Library-NHSNHelpers.html">NHSN Helpers</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This library is a collection of commonly used functions from various third party libraries and other created functions for use within the NHSN Measures.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Library-FHIRHelpers.html">FHIR Helpers</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This library defines functions to convert between FHIR data types and CQL system-defined types, as well as functions to support FHIRPath implementation. For more information, the FHIRHelpers wiki page: https://github.com/cqframework/clinical_quality_language/wiki/FHIRHelpers</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="extensions">Extensions</h3>
+
+<p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-link-received-date-extension.html">Received Date</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This extension stores the date and time a Resource was received by the processing system (e.g. NHSNLink).</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-link-patient-list-applicable-period-extension.html">Patient List Applicable Period</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>An extension used to indicate the reporting period associated with the patients of interest List.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-link-original-resource-id-extension.html">Original Resource ID</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This extension stores the original {Resource}.id of a source that was modified by a processing system (e.g. NHSNLink) to make it usable for NHSN when the original did not meet FHIR-standard requirements. Resource IDs that are more than 64 characters long are not valid per the FHIR specification and must be modified.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-link-original-element-value-extension.html">Original Element Value</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This extension stores the original value of an element from a source that was modified by a processing system (e.g., NHSNLink) to make it usable for NHSN. Modification may include changing logically invalid data, changing data that does not match specification requirements (this modification is used sparingly, for specific instances only), or normalizing data.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-link-original-mapped-concept-extension.html">Original Mapped Concept</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This extension stores an original Concept that was mapped during processing.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="cqf-tooling-extensions">CQF Tooling Extensions</h3>
+
+<p><p>Externally defined extentions that have not been published.</p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-extension-MeasureReport.supplementalDataElement.reference.html">Measure Report Supplemental Data Element Reference (R5 surrogate extension)</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This extension is not defined by this IG. CQF Tooling uses this extension, but the extension is yet unpublished.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-extension-criteriaReference.html">Measure Report Criteria Reference (R5 surrogate extension)</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>This extension is not defined by this IG. CQF Tooling uses this extension, but the extension is yet unpublished.</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="examples-ach-monthly-submission-instances">Examples: ACH Monthly Submission Instances</h3>
+
+<p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-submission-full-example1.html">Full ACH Monthly Measure Submission Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Measure Bundle - Full ACH Monthly Measure Submission Example</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-bundle-example-ach-monthly-header.html">Example ACH Monthly Submission Header Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Example Separated ACH Monthly Submission Header Bundle</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-bundle-example-ach-monthly-subject-ach-pass1.html">Example ACH Monthly Submission Subject Bundle 1</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Example Separated ACH Monthly Submission Subject Bundle 1 for LOS/MEN</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-bundle-example-ach-monthly-subject-ach-pass2.html">Example ACH Monthly Submission Subject Bundle 2</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Example Separated ACH Monthly Submission Subject Bundle 2 for Hypoglycemia and VTE</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-bundle-example-ach-monthly-subject-ach-pass3.html">Example ACH Monthly Submission Subject Bundle 3</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Example Separated ACH Monthly Submission Subject Bundle 3 for CDI and VTE</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="examples-ach-daily-submission-instances">Examples: ACH Daily Submission Instances</h3>
+
+<p>
+</p>
+<table class="grid">
+  <col style="width:20%" />
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-bundle-example-ach-daily-full.html">Full ACH Daily Measure Submission Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Measure Bundle - Full ACH Daily Measure Submission Example</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-bundle-example-ach-daily-header.html">Example ACH Daily Submission Header Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Example Separated ACH Daily Submission Header Bundle</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-bundle-example-ach-daily-subject-initialpopulationpass.html">Example ACH Daily Submission Initial Population Pass Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Example Separated ACH Daily Submission Initial Population Pass Bundle</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-bundle-example-ach-daily-subject-negativepcr.html">Example ACH Daily Submission Negative PCR Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Example Separated ACH Daily Submission Negative PCR Bundle</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-bundle-example-ach-daily-subject-influenzatherapeutic.html">Example ACH Daily Submission Influenza Therapeutic Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Example Separated ACH Daily Submission Influenza Therapeutic Bundle</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <!-- Get the resource information -->
+    <tr>
+      <td style="column-width:30%">
+        <a href="Bundle-bundle-example-ach-daily-subject-rsvlabbtg.html">Example ACH Daily Submission RSV Lab BTG Bundle</a>
+      </td>
+      <!-- 
+      <xsl:if test="$showDescriptions">-->
+        <td>
+          <p>Example Separated ACH Daily Submission RSV Lab BTG Bundle</p>
+
+          <!-- may need to pull descriptions of non-sd artifacts from the IG resource, but where can I get that? -->
+        </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<!--
+<h2>All</h2>
+
+  artifact-grouping
+
+  artifacts
+
+  canonicals
+
+  fhir
+
+  info
+
+  languages
+
+  pages
+
+  questionnaires
+
+  related
+
+  resources
+
+  structuredefinitions
+
+<h2>Info</h2>
+
+  releaselabel
+
+  copyrightyear
+
+  shownav
+
+  excludexml
+
+  excludejson
+
+  excludettl
+
+  excludelogbinaryformat
+
+  excludemap
+
+  fcpspec
+
+  fmm-definition
+
+<h2>Artifacts</h2>
+
+  ValueSet-ach-daily-diagnostic-report-status.html
+
+  ValueSet-ach-daily-encounter-class.html
+
+  ValueSet-ach-daily-encounter-status.html
+
+  StructureDefinition-ach-daily-diagnosticreport-lab.html
+
+  StructureDefinition-ach-daily-encounter.html
+
+  StructureDefinition-ach-daily-observation-lab.html
+
+  StructureDefinition-ach-daily-location.html
+
+  StructureDefinition-ach-daily-medication.html
+
+  StructureDefinition-ach-daily-medicationadministration.html
+
+  StructureDefinition-ach-daily-medicationrequest.html
+
+  StructureDefinition-ach-daily-observation.html
+
+  StructureDefinition-ach-daily-procedure.html
+
+  StructureDefinition-ach-daily-servicerequest.html
+
+  StructureDefinition-ach-daily-specimen.html
+
+  ValueSet-ach-monthly-encounter-class.html
+
+  ValueSet-ach-monthly-encounter-status.html
+
+  StructureDefinition-ach-monthly-condition.html
+
+  StructureDefinition-ach-monthly-coverage.html
+
+  StructureDefinition-ach-monthly-device.html
+
+  StructureDefinition-ach-monthly-diagnosticreport-lab.html
+
+  StructureDefinition-ach-monthly-diagnosticreport-note.html
+
+  StructureDefinition-ach-monthly-encounter.html
+
+  StructureDefinition-ach-monthly-diagnosticreport.html
+
+  StructureDefinition-ach-monthly-observation-lab.html
+
+  StructureDefinition-ach-monthly-location.html
+
+  StructureDefinition-ach-monthly-medication.html
+
+  StructureDefinition-ach-monthly-medicationadministration.html
+
+  StructureDefinition-ach-monthly-medicationrequest.html
+
+  StructureDefinition-ach-monthly-observation.html
+
+  StructureDefinition-ach-monthly-observation-vitals.html
+
+  StructureDefinition-ach-monthly-procedure.html
+
+  StructureDefinition-ach-monthly-servicerequest.html
+
+  StructureDefinition-ach-monthly-specimen.html
+
+  Condition-condition-example-diagnosis-ach-daily-influenzatherapeutic.html
+
+  Condition-condition-example-diagnosis-ach-daily-initialpopulationpass.html
+
+  Condition-condition-example-diagnosis-ach-daily-negativepcr.html
+
+  Condition-condition-example-diagnosis-ach-daily-rsvlabbtg.html
+
+  Condition-condition-example-diagnosis-ach-monthly-pass1.html
+
+  Condition-condition-example-diagnosis-ach-monthly-pass2.html
+
+  Condition-condition-example-diagnosis-ach-monthly-pass2-problem.html
+
+  Condition-condition-example-diagnosis-ach-monthly-pass3.html
+
+  Condition-condition-example-diagnosis-ach-monthly-pass3-problem.html
+
+  Coverage-coverage-example-ach-daily-influenzatherapeutic.html
+
+  Coverage-coverage-example-ach-daily-initialpopulationpass.html
+
+  Coverage-coverage-example-ach-daily-negativepcr.html
+
+  Coverage-coverage-example-ach-daily-rsvlabbtg.html
+
+  Coverage-coverage-example-ach-monthly-pass1.html
+
+  Coverage-coverage-example-ach-monthly-pass2.html
+
+  Coverage-coverage-example-ach-monthly-pass3.html
+
+  Device-cqf-tooling.html
+
+  StructureDefinition-cross-measure-patient.html
+
+  Device-device-example-ach-monthly-pass1-central-line.html
+
+  Device-device-example-ach-monthly-pass2-compress-hose.html
+
+  Device-device-example-ach-monthly-pass3-ivcs-pump.html
+
+  Device-device-example-submitting-device.html
+
+  DiagnosticReport-diagnosticreport-example-ach-daily-initialpopulationpass.html
+
+  DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-lab-cbc.html
+
+  DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-cardiopulmonary.html
+
+  DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-radiology.html
+
+  Encounter-encounter-example-ach-daily-influenzatherapeutic.html
+
+  Encounter-encounter-example-ach-daily-initialpopulationpass-1.html
+
+  Encounter-encounter-example-ach-daily-initialpopulationpass-2.html
+
+  Encounter-encounter-example-ach-daily-negativepcr-1.html
+
+  Encounter-encounter-example-ach-daily-negativepcr-2.html
+
+  Encounter-encounter-example-ach-daily-rsvlabbtg.html
+
+  Encounter-encounter-example-ach-monthly-pass1.html
+
+  Encounter-encounter-example-ach-monthly-pass2-emergency.html
+
+  Encounter-encounter-example-ach-monthly-pass2-inpatient.html
+
+  Encounter-encounter-example-ach-monthly-pass3-acute.html
+
+  Encounter-encounter-example-ach-monthly-pass3-short-stay.html
+
+  Bundle-bundle-example-ach-daily-header.html
+
+  Bundle-bundle-example-ach-daily-subject-influenzatherapeutic.html
+
+  Bundle-bundle-example-ach-daily-subject-initialpopulationpass.html
+
+  Bundle-bundle-example-ach-daily-subject-negativepcr.html
+
+  Bundle-bundle-example-ach-daily-subject-rsvlabbtg.html
+
+  Bundle-bundle-example-ach-monthly-header.html
+
+  Bundle-bundle-example-ach-monthly-subject-ach-pass1.html
+
+  Bundle-bundle-example-ach-monthly-subject-ach-pass2.html
+
+  Bundle-bundle-example-ach-monthly-subject-ach-pass3.html
+
+  Library-FHIRHelpers.html
+
+  Bundle-bundle-example-ach-daily-full.html
+
+  Bundle-submission-full-example1.html
+
+  Immunization-immunization-example-ach-daily-influenzatherapeutic.html
+
+  Observation-lab-observation-example-ach-daily-initialpopulationpass.html
+
+  Observation-lab-observation-example-ach-daily-negativepcr-1.html
+
+  Observation-lab-observation-example-ach-daily-negativepcr-2.html
+
+  Observation-lab-observation-example-ach-daily-rsvlabbtg.html
+
+  List-list-example-ach-daily-individual-measurereport-list.html
+
+  List-list-example-ach-daily-patients-of-interest.html
+
+  List-list-example-ach-monthly-individual-measurereport-list.html
+
+  List-list-example-ach-monthly-patients-of-interest.html
+
+  Location-location-example-ach-monthly-crit-part.html
+
+  Location-location-example-ach-daily-emergency.html
+
+  Location-location-example-ach-daily-hospital.html
+
+  Location-location-example-ach-daily-inpatient.html
+
+  Location-location-example-ach-monthly-emergency.html
+
+  Location-location-example-ach-monthly-inpatient.html
+
+  Location-location-example-ach-monthly-crit.html
+
+  Location-location-example-ach-monthly-medsurg.html
+
+  Location-location-example-ach-monthly-nicu-level-iii.html
+
+  StructureDefinition-extension-criteriaReference.html
+
+  StructureDefinition-extension-MeasureReport.supplementalDataElement.reference.html
+
+  MeasureReport-measurereport-example-ach-daily-subjectlist.html
+
+  MeasureReport-measurereport-example-ach-monthly-subjectlist1.html
+
+  MeasureReport-measurereport-example-ach-daily-influenzatherapeutic.html
+
+  MeasureReport-measurereport-example-ach-daily-initialpopulationpass.html
+
+  MeasureReport-measurereport-example-ach-daily-negativepcr.html
+
+  MeasureReport-measurereport-example-ach-daily-rsvlabbtg.html
+
+  MeasureReport-measurereport-example-individual-ach-monthly-pass1.html
+
+  MeasureReport-measurereport-example-individual-ach-monthly-pass2.html
+
+  MeasureReport-measurereport-example-individual-ach-monthly-pass3.html
+
+  Medication-medication-example-ach-daily-influenzatherapeutic.html
+
+  Medication-medication-example-ach-daily-initialpopulationpass.html
+
+  Medication-medication-example-ach-daily-negativepcr.html
+
+  Medication-medication-example-ach-daily-rsvlabbtg-1.html
+
+  Medication-medication-example-ach-daily-rsvlabbtg-2.html
+
+  Medication-medication-example-cipro-500.html
+
+  Medication-medication-example-dex4-tablet.html
+
+  Medication-medication-example-enoxaparin.html
+
+  Medication-medication-example-heparin.html
+
+  Medication-medication-example-insulin-lispro.html
+
+  Medication-medication-example-metformin-1000.html
+
+  Medication-medication-example-metronidazole.html
+
+  Medication-medication-example-vancomycin-15.html
+
+  MedicationAdministration-medadmin-example-ach-daily-influenzatherapeutic.html
+
+  MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-1.html
+
+  MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-2.html
+
+  MedicationAdministration-medadmin-example-ach-daily-negativepcr.html
+
+  MedicationAdministration-medadmin-example-ach-daily-rsvlabbtg-1.html
+
+  MedicationAdministration-medadmin-example-ach-daily-rsvlabbtg-2.html
+
+  MedicationRequest-medicationrequest-example-ach-daily-influenzatherapeutic.html
+
+  MedicationRequest-medicationrequest-example-ach-daily-initialpopulationpass.html
+
+  MedicationRequest-medicationrequest-example-ach-daily-negativepcr.html
+
+  MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-1.html
+
+  MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-2.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass1-vancomycin.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass2-dex4.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass2-heparin-1.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass2-heparin-2.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-1.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-2.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-3.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-4.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass3-enoxaparin.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-1.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-2.html
+
+  MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-3.html
+
+  MedicationRequest-medicationrequest-example-ach-monthly-pass1-vancomycin.html
+
+  MedicationRequest-medicationrequest-example-ach-monthly-pass2-dex4-tablet.html
+
+  MedicationRequest-medicationrequest-example-ach-monthly-pass2-heparin.html
+
+  MedicationRequest-medicationrequest-example-ach-monthly-pass2-insulin-lispro.html
+
+  MedicationRequest-medicationrequest-example-ach-monthly-pass2-metformin.html
+
+  MedicationRequest-medicationrequest-example-ach-monthly-pass3-cipro.html
+
+  MedicationRequest-medicationrequest-example-ach-monthly-pass3-enoxaparin.html
+
+  MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole.html
+
+  Library-NHSNAcuteCareHospitalDailyInitialPopulation.html
+
+  Library-NHSNAcuteCareHospitalMonthlyInitialPopulation.html
+
+  Measure-NHSNAcuteCareHospitalDailyInitialPopulation.html
+
+  Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.html
+
+  Library-NHSNHelpers.html
+
+  StructureDefinition-ip-measurereport-list.html
+
+  StructureDefinition-nhsn-measurereport-bundle.html
+
+  StructureDefinition-nhsn-subject-bundle.html
+
+  StructureDefinition-nhsn-submission-header-bundle.html
+
+  StructureDefinition-nhsn-submitting-device.html
+
+  StructureDefinition-nhsn-submitting-organization.html
+
+  Observation-observation-example-ach-daily-initialpopulationpass-isolation.html
+
+  Observation-observation-example-ach-monthly-pass1-blood.html
+
+  Observation-observation-example-ach-monthly-pass1-csf.html
+
+  Observation-observation-example-ach-monthly-pass1-gestational-age.html
+
+  Observation-observation-example-ach-monthly-pass1-vitals-weight.html
+
+  Observation-observation-example-ach-monthly-pass2-aptt.html
+
+  Observation-observation-example-ach-monthly-pass2-hemo.html
+
+  Observation-observation-example-ach-monthly-pass2-hemo-a1c.html
+
+  Observation-observation-example-ach-monthly-pass2-poc-1.html
+
+  Observation-observation-example-ach-monthly-pass2-poc-2.html
+
+  Observation-observation-example-ach-monthly-pass2-vitals-weight.html
+
+  Observation-observation-example-ach-monthly-pass3-cdiff.html
+
+  Observation-observation-example-ach-monthly-pass3-vitals-height.html
+
+  Observation-observation-example-ach-monthly-pass3-vitals-weight.html
+
+  Organization-organization-example-submitting-organization.html
+
+  StructureDefinition-link-original-element-value-extension.html
+
+  StructureDefinition-link-original-mapped-concept-extension.html
+
+  StructureDefinition-link-original-resource-id-extension.html
+
+  Patient-patient-example-ach-daily-influenzatherapeutic.html
+
+  Patient-patient-example-ach-daily-initialpopulationpass.html
+
+  Patient-patient-example-ach-daily-negativepcr.html
+
+  Patient-patient-example-ach-daily-rsvlabbtg.html
+
+  Patient-patient-example-ach-monthly-pass1.html
+
+  Patient-patient-example-ach-monthly-pass2.html
+
+  Patient-patient-example-ach-monthly-pass3.html
+
+  StructureDefinition-link-patient-list-applicable-period-extension.html
+
+  StructureDefinition-poi-list.html
+
+  Procedure-procedure-example-ach-daily-negativepcr-intubation.html
+
+  Procedure-procedure-example-ach-monthly-pass1-central-line.html
+
+  Procedure-procedure-example-ach-monthly-pass1-lumbar.html
+
+  Procedure-procedure-example-ach-monthly-pass2-ivcf.html
+
+  Procedure-procedure-example-ach-monthly-pass3-transfusion.html
+
+  StructureDefinition-link-received-date-extension.html
+
+  ServiceRequest-servicerequest-example-ach-daily-initialpopulationpass-covid.html
+
+  ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-1.html
+
+  ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-2.html
+
+  ServiceRequest-servicerequest-example-ach-daily-rsvlabbtg-rsv.html
+
+  ServiceRequest-servicerequest-example-ach-monthly-pass1-blood.html
+
+  ServiceRequest-servicerequest-example-ach-monthly-pass1-csf.html
+
+  ServiceRequest-servicerequest-example-ach-monthly-pass2-aptt.html
+
+  ServiceRequest-servicerequest-example-ach-monthly-pass2-glucose.html
+
+  ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo.html
+
+  ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo-a1c.html
+
+  ServiceRequest-servicerequest-example-ach-monthly-pass3-cdiff.html
+
+  Library-SharedResourceCreation.html
+
+  Specimen-specimen-example-ach-daily-initialpopulationpass.html
+
+  Specimen-specimen-example-ach-daily-negativepcr-1.html
+
+  Specimen-specimen-example-ach-daily-negativepcr-2.html
+
+  Specimen-specimen-example-ach-daily-rsvlabbtg.html
+
+  Specimen-specimen-example-ach-monthly-pass1-blood.html
+
+  Specimen-specimen-example-ach-monthly-pass1-csf.html
+
+  Specimen-specimen-example-ach-monthly-pass2-blood-1.html
+
+  Specimen-specimen-example-ach-monthly-pass2-blood-2.html
+
+  Specimen-specimen-example-ach-monthly-pass3-stool.html
+
+  StructureDefinition-subjectlist-measurereport.html
+
+<h2>Canonicals</h2>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<h2>Questionnaires</h2>
+
+<h2>Resources</h2>
+
+  ImplementationGuide/gov.cdc.nhsn.dqm
+
+  Bundle/bundle-example-ach-daily-full
+
+  Bundle/bundle-example-ach-daily-header
+
+  Bundle/bundle-example-ach-daily-subject-influenzatherapeutic
+
+  Bundle/bundle-example-ach-daily-subject-initialpopulationpass
+
+  Bundle/bundle-example-ach-daily-subject-negativepcr
+
+  Bundle/bundle-example-ach-daily-subject-rsvlabbtg
+
+  Bundle/bundle-example-ach-monthly-header
+
+  Bundle/bundle-example-ach-monthly-subject-ach-pass1
+
+  Bundle/bundle-example-ach-monthly-subject-ach-pass2
+
+  Bundle/bundle-example-ach-monthly-subject-ach-pass3
+
+  Bundle/submission-full-example1
+
+  Condition/condition-example-diagnosis-ach-daily-influenzatherapeutic
+
+  Condition/condition-example-diagnosis-ach-daily-initialpopulationpass
+
+  Condition/condition-example-diagnosis-ach-daily-negativepcr
+
+  Condition/condition-example-diagnosis-ach-daily-rsvlabbtg
+
+  Condition/condition-example-diagnosis-ach-monthly-pass1
+
+  Condition/condition-example-diagnosis-ach-monthly-pass2-problem
+
+  Condition/condition-example-diagnosis-ach-monthly-pass2
+
+  Condition/condition-example-diagnosis-ach-monthly-pass3-problem
+
+  Condition/condition-example-diagnosis-ach-monthly-pass3
+
+  Coverage/coverage-example-ach-daily-influenzatherapeutic
+
+  Coverage/coverage-example-ach-daily-initialpopulationpass
+
+  Coverage/coverage-example-ach-daily-negativepcr
+
+  Coverage/coverage-example-ach-daily-rsvlabbtg
+
+  Coverage/coverage-example-ach-monthly-pass1
+
+  Coverage/coverage-example-ach-monthly-pass2
+
+  Coverage/coverage-example-ach-monthly-pass3
+
+  Device/device-example-ach-monthly-pass1-central-line
+
+  Device/device-example-ach-monthly-pass2-compress-hose
+
+  Device/device-example-ach-monthly-pass3-ivcs-pump
+
+  Device/device-example-submitting-device
+
+  DiagnosticReport/diagnosticreport-example-ach-daily-initialpopulationpass
+
+  DiagnosticReport/diagnosticreport-example-ach-monthly-pass2-cardiopulmonary
+
+  DiagnosticReport/diagnosticreport-example-ach-monthly-pass2-lab-cbc
+
+  DiagnosticReport/diagnosticreport-example-ach-monthly-pass2-radiology
+
+  Encounter/encounter-example-ach-daily-influenzatherapeutic
+
+  Encounter/encounter-example-ach-daily-initialpopulationpass-1
+
+  Encounter/encounter-example-ach-daily-initialpopulationpass-2
+
+  Encounter/encounter-example-ach-daily-negativepcr-1
+
+  Encounter/encounter-example-ach-daily-negativepcr-2
+
+  Encounter/encounter-example-ach-daily-rsvlabbtg
+
+  Encounter/encounter-example-ach-monthly-pass1
+
+  Encounter/encounter-example-ach-monthly-pass2-emergency
+
+  Encounter/encounter-example-ach-monthly-pass2-inpatient
+
+  Encounter/encounter-example-ach-monthly-pass3-acute
+
+  Encounter/encounter-example-ach-monthly-pass3-short-stay
+
+  Immunization/immunization-example-ach-daily-influenzatherapeutic
+
+  List/list-example-ach-daily-individual-measurereport-list
+
+  List/list-example-ach-daily-patients-of-interest
+
+  List/list-example-ach-monthly-individual-measurereport-list
+
+  List/list-example-ach-monthly-patients-of-interest
+
+  Location/location-example-ach-daily-emergency
+
+  Location/location-example-ach-daily-hospital
+
+  Location/location-example-ach-daily-inpatient
+
+  Location/location-example-ach-monthly-crit-part
+
+  Location/location-example-ach-monthly-crit
+
+  Location/location-example-ach-monthly-emergency
+
+  Location/location-example-ach-monthly-inpatient
+
+  Location/location-example-ach-monthly-medsurg
+
+  Location/location-example-ach-monthly-nicu-level-iii
+
+  MeasureReport/measurereport-example-ach-daily-influenzatherapeutic
+
+  MeasureReport/measurereport-example-ach-daily-initialpopulationpass
+
+  MeasureReport/measurereport-example-ach-daily-negativepcr
+
+  MeasureReport/measurereport-example-ach-daily-rsvlabbtg
+
+  MeasureReport/measurereport-example-ach-daily-subjectlist
+
+  MeasureReport/measurereport-example-ach-monthly-subjectlist1
+
+  MeasureReport/measurereport-example-individual-ach-monthly-pass1
+
+  MeasureReport/measurereport-example-individual-ach-monthly-pass2
+
+  MeasureReport/measurereport-example-individual-ach-monthly-pass3
+
+  Medication/medication-example-ach-daily-influenzatherapeutic
+
+  Medication/medication-example-ach-daily-initialpopulationpass
+
+  Medication/medication-example-ach-daily-negativepcr
+
+  Medication/medication-example-ach-daily-rsvlabbtg-1
+
+  Medication/medication-example-ach-daily-rsvlabbtg-2
+
+  Medication/medication-example-cipro-500
+
+  Medication/medication-example-dex4-tablet
+
+  Medication/medication-example-enoxaparin
+
+  Medication/medication-example-heparin
+
+  Medication/medication-example-insulin-lispro
+
+  Medication/medication-example-metformin-1000
+
+  Medication/medication-example-metronidazole
+
+  Medication/medication-example-vancomycin-15
+
+  MedicationAdministration/medadmin-example-ach-daily-influenzatherapeutic
+
+  MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-1
+
+  MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-2
+
+  MedicationAdministration/medadmin-example-ach-daily-negativepcr
+
+  MedicationAdministration/medadmin-example-ach-daily-rsvlabbtg-1
+
+  MedicationAdministration/medadmin-example-ach-daily-rsvlabbtg-2
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass1-vancomycin
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass2-dex4
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass2-heparin-1
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass2-heparin-2
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-1
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-2
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-3
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-4
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass3-enoxaparin
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-1
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-2
+
+  MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-3
+
+  MedicationRequest/medicationrequest-example-ach-daily-influenzatherapeutic
+
+  MedicationRequest/medicationrequest-example-ach-daily-initialpopulationpass
+
+  MedicationRequest/medicationrequest-example-ach-daily-negativepcr
+
+  MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-1
+
+  MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-2
+
+  MedicationRequest/medicationrequest-example-ach-monthly-pass1-vancomycin
+
+  MedicationRequest/medicationrequest-example-ach-monthly-pass2-dex4-tablet
+
+  MedicationRequest/medicationrequest-example-ach-monthly-pass2-heparin
+
+  MedicationRequest/medicationrequest-example-ach-monthly-pass2-insulin-lispro
+
+  MedicationRequest/medicationrequest-example-ach-monthly-pass2-metformin
+
+  MedicationRequest/medicationrequest-example-ach-monthly-pass3-cipro
+
+  MedicationRequest/medicationrequest-example-ach-monthly-pass3-enoxaparin
+
+  MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole
+
+  Observation/lab-observation-example-ach-daily-initialpopulationpass
+
+  Observation/lab-observation-example-ach-daily-negativepcr-1
+
+  Observation/lab-observation-example-ach-daily-negativepcr-2
+
+  Observation/lab-observation-example-ach-daily-rsvlabbtg
+
+  Observation/observation-example-ach-daily-initialpopulationpass-isolation
+
+  Observation/observation-example-ach-monthly-pass1-blood
+
+  Observation/observation-example-ach-monthly-pass1-csf
+
+  Observation/observation-example-ach-monthly-pass1-gestational-age
+
+  Observation/observation-example-ach-monthly-pass1-vitals-weight
+
+  Observation/observation-example-ach-monthly-pass2-aptt
+
+  Observation/observation-example-ach-monthly-pass2-hemo-a1c
+
+  Observation/observation-example-ach-monthly-pass2-hemo
+
+  Observation/observation-example-ach-monthly-pass2-poc-1
+
+  Observation/observation-example-ach-monthly-pass2-poc-2
+
+  Observation/observation-example-ach-monthly-pass2-vitals-weight
+
+  Observation/observation-example-ach-monthly-pass3-cdiff
+
+  Observation/observation-example-ach-monthly-pass3-vitals-height
+
+  Observation/observation-example-ach-monthly-pass3-vitals-weight
+
+  Organization/organization-example-submitting-organization
+
+  Patient/patient-example-ach-daily-influenzatherapeutic
+
+  Patient/patient-example-ach-daily-initialpopulationpass
+
+  Patient/patient-example-ach-daily-negativepcr
+
+  Patient/patient-example-ach-daily-rsvlabbtg
+
+  Patient/patient-example-ach-monthly-pass1
+
+  Patient/patient-example-ach-monthly-pass2
+
+  Patient/patient-example-ach-monthly-pass3
+
+  Procedure/procedure-example-ach-daily-negativepcr-intubation
+
+  Procedure/procedure-example-ach-monthly-pass1-central-line
+
+  Procedure/procedure-example-ach-monthly-pass1-lumbar
+
+  Procedure/procedure-example-ach-monthly-pass2-ivcf
+
+  Procedure/procedure-example-ach-monthly-pass3-transfusion
+
+  ServiceRequest/servicerequest-example-ach-daily-initialpopulationpass-covid
+
+  ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-1
+
+  ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-2
+
+  ServiceRequest/servicerequest-example-ach-daily-rsvlabbtg-rsv
+
+  ServiceRequest/servicerequest-example-ach-monthly-pass1-blood
+
+  ServiceRequest/servicerequest-example-ach-monthly-pass1-csf
+
+  ServiceRequest/servicerequest-example-ach-monthly-pass2-aptt
+
+  ServiceRequest/servicerequest-example-ach-monthly-pass2-glucose
+
+  ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo-a1c
+
+  ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo
+
+  ServiceRequest/servicerequest-example-ach-monthly-pass3-cdiff
+
+  Specimen/specimen-example-ach-daily-initialpopulationpass
+
+  Specimen/specimen-example-ach-daily-negativepcr-1
+
+  Specimen/specimen-example-ach-daily-negativepcr-2
+
+  Specimen/specimen-example-ach-daily-rsvlabbtg
+
+  Specimen/specimen-example-ach-monthly-pass1-blood
+
+  Specimen/specimen-example-ach-monthly-pass1-csf
+
+  Specimen/specimen-example-ach-monthly-pass2-blood-1
+
+  Specimen/specimen-example-ach-monthly-pass2-blood-2
+
+  Specimen/specimen-example-ach-monthly-pass3-stool
+
+  StructureDefinition/ach-daily-diagnosticreport-lab
+
+  StructureDefinition/ach-daily-encounter
+
+  StructureDefinition/ach-daily-location
+
+  StructureDefinition/ach-daily-medication
+
+  StructureDefinition/ach-daily-medicationadministration
+
+  StructureDefinition/ach-daily-medicationrequest
+
+  StructureDefinition/ach-daily-observation-lab
+
+  StructureDefinition/ach-daily-observation
+
+  StructureDefinition/ach-daily-procedure
+
+  StructureDefinition/ach-daily-servicerequest
+
+  StructureDefinition/ach-daily-specimen
+
+  StructureDefinition/ach-monthly-condition
+
+  StructureDefinition/ach-monthly-coverage
+
+  StructureDefinition/ach-monthly-device
+
+  StructureDefinition/ach-monthly-diagnosticreport-lab
+
+  StructureDefinition/ach-monthly-diagnosticreport-note
+
+  StructureDefinition/ach-monthly-diagnosticreport
+
+  StructureDefinition/ach-monthly-encounter
+
+  StructureDefinition/ach-monthly-location
+
+  StructureDefinition/ach-monthly-medication
+
+  StructureDefinition/ach-monthly-medicationadministration
+
+  StructureDefinition/ach-monthly-medicationrequest
+
+  StructureDefinition/ach-monthly-observation-lab
+
+  StructureDefinition/ach-monthly-observation-vitals
+
+  StructureDefinition/ach-monthly-observation
+
+  StructureDefinition/ach-monthly-procedure
+
+  StructureDefinition/ach-monthly-servicerequest
+
+  StructureDefinition/ach-monthly-specimen
+
+  StructureDefinition/cross-measure-patient
+
+  StructureDefinition/ip-measurereport-list
+
+  StructureDefinition/link-original-element-value-extension
+
+  StructureDefinition/link-original-mapped-concept-extension
+
+  StructureDefinition/link-original-resource-id-extension
+
+  StructureDefinition/link-patient-list-applicable-period-extension
+
+  StructureDefinition/link-received-date-extension
+
+  StructureDefinition/nhsn-measurereport-bundle
+
+  StructureDefinition/nhsn-subject-bundle
+
+  StructureDefinition/nhsn-submission-header-bundle
+
+  StructureDefinition/nhsn-submitting-device
+
+  StructureDefinition/nhsn-submitting-organization
+
+  StructureDefinition/poi-list
+
+  StructureDefinition/subjectlist-measurereport
+
+  ValueSet/ach-daily-diagnostic-report-status
+
+  ValueSet/ach-daily-encounter-class
+
+  ValueSet/ach-daily-encounter-status
+
+  ValueSet/ach-monthly-encounter-class
+
+  ValueSet/ach-monthly-encounter-status
+
+  Device/cqf-tooling
+
+  StructureDefinition/extension-MeasureReport.supplementalDataElement.reference
+
+  StructureDefinition/extension-criteriaReference
+
+  Library/FHIRHelpers
+
+  Library/NHSNAcuteCareHospitalDailyInitialPopulation
+
+  Library/NHSNAcuteCareHospitalMonthlyInitialPopulation
+
+  Library/NHSNHelpers
+
+  Library/SharedResourceCreation
+
+  Measure/NHSNAcuteCareHospitalDailyInitialPopulation
+
+  Library/NHSNAcuteCareHospitalDailyInitialPopulation_effective-data-requirements
+
+  Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation
+
+  Library/NHSNAcuteCareHospitalMonthlyInitialPopulation_effective-data-requirements
+
+-->
+
+<!--
+
+
+
+-->
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+      <!-- Added Footer for NHSN -->
+      <br/>
+      <img src="assets\images\footer.png" width="100%" />
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">$(document).ready(function(){if(window.location.hash != "") {$('a[href="' + window.location.hash + '"]').click()}});</script>
+  <a name="bottom"> </a>
+  
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.cdc.gov/nhsn">CDC National Healthcare Safety Network (NHSN)</a>.  Package gov.cdc.nhsn.dqm#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 15, 2025 12:07-0400">2025-09-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: 
+<a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> | 
+<a style="color: #81BEF7" target="_blank" href="mailto:nhsn@cdc.gov?subject=dQM%20FHIR%20Implementation%20Guide%20Feedback&body=Thank%20you%20for%20contacting%20National%20Healthcare%20Safety%20Network%20to%20provide%20feedback%20for%20our%20FHIR%20Implementation%20Guide%20%28IG%29.%20Please%20provide%20responses%20in%20the%20form%20below%20to%20help%20us%20address%20your%20input.%20Please%20include%20any%20relevant%20attachments%20to%20this%20email.%20If%20you%20have%20questions%20or%20comments%20for%20NHSN%20non-FHIR%20IG%20matters%20please%20send%20a%20separate%20email%20to%20nhsn%40cdc.gov%20%28do%20not%20use%20this%20form%29.%20%0A%0A%0AType%20of%20feedback%20%28technical%20correction%2C%20change%20request%2C%20question%29%3A%0A%0A%0AThe%20specification%20involved%20in%20the%20feedback%3A%20CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG%0A%0A%0AVersion%20of%20the%20specification%3A%201.0.0%0A%0A%0AWhat%20part%20of%20the%20specification%20is%20related%20to%20the%20feedback%3F%3A%20%0A%0A%0ADescription%20of%20the%20feedback%3A%0A%0A%0AInitiating%20page%20%28for%20administrative%20use%29%3A%20Artifact Listing%20(artifact-listing.html)%0A">Provide Feedback</a>
+
+<!--<a style="color: #81BEF7" target="_blank" href="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/common/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a>-->
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover';anchors.add()</script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,62 @@
+{
+  "resourceType" : "Medication",
+  "id" : "medication-example-ach-daily-initialpopulationpass",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medication"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication medication-example-ach-daily-initialpopulationpass</b></p><a name=\"medication-example-ach-daily-initialpopulationpass\"> </a><a name=\"hcmedication-example-ach-daily-initialpopulationpass\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-medication.html\">ACH Daily Event Medication</a></p></div><p><b>Original Resource ID</b>: eZeW55xkBH0DrR0Xj004fNlA99h1sjXKwuhGs.PNpjjUi.Dh2-U-oGW0c9xZjPn2b29S.YZMgFiH.76i57tFS1PARcjzOMkC6TPHQQXiH6vA3</p><p><b>code</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 2284960}, {http://www.nlm.nih.gov/research/umls/rxnorm 2395502}\">remdesivir 200 MG IV</span></p><p><b>status</b>: Active</p><p><b>form</b>: <span title=\"Codes:{http://snomed.info/sct 779438003}\">Intravenous solution</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 2284960}, {http://www.nlm.nih.gov/research/umls/rxnorm 2395502}\">remdesivir 200 MG IV</span></td><td>200 unit/mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeU/mL = 'U/mL')</span>/200 unit/mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeU/mL = 'U/mL')</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+    "valueString" : "eZeW55xkBH0DrR0Xj004fNlA99h1sjXKwuhGs.PNpjjUi.Dh2-U-oGW0c9xZjPn2b29S.YZMgFiH.76i57tFS1PARcjzOMkC6TPHQQXiH6vA3"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "2284960"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "2395502"
+    }],
+    "text" : "remdesivir 200 MG IV"
+  },
+  "status" : "active",
+  "form" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "779438003",
+      "display" : "Product containing only heparin in parenteral dose form (medicinal product form)"
+    }],
+    "text" : "Intravenous solution"
+  },
+  "ingredient" : [{
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "2284960"
+      },
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code" : "2395502"
+      }],
+      "text" : "remdesivir 200 MG IV"
+    },
+    "strength" : {
+      "numerator" : {
+        "value" : 200,
+        "unit" : "unit/mL",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "U/mL"
+      },
+      "denominator" : {
+        "value" : 200,
+        "unit" : "unit/mL",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "U/mL"
+      }
+    }
+  }]
+}

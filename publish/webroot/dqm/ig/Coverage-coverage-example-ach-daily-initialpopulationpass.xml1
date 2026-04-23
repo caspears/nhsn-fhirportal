@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="coverage-example-ach-daily-initialpopulationpass"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Coverage coverage-example-ach-daily-initialpopulationpass</b></p><a name="coverage-example-ach-daily-initialpopulationpass"> </a><a name="hccoverage-example-ach-daily-initialpopulationpass"> </a><p><b>identifier</b>: Member Number/88800933501</p><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode SUBSIDIZ}">MEDICARE</span></p><p><b>subscriberId</b>: 123456789</p><p><b>beneficiary</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN: 1000009001 (use: usual, ))</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span></p><p><b>period</b>: 2008-07-01 --&gt; (ongoing)</p><p><b>payor</b>: Medicare Coverage</p><h3>Classes</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value</b></td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/coverage-class group}">Medicare</span></td><td>Medicare</td><td>Medicare</td></tr></table></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MB"/>
+        <display value="Member Number"/>
+      </coding>
+    </type>
+    <system value="http://example.org/fhir/memberidentifier"/>
+    <value value="88800933501"/>
+  </identifier>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="9.0.0"/>
+      <code value="SUBSIDIZ"/>
+      <display value="subsidized health program"/>
+    </coding>
+    <text value="MEDICARE"/>
+  </type>
+  <subscriberId value="123456789"/>
+  <beneficiary>
+    <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+  </beneficiary>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+      <code value="self"/>
+    </coding>
+    <text value="Self"/>
+  </relationship>
+  <period>
+    <start value="2008-07-01"/>
+  </period>
+  <payor>
+    <display value="Medicare Coverage"/>
+  </payor>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
+        <code value="group"/>
+        <display value="Group"/>
+      </coding>
+      <text value="Medicare"/>
+    </type>
+    <value value="Medicare"/>
+    <name value="Medicare"/>
+  </class>
+</Coverage>

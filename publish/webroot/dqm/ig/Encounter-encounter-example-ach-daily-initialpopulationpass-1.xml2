@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="encounter-example-ach-daily-initialpopulationpass-1"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example-ach-daily-initialpopulationpass-1</b></p><a name="encounter-example-ach-daily-initialpopulationpass-1"> </a><a name="hcencounter-example-ach-daily-initialpopulationpass-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-encounter.html">ACH Daily Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/123456789987 (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER">ActCode EMER</a>: emergency (version = 9.0.0 )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 183452005}">Emergency hospital admission</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>period</b>: 2024-01-01 08:00:00+0000 --&gt; 2024-01-01 12:00:00+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 267036007}">Shortness of breath</span></p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/admit-source emd}">Emergency Department</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition home}">Home</span></td></tr></table><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Location-location-example-ach-daily-emergency.html">EMERGENCY - PAVILION</a></p><p><b>period</b>: 2022-08-17 16:25:00+0000 --&gt; 2022-08-17 17:01:00+0000</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Location-location-example-ach-daily-hospital.html">Health Hospital Location</a></p><p><b>period</b>: 2022-08-11 18:52:00+0000 --&gt; 2022-08-17 16:09:00+0000</p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+    <value value="123456789987"/>
+  </identifier>
+  <status value="finished">
+    <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension">
+      <valueString value="TRIAGED"/>
+    </extension>
+  </status>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <version value="9.0.0"/>
+    <code value="EMER"/>
+    <display value="emergency"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="183452005"/>
+      <display value="Emergency hospital admission (procedure)"/>
+    </coding>
+    <text value="Emergency hospital admission"/>
+  </type>
+  <subject>
+    <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+    <display value="ACHDaily, InitialPopulationPass"/>
+  </subject>
+  <period>
+    <start value="2024-01-01T08:00:00Z"/>
+    <end value="2024-01-01T12:00:00Z"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="267036007"/>
+      <display value="shortness of breath"/>
+    </coding>
+    <text value="Shortness of breath"/>
+  </reasonCode>
+  <hospitalization>
+    <admitSource>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+        <code value="emd"/>
+        <display value="From accident/emergency department"/>
+      </coding>
+      <text value="Emergency Department"/>
+    </admitSource>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+        <code value="home"/>
+        <display value="Home"/>
+      </coding>
+      <text value="Home"/>
+    </dischargeDisposition>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/location-example-ach-daily-emergency"/>
+      <display value="EMERGENCY - PAVILION"/>
+    </location>
+    <period>
+      <start value="2022-08-17T16:25:00Z"/>
+      <end value="2022-08-17T17:01:00Z"/>
+    </period>
+  </location>
+  <location>
+    <location>
+      <reference value="Location/location-example-ach-daily-hospital"/>
+      <display value="Health Hospital Location"/>
+    </location>
+    <period>
+      <start value="2022-08-11T18:52:00Z"/>
+      <end value="2022-08-17T16:09:00Z"/>
+    </period>
+  </location>
+</Encounter>

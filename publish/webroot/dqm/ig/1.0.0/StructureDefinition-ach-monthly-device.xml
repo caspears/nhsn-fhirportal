@@ -1,0 +1,3066 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml version="1.0" encoding="UTF-8"??>
+<html>
+<head><meta name="data-accessibility-fixed" content="2026-04-16T14:14:55.790414"></head>
+<body><structuredefinition xmlns="http://hl7.org/fhir">
+  <id value="ach-monthly-device"></id>
+  <text>
+    <status value="extensions"></status><div xmlns="http://www.w3.org/1999/xhtml">
+<p class="res-header-id"><b>Generated Narrative: StructureDefinition ach-monthly-device</b></p>
+<a name="ach-monthly-device"> </a><a name="hcach-monthly-device"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top">
+<tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top">
+<th style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th>
+<th style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th>
+<th style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th>
+<th style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th>
+<th style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy">
+<a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"></a></span>
+</th>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_resource.png" alt="." style="background-color: inherit" title="Resource" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device">Device</a><a name="Device"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">*</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/device.html">Device</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">Item used in healthcare</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.id">id</a><a name="Device.id"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">Logical id of this artifact</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.meta">meta</a><a name="Device.meta"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck103.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_slice.png" alt="." style="background-color: inherit" title="Slice Definition" class="hierarchy"> Slices for extension<a name="Device.meta.extension"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">Content/Rules for all slices</td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1024.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_slice_item.png" alt="." style="background-color: inherit" title="Slice Item" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.meta.extension:link-received-date-extension" title="Extension URL = http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension">extension:link-received-date-extension</a><a name="Device.meta.extension.2"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">Received Date</span><br><span style="font-weight: bold">URL: </span><a href="StructureDefinition-link-received-date-extension.html">http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension</a>
+</td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.udiCarrier">udiCarrier</a><a name="Device.udiCarrier"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">*</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">Unique Device Identifier (UDI) Barcode string</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.udiCarrier.deviceIdentifier">deviceIdentifier</a><a name="Device.udiCarrier.deviceIdentifier"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">Mandatory fixed portion of UDI</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.udiCarrier.carrierAIDC">carrierAIDC</a><a name="Device.udiCarrier.carrierAIDC"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">base64Binary</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">UDI Machine Readable Barcode String</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.udiCarrier.carrierHRF">carrierHRF</a><a name="Device.udiCarrier.carrierHRF"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">UDI Human Readable Barcode String</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.udiCarrier.entryType">entryType</a><a name="Device.udiCarrier.entryType"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">barcode | rfid | manual +</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.status">status</a><a name="Device.status"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">active | inactive | entered-in-error | unknown</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.distinctIdentifier">distinctIdentifier</a><a name="Device.distinctIdentifier"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">The distinct identification string</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.deviceName">deviceName</a><a name="Device.deviceName"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">*</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">The name of the device as given by the manufacturer</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.type">type</a><a name="Device.type"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">The kind or type of device</span><br class="binding"><span style="font-weight: bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-device-type.html" title="http://hl7.org/fhir/ValueSet/device-type" class="binding">DeviceType</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span>
+</td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.patient">patient</a><a name="Device.patient"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/patient.html">Patient</a>)</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">Patient to whom Device is affixed</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-monthly-device-definitions.html#Device.patient.reference">reference</a><a name="Device.patient.reference"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">Literal reference, Relative, internal or absolute URL</span></td>
+</tr>
+<tr><td colspan="5" class="hierarchy">
+<br><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"> Documentation for this format</a>
+</td></tr>
+</table>
+</div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueinteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valuecanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm"></valuecanonical>
+      </extension>
+    </valueinteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valuecode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valuecanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm"></valuecanonical>
+      </extension>
+    </valuecode>
+  </extension>
+  <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device"></url>
+  <version value="1.0.0"></version>
+  <name value="AcuteCareHospitalMonthlyDevice"></name>
+  <title value="ACH Monthly Event Device"></title>
+  <status value="active"></status>
+  <date value="2025-09-15T11:51:36-04:00"></date>
+  <publisher value="CDC National Healthcare Safety Network (NHSN)"></publisher>
+  <contact>
+    <name value="CDC National Healthcare Safety Network (NHSN)"></name>
+    <telecom>
+      <system value="url"></system>
+      <value value="http://www.cdc.gov/nhsn"></value>
+    </telecom>
+    <telecom>
+      <system value="email"></system>
+      <value value="nhsn@cdc.gov"></value>
+    </telecom>
+  </contact>
+  <description value="This profile contains Required and Must Support data elements for reporting device information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile covers both implantable and other types of devices and is based on the [HL7 FHIR® R4 Device Resource v4.0.1](https://hl7.org/fhir/R4/device.html)."></description>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"></system>
+      <code value="US"></code>
+    </coding>
+  </jurisdiction>
+  <fhirversion value="4.0.1"></fhirversion>
+  <mapping>
+    <identity value="rim"></identity>
+    <uri value="http://hl7.org/v3"></uri>
+    <name value="RIM Mapping"></name>
+  </mapping>
+  <mapping>
+    <identity value="w5"></identity>
+    <uri value="http://hl7.org/fhir/fivews"></uri>
+    <name value="FiveWs Pattern Mapping"></name>
+  </mapping>
+  <mapping>
+    <identity value="udi"></identity>
+    <uri value="http://fda.gov/UDI"></uri>
+    <name value="UDI Mapping"></name>
+  </mapping>
+  <kind value="resource"></kind>
+  <abstract value="false"></abstract>
+  <type value="Device"></type>
+  <basedefinition value="http://hl7.org/fhir/StructureDefinition/Device"></basedefinition>
+  <derivation value="constraint"></derivation>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valuestring value="4.0.1"></valuestring>
+    </extension>
+    <element id="Device">
+      <path value="Device"></path>
+      <short value="Item used in healthcare"></short>
+      <definition value="A type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <constraint>
+        <key value="dom-2"></key>
+        <severity value="error"></severity>
+        <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"></human>
+        <expression value="contained.contained.empty()"></expression>
+        <xpath value="not(parent::f:contained and f:contained)"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"></source>
+      </constraint>
+      <constraint>
+        <key value="dom-3"></key>
+        <severity value="error"></severity>
+        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource"></human>
+        <expression value="contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()"></expression>
+        <xpath value="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"></source>
+      </constraint>
+      <constraint>
+        <key value="dom-4"></key>
+        <severity value="error"></severity>
+        <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"></human>
+        <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"></expression>
+        <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"></source>
+      </constraint>
+      <constraint>
+        <key value="dom-5"></key>
+        <severity value="error"></severity>
+        <human value="If a resource is contained in another resource, it SHALL NOT have a security label"></human>
+        <expression value="contained.meta.security.empty()"></expression>
+        <xpath value="not(exists(f:contained/*/f:meta/f:security))"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"></source>
+      </constraint>
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice">
+          <valueboolean value="true"></valueboolean>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation">
+          <valuemarkdown value="When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."></valuemarkdown>
+        </extension>
+        <key value="dom-6"></key>
+        <severity value="warning"></severity>
+        <human value="A resource should have narrative for robust management"></human>
+        <expression value="text.`div`.exists()"></expression>
+        <xpath value="exists(f:text/h:div)"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Entity. Role, or Act"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Device"></map>
+      </mapping>
+    </element>
+    <element id="Device.id">
+      <path value="Device.id"></path>
+      <short value="Logical id of this artifact"></short>
+      <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."></definition>
+      <comment value="The only time that a resource does not have an id is when it is being submitted to the server using a create operation."></comment>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Resource.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="id"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Device.meta">
+      <path value="Device.meta"></path>
+      <short value="Metadata about the resource"></short>
+      <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Resource.meta"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Meta"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Device.meta.id">
+      <path value="Device.meta.id"></path>
+      <representation value="xmlAttr"></representation>
+      <short value="Unique id for inter-element referencing"></short>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="string"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.meta.extension">
+      <path value="Device.meta.extension"></path>
+      <slicing>
+        <discriminator>
+          <type value="value"></type>
+          <path value="url"></path>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"></description>
+        <rules value="open"></rules>
+      </slicing>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.meta.extension:link-received-date-extension">
+      <path value="Device.meta.extension"></path>
+      <slicename value="link-received-date-extension"></slicename>
+      <short value="Received Date"></short>
+      <definition value="This extension stores the date and time a Resource was received by the processing system (e.g. NHSNLink)."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+        <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension"></profile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.meta.versionId">
+      <path value="Device.meta.versionId"></path>
+      <short value="Version specific identifier"></short>
+      <definition value="The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted."></definition>
+      <comment value="The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Meta.versionId"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="id"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Device.meta.lastUpdated">
+      <path value="Device.meta.lastUpdated"></path>
+      <short value="When the resource version last changed"></short>
+      <definition value="When the resource last changed - e.g. when the version changed."></definition>
+      <comment value="This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Meta.lastUpdated"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="instant"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Device.meta.source">
+      <path value="Device.meta.source"></path>
+      <short value="Identifies where the resource comes from"></short>
+      <definition value="A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](http://hl7.org/fhir/R4/provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc."></definition>
+      <comment value="In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. 
+
+This element can be used to indicate where the current master source of a resource that has a canonical URL if the resource is no longer hosted at the canonical URL."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Meta.source"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="uri"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Device.meta.profile">
+      <path value="Device.meta.profile"></path>
+      <short value="Profiles this resource claims to conform to"></short>
+      <definition value="A list of profiles (references to [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](http://hl7.org/fhir/R4/structuredefinition-definitions.html#StructureDefinition.url)."></definition>
+      <comment value="It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Meta.profile"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="canonical"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Device.meta.security">
+      <path value="Device.meta.security"></path>
+      <short value="Security Labels applied to this resource"></short>
+      <definition value="Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure."></definition>
+      <comment value="The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Meta.security"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Coding"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="SecurityLabels"></valuestring>
+        </extension>
+        <strength value="extensible"></strength>
+        <description value="Security Labels from the Healthcare Privacy and Security Classification System."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/security-labels|4.0.1"></valueset>
+      </binding>
+    </element>
+    <element id="Device.meta.tag">
+      <path value="Device.meta.tag"></path>
+      <short value="Tags applied to this resource"></short>
+      <definition value="Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource."></definition>
+      <comment value="The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Meta.tag"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Coding"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="Tags"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value='Codes that represent various types of tags, commonly workflow-related; e.g. "Needs review by Dr. Jones".'></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/common-tags|4.0.1"></valueset>
+      </binding>
+    </element>
+    <element id="Device.implicitRules">
+      <path value="Device.implicitRules"></path>
+      <short value="A set of rules under which this content was created"></short>
+      <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc."></definition>
+      <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Resource.implicitRules"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="uri"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation"></ismodifierreason>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Device.language">
+      <path value="Device.language"></path>
+      <short value="Language of the resource content"></short>
+      <definition value="The base language in which the resource is written."></definition>
+      <comment value="Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Resource.language"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="code"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+          <valuecanonical value="http://hl7.org/fhir/ValueSet/all-languages"></valuecanonical>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="Language"></valuestring>
+        </extension>
+        <strength value="preferred"></strength>
+        <description value="A human language."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/languages|4.0.1"></valueset>
+      </binding>
+    </element>
+    <element id="Device.text">
+      <path value="Device.text"></path>
+      <short value="Text summary of the resource, for human interpretation"></short>
+      <definition value='A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it "clinically safe" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.'></definition>
+      <comment value='Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a "text blob" or where text is additionally entered raw or narrated and encoded information is added later.'></comment>
+      <alias value="narrative"></alias>
+      <alias value="html"></alias>
+      <alias value="xhtml"></alias>
+      <alias value="display"></alias>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="DomainResource.text"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Narrative"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Act.text?"></map>
+      </mapping>
+    </element>
+    <element id="Device.contained">
+      <path value="Device.contained"></path>
+      <short value="Contained, inline Resources"></short>
+      <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."></definition>
+      <comment value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels."></comment>
+      <alias value="inline resources"></alias>
+      <alias value="anonymous resources"></alias>
+      <alias value="contained resources"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="DomainResource.contained"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Resource"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.extension">
+      <path value="Device.extension"></path>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="DomainResource.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.modifierExtension">
+      <path value="Device.modifierExtension"></path>
+      <short value="Extensions that cannot be ignored"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."></requirements>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="DomainResource.modifierExtension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them"></ismodifierreason>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.identifier">
+      <path value="Device.identifier"></path>
+      <short value="Instance identifier"></short>
+      <definition value="Unique instance identifiers assigned to a device by manufacturers other organizations or owners."></definition>
+      <comment value="The barcode string from a barcode present on a device label or package may identify the instance, include names given to the device in local usage, or may identify the type of device. If the identifier identifies the type of device, Device.type element should be used."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.identifier"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Identifier"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.identifier"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".id"></map>
+      </mapping>
+      <mapping>
+        <identity value="udi"></identity>
+        <map value="The serial number which is a component of the production identifier (PI), a conditional, variable portion of a UDI.   The identifier.type code should be set to “SNO”(Serial Number) and the system left empty."></map>
+      </mapping>
+    </element>
+    <element id="Device.definition">
+      <path value="Device.definition"></path>
+      <short value="The reference to the definition for the device"></short>
+      <definition value="The reference to the definition for the device."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.definition"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/DeviceDefinition|4.0.1"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.udiCarrier">
+      <path value="Device.udiCarrier"></path>
+      <short value="Unique Device Identifier (UDI) Barcode string"></short>
+      <definition value="Unique device identifier (UDI) assigned to device label or package.  Note that the Device may include multiple udiCarriers as it either may include just the udiCarrier for the jurisdiction it is sold, or for multiple jurisdictions it could have been sold."></definition>
+      <comment value="UDI may identify an unique instance of a device, or it may only identify the type of the device.  See [UDI mappings](http://hl7.org/fhir/R4/device-mappings.html#udi) for a complete mapping of UDI parts to Device."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.udiCarrier"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="BackboneElement"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.identifier"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".id and .code"></map>
+      </mapping>
+    </element>
+    <element id="Device.udiCarrier.id">
+      <path value="Device.udiCarrier.id"></path>
+      <representation value="xmlAttr"></representation>
+      <short value="Unique id for inter-element referencing"></short>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="string"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.udiCarrier.extension">
+      <path value="Device.udiCarrier.extension"></path>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.udiCarrier.modifierExtension">
+      <path value="Device.udiCarrier.modifierExtension"></path>
+      <short value="Extensions that cannot be ignored even if unrecognized"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."></requirements>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <alias value="modifiers"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="BackboneElement.modifierExtension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"></ismodifierreason>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.udiCarrier.deviceIdentifier">
+      <path value="Device.udiCarrier.deviceIdentifier"></path>
+      <short value="Mandatory fixed portion of UDI"></short>
+      <definition value="The device identifier (DI) is a mandatory, fixed portion of a UDI that identifies the labeler and the specific version or model of a device."></definition>
+      <alias value="DI"></alias>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.udiCarrier.deviceIdentifier"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Role.id.extension"></map>
+      </mapping>
+      <mapping>
+        <identity value="udi"></identity>
+        <map value="The device identifier (DI), a mandatory, fixed portion of a UDI that identifies the labeler and the specific version or model of a device."></map>
+      </mapping>
+    </element>
+    <element id="Device.udiCarrier.issuer">
+      <path value="Device.udiCarrier.issuer"></path>
+      <short value="UDI Issuing Organization"></short>
+      <definition value="Organization that is charged with issuing UDIs for devices.  For example, the US FDA issuers include :
+1) GS1: 
+http://hl7.org/fhir/NamingSystem/gs1-di, 
+2) HIBCC:
+http://hl7.org/fhir/NamingSystem/hibcc-dI, 
+3) ICCBBA for blood containers:
+http://hl7.org/fhir/NamingSystem/iccbba-blood-di, 
+4) ICCBA for other devices:
+http://hl7.org/fhir/NamingSystem/iccbba-other-di."></definition>
+      <alias value="Barcode System"></alias>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.udiCarrier.issuer"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="uri"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Role.id.root"></map>
+      </mapping>
+      <mapping>
+        <identity value="udi"></identity>
+        <map value="All UDIs are to be issued under a system operated by an Jurisdiction-accredited issuing agency.
+GS1 DIs: 
+ http://hl7.org/fhir/NamingSystem/gs1
+HIBCC DIs:
+ http://hl7.org/fhir/NamingSystem/hibcc
+ICCBBA DIs for blood containers:
+ http://hl7.org/fhir/NamingSystem/iccbba-blood
+ICCBA DIs for other devices:
+ http://hl7.org/fhir/NamingSystem/iccbba-other"></map>
+      </mapping>
+    </element>
+    <element id="Device.udiCarrier.jurisdiction">
+      <path value="Device.udiCarrier.jurisdiction"></path>
+      <short value="Regional UDI authority"></short>
+      <definition value="The identity of the authoritative source for UDI generation within a  jurisdiction.  All UDIs are globally unique within a single namespace with the appropriate repository uri as the system.  For example,  UDIs of devices managed in the U.S. by the FDA, the value is  http://hl7.org/fhir/NamingSystem/fda-udi."></definition>
+      <requirements value="Allows a recipient of a UDI to know which database will contain the UDI-associated metadata."></requirements>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.udiCarrier.jurisdiction"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="uri"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Role.scoper"></map>
+      </mapping>
+    </element>
+    <element id="Device.udiCarrier.carrierAIDC">
+      <path value="Device.udiCarrier.carrierAIDC"></path>
+      <short value="UDI Machine Readable Barcode String"></short>
+      <definition value="The full UDI carrier of the Automatic Identification and Data Capture (AIDC) technology representation of the barcode string as printed on the packaging of the device - e.g., a barcode or RFID.   Because of limitations on character sets in XML and the need to round-trip JSON data through XML, AIDC Formats *SHALL* be base64 encoded."></definition>
+      <comment value="The AIDC form of UDIs should be scanned or otherwise used for the identification of the device whenever possible to minimize errors in records resulting from manual transcriptions. If separate barcodes for DI and PI are present, concatenate the string with DI first and in order of human readable expression on label."></comment>
+      <alias value="Automatic Identification and Data Capture"></alias>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.udiCarrier.carrierAIDC"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="base64Binary"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Role.id.extension"></map>
+      </mapping>
+      <mapping>
+        <identity value="udi"></identity>
+        <map value="A unique device identifier (UDI) on a device label a form that uses automatic identification and data capture (AIDC) technology."></map>
+      </mapping>
+    </element>
+    <element id="Device.udiCarrier.carrierHRF">
+      <path value="Device.udiCarrier.carrierHRF"></path>
+      <short value="UDI Human Readable Barcode String"></short>
+      <definition value="The full UDI carrier as the human readable form (HRF) representation of the barcode string as printed on the packaging of the device."></definition>
+      <comment value="If separate barcodes for DI and PI are present, concatenate the string with DI first and in order of human readable expression on label."></comment>
+      <alias value="Human Readable Form"></alias>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.udiCarrier.carrierHRF"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Role.id.extension"></map>
+      </mapping>
+      <mapping>
+        <identity value="udi"></identity>
+        <map value="A unique device identifier (UDI) on a device label in plain text"></map>
+      </mapping>
+    </element>
+    <element id="Device.udiCarrier.entryType">
+      <path value="Device.udiCarrier.entryType"></path>
+      <short value="barcode | rfid | manual +"></short>
+      <definition value="A coded entry to indicate how the data was entered."></definition>
+      <requirements value="Supports a way to distinguish hand entered from machine read data."></requirements>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.udiCarrier.entryType"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="code"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="UDIEntryType"></valuestring>
+        </extension>
+        <strength value="required"></strength>
+        <description value="Codes to identify how UDI data was entered."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/udi-entry-type|4.0.1"></valueset>
+      </binding>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="NA"></map>
+      </mapping>
+    </element>
+    <element id="Device.status">
+      <path value="Device.status"></path>
+      <short value="active | inactive | entered-in-error | unknown"></short>
+      <definition value="Status of the Device availability."></definition>
+      <comment value="This element is labeled as a modifier because the status contains the codes inactive and entered-in-error that mark the device (record)as not currently valid."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.status"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="code"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid"></ismodifierreason>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="FHIRDeviceStatus"></valuestring>
+        </extension>
+        <strength value="required"></strength>
+        <description value="The availability status of the device."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/device-status|4.0.1"></valueset>
+      </binding>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.status"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".statusCode"></map>
+      </mapping>
+    </element>
+    <element id="Device.statusReason">
+      <path value="Device.statusReason"></path>
+      <short value="online | paused | standby | offline | not-ready | transduc-discon | hw-discon | off"></short>
+      <definition value="Reason for the dtatus of the Device availability."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.statusReason"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="FHIRDeviceStatusReason"></valuestring>
+        </extension>
+        <strength value="extensible"></strength>
+        <description value="The availability status reason of the device."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/device-status-reason|4.0.1"></valueset>
+      </binding>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.status"></map>
+      </mapping>
+    </element>
+    <element id="Device.distinctIdentifier">
+      <path value="Device.distinctIdentifier"></path>
+      <short value="The distinct identification string"></short>
+      <definition value="The distinct identification string as required by regulation for a human cell, tissue, or cellular and tissue-based product."></definition>
+      <comment value="For example, this applies to devices in the United States regulated under *Code of Federal Regulation 21CFR§1271.290(c)*."></comment>
+      <alias value="Distinct Identification Code (DIC)"></alias>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.distinctIdentifier"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".lotNumberText"></map>
+      </mapping>
+      <mapping>
+        <identity value="udi"></identity>
+        <map value="The lot or batch number within which a device was manufactured - which is a component of the production identifier (PI), a conditional, variable portion of a UDI."></map>
+      </mapping>
+    </element>
+    <element id="Device.manufacturer">
+      <path value="Device.manufacturer"></path>
+      <short value="Name of device manufacturer"></short>
+      <definition value="A name of the manufacturer."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.manufacturer"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".playedRole[typeCode=MANU].scoper.name"></map>
+      </mapping>
+      <mapping>
+        <identity value="udi"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.manufactureDate">
+      <path value="Device.manufactureDate"></path>
+      <short value="Date when the device was made"></short>
+      <definition value="The date and time when the device was manufactured."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.manufactureDate"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="dateTime"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".existenceTime.low"></map>
+      </mapping>
+      <mapping>
+        <identity value="udi"></identity>
+        <map value="The date a specific device was manufactured - which is a component of the production identifier (PI), a conditional, variable portion of a UDI.  For FHIR, The datetime syntax must converted to YYYY-MM-DD[THH:MM:SS].  If hour is present, the minutes and seconds should both be set to “00”."></map>
+      </mapping>
+    </element>
+    <element id="Device.expirationDate">
+      <path value="Device.expirationDate"></path>
+      <short value="Date and time of expiry of this device (if applicable)"></short>
+      <definition value="The date and time beyond which this device is no longer valid or should not be used (if applicable)."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.expirationDate"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="dateTime"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".expirationTime"></map>
+      </mapping>
+      <mapping>
+        <identity value="udi"></identity>
+        <map value="the expiration date of a specific device -  which is a component of the production identifier (PI), a conditional, variable portion of a UDI.  For FHIR, The datetime syntax must converted to YYYY-MM-DD[THH:MM:SS].  If hour is present, the minutes and seconds should both be set to “00”."></map>
+      </mapping>
+    </element>
+    <element id="Device.lotNumber">
+      <path value="Device.lotNumber"></path>
+      <short value="Lot number of manufacture"></short>
+      <definition value="Lot number assigned by the manufacturer."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.lotNumber"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".lotNumberText"></map>
+      </mapping>
+      <mapping>
+        <identity value="udi"></identity>
+        <map value="The lot or batch number within which a device was manufactured - which is a component of the production identifier (PI), a conditional, variable portion of a UDI."></map>
+      </mapping>
+    </element>
+    <element id="Device.serialNumber">
+      <path value="Device.serialNumber"></path>
+      <short value="Serial number assigned by the manufacturer"></short>
+      <definition value="The serial number assigned by the organization when the device was manufactured."></definition>
+      <comment value="Alphanumeric Maximum 20."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.serialNumber"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".playedRole[typeCode=MANU].id"></map>
+      </mapping>
+    </element>
+    <element id="Device.deviceName">
+      <path value="Device.deviceName"></path>
+      <short value="The name of the device as given by the manufacturer"></short>
+      <definition value="This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device.  This typically would be used when a person provides the name(s) or when the device represents one of the names available from DeviceDefinition."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.deviceName"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="BackboneElement"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.deviceName.id">
+      <path value="Device.deviceName.id"></path>
+      <representation value="xmlAttr"></representation>
+      <short value="Unique id for inter-element referencing"></short>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="string"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.deviceName.extension">
+      <path value="Device.deviceName.extension"></path>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.deviceName.modifierExtension">
+      <path value="Device.deviceName.modifierExtension"></path>
+      <short value="Extensions that cannot be ignored even if unrecognized"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."></requirements>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <alias value="modifiers"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="BackboneElement.modifierExtension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"></ismodifierreason>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.deviceName.name">
+      <path value="Device.deviceName.name"></path>
+      <short value="The name of the device"></short>
+      <definition value="The name of the device."></definition>
+      <alias value="Σ"></alias>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.deviceName.name"></path>
+        <min value="1"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.deviceName.type">
+      <path value="Device.deviceName.type"></path>
+      <short value="udi-label-name | user-friendly-name | patient-reported-name | manufacturer-name | model-name | other"></short>
+      <definition value="The type of deviceName.
+UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | ModelName."></definition>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.deviceName.type"></path>
+        <min value="1"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="code"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="DeviceNameType"></valuestring>
+        </extension>
+        <strength value="required"></strength>
+        <description value="The type of name the device is referred by."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/device-nametype|4.0.1"></valueset>
+      </binding>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".playedRole[typeCode=MANU].code"></map>
+      </mapping>
+    </element>
+    <element id="Device.modelNumber">
+      <path value="Device.modelNumber"></path>
+      <short value="The model number for the device"></short>
+      <definition value="The model number for the device."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.modelNumber"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".softwareName (included as part)"></map>
+      </mapping>
+    </element>
+    <element id="Device.partNumber">
+      <path value="Device.partNumber"></path>
+      <short value="The part number of the device"></short>
+      <definition value="The part number of the device."></definition>
+      <comment value="Alphanumeric Maximum 20."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.partNumber"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".playedRole[typeCode=MANU].id"></map>
+      </mapping>
+    </element>
+    <element id="Device.type">
+      <path value="Device.type"></path>
+      <short value="The kind or type of device"></short>
+      <definition value="The kind or type of device."></definition>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.type"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <binding>
+        <strength value="extensible"></strength>
+        <valueset value="http://hl7.org/fhir/ValueSet/device-type"></valueset>
+      </binding>
+    </element>
+    <element id="Device.specialization">
+      <path value="Device.specialization"></path>
+      <short value="The capabilities supported on a  device, the standards to which the device conforms for a particular purpose, and used for the communication"></short>
+      <definition value="The capabilities supported on a  device, the standards to which the device conforms for a particular purpose, and used for the communication."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.specialization"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="BackboneElement"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.specialization.id">
+      <path value="Device.specialization.id"></path>
+      <representation value="xmlAttr"></representation>
+      <short value="Unique id for inter-element referencing"></short>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="string"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.specialization.extension">
+      <path value="Device.specialization.extension"></path>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.specialization.modifierExtension">
+      <path value="Device.specialization.modifierExtension"></path>
+      <short value="Extensions that cannot be ignored even if unrecognized"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."></requirements>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <alias value="modifiers"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="BackboneElement.modifierExtension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"></ismodifierreason>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.specialization.systemType">
+      <path value="Device.specialization.systemType"></path>
+      <short value="The standard that is used to operate and communicate"></short>
+      <definition value="The standard that is used to operate and communicate."></definition>
+      <alias value="Σ"></alias>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.specialization.systemType"></path>
+        <min value="1"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.specialization.version">
+      <path value="Device.specialization.version"></path>
+      <short value="The version of the standard that is used to operate and communicate"></short>
+      <definition value="The version of the standard that is used to operate and communicate."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.specialization.version"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+    </element>
+    <element id="Device.version">
+      <path value="Device.version"></path>
+      <short value="The actual design of the device or software version running on the device"></short>
+      <definition value="The actual design of the device or software version running on the device."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.version"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="BackboneElement"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.version.id">
+      <path value="Device.version.id"></path>
+      <representation value="xmlAttr"></representation>
+      <short value="Unique id for inter-element referencing"></short>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="string"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.version.extension">
+      <path value="Device.version.extension"></path>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.version.modifierExtension">
+      <path value="Device.version.modifierExtension"></path>
+      <short value="Extensions that cannot be ignored even if unrecognized"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."></requirements>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <alias value="modifiers"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="BackboneElement.modifierExtension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"></ismodifierreason>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.version.type">
+      <path value="Device.version.type"></path>
+      <short value="The type of the device version"></short>
+      <definition value="The type of the device version."></definition>
+      <alias value="Σ"></alias>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.version.type"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.version.component">
+      <path value="Device.version.component"></path>
+      <short value="A single component of the device version"></short>
+      <definition value="A single component of the device version."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.version.component"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Identifier"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+    </element>
+    <element id="Device.version.value">
+      <path value="Device.version.value"></path>
+      <short value="The version text"></short>
+      <definition value="The version text."></definition>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.version.value"></path>
+        <min value="1"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.property">
+      <path value="Device.property"></path>
+      <short value="The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties"></short>
+      <definition value="The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.property"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="BackboneElement"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.property.id">
+      <path value="Device.property.id"></path>
+      <representation value="xmlAttr"></representation>
+      <short value="Unique id for inter-element referencing"></short>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="string"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.property.extension">
+      <path value="Device.property.extension"></path>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.property.modifierExtension">
+      <path value="Device.property.modifierExtension"></path>
+      <short value="Extensions that cannot be ignored even if unrecognized"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."></requirements>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <alias value="modifiers"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="BackboneElement.modifierExtension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"></ismodifierreason>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.property.type">
+      <path value="Device.property.type"></path>
+      <short value="Code that specifies the property DeviceDefinitionPropetyCode (Extensible)"></short>
+      <definition value="Code that specifies the property DeviceDefinitionPropetyCode (Extensible)."></definition>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.property.type"></path>
+        <min value="1"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.property.valueQuantity">
+      <path value="Device.property.valueQuantity"></path>
+      <short value="Property value as a quantity"></short>
+      <definition value="Property value as a quantity."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.property.valueQuantity"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Quantity"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.property.valueCode">
+      <path value="Device.property.valueCode"></path>
+      <short value="Property value as a code, e.g., NTP4 (synced to NTP)"></short>
+      <definition value="Property value as a code, e.g., NTP4 (synced to NTP)."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.property.valueCode"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Device.patient">
+      <path value="Device.patient"></path>
+      <short value="Patient to whom Device is affixed"></short>
+      <definition value="Patient information, If the device is affixed to a person."></definition>
+      <requirements value="If the device is implanted in a patient, then need to associate the device to the patient."></requirements>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.patient"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.subject[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".playedRole[typeCode=USED].scoper.playedRole[typeCode=PAT]"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.subject"></map>
+      </mapping>
+    </element>
+    <element id="Device.patient.id">
+      <path value="Device.patient.id"></path>
+      <representation value="xmlAttr"></representation>
+      <short value="Unique id for inter-element referencing"></short>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="string"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.patient.extension">
+      <path value="Device.patient.extension"></path>
+      <slicing>
+        <discriminator>
+          <type value="value"></type>
+          <path value="url"></path>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"></description>
+        <rules value="open"></rules>
+      </slicing>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Device.patient.reference">
+      <path value="Device.patient.reference"></path>
+      <short value="Literal reference, Relative, internal or absolute URL"></short>
+      <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources."></definition>
+      <comment value='Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure "/[type]/[id]" then it should be assumed that the reference is to a FHIR RESTful server.'></comment>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Reference.reference"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <condition value="ref-1"></condition>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.patient.type">
+      <path value="Device.patient.type"></path>
+      <short value='Type the reference refers to (e.g. "Patient")'></short>
+      <definition value='The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.
+
+The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).'></definition>
+      <comment value="This element is used to indicate the type of  the target of the reference. This may be used which ever of the other elements are populated (or not). In some cases, the type of the target may be determined by inspection of the reference (e.g. a RESTful URL) or by resolving the target of the reference; if both the type and a reference is provided, the reference SHALL resolve to a resource of the same type as that specified."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Reference.type"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="uri"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="FHIRResourceTypeExt"></valuestring>
+        </extension>
+        <strength value="extensible"></strength>
+        <description value="Aa resource (or, for logical models, the URI of the logical model)."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/resource-types|4.0.1"></valueset>
+      </binding>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.patient.identifier">
+      <path value="Device.patient.identifier"></path>
+      <short value="Logical reference, when literal reference is not known"></short>
+      <definition value="An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference."></definition>
+      <comment value="When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. 
+
+When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference
+
+Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it.
+
+Reference is intended to point to a structure that can potentially be expressed as a FHIR resource, though there is no need for it to exist as an actual FHIR resource instance - except in as much as an application wishes to actual find the target of the reference. The content referred to be the identifier must meet the logical constraints implied by any limitations on what resource types are permitted for the reference.  For example, it would not be legitimate to send the identifier for a drug prescription if the type were Reference(Observation|DiagnosticReport).  One of the use-cases for Reference.identifier is the situation where no FHIR representation exists (where the type is Reference (Any)."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Reference.identifier"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Identifier"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".identifier"></map>
+      </mapping>
+    </element>
+    <element id="Device.patient.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueboolean value="true"></valueboolean>
+      </extension>
+      <path value="Device.patient.display"></path>
+      <short value="Text alternative for the resource"></short>
+      <definition value="Plain text narrative that identifies the resource in addition to the resource reference."></definition>
+      <comment value="This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Reference.display"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="string"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Device.owner">
+      <path value="Device.owner"></path>
+      <short value="Organization responsible for device"></short>
+      <definition value="An organization that is responsible for the provision and ongoing maintenance of the device."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.owner"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.source"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".playedRole[typeCode=OWN].scoper"></map>
+      </mapping>
+    </element>
+    <element id="Device.contact">
+      <path value="Device.contact"></path>
+      <short value="Details for human/organization for support"></short>
+      <definition value="Contact details for an organization or a particular human that is responsible for the device."></definition>
+      <comment value="used for troubleshooting etc."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.contact"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="ContactPoint"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.source"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".scopedRole[typeCode=CON].player"></map>
+      </mapping>
+    </element>
+    <element id="Device.location">
+      <path value="Device.location"></path>
+      <short value="Where the device is found"></short>
+      <definition value="The place where the device can be found."></definition>
+      <requirements value="Device.location can be used to track device location."></requirements>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.location"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Location|4.0.1"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.where[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".playedRole[typeCode=LOCE].scoper"></map>
+      </mapping>
+    </element>
+    <element id="Device.url">
+      <path value="Device.url"></path>
+      <short value="Network address to contact device"></short>
+      <definition value="A network address on which the device may be contacted directly."></definition>
+      <comment value="If the device is running a FHIR server, the network address should  be the Base URL from which a conformance statement may be retrieved."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.url"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="uri"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.where[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".telecom"></map>
+      </mapping>
+    </element>
+    <element id="Device.note">
+      <path value="Device.note"></path>
+      <short value="Device notes and comments"></short>
+      <definition value="Descriptive information, usage information or implantation information that is not captured in an existing element."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.note"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Annotation"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".text"></map>
+      </mapping>
+    </element>
+    <element id="Device.safety">
+      <path value="Device.safety"></path>
+      <short value="Safety Characteristics of Device"></short>
+      <definition value="Provides additional safety characteristics about a medical device.  For example devices containing latex."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Device.safety"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="NA"></map>
+      </mapping>
+    </element>
+    <element id="Device.parent">
+      <path value="Device.parent"></path>
+      <short value="The parent device"></short>
+      <definition value="The parent device."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Device.parent"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Device|4.0.1"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Device">
+      <path value="Device"></path>
+    </element>
+    <element id="Device.id">
+      <path value="Device.id"></path>
+      <min value="1"></min>
+    </element>
+    <element id="Device.meta.extension:link-received-date-extension">
+      <path value="Device.meta.extension"></path>
+      <slicename value="link-received-date-extension"></slicename>
+      <min value="0"></min>
+      <max value="1"></max>
+      <type>
+        <code value="Extension"></code>
+        <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension"></profile>
+      </type>
+    </element>
+    <element id="Device.udiCarrier">
+      <path value="Device.udiCarrier"></path>
+      <mustsupport value="true"></mustsupport>
+    </element>
+    <element id="Device.udiCarrier.deviceIdentifier">
+      <path value="Device.udiCarrier.deviceIdentifier"></path>
+      <mustsupport value="true"></mustsupport>
+    </element>
+    <element id="Device.udiCarrier.carrierAIDC">
+      <path value="Device.udiCarrier.carrierAIDC"></path>
+      <mustsupport value="true"></mustsupport>
+    </element>
+    <element id="Device.udiCarrier.carrierHRF">
+      <path value="Device.udiCarrier.carrierHRF"></path>
+      <mustsupport value="true"></mustsupport>
+    </element>
+    <element id="Device.udiCarrier.entryType">
+      <path value="Device.udiCarrier.entryType"></path>
+      <mustsupport value="true"></mustsupport>
+    </element>
+    <element id="Device.status">
+      <path value="Device.status"></path>
+      <mustsupport value="true"></mustsupport>
+    </element>
+    <element id="Device.distinctIdentifier">
+      <path value="Device.distinctIdentifier"></path>
+      <mustsupport value="true"></mustsupport>
+    </element>
+    <element id="Device.deviceName">
+      <path value="Device.deviceName"></path>
+      <mustsupport value="true"></mustsupport>
+    </element>
+    <element id="Device.type">
+      <path value="Device.type"></path>
+      <min value="1"></min>
+      <binding>
+        <strength value="extensible"></strength>
+        <valueset value="http://hl7.org/fhir/ValueSet/device-type"></valueset>
+      </binding>
+    </element>
+    <element id="Device.patient">
+      <path value="Device.patient"></path>
+      <min value="1"></min>
+    </element>
+    <element id="Device.patient.reference">
+      <path value="Device.patient.reference"></path>
+      <min value="1"></min>
+      <mustsupport value="true"></mustsupport>
+    </element>
+  </differential>
+</structuredefinition></body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="condition-example-diagnosis-ach-monthly-pass1"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition condition-example-diagnosis-ach-monthly-pass1</b></p><a name="condition-example-diagnosis-ach-monthly-pass1"> </a><a name="hccondition-example-diagnosis-ach-monthly-pass1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-condition.html">ACH Monthly Event Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 5758002}, {http://hl7.org/fhir/sid/icd-10-cm R78.81}">Bacteremia</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass1.html">Pass1 ACH</a></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <version value="4.0.0"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Confirmed"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+    <text value="Encounter Diagnosis"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="5758002"/>
+      <display value="Bacteremia (finding)"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <code value="R78.81"/>
+      <display value="Bacteremia"/>
+    </coding>
+    <text value="Bacteremia"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass1"/>
+    <display value="Pass1 ACH"/>
+  </subject>
+</Condition>

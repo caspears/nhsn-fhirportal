@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="medication-example-insulin-lispro"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication medication-example-insulin-lispro</b></p><a name="medication-example-insulin-lispro"> </a><a name="hcmedication-example-insulin-lispro"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medication.html">ACH Monthly Event Medication</a></p></div><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 1157460}">insulin lispro</span></p><p><b>status</b>: Active</p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="1157460"/>
+      <display value="insulin lispro / insulin lispro protamine, human Injectable Product"/>
+    </coding>
+    <text value="insulin lispro"/>
+  </code>
+  <status value="active"/>
+</Medication>

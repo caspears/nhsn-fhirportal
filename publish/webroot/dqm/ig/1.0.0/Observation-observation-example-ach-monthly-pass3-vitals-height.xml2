@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-example-ach-monthly-pass3-vitals-height"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass3-vitals-height</b></p><a name="observation-example-ach-monthly-pass3-vitals-height"> </a><a name="hcobservation-example-ach-monthly-pass3-vitals-height"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-vitals.html">ACH Monthly Event Observation - Vital Signs</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8302-2}">Height</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Short Stay</a></p><p><b>effective</b>: 2024-02-01 19:21:00-0500</p><p><b>issued</b>: 2024-02-01 19:21:00-0500</p><p><b>value</b>: 176.8 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+    <text value="Vital Signs"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8302-2"/>
+      <display value="Body height"/>
+    </coding>
+    <text value="Height"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass3"/>
+    <display value="Pass3 ACH"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+    <display value="Short Stay"/>
+  </encounter>
+  <effectiveDateTime value="2024-02-01T19:21:00-05:00"/>
+  <issued value="2024-02-01T19:21:00-05:00"/>
+  <valueQuantity>
+    <value value="176.8"/>
+    <unit value="cm"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="cm"/>
+  </valueQuantity>
+</Observation>

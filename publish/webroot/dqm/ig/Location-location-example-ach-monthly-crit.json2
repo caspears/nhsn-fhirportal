@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Location",
+  "id" : "location-example-ach-monthly-crit",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location location-example-ach-monthly-crit</b></p><a name=\"location-example-ach-monthly-crit\"> </a><a name=\"hclocation-example-ach-monthly-crit\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-location.html\">ACH Monthly Event Location</a></p></div><p><b>identifier</b>: <code>http://www.example.com/location</code>/2936</p><p><b>status</b>: Active</p><p><b>name</b>: ACH Monthly Medical Critical Care</p><p><b>description</b>: ACH Monthly Medical Critical Care</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Medical Critical Care</span></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://www.example.com/location",
+    "value" : "2936"
+  }],
+  "status" : "active",
+  "name" : "ACH Monthly Medical Critical Care",
+  "description" : "ACH Monthly Medical Critical Care",
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "code" : "HOSP",
+      "display" : "hospital"
+    }],
+    "text" : "Medical Critical Care"
+  }]
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="lab-observation-example-ach-daily-rsvlabbtg"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation lab-observation-example-ach-daily-rsvlabbtg</b></p><a name="lab-observation-example-ach-daily-rsvlabbtg"> </a><a name="hclab-observation-example-ach-daily-rsvlabbtg"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-observation-lab.html">ACH Daily Event Lab Result Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 31949-1}">RSV Ag Ql (Throat)</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-rsvlabbtg.html">ACHDaily, RSVLabBTG</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-daily-rsvlabbtg.html">Hospital Encounter</a></p><p><b>effective</b>: 2024-01-01 12:15:00+0000</p><p><b>issued</b>: 2024-01-01 12:15:00+0000</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 720735008}">Presumptive positive</span></p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-daily-rsvlabbtg.html">Specimen: type = Nasopharyngeal swab (specimen); receivedTime = 2024-01-01 15:00:00+0000</a></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="Laboratory"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="31949-1"/>
+      <display value="Respiratory syncytial virus Ag [Presence] in Throat"/>
+    </coding>
+    <text value="RSV Ag Ql (Throat)"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ach-daily-rsvlabbtg"/>
+    <display value="ACHDaily, RSVLabBTG"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example-ach-daily-rsvlabbtg"/>
+    <display value="Hospital Encounter"/>
+  </encounter>
+  <effectiveDateTime value="2024-01-01T12:15:00Z"/>
+  <issued value="2024-01-01T12:15:00Z"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="720735008"/>
+      <display value="Presumptive positive"/>
+    </coding>
+    <text value="Presumptive positive"/>
+  </valueCodeableConcept>
+  <specimen>
+    <reference value="Specimen/specimen-example-ach-daily-rsvlabbtg"/>
+  </specimen>
+</Observation>

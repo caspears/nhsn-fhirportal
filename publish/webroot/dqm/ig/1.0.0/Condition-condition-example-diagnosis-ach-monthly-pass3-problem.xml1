@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="condition-example-diagnosis-ach-monthly-pass3-problem"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition condition-example-diagnosis-ach-monthly-pass3-problem</b></p><a name="condition-example-diagnosis-ach-monthly-pass3-problem"> </a><a name="hccondition-example-diagnosis-ach-monthly-pass3-problem"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-condition.html">ACH Monthly Event Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 15805002}, {http://hl7.org/fhir/sid/icd-10-cm J01.90}">Acute sinusitis</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>onset</b>: 2024-01-21 07:32:00-0500</p><p><b>abatement</b>: 2024-02-02 16:43:00-0500</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="resolved"/>
+      <display value="Resolved"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <version value="4.0.0"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Confirmed"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+      <display value="Problem List Item"/>
+    </coding>
+    <text value="Problem List Item"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="15805002"/>
+      <display value="Acute sinusitis (disorder)"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <code value="J01.90"/>
+      <display value="Acute sinusitis, unspecified"/>
+    </coding>
+    <text value="Acute sinusitis"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass3"/>
+    <display value="Pass3 ACH"/>
+  </subject>
+  <onsetDateTime value="2024-01-21T07:32:00-05:00"/>
+  <abatementDateTime value="2024-02-02T16:43:00-05:00"/>
+</Condition>

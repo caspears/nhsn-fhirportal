@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="coverage-example-ach-daily-rsvlabbtg"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Coverage coverage-example-ach-daily-rsvlabbtg</b></p><a name="coverage-example-ach-daily-rsvlabbtg"> </a><a name="hccoverage-example-ach-daily-rsvlabbtg"> </a><p><b>status</b>: Active</p><p><b>beneficiary</b>: <a href="Patient-patient-example-ach-daily-rsvlabbtg.html">ACHDaily RSVLabBTG(official) Female, DoB: 2015-05-05 ( MRN: 1000009002 (use: usual, ))</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span></p><p><b>payor</b>: Self Pay</p></div>
+  </text>
+  <status value="active"/>
+  <beneficiary>
+    <reference value="Patient/patient-example-ach-daily-rsvlabbtg"/>
+  </beneficiary>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+      <code value="self"/>
+    </coding>
+    <text value="Self"/>
+  </relationship>
+  <payor>
+    <display value="Self Pay"/>
+  </payor>
+</Coverage>

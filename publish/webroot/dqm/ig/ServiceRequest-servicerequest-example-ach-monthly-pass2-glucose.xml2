@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="servicerequest-example-ach-monthly-pass2-glucose"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-monthly-pass2-glucose</b></p><a name="servicerequest-example-ach-monthly-pass2-glucose"> </a><a name="hcservicerequest-example-ach-monthly-pass2-glucose"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-servicerequest.html">ACH Monthly Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631824 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 108252007}">Laboratory procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 41653-7}">Glucose</span></p><p><b>quantity</b>: 2</p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>occurrence</b>: Code , Count 2  times, Once per 1 day</p><p><b>authoredOn</b>: 2024-01-31 22:21:00-0500</p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PLAC"/>
+        <display value="Placer Identifier"/>
+      </coding>
+      <text value="Placer Identifier"/>
+    </type>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+    <value value="1019631824"/>
+  </identifier>
+  <status value="completed"/>
+  <intent value="original-order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="108252007"/>
+      <display value="Laboratory procedure"/>
+    </coding>
+    <text value="Laboratory procedure"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="41653-7"/>
+      <display value="Glucose [Mass/volume] in Capillary blood by Glucometer"/>
+    </coding>
+    <text value="Glucose"/>
+  </code>
+  <quantityQuantity>
+    <value value="2"/>
+  </quantityQuantity>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass2"/>
+    <display value="Pass2 ACH"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+    <display value="Hospital Admission"/>
+  </encounter>
+  <occurrenceTiming>
+    <repeat>
+      <count value="2"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation"/>
+        <code value="BID"/>
+        <display value="BID"/>
+      </coding>
+    </code>
+  </occurrenceTiming>
+  <authoredOn value="2024-01-31T22:21:00-05:00"/>
+</ServiceRequest>

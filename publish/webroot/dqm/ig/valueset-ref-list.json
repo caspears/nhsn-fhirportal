@@ -1,0 +1,454 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4",
+      "version" : "20170601",
+      "status" : "active",
+      "name" : "Medication Clinical Drug",
+      "title" : null,
+      "description" : "",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-medicationrequest.html" : "ACH Monthly Event MedicationRequest",
+      "StructureDefinition-ach-monthly-medication.html" : "ACH Monthly Event Medication",
+      "StructureDefinition-ach-monthly-medicationadministration.html" : "ACH Monthly Event MedicationAdministration",
+      "StructureDefinition-ach-daily-medicationadministration.html" : "ACH Daily Event Medication Administration"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.54",
+      "version" : "20240606",
+      "status" : "active",
+      "name" : "SpecimenType",
+      "title" : "Specimen type",
+      "description" : "",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113762.1.4.1099.54"],
+      "sources" : ["2.16.840.1.113762.1.4.1099.54"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-daily-specimen.html" : "ACH Daily Event Specimen",
+      "StructureDefinition-ach-monthly-specimen.html" : "ACH Monthly Event Specimen"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591",
+      "version" : "20180718",
+      "status" : "active",
+      "name" : "Payer",
+      "title" : null,
+      "description" : "",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/sop"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-coverage.html" : "ACH Monthly Event Coverage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-daily-specimen.html" : "ACH Daily Event Specimen",
+      "StructureDefinition-ach-monthly-observation-vitals.html" : "ACH Monthly Event Observation - Vital Signs",
+      "StructureDefinition-ach-monthly-procedure.html" : "ACH Monthly Event Procedure",
+      "StructureDefinition-ach-monthly-specimen.html" : "ACH Monthly Event Specimen",
+      "StructureDefinition-ach-monthly-observation.html" : "ACH Monthly Event Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceType",
+      "title" : "Device Type",
+      "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1376"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-device.html" : "ACH Monthly Event Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticServiceSectionCodes",
+      "title" : "Diagnostic Service Section Codes",
+      "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+      "oids" : ["2.16.840.1.113883.4.642.3.234"],
+      "sources" : ["2.16.840.1.113883.4.642.3.234"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-diagnosticreport.html" : "ACH Monthly Event General Diagnostic Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-encounter.html" : "ACH Monthly Event Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-encounter.html" : "ACH Monthly Event Encounter",
+      "StructureDefinition-ach-daily-encounter.html" : "ACH Daily Event Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-encounter.html" : "ACH Monthly Event Encounter",
+      "StructureDefinition-ach-daily-location.html" : "ACH Daily Event Location",
+      "StructureDefinition-ach-monthly-location.html" : "ACH Monthly Event Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-admin-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Category Codes",
+      "title" : "Medication administration  category  codes",
+      "description" : "MedicationAdministration Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medication-admin-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.347"],
+      "sources" : ["2.16.840.1.113883.4.642.3.347"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-medicationadministration.html" : "ACH Monthly Event MedicationAdministration",
+      "StructureDefinition-ach-daily-medicationadministration.html" : "ACH Daily Event Medication Administration"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTFormCodes",
+      "title" : "SNOMED CT Form Codes",
+      "description" : "This value set includes all dose form codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.374"],
+      "sources" : ["2.16.840.1.113883.4.642.3.374"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-medication.html" : "ACH Monthly Event Medication",
+      "StructureDefinition-ach-daily-medication.html" : "ACH Daily Event Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Category Codes",
+      "title" : "Medication request  category  codes",
+      "description" : "MedicationRequest Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1322"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-medicationrequest.html" : "ACH Monthly Event MedicationRequest",
+      "StructureDefinition-ach-daily-medicationrequest.html" : "ACH Daily Event Medication Request"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Status Reason Codes",
+      "title" : "Medication request  status  reason  codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-medicationrequest.html" : "ACH Monthly Event MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-daily-observation-lab.html" : "ACH Daily Event Lab Result Observation",
+      "StructureDefinition-ach-monthly-observation-lab.html" : "ACH Monthly Event Lab Result Observation",
+      "StructureDefinition-ach-daily-observation.html" : "ACH Daily Event Observation",
+      "StructureDefinition-ach-monthly-observation.html" : "ACH Monthly Event Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-daily-observation-lab.html" : "ACH Daily Event Lab Result Observation",
+      "StructureDefinition-ach-monthly-observation-vitals.html" : "ACH Monthly Event Observation - Vital Signs",
+      "StructureDefinition-ach-monthly-observation-lab.html" : "ACH Monthly Event Lab Result Observation",
+      "StructureDefinition-ach-daily-observation.html" : "ACH Daily Event Observation",
+      "StructureDefinition-ach-monthly-observation.html" : "ACH Monthly Event Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "VitalSigns",
+      "title" : "Vital Signs",
+      "description" : "This value set indicates the allowed vital sign result types.   The LOINC code for Vitals Signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4).",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.62"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-observation-vitals.html" : "ACH Monthly Event Observation - Vital Signs"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-daily-servicerequest.html" : "ACH Daily Event ServiceRequest",
+      "StructureDefinition-ach-monthly-servicerequest.html" : "ACH Monthly Event ServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-procedure.html" : "ACH Monthly Event Procedure"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTReasonMedicationNotGivenCodes",
+      "title" : "SNOMED CT Reason Medication Not Given Codes",
+      "description" : "This value set includes all medication refused, medication not administered, and non-administration of necessary drug or medicine codes from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.342"],
+      "sources" : ["2.16.840.1.113883.4.642.3.342"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-medicationadministration.html" : "ACH Monthly Event MedicationAdministration",
+      "StructureDefinition-ach-daily-medicationadministration.html" : "ACH Daily Event Medication Administration"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/report-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCDiagnosticReportCodes",
+      "title" : "LOINC Diagnostic Report Codes",
+      "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.233"],
+      "sources" : ["2.16.840.1.113883.4.642.3.233"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-diagnosticreport.html" : "ACH Monthly Event General Diagnostic Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-medicationrequest.html" : "ACH Monthly Event MedicationRequest",
+      "StructureDefinition-ach-daily-medicationrequest.html" : "ACH Daily Event Medication Request",
+      "StructureDefinition-ach-monthly-medicationadministration.html" : "ACH Monthly Event MedicationAdministration"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestCategoryCodes",
+      "title" : "Service Request Category Codes",
+      "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.434"],
+      "sources" : ["2.16.840.1.113883.4.642.3.434"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-daily-servicerequest.html" : "ACH Daily Event ServiceRequest",
+      "StructureDefinition-ach-monthly-servicerequest.html" : "ACH Monthly Event ServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category",
+      "version" : "3.1.1",
+      "status" : "active",
+      "name" : "USCoreDiagnosticReportCategory",
+      "title" : "US Core DiagnosticReport Category",
+      "description" : "The US Core Diagnostic Report Category Value Set is a 'starter set' of categories supported for fetching and Diagnostic Reports and notes.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-diagnosticreport-note.html" : "ACH Monthly Event Diagnostic Report - Report and Note"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes",
+      "version" : "3.1.1",
+      "status" : "active",
+      "name" : "USCoreMedicationCodes",
+      "title" : "US Core Medication Codes (RxNorm)",
+      "description" : "All prescribable medication formulations represented using  either a 'generic' or 'brand-specific' concept. This includes RxNorm codes whose Term Type is SCD (semantic clinical drug), SBD (semantic brand drug), GPCK (generic pack), BPCK (brand pack), SCDG (semantic clinical drug group), SBDG (semantic brand drug group), SCDF (semantic clinical drug form), or SBDF (semantic brand drug form)",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
+      "oids" : ["2.16.840.1.113762.1.4.1010.4"],
+      "sources" : ["2.16.840.1.113762.1.4.1010.4"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-daily-medication.html" : "ACH Daily Event Medication"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-encounter.html" : "ACH Monthly Event Encounter",
+      "StructureDefinition-ach-daily-encounter.html" : "ACH Daily Event Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-daily-location.html" : "ACH Daily Event Location",
+      "StructureDefinition-ach-monthly-location.html" : "ACH Monthly Event Location"
+    },
+    {
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-diagnostic-report-status",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AcuteCareHospitalDailyEventDiagnosticReportStatus",
+      "title" : "ACH Daily Diagnostic Report Status ValueSet",
+      "description" : "A set of codes indicating the status of the diagnostic report.",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-daily-diagnosticreport-lab.html" : "ACH Daily Event Diagnostic Report (Lab)"
+    },
+    {
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-encounter-class",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AcuteCareHospitalDailyEventEncounterClass",
+      "title" : "ACH Daily Encounter Class ValueSet",
+      "description" : "A set of codes indicating the encounter class that represent inpatient, observation and short stay concepts.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"]
+    },
+    {
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-encounter-status",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AcuteCareHospitalDailyEncounterStatus",
+      "title" : "ACH Daily Encounter Status ValueSet",
+      "description" : "A set of codes indicating the status of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-daily-encounter.html" : "ACH Daily Event Encounter"
+    },
+    {
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-monthly-encounter-class",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AcuteCareHospitalMonthlyEncounterClass",
+      "title" : "ACH Monthly Encounter Class ValueSet",
+      "description" : "A set of codes indicating the encounter class that represent inpatient, emergency, observation and short stay concepts.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"]
+    },
+    {
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-monthly-encounter-status",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AcuteCareHospitalMonthlyEncounterStatus",
+      "title" : "ACH Monthly Encounter Status ValueSet",
+      "description" : "A set of codes indicating the status of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "uses" : {
+      },
+      "StructureDefinition-ach-monthly-encounter.html" : "ACH Monthly Event Encounter"
+    }
+  ]
+}

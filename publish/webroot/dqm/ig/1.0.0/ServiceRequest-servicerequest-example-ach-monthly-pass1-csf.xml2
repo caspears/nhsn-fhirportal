@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="servicerequest-example-ach-monthly-pass1-csf"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-monthly-pass1-csf</b></p><a name="servicerequest-example-ach-monthly-pass1-csf"> </a><a name="hcservicerequest-example-ach-monthly-pass1-csf"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-servicerequest.html">ACH Monthly Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631822 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 108252007}">Laboratory procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29584-0}">Differential panel - Cerebral spinal fluid</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass1.html">Pass1 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass1.html">Hospital Admission</a></p><p><b>occurrence</b>: Code , Events: 2024-02-02 17:22:30-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-02-02 17:22:30-0500</p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-monthly-pass1-csf.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Cerebrospinal fluid specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500</a></p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PLAC"/>
+        <display value="Placer Identifier"/>
+      </coding>
+      <text value="Placer Identifier"/>
+    </type>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+    <value value="1019631822"/>
+  </identifier>
+  <status value="completed"/>
+  <intent value="original-order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="108252007"/>
+      <display value="Laboratory procedure"/>
+    </coding>
+    <text value="Laboratory procedure"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29584-0"/>
+      <display value="Differential panel - Cerebral spinal fluid"/>
+    </coding>
+    <text value="Differential panel - Cerebral spinal fluid"/>
+  </code>
+  <quantityQuantity>
+    <value value="1"/>
+  </quantityQuantity>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass1"/>
+    <display value="Pass1 ACH"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example-ach-monthly-pass1"/>
+    <display value="Hospital Admission"/>
+  </encounter>
+  <occurrenceTiming>
+    <event value="2024-02-02T17:22:30-05:00"/>
+    <repeat>
+      <count value="1"/>
+    </repeat>
+    <code>
+      <text value="Once"/>
+    </code>
+  </occurrenceTiming>
+  <authoredOn value="2024-02-02T17:22:30-05:00"/>
+  <specimen>
+    <reference value="Specimen/specimen-example-ach-monthly-pass1-csf"/>
+  </specimen>
+</ServiceRequest>

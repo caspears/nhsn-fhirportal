@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-example-ach-monthly-pass1-gestational-age",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-example-ach-monthly-pass1-gestational-age</b></p><a name=\"observation-example-ach-monthly-pass1-gestational-age\"> </a><a name=\"hcobservation-example-ach-monthly-pass1-gestational-age\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-observation.html\">ACH Monthly Event Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 76516-4}\">Gestational age at birth</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>effective</b>: 2024-02-01 16:02:00-0500</p><p><b>issued</b>: 2024-02-01 16:02:00-0500</p><p><b>value</b>: 164 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam",
+      "display" : "exam"
+    }],
+    "text" : "Exam"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "76516-4",
+      "display" : "Gestational age--at birth"
+    }],
+    "text" : "Gestational age at birth"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass1",
+    "display" : "Pass1 ACH"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+    "display" : "Hospital Admission"
+  },
+  "effectiveDateTime" : "2024-02-01T16:02:00-05:00",
+  "issued" : "2024-02-01T16:02:00-05:00",
+  "valueQuantity" : {
+    "value" : 164,
+    "unit" : "day",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "d"
+  }
+}

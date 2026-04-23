@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="medicationrequest-example-ach-daily-rsvlabbtg-2"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-daily-rsvlabbtg-2</b></p><a name="medicationrequest-example-ach-daily-rsvlabbtg-2"> </a><a name="hcmedicationrequest-example-ach-daily-rsvlabbtg-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-medicationrequest.html">ACH Daily Event Medication Request</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101903002 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient</span></p><p><b>medication</b>: <a href="Medication-medication-example-ach-daily-rsvlabbtg-2.html">Nasal Saline spray</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-rsvlabbtg.html">ACHDaily, RSVLabBTG</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-daily-rsvlabbtg.html">Hospital Encounter</a></p><p><b>authoredOn</b>: 2024-01-01 11:45:15+0000</p><p><b>requester</b>: Faculty Physician Um_Cln, MD</p><p><b>recorder</b>: Faculty Physician Um_Cln, MD</p><p><b>courseOfTherapyType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy acute}">Short course (acute) therapy</span></p><h3>DosageInstructions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>AsNeeded[x]</b></td><td><b>Route</b></td></tr><tr><td style="display: none">*</td><td>Nasal Saline spray, one spray each nostril QID</td><td>Code , Once</td><td>false</td><td><span title="Codes:{http://snomed.info/sct 46713006}">Nasal use</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+    <value value="101903002"/>
+  </identifier>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+      <code value="inpatient"/>
+      <display value="Inpatient"/>
+    </coding>
+    <text value="Inpatient"/>
+  </category>
+  <medicationReference>
+    <reference value="Medication/medication-example-ach-daily-rsvlabbtg-2"/>
+    <display value="Nasal Saline spray"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/patient-example-ach-daily-rsvlabbtg"/>
+    <display value="ACHDaily, RSVLabBTG"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example-ach-daily-rsvlabbtg"/>
+    <display value="Hospital Encounter"/>
+  </encounter>
+  <authoredOn value="2024-01-01T11:45:15Z"/>
+  <requester>
+    <type value="Practitioner"/>
+    <display value="Faculty Physician Um_Cln, MD"/>
+  </requester>
+  <recorder>
+    <type value="Practitioner"/>
+    <display value="Faculty Physician Um_Cln, MD"/>
+  </recorder>
+  <courseOfTherapyType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+      <code value="acute"/>
+      <display value="Short course (acute) therapy"/>
+    </coding>
+    <text value="Short course (acute) therapy"/>
+  </courseOfTherapyType>
+  <dosageInstruction>
+    <text value="Nasal Saline spray, one spray each nostril QID"/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2024-01-01T12:00:15Z"/>
+          <end value="2024-01-02T07:00:15Z"/>
+        </boundsPeriod>
+      </repeat>
+      <code>
+        <text value="Nasal Saline spray, one spray each nostril QID"/>
+      </code>
+    </timing>
+    <asNeededBoolean value="false"/>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="46713006"/>
+        <display value="Nasal use"/>
+      </coding>
+      <text value="Nasal use"/>
+    </route>
+  </dosageInstruction>
+</MedicationRequest>

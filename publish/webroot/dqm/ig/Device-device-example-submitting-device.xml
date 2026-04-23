@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="device-example-submitting-device"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submitting-device"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device device-example-submitting-device</b></p><a name="device-example-submitting-device"> </a><a name="hcdevice-example-submitting-device"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nhsn-submitting-device.html">NHSN Submitting Device</a></p></div><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>NHSN Link</td><td>Model name</td></tr></table><blockquote><p><b>version</b></p><p><b>component</b>: api</p><p><b>value</b>: 0.9.0</p></blockquote><blockquote><p><b>version</b></p><p><b>component</b>: api</p><p><b>value</b>: 20230713.1</p></blockquote><blockquote><p><b>version</b></p><p><b>component</b>: api</p><p><b>value</b>: 3f9662a8</p></blockquote><blockquote><p><b>version</b></p><p><b>component</b>: cqf-ruler</p><p><b>value</b>: 0.13.0</p></blockquote></div>
+  </text>
+  <deviceName>
+    <name value="NHSN Link"/>
+    <type value="model-name"/>
+  </deviceName>
+  <version>
+    <component>
+      <value value="api"/>
+    </component>
+    <value value="0.9.0"/>
+  </version>
+  <version>
+    <component>
+      <value value="api"/>
+    </component>
+    <value value="20230713.1"/>
+  </version>
+  <version>
+    <component>
+      <value value="api"/>
+    </component>
+    <value value="3f9662a8"/>
+  </version>
+  <version>
+    <component>
+      <value value="cqf-ruler"/>
+    </component>
+    <value value="0.13.0"/>
+  </version>
+</Device>

@@ -1,0 +1,1733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Library xmlns="http://hl7.org/fhir">
+  <id value="NHSNAcuteCareHospitalMonthlyInitialPopulation"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<div>
+    <table class="grid dict">
+        
+        
+
+        
+        
+        <tr>
+            <th scope="row"><b>Id: </b></th>
+            <td style="padding-left: 4px;">NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+        </tr>
+        
+
+        
+        
+        <tr>
+            <th scope="row"><b>Version: </b></th>
+            <td style="padding-left: 4px;">1.0.0</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Url: </b></th>
+            <td style="padding-left: 4px;"><a href="Library-NHSNAcuteCareHospitalMonthlyInitialPopulation.html">NHSNAcuteCareHospitalMonthlyInitialPopulation</a></td>
+        </tr>
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Status: </b></th>
+            <td style="padding-left: 4px;">draft</td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Type: </b></th>
+            <td style="padding-left: 4px;">
+                
+                    
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>system: </b> <span><a href="http://terminology.hl7.org/6.5.0/CodeSystem-library-type.html">http://terminology.hl7.org/CodeSystem/library-type</a></span>
+                        </p>
+                        
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>code: </b> <span>logic-library</span>
+                        </p>
+                        
+                        
+                    
+                
+                
+            </td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Date: </b></th>
+            <td style="padding-left: 4px;">2025-09-15 11:51:36-0400</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Publisher: </b></th>
+            <td style="padding-left: 4px;">CDC National Healthcare Safety Network (NHSN)</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Jurisdiction: </b></th>
+            <td style="padding-left: 4px;">US</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Related Artifacts: </b></th>
+            <td style="padding-left: 4px;">
+                
+                
+                
+                <p><b>Dependencies</b></p>
+                <ul>
+                  
+                    <li><a href="http://fhir.org/guides/cqf/common/4.0.1/4.0.1/Library-FHIR-ModelInfo.html">http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1</a></li>
+                  
+                    <li><code>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/FHIRHelpers|4.0.2</code></li>
+                  
+                    <li><code>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNHelpers|0.0.002</code></li>
+                  
+                    <li><code>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/SharedResourceCreation|0.1.010</code></li>
+                  
+                    <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html">ActCodeversion: null9.0.0)</a></li>
+                  
+                    <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-observation-category.html">Observation Category Codesversion: null1.0.1)</a></li>
+                  
+                    <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></li>
+                  
+                    <li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0074.html">diagnosticServiceSectionIdversion: null2.5.0)</a></li>
+                  
+                    <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-condition-category.html">Condition Category Codesversion: null1.0.1)</a></li>
+                  
+                    <li><a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-condition-category.html">US Core Condition Category Extension Codes</a></li>
+                  
+                    <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codesversion: null3.0.0)</a></li>
+                  
+                    <li><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.265/expansion">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265</a></li>
+                  
+                    <li><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.292/expansion">Emergency Department Visit</a></li>
+                  
+                    <li><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.307/expansion">Encounter Inpatient</a></li>
+                  
+                    <li><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.143/expansion">Observation Services</a></li>
+                  
+                    <li><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.274/expansion">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274</a></li>
+                  
+                </ul>
+                
+                
+                
+                
+                
+            </td>
+        </tr>
+        
+
+        
+        <tr>
+          <th scope="row"><b>Parameters: </b></th>
+          <td style="padding-left: 4px;">
+            <table class="grid-dict">
+              <tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Min</b></th><th><b>Max</b></th><th><b>In/Out</b></th></tr>
+              
+                <tr><th>Measurement Period</th><th>Period</th><th>0</th><th>1</th><th>In</th></tr>
+              
+                <tr><th>Patient</th><th>Patient</th><th>0</th><th>1</th><th>Out</th></tr>
+              
+                <tr><th>Qualifying Encounters During Measurement Period</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>Encounters</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>Encounters with Patient Hospital Locations</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>Initial Population</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>Conditions</th><th>Condition</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>DiagnosticReports</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>Observations</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>Get Locations from IP Encounters in Measurement Period</th><th>Location</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Condition</th><th>Condition</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Device</th><th>Device</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE DiagnosticReport Lab</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE DiagnosticReport Note</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE DiagnosticReport Others</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Encounter</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE IP Encounters</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Location</th><th>Location</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Medication Administration</th><th>MedicationAdministration</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Medication Request</th><th>MedicationRequest</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Medication</th><th>Medication</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Observation Lab Category</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Observation Vital Signs Category</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Observation Category</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Coverage</th><th>Coverage</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Procedure</th><th>Procedure</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Specimen</th><th>Specimen</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Service Request</th><th>ServiceRequest</th><th>0</th><th>*</th><th>Out</th></tr>
+              
+                <tr><th>SDE Minimal Patient</th><th>Patient</th><th>0</th><th>1</th><th>Out</th></tr>
+              
+            </table>
+          </td>
+        </tr>
+        
+
+        
+        <tr>
+          <th scope="row"><b>Data Requirements:</b></th>
+          <td style="padding-left: 4px;">
+            <table class="grid-dict">
+              <tr><th><b>Type</b></th><th><b>Profile</b></th><th><b>MS</b></th><th><b>Code Filter</b></th></tr>
+              
+                <tr>
+                  <th>Patient</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Patient</th>
+                  <th/>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Encounter</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>
+                  <th>;;;;;;</th>
+                  <th>
+                    
+                      <b>code filter: </b>
+                      
+                      <br/>
+                      
+                      
+                      <span style="padding-left: 4px;">
+                          <b>path: </b><span>type</span>
+                      </span>
+                      
+                      <br/>
+                      
+                      
+                      
+                      <span style="padding-left: 4px;">
+                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307</span>
+                      </span>
+                      
+                      
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Encounter</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>
+                  <th>;;;;;;</th>
+                  <th>
+                    
+                      <b>code filter: </b>
+                      
+                      <br/>
+                      
+                      
+                      <span style="padding-left: 4px;">
+                          <b>path: </b><span>type</span>
+                      </span>
+                      
+                      <br/>
+                      
+                      
+                      
+                      <span style="padding-left: 4px;">
+                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292</span>
+                      </span>
+                      
+                      
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Encounter</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>
+                  <th>;;;;;;</th>
+                  <th>
+                    
+                      <b>code filter: </b>
+                      
+                      <br/>
+                      
+                      
+                      <span style="padding-left: 4px;">
+                          <b>path: </b><span>type</span>
+                      </span>
+                      
+                      <br/>
+                      
+                      
+                      
+                      <span style="padding-left: 4px;">
+                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143</span>
+                      </span>
+                      
+                      
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Encounter</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>
+                  <th>;;;;;;</th>
+                  <th>
+                    
+                      <b>code filter: </b>
+                      
+                      <br/>
+                      
+                      
+                      <span style="padding-left: 4px;">
+                          <b>path: </b><span>class</span>
+                      </span>
+                      
+                      <br/>
+                      
+                      
+                      
+                      <span style="padding-left: 4px;">
+                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274</span>
+                      </span>
+                      
+                      
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Encounter</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>
+                  <th>;;;;;;</th>
+                  <th>
+                    
+                      <b>code filter: </b>
+                      
+                      <br/>
+                      
+                      
+                      <span style="padding-left: 4px;">
+                          <b>path: </b><span>class</span>
+                      </span>
+                      
+                      <br/>
+                      
+                      
+                      
+                      
+                          
+                          <p style="margin-bottom: 5px;">
+                              <b>system: </b> <span><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html">http://terminology.hl7.org/CodeSystem/v3-ActCode</a></span>
+                          </p>
+                          
+                          
+                          <p style="margin-bottom: 5px;">
+                              <b>code: </b> <span>EMER</span>
+                          </p>
+                          
+                          
+                          <p style="margin-bottom: 5px;">
+                              <b>display: </b> <span>emergency</span>
+                          </p>
+                          
+                      
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Encounter</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>
+                  <th>;;;;;;</th>
+                  <th>
+                    
+                      <b>code filter: </b>
+                      
+                      <br/>
+                      
+                      
+                      <span style="padding-left: 4px;">
+                          <b>path: </b><span>class</span>
+                      </span>
+                      
+                      <br/>
+                      
+                      
+                      
+                      
+                          
+                          <p style="margin-bottom: 5px;">
+                              <b>system: </b> <span><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html">http://terminology.hl7.org/CodeSystem/v3-ActCode</a></span>
+                          </p>
+                          
+                          
+                          <p style="margin-bottom: 5px;">
+                              <b>code: </b> <span>OBSENC</span>
+                          </p>
+                          
+                          
+                          <p style="margin-bottom: 5px;">
+                              <b>display: </b> <span>observation encounter</span>
+                          </p>
+                          
+                      
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Encounter</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>
+                  <th>;;;;;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Condition</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Condition</th>
+                  <th>;;;;;;;;;;;;;;;;;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>DiagnosticReport</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/DiagnosticReport</th>
+                  <th>;;;;;;;;;;;;;;;;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Observation</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Observation</th>
+                  <th>;;;;;;;;;;;;;;;;;;;;;;;;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Device</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Device</th>
+                  <th>;;;;;;;;;;;;;;;;;;;;;;;;;;;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>MedicationAdministration</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/MedicationAdministration</th>
+                  <th>;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>MedicationRequest</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/MedicationRequest</th>
+                  <th>;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Medication</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Medication</th>
+                  <th>;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Coverage</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Coverage</th>
+                  <th>;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Procedure</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Procedure</th>
+                  <th>;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Specimen</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Specimen</th>
+                  <th>;;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>ServiceRequest</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/ServiceRequest</th>
+                  <th>;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+            </table>
+          </td>
+        </tr>
+        
+
+        
+        
+        <tr>
+          <td colspan="2">
+            <table>
+              <tr><th><a id="cql-content"><b>Content: </b></a> text/cql</th></tr>
+              <tr><td><pre><code class="language-cql">library NHSNAcuteCareHospitalMonthlyInitialPopulation version '1.0.1-dev'
+
+using FHIR version '4.0.1'
+
+include FHIRHelpers version '4.0.2' called FHIRHelpers
+include NHSNHelpers version '0.0.002' called NHSNHelpers
+include SharedResourceCreation version '0.1.010' called SharedResource
+
+codesystem &quot;ActCode&quot;: 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
+codesystem &quot;Observation Category&quot;: 'http://terminology.hl7.org/CodeSystem/observation-category'
+codesystem &quot;LOINC&quot;: 'http://loinc.org' 
+codesystem &quot;V2-0074&quot;: 'http://terminology.hl7.org/CodeSystem/v2-0074'
+codesystem &quot;Condition Category&quot;: 'http://terminology.hl7.org/CodeSystem/condition-category'
+codesystem &quot;US Core Condition Category&quot;: 'http://hl7.org/fhir/us/core/CodeSystem/condition-category'
+codesystem &quot;Condition Clinical Status&quot;: 'http://terminology.hl7.org/CodeSystem/condition-clinical'
+
+valueset &quot;Inpatient, Emergency, and Observation Locations&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265'
+valueset &quot;Emergency Department Visit&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292'
+valueset &quot;Encounter Inpatient&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307'
+valueset &quot;Observation Services&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143'
+valueset &quot;NHSN Inpatient Encounter Class Codes&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274'
+
+//code for Observation Category
+code &quot;laboratory&quot;: 'laboratory' from &quot;Observation Category&quot; display 'Laboratory'
+code &quot;social-history&quot;: 'social-history' from &quot;Observation Category&quot; display 'Social History'
+code &quot;vital-signs&quot;: 'vital-signs' from &quot;Observation Category&quot; display 'Vital Signs'
+code &quot;imaging&quot;: 'imaging' from &quot;Observation Category&quot; display 'Imaging'
+code &quot;procedure&quot;: 'procedure' from &quot;Observation Category&quot; display 'Procedure'
+code &quot;survey&quot;: 'survey' from &quot;Observation Category&quot; display 'Survey'
+
+//code for Condition category
+code &quot;problem-list-item&quot;: 'problem-list-item' from &quot;Condition Category&quot; display 'Problem List Item'
+code &quot;encounter-diagnosis&quot;: 'encounter-diagnosis' from &quot;Condition Category&quot; display 'Encounter Diagnosis'
+code &quot;health-concern&quot;: 'health-concern' from &quot;US Core Condition Category&quot; display 'Health Concern'
+
+//code for Diagnostic Report Category
+code &quot;LAB&quot;: 'LAB' from &quot;V2-0074&quot; display 'Laboratory'
+code &quot;Radiology&quot;: 'LP29684-5' from &quot;LOINC&quot; display 'Radiology'
+code &quot;Pathology&quot;: 'LP7839-6' from &quot;LOINC&quot; display 'Pathology'
+code &quot;Cardiology&quot;: 'LP29708-2' from &quot;LOINC&quot; display 'Cardiology'
+
+//code for Emergency Encounter Class
+code &quot;emergency&quot;: 'EMER' from &quot;ActCode&quot; display 'emergency'
+code &quot;observation encounter&quot;: 'OBSENC' from &quot;ActCode&quot; display 'observation encounter'
+
+//code for Condition clinicalStatus
+code &quot;active&quot;: 'active' from &quot;Condition Clinical Status&quot; display 'active'
+
+parameter &quot;Measurement Period&quot; 
+    default Interval[@2024-04-01T00:00:00.0, @2024-04-30T23:59:59.0)
+
+context Patient 
+
+define &quot;Qualifying Encounters During Measurement Period&quot;:
+ ( [Encounter: &quot;Encounter Inpatient&quot;]
+  union [Encounter: &quot;Emergency Department Visit&quot;]
+  union [Encounter: &quot;Observation Services&quot;]
+  union [Encounter: class in &quot;NHSN Inpatient Encounter Class Codes&quot;]
+  union [Encounter: class ~ &quot;emergency&quot;]
+  union [Encounter: class ~ &quot;observation encounter&quot;]) QualifyingEncounters
+  where QualifyingEncounters.status in {'in-progress', 'finished', 'triaged', 'onleave', 'entered-in-error'}
+    and QualifyingEncounters.period overlaps &quot;Measurement Period&quot; 
+
+define &quot;Encounters with Patient Hospital Locations&quot;:
+  &quot;Encounters&quot; Encounters
+  where exists(
+    Encounters.location EncounterLocation
+    where NHSNHelpers.GetLocation(EncounterLocation.location).type in &quot;Inpatient, Emergency, and Observation Locations&quot;
+      and EncounterLocation.period overlaps Encounters.period
+  )
+  and Encounters.status in {'in-progress', 'finished', 'triaged', 'onleave', 'entered-in-error'}
+  and Encounters.period overlaps &quot;Measurement Period&quot;
+
+define &quot;Initial Population&quot;:
+  &quot;Qualifying Encounters During Measurement Period&quot;
+  union &quot;Encounters with Patient Hospital Locations&quot;
+
+define &quot;Encounters&quot;:
+  [Encounter]
+
+define &quot;Conditions&quot;:
+  [Condition]
+
+define &quot;DiagnosticReports&quot;:
+  [DiagnosticReport]
+
+define &quot;Observations&quot;:
+  [Observation]
+
+define &quot;Get Locations from IP Encounters in Measurement Period&quot;:
+  flatten(&quot;Initial Population&quot; IP
+  let locationElements: IP.location
+  return
+    locationElements LE
+    let locationReference: LE.location
+    return NHSNHelpers.GetLocation(locationReference))
+
+//============================================================================
+//Supplemental Data Element
+//When FHIR.canonical value is present, US Core 3.1.1 profiles are used
+//When FHIR.canonical value is not present, FHIR Base profiles are used
+//============================================================================
+define &quot;SDE Condition&quot;:
+  &quot;Conditions&quot; Conditions 
+  where exists(
+    &quot;Initial Population&quot; IP
+    //Check for Problem List Conditions that were recorded before or during IP
+    where (
+      Conditions.recordedDate before end of IP.period
+      and exists(Conditions.category categories
+        where categories ~ &quot;problem-list-item&quot;)
+      and Conditions.clinicalStatus ~ &quot;active&quot;
+    )
+    //Check for Encounter Diagnosis Conditions that reference an IP encounter
+    or (
+      (exists(IP.diagnosis Diagnoses
+          where GetCondition(Diagnoses.condition).id = Conditions.id
+        )
+        or GetEncounter(Conditions.encounter).id = IP.id
+      )
+      and exists (Conditions.category categories
+        where categories ~ &quot;encounter-diagnosis&quot;
+          or categories ~ &quot;health-concern&quot;)
+    )
+  )
+  return ConditionResource(Conditions,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition'}},
+  {&quot;problem-list-item&quot;, &quot;encounter-diagnosis&quot;, &quot;health-concern&quot;})
+
+define &quot;SDE Device&quot;:
+  [Device] Devices 
+  where exists(&quot;Initial Population&quot;)
+  return DeviceResource(Devices,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device'}})
+
+//This block collects all DiagnosticReport resources while also marking Lab and Note DiagnosticReports with the appropriate profiles
+//#Start DiagnosticReport block
+define &quot;SDE DiagnosticReport Lab&quot;:
+  &quot;DiagnosticReports&quot; DiagnosticReports
+  where (exists(DiagnosticReports.category Category where Category ~ &quot;LAB&quot;)
+    and exists(
+      &quot;Initial Population&quot; IP
+      where NHSNHelpers.&quot;Normalize Interval&quot;(DiagnosticReports.effective) overlaps IP.period))
+  return SharedResource.DiagnosticReportLabResource(DiagnosticReports,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-lab'}})
+ 
+define &quot;SDE DiagnosticReport Note&quot;:
+  &quot;DiagnosticReports&quot; DiagnosticReports
+  where ((exists(DiagnosticReports.category Category where Category ~ &quot;Radiology&quot;))
+    or exists((DiagnosticReports.category Category where Category ~ &quot;Pathology&quot;))
+    or exists((DiagnosticReports.category Category where Category ~ &quot;Cardiology&quot;)))
+    and exists(
+      &quot;Initial Population&quot; IP
+      where NHSNHelpers.&quot;Normalize Interval&quot;(DiagnosticReports.effective) overlaps IP.period)
+  return DiagnosticReportResource(DiagnosticReports,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-note'}})
+
+define &quot;SDE DiagnosticReport Others&quot;:
+  [DiagnosticReport] DiagnosticReports
+  where not ((exists(DiagnosticReports.category Category where Category ~ &quot;Radiology&quot;))
+    or exists((DiagnosticReports.category Category where Category ~ &quot;Pathology&quot;))
+    or exists((DiagnosticReports.category Category where Category ~ &quot;Cardiology&quot;))
+    or exists(DiagnosticReports.category Category where Category ~ &quot;LAB&quot;))
+    and exists(&quot;Initial Population&quot; IP
+      where NHSNHelpers.&quot;Normalize Interval&quot;(DiagnosticReports.effective) overlaps IP.period)
+  return DiagnosticReportResource(DiagnosticReports,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport'}})
+//#End DiagnosticReport block
+
+define &quot;SDE Encounter&quot;: 
+  &quot;Encounters&quot; Encounters
+  where not CheckIP(Encounters)
+  and exists(
+    &quot;Initial Population&quot; IP
+    where Encounters.period overlaps IP.period)
+  return SharedResource.EncounterResource(Encounters,
+  {FHIR.canonical{value: 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'}})
+
+define &quot;SDE IP Encounters&quot;:
+  &quot;Initial Population&quot; IP
+  return SharedResource.EncounterResource(IP, 
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter'}})
+
+define &quot;SDE Location&quot;:
+  &quot;Get Locations from IP Encounters in Measurement Period&quot; Locations
+  where exists(&quot;Initial Population&quot;)
+  and Locations is not null
+  return SharedResource.LocationResource(Locations,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location'}})
+ 
+define &quot;SDE Medication Administration&quot;:
+  [MedicationAdministration] MedicationAdministrations 
+  where exists(
+    &quot;Initial Population&quot; IP
+    where NHSNHelpers.&quot;Normalize Interval&quot;(MedicationAdministrations.effective) overlaps IP.period)
+  return SharedResource.MedicationAdministrationResource(MedicationAdministrations,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration'}})
+ 
+define &quot;SDE Medication Request&quot;:
+  [MedicationRequest] MedicationRequests 
+  where exists(
+    &quot;Initial Population&quot; IP
+    where MedicationRequests.authoredOn during IP.period)
+  return SharedResource.MedicationRequestResource(MedicationRequests,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest'}})
+
+define &quot;SDE Medication&quot;:
+  (&quot;SDE Medication Request&quot;
+  union &quot;SDE Medication Administration&quot;) MedReqOrAdmin
+  where MedReqOrAdmin.medication is FHIR.Reference
+  and exists(&quot;Initial Population&quot;) //No longer need to check for timing here because it's checked in SDE Medication Request/Administriation
+  return SharedResource.MedicationResource(GetMedicationFrom(MedReqOrAdmin.medication),
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication'}})
+
+define &quot;SDE Observation Lab Category&quot;:
+  &quot;Observations&quot; Observations 
+  where (exists(Observations.category Category where Category ~ &quot;laboratory&quot;))
+    and exists(
+      &quot;Initial Population&quot; IP
+      where NHSNHelpers.&quot;Normalize Interval&quot;(Observations.effective) overlaps IP.period)
+  return SharedResource.ObservationLabResource(Observations,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab'}})
+
+//Vital Signs Observation has its own profile in FHIR Base
+define &quot;SDE Observation Vital Signs Category&quot;:
+  &quot;Observations&quot; Observations 
+  where (exists(Observations.category Category where Category ~ &quot;vital-signs&quot;))
+    and exists(
+      &quot;Initial Population&quot; IP
+      where NHSNHelpers.&quot;Normalize Interval&quot;(Observations.effective) overlaps IP.period)
+  return ObservationVitalSignsResource(Observations,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals'}})
+
+//Defaulting to base FHIR profile as there are no individual profiles in US Core 3.1.1 that cover these Observation categories
+define &quot;SDE Observation Category&quot;:
+  &quot;Observations&quot; Observations 
+  where ((exists(Observations.category Category where Category ~ &quot;social-history&quot;))
+    or (exists(Observations.category Category where Category ~ &quot;survey&quot;))
+    or (exists(Observations.category Category where Category ~ &quot;imaging&quot;))
+    or (exists(Observations.category Category where Category ~ &quot;procedure&quot;)))
+    and exists(
+      &quot;Initial Population&quot; IP
+      where NHSNHelpers.&quot;Normalize Interval&quot;(Observations.effective) overlaps IP.period)
+  return ObservationResource(Observations,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation'}})
+
+define &quot;SDE Coverage&quot;: 
+	[Coverage] Coverages
+  where exists(
+    &quot;Initial Population&quot; IP
+    where Coverages.period overlaps IP.period)
+  return SharedResource.CoverageResource(Coverages,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage'}})
+
+define &quot;SDE Procedure&quot;:
+  [Procedure] Procedures 
+  where exists(
+    &quot;Initial Population&quot; IP
+    where NHSNHelpers.&quot;Normalize Interval&quot;(Procedures.performed) overlaps IP.period)
+  return SharedResource.ProcedureResource(Procedures,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure'}})
+
+define &quot;SDE Specimen&quot;:
+  [Specimen] Specimens
+  where exists(
+    &quot;Initial Population&quot; IP
+    where NHSNHelpers.&quot;Normalize Interval&quot;(Specimens.collection.collected) overlaps IP.period
+  )
+  return SharedResource.SpecimenResource(Specimens,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen'}})
+
+define &quot;SDE Service Request&quot;:
+  [ServiceRequest] ServiceRequests
+  where exists(&quot;Initial Population&quot; IP
+    where ServiceRequests.authoredOn during IP.period)
+  return SharedResource.ServiceRequestResource(ServiceRequests,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest'}})
+
+define &quot;SDE Minimal Patient&quot;:
+  Patient p
+  return SharedResource.PatientResource(p,
+  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient'}})
+
+//
+//Functions
+//
+define function &quot;CheckIP&quot;(encounter Encounter):
+  exists(&quot;Initial Population&quot; IP
+  where encounter.id = IP.id)
+
+define function &quot;GetMedicationFrom&quot;(choice Choice&lt;FHIR.CodeableConcept, FHIR.Reference&gt;):
+  case
+    when choice is FHIR.Reference then
+      GetMedication(choice as FHIR.Reference)
+    else
+      null
+  end
+
+define function &quot;GetMedication&quot;(reference Reference):
+  singleton from (
+    [Medication] Medications
+    where Medications.id = NHSNHelpers.GetId(reference.reference)
+  )
+
+define function &quot;GetCondition&quot;(reference Reference):
+  singleton from (
+    &quot;Conditions&quot; Conditions
+    where Conditions.id = NHSNHelpers.GetId(reference.reference)
+  )
+
+define function &quot;GetEncounter&quot;(reference Reference):
+  singleton from (
+    &quot;Encounters&quot; Encounters
+    where Encounters.id = NHSNHelpers.GetId(reference.reference)
+  )
+
+define function RemoveUnaccepted(codes List&lt;FHIR.CodeableConcept&gt;, accepted List&lt;System.Code&gt;):
+	codes c
+  where exists(
+    accepted a
+    where c ~ a
+  )
+
+define function FilterCodeableConcepts(codes List&lt;FHIR.CodeableConcept&gt;, accepted List&lt;System.Code&gt;):
+	if Count(accepted) &gt; 0
+		then RemoveUnaccepted(codes, accepted)
+	else codes
+
+//
+//Measure Specific Resource Creation Functions
+//
+define function ConditionResource(condition Condition, profileURLs List&lt;FHIR.canonical&gt;, acceptedCategories List&lt;System.Code&gt;):
+  condition c
+  return Condition{
+    id: FHIR.id {value: 'LCR-' + c.id},
+    meta: SharedResource.MetaElement(c, profileURLs),
+    extension: c.extension,
+    clinicalStatus: c.clinicalStatus,
+    verificationStatus: c.verificationStatus,
+    category: FilterCodeableConcepts(c.category, acceptedCategories),
+    severity: c.severity,
+    code: c.code,
+    bodySite: c.bodySite,
+    subject: c.subject,
+    encounter: c.encounter,
+    onset: c.onset,
+    abatement: c.abatement,
+    recordedDate: c.recordedDate,
+    stage: SharedResource.ConditionStage(c.stage),
+    evidence: SharedResource.ConditionEvidence(c.evidence),
+    note: c.note
+  }
+
+define function DeviceUdiCarrier(udiCarrier List&lt;FHIR.Device.UdiCarrier&gt;):
+  udiCarrier u
+  return FHIR.Device.UdiCarrier{
+    deviceIdentifier: u.deviceIdentifier,
+    issuer: u.issuer,
+    jurisdiction: u.jurisdiction,
+    carrierAIDC: u.carrierAIDC,
+    carrierHRF: u.carrierHRF,
+    entryType: u.entryType
+  }
+
+define function DeviceDeviceName(deviceName List&lt;FHIR.Device.DeviceName&gt;):
+  deviceName d
+  return FHIR.Device.DeviceName{
+    name: d.name,
+    type: d.type
+  }
+
+define function DeviceSpecialization(specialization List&lt;FHIR.Device.Specialization&gt;):
+  specialization s
+  return FHIR.Device.Specialization{
+    systemType: s.systemType,
+    version: s.version
+  }
+
+define function DeviceVersion(version List&lt;FHIR.Device.Version&gt;):
+  version v
+  return FHIR.Device.Version{
+    type: v.type,
+    component: v.component,
+    value: v.value
+  }
+
+define function DeviceProperty(deviceProperty List&lt;FHIR.Device.Property&gt;):
+  deviceProperty d
+  return FHIR.Device.Property{
+    id: d.id,
+    type: d.type,
+    valueQuantity: d.valueQuantity,
+    valueCode: d.valueCode
+  }
+
+define function DeviceResource(device Device, profileURLs List&lt;FHIR.canonical&gt;):
+  device d
+  return Device{
+    id: FHIR.id{value: 'LCR-' + d.id},
+    meta: SharedResource.MetaElement(d, profileURLs),
+    extension: d.extension,
+    definition: d.definition,
+    udiCarrier: DeviceUdiCarrier(d.udiCarrier),
+    status: d.status,
+    statusReason: d.statusReason,
+    distinctIdentifier: d.distinctIdentifier,
+    manufacturer: d.manufacturer,
+    manufactureDate: d.manufactureDate,
+    expirationDate: d.expirationDate,
+    lotNumber: d.lotNumber,
+    serialNumber: d.serialNumber,
+    deviceName: DeviceDeviceName(d.deviceName),
+    modelNumber: d.modelNumber,
+    partNumber: d.partNumber,
+    type: d.type,
+    specialization: DeviceSpecialization(d.specialization),
+    version: DeviceVersion(d.version),
+    property: DeviceProperty(d.property),
+    patient: d.patient,
+    owner: d.owner,
+    contact: d.contact,
+    location: d.location,
+    url: d.url,
+    note: d.note,
+    safety: d.safety,
+    parent: d.parent
+  }
+
+define function DiagnosticReportResource(diagnosticReport DiagnosticReport, profileURLs List&lt;FHIR.canonical&gt;):
+  diagnosticReport d
+  return DiagnosticReport{
+    id: FHIR.id{value: 'LCR-' + d.id},
+    meta: SharedResource.MetaElement(d, profileURLs),
+    extension: d.extension,
+    basedOn: d.basedOn,
+    status: d.status,
+    category: d.category,
+    code: d.code,
+    subject: d.subject,
+    encounter: d.encounter,
+    effective: d.effective,
+    issued: d.issued,
+    performer: d.performer,
+    resultsInterpreter: d.resultsInterpreter,
+    specimen: d.specimen,
+    result: d.result,
+    conclusion: d.conclusion,
+    conclusionCode: d.conclusionCode
+  }
+
+define function ObservationResource(observation Observation, profileURLs List&lt;FHIR.canonical&gt;):
+  observation o
+  return Observation{
+    id: FHIR.id {value: 'LCR-' + o.id},
+    meta: SharedResource.MetaElement(o, profileURLs),
+    extension: o.extension,
+    partOf: o.partOf,
+    status: o.status,
+    category: o.category,
+    code: o.code,
+    subject: o.subject,
+    focus: o.focus,
+    encounter: o.encounter,
+    effective: o.effective,
+    issued: o.issued,
+    performer: o.performer,
+    value: o.value,
+    dataAbsentReason: o.dataAbsentReason,
+    interpretation: o.interpretation,
+    note: o.note,
+    bodySite: o.bodySite,
+    method: o.method,
+    specimen: o.specimen,
+    device: o.device,
+    referenceRange: SharedResource.ObservationReferenceRange(o.referenceRange),
+    hasMember: o.hasMember,
+    derivedFrom: o.derivedFrom,
+    component: SharedResource.ObservationComponent(o.component)
+  }
+
+define function ObservationVitalSignsCoding(coding List&lt;Coding&gt;):
+  coding c
+  return Coding{
+    system: c.system,
+    version: c.version,
+    code: c.code,
+    display: c.display,
+    userSelected: c.userSelected
+  }
+
+define function ObservationVitalSignsCategory(category List&lt;CodeableConcept&gt;):
+  category c
+  return CodeableConcept{
+    coding: ObservationVitalSignsCoding(c.coding),
+    text: c.text
+  }
+
+define function ObservationVitalSignsComponent(component List&lt;FHIR.Observation.Component&gt;):
+  component c
+  return FHIR.Observation.Component{
+    code: c.code,
+    value: c.value,
+    dataAbsentReason: c.dataAbsentReason,
+    interpretation: c.interpretation,
+    referenceRange: SharedResource.ObservationReferenceRange(c.referenceRange)
+  }
+
+define function ObservationVitalSignsResource(observation Observation, profileURLs List&lt;FHIR.canonical&gt;):
+  observation o
+  return Observation{
+    id: FHIR.id {value: 'LCR-' + o.id},
+    meta: SharedResource.MetaElement(o, profileURLs),
+    extension: o.extension,
+    partOf: o.partOf,
+    status: o.status,
+    category: ObservationVitalSignsCategory(o.category),
+    code: o.code,
+    subject: o.subject,
+    focus: o.focus,
+    encounter: o.encounter,
+    effective: o.effective,
+    issued: o.issued,
+    performer: o.performer,
+    value: o.value,
+    dataAbsentReason: o.dataAbsentReason,
+    interpretation: o.interpretation,
+    note: o.note,
+    bodySite: o.bodySite,
+    method: o.method,
+    specimen: o.specimen,
+    device: o.device,
+    referenceRange: SharedResource.ObservationReferenceRange(o.referenceRange),
+    hasMember: o.hasMember,
+    derivedFrom: o.derivedFrom,
+    component: ObservationVitalSignsComponent(o.component)
+  }</code></pre></td></tr>
+            </table>
+          </td>
+        </tr>
+        
+        
+        
+    </table>
+</div>
+</div>
+  </text>
+  <contained>
+    <Parameters>
+      <id value="options"/>
+      <parameter>
+        <name value="translatorVersion"/>
+        <valueString value="3.25.0"/>
+      </parameter>
+      <parameter>
+        <name value="option"/>
+        <valueString value="EnableDateRangeOptimization"/>
+      </parameter>
+      <parameter>
+        <name value="option"/>
+        <valueString value="EnableAnnotations"/>
+      </parameter>
+      <parameter>
+        <name value="option"/>
+        <valueString value="EnableLocators"/>
+      </parameter>
+      <parameter>
+        <name value="option"/>
+        <valueString value="DisableListDemotion"/>
+      </parameter>
+      <parameter>
+        <name value="option"/>
+        <valueString value="DisableListPromotion"/>
+      </parameter>
+      <parameter>
+        <name value="analyzeDataRequirements"/>
+        <valueBoolean value="false"/>
+      </parameter>
+      <parameter>
+        <name value="collapseDataRequirements"/>
+        <valueBoolean value="true"/>
+      </parameter>
+      <parameter>
+        <name value="compatibilityLevel"/>
+        <valueString value="1.5"/>
+      </parameter>
+      <parameter>
+        <name value="enableCqlOnly"/>
+        <valueBoolean value="false"/>
+      </parameter>
+      <parameter>
+        <name value="errorLevel"/>
+        <valueString value="Info"/>
+      </parameter>
+      <parameter>
+        <name value="signatureLevel"/>
+        <valueString value="Overloads"/>
+      </parameter>
+      <parameter>
+        <name value="validateUnits"/>
+        <valueBoolean value="true"/>
+      </parameter>
+      <parameter>
+        <name value="verifyOnly"/>
+        <valueBoolean value="false"/>
+      </parameter>
+    </Parameters>
+  </contained>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-cqlOptions">
+    <valueReference>
+      <reference value="#options"/>
+    </valueReference>
+  </extension>
+  <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNAcuteCareHospitalMonthlyInitialPopulation"/>
+  <version value="1.0.0"/>
+  <name value="NHSNAcuteCareHospitalMonthlyInitialPopulation"/>
+  <status value="draft"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+      <code value="logic-library"/>
+    </coding>
+  </type>
+  <date value="2025-09-15T11:51:36-04:00"/>
+  <publisher value="CDC National Healthcare Safety Network (NHSN)"/>
+  <contact>
+    <name value="CDC National Healthcare Safety Network (NHSN)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cdc.gov/nhsn"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="nhsn@cdc.gov"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="FHIR model information"/>
+    <resource value="http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Library FHIRHelpers"/>
+    <resource value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/FHIRHelpers|4.0.2"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Library NHSNHelpers"/>
+    <resource value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNHelpers|0.0.002"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Library SharedResource"/>
+    <resource value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/SharedResourceCreation|0.1.010"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Code system ActCode"/>
+    <resource value="http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Code system Observation Category"/>
+    <resource value="http://terminology.hl7.org/CodeSystem/observation-category|1.0.1"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Code system LOINC"/>
+    <resource value="http://loinc.org"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Code system V2-0074"/>
+    <resource value="http://terminology.hl7.org/CodeSystem/v2-0074|2.5.0"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Code system Condition Category"/>
+    <resource value="http://terminology.hl7.org/CodeSystem/condition-category|1.0.1"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Code system US Core Condition Category"/>
+    <resource value="http://hl7.org/fhir/us/core/CodeSystem/condition-category"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Code system Condition Clinical Status"/>
+    <resource value="http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Value set Inpatient, Emergency, and Observation Locations"/>
+    <resource value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Value set Emergency Department Visit"/>
+    <resource value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Value set Encounter Inpatient"/>
+    <resource value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Value set Observation Services"/>
+    <resource value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Value set NHSN Inpatient Encounter Class Codes"/>
+    <resource value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274"/>
+  </relatedArtifact>
+  <parameter>
+    <name value="Measurement Period"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type value="Period"/>
+  </parameter>
+  <parameter>
+    <name value="Patient"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type value="Patient"/>
+  </parameter>
+  <parameter>
+    <name value="Qualifying Encounters During Measurement Period"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Encounter"/>
+  </parameter>
+  <parameter>
+    <name value="Encounters"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Encounter"/>
+  </parameter>
+  <parameter>
+    <name value="Encounters with Patient Hospital Locations"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Encounter"/>
+  </parameter>
+  <parameter>
+    <name value="Initial Population"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Encounter"/>
+  </parameter>
+  <parameter>
+    <name value="Conditions"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Condition"/>
+  </parameter>
+  <parameter>
+    <name value="DiagnosticReports"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="DiagnosticReport"/>
+  </parameter>
+  <parameter>
+    <name value="Observations"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Observation"/>
+  </parameter>
+  <parameter>
+    <name value="Get Locations from IP Encounters in Measurement Period"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Location"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Condition"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Condition"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Device"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Device"/>
+  </parameter>
+  <parameter>
+    <name value="SDE DiagnosticReport Lab"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="DiagnosticReport"/>
+  </parameter>
+  <parameter>
+    <name value="SDE DiagnosticReport Note"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="DiagnosticReport"/>
+  </parameter>
+  <parameter>
+    <name value="SDE DiagnosticReport Others"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="DiagnosticReport"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Encounter"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Encounter"/>
+  </parameter>
+  <parameter>
+    <name value="SDE IP Encounters"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Encounter"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Location"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Location"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Medication Administration"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="MedicationAdministration"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Medication Request"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="MedicationRequest"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Medication"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Medication"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Observation Lab Category"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Observation"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Observation Vital Signs Category"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Observation"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Observation Category"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Observation"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Coverage"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Coverage"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Procedure"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Procedure"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Specimen"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Specimen"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Service Request"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="ServiceRequest"/>
+  </parameter>
+  <parameter>
+    <name value="SDE Minimal Patient"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type value="Patient"/>
+  </parameter>
+  <dataRequirement>
+    <type value="Patient"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Encounter"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+    <mustSupport value="type"/>
+    <mustSupport value="status"/>
+    <mustSupport value="period"/>
+    <mustSupport value="location"/>
+    <mustSupport value="diagnosis"/>
+    <mustSupport value="id"/>
+    <codeFilter>
+      <path value="type"/>
+      <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"/>
+    </codeFilter>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Encounter"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+    <mustSupport value="type"/>
+    <mustSupport value="status"/>
+    <mustSupport value="period"/>
+    <mustSupport value="location"/>
+    <mustSupport value="diagnosis"/>
+    <mustSupport value="id"/>
+    <codeFilter>
+      <path value="type"/>
+      <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292"/>
+    </codeFilter>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Encounter"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+    <mustSupport value="type"/>
+    <mustSupport value="status"/>
+    <mustSupport value="period"/>
+    <mustSupport value="location"/>
+    <mustSupport value="diagnosis"/>
+    <mustSupport value="id"/>
+    <codeFilter>
+      <path value="type"/>
+      <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"/>
+    </codeFilter>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Encounter"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+    <mustSupport value="class"/>
+    <mustSupport value="status"/>
+    <mustSupport value="period"/>
+    <mustSupport value="location"/>
+    <mustSupport value="diagnosis"/>
+    <mustSupport value="id"/>
+    <codeFilter>
+      <path value="class"/>
+      <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274"/>
+    </codeFilter>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Encounter"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+    <mustSupport value="class"/>
+    <mustSupport value="status"/>
+    <mustSupport value="period"/>
+    <mustSupport value="location"/>
+    <mustSupport value="diagnosis"/>
+    <mustSupport value="id"/>
+    <codeFilter>
+      <path value="class"/>
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="EMER"/>
+        <display value="emergency"/>
+      </code>
+    </codeFilter>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Encounter"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+    <mustSupport value="class"/>
+    <mustSupport value="status"/>
+    <mustSupport value="period"/>
+    <mustSupport value="location"/>
+    <mustSupport value="diagnosis"/>
+    <mustSupport value="id"/>
+    <codeFilter>
+      <path value="class"/>
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="OBSENC"/>
+        <display value="observation encounter"/>
+      </code>
+    </codeFilter>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Encounter"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+    <mustSupport value="status"/>
+    <mustSupport value="period"/>
+    <mustSupport value="location"/>
+    <mustSupport value="diagnosis"/>
+    <mustSupport value="id"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Condition"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+    <mustSupport value="id"/>
+    <mustSupport value="extension"/>
+    <mustSupport value="clinicalStatus"/>
+    <mustSupport value="verificationStatus"/>
+    <mustSupport value="category"/>
+    <mustSupport value="severity"/>
+    <mustSupport value="code"/>
+    <mustSupport value="bodySite"/>
+    <mustSupport value="subject"/>
+    <mustSupport value="encounter"/>
+    <mustSupport value="onset"/>
+    <mustSupport value="abatement"/>
+    <mustSupport value="recordedDate"/>
+    <mustSupport value="stage"/>
+    <mustSupport value="evidence"/>
+    <mustSupport value="note"/>
+    <mustSupport value="encounter.id"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="DiagnosticReport"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+    <mustSupport value="id"/>
+    <mustSupport value="extension"/>
+    <mustSupport value="basedOn"/>
+    <mustSupport value="status"/>
+    <mustSupport value="category"/>
+    <mustSupport value="code"/>
+    <mustSupport value="subject"/>
+    <mustSupport value="encounter"/>
+    <mustSupport value="effective"/>
+    <mustSupport value="issued"/>
+    <mustSupport value="performer"/>
+    <mustSupport value="resultsInterpreter"/>
+    <mustSupport value="specimen"/>
+    <mustSupport value="result"/>
+    <mustSupport value="conclusion"/>
+    <mustSupport value="conclusionCode"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Observation"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <mustSupport value="id"/>
+    <mustSupport value="extension"/>
+    <mustSupport value="partOf"/>
+    <mustSupport value="status"/>
+    <mustSupport value="category"/>
+    <mustSupport value="code"/>
+    <mustSupport value="subject"/>
+    <mustSupport value="focus"/>
+    <mustSupport value="encounter"/>
+    <mustSupport value="effective"/>
+    <mustSupport value="issued"/>
+    <mustSupport value="performer"/>
+    <mustSupport value="value"/>
+    <mustSupport value="dataAbsentReason"/>
+    <mustSupport value="interpretation"/>
+    <mustSupport value="note"/>
+    <mustSupport value="bodySite"/>
+    <mustSupport value="method"/>
+    <mustSupport value="specimen"/>
+    <mustSupport value="device"/>
+    <mustSupport value="referenceRange"/>
+    <mustSupport value="hasMember"/>
+    <mustSupport value="derivedFrom"/>
+    <mustSupport value="component"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Device"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+    <mustSupport value="id"/>
+    <mustSupport value="extension"/>
+    <mustSupport value="definition"/>
+    <mustSupport value="udiCarrier"/>
+    <mustSupport value="status"/>
+    <mustSupport value="statusReason"/>
+    <mustSupport value="distinctIdentifier"/>
+    <mustSupport value="manufacturer"/>
+    <mustSupport value="manufactureDate"/>
+    <mustSupport value="expirationDate"/>
+    <mustSupport value="lotNumber"/>
+    <mustSupport value="serialNumber"/>
+    <mustSupport value="deviceName"/>
+    <mustSupport value="modelNumber"/>
+    <mustSupport value="partNumber"/>
+    <mustSupport value="type"/>
+    <mustSupport value="specialization"/>
+    <mustSupport value="version"/>
+    <mustSupport value="property"/>
+    <mustSupport value="patient"/>
+    <mustSupport value="owner"/>
+    <mustSupport value="contact"/>
+    <mustSupport value="location"/>
+    <mustSupport value="url"/>
+    <mustSupport value="note"/>
+    <mustSupport value="safety"/>
+    <mustSupport value="parent"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="MedicationAdministration"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"/>
+    <mustSupport value="effective"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="MedicationRequest"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
+    <mustSupport value="authoredOn"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Medication"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+    <mustSupport value="id"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Coverage"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Coverage"/>
+    <mustSupport value="period"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Procedure"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+    <mustSupport value="performed"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Specimen"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+    <mustSupport value="collection"/>
+    <mustSupport value="collection.collected"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="ServiceRequest"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+    <mustSupport value="authoredOn"/>
+  </dataRequirement>
+  <content>
+    <contentType value="text/cql"/>
+    <data value="bGlicmFyeSBOSFNOQWN1dGVDYXJlSG9zcGl0YWxNb250aGx5SW5pdGlhbFBvcHVsYXRpb24gdmVyc2lvbiAnMS4wLjEtZGV2Jw0KDQp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4xJw0KDQppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4yJyBjYWxsZWQgRkhJUkhlbHBlcnMNCmluY2x1ZGUgTkhTTkhlbHBlcnMgdmVyc2lvbiAnMC4wLjAwMicgY2FsbGVkIE5IU05IZWxwZXJzDQppbmNsdWRlIFNoYXJlZFJlc291cmNlQ3JlYXRpb24gdmVyc2lvbiAnMC4xLjAxMCcgY2FsbGVkIFNoYXJlZFJlc291cmNlDQoNCmNvZGVzeXN0ZW0gIkFjdENvZGUiOiAnaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS92My1BY3RDb2RlJw0KY29kZXN5c3RlbSAiT2JzZXJ2YXRpb24gQ2F0ZWdvcnkiOiAnaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS9vYnNlcnZhdGlvbi1jYXRlZ29yeScNCmNvZGVzeXN0ZW0gIkxPSU5DIjogJ2h0dHA6Ly9sb2luYy5vcmcnIA0KY29kZXN5c3RlbSAiVjItMDA3NCI6ICdodHRwOi8vdGVybWlub2xvZ3kuaGw3Lm9yZy9Db2RlU3lzdGVtL3YyLTAwNzQnDQpjb2Rlc3lzdGVtICJDb25kaXRpb24gQ2F0ZWdvcnkiOiAnaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS9jb25kaXRpb24tY2F0ZWdvcnknDQpjb2Rlc3lzdGVtICJVUyBDb3JlIENvbmRpdGlvbiBDYXRlZ29yeSI6ICdodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NvcmUvQ29kZVN5c3RlbS9jb25kaXRpb24tY2F0ZWdvcnknDQpjb2Rlc3lzdGVtICJDb25kaXRpb24gQ2xpbmljYWwgU3RhdHVzIjogJ2h0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL0NvZGVTeXN0ZW0vY29uZGl0aW9uLWNsaW5pY2FsJw0KDQp2YWx1ZXNldCAiSW5wYXRpZW50LCBFbWVyZ2VuY3ksIGFuZCBPYnNlcnZhdGlvbiBMb2NhdGlvbnMiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzNzYyLjEuNC4xMDQ2LjI2NScNCnZhbHVlc2V0ICJFbWVyZ2VuY3kgRGVwYXJ0bWVudCBWaXNpdCI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy4xMTcuMS43LjEuMjkyJw0KdmFsdWVzZXQgIkVuY291bnRlciBJbnBhdGllbnQiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNjY2LjUuMzA3Jw0KdmFsdWVzZXQgIk9ic2VydmF0aW9uIFNlcnZpY2VzIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzc2Mi4xLjQuMTExMS4xNDMnDQp2YWx1ZXNldCAiTkhTTiBJbnBhdGllbnQgRW5jb3VudGVyIENsYXNzIENvZGVzIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzc2Mi4xLjQuMTA0Ni4yNzQnDQoNCi8vY29kZSBmb3IgT2JzZXJ2YXRpb24gQ2F0ZWdvcnkNCmNvZGUgImxhYm9yYXRvcnkiOiAnbGFib3JhdG9yeScgZnJvbSAiT2JzZXJ2YXRpb24gQ2F0ZWdvcnkiIGRpc3BsYXkgJ0xhYm9yYXRvcnknDQpjb2RlICJzb2NpYWwtaGlzdG9yeSI6ICdzb2NpYWwtaGlzdG9yeScgZnJvbSAiT2JzZXJ2YXRpb24gQ2F0ZWdvcnkiIGRpc3BsYXkgJ1NvY2lhbCBIaXN0b3J5Jw0KY29kZSAidml0YWwtc2lnbnMiOiAndml0YWwtc2lnbnMnIGZyb20gIk9ic2VydmF0aW9uIENhdGVnb3J5IiBkaXNwbGF5ICdWaXRhbCBTaWducycNCmNvZGUgImltYWdpbmciOiAnaW1hZ2luZycgZnJvbSAiT2JzZXJ2YXRpb24gQ2F0ZWdvcnkiIGRpc3BsYXkgJ0ltYWdpbmcnDQpjb2RlICJwcm9jZWR1cmUiOiAncHJvY2VkdXJlJyBmcm9tICJPYnNlcnZhdGlvbiBDYXRlZ29yeSIgZGlzcGxheSAnUHJvY2VkdXJlJw0KY29kZSAic3VydmV5IjogJ3N1cnZleScgZnJvbSAiT2JzZXJ2YXRpb24gQ2F0ZWdvcnkiIGRpc3BsYXkgJ1N1cnZleScNCg0KLy9jb2RlIGZvciBDb25kaXRpb24gY2F0ZWdvcnkNCmNvZGUgInByb2JsZW0tbGlzdC1pdGVtIjogJ3Byb2JsZW0tbGlzdC1pdGVtJyBmcm9tICJDb25kaXRpb24gQ2F0ZWdvcnkiIGRpc3BsYXkgJ1Byb2JsZW0gTGlzdCBJdGVtJw0KY29kZSAiZW5jb3VudGVyLWRpYWdub3NpcyI6ICdlbmNvdW50ZXItZGlhZ25vc2lzJyBmcm9tICJDb25kaXRpb24gQ2F0ZWdvcnkiIGRpc3BsYXkgJ0VuY291bnRlciBEaWFnbm9zaXMnDQpjb2RlICJoZWFsdGgtY29uY2VybiI6ICdoZWFsdGgtY29uY2VybicgZnJvbSAiVVMgQ29yZSBDb25kaXRpb24gQ2F0ZWdvcnkiIGRpc3BsYXkgJ0hlYWx0aCBDb25jZXJuJw0KDQovL2NvZGUgZm9yIERpYWdub3N0aWMgUmVwb3J0IENhdGVnb3J5DQpjb2RlICJMQUIiOiAnTEFCJyBmcm9tICJWMi0wMDc0IiBkaXNwbGF5ICdMYWJvcmF0b3J5Jw0KY29kZSAiUmFkaW9sb2d5IjogJ0xQMjk2ODQtNScgZnJvbSAiTE9JTkMiIGRpc3BsYXkgJ1JhZGlvbG9neScNCmNvZGUgIlBhdGhvbG9neSI6ICdMUDc4MzktNicgZnJvbSAiTE9JTkMiIGRpc3BsYXkgJ1BhdGhvbG9neScNCmNvZGUgIkNhcmRpb2xvZ3kiOiAnTFAyOTcwOC0yJyBmcm9tICJMT0lOQyIgZGlzcGxheSAnQ2FyZGlvbG9neScNCg0KLy9jb2RlIGZvciBFbWVyZ2VuY3kgRW5jb3VudGVyIENsYXNzDQpjb2RlICJlbWVyZ2VuY3kiOiAnRU1FUicgZnJvbSAiQWN0Q29kZSIgZGlzcGxheSAnZW1lcmdlbmN5Jw0KY29kZSAib2JzZXJ2YXRpb24gZW5jb3VudGVyIjogJ09CU0VOQycgZnJvbSAiQWN0Q29kZSIgZGlzcGxheSAnb2JzZXJ2YXRpb24gZW5jb3VudGVyJw0KDQovL2NvZGUgZm9yIENvbmRpdGlvbiBjbGluaWNhbFN0YXR1cw0KY29kZSAiYWN0aXZlIjogJ2FjdGl2ZScgZnJvbSAiQ29uZGl0aW9uIENsaW5pY2FsIFN0YXR1cyIgZGlzcGxheSAnYWN0aXZlJw0KDQpwYXJhbWV0ZXIgIk1lYXN1cmVtZW50IFBlcmlvZCIgDQogICAgZGVmYXVsdCBJbnRlcnZhbFtAMjAyNC0wNC0wMVQwMDowMDowMC4wLCBAMjAyNC0wNC0zMFQyMzo1OTo1OS4wKQ0KDQpjb250ZXh0IFBhdGllbnQgDQoNCmRlZmluZSAiUXVhbGlmeWluZyBFbmNvdW50ZXJzIER1cmluZyBNZWFzdXJlbWVudCBQZXJpb2QiOg0KICggW0VuY291bnRlcjogIkVuY291bnRlciBJbnBhdGllbnQiXQ0KICB1bmlvbiBbRW5jb3VudGVyOiAiRW1lcmdlbmN5IERlcGFydG1lbnQgVmlzaXQiXQ0KICB1bmlvbiBbRW5jb3VudGVyOiAiT2JzZXJ2YXRpb24gU2VydmljZXMiXQ0KICB1bmlvbiBbRW5jb3VudGVyOiBjbGFzcyBpbiAiTkhTTiBJbnBhdGllbnQgRW5jb3VudGVyIENsYXNzIENvZGVzIl0NCiAgdW5pb24gW0VuY291bnRlcjogY2xhc3MgfiAiZW1lcmdlbmN5Il0NCiAgdW5pb24gW0VuY291bnRlcjogY2xhc3MgfiAib2JzZXJ2YXRpb24gZW5jb3VudGVyIl0pIFF1YWxpZnlpbmdFbmNvdW50ZXJzDQogIHdoZXJlIFF1YWxpZnlpbmdFbmNvdW50ZXJzLnN0YXR1cyBpbiB7J2luLXByb2dyZXNzJywgJ2ZpbmlzaGVkJywgJ3RyaWFnZWQnLCAnb25sZWF2ZScsICdlbnRlcmVkLWluLWVycm9yJ30NCiAgICBhbmQgUXVhbGlmeWluZ0VuY291bnRlcnMucGVyaW9kIG92ZXJsYXBzICJNZWFzdXJlbWVudCBQZXJpb2QiIA0KDQpkZWZpbmUgIkVuY291bnRlcnMgd2l0aCBQYXRpZW50IEhvc3BpdGFsIExvY2F0aW9ucyI6DQogICJFbmNvdW50ZXJzIiBFbmNvdW50ZXJzDQogIHdoZXJlIGV4aXN0cygNCiAgICBFbmNvdW50ZXJzLmxvY2F0aW9uIEVuY291bnRlckxvY2F0aW9uDQogICAgd2hlcmUgTkhTTkhlbHBlcnMuR2V0TG9jYXRpb24oRW5jb3VudGVyTG9jYXRpb24ubG9jYXRpb24pLnR5cGUgaW4gIklucGF0aWVudCwgRW1lcmdlbmN5LCBhbmQgT2JzZXJ2YXRpb24gTG9jYXRpb25zIg0KICAgICAgYW5kIEVuY291bnRlckxvY2F0aW9uLnBlcmlvZCBvdmVybGFwcyBFbmNvdW50ZXJzLnBlcmlvZA0KICApDQogIGFuZCBFbmNvdW50ZXJzLnN0YXR1cyBpbiB7J2luLXByb2dyZXNzJywgJ2ZpbmlzaGVkJywgJ3RyaWFnZWQnLCAnb25sZWF2ZScsICdlbnRlcmVkLWluLWVycm9yJ30NCiAgYW5kIEVuY291bnRlcnMucGVyaW9kIG92ZXJsYXBzICJNZWFzdXJlbWVudCBQZXJpb2QiDQoNCmRlZmluZSAiSW5pdGlhbCBQb3B1bGF0aW9uIjoNCiAgIlF1YWxpZnlpbmcgRW5jb3VudGVycyBEdXJpbmcgTWVhc3VyZW1lbnQgUGVyaW9kIg0KICB1bmlvbiAiRW5jb3VudGVycyB3aXRoIFBhdGllbnQgSG9zcGl0YWwgTG9jYXRpb25zIg0KDQpkZWZpbmUgIkVuY291bnRlcnMiOg0KICBbRW5jb3VudGVyXQ0KDQpkZWZpbmUgIkNvbmRpdGlvbnMiOg0KICBbQ29uZGl0aW9uXQ0KDQpkZWZpbmUgIkRpYWdub3N0aWNSZXBvcnRzIjoNCiAgW0RpYWdub3N0aWNSZXBvcnRdDQoNCmRlZmluZSAiT2JzZXJ2YXRpb25zIjoNCiAgW09ic2VydmF0aW9uXQ0KDQpkZWZpbmUgIkdldCBMb2NhdGlvbnMgZnJvbSBJUCBFbmNvdW50ZXJzIGluIE1lYXN1cmVtZW50IFBlcmlvZCI6DQogIGZsYXR0ZW4oIkluaXRpYWwgUG9wdWxhdGlvbiIgSVANCiAgbGV0IGxvY2F0aW9uRWxlbWVudHM6IElQLmxvY2F0aW9uDQogIHJldHVybg0KICAgIGxvY2F0aW9uRWxlbWVudHMgTEUNCiAgICBsZXQgbG9jYXRpb25SZWZlcmVuY2U6IExFLmxvY2F0aW9uDQogICAgcmV0dXJuIE5IU05IZWxwZXJzLkdldExvY2F0aW9uKGxvY2F0aW9uUmVmZXJlbmNlKSkNCg0KLy89PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQovL1N1cHBsZW1lbnRhbCBEYXRhIEVsZW1lbnQNCi8vV2hlbiBGSElSLmNhbm9uaWNhbCB2YWx1ZSBpcyBwcmVzZW50LCBVUyBDb3JlIDMuMS4xIHByb2ZpbGVzIGFyZSB1c2VkDQovL1doZW4gRkhJUi5jYW5vbmljYWwgdmFsdWUgaXMgbm90IHByZXNlbnQsIEZISVIgQmFzZSBwcm9maWxlcyBhcmUgdXNlZA0KLy89PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQpkZWZpbmUgIlNERSBDb25kaXRpb24iOg0KICAiQ29uZGl0aW9ucyIgQ29uZGl0aW9ucyANCiAgd2hlcmUgZXhpc3RzKA0KICAgICJJbml0aWFsIFBvcHVsYXRpb24iIElQDQogICAgLy9DaGVjayBmb3IgUHJvYmxlbSBMaXN0IENvbmRpdGlvbnMgdGhhdCB3ZXJlIHJlY29yZGVkIGJlZm9yZSBvciBkdXJpbmcgSVANCiAgICB3aGVyZSAoDQogICAgICBDb25kaXRpb25zLnJlY29yZGVkRGF0ZSBiZWZvcmUgZW5kIG9mIElQLnBlcmlvZA0KICAgICAgYW5kIGV4aXN0cyhDb25kaXRpb25zLmNhdGVnb3J5IGNhdGVnb3JpZXMNCiAgICAgICAgd2hlcmUgY2F0ZWdvcmllcyB+ICJwcm9ibGVtLWxpc3QtaXRlbSIpDQogICAgICBhbmQgQ29uZGl0aW9ucy5jbGluaWNhbFN0YXR1cyB+ICJhY3RpdmUiDQogICAgKQ0KICAgIC8vQ2hlY2sgZm9yIEVuY291bnRlciBEaWFnbm9zaXMgQ29uZGl0aW9ucyB0aGF0IHJlZmVyZW5jZSBhbiBJUCBlbmNvdW50ZXINCiAgICBvciAoDQogICAgICAoZXhpc3RzKElQLmRpYWdub3NpcyBEaWFnbm9zZXMNCiAgICAgICAgICB3aGVyZSBHZXRDb25kaXRpb24oRGlhZ25vc2VzLmNvbmRpdGlvbikuaWQgPSBDb25kaXRpb25zLmlkDQogICAgICAgICkNCiAgICAgICAgb3IgR2V0RW5jb3VudGVyKENvbmRpdGlvbnMuZW5jb3VudGVyKS5pZCA9IElQLmlkDQogICAgICApDQogICAgICBhbmQgZXhpc3RzIChDb25kaXRpb25zLmNhdGVnb3J5IGNhdGVnb3JpZXMNCiAgICAgICAgd2hlcmUgY2F0ZWdvcmllcyB+ICJlbmNvdW50ZXItZGlhZ25vc2lzIg0KICAgICAgICAgIG9yIGNhdGVnb3JpZXMgfiAiaGVhbHRoLWNvbmNlcm4iKQ0KICAgICkNCiAgKQ0KICByZXR1cm4gQ29uZGl0aW9uUmVzb3VyY2UoQ29uZGl0aW9ucywNCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtbW9udGhseS1jb25kaXRpb24nfX0sDQogIHsicHJvYmxlbS1saXN0LWl0ZW0iLCAiZW5jb3VudGVyLWRpYWdub3NpcyIsICJoZWFsdGgtY29uY2VybiJ9KQ0KDQpkZWZpbmUgIlNERSBEZXZpY2UiOg0KICBbRGV2aWNlXSBEZXZpY2VzIA0KICB3aGVyZSBleGlzdHMoIkluaXRpYWwgUG9wdWxhdGlvbiIpDQogIHJldHVybiBEZXZpY2VSZXNvdXJjZShEZXZpY2VzLA0KICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1tb250aGx5LWRldmljZSd9fSkNCg0KLy9UaGlzIGJsb2NrIGNvbGxlY3RzIGFsbCBEaWFnbm9zdGljUmVwb3J0IHJlc291cmNlcyB3aGlsZSBhbHNvIG1hcmtpbmcgTGFiIGFuZCBOb3RlIERpYWdub3N0aWNSZXBvcnRzIHdpdGggdGhlIGFwcHJvcHJpYXRlIHByb2ZpbGVzDQovLyNTdGFydCBEaWFnbm9zdGljUmVwb3J0IGJsb2NrDQpkZWZpbmUgIlNERSBEaWFnbm9zdGljUmVwb3J0IExhYiI6DQogICJEaWFnbm9zdGljUmVwb3J0cyIgRGlhZ25vc3RpY1JlcG9ydHMNCiAgd2hlcmUgKGV4aXN0cyhEaWFnbm9zdGljUmVwb3J0cy5jYXRlZ29yeSBDYXRlZ29yeSB3aGVyZSBDYXRlZ29yeSB+ICJMQUIiKQ0KICAgIGFuZCBleGlzdHMoDQogICAgICAiSW5pdGlhbCBQb3B1bGF0aW9uIiBJUA0KICAgICAgd2hlcmUgTkhTTkhlbHBlcnMuIk5vcm1hbGl6ZSBJbnRlcnZhbCIoRGlhZ25vc3RpY1JlcG9ydHMuZWZmZWN0aXZlKSBvdmVybGFwcyBJUC5wZXJpb2QpKQ0KICByZXR1cm4gU2hhcmVkUmVzb3VyY2UuRGlhZ25vc3RpY1JlcG9ydExhYlJlc291cmNlKERpYWdub3N0aWNSZXBvcnRzLA0KICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1tb250aGx5LWRpYWdub3N0aWNyZXBvcnQtbGFiJ319KQ0KIA0KZGVmaW5lICJTREUgRGlhZ25vc3RpY1JlcG9ydCBOb3RlIjoNCiAgIkRpYWdub3N0aWNSZXBvcnRzIiBEaWFnbm9zdGljUmVwb3J0cw0KICB3aGVyZSAoKGV4aXN0cyhEaWFnbm9zdGljUmVwb3J0cy5jYXRlZ29yeSBDYXRlZ29yeSB3aGVyZSBDYXRlZ29yeSB+ICJSYWRpb2xvZ3kiKSkNCiAgICBvciBleGlzdHMoKERpYWdub3N0aWNSZXBvcnRzLmNhdGVnb3J5IENhdGVnb3J5IHdoZXJlIENhdGVnb3J5IH4gIlBhdGhvbG9neSIpKQ0KICAgIG9yIGV4aXN0cygoRGlhZ25vc3RpY1JlcG9ydHMuY2F0ZWdvcnkgQ2F0ZWdvcnkgd2hlcmUgQ2F0ZWdvcnkgfiAiQ2FyZGlvbG9neSIpKSkNCiAgICBhbmQgZXhpc3RzKA0KICAgICAgIkluaXRpYWwgUG9wdWxhdGlvbiIgSVANCiAgICAgIHdoZXJlIE5IU05IZWxwZXJzLiJOb3JtYWxpemUgSW50ZXJ2YWwiKERpYWdub3N0aWNSZXBvcnRzLmVmZmVjdGl2ZSkgb3ZlcmxhcHMgSVAucGVyaW9kKQ0KICByZXR1cm4gRGlhZ25vc3RpY1JlcG9ydFJlc291cmNlKERpYWdub3N0aWNSZXBvcnRzLA0KICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1tb250aGx5LWRpYWdub3N0aWNyZXBvcnQtbm90ZSd9fSkNCg0KZGVmaW5lICJTREUgRGlhZ25vc3RpY1JlcG9ydCBPdGhlcnMiOg0KICBbRGlhZ25vc3RpY1JlcG9ydF0gRGlhZ25vc3RpY1JlcG9ydHMNCiAgd2hlcmUgbm90ICgoZXhpc3RzKERpYWdub3N0aWNSZXBvcnRzLmNhdGVnb3J5IENhdGVnb3J5IHdoZXJlIENhdGVnb3J5IH4gIlJhZGlvbG9neSIpKQ0KICAgIG9yIGV4aXN0cygoRGlhZ25vc3RpY1JlcG9ydHMuY2F0ZWdvcnkgQ2F0ZWdvcnkgd2hlcmUgQ2F0ZWdvcnkgfiAiUGF0aG9sb2d5IikpDQogICAgb3IgZXhpc3RzKChEaWFnbm9zdGljUmVwb3J0cy5jYXRlZ29yeSBDYXRlZ29yeSB3aGVyZSBDYXRlZ29yeSB+ICJDYXJkaW9sb2d5IikpDQogICAgb3IgZXhpc3RzKERpYWdub3N0aWNSZXBvcnRzLmNhdGVnb3J5IENhdGVnb3J5IHdoZXJlIENhdGVnb3J5IH4gIkxBQiIpKQ0KICAgIGFuZCBleGlzdHMoIkluaXRpYWwgUG9wdWxhdGlvbiIgSVANCiAgICAgIHdoZXJlIE5IU05IZWxwZXJzLiJOb3JtYWxpemUgSW50ZXJ2YWwiKERpYWdub3N0aWNSZXBvcnRzLmVmZmVjdGl2ZSkgb3ZlcmxhcHMgSVAucGVyaW9kKQ0KICByZXR1cm4gRGlhZ25vc3RpY1JlcG9ydFJlc291cmNlKERpYWdub3N0aWNSZXBvcnRzLA0KICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1tb250aGx5LWRpYWdub3N0aWNyZXBvcnQnfX0pDQovLyNFbmQgRGlhZ25vc3RpY1JlcG9ydCBibG9jaw0KDQpkZWZpbmUgIlNERSBFbmNvdW50ZXIiOiANCiAgIkVuY291bnRlcnMiIEVuY291bnRlcnMNCiAgd2hlcmUgbm90IENoZWNrSVAoRW5jb3VudGVycykNCiAgYW5kIGV4aXN0cygNCiAgICAiSW5pdGlhbCBQb3B1bGF0aW9uIiBJUA0KICAgIHdoZXJlIEVuY291bnRlcnMucGVyaW9kIG92ZXJsYXBzIElQLnBlcmlvZCkNCiAgcmV0dXJuIFNoYXJlZFJlc291cmNlLkVuY291bnRlclJlc291cmNlKEVuY291bnRlcnMsDQogIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly9obDcub3JnL2ZoaXIvdXMvY29yZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL3VzLWNvcmUtZW5jb3VudGVyJ319KQ0KDQpkZWZpbmUgIlNERSBJUCBFbmNvdW50ZXJzIjoNCiAgIkluaXRpYWwgUG9wdWxhdGlvbiIgSVANCiAgcmV0dXJuIFNoYXJlZFJlc291cmNlLkVuY291bnRlclJlc291cmNlKElQLCANCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtbW9udGhseS1lbmNvdW50ZXInfX0pDQoNCmRlZmluZSAiU0RFIExvY2F0aW9uIjoNCiAgIkdldCBMb2NhdGlvbnMgZnJvbSBJUCBFbmNvdW50ZXJzIGluIE1lYXN1cmVtZW50IFBlcmlvZCIgTG9jYXRpb25zDQogIHdoZXJlIGV4aXN0cygiSW5pdGlhbCBQb3B1bGF0aW9uIikNCiAgYW5kIExvY2F0aW9ucyBpcyBub3QgbnVsbA0KICByZXR1cm4gU2hhcmVkUmVzb3VyY2UuTG9jYXRpb25SZXNvdXJjZShMb2NhdGlvbnMsDQogIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLW1vbnRobHktbG9jYXRpb24nfX0pDQogDQpkZWZpbmUgIlNERSBNZWRpY2F0aW9uIEFkbWluaXN0cmF0aW9uIjoNCiAgW01lZGljYXRpb25BZG1pbmlzdHJhdGlvbl0gTWVkaWNhdGlvbkFkbWluaXN0cmF0aW9ucyANCiAgd2hlcmUgZXhpc3RzKA0KICAgICJJbml0aWFsIFBvcHVsYXRpb24iIElQDQogICAgd2hlcmUgTkhTTkhlbHBlcnMuIk5vcm1hbGl6ZSBJbnRlcnZhbCIoTWVkaWNhdGlvbkFkbWluaXN0cmF0aW9ucy5lZmZlY3RpdmUpIG92ZXJsYXBzIElQLnBlcmlvZCkNCiAgcmV0dXJuIFNoYXJlZFJlc291cmNlLk1lZGljYXRpb25BZG1pbmlzdHJhdGlvblJlc291cmNlKE1lZGljYXRpb25BZG1pbmlzdHJhdGlvbnMsDQogIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLW1vbnRobHktbWVkaWNhdGlvbmFkbWluaXN0cmF0aW9uJ319KQ0KIA0KZGVmaW5lICJTREUgTWVkaWNhdGlvbiBSZXF1ZXN0IjoNCiAgW01lZGljYXRpb25SZXF1ZXN0XSBNZWRpY2F0aW9uUmVxdWVzdHMgDQogIHdoZXJlIGV4aXN0cygNCiAgICAiSW5pdGlhbCBQb3B1bGF0aW9uIiBJUA0KICAgIHdoZXJlIE1lZGljYXRpb25SZXF1ZXN0cy5hdXRob3JlZE9uIGR1cmluZyBJUC5wZXJpb2QpDQogIHJldHVybiBTaGFyZWRSZXNvdXJjZS5NZWRpY2F0aW9uUmVxdWVzdFJlc291cmNlKE1lZGljYXRpb25SZXF1ZXN0cywNCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtbW9udGhseS1tZWRpY2F0aW9ucmVxdWVzdCd9fSkNCg0KZGVmaW5lICJTREUgTWVkaWNhdGlvbiI6DQogICgiU0RFIE1lZGljYXRpb24gUmVxdWVzdCINCiAgdW5pb24gIlNERSBNZWRpY2F0aW9uIEFkbWluaXN0cmF0aW9uIikgTWVkUmVxT3JBZG1pbg0KICB3aGVyZSBNZWRSZXFPckFkbWluLm1lZGljYXRpb24gaXMgRkhJUi5SZWZlcmVuY2UNCiAgYW5kIGV4aXN0cygiSW5pdGlhbCBQb3B1bGF0aW9uIikgLy9ObyBsb25nZXIgbmVlZCB0byBjaGVjayBmb3IgdGltaW5nIGhlcmUgYmVjYXVzZSBpdCdzIGNoZWNrZWQgaW4gU0RFIE1lZGljYXRpb24gUmVxdWVzdC9BZG1pbmlzdHJpYXRpb24NCiAgcmV0dXJuIFNoYXJlZFJlc291cmNlLk1lZGljYXRpb25SZXNvdXJjZShHZXRNZWRpY2F0aW9uRnJvbShNZWRSZXFPckFkbWluLm1lZGljYXRpb24pLA0KICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1tb250aGx5LW1lZGljYXRpb24nfX0pDQoNCmRlZmluZSAiU0RFIE9ic2VydmF0aW9uIExhYiBDYXRlZ29yeSI6DQogICJPYnNlcnZhdGlvbnMiIE9ic2VydmF0aW9ucyANCiAgd2hlcmUgKGV4aXN0cyhPYnNlcnZhdGlvbnMuY2F0ZWdvcnkgQ2F0ZWdvcnkgd2hlcmUgQ2F0ZWdvcnkgfiAibGFib3JhdG9yeSIpKQ0KICAgIGFuZCBleGlzdHMoDQogICAgICAiSW5pdGlhbCBQb3B1bGF0aW9uIiBJUA0KICAgICAgd2hlcmUgTkhTTkhlbHBlcnMuIk5vcm1hbGl6ZSBJbnRlcnZhbCIoT2JzZXJ2YXRpb25zLmVmZmVjdGl2ZSkgb3ZlcmxhcHMgSVAucGVyaW9kKQ0KICByZXR1cm4gU2hhcmVkUmVzb3VyY2UuT2JzZXJ2YXRpb25MYWJSZXNvdXJjZShPYnNlcnZhdGlvbnMsDQogIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLW1vbnRobHktb2JzZXJ2YXRpb24tbGFiJ319KQ0KDQovL1ZpdGFsIFNpZ25zIE9ic2VydmF0aW9uIGhhcyBpdHMgb3duIHByb2ZpbGUgaW4gRkhJUiBCYXNlDQpkZWZpbmUgIlNERSBPYnNlcnZhdGlvbiBWaXRhbCBTaWducyBDYXRlZ29yeSI6DQogICJPYnNlcnZhdGlvbnMiIE9ic2VydmF0aW9ucyANCiAgd2hlcmUgKGV4aXN0cyhPYnNlcnZhdGlvbnMuY2F0ZWdvcnkgQ2F0ZWdvcnkgd2hlcmUgQ2F0ZWdvcnkgfiAidml0YWwtc2lnbnMiKSkNCiAgICBhbmQgZXhpc3RzKA0KICAgICAgIkluaXRpYWwgUG9wdWxhdGlvbiIgSVANCiAgICAgIHdoZXJlIE5IU05IZWxwZXJzLiJOb3JtYWxpemUgSW50ZXJ2YWwiKE9ic2VydmF0aW9ucy5lZmZlY3RpdmUpIG92ZXJsYXBzIElQLnBlcmlvZCkNCiAgcmV0dXJuIE9ic2VydmF0aW9uVml0YWxTaWduc1Jlc291cmNlKE9ic2VydmF0aW9ucywNCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtbW9udGhseS1vYnNlcnZhdGlvbi12aXRhbHMnfX0pDQoNCi8vRGVmYXVsdGluZyB0byBiYXNlIEZISVIgcHJvZmlsZSBhcyB0aGVyZSBhcmUgbm8gaW5kaXZpZHVhbCBwcm9maWxlcyBpbiBVUyBDb3JlIDMuMS4xIHRoYXQgY292ZXIgdGhlc2UgT2JzZXJ2YXRpb24gY2F0ZWdvcmllcw0KZGVmaW5lICJTREUgT2JzZXJ2YXRpb24gQ2F0ZWdvcnkiOg0KICAiT2JzZXJ2YXRpb25zIiBPYnNlcnZhdGlvbnMgDQogIHdoZXJlICgoZXhpc3RzKE9ic2VydmF0aW9ucy5jYXRlZ29yeSBDYXRlZ29yeSB3aGVyZSBDYXRlZ29yeSB+ICJzb2NpYWwtaGlzdG9yeSIpKQ0KICAgIG9yIChleGlzdHMoT2JzZXJ2YXRpb25zLmNhdGVnb3J5IENhdGVnb3J5IHdoZXJlIENhdGVnb3J5IH4gInN1cnZleSIpKQ0KICAgIG9yIChleGlzdHMoT2JzZXJ2YXRpb25zLmNhdGVnb3J5IENhdGVnb3J5IHdoZXJlIENhdGVnb3J5IH4gImltYWdpbmciKSkNCiAgICBvciAoZXhpc3RzKE9ic2VydmF0aW9ucy5jYXRlZ29yeSBDYXRlZ29yeSB3aGVyZSBDYXRlZ29yeSB+ICJwcm9jZWR1cmUiKSkpDQogICAgYW5kIGV4aXN0cygNCiAgICAgICJJbml0aWFsIFBvcHVsYXRpb24iIElQDQogICAgICB3aGVyZSBOSFNOSGVscGVycy4iTm9ybWFsaXplIEludGVydmFsIihPYnNlcnZhdGlvbnMuZWZmZWN0aXZlKSBvdmVybGFwcyBJUC5wZXJpb2QpDQogIHJldHVybiBPYnNlcnZhdGlvblJlc291cmNlKE9ic2VydmF0aW9ucywNCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtbW9udGhseS1vYnNlcnZhdGlvbid9fSkNCg0KZGVmaW5lICJTREUgQ292ZXJhZ2UiOiANCglbQ292ZXJhZ2VdIENvdmVyYWdlcw0KICB3aGVyZSBleGlzdHMoDQogICAgIkluaXRpYWwgUG9wdWxhdGlvbiIgSVANCiAgICB3aGVyZSBDb3ZlcmFnZXMucGVyaW9kIG92ZXJsYXBzIElQLnBlcmlvZCkNCiAgcmV0dXJuIFNoYXJlZFJlc291cmNlLkNvdmVyYWdlUmVzb3VyY2UoQ292ZXJhZ2VzLA0KICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1tb250aGx5LWNvdmVyYWdlJ319KQ0KDQpkZWZpbmUgIlNERSBQcm9jZWR1cmUiOg0KICBbUHJvY2VkdXJlXSBQcm9jZWR1cmVzIA0KICB3aGVyZSBleGlzdHMoDQogICAgIkluaXRpYWwgUG9wdWxhdGlvbiIgSVANCiAgICB3aGVyZSBOSFNOSGVscGVycy4iTm9ybWFsaXplIEludGVydmFsIihQcm9jZWR1cmVzLnBlcmZvcm1lZCkgb3ZlcmxhcHMgSVAucGVyaW9kKQ0KICByZXR1cm4gU2hhcmVkUmVzb3VyY2UuUHJvY2VkdXJlUmVzb3VyY2UoUHJvY2VkdXJlcywNCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtbW9udGhseS1wcm9jZWR1cmUnfX0pDQoNCmRlZmluZSAiU0RFIFNwZWNpbWVuIjoNCiAgW1NwZWNpbWVuXSBTcGVjaW1lbnMNCiAgd2hlcmUgZXhpc3RzKA0KICAgICJJbml0aWFsIFBvcHVsYXRpb24iIElQDQogICAgd2hlcmUgTkhTTkhlbHBlcnMuIk5vcm1hbGl6ZSBJbnRlcnZhbCIoU3BlY2ltZW5zLmNvbGxlY3Rpb24uY29sbGVjdGVkKSBvdmVybGFwcyBJUC5wZXJpb2QNCiAgKQ0KICByZXR1cm4gU2hhcmVkUmVzb3VyY2UuU3BlY2ltZW5SZXNvdXJjZShTcGVjaW1lbnMsDQogIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLW1vbnRobHktc3BlY2ltZW4nfX0pDQoNCmRlZmluZSAiU0RFIFNlcnZpY2UgUmVxdWVzdCI6DQogIFtTZXJ2aWNlUmVxdWVzdF0gU2VydmljZVJlcXVlc3RzDQogIHdoZXJlIGV4aXN0cygiSW5pdGlhbCBQb3B1bGF0aW9uIiBJUA0KICAgIHdoZXJlIFNlcnZpY2VSZXF1ZXN0cy5hdXRob3JlZE9uIGR1cmluZyBJUC5wZXJpb2QpDQogIHJldHVybiBTaGFyZWRSZXNvdXJjZS5TZXJ2aWNlUmVxdWVzdFJlc291cmNlKFNlcnZpY2VSZXF1ZXN0cywNCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtbW9udGhseS1zZXJ2aWNlcmVxdWVzdCd9fSkNCg0KZGVmaW5lICJTREUgTWluaW1hbCBQYXRpZW50IjoNCiAgUGF0aWVudCBwDQogIHJldHVybiBTaGFyZWRSZXNvdXJjZS5QYXRpZW50UmVzb3VyY2UocCwNCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9jcm9zcy1tZWFzdXJlLXBhdGllbnQnfX0pDQoNCi8vDQovL0Z1bmN0aW9ucw0KLy8NCmRlZmluZSBmdW5jdGlvbiAiQ2hlY2tJUCIoZW5jb3VudGVyIEVuY291bnRlcik6DQogIGV4aXN0cygiSW5pdGlhbCBQb3B1bGF0aW9uIiBJUA0KICB3aGVyZSBlbmNvdW50ZXIuaWQgPSBJUC5pZCkNCg0KZGVmaW5lIGZ1bmN0aW9uICJHZXRNZWRpY2F0aW9uRnJvbSIoY2hvaWNlIENob2ljZTxGSElSLkNvZGVhYmxlQ29uY2VwdCwgRkhJUi5SZWZlcmVuY2U+KToNCiAgY2FzZQ0KICAgIHdoZW4gY2hvaWNlIGlzIEZISVIuUmVmZXJlbmNlIHRoZW4NCiAgICAgIEdldE1lZGljYXRpb24oY2hvaWNlIGFzIEZISVIuUmVmZXJlbmNlKQ0KICAgIGVsc2UNCiAgICAgIG51bGwNCiAgZW5kDQoNCmRlZmluZSBmdW5jdGlvbiAiR2V0TWVkaWNhdGlvbiIocmVmZXJlbmNlIFJlZmVyZW5jZSk6DQogIHNpbmdsZXRvbiBmcm9tICgNCiAgICBbTWVkaWNhdGlvbl0gTWVkaWNhdGlvbnMNCiAgICB3aGVyZSBNZWRpY2F0aW9ucy5pZCA9IE5IU05IZWxwZXJzLkdldElkKHJlZmVyZW5jZS5yZWZlcmVuY2UpDQogICkNCg0KZGVmaW5lIGZ1bmN0aW9uICJHZXRDb25kaXRpb24iKHJlZmVyZW5jZSBSZWZlcmVuY2UpOg0KICBzaW5nbGV0b24gZnJvbSAoDQogICAgIkNvbmRpdGlvbnMiIENvbmRpdGlvbnMNCiAgICB3aGVyZSBDb25kaXRpb25zLmlkID0gTkhTTkhlbHBlcnMuR2V0SWQocmVmZXJlbmNlLnJlZmVyZW5jZSkNCiAgKQ0KDQpkZWZpbmUgZnVuY3Rpb24gIkdldEVuY291bnRlciIocmVmZXJlbmNlIFJlZmVyZW5jZSk6DQogIHNpbmdsZXRvbiBmcm9tICgNCiAgICAiRW5jb3VudGVycyIgRW5jb3VudGVycw0KICAgIHdoZXJlIEVuY291bnRlcnMuaWQgPSBOSFNOSGVscGVycy5HZXRJZChyZWZlcmVuY2UucmVmZXJlbmNlKQ0KICApDQoNCmRlZmluZSBmdW5jdGlvbiBSZW1vdmVVbmFjY2VwdGVkKGNvZGVzIExpc3Q8RkhJUi5Db2RlYWJsZUNvbmNlcHQ+LCBhY2NlcHRlZCBMaXN0PFN5c3RlbS5Db2RlPik6DQoJY29kZXMgYw0KICB3aGVyZSBleGlzdHMoDQogICAgYWNjZXB0ZWQgYQ0KICAgIHdoZXJlIGMgfiBhDQogICkNCg0KZGVmaW5lIGZ1bmN0aW9uIEZpbHRlckNvZGVhYmxlQ29uY2VwdHMoY29kZXMgTGlzdDxGSElSLkNvZGVhYmxlQ29uY2VwdD4sIGFjY2VwdGVkIExpc3Q8U3lzdGVtLkNvZGU+KToNCglpZiBDb3VudChhY2NlcHRlZCkgPiAwDQoJCXRoZW4gUmVtb3ZlVW5hY2NlcHRlZChjb2RlcywgYWNjZXB0ZWQpDQoJZWxzZSBjb2Rlcw0KDQovLw0KLy9NZWFzdXJlIFNwZWNpZmljIFJlc291cmNlIENyZWF0aW9uIEZ1bmN0aW9ucw0KLy8NCmRlZmluZSBmdW5jdGlvbiBDb25kaXRpb25SZXNvdXJjZShjb25kaXRpb24gQ29uZGl0aW9uLCBwcm9maWxlVVJMcyBMaXN0PEZISVIuY2Fub25pY2FsPiwgYWNjZXB0ZWRDYXRlZ29yaWVzIExpc3Q8U3lzdGVtLkNvZGU+KToNCiAgY29uZGl0aW9uIGMNCiAgcmV0dXJuIENvbmRpdGlvbnsNCiAgICBpZDogRkhJUi5pZCB7dmFsdWU6ICdMQ1ItJyArIGMuaWR9LA0KICAgIG1ldGE6IFNoYXJlZFJlc291cmNlLk1ldGFFbGVtZW50KGMsIHByb2ZpbGVVUkxzKSwNCiAgICBleHRlbnNpb246IGMuZXh0ZW5zaW9uLA0KICAgIGNsaW5pY2FsU3RhdHVzOiBjLmNsaW5pY2FsU3RhdHVzLA0KICAgIHZlcmlmaWNhdGlvblN0YXR1czogYy52ZXJpZmljYXRpb25TdGF0dXMsDQogICAgY2F0ZWdvcnk6IEZpbHRlckNvZGVhYmxlQ29uY2VwdHMoYy5jYXRlZ29yeSwgYWNjZXB0ZWRDYXRlZ29yaWVzKSwNCiAgICBzZXZlcml0eTogYy5zZXZlcml0eSwNCiAgICBjb2RlOiBjLmNvZGUsDQogICAgYm9keVNpdGU6IGMuYm9keVNpdGUsDQogICAgc3ViamVjdDogYy5zdWJqZWN0LA0KICAgIGVuY291bnRlcjogYy5lbmNvdW50ZXIsDQogICAgb25zZXQ6IGMub25zZXQsDQogICAgYWJhdGVtZW50OiBjLmFiYXRlbWVudCwNCiAgICByZWNvcmRlZERhdGU6IGMucmVjb3JkZWREYXRlLA0KICAgIHN0YWdlOiBTaGFyZWRSZXNvdXJjZS5Db25kaXRpb25TdGFnZShjLnN0YWdlKSwNCiAgICBldmlkZW5jZTogU2hhcmVkUmVzb3VyY2UuQ29uZGl0aW9uRXZpZGVuY2UoYy5ldmlkZW5jZSksDQogICAgbm90ZTogYy5ub3RlDQogIH0NCg0KZGVmaW5lIGZ1bmN0aW9uIERldmljZVVkaUNhcnJpZXIodWRpQ2FycmllciBMaXN0PEZISVIuRGV2aWNlLlVkaUNhcnJpZXI+KToNCiAgdWRpQ2FycmllciB1DQogIHJldHVybiBGSElSLkRldmljZS5VZGlDYXJyaWVyew0KICAgIGRldmljZUlkZW50aWZpZXI6IHUuZGV2aWNlSWRlbnRpZmllciwNCiAgICBpc3N1ZXI6IHUuaXNzdWVyLA0KICAgIGp1cmlzZGljdGlvbjogdS5qdXJpc2RpY3Rpb24sDQogICAgY2FycmllckFJREM6IHUuY2FycmllckFJREMsDQogICAgY2FycmllckhSRjogdS5jYXJyaWVySFJGLA0KICAgIGVudHJ5VHlwZTogdS5lbnRyeVR5cGUNCiAgfQ0KDQpkZWZpbmUgZnVuY3Rpb24gRGV2aWNlRGV2aWNlTmFtZShkZXZpY2VOYW1lIExpc3Q8RkhJUi5EZXZpY2UuRGV2aWNlTmFtZT4pOg0KICBkZXZpY2VOYW1lIGQNCiAgcmV0dXJuIEZISVIuRGV2aWNlLkRldmljZU5hbWV7DQogICAgbmFtZTogZC5uYW1lLA0KICAgIHR5cGU6IGQudHlwZQ0KICB9DQoNCmRlZmluZSBmdW5jdGlvbiBEZXZpY2VTcGVjaWFsaXphdGlvbihzcGVjaWFsaXphdGlvbiBMaXN0PEZISVIuRGV2aWNlLlNwZWNpYWxpemF0aW9uPik6DQogIHNwZWNpYWxpemF0aW9uIHMNCiAgcmV0dXJuIEZISVIuRGV2aWNlLlNwZWNpYWxpemF0aW9uew0KICAgIHN5c3RlbVR5cGU6IHMuc3lzdGVtVHlwZSwNCiAgICB2ZXJzaW9uOiBzLnZlcnNpb24NCiAgfQ0KDQpkZWZpbmUgZnVuY3Rpb24gRGV2aWNlVmVyc2lvbih2ZXJzaW9uIExpc3Q8RkhJUi5EZXZpY2UuVmVyc2lvbj4pOg0KICB2ZXJzaW9uIHYNCiAgcmV0dXJuIEZISVIuRGV2aWNlLlZlcnNpb257DQogICAgdHlwZTogdi50eXBlLA0KICAgIGNvbXBvbmVudDogdi5jb21wb25lbnQsDQogICAgdmFsdWU6IHYudmFsdWUNCiAgfQ0KDQpkZWZpbmUgZnVuY3Rpb24gRGV2aWNlUHJvcGVydHkoZGV2aWNlUHJvcGVydHkgTGlzdDxGSElSLkRldmljZS5Qcm9wZXJ0eT4pOg0KICBkZXZpY2VQcm9wZXJ0eSBkDQogIHJldHVybiBGSElSLkRldmljZS5Qcm9wZXJ0eXsNCiAgICBpZDogZC5pZCwNCiAgICB0eXBlOiBkLnR5cGUsDQogICAgdmFsdWVRdWFudGl0eTogZC52YWx1ZVF1YW50aXR5LA0KICAgIHZhbHVlQ29kZTogZC52YWx1ZUNvZGUNCiAgfQ0KDQpkZWZpbmUgZnVuY3Rpb24gRGV2aWNlUmVzb3VyY2UoZGV2aWNlIERldmljZSwgcHJvZmlsZVVSTHMgTGlzdDxGSElSLmNhbm9uaWNhbD4pOg0KICBkZXZpY2UgZA0KICByZXR1cm4gRGV2aWNlew0KICAgIGlkOiBGSElSLmlke3ZhbHVlOiAnTENSLScgKyBkLmlkfSwNCiAgICBtZXRhOiBTaGFyZWRSZXNvdXJjZS5NZXRhRWxlbWVudChkLCBwcm9maWxlVVJMcyksDQogICAgZXh0ZW5zaW9uOiBkLmV4dGVuc2lvbiwNCiAgICBkZWZpbml0aW9uOiBkLmRlZmluaXRpb24sDQogICAgdWRpQ2FycmllcjogRGV2aWNlVWRpQ2FycmllcihkLnVkaUNhcnJpZXIpLA0KICAgIHN0YXR1czogZC5zdGF0dXMsDQogICAgc3RhdHVzUmVhc29uOiBkLnN0YXR1c1JlYXNvbiwNCiAgICBkaXN0aW5jdElkZW50aWZpZXI6IGQuZGlzdGluY3RJZGVudGlmaWVyLA0KICAgIG1hbnVmYWN0dXJlcjogZC5tYW51ZmFjdHVyZXIsDQogICAgbWFudWZhY3R1cmVEYXRlOiBkLm1hbnVmYWN0dXJlRGF0ZSwNCiAgICBleHBpcmF0aW9uRGF0ZTogZC5leHBpcmF0aW9uRGF0ZSwNCiAgICBsb3ROdW1iZXI6IGQubG90TnVtYmVyLA0KICAgIHNlcmlhbE51bWJlcjogZC5zZXJpYWxOdW1iZXIsDQogICAgZGV2aWNlTmFtZTogRGV2aWNlRGV2aWNlTmFtZShkLmRldmljZU5hbWUpLA0KICAgIG1vZGVsTnVtYmVyOiBkLm1vZGVsTnVtYmVyLA0KICAgIHBhcnROdW1iZXI6IGQucGFydE51bWJlciwNCiAgICB0eXBlOiBkLnR5cGUsDQogICAgc3BlY2lhbGl6YXRpb246IERldmljZVNwZWNpYWxpemF0aW9uKGQuc3BlY2lhbGl6YXRpb24pLA0KICAgIHZlcnNpb246IERldmljZVZlcnNpb24oZC52ZXJzaW9uKSwNCiAgICBwcm9wZXJ0eTogRGV2aWNlUHJvcGVydHkoZC5wcm9wZXJ0eSksDQogICAgcGF0aWVudDogZC5wYXRpZW50LA0KICAgIG93bmVyOiBkLm93bmVyLA0KICAgIGNvbnRhY3Q6IGQuY29udGFjdCwNCiAgICBsb2NhdGlvbjogZC5sb2NhdGlvbiwNCiAgICB1cmw6IGQudXJsLA0KICAgIG5vdGU6IGQubm90ZSwNCiAgICBzYWZldHk6IGQuc2FmZXR5LA0KICAgIHBhcmVudDogZC5wYXJlbnQNCiAgfQ0KDQpkZWZpbmUgZnVuY3Rpb24gRGlhZ25vc3RpY1JlcG9ydFJlc291cmNlKGRpYWdub3N0aWNSZXBvcnQgRGlhZ25vc3RpY1JlcG9ydCwgcHJvZmlsZVVSTHMgTGlzdDxGSElSLmNhbm9uaWNhbD4pOg0KICBkaWFnbm9zdGljUmVwb3J0IGQNCiAgcmV0dXJuIERpYWdub3N0aWNSZXBvcnR7DQogICAgaWQ6IEZISVIuaWR7dmFsdWU6ICdMQ1ItJyArIGQuaWR9LA0KICAgIG1ldGE6IFNoYXJlZFJlc291cmNlLk1ldGFFbGVtZW50KGQsIHByb2ZpbGVVUkxzKSwNCiAgICBleHRlbnNpb246IGQuZXh0ZW5zaW9uLA0KICAgIGJhc2VkT246IGQuYmFzZWRPbiwNCiAgICBzdGF0dXM6IGQuc3RhdHVzLA0KICAgIGNhdGVnb3J5OiBkLmNhdGVnb3J5LA0KICAgIGNvZGU6IGQuY29kZSwNCiAgICBzdWJqZWN0OiBkLnN1YmplY3QsDQogICAgZW5jb3VudGVyOiBkLmVuY291bnRlciwNCiAgICBlZmZlY3RpdmU6IGQuZWZmZWN0aXZlLA0KICAgIGlzc3VlZDogZC5pc3N1ZWQsDQogICAgcGVyZm9ybWVyOiBkLnBlcmZvcm1lciwNCiAgICByZXN1bHRzSW50ZXJwcmV0ZXI6IGQucmVzdWx0c0ludGVycHJldGVyLA0KICAgIHNwZWNpbWVuOiBkLnNwZWNpbWVuLA0KICAgIHJlc3VsdDogZC5yZXN1bHQsDQogICAgY29uY2x1c2lvbjogZC5jb25jbHVzaW9uLA0KICAgIGNvbmNsdXNpb25Db2RlOiBkLmNvbmNsdXNpb25Db2RlDQogIH0NCg0KZGVmaW5lIGZ1bmN0aW9uIE9ic2VydmF0aW9uUmVzb3VyY2Uob2JzZXJ2YXRpb24gT2JzZXJ2YXRpb24sIHByb2ZpbGVVUkxzIExpc3Q8RkhJUi5jYW5vbmljYWw+KToNCiAgb2JzZXJ2YXRpb24gbw0KICByZXR1cm4gT2JzZXJ2YXRpb257DQogICAgaWQ6IEZISVIuaWQge3ZhbHVlOiAnTENSLScgKyBvLmlkfSwNCiAgICBtZXRhOiBTaGFyZWRSZXNvdXJjZS5NZXRhRWxlbWVudChvLCBwcm9maWxlVVJMcyksDQogICAgZXh0ZW5zaW9uOiBvLmV4dGVuc2lvbiwNCiAgICBwYXJ0T2Y6IG8ucGFydE9mLA0KICAgIHN0YXR1czogby5zdGF0dXMsDQogICAgY2F0ZWdvcnk6IG8uY2F0ZWdvcnksDQogICAgY29kZTogby5jb2RlLA0KICAgIHN1YmplY3Q6IG8uc3ViamVjdCwNCiAgICBmb2N1czogby5mb2N1cywNCiAgICBlbmNvdW50ZXI6IG8uZW5jb3VudGVyLA0KICAgIGVmZmVjdGl2ZTogby5lZmZlY3RpdmUsDQogICAgaXNzdWVkOiBvLmlzc3VlZCwNCiAgICBwZXJmb3JtZXI6IG8ucGVyZm9ybWVyLA0KICAgIHZhbHVlOiBvLnZhbHVlLA0KICAgIGRhdGFBYnNlbnRSZWFzb246IG8uZGF0YUFic2VudFJlYXNvbiwNCiAgICBpbnRlcnByZXRhdGlvbjogby5pbnRlcnByZXRhdGlvbiwNCiAgICBub3RlOiBvLm5vdGUsDQogICAgYm9keVNpdGU6IG8uYm9keVNpdGUsDQogICAgbWV0aG9kOiBvLm1ldGhvZCwNCiAgICBzcGVjaW1lbjogby5zcGVjaW1lbiwNCiAgICBkZXZpY2U6IG8uZGV2aWNlLA0KICAgIHJlZmVyZW5jZVJhbmdlOiBTaGFyZWRSZXNvdXJjZS5PYnNlcnZhdGlvblJlZmVyZW5jZVJhbmdlKG8ucmVmZXJlbmNlUmFuZ2UpLA0KICAgIGhhc01lbWJlcjogby5oYXNNZW1iZXIsDQogICAgZGVyaXZlZEZyb206IG8uZGVyaXZlZEZyb20sDQogICAgY29tcG9uZW50OiBTaGFyZWRSZXNvdXJjZS5PYnNlcnZhdGlvbkNvbXBvbmVudChvLmNvbXBvbmVudCkNCiAgfQ0KDQpkZWZpbmUgZnVuY3Rpb24gT2JzZXJ2YXRpb25WaXRhbFNpZ25zQ29kaW5nKGNvZGluZyBMaXN0PENvZGluZz4pOg0KICBjb2RpbmcgYw0KICByZXR1cm4gQ29kaW5new0KICAgIHN5c3RlbTogYy5zeXN0ZW0sDQogICAgdmVyc2lvbjogYy52ZXJzaW9uLA0KICAgIGNvZGU6IGMuY29kZSwNCiAgICBkaXNwbGF5OiBjLmRpc3BsYXksDQogICAgdXNlclNlbGVjdGVkOiBjLnVzZXJTZWxlY3RlZA0KICB9DQoNCmRlZmluZSBmdW5jdGlvbiBPYnNlcnZhdGlvblZpdGFsU2lnbnNDYXRlZ29yeShjYXRlZ29yeSBMaXN0PENvZGVhYmxlQ29uY2VwdD4pOg0KICBjYXRlZ29yeSBjDQogIHJldHVybiBDb2RlYWJsZUNvbmNlcHR7DQogICAgY29kaW5nOiBPYnNlcnZhdGlvblZpdGFsU2lnbnNDb2RpbmcoYy5jb2RpbmcpLA0KICAgIHRleHQ6IGMudGV4dA0KICB9DQoNCmRlZmluZSBmdW5jdGlvbiBPYnNlcnZhdGlvblZpdGFsU2lnbnNDb21wb25lbnQoY29tcG9uZW50IExpc3Q8RkhJUi5PYnNlcnZhdGlvbi5Db21wb25lbnQ+KToNCiAgY29tcG9uZW50IGMNCiAgcmV0dXJuIEZISVIuT2JzZXJ2YXRpb24uQ29tcG9uZW50ew0KICAgIGNvZGU6IGMuY29kZSwNCiAgICB2YWx1ZTogYy52YWx1ZSwNCiAgICBkYXRhQWJzZW50UmVhc29uOiBjLmRhdGFBYnNlbnRSZWFzb24sDQogICAgaW50ZXJwcmV0YXRpb246IGMuaW50ZXJwcmV0YXRpb24sDQogICAgcmVmZXJlbmNlUmFuZ2U6IFNoYXJlZFJlc291cmNlLk9ic2VydmF0aW9uUmVmZXJlbmNlUmFuZ2UoYy5yZWZlcmVuY2VSYW5nZSkNCiAgfQ0KDQpkZWZpbmUgZnVuY3Rpb24gT2JzZXJ2YXRpb25WaXRhbFNpZ25zUmVzb3VyY2Uob2JzZXJ2YXRpb24gT2JzZXJ2YXRpb24sIHByb2ZpbGVVUkxzIExpc3Q8RkhJUi5jYW5vbmljYWw+KToNCiAgb2JzZXJ2YXRpb24gbw0KICByZXR1cm4gT2JzZXJ2YXRpb257DQogICAgaWQ6IEZISVIuaWQge3ZhbHVlOiAnTENSLScgKyBvLmlkfSwNCiAgICBtZXRhOiBTaGFyZWRSZXNvdXJjZS5NZXRhRWxlbWVudChvLCBwcm9maWxlVVJMcyksDQogICAgZXh0ZW5zaW9uOiBvLmV4dGVuc2lvbiwNCiAgICBwYXJ0T2Y6IG8ucGFydE9mLA0KICAgIHN0YXR1czogby5zdGF0dXMsDQogICAgY2F0ZWdvcnk6IE9ic2VydmF0aW9uVml0YWxTaWduc0NhdGVnb3J5KG8uY2F0ZWdvcnkpLA0KICAgIGNvZGU6IG8uY29kZSwNCiAgICBzdWJqZWN0OiBvLnN1YmplY3QsDQogICAgZm9jdXM6IG8uZm9jdXMsDQogICAgZW5jb3VudGVyOiBvLmVuY291bnRlciwNCiAgICBlZmZlY3RpdmU6IG8uZWZmZWN0aXZlLA0KICAgIGlzc3VlZDogby5pc3N1ZWQsDQogICAgcGVyZm9ybWVyOiBvLnBlcmZvcm1lciwNCiAgICB2YWx1ZTogby52YWx1ZSwNCiAgICBkYXRhQWJzZW50UmVhc29uOiBvLmRhdGFBYnNlbnRSZWFzb24sDQogICAgaW50ZXJwcmV0YXRpb246IG8uaW50ZXJwcmV0YXRpb24sDQogICAgbm90ZTogby5ub3RlLA0KICAgIGJvZHlTaXRlOiBvLmJvZHlTaXRlLA0KICAgIG1ldGhvZDogby5tZXRob2QsDQogICAgc3BlY2ltZW46IG8uc3BlY2ltZW4sDQogICAgZGV2aWNlOiBvLmRldmljZSwNCiAgICByZWZlcmVuY2VSYW5nZTogU2hhcmVkUmVzb3VyY2UuT2JzZXJ2YXRpb25SZWZlcmVuY2VSYW5nZShvLnJlZmVyZW5jZVJhbmdlKSwNCiAgICBoYXNNZW1iZXI6IG8uaGFzTWVtYmVyLA0KICAgIGRlcml2ZWRGcm9tOiBvLmRlcml2ZWRGcm9tLA0KICAgIGNvbXBvbmVudDogT2JzZXJ2YXRpb25WaXRhbFNpZ25zQ29tcG9uZW50KG8uY29tcG9uZW50KQ0KICB9"/>
+  </content>
+</Library>

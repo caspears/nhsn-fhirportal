@@ -1,0 +1,1119 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "bundle-example-ach-daily-subject-negativepcr",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"]
+  },
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:1eaddf4c-2ec0-4dc4-b26f-9586d7a7a765"
+  },
+  "type" : "collection",
+  "timestamp" : "2024-02-05T21:04:29.481+00:00",
+  "entry" : [{
+    "fullUrl" : "http://nhsnlink.org/fhir/MeasureReport/measurereport-example-ach-daily-negativepcr",
+    "resource" : {
+      "resourceType" : "MeasureReport",
+      "id" : "measurereport-example-ach-daily-negativepcr",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MeasureReport_measurereport-example-ach-daily-negativepcr\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MeasureReport measurereport-example-ach-daily-negativepcr</b></p><a name=\"measurereport-example-ach-daily-negativepcr\"> </a><a name=\"hcmeasurereport-example-ach-daily-negativepcr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/davinci-deqm/STU3.1/StructureDefinition-indv-measurereport-deqm.html\">DEQM Individual MeasureReport Profile</a></p></div><p><b>DEQM Measure Scoring Extension</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}\">Cohort</span></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily NegativePCR(official) Other, DoB: 2005-02-01 ( MRN:\u00a01000009001\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Encounter-encounter-example-ach-daily-negativepcr-1.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789986\u00a0(use:\u00a0usual,\u00a0); status = finished; class = Observation Encounter (ActCode[9.0.0]#OBSENC); type = Hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-02 06:00:00+0000; reasonCode = shortness of breath</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Encounter-encounter-example-ach-daily-negativepcr-2.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789986\u00a0(use:\u00a0usual,\u00a0); status = finished; class = Inpatient Encounter (ActCode[9.0.0]#IMP); type = Hospital admission (procedure); period = 2024-01-02 06:01:00+0000 --&gt; 2024-01-16 08:30:00+0000; reasonCode = shortness of breath</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Coverage-coverage-example-ach-daily-negativepcr.html\">Coverage: identifier = Member Number: 88800933501; status = active; type = subsidized health program; subscriberId = 123456789; relationship = Self; period = 2023-01-01 --&gt; (ongoing)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Condition-condition-example-diagnosis-ach-daily-negativepcr.html\">Condition COVID-19</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationAdministration-medadmin-example-ach-daily-negativepcr.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Molnupiravir 200 mg PO BID; effective[x] = 2024-01-02 09:00:00+0000 --&gt; 2024-01-06 08:59:09+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-daily-negativepcr.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Molnupiravir 200 mg; authoredOn = 2024-01-02 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-lab-observation-example-ach-daily-negativepcr-1.html\">Observation SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-lab-observation-example-ach-daily-negativepcr-2.html\">Observation SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-1.html\">ServiceRequest SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-2.html\">ServiceRequest SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Specimen-specimen-example-ach-daily-negativepcr-1.html\">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Specimen-specimen-example-ach-daily-negativepcr-2.html\">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-02 16:30:00+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Procedure-procedure-example-ach-daily-negativepcr-intubation.html\">Procedure Intubation of respiratory tract (procedure)</a></p><p><b>identifier</b>: <code>http://example.org/fhir/measurereport/id</code>/123456789-pass1</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href=\"Measure-NHSNAcuteCareHospitalDailyInitialPopulation.html\">NHSN Acute Care Hospital Daily Initial Populationversion: null1.0.0)</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily NegativePCR(official) Other, DoB: 2005-02-01 ( MRN:\u00a01000009001\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>date</b>: 2024-01-06 21:04:29+0000</p><p><b>reporter</b>: <a href=\"Organization-organization-example-submitting-organization.html\">Organization Example NHSN Submitter</a></p><p><b>period</b>: 2024-01-05 00:00:00+0000 --&gt; 2024-01-06 00:00:00+0000</p><p><b>improvementNotation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td><td>1</td></tr></table></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily NegativePCR(official) Other, DoB: 2005-02-01 ( MRN:\u00a01000009001\u00a0(use:\u00a0usual,\u00a0))</a></li><li><a href=\"Encounter-encounter-example-ach-daily-negativepcr-1.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789986\u00a0(use:\u00a0usual,\u00a0); status = finished; class = Observation Encounter (ActCode[9.0.0]#OBSENC); type = Hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-02 06:00:00+0000; reasonCode = shortness of breath</a></li><li><a href=\"Encounter-encounter-example-ach-daily-negativepcr-2.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789986\u00a0(use:\u00a0usual,\u00a0); status = finished; class = Inpatient Encounter (ActCode[9.0.0]#IMP); type = Hospital admission (procedure); period = 2024-01-02 06:01:00+0000 --&gt; 2024-01-16 08:30:00+0000; reasonCode = shortness of breath</a></li><li><a href=\"Coverage-coverage-example-ach-daily-negativepcr.html\">Coverage: identifier = Member Number: 88800933501; status = active; type = subsidized health program; subscriberId = 123456789; relationship = Self; period = 2023-01-01 --&gt; (ongoing)</a></li><li><a href=\"Condition-condition-example-diagnosis-ach-daily-negativepcr.html\">Condition COVID-19</a></li><li><a href=\"MedicationAdministration-medadmin-example-ach-daily-negativepcr.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Molnupiravir 200 mg PO BID; effective[x] = 2024-01-02 09:00:00+0000 --&gt; 2024-01-06 08:59:09+0000</a></li><li><a href=\"MedicationRequest-medicationrequest-example-ach-daily-negativepcr.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Molnupiravir 200 mg; authoredOn = 2024-01-02 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></li><li><a href=\"Observation-lab-observation-example-ach-daily-negativepcr-1.html\">Observation SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></li><li><a href=\"Observation-lab-observation-example-ach-daily-negativepcr-2.html\">Observation SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></li><li><a href=\"ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-1.html\">ServiceRequest SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></li><li><a href=\"ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-2.html\">ServiceRequest SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></li><li><a href=\"Specimen-specimen-example-ach-daily-negativepcr-1.html\">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></li><li><a href=\"Specimen-specimen-example-ach-daily-negativepcr-2.html\">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-02 16:30:00+0000</a></li><li><a href=\"Procedure-procedure-example-ach-daily-negativepcr-intubation.html\">Procedure Intubation of respiratory tract (procedure)</a></li></ul></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+            "code" : "cohort"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-minimal-patient"
+          }],
+          "reference" : "Patient/patient-example-ach-daily-negativepcr"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-encounter"
+          }],
+          "reference" : "Encounter/encounter-example-ach-daily-negativepcr-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-encounter"
+          }],
+          "reference" : "Encounter/encounter-example-ach-daily-negativepcr-2"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-coverage"
+          }],
+          "reference" : "Coverage/coverage-example-ach-daily-negativepcr"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-condition"
+          }],
+          "reference" : "Condition/condition-example-diagnosis-ach-daily-negativepcr"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-medication-administration"
+          }],
+          "reference" : "MedicationAdministration/medadmin-example-ach-daily-negativepcr"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-medication-request"
+          }],
+          "reference" : "MedicationRequest/medicationrequest-example-ach-daily-negativepcr"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-observation-lab-category"
+          }],
+          "reference" : "Observation/lab-observation-example-ach-daily-negativepcr-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-observation-lab-category"
+          }],
+          "reference" : "Observation/lab-observation-example-ach-daily-negativepcr-2"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-service-request"
+          }],
+          "reference" : "ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-service-request"
+          }],
+          "reference" : "ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-2"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-specimen"
+          }],
+          "reference" : "Specimen/specimen-example-ach-daily-negativepcr-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-specimen"
+          }],
+          "reference" : "Specimen/specimen-example-ach-daily-negativepcr-2"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-procedure"
+          }],
+          "reference" : "Procedure/procedure-example-ach-daily-negativepcr-intubation"
+        }
+      }],
+      "identifier" : [{
+        "system" : "http://example.org/fhir/measurereport/id",
+        "value" : "123456789-pass1"
+      }],
+      "status" : "complete",
+      "type" : "individual",
+      "measure" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalDailyInitialPopulation|1.0.0-cibuild",
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr"
+      },
+      "date" : "2024-01-06T21:04:29.481+00:00",
+      "reporter" : {
+        "reference" : "Organization/organization-example-submitting-organization"
+      },
+      "period" : {
+        "start" : "2024-01-05T00:00:00.000+00:00",
+        "end" : "2024-01-06T00:00:00.000+00:00"
+      },
+      "improvementNotation" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+          "code" : "increase"
+        }]
+      },
+      "group" : [{
+        "population" : [{
+          "code" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code" : "initial-population",
+              "display" : "Initial Population"
+            }]
+          },
+          "count" : 1
+        }]
+      }],
+      "evaluatedResource" : [{
+        "reference" : "Patient/patient-example-ach-daily-negativepcr"
+      },
+      {
+        "reference" : "Encounter/encounter-example-ach-daily-negativepcr-1"
+      },
+      {
+        "reference" : "Encounter/encounter-example-ach-daily-negativepcr-2"
+      },
+      {
+        "reference" : "Coverage/coverage-example-ach-daily-negativepcr"
+      },
+      {
+        "reference" : "Condition/condition-example-diagnosis-ach-daily-negativepcr"
+      },
+      {
+        "reference" : "MedicationAdministration/medadmin-example-ach-daily-negativepcr"
+      },
+      {
+        "reference" : "MedicationRequest/medicationrequest-example-ach-daily-negativepcr"
+      },
+      {
+        "reference" : "Observation/lab-observation-example-ach-daily-negativepcr-1"
+      },
+      {
+        "reference" : "Observation/lab-observation-example-ach-daily-negativepcr-2"
+      },
+      {
+        "reference" : "ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-1"
+      },
+      {
+        "reference" : "ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-2"
+      },
+      {
+        "reference" : "Specimen/specimen-example-ach-daily-negativepcr-1"
+      },
+      {
+        "reference" : "Specimen/specimen-example-ach-daily-negativepcr-2"
+      },
+      {
+        "reference" : "Procedure/procedure-example-ach-daily-negativepcr-intubation"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Patient/patient-example-ach-daily-negativepcr",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-example-ach-daily-negativepcr",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-example-ach-daily-negativepcr\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-example-ach-daily-negativepcr</b></p><a name=\"patient-example-ach-daily-negativepcr\"> </a><a name=\"hcpatient-example-ach-daily-negativepcr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cross-measure-patient.html\">Cross-Measure Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">ACHDaily NegativePCR(official) Other, DoB: 2005-02-01 ( MRN:\u00a01000009001\u00a0(use:\u00a0usual,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 999-999-9999(Home)</li><li>456 Alphabet Street Lansing MI 48864 US (home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2186-5\">Race &amp; Ethnicity - CDC 2186-5</a>: Not Hispanic or Latino</li><li>text: Non Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9).\"><a href=\"http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-birthsex.html\">US Core Birth Sex Extension</a></td><td colspan=\"3\">F</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2028-9\">Race &amp; Ethnicity - CDC 2028-9</a>: Asian</li><li>text: Asian</li></ul></td></tr></table></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "ombCategory",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2028-9",
+            "display" : "Asian"
+          }
+        },
+        {
+          "url" : "text",
+          "valueString" : "Asian"
+        }],
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+      },
+      {
+        "extension" : [{
+          "url" : "ombCategory",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2186-5",
+            "display" : "Not Hispanic or Latino"
+          }
+        },
+        {
+          "url" : "text",
+          "valueString" : "Non Hispanic or Latino"
+        }],
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+        "valueCode" : "F"
+      }],
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR",
+            "display" : "Medical record number"
+          }],
+          "text" : "MRN"
+        },
+        "system" : "urn:oid:1.2.5.8.2.7",
+        "value" : "1000009001"
+      }],
+      "active" : true,
+      "name" : [{
+        "use" : "official",
+        "text" : "ACHDaily NegativePCR",
+        "family" : "NegativePCR",
+        "given" : ["ACHDaily"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "999-999-9999",
+        "use" : "home"
+      }],
+      "gender" : "other",
+      "birthDate" : "2005-02-01",
+      "deceasedBoolean" : false,
+      "address" : [{
+        "use" : "home",
+        "line" : ["456 Alphabet Street"],
+        "city" : "Lansing",
+        "state" : "MI",
+        "postalCode" : "48864",
+        "country" : "US"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Encounter/encounter-example-ach-daily-negativepcr-1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "encounter-example-ach-daily-negativepcr-1",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounter-example-ach-daily-negativepcr-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-example-ach-daily-negativepcr-1</b></p><a name=\"encounter-example-ach-daily-negativepcr-1\"> </a><a name=\"hcencounter-example-ach-daily-negativepcr-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-encounter.html\">ACH Daily Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/123456789986\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-OBSENC\">ActCode OBSENC</a>: Observation Encounter (version = 9.0.0 )</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 32485007}\">Hospital admission (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>period</b>: 2024-01-01 08:00:00+0000 --&gt; 2024-01-02 06:00:00+0000</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 267036007}\">Shortness of breath</span></p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/admit-source outp}\">observation unit</span></td></tr></table><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Location-location-example-ach-daily-emergency.html\">EMERGENCY - PAVILION</a></p><p><b>period</b>: 2022-08-11 18:52:00+0000 --&gt; 2022-08-17 16:09:00+0000</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Location-location-example-ach-daily-hospital.html\">Health Hospital Location</a></p><p><b>period</b>: 2022-08-17 16:09:00+0000 --&gt; 2022-08-22 19:01:00+0000</p></blockquote></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+        "value" : "123456789986"
+      }],
+      "status" : "finished",
+      "_status" : {
+        "extension" : [{
+          "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension",
+          "valueString" : "TRIAGED"
+        }]
+      },
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version" : "9.0.0",
+        "code" : "OBSENC",
+        "display" : "Observation Encounter"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "32485007",
+          "display" : "Hospital admission (procedure)"
+        }],
+        "text" : "Hospital admission (procedure)"
+      }],
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily, NegativePCR"
+      },
+      "period" : {
+        "start" : "2024-01-01T08:00:00Z",
+        "end" : "2024-01-02T06:00:00Z"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "267036007",
+          "display" : "shortness of breath"
+        }],
+        "text" : "Shortness of breath"
+      }],
+      "hospitalization" : {
+        "admitSource" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/admit-source",
+            "code" : "outp",
+            "display" : "From outpatient department"
+          }],
+          "text" : "observation unit"
+        }
+      },
+      "location" : [{
+        "location" : {
+          "reference" : "Location/location-example-ach-daily-emergency",
+          "display" : "EMERGENCY - PAVILION"
+        },
+        "period" : {
+          "start" : "2022-08-11T18:52:00Z",
+          "end" : "2022-08-17T16:09:00Z"
+        }
+      },
+      {
+        "location" : {
+          "reference" : "Location/location-example-ach-daily-hospital",
+          "display" : "Health Hospital Location"
+        },
+        "period" : {
+          "start" : "2022-08-17T16:09:00Z",
+          "end" : "2022-08-22T19:01:00Z"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Encounter/encounter-example-ach-daily-negativepcr-2",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "encounter-example-ach-daily-negativepcr-2",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounter-example-ach-daily-negativepcr-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-example-ach-daily-negativepcr-2</b></p><a name=\"encounter-example-ach-daily-negativepcr-2\"> </a><a name=\"hcencounter-example-ach-daily-negativepcr-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-encounter.html\">ACH Daily Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/123456789986\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode IMP</a>: Inpatient Encounter (version = 9.0.0 )</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 32485007}\">Hospital admission (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>period</b>: 2024-01-02 06:01:00+0000 --&gt; 2024-01-16 08:30:00+0000</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 267036007}\">Shortness of breath</span></p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/admit-source outp}\">observation unit</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition exp}\">Deceased (expired)</span></td></tr></table><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Location-location-example-ach-daily-emergency.html\">EMERGENCY - PAVILION</a></p><p><b>period</b>: 2022-08-11 18:52:00+0000 --&gt; 2022-08-17 16:09:00+0000</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Location-location-example-ach-daily-hospital.html\">Health Hospital Location</a></p><p><b>period</b>: 2022-08-17 16:09:00+0000 --&gt; 2022-08-22 19:01:00+0000</p></blockquote></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+        "value" : "123456789986"
+      }],
+      "status" : "finished",
+      "_status" : {
+        "extension" : [{
+          "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension",
+          "valueString" : "TRIAGED"
+        }]
+      },
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version" : "9.0.0",
+        "code" : "IMP",
+        "display" : "Inpatient Encounter"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "32485007",
+          "display" : "Hospital admission (procedure)"
+        }],
+        "text" : "Hospital admission (procedure)"
+      }],
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily, NegativePCR"
+      },
+      "period" : {
+        "start" : "2024-01-02T06:01:00Z",
+        "end" : "2024-01-16T08:30:00Z"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "267036007",
+          "display" : "shortness of breath"
+        }],
+        "text" : "Shortness of breath"
+      }],
+      "hospitalization" : {
+        "admitSource" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/admit-source",
+            "code" : "outp",
+            "display" : "From outpatient department"
+          }],
+          "text" : "observation unit"
+        },
+        "dischargeDisposition" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+            "code" : "exp",
+            "display" : "Expired"
+          }],
+          "text" : "Deceased (expired)"
+        }
+      },
+      "location" : [{
+        "location" : {
+          "reference" : "Location/location-example-ach-daily-emergency",
+          "display" : "EMERGENCY - PAVILION"
+        },
+        "period" : {
+          "start" : "2022-08-11T18:52:00Z",
+          "end" : "2022-08-17T16:09:00Z"
+        }
+      },
+      {
+        "location" : {
+          "reference" : "Location/location-example-ach-daily-hospital",
+          "display" : "Health Hospital Location"
+        },
+        "period" : {
+          "start" : "2022-08-17T16:09:00Z",
+          "end" : "2022-08-22T19:01:00Z"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Coverage/coverage-example-ach-daily-negativepcr",
+    "resource" : {
+      "resourceType" : "Coverage",
+      "id" : "coverage-example-ach-daily-negativepcr",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Coverage_coverage-example-ach-daily-negativepcr\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Coverage coverage-example-ach-daily-negativepcr</b></p><a name=\"coverage-example-ach-daily-negativepcr\"> </a><a name=\"hccoverage-example-ach-daily-negativepcr\"> </a><p><b>identifier</b>: Member Number/88800933501</p><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode SUBSIDIZ}\">MEDICAID</span></p><p><b>subscriberId</b>: 123456789</p><p><b>beneficiary</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily NegativePCR(official) Other, DoB: 2005-02-01 ( MRN:\u00a01000009001\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span></p><p><b>period</b>: 2023-01-01 --&gt; (ongoing)</p><p><b>payor</b>: Medicaid Coverage</p><h3>Classes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/coverage-class group}\">Medicaid</span></td><td>Medicaid</td><td>Medicaid</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MB",
+            "display" : "Member Number"
+          }]
+        },
+        "system" : "http://example.org/fhir/memberidentifier",
+        "value" : "88800933501"
+      }],
+      "status" : "active",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "version" : "9.0.0",
+          "code" : "SUBSIDIZ",
+          "display" : "subsidized health program"
+        }],
+        "text" : "MEDICAID"
+      },
+      "subscriberId" : "123456789",
+      "beneficiary" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr"
+      },
+      "relationship" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+          "code" : "self"
+        }],
+        "text" : "Self"
+      },
+      "period" : {
+        "start" : "2023-01-01"
+      },
+      "payor" : [{
+        "display" : "Medicaid Coverage"
+      }],
+      "class" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/coverage-class",
+            "code" : "group",
+            "display" : "Group"
+          }],
+          "text" : "Medicaid"
+        },
+        "value" : "Medicaid",
+        "name" : "Medicaid"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Condition/condition-example-diagnosis-ach-daily-negativepcr",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "condition-example-diagnosis-ach-daily-negativepcr",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_condition-example-diagnosis-ach-daily-negativepcr\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-example-diagnosis-ach-daily-negativepcr</b></p><a name=\"condition-example-diagnosis-ach-daily-negativepcr\"> </a><a name=\"hccondition-example-diagnosis-ach-daily-negativepcr\"> </a><p><b>Original Resource ID</b>: eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm U07.1}\">COVID-19</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>encounter</b>: Inpatient</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+        "valueString" : "eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "version" : "4.0.0",
+          "code" : "confirmed",
+          "display" : "Confirmed"
+        }],
+        "text" : "Confirmed"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis",
+          "display" : "Encounter Diagnosis"
+        }],
+        "text" : "Encounter Diagnosis"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "U07.1",
+          "display" : "COVID-19"
+        }],
+        "text" : "COVID-19"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily, NegativePCR"
+      },
+      "encounter" : {
+        "display" : "Inpatient"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-daily-negativepcr",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "medadmin-example-ach-daily-negativepcr",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationAdministration_medadmin-example-ach-daily-negativepcr\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-daily-negativepcr</b></p><a name=\"medadmin-example-ach-daily-negativepcr\"> </a><a name=\"hcmedadmin-example-ach-daily-negativepcr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-medicationadministration.html\">ACH Daily Event Medication Administration</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"Medication-medication-example-ach-daily-negativepcr.html\">Molnupiravir 200 mg PO BID</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>effective</b>: 2024-01-02 09:00:00+0000 --&gt; 2024-01-06 08:59:09+0000</p><p><b>request</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-daily-negativepcr.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Molnupiravir 200 mg; authoredOn = 2024-01-02 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>Take Molnupiravir 200 mg 4 capsules by mouth twice a day x 5 days</td><td><span title=\"Codes:{http://snomed.info/sct 385049006}\">Capsule</span></td><td>200 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>"
+      },
+      "status" : "completed",
+      "medicationReference" : {
+        "extension" : [{
+          "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+          "valueString" : "Medication/eZeW55xkBH0DrR0Xj004fNid0iluLJl6nT2adScy2TI9SbXSOBJPdED7Qjms.Fj48j0.MQxtisgjhubwnqaIImzMAo7axKzx4khlfA7xEkUU3"
+        }],
+        "reference" : "Medication/medication-example-ach-daily-negativepcr",
+        "display" : "Molnupiravir 200 mg PO BID"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily, NegativePCR"
+      },
+      "effectivePeriod" : {
+        "start" : "2024-01-02T09:00:00Z",
+        "end" : "2024-01-06T08:59:09Z"
+      },
+      "request" : {
+        "reference" : "MedicationRequest/medicationrequest-example-ach-daily-negativepcr"
+      },
+      "dosage" : {
+        "text" : "Take Molnupiravir 200 mg 4 capsules by mouth twice a day x 5 days",
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "385049006",
+            "display" : "Capsule"
+          }]
+        },
+        "dose" : {
+          "value" : 200,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-daily-negativepcr",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "medicationrequest-example-ach-daily-negativepcr",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_medicationrequest-example-ach-daily-negativepcr\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-daily-negativepcr</b></p><a name=\"medicationrequest-example-ach-daily-negativepcr\"> </a><a name=\"hcmedicationrequest-example-ach-daily-negativepcr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-medicationrequest.html\">ACH Daily Event Medication Request</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101903002\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"Medication-medication-example-ach-daily-negativepcr.html\">Molnupiravir 200 mg</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-negativepcr-1.html\">Hospital Encounter</a></p><p><b>authoredOn</b>: 2024-01-02 21:30:15+0000</p><p><b>requester</b>: Faculty Physician Um_Cln, MD</p><p><b>recorder</b>: Faculty Physician Um_Cln, MD</p><p><b>courseOfTherapyType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy acute}\">Short course (acute) therapy</span></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>AsNeeded[x]</b></td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>Molnupiravir 200 mg: Take 4 capsules by mouth twice a day x 5 days</td><td>Code , 4 per 5 days</td><td>false</td><td><span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral use</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+        "value" : "101903002"
+      }],
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }],
+        "text" : "Inpatient"
+      }],
+      "medicationReference" : {
+        "reference" : "Medication/medication-example-ach-daily-negativepcr",
+        "display" : "Molnupiravir 200 mg"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily, NegativePCR"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-daily-negativepcr-1",
+        "display" : "Hospital Encounter"
+      },
+      "authoredOn" : "2024-01-02T21:30:15Z",
+      "requester" : {
+        "type" : "Practitioner",
+        "display" : "Faculty Physician Um_Cln, MD"
+      },
+      "recorder" : {
+        "type" : "Practitioner",
+        "display" : "Faculty Physician Um_Cln, MD"
+      },
+      "courseOfTherapyType" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+          "code" : "acute",
+          "display" : "Short course (acute) therapy"
+        }],
+        "text" : "Short course (acute) therapy"
+      },
+      "dosageInstruction" : [{
+        "text" : "Molnupiravir 200 mg: Take 4 capsules by mouth twice a day x 5 days",
+        "timing" : {
+          "repeat" : {
+            "boundsPeriod" : {
+              "start" : "2024-01-02T21:30:15Z",
+              "end" : "2024-01-06T21:30:15Z"
+            },
+            "frequency" : 4,
+            "period" : 5,
+            "periodUnit" : "d"
+          },
+          "code" : {
+            "text" : "Take 4 Molnupiravir 200 mg capsules by mouth twice a day x 5 days"
+          }
+        },
+        "asNeededBoolean" : false,
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "26643006",
+            "display" : "Oral use"
+          }],
+          "text" : "Oral use"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Observation/lab-observation-example-ach-daily-negativepcr-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "lab-observation-example-ach-daily-negativepcr-1",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_lab-observation-example-ach-daily-negativepcr-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-observation-example-ach-daily-negativepcr-1</b></p><a name=\"lab-observation-example-ach-daily-negativepcr-1\"> </a><a name=\"hclab-observation-example-ach-daily-negativepcr-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-observation-lab.html\">ACH Daily Event Lab Result Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 94307-6}\">SARS-CoV-2 (COVID-19) N gene NAA+probe CDC primer-probe set N1 Ql (Specimen)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-negativepcr-1.html\">Hospital Encounter</a></p><p><b>effective</b>: 2023-01-01 08:30:00+0000</p><p><b>issued</b>: 2023-01-01 08:30:00+0000</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 10828004}\">Positive</span></p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-daily-negativepcr-1.html\">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }],
+        "text" : "Laboratory"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "94307-6",
+          "display" : "SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1"
+        }],
+        "text" : "SARS-CoV-2 (COVID-19) N gene NAA+probe CDC primer-probe set N1 Ql (Specimen)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily, NegativePCR"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-daily-negativepcr-1",
+        "display" : "Hospital Encounter"
+      },
+      "effectiveDateTime" : "2023-01-01T08:30:00Z",
+      "issued" : "2023-01-01T08:30:00Z",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "10828004",
+          "display" : "Positive"
+        }],
+        "text" : "Positive"
+      },
+      "specimen" : {
+        "reference" : "Specimen/specimen-example-ach-daily-negativepcr-1"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Observation/lab-observation-example-ach-daily-negativepcr-2",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "lab-observation-example-ach-daily-negativepcr-2",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_lab-observation-example-ach-daily-negativepcr-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-observation-example-ach-daily-negativepcr-2</b></p><a name=\"lab-observation-example-ach-daily-negativepcr-2\"> </a><a name=\"hclab-observation-example-ach-daily-negativepcr-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-observation-lab.html\">ACH Daily Event Lab Result Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 94307-6}\">SARS-CoV-2 (COVID-19) N gene NAA+probe CDC primer-probe set N1 Ql (Specimen)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-negativepcr-2.html\">Hospital Encounter</a></p><p><b>effective</b>: 2023-01-02 15:30:00+0000</p><p><b>issued</b>: 2023-01-02 15:30:00+0000</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 260385009}\">Negative</span></p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-daily-negativepcr-2.html\">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-02 16:30:00+0000</a></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }],
+        "text" : "Laboratory"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "94307-6",
+          "display" : "SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1"
+        }],
+        "text" : "SARS-CoV-2 (COVID-19) N gene NAA+probe CDC primer-probe set N1 Ql (Specimen)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily, NegativePCR"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-daily-negativepcr-2",
+        "display" : "Hospital Encounter"
+      },
+      "effectiveDateTime" : "2023-01-02T15:30:00Z",
+      "issued" : "2023-01-02T15:30:00Z",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "260385009",
+          "display" : "Negative"
+        }],
+        "text" : "Negative"
+      },
+      "specimen" : {
+        "reference" : "Specimen/specimen-example-ach-daily-negativepcr-2"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-1",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "servicerequest-example-ach-daily-negativepcr-covid-1",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_servicerequest-example-ach-daily-negativepcr-covid-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-daily-negativepcr-covid-1</b></p><a name=\"servicerequest-example-ach-daily-negativepcr-covid-1\"> </a><a name=\"hcservicerequest-example-ach-daily-negativepcr-covid-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-servicerequest.html\">ACH Daily Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631821\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 94307-6}\">SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily NegativePCR</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-negativepcr-1.html\">Hospital Admission</a></p><p><b>occurrence</b>: Code , Events: 2024-02-02 17:22:00-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-01-01 17:22:00-0500</p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-daily-negativepcr-1.html\">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PLAC",
+            "display" : "Placer Identifier"
+          }],
+          "text" : "Placer Identifier"
+        },
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+        "value" : "1019631821"
+      }],
+      "status" : "completed",
+      "intent" : "original-order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "108252007",
+          "display" : "Laboratory procedure"
+        }],
+        "text" : "Laboratory procedure"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "94307-6",
+          "display" : "SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1"
+        }],
+        "text" : "SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1"
+      },
+      "quantityQuantity" : {
+        "value" : 1
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily NegativePCR"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-daily-negativepcr-1",
+        "display" : "Hospital Admission"
+      },
+      "occurrenceTiming" : {
+        "event" : ["2024-02-02T17:22:00-05:00"],
+        "repeat" : {
+          "count" : 1
+        },
+        "code" : {
+          "text" : "Once"
+        }
+      },
+      "authoredOn" : "2024-01-01T17:22:00-05:00",
+      "specimen" : [{
+        "reference" : "Specimen/specimen-example-ach-daily-negativepcr-1"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-2",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "servicerequest-example-ach-daily-negativepcr-covid-2",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_servicerequest-example-ach-daily-negativepcr-covid-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-daily-negativepcr-covid-2</b></p><a name=\"servicerequest-example-ach-daily-negativepcr-covid-2\"> </a><a name=\"hcservicerequest-example-ach-daily-negativepcr-covid-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-servicerequest.html\">ACH Daily Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631821\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 94307-6}\">SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily NegativePCR</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-negativepcr-1.html\">Hospital Admission</a></p><p><b>occurrence</b>: Code , Events: 2024-02-02 17:22:00-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-01-02 17:22:00-0500</p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-daily-negativepcr-2.html\">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-02 16:30:00+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PLAC",
+            "display" : "Placer Identifier"
+          }],
+          "text" : "Placer Identifier"
+        },
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+        "value" : "1019631821"
+      }],
+      "status" : "completed",
+      "intent" : "original-order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "108252007",
+          "display" : "Laboratory procedure"
+        }],
+        "text" : "Laboratory procedure"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "94307-6",
+          "display" : "SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1"
+        }],
+        "text" : "SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1"
+      },
+      "quantityQuantity" : {
+        "value" : 1
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily NegativePCR"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-daily-negativepcr-1",
+        "display" : "Hospital Admission"
+      },
+      "occurrenceTiming" : {
+        "event" : ["2024-02-02T17:22:00-05:00"],
+        "repeat" : {
+          "count" : 1
+        },
+        "code" : {
+          "text" : "Once"
+        }
+      },
+      "authoredOn" : "2024-01-02T17:22:00-05:00",
+      "specimen" : [{
+        "reference" : "Specimen/specimen-example-ach-daily-negativepcr-2"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Specimen/specimen-example-ach-daily-negativepcr-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "specimen-example-ach-daily-negativepcr-1",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_specimen-example-ach-daily-negativepcr-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Specimen specimen-example-ach-daily-negativepcr-1</b></p><a name=\"specimen-example-ach-daily-negativepcr-1\"> </a><a name=\"hcspecimen-example-ach-daily-negativepcr-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-specimen.html\">ACH Daily Event Specimen</a></p></div><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 168141000}\">Nasal fluid specimen (specimen)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>receivedTime</b>: 2024-01-01 08:30:00+0000</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-01-01 09:00:00+0000</td><td><span title=\"Codes:{http://snomed.info/sct 1825009}\">Entire root of nose (body structure)</span></td></tr></table></div>"
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "168141000",
+          "display" : "Nasal fluid specimen (specimen)"
+        }],
+        "text" : "Nasal fluid specimen (specimen)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily, NegativePCR"
+      },
+      "receivedTime" : "2024-01-01T08:30:00Z",
+      "collection" : {
+        "collectedDateTime" : "2024-01-01T09:00:00Z",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "1825009",
+            "display" : "Entire root of nose (body structure)"
+          }]
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Specimen/specimen-example-ach-daily-negativepcr-2",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "specimen-example-ach-daily-negativepcr-2",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_specimen-example-ach-daily-negativepcr-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Specimen specimen-example-ach-daily-negativepcr-2</b></p><a name=\"specimen-example-ach-daily-negativepcr-2\"> </a><a name=\"hcspecimen-example-ach-daily-negativepcr-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-specimen.html\">ACH Daily Event Specimen</a></p></div><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 168141000}\">Nasal fluid specimen (specimen)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>receivedTime</b>: 2024-01-02 16:30:00+0000</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-01-02 15:45:00+0000</td><td><span title=\"Codes:{http://snomed.info/sct 1825009}\">Entire root of nose (body structure)</span></td></tr></table></div>"
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "168141000",
+          "display" : "Nasal fluid specimen (specimen)"
+        }],
+        "text" : "Nasal fluid specimen (specimen)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily, NegativePCR"
+      },
+      "receivedTime" : "2024-01-02T16:30:00Z",
+      "collection" : {
+        "collectedDateTime" : "2024-01-02T15:45:00Z",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "1825009",
+            "display" : "Entire root of nose (body structure)"
+          }]
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Procedure/procedure-example-ach-daily-negativepcr-intubation",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "procedure-example-ach-daily-negativepcr-intubation",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-procedure"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_procedure-example-ach-daily-negativepcr-intubation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure procedure-example-ach-daily-negativepcr-intubation</b></p><a name=\"procedure-example-ach-daily-negativepcr-intubation\"> </a><a name=\"hcprocedure-example-ach-daily-negativepcr-intubation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-procedure.html\">ACH Daily Event Procedure</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/1000510352\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 447996002}\">Intubation of respiratory tract (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily NegativePCR</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-negativepcr-1.html\">Hospital Admission</a></p><p><b>performed</b>: 2023-01-02 15:30:00+0000</p></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+        "value" : "1000510352"
+      }],
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "447996002",
+          "display" : "Intubation of respiratory tract (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-negativepcr",
+        "display" : "ACHDaily NegativePCR"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-daily-negativepcr-1",
+        "display" : "Hospital Admission"
+      },
+      "performedDateTime" : "2023-01-02T15:30:00Z"
+    }
+  }]
+}

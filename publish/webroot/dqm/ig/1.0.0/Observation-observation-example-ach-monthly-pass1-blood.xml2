@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-example-ach-monthly-pass1-blood"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass1-blood</b></p><a name="observation-example-ach-monthly-pass1-blood"> </a><a name="hcobservation-example-ach-monthly-pass1-blood"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-lab.html">ACH Monthly Event Lab Result Observation</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass1-blood.html">ServiceRequest Bacteria identified in Blood by Culture</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 600-7}">Bacteria identified in Blood by Culture</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass1.html">Pass1 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass1.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 18:12:00-0500</p><p><b>issued</b>: 2024-02-03 11:42:00-0500</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 113962001}">Staphylococcus capitis</span></p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-monthly-pass1-blood.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082901,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:41; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500</a></p></div>
+  </text>
+  <basedOn>
+    <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass1-blood"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="Laboratory"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="600-7"/>
+      <display value="Bacteria identified in Blood by Culture"/>
+    </coding>
+    <text value="Bacteria identified in Blood by Culture"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass1"/>
+    <display value="Pass1 ACH"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example-ach-monthly-pass1"/>
+    <display value="Hospital Admission"/>
+  </encounter>
+  <effectiveDateTime value="2024-02-02T18:12:00-05:00"/>
+  <issued value="2024-02-03T11:42:00-05:00"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="113962001"/>
+      <display value="Staphylococcus capitis ss capitis (organism)"/>
+    </coding>
+    <text value="Staphylococcus capitis"/>
+  </valueCodeableConcept>
+  <specimen>
+    <reference value="Specimen/specimen-example-ach-monthly-pass1-blood"/>
+  </specimen>
+</Observation>

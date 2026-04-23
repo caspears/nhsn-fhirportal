@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="device-example-ach-monthly-pass3-ivcs-pump"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device device-example-ach-monthly-pass3-ivcs-pump</b></p><a name="device-example-ach-monthly-pass3-ivcs-pump"> </a><a name="hcdevice-example-ach-monthly-pass3-ivcs-pump"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-device.html">ACH Monthly Event Device</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/100051035 (use: usual, )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 469317002}">Intermittent venous compression system pump</span></p><p><b>patient</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+    <value value="100051035"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="469317002"/>
+      <display value="Intermittent venous compression system pump (physical object)"/>
+    </coding>
+    <text value="Intermittent venous compression system pump"/>
+  </type>
+  <patient>
+    <reference value="Patient/patient-example-ach-monthly-pass3"/>
+    <display value="Pass3 ACH"/>
+  </patient>
+</Device>

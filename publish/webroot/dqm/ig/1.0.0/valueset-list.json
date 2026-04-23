@@ -1,0 +1,49 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-diagnostic-report-status",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AcuteCareHospitalDailyEventDiagnosticReportStatus",
+      "title" : "ACH Daily Diagnostic Report Status ValueSet",
+      "description" : "A set of codes indicating the status of the diagnostic report.",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"]
+    },
+    {
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-encounter-class",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AcuteCareHospitalDailyEventEncounterClass",
+      "title" : "ACH Daily Encounter Class ValueSet",
+      "description" : "A set of codes indicating the encounter class that represent inpatient, observation and short stay concepts.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"]
+    },
+    {
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-encounter-status",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AcuteCareHospitalDailyEncounterStatus",
+      "title" : "ACH Daily Encounter Status ValueSet",
+      "description" : "A set of codes indicating the status of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"]
+    },
+    {
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-monthly-encounter-class",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AcuteCareHospitalMonthlyEncounterClass",
+      "title" : "ACH Monthly Encounter Class ValueSet",
+      "description" : "A set of codes indicating the encounter class that represent inpatient, emergency, observation and short stay concepts.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"]
+    },
+    {
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-monthly-encounter-status",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AcuteCareHospitalMonthlyEncounterStatus",
+      "title" : "ACH Monthly Encounter Status ValueSet",
+      "description" : "A set of codes indicating the status of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"]
+    }
+  ]
+}

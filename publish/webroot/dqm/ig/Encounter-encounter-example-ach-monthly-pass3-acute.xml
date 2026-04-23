@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="encounter-example-ach-monthly-pass3-acute"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example-ach-monthly-pass3-acute</b></p><a name="encounter-example-ach-monthly-pass3-acute"> </a><a name="hcencounter-example-ach-monthly-pass3-acute"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-encounter.html">ACH Monthly Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/10005104253a (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE">ActCode ACUTE</a>: inpatient acute (version = 9.0.0 )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 453701000124103}">Critical care visit</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>period</b>: 2024-02-02 16:43:00-0500 --&gt; 2024-02-03 19:58:00-0500</p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/admit-source other}">From Short Stay</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition home}">Home</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-location-example-ach-monthly-crit-part.html">ACH Monthly Medical Critical Care</a></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type wa}">Ward</span></td><td>2024-02-02 16:43:00-0500 --&gt; 2024-03-02 19:58:00-0500</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+    <value value="10005104253a"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <version value="9.0.0"/>
+    <code value="ACUTE"/>
+    <display value="inpatient acute"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="453701000124103"/>
+      <display value="In-person encounter"/>
+    </coding>
+    <text value="Critical care visit"/>
+  </type>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass3"/>
+    <display value="Pass3 ACH"/>
+  </subject>
+  <period>
+    <start value="2024-02-02T16:43:00-05:00"/>
+    <end value="2024-02-03T19:58:00-05:00"/>
+  </period>
+  <hospitalization>
+    <admitSource>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+        <code value="other"/>
+        <display value="Other"/>
+      </coding>
+      <text value="From Short Stay"/>
+    </admitSource>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+        <code value="home"/>
+        <display value="Home"/>
+      </coding>
+      <text value="Home"/>
+    </dischargeDisposition>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/location-example-ach-monthly-crit-part"/>
+      <display value="ACH Monthly Medical Critical Care"/>
+    </location>
+    <physicalType>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+        <code value="wa"/>
+        <display value="Ward"/>
+      </coding>
+    </physicalType>
+    <period>
+      <start value="2024-02-02T16:43:00-05:00"/>
+      <end value="2024-03-02T19:58:00-05:00"/>
+    </period>
+  </location>
+</Encounter>

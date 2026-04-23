@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="medication-example-heparin"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication medication-example-heparin</b></p><a name="medication-example-heparin"> </a><a name="hcmedication-example-heparin"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medication.html">ACH Monthly Event Medication</a></p></div><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 2121591}">0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe</span></p><p><b>status</b>: Active</p><p><b>form</b>: <span title="Codes:{http://snomed.info/sct 779438003}">Intravenous solution</span></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="2121591"/>
+      <display value="0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe"/>
+    </coding>
+    <text value="0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe"/>
+  </code>
+  <status value="active"/>
+  <form>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="779438003"/>
+      <display value="Product containing only heparin in parenteral dose form (medicinal product form)"/>
+    </coding>
+    <text value="Intravenous solution"/>
+  </form>
+</Medication>

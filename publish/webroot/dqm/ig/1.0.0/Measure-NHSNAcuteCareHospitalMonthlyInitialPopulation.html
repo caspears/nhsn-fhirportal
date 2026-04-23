@@ -1,0 +1,4811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NHSN dQM Acute Care Hospital Monthly Initial Population Measure - CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fhir-nhsn.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10.2"}
+    h3,h4,h5,h6{--heading-prefix:"10.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://www.cdc.gov/nhsn/index.html"><img alt="Visit the National Healthcare Safety Network website" src="assets\images\nhsn.png" width="137" height="50" />
+    <!--<img height="50" alt="Visit the National Healthcare Safety Network website" src="https://www.lantanagroup.com/wp-content/uploads/logo-transparent.png" width="190" height="42" /> --></a>
+</div>
+<!-- TODO: Push this into the base template, but it requires a "trusted" template -->
+<script type="text/javascript" src="cql.js"> </script>
+<img src="assets\images\header_top.png" width="100%" />
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - Release 1
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="use_cases.html">Actors and Use Cases</a>
+  </li>
+  <li>
+    <a href="validation-pre-qualification.html">Validation and Pre-Qualification</a>
+  </li>
+  <li>
+    <a href="specification.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifact-listing.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="license.html">License</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core IG 3.1.1</a>
+      </li>
+      <li>
+        <a href="https://www.fhir.org/guides/cqf/common/">Clinical Quality Framework</a>
+      </li>
+      <li>
+        <a href="https://hl7.org/fhir/us/davinci-deqm/STU3.1/index.html">Da Vinci DEQM IG 3.1</a>
+      </li>
+      <li>
+        <a href="https://hl7.org/fhir/us/qicore/STU4.1.1/">QI Core IG 4.1.1</a>
+      </li>
+      <li>
+        <a href="http://cql.hl7.org/index.html">CQL Spec</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/uv/cpg">FHIR Clinical Guidelines</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NHSN dQM Acute Care Hospital Monthly Initial Population Measure</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. The current version which supersedes this version is <a data-no-external="true" href="http://www.cdc.gov/nhsn/fhirportal/dqm/ig">2.0.0</a>.  For a full list of available versions, see the <a data-no-external="true" href="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">Measure: NHSN dQM Acute Care Hospital Monthly Initial Population Measure
+
+  </h2>
+
+  <table class="colstu">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="3">
+        
+          <i>
+            
+            Standards status:
+          </i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Trial-use</a>
+          
+          
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NHSNAcuteCareHospitalMonthlyInitialPopulation</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> https://nhsnlink.org#NHSNAcuteCareHospitalMonthlyInitialPopulation
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Limited proprietary coding is contained in the Measure specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets.</p>
+</td>
+    </tr>
+
+  </table>
+
+
+<p>
+<p>The Acute Care Hospital Monthly Initial Population includes all encounters for patients of any age in an ED, observation, or inpatient location or all encounters for patients of any age with an ED, observation, inpatient, or short stay status during the measurement period.</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.xml.html">XML</a>, <a href="Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.json.html">JSON</a>, <a href="Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.ttl.html">Turtle</a>
+  </p>-->
+
+  
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+<th colspan="2" scope="row" class="row-header">Knowledge Artifact Metadata</th>
+
+</tr>
+
+<tr>
+
+<th scope="row" class="row-header">Name (machine-readable)</th>
+
+<td class="content-container">NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Title (human-readable)</th>
+
+<td class="content-container">NHSN dQM Acute Care Hospital Monthly Initial Population</td>
+</tr>
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Status</th>
+
+<td class="content-container">Draft</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Experimental</th>
+
+<td class="content-container">false</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Description</th>
+
+<td class="content-container"><div><p>The Acute Care Hospital Monthly Initial Population includes all encounters for patients of any age in an ED, observation, or inpatient location or all encounters for patients of any age with an ED, observation, inpatient, or short stay status during the measurement period.</p>
+</div></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Measure Steward</th>
+
+<td class="content-container">CDC National Healthcare Safety Network (NHSN)</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Steward Contact Details</th>
+
+<td class="content-container">CDC National Healthcare Safety Network (NHSN): <a href="http://www.cdc.gov/nhsn">http://www.cdc.gov/nhsn</a>,<a href="mailto:nhsn@cdc.gov">nhsn@cdc.gov</a></td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Copyright</th>
+
+<td class="content-container"><div><p>Limited proprietary coding is contained in the Measure specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets.</p>
+</div></td>
+</tr>
+
+
+
+<tr>
+  
+  
+<th scope="row" class="row-header">Documentation</th>
+
+  
+  
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: https://www.cdc.gov/nhsn/index.html [placeholder for link to protocol on CDC website]
+    
+    <br/>
+    
+    
+    
+    
+    <em>Content URL</em>: <a href="https://www.cdc.gov/nhsn/index.html">https://www.cdc.gov/nhsn/index.html</a>
+    
+    <br/>
+    
+    
+    
+    <em>Document</em>: null @ https://www.cdc.gov/nhsn/index.html
+    
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+<th colspan="2" scope="row" class="row-header">Measure Metadata</th>
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Version Number</th>
+
+<td class="content-container">1.0.0</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Measure Scoring</th>
+
+<td class="content-container"><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}">Cohort</span></td>
+</tr>
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Measure Type</th>
+
+<td class="content-container"><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-type outcome}">Outcome</span></td>
+</tr>
+
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Rationale</th>
+
+<td class="content-container"><div><p>The NHSN Acute Care Hospital Monthly dQM allows for facilities to report line level patient data electronically to NHSN for the following modules that are reported monthly: Glycemic Control, Hypoglycemia; Healthcare facility-onset, antibiotic-Treated Clostridioides difficile (C. difficile) Infection (HT-CDI); Hospital-Onset Bacteremia &amp; Fungemia (HOB); Venous Thromboembolism (VTE); Late Onset Sepsis / Meningitis. *Please see <a href="https://www.cdc.gov/nhsn/acute-care-hospital/index.html">Acute Care / Critical Access Hospitals (ACH) | NHSN | CDC</a> for the individual measure protocols.</p>
+</div></td>
+</tr>
+
+
+
+
+
+
+
+  
+<tr>
+
+<th scope="row" class="row-header">Population Basis</th>
+
+<td class="content-container">Encounter</td>
+</tr>
+
+
+
+
+
+  
+    <tr>
+
+<th colspan="2" scope="row" class="row-header">Measure Population Criteria</th>
+
+</tr>
+  
+  
+  
+  
+    <tr>
+      
+        
+<th scope="row" class="row-header">Initial Population</th>
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: initial-population
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one">All encounters for patients of any age in an ED, observation, or inpatient location or all encounters for patients of any age with an ED, observation, inpatient, or short stay status during the measurement period.</p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-initial-population">Initial Population</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  <tr>
+
+<th colspan="2" scope="row" class="row-header">Supplemental Data Elements</th>
+
+</tr>
+
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-condition
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Condition
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-condition">SDE Condition</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-device
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Device
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-device">SDE Device</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-diagnosticreport-lab
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE DiagnosticReport Lab
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-diagnosticreport-lab">SDE DiagnosticReport Lab</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-diagnosticreport-note
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE DiagnosticReport Note
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-diagnosticreport-note">SDE DiagnosticReport Note</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-diagnosticreport-others
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE DiagnosticReport Others
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-diagnosticreport-others">SDE DiagnosticReport Others</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-encounter
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Encounter
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-encounter">SDE Encounter</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-location
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Location
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-location">SDE Location</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication-administration
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication Administration
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-medication-administration">SDE Medication Administration</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication-request
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication Request
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-medication-request">SDE Medication Request</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-medication">SDE Medication</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-observation-lab-category
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Observation Lab Category
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-observation-lab-category">SDE Observation Lab Category</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-observation-vital-signs-category
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Observation Vital Signs Category
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-observation-vital-signs-category">SDE Observation Vital Signs Category</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-observation-category
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Observation Category
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-observation-category">SDE Observation Category</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-coverage
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Coverage
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-coverage">SDE Coverage</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-procedure
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Procedure
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-procedure">SDE Procedure</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-specimen
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Specimen
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-specimen">SDE Specimen</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-service-request
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Service Request
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-service-request">SDE Service Request</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-minimal-patient
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Minimal Patient
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-minimal-patient">SDE Minimal Patient</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-ip-encounters
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}">Supplemental Data</span>
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE IP Encounters
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation-sde-ip-encounters">SDE IP Encounters</a> 
+      
+    
+  </td>
+</tr>
+
+
+<tr>
+
+<th colspan="2" scope="row" class="row-header">Measure Logic</th>
+
+</tr>
+
+<tr>
+
+<th scope="row" class="row-header">Primary Library</th>
+
+<td class="content-container"><a href="Library-NHSNAcuteCareHospitalMonthlyInitialPopulation.html">NHSNAcuteCareHospitalMonthlyInitialPopulation</a></td>
+</tr>
+
+
+
+
+  
+  
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <code>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/FHIRHelpers|4.0.2</code>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/FHIRHelpers|4.0.2</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library NHSNHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <code>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNHelpers|0.0.002</code>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNHelpers|0.0.002</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library SharedResource
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <code>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/SharedResourceCreation|0.1.010</code>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/SharedResourceCreation|0.1.010</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system ActCode
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html">ActCodeversion: null9.0.0)</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system Observation Category
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-observation-category.html">Observation Category Codesversion: null1.0.1)</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category|1.0.1</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system LOINC
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://loinc.org</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system V2-0074
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0074.html">diagnosticServiceSectionIdversion: null2.5.0)</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/v2-0074|2.5.0</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system Condition Category
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-condition-category.html">Condition Category Codesversion: null1.0.1)</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-category|1.0.1</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system Condition Clinical Status
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codesversion: null3.0.0)</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system US Core Condition Category
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-condition-category.html">US Core Condition Category Extension Codes</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/us/core/CodeSystem/condition-category</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Encounter Inpatient
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.307/expansion">Encounter Inpatient</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Emergency Department Visit
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.292/expansion">Emergency Department Visit</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Observation Services
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.143/expansion">Observation Services</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set NHSN Inpatient Encounter Class Codes
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.274/expansion">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274</tt>
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+<th scope="row" class="row-header">Dependency</th>
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Inpatient, Emergency, and Observation Locations
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.265/expansion">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265</tt>
+    
+  </td>
+</tr>
+
+
+  
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: emergency
+        <br/>
+      
+      <em>Code</em>: EMER
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: observation encounter
+        <br/>
+      
+      <em>Code</em>: OBSENC
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Laboratory
+        <br/>
+      
+      <em>Code</em>: laboratory
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Vital Signs
+        <br/>
+      
+      <em>Code</em>: vital-signs
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Radiology
+        <br/>
+      
+      <em>Code</em>: LP29684-5
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Pathology
+        <br/>
+      
+      <em>Code</em>: LP7839-6
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Cardiology
+        <br/>
+      
+      <em>Code</em>: LP29708-2
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Laboratory
+        <br/>
+      
+      <em>Code</em>: LAB
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v2-0074</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Social History
+        <br/>
+      
+      <em>Code</em>: social-history
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Survey
+        <br/>
+      
+      <em>Code</em>: survey
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Imaging
+        <br/>
+      
+      <em>Code</em>: imaging
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Procedure
+        <br/>
+      
+      <em>Code</em>: procedure
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Problem List Item
+        <br/>
+      
+      <em>Code</em>: problem-list-item
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: active
+        <br/>
+      
+      <em>Code</em>: active
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-clinical</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Encounter Diagnosis
+        <br/>
+      
+      <em>Code</em>: encounter-diagnosis
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Health Concern
+        <br/>
+      
+      <em>Code</em>: health-concern
+      <br/>
+      <em>System</em>: <tt>http://hl7.org/fhir/us/core/CodeSystem/condition-category</tt>
+    </td>
+  </tr>
+
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: Measurement Period
+    <br/>
+    <em>Use</em>: In
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: 1
+    <br/>
+    <em>Type</em>: Period
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Encounter
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Encounter
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Medication Request
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: MedicationRequest
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Coverage
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Coverage
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Procedure
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Procedure
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE IP Encounters
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Encounter
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Device
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Device
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Observation Lab Category
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Observation
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Observation Vital Signs Category
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Observation
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE DiagnosticReport Others
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: DiagnosticReport
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Medication Administration
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: MedicationAdministration
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Observation Category
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Observation
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Condition
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Condition
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: Initial Population
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Encounter
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE DiagnosticReport Lab
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: DiagnosticReport
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Location
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Location
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Service Request
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: ServiceRequest
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE DiagnosticReport Note
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: DiagnosticReport
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Minimal Patient
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: 1
+    <br/>
+    <em>Type</em>: Patient
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Medication
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Medication
+  </td>
+</tr>
+  
+  <tr>
+  
+<th scope="row" class="row-header">Parameter</th>
+
+  <td class="content-container">
+    <em>Name</em>: SDE Specimen
+    <br/>
+    <em>Use</em>: Out
+    <br/>
+    <em>Min Cardinality</em>: 0
+    <br/>
+    <em>Max Cardinality</em>: *
+    <br/>
+    <em>Type</em>: Specimen
+  </td>
+</tr>
+  
+  
+  <tr>
+    <th colspan="2" scope="row" class="section-header"><a name="effective-data-requirements"> </a>Measure Logic Data Requirements</th>
+  </tr>
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, period, id, extension, identifier, statusHistory, class, classHistory, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.307/expansion">Encounter Inpatient</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, period, id, extension, identifier, statusHistory, class, classHistory, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.292/expansion">Emergency Department Visit</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, period, id, extension, identifier, statusHistory, class, classHistory, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.143/expansion">Observation Services</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: class, status, period, id, extension, identifier, statusHistory, classHistory, type, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: class</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.274/expansion">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: class, status, period, id, extension, identifier, statusHistory, classHistory, type, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: class</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code</em>: </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: class, status, period, id, extension, identifier, statusHistory, classHistory, type, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: class</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code</em>: </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: status, period, id, extension, identifier, statusHistory, class, classHistory, type, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Location
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, extension, status, operationalStatus, name, alias, description, mode, type, telecom, address, physicalType, position, managingOrganization, partOf, hoursOfOperation, availabilityExceptions, endpoint
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: MedicationRequest
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: authoredOn, id, extension, status, statusReason, intent, category, priority, doNotPerform, reported, medication, subject, encounter, requester, recorder, reasonCode, reasonReference, instantiatesCanonical, instantiatesUri, courseOfTherapyType, dosageInstruction
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Coverage
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: period, id, extension, status, type, policyHolder, subscriber, subscriberId, beneficiary, dependent, relationship, payor, class, order, network, subrogation, contract
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Procedure
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: performed, id, extension, instantiatesCanonical, instantiatesUri, basedOn, partOf, status, statusReason, category, code, subject, encounter, recorder, asserter, performer, location, reasonCode, reasonReference, bodySite, outcome, report, complication, complicationDetail, followUp, note, focalDevice, usedReference, usedCode
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Device
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, extension, definition, udiCarrier, status, statusReason, distinctIdentifier, manufacturer, manufactureDate, expirationDate, lotNumber, serialNumber, deviceName, modelNumber, partNumber, type, specialization, version, property, patient, owner, contact, location, url, note, safety, parent
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, extension, basedOn, partOf, status, category, code, subject, focus, encounter, effective, issued, performer, value, dataAbsentReason, interpretation, note, bodySite, method, specimen, device, referenceRange, hasMember, derivedFrom, component
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: DiagnosticReport
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: category, effective, id, extension, basedOn, status, code, subject, encounter, issued, performer, resultsInterpreter, specimen, result, conclusion, conclusionCode
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: MedicationAdministration
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: effective, id, extension, instantiates, partOf, status, statusReason, category, medication, subject, context, supportingInformation, performer, reasonCode, reasonReference, request, device, note, dosage, eventHistory
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, extension, clinicalStatus, verificationStatus, category, severity, code, bodySite, subject, encounter, onset, abatement, recordedDate, stage, evidence, note, encounter.id
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: ServiceRequest
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: authoredOn, id, extension, instantiatesCanonical, instantiatesUri, basedOn, replaces, requisition, status, intent, category, priority, doNotPerform, code, orderDetail, quantity, subject, encounter, occurrence, asNeeded, requester, performerType, performer, locationCode, locationReference, reasonCode, reasonReference, insurance, supportingInfo, specimen, bodySite, note, patientInstruction, relevantHistory
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Patient
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/patient.html">Patient</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, identifier, active, name, telecom, gender, birthDate, deceased, address, maritalStatus, multipleBirth, photo, contact, communication, generalPractitioner, managingOrganization, link
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Medication
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, extension, code, status, manufacturer, form, amount, ingredient, batch
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Specimen
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: collection, collection.collected, id, extension, identifier, accessionIdentifier, status, type, subject, receivedTime, parent, request, processing, container, condition, note
+    <br/>
+   
+   
+  </td>
+</tr>
+
+  
+  <tr>
+
+<th colspan="2" scope="row" class="row-header">Measure Logic Definitions</th>
+
+</tr>
+  
+          
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-encounters"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters&quot;:   [Encounter]</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-qualifying-encounters-during-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Qualifying Encounters During Measurement Period&quot;:  ( [Encounter: &quot;Encounter Inpatient&quot;]   union [Encounter: &quot;Emergency Department Visit&quot;]   union [Encounter: &quot;Observation Services&quot;]   union [Encounter: class in &quot;NHSN Inpatient Encounter Class Codes&quot;]   union [Encounter: class ~ &quot;emergency&quot;]   union [Encounter: class ~ &quot;observation encounter&quot;]) QualifyingEncounters   where QualifyingEncounters.status in {'in-progress', 'finished', 'triaged', 'onleave', 'entered-in-error'}     and QualifyingEncounters.period overlaps &quot;Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-encounters-with-patient-hospital-locations"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Patient Hospital Locations&quot;:   &quot;Encounters&quot; Encounters   where exists(     Encounters.location EncounterLocation     where NHSNHelpers.GetLocation(EncounterLocation.location).type in &quot;Inpatient, Emergency, and Observation Locations&quot;       and EncounterLocation.period overlaps Encounters.period   )   and Encounters.status in {'in-progress', 'finished', 'triaged', 'onleave', 'entered-in-error'}   and Encounters.period overlaps &quot;Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-initial-population"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:   &quot;Qualifying Encounters During Measurement Period&quot;   union &quot;Encounters with Patient Hospital Locations&quot;</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-encounter"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//#End DiagnosticReport block  define &quot;SDE Encounter&quot;:    &quot;Encounters&quot; Encounters   where not CheckIP(Encounters)   and exists(     &quot;Initial Population&quot; IP     where Encounters.period overlaps IP.period)   return SharedResource.EncounterResource(Encounters,   {FHIR.canonical{value: 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-medication-request"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Medication Request&quot;:   [MedicationRequest] MedicationRequests    where exists(     &quot;Initial Population&quot; IP     where MedicationRequests.authoredOn during IP.period)   return SharedResource.MedicationRequestResource(MedicationRequests,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-coverage"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Coverage&quot;:   [Coverage] Coverages   where exists(     &quot;Initial Population&quot; IP     where Coverages.period overlaps IP.period)   return SharedResource.CoverageResource(Coverages,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-procedure"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Procedure&quot;:   [Procedure] Procedures    where exists(     &quot;Initial Population&quot; IP     where NHSNHelpers.&quot;Normalize Interval&quot;(Procedures.performed) overlaps IP.period)   return SharedResource.ProcedureResource(Procedures,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-ip-encounters"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE IP Encounters&quot;:   &quot;Initial Population&quot; IP   return SharedResource.EncounterResource(IP,    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-device"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Device&quot;:   [Device] Devices    where exists(&quot;Initial Population&quot;)   return DeviceResource(Devices,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-observations"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Observations&quot;:   [Observation]</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-observation-lab-category"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Observation Lab Category&quot;:   &quot;Observations&quot; Observations    where (exists(Observations.category Category where Category ~ &quot;laboratory&quot;))     and exists(       &quot;Initial Population&quot; IP       where NHSNHelpers.&quot;Normalize Interval&quot;(Observations.effective) overlaps IP.period)   return SharedResource.ObservationLabResource(Observations,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-observation-vital-signs-category"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Vital Signs Observation has its own profile in FHIR Base define &quot;SDE Observation Vital Signs Category&quot;:   &quot;Observations&quot; Observations    where (exists(Observations.category Category where Category ~ &quot;vital-signs&quot;))     and exists(       &quot;Initial Population&quot; IP       where NHSNHelpers.&quot;Normalize Interval&quot;(Observations.effective) overlaps IP.period)   return ObservationVitalSignsResource(Observations,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-diagnosticreport-others"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE DiagnosticReport Others&quot;:   [DiagnosticReport] DiagnosticReports   where not ((exists(DiagnosticReports.category Category where Category ~ &quot;Radiology&quot;))     or exists((DiagnosticReports.category Category where Category ~ &quot;Pathology&quot;))     or exists((DiagnosticReports.category Category where Category ~ &quot;Cardiology&quot;))     or exists(DiagnosticReports.category Category where Category ~ &quot;LAB&quot;))     and exists(&quot;Initial Population&quot; IP       where NHSNHelpers.&quot;Normalize Interval&quot;(DiagnosticReports.effective) overlaps IP.period)   return DiagnosticReportResource(DiagnosticReports,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-medication-administration"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Medication Administration&quot;:   [MedicationAdministration] MedicationAdministrations    where exists(     &quot;Initial Population&quot; IP     where NHSNHelpers.&quot;Normalize Interval&quot;(MedicationAdministrations.effective) overlaps IP.period)   return SharedResource.MedicationAdministrationResource(MedicationAdministrations,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-observation-category"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Defaulting to base FHIR profile as there are no individual profiles in US Core 3.1.1 that cover these Observation categories define &quot;SDE Observation Category&quot;:   &quot;Observations&quot; Observations    where ((exists(Observations.category Category where Category ~ &quot;social-history&quot;))     or (exists(Observations.category Category where Category ~ &quot;survey&quot;))     or (exists(Observations.category Category where Category ~ &quot;imaging&quot;))     or (exists(Observations.category Category where Category ~ &quot;procedure&quot;)))     and exists(       &quot;Initial Population&quot; IP       where NHSNHelpers.&quot;Normalize Interval&quot;(Observations.effective) overlaps IP.period)   return ObservationResource(Observations,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-conditions"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Conditions&quot;:   [Condition]</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-condition"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//============================================================================ //Supplemental Data Element //When FHIR.canonical value is present, US Core 3.1.1 profiles are used //When FHIR.canonical value is not present, FHIR Base profiles are used //============================================================================ define &quot;SDE Condition&quot;:   &quot;Conditions&quot; Conditions    where exists(     &quot;Initial Population&quot; IP     //Check for Problem List Conditions that were recorded before or during IP     where (       Conditions.recordedDate before end of IP.period       and exists(Conditions.category categories         where categories ~ &quot;problem-list-item&quot;)       and Conditions.clinicalStatus ~ &quot;active&quot;     )     //Check for Encounter Diagnosis Conditions that reference an IP encounter     or (       (exists(IP.diagnosis Diagnoses           where GetCondition(Diagnoses.condition).id = Conditions.id         )         or GetEncounter(Conditions.encounter).id = IP.id       )       and exists (Conditions.category categories         where categories ~ &quot;encounter-diagnosis&quot;           or categories ~ &quot;health-concern&quot;)     )   )   return ConditionResource(Conditions,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition'}},   {&quot;problem-list-item&quot;, &quot;encounter-diagnosis&quot;, &quot;health-concern&quot;})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-diagnosticreports"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;DiagnosticReports&quot;:   [DiagnosticReport]</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-diagnosticreport-lab"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//This block collects all DiagnosticReport resources while also marking Lab and Note DiagnosticReports with the appropriate profiles //#Start DiagnosticReport block define &quot;SDE DiagnosticReport Lab&quot;:   &quot;DiagnosticReports&quot; DiagnosticReports   where (exists(DiagnosticReports.category Category where Category ~ &quot;LAB&quot;)     and exists(       &quot;Initial Population&quot; IP       where NHSNHelpers.&quot;Normalize Interval&quot;(DiagnosticReports.effective) overlaps IP.period))   return SharedResource.DiagnosticReportLabResource(DiagnosticReports,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-lab'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-get-locations-from-ip-encounters-in-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Get Locations from IP Encounters in Measurement Period&quot;:   flatten(&quot;Initial Population&quot; IP   let locationElements: IP.location   return     locationElements LE     let locationReference: LE.location     return NHSNHelpers.GetLocation(locationReference))</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-location"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Location&quot;:   &quot;Get Locations from IP Encounters in Measurement Period&quot; Locations   where exists(&quot;Initial Population&quot;)   and Locations is not null   return SharedResource.LocationResource(Locations,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-service-request"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Service Request&quot;:   [ServiceRequest] ServiceRequests   where exists(&quot;Initial Population&quot; IP     where ServiceRequests.authoredOn during IP.period)   return SharedResource.ServiceRequestResource(ServiceRequests,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-diagnosticreport-note"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE DiagnosticReport Note&quot;:   &quot;DiagnosticReports&quot; DiagnosticReports   where ((exists(DiagnosticReports.category Category where Category ~ &quot;Radiology&quot;))     or exists((DiagnosticReports.category Category where Category ~ &quot;Pathology&quot;))     or exists((DiagnosticReports.category Category where Category ~ &quot;Cardiology&quot;)))     and exists(       &quot;Initial Population&quot; IP       where NHSNHelpers.&quot;Normalize Interval&quot;(DiagnosticReports.effective) overlaps IP.period)   return DiagnosticReportResource(DiagnosticReports,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-note'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-minimal-patient"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Minimal Patient&quot;:   Patient p   return SharedResource.PatientResource(p,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-medication"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Medication&quot;:   (&quot;SDE Medication Request&quot;   union &quot;SDE Medication Administration&quot;) MedReqOrAdmin   where MedReqOrAdmin.medication is FHIR.Reference   and exists(&quot;Initial Population&quot;) //No longer need to check for timing here because it's checked in SDE Medication Request/Administriation   return SharedResource.MedicationResource(GetMedicationFrom(MedReqOrAdmin.medication),   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-sde-specimen"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Specimen&quot;:   [Specimen] Specimens   where exists(     &quot;Initial Population&quot; IP     where NHSNHelpers.&quot;Normalize Interval&quot;(Specimens.collection.collected) overlaps IP.period   )   return SharedResource.SpecimenResource(Specimens,   {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen'}})</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-checkip"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// //Functions // define function &quot;CheckIP&quot;(encounter Encounter):   exists(&quot;Initial Population&quot; IP   where encounter.id = IP.id)</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tostring"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToString(value EncounterStatus): value.value</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tointerval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToInterval(period FHIR.Period):     if period is null then         null      else          if period.&quot;start&quot;.value is null then             Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]         else              if time from period.&quot;start&quot;.value is null and time from period.&quot;end&quot;.value is not null then                 Interval[                     DateTime(year from period.&quot;start&quot;.value, month from period.&quot;start&quot;.value, day from period.&quot;start&quot;.value,                         0, 0, 0, 0, timezoneoffset from period.&quot;end&quot;.value),                      period.&quot;end&quot;.value                 ]         else              if time from period.&quot;end&quot;.value is null and time from period.&quot;start&quot;.value is not null then                 Interval[                     period.&quot;start&quot;.value,                      DateTime(year from period.&quot;end&quot;.value, month from period.&quot;end&quot;.value, day from period.&quot;end&quot;.value,                         23, 59, 59, 999, timezoneoffset from period.&quot;start&quot;.value)                 ]         else Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnhelpers-getlocation"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;GetLocation&quot;(reference Reference ):   singleton from (  [Location] Locations   where Locations.id = GetId(reference.reference)   )</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tostring"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToString(value string): value.value</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnhelpers-getid"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;GetId&quot;(uri String ):   Last(Split(uri, '/'))</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-toconcept"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToConcept(concept FHIR.CodeableConcept):     if concept is null then         null     else         System.Concept {             codes: concept.coding C return ToCode(C),             display: concept.text.value         }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tocode"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToCode(coding FHIR.Coding):     if coding is null then         null     else         System.Code {           code: coding.code.value,           system: coding.system.value,           version: coding.version.value,           display: coding.display.value         }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-encounterresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function EncounterResource(encounter Encounter, profileURLs List&lt;FHIR.canonical&gt;):   encounter e   return Encounter{     id: FHIR.id{value: 'LCR-' + e.id},     meta: MetaElement(e, profileURLs),     extension: e.extension,     identifier: EncounterIdentifier(e.identifier),     status: e.status,     statusHistory: EncounterStatusHistory(e.statusHistory),     class: e.class,     classHistory: EncounterClassHistory(e.classHistory),     type: e.type,     serviceType: e.serviceType,     priority: e.priority,     subject: e.subject,     period: e.period,     length: e.length,     reasonCode: e.reasonCode,     reasonReference: e.reasonReference,     diagnosis: EncounterDiagnosis(e.diagnosis),     account: e.account,     hospitalization: EncounterHospitalization(e.hospitalization),     location: EncounterLocation(e.location),     partOf: e.partOf   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-metaelement"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;MetaElement&quot;(resource Resource, profileURLs List&lt;FHIR.canonical&gt;):   resource r   return FHIR.Meta{     extension: r.meta.extension,     versionId: r.meta.versionId,     lastUpdated: r.meta.lastUpdated,     profile: profileURLs,     security: r.meta.security,     tag: r.meta.tag   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-encounteridentifier"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function EncounterIdentifier(identifier List&lt;FHIR.Identifier&gt;):   identifier i   return FHIR.Identifier{     use: i.use,     type: i.type,     system: i.system,     value: i.value,     period: i.period   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-encounterstatushistory"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function EncounterStatusHistory(statusHistory List&lt;FHIR.Encounter.StatusHistory&gt;):   statusHistory sH   return FHIR.Encounter.StatusHistory{     status: sH.status,     period: sH.period   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-encounterclasshistory"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function EncounterClassHistory(classHistory List&lt;FHIR.Encounter.ClassHistory&gt;):   classHistory cH   return FHIR.Encounter.ClassHistory{     class: cH.class,     period: cH.period   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-encounterdiagnosis"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*No longer needed but saving for potential future use define function EncounterParticipant(participant List&lt;FHIR.Encounter.Participant&gt;):   participant p   return FHIR.Encounter.Participant{     type: p.type,     period: p.period,     individual: p.individual   }*/  define function EncounterDiagnosis(diagnosis List&lt;FHIR.Encounter.Diagnosis&gt;):   diagnosis d   return FHIR.Encounter.Diagnosis{     condition: d.condition,     use: d.use,     rank: d.rank   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-encounterhospitalization"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function EncounterHospitalization(hospitalization FHIR.Encounter.Hospitalization):   hospitalization h   return FHIR.Encounter.Hospitalization{     preAdmissionIdentifier: h.preAdmissionIdentifier,     origin: h.origin,     admitSource: h.admitSource,     reAdmission: h.reAdmission,     dietPreference: h.dietPreference,     specialCourtesy: h.specialCourtesy,     specialArrangement: h.specialArrangement,     destination: h.destination,     dischargeDisposition: h.dischargeDisposition   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-encounterlocation"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function EncounterLocation(location List&lt;FHIR.Encounter.Location&gt;):   location l   return FHIR.Encounter.Location{     location: l.location,     status: l.status,     physicalType: l.physicalType,     period: l.period   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-todatetime"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToDateTime(value dateTime): value.value</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-medicationrequestresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function MedicationRequestResource(medicationRequest MedicationRequest, profileURLs List&lt;FHIR.canonical&gt;):   medicationRequest m   return MedicationRequest{     id: FHIR.id {value: 'LCR-' + m.id},     meta: MetaElement(medicationRequest, profileURLs),     extension: m.extension,     status: m.status,     statusReason: m.statusReason,     intent: m.intent,     category: m.category,     priority: m.priority,     doNotPerform: m.doNotPerform,     reported: m.reported,     medication: m.medication,     subject: m.subject,     encounter: m.encounter,     authoredOn: m.authoredOn,     requester: m.requester,     recorder: m.recorder,     reasonCode: m.reasonCode,     reasonReference: m.reasonReference,     instantiatesCanonical: m.instantiatesCanonical,     instantiatesUri: m.instantiatesUri,     courseOfTherapyType: m.courseOfTherapyType,     dosageInstruction: MedicationRequestDosageInstruction(m.dosageInstruction)   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-medicationrequestdosageinstruction"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function MedicationRequestDosageInstruction(dosageInstruction List&lt;FHIR.Dosage&gt;):   dosageInstruction dI   return FHIR.Dosage{     text: dI.text,     patientInstruction: dI.patientInstruction,     timing: dI.timing,     asNeeded: dI.asNeeded,     site: dI.site,     route: dI.route,     method: dI.method,     doseAndRate: MedicationRequestDoseAndRate(dI.doseAndRate)   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-medicationrequestdoseandrate"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function MedicationRequestDoseAndRate(doseAndRate List&lt;FHIR.Dosage.DoseAndRate&gt;):   doseAndRate dR   return FHIR.Dosage.DoseAndRate{     type: dR.type,     dose: dR.dose,     rate: dR.rate   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-coverageresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function CoverageResource(coverage Coverage, profileURLs List&lt;FHIR.canonical&gt;):   coverage c   return Coverage{     id: FHIR.id{value: 'LCR-' + c.id},     meta: MetaElement(c, profileURLs),     extension: c.extension,     status: c.status,     type: c.type,     policyHolder: c.policyHolder,     subscriber: c.subscriber,     subscriberId: c.subscriberId,     beneficiary: c.beneficiary,     dependent: c.dependent,     relationship: c.relationship,     period: c.period,     payor: c.payor,     class: CoverageClass(c.class),     order: c.order,     network: c.network,     subrogation: c.subrogation,     contract: c.contract   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-coverageclass"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function CoverageClass(class List&lt;FHIR.Coverage.Class&gt;):   class c   return FHIR.Coverage.Class{     value: c.value,     name: c.name   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-procedureresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ProcedureResource(procedure Procedure, profileURLs List&lt;FHIR.canonical&gt;):   procedure p   return Procedure{     id: FHIR.id {value: 'LCR-' + p.id},     meta: MetaElement(p, profileURLs),     extension: p.extension,     instantiatesCanonical: p.instantiatesCanonical,     instantiatesUri: p.instantiatesUri,     basedOn: p.basedOn,     partOf: p.partOf,     status: p.status,     statusReason: p.statusReason,     category: p.category,     code: p.code,     subject: p.subject,     encounter: p.encounter,     performed: p.performed,     recorder: p.recorder,     asserter: p.asserter,     performer: ProcedurePerformer(p.performer),     location: p.location,     reasonCode: p.reasonCode,     reasonReference: p.reasonReference,     bodySite: p.bodySite,     outcome: p.outcome,     report: p.report,     complication: p.complication,     complicationDetail: p.complicationDetail,     followUp: p.followUp,     note: p.note,     focalDevice: ProcedureFocalDevice(p.focalDevice),     usedReference: p.usedReference,     usedCode: p.usedCode   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-procedureperformer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ProcedurePerformer(performer List&lt;FHIR.Procedure.Performer&gt;):   performer p   return FHIR.Procedure.Performer{     function: p.function,     actor: p.actor,     onBehalfOf: p.onBehalfOf   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-procedurefocaldevice"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ProcedureFocalDevice(device List&lt;FHIR.Procedure.FocalDevice&gt;):   device d   return FHIR.Procedure.FocalDevice{     action: d.action,     manipulated: d.manipulated   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-deviceresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function DeviceResource(device Device, profileURLs List&lt;FHIR.canonical&gt;):   device d   return Device{     id: FHIR.id{value: 'LCR-' + d.id},     meta: SharedResource.MetaElement(d, profileURLs),     extension: d.extension,     definition: d.definition,     udiCarrier: DeviceUdiCarrier(d.udiCarrier),     status: d.status,     statusReason: d.statusReason,     distinctIdentifier: d.distinctIdentifier,     manufacturer: d.manufacturer,     manufactureDate: d.manufactureDate,     expirationDate: d.expirationDate,     lotNumber: d.lotNumber,     serialNumber: d.serialNumber,     deviceName: DeviceDeviceName(d.deviceName),     modelNumber: d.modelNumber,     partNumber: d.partNumber,     type: d.type,     specialization: DeviceSpecialization(d.specialization),     version: DeviceVersion(d.version),     property: DeviceProperty(d.property),     patient: d.patient,     owner: d.owner,     contact: d.contact,     location: d.location,     url: d.url,     note: d.note,     safety: d.safety,     parent: d.parent   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-deviceudicarrier"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function DeviceUdiCarrier(udiCarrier List&lt;FHIR.Device.UdiCarrier&gt;):   udiCarrier u   return FHIR.Device.UdiCarrier{     deviceIdentifier: u.deviceIdentifier,     issuer: u.issuer,     jurisdiction: u.jurisdiction,     carrierAIDC: u.carrierAIDC,     carrierHRF: u.carrierHRF,     entryType: u.entryType   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-devicedevicename"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function DeviceDeviceName(deviceName List&lt;FHIR.Device.DeviceName&gt;):   deviceName d   return FHIR.Device.DeviceName{     name: d.name,     type: d.type   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-devicespecialization"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function DeviceSpecialization(specialization List&lt;FHIR.Device.Specialization&gt;):   specialization s   return FHIR.Device.Specialization{     systemType: s.systemType,     version: s.version   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-deviceversion"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function DeviceVersion(version List&lt;FHIR.Device.Version&gt;):   version v   return FHIR.Device.Version{     type: v.type,     component: v.component,     value: v.value   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-deviceproperty"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function DeviceProperty(deviceProperty List&lt;FHIR.Device.Property&gt;):   deviceProperty d   return FHIR.Device.Property{     id: d.id,     type: d.type,     valueQuantity: d.valueQuantity,     valueCode: d.valueCode   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-observationlabresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ObservationLabResource(observation Observation, profileURLs List&lt;FHIR.canonical&gt;):   observation o   return Observation{     id: FHIR.id {value: 'LCR-' + o.id},     meta: MetaElement(o, profileURLs),     extension: o.extension,     basedOn: o.basedOn,     partOf: o.partOf,     status: o.status,     category: ObservationLabCategory(o.category),     code: o.code,     subject: o.subject,     focus: o.focus,     encounter: o.encounter,     effective: o.effective,     issued: o.issued,     performer: o.performer,     value: o.value,     dataAbsentReason: o.dataAbsentReason,     interpretation: o.interpretation,     note: o.note,     bodySite: o.bodySite,     method: o.method,     specimen: o.specimen,     device: o.device,     referenceRange: ObservationReferenceRange(o.referenceRange),     hasMember: o.hasMember,     derivedFrom: o.derivedFrom,     component: ObservationComponent(o.component)   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-observationlabcategory"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ObservationLabCategory(category List&lt;CodeableConcept&gt;):   category c   return CodeableConcept{     coding: ObservationLabCoding(c.coding),     text: c.text   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-observationlabcoding"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ObservationLabCoding(coding List&lt;Coding&gt;):   coding c   return Coding{     id: c.id,     extension: c.extension,     system: c.system,     version: c.version,     code: c.code,     display: c.display,     userSelected: c.userSelected   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-observationreferencerange"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ObservationReferenceRange(referenceRange List&lt;FHIR.Observation.ReferenceRange&gt;):   referenceRange rR   return FHIR.Observation.ReferenceRange{     low: rR.low,     high: rR.high,     type: rR.type,     appliesTo: rR.appliesTo,     age: rR.age,     text: rR.text   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-observationcomponent"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ObservationComponent(component List&lt;FHIR.Observation.Component&gt;):   component c   return FHIR.Observation.Component{     code: c.code,     value: c.value,     dataAbsentReason: c.dataAbsentReason,     interpretation: c.interpretation,     referenceRange: c.referenceRange   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-observationvitalsignsresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ObservationVitalSignsResource(observation Observation, profileURLs List&lt;FHIR.canonical&gt;):   observation o   return Observation{     id: FHIR.id {value: 'LCR-' + o.id},     meta: SharedResource.MetaElement(o, profileURLs),     extension: o.extension,     partOf: o.partOf,     status: o.status,     category: ObservationVitalSignsCategory(o.category),     code: o.code,     subject: o.subject,     focus: o.focus,     encounter: o.encounter,     effective: o.effective,     issued: o.issued,     performer: o.performer,     value: o.value,     dataAbsentReason: o.dataAbsentReason,     interpretation: o.interpretation,     note: o.note,     bodySite: o.bodySite,     method: o.method,     specimen: o.specimen,     device: o.device,     referenceRange: SharedResource.ObservationReferenceRange(o.referenceRange),     hasMember: o.hasMember,     derivedFrom: o.derivedFrom,     component: ObservationVitalSignsComponent(o.component)   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-observationvitalsignscategory"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ObservationVitalSignsCategory(category List&lt;CodeableConcept&gt;):   category c   return CodeableConcept{     coding: ObservationVitalSignsCoding(c.coding),     text: c.text   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-observationvitalsignscoding"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ObservationVitalSignsCoding(coding List&lt;Coding&gt;):   coding c   return Coding{     system: c.system,     version: c.version,     code: c.code,     display: c.display,     userSelected: c.userSelected   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-observationvitalsignscomponent"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ObservationVitalSignsComponent(component List&lt;FHIR.Observation.Component&gt;):   component c   return FHIR.Observation.Component{     code: c.code,     value: c.value,     dataAbsentReason: c.dataAbsentReason,     interpretation: c.interpretation,     referenceRange: SharedResource.ObservationReferenceRange(c.referenceRange)   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-diagnosticreportresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function DiagnosticReportResource(diagnosticReport DiagnosticReport, profileURLs List&lt;FHIR.canonical&gt;):   diagnosticReport d   return DiagnosticReport{     id: FHIR.id{value: 'LCR-' + d.id},     meta: SharedResource.MetaElement(d, profileURLs),     extension: d.extension,     basedOn: d.basedOn,     status: d.status,     category: d.category,     code: d.code,     subject: d.subject,     encounter: d.encounter,     effective: d.effective,     issued: d.issued,     performer: d.performer,     resultsInterpreter: d.resultsInterpreter,     specimen: d.specimen,     result: d.result,     conclusion: d.conclusion,     conclusionCode: d.conclusionCode   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-medicationadministrationresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function MedicationAdministrationResource(medicationAdministration MedicationAdministration, profileURLs List&lt;FHIR.canonical&gt;):   medicationAdministration m   return MedicationAdministration{     id: FHIR.id {value: 'LCR-' + m.id},     meta: MetaElement(m, profileURLs),     extension: m.extension,     instantiates: m.instantiates,     partOf: m.partOf,     status: m.status,     statusReason: m.statusReason,     category: m.category,     medication: m.medication,     subject: m.subject,     context: m.context,     supportingInformation: m.supportingInformation,     effective: m.effective,     performer: MedicationAdministrationPerformer(m.performer),     reasonCode: m.reasonCode,     reasonReference: m.reasonReference,     request: m.request,     device: m.device,     note: m.note,     dosage: MedicationAdministrationDosage(m.dosage),     eventHistory: m.eventHistory   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-medicationadministrationperformer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function MedicationAdministrationPerformer(performer List&lt;FHIR.MedicationAdministration.Performer&gt;):   performer p   return FHIR.MedicationAdministration.Performer{     function: p.function,     actor: p.actor   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-medicationadministrationdosage"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function MedicationAdministrationDosage(dosage FHIR.MedicationAdministration.Dosage):   dosage d   return FHIR.MedicationAdministration.Dosage{     text: d.text,     site: d.site,     route: d.route,     method: d.method,     dose: d.dose,     rate: d.rate   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-observationresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ObservationResource(observation Observation, profileURLs List&lt;FHIR.canonical&gt;):   observation o   return Observation{     id: FHIR.id {value: 'LCR-' + o.id},     meta: SharedResource.MetaElement(o, profileURLs),     extension: o.extension,     partOf: o.partOf,     status: o.status,     category: o.category,     code: o.code,     subject: o.subject,     focus: o.focus,     encounter: o.encounter,     effective: o.effective,     issued: o.issued,     performer: o.performer,     value: o.value,     dataAbsentReason: o.dataAbsentReason,     interpretation: o.interpretation,     note: o.note,     bodySite: o.bodySite,     method: o.method,     specimen: o.specimen,     device: o.device,     referenceRange: SharedResource.ObservationReferenceRange(o.referenceRange),     hasMember: o.hasMember,     derivedFrom: o.derivedFrom,     component: SharedResource.ObservationComponent(o.component)   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-getcondition"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;GetCondition&quot;(reference Reference):   singleton from (     &quot;Conditions&quot; Conditions     where Conditions.id = NHSNHelpers.GetId(reference.reference)   )</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-getencounter"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;GetEncounter&quot;(reference Reference):   singleton from (     &quot;Encounters&quot; Encounters     where Encounters.id = NHSNHelpers.GetId(reference.reference)   )</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-conditionresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// //Measure Specific Resource Creation Functions // define function ConditionResource(condition Condition, profileURLs List&lt;FHIR.canonical&gt;, acceptedCategories List&lt;System.Code&gt;):   condition c   return Condition{     id: FHIR.id {value: 'LCR-' + c.id},     meta: SharedResource.MetaElement(c, profileURLs),     extension: c.extension,     clinicalStatus: c.clinicalStatus,     verificationStatus: c.verificationStatus,     category: FilterCodeableConcepts(c.category, acceptedCategories),     severity: c.severity,     code: c.code,     bodySite: c.bodySite,     subject: c.subject,     encounter: c.encounter,     onset: c.onset,     abatement: c.abatement,     recordedDate: c.recordedDate,     stage: SharedResource.ConditionStage(c.stage),     evidence: SharedResource.ConditionEvidence(c.evidence),     note: c.note   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-filtercodeableconcepts"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function FilterCodeableConcepts(codes List&lt;FHIR.CodeableConcept&gt;, accepted List&lt;System.Code&gt;):  if Count(accepted) &gt; 0   then RemoveUnaccepted(codes, accepted)  else codes</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-removeunaccepted"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function RemoveUnaccepted(codes List&lt;FHIR.CodeableConcept&gt;, accepted List&lt;System.Code&gt;):  codes c   where exists(     accepted a     where c ~ a   )</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-conditionstage"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ConditionStage(stage List&lt;FHIR.Condition.Stage&gt;):   stage s   return FHIR.Condition.Stage{     summary: s.summary,     assessment: s.assessment,     type: s.type   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-conditionevidence"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ConditionEvidence(evidence List&lt;FHIR.Condition.Evidence&gt;):   evidence e   return FHIR.Condition.Evidence{     code: e.code,     detail: e.detail   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-diagnosticreportlabresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function DiagnosticReportLabResource(diagnosticReport DiagnosticReport, profileURLs List&lt;FHIR.canonical&gt;):   diagnosticReport d   return DiagnosticReport{     id: FHIR.id{value: 'LCR-' + d.id},     meta: MetaElement(d, profileURLs),     extension: d.extension,     basedOn: d.basedOn,     status: d.status,     category: DiagnosticReportCategory(d.category),     code: d.code,     subject: d.subject,     encounter: d.encounter,     effective: d.effective,     issued: d.issued,     performer: d.performer,     resultsInterpreter: d.resultsInterpreter,     specimen: d.specimen,     result: d.result,     conclusion: d.conclusion,     conclusionCode: d.conclusionCode   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-diagnosticreportcategory"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function DiagnosticReportCategory(category List&lt;CodeableConcept&gt;):   category c   return CodeableConcept{     coding: DiagnosticReportCoding(c.coding)   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-diagnosticreportcoding"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function DiagnosticReportCoding(coding List&lt;Coding&gt;):   coding c   return Coding{     system: c.system,     version: c.version,     code: c.code,     display: c.display,     userSelected: c.userSelected   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-locationresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function LocationResource(location Location, profileURLs List&lt;FHIR.canonical&gt;):   location l   return Location{     id: FHIR.id {value: 'LCR-' + l.id},     meta: MetaElement(l, profileURLs),     extension: l.extension,     status: l.status,     operationalStatus: l.operationalStatus,     name: l.name,     alias: l.alias,     description: l.description,     mode: l.mode,     type: l.type,     telecom: l.telecom,     address: LocationAddress(l.address),     physicalType: l.physicalType,     position: LocationPosition(l.position),     managingOrganization: l.managingOrganization,     partOf: l.partOf,     hoursOfOperation: LocationHoursOfOperation(l.hoursOfOperation),     availabilityExceptions: l.availabilityExceptions,     endpoint: l.endpoint   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-locationaddress"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function LocationAddress(address FHIR.Address):   address a   return FHIR.Address{     use: a.use,     type: a.type,     text: a.text,     line: a.line,     city: a.city,     district: a.district,     state: a.state,     postalCode: a.postalCode,     country: a.country,     period: a.period   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-locationposition"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function LocationPosition(position FHIR.Location.Position):   position p   return FHIR.Location.Position{     longitude: p.longitude,     latitude: p.latitude,     altitude: p.altitude   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-locationhoursofoperation"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function LocationHoursOfOperation(hoursOfOperation List&lt;FHIR.Location.HoursOfOperation&gt;):   hoursOfOperation hOO   return FHIR.Location.HoursOfOperation{     daysOfWeek: hOO.daysOfWeek,     allDay: hOO.allDay,     openingTime: hOO.openingTime,     closingTime: hOO.closingTime   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-servicerequestresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ServiceRequestResource(serviceRequest ServiceRequest, profileURLs List&lt;FHIR.canonical&gt;):   serviceRequest sR   return ServiceRequest{     id: FHIR.id {value: 'LCR-' + sR.id},     meta: MetaElement(sR, profileURLs),     extension: sR.extension,     instantiatesCanonical: sR.instantiatesCanonical,     instantiatesUri: sR.instantiatesUri,     basedOn: sR.basedOn,     replaces: sR.replaces,     requisition: sR.requisition,     status: sR.status,     intent: sR.intent,     category: sR.category,     priority: sR.priority,     doNotPerform: sR.doNotPerform,     code: sR.code,     orderDetail: sR.orderDetail,     quantity: sR.quantity,     subject: sR.subject,     encounter: sR.encounter,     occurrence: sR.occurrence,     asNeeded: sR.asNeeded,     authoredOn: sR.authoredOn,     requester: sR.requester,     performerType: sR.performerType,     performer: sR.performer,     locationCode: sR.locationCode,     locationReference: sR.locationReference,     reasonCode: sR.reasonCode,     reasonReference: sR.reasonReference,     insurance: sR.insurance,     supportingInfo: sR.supportingInfo,     specimen: sR.specimen,     bodySite: sR.bodySite,     note: sR.note,     patientInstruction: sR.patientInstruction,     relevantHistory: sR.relevantHistory   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-patientresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function PatientResource(patient Patient, profileURLs List&lt;FHIR.canonical&gt;):   patient p   return Patient{     id: FHIR.id{value: 'LCR-' + p.id},     meta: MetaElement(p, profileURLs),     extension: GetPatientExtensions(p) union GetIdExtensions(p),     identifier: p.identifier,     active: p.active,     name: PatientName(p.name),     telecom: PatientTelecom(p.telecom),     gender: p.gender,     birthDate: p.birthDate,     deceased: p.deceased,     address: PatientAddress(p.address),     maritalStatus: p.maritalStatus,     multipleBirth: p.multipleBirth,     photo: p.photo,     contact: PatientContact(p.contact),     communication: PatientCommunication(p.communication),     generalPractitioner: p.generalPractitioner,     managingOrganization: p.managingOrganization,     link: PatientLink(p.link)   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-getpatientextensions"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;GetPatientExtensions&quot;(domainResource DomainResource):   domainResource.extension E   where E.url.value = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race'     or E.url.value = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity'     or E.url.value = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex'     or E.url.value = 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension'   return E</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-getidextensions"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;GetIdExtensions&quot;(domainResource DomainResource):   domainResource.extension E   where E.url.value = 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension'   return E</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-patientname"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/* No longer needed but saving in case it's useful later define function PatientIdentifier(identifier List&lt;FHIR.Identifier&gt;):   identifier i   return FHIR.Identifier{     id: i.id,     extension: i.extension,     use: i.use,     type: i.type,     system: i.system,     value: i.value,     period: i.period,     assigner: i.assigner   }*/  define function PatientName(name List&lt;FHIR.HumanName&gt;):   name n   return FHIR.HumanName{     id: n.id,     extension: n.extension,     use: n.use,     text: n.text,     family: n.family,     given: n.given,     prefix: n.prefix,     suffix: n.suffix,     period: n.period   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-patienttelecom"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function PatientTelecom(telecom List&lt;FHIR.ContactPoint&gt;):   telecom t   return FHIR.ContactPoint{     system: t.system,     value: t.value,     use: t.use,     rank: t.rank,     period: t.period   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-patientaddress"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function PatientAddress(address List&lt;FHIR.Address&gt;):   address a   return FHIR.Address{     id: a.id,     extension: a.extension,     use: a.use,     type: a.type,     text: a.text,     line: a.line,     city: a.city,     district: a.district,     state: a.state,     postalCode: a.postalCode,     country: a.country,     period: a.period   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-patientcontact"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function PatientContact(contact List&lt;FHIR.Patient.Contact&gt;):   contact c   return FHIR.Patient.Contact{     id: c.id,     extension: c.extension,     relationship: c.relationship,     name: c.name,     telecom: c.telecom,     address: c.address,     gender: c.gender,     organization: c.organization,     period: c.period   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-patientcommunication"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function PatientCommunication(communication List&lt;FHIR.Patient.Communication&gt;):   communication c   return FHIR.Patient.Communication{     id: c.id,     extension: c.extension,     language: c.language,     preferred: c.preferred   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-patientlink"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function PatientLink(link List&lt;FHIR.Patient.Link&gt;):   link l   return FHIR.Patient.Link{     id: l.id,     extension: l.extension,     modifierExtension: l.modifierExtension,     other: l.other,     type: l.type   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-medicationresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function MedicationResource(medication Medication, profileURLs List&lt;FHIR.canonical&gt;):   medication m   return Medication{     id: FHIR.id {value: 'LCR-' + m.id},     meta: MetaElement(m, profileURLs),     extension: m.extension,     code: m.code,     status: m.status,     manufacturer: m.manufacturer,     form: m.form,     amount: m.amount,     ingredient: MedicationIngredient(m.ingredient),     batch: MedicationBatch(m.batch)   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-medicationingredient"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function MedicationIngredient(ingredient List&lt;FHIR.Medication.Ingredient&gt;):   ingredient i   return FHIR.Medication.Ingredient{     item: i.item,     strength: i.strength   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-medicationbatch"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function MedicationBatch(batch FHIR.Medication.Batch):   batch b   return FHIR.Medication.Batch{     lotNumber: b.lotNumber,     expirationDate: b.expirationDate   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-getmedicationfrom"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;GetMedicationFrom&quot;(choice Choice&lt;FHIR.CodeableConcept, FHIR.Reference&gt;):   case     when choice is FHIR.Reference then       GetMedication(choice as FHIR.Reference)     else       null   end</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation-getmedication"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;GetMedication&quot;(reference Reference):   singleton from (     [Medication] Medications     where Medications.id = NHSNHelpers.GetId(reference.reference)   )</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-specimenresource"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function SpecimenResource(specimen Specimen, profileURLs List&lt;FHIR.canonical&gt;):   specimen s   return Specimen{     id: FHIR.id {value: 'LCR-' + s.id},     meta: MetaElement(s, profileURLs),     extension: s.extension,     identifier: s.identifier,     accessionIdentifier: s.accessionIdentifier,     status: s.status,     type: s.type,     subject: s.subject,     receivedTime: s.receivedTime,     parent: s.parent,     request: s.request,     collection: SpecimenCollection(s.collection),     processing: SpecimenProcessing(s.processing),     container: SpecimenContainer(s.container),     condition: s.condition,     note: s.note   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-specimencollection"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function SpecimenCollection(collection FHIR.Specimen.Collection):   collection c   return FHIR.Specimen.Collection{     collector: c.collector,     collected: c.collected,     &quot;duration&quot;: c.&quot;duration&quot;,     quantity: c.quantity,     method: c.method,     bodySite: c.bodySite,     fastingStatus: c.fastingStatus   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-specimenprocessing"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function SpecimenProcessing(processing List&lt;FHIR.Specimen.Processing&gt;):   processing p   return FHIR.Specimen.Processing{     description: p.description,     procedure: p.procedure,     additive: p.additive,     time: p.time   }</code></pre>
+  </td>
+
+</tr>
+        
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="sharedresourcecreation-specimencontainer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SharedResourceCreation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function SpecimenContainer(container List&lt;FHIR.Specimen.Container&gt;):   container c   return FHIR.Specimen.Container{     description: c.description,     type: c.type,     capacity: c.capacity,     specimenQuantity: c.specimenQuantity,     additive: c.additive   }</code></pre>
+  </td>
+
+</tr>
+
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.6 of the sample-content-ig Liquid templates</th>
+</tr>
+    </tbody>
+  </table>
+</div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+      <!-- Added Footer for NHSN -->
+      <br/>
+      <img src="assets\images\footer.png" width="100%" />
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">$(document).ready(function(){if(window.location.hash != "") {$('a[href="' + window.location.hash + '"]').click()}});</script>
+  <a name="bottom"> </a>
+  
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.cdc.gov/nhsn">CDC National Healthcare Safety Network (NHSN)</a>.  Package gov.cdc.nhsn.dqm#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 15, 2025 12:07-0400">2025-09-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: 
+<a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> | 
+<a style="color: #81BEF7" target="_blank" href="mailto:nhsn@cdc.gov?subject=dQM%20FHIR%20Implementation%20Guide%20Feedback&body=Thank%20you%20for%20contacting%20National%20Healthcare%20Safety%20Network%20to%20provide%20feedback%20for%20our%20FHIR%20Implementation%20Guide%20%28IG%29.%20Please%20provide%20responses%20in%20the%20form%20below%20to%20help%20us%20address%20your%20input.%20Please%20include%20any%20relevant%20attachments%20to%20this%20email.%20If%20you%20have%20questions%20or%20comments%20for%20NHSN%20non-FHIR%20IG%20matters%20please%20send%20a%20separate%20email%20to%20nhsn%40cdc.gov%20%28do%20not%20use%20this%20form%29.%20%0A%0A%0AType%20of%20feedback%20%28technical%20correction%2C%20change%20request%2C%20question%29%3A%0A%0A%0AThe%20specification%20involved%20in%20the%20feedback%3A%20CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG%0A%0A%0AVersion%20of%20the%20specification%3A%201.0.0%0A%0A%0AWhat%20part%20of%20the%20specification%20is%20related%20to%20the%20feedback%3F%3A%20%0A%0A%0ADescription%20of%20the%20feedback%3A%0A%0A%0AInitiating%20page%20%28for%20administrative%20use%29%3A%20NHSN dQM Acute Care Hospital Monthly Initial Population Measure%20(Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.html)%0A">Provide Feedback</a>
+
+<!--<a style="color: #81BEF7" target="_blank" href="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/common/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a>-->
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover';anchors.add()</script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

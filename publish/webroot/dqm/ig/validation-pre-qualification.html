@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Validation and Pre-Qualification - CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fhir-nhsn.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://www.cdc.gov/nhsn/index.html"><img alt="Visit the National Healthcare Safety Network website" src="assets\images\nhsn.png" width="137" height="50" />
+    <!--<img height="50" alt="Visit the National Healthcare Safety Network website" src="https://www.lantanagroup.com/wp-content/uploads/logo-transparent.png" width="190" height="42" /> --></a>
+</div>
+<!-- TODO: Push this into the base template, but it requires a "trusted" template -->
+<script type="text/javascript" src="cql.js"> </script>
+<img src="assets\images\header_top.png" width="100%" />
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - Release 1
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="use_cases.html">Actors and Use Cases</a>
+  </li>
+  <li>
+    <a href="validation-pre-qualification.html">Validation and Pre-Qualification</a>
+  </li>
+  <li>
+    <a href="specification.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifact-listing.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="license.html">License</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://hl7.org/fhir/us/core/STU3.1.1/index.html">US Core IG 3.1.1</a>
+      </li>
+      <li>
+        <a href="https://www.fhir.org/guides/cqf/common/">Clinical Quality Framework</a>
+      </li>
+      <li>
+        <a href="https://hl7.org/fhir/us/davinci-deqm/STU3.1/index.html">Da Vinci DEQM IG 3.1</a>
+      </li>
+      <li>
+        <a href="https://hl7.org/fhir/us/qicore/STU4.1.1/">QI Core IG 4.1.1</a>
+      </li>
+      <li>
+        <a href="http://cql.hl7.org/index.html">CQL Spec</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/uv/cpg">FHIR Clinical Guidelines</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Validation and Pre-Qualification</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:black;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:black;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:black;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:black;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:black;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. The current version which supersedes this version is <a data-no-external="true" href="http://www.cdc.gov/nhsn/fhirportal/dqm/ig">2.0.0</a>.  For a full list of available versions, see the <a data-no-external="true" href="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Validation and Pre-Qualification</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#example-of-an-acceptable-validation-issue" id="markdown-toc-example-of-an-acceptable-validation-issue">Example of an <i>Acceptable</i> validation issue</a></li>
+  <li><a href="#example-of-an-unacceptable-validation-issue" id="markdown-toc-example-of-an-unacceptable-validation-issue">Example of an <i>Unacceptable</i> validation issue</a></li>
+  <li><a href="#when-pre-qualification-happens-during-submission-to-nhsn" id="markdown-toc-when-pre-qualification-happens-during-submission-to-nhsn">When Pre-qualification Happens During Submission to NHSN</a></li>
+</ul>
+
+</div>
+<p>All submission data must pass pre-qualification prior to submission to the National Healthcare Safety Network (NHSN), regardless of the mechanism/tools used for evaluation and submission. Pre-qualification involves categorizing Fast Healthcare Interoperability Resources (FHIR) validation issues (errors, warnings and informational) for a given submission dataset to NHSN. Categories are defined to match one or multiple types of validation issues. One key component of every category is the required “acceptability” flag (field). Every category must be defined according to NHSN as either acceptable or unacceptable.</p>
+
+<h3 id="example-of-an-acceptable-validation-issue">Example of an <i>Acceptable</i> validation issue</h3>
+<p><strong>Code does not match the preferred ValueSet</strong></p>
+
+<p>The informational validation message, “none of the codings are in the value set, and a coding is recommended to come from this value set,” results when any coding outside of any value set with a preferred binding strength is found in any resource. For instance, the Acute Care Hospital (ACH) Monthly Event Encounter profile binds Encounter.hospitalization.dischargeDisposition to the <a href="http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html">DischargeDisposition</a> ValueSet with a <a href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a> binding strength. In cases where a code that is not in this value set is found, FHIR validation will produce an informational message, “none of the codings are in the value set DischargeDisposition, and a coding is recommended to come from this value set.” Similarly, an instance of ACH Monthly Condition with Condition.severity containing a code representing “low,” FHIR validation will produce the message, “none of the codings are in the value set DiagnosisSeverity, and a coding is recommended to come from this value set.”</p>
+
+<p>NHSN has determined that all codes outside of value sets bound with a preferred binding strength are acceptable for submission. Therefore, both instances/messages would be categorized under “none of the codings are in the value set, and a coding is recommended to come from this value set” with an acceptable=true flag and would not result in the hindrance of submitting this scenario’s data set to NHSN.</p>
+
+<h3 id="example-of-an-unacceptable-validation-issue">Example of an <i>Unacceptable</i> validation issue</h3>
+<p><strong>Minimum requirement not met for profile</strong></p>
+
+<p>The validation error message, “minimum required = 1, but only found 0 (from ‘profile’)”, results when any required element is missing from any resource. For instance, the <a href="StructureDefinition-ach-monthly-encounter.html">Acute Care Hospital (ACH) Monthly Encounter</a> profile requires .period to follow every .location, e.g., Encounter.location.period. When .period is absent, the validation message "minimum required = 1, but only found 0” results. Similarly, <a href="StructureDefinition-ach-monthly-coverage.html">ACH Monthly Coverage</a> requires .type, e.g.,  Coverage.class.type. When .type is missing, the validation message "minimum required = 1, but only found 0” results.</p>
+
+<p>NHSN has determined that resources missing required elements, as in the Encounter.location.period and Coverage.class.type examples, are unacceptable issues and therefore would result in a failed submission of this dataset to NHSN.</p>
+
+<p><b>Note:</b> If one or more unacceptable categories exist within a potential data submission set, the entire dataset will not be submitted.</p>
+
+<h3 id="when-pre-qualification-happens-during-submission-to-nhsn">When Pre-qualification Happens During Submission to NHSN</h3>
+
+<p>Validation and subsequent pre-qualification occur after data evaluation and before final submission to NHSN. Implementers acting as data submitters to NHSN perform and attest to pre-qualification for each dataset submitted to NHSN. An implementer system representing a new data source targeting NHSN submission in conformance with this guide should expect extensive and iterative pre-qualification-driven testing to identify acceptable and unacceptable data quality issues. To ensure a successful NHSN submission, it is crucial to address the unacceptable issues with the guidance provided for resolution. These issues may be addressed and resolved through various potential mechanisms, such as technical (i.e., configuration) updates at the data source (EHR), modifications to clinical workflows, data querying, and/or data normalization.</p>
+
+<div>
+<figure class="figure">
+    <figcaption class="figure-caption"><strong>Figure 1: Process Flow for Pre-qualification </strong></figcaption>
+    <img src="SubmissionDiagram.PNG" alt="Figure 1: Process Flowchart for the Pre-qualification process as described in the body of the text" title="Figure 1: Process Flow for Pre-qualification" class="img-responsive img-rounded center-block" width="75%" />
+</figure>
+<p></p>
+</div>
+<p>
+  Figure 1 (above) represents the process flow for pre-qualification. This process includes:
+  <ol>
+    <li>Data retrieval: Primary dQM data is retrieved from the EHR Data Source through a secure FHIR API. This uses the Patients of Interest List and the dQM definitions in which the facility is enrolled.</li>
+    <li>Initial evaluation: The data goes through an initial evaluation, which includes normalization and determination of what data is reportable.</li>
+    <li>Filtering: Data determined to be reportable continues through the process. Data that is not reportable is discarded and does not move forward.</li>
+    <li>Augmentation: Reportable data is augmented with related supplemental data retrieved from the same EHR Data Source API.</li>
+    <li>Validation and bundling: The submission dataset is validated and packaged into a MeasureReport bundle.</li>
+    <li>Pre-qualification: The dataset undergoes pre-qualification, which identifies potential issues (errors, warnings, informational). Each issue is categorized.</li>
+    <li>Acceptability check: A key component of each category is acceptability, used to determine whether an issue is acceptable for submission to the NHSN Application.</li>
+    <li>Submission outcome:
+      <ul>
+        <li>If no issues exist, or only “acceptable” issues are found, the submission is successful and sent to the NHSN Application.</li>
+        <li>If one or more unacceptable issues exist, the dataset is not sent forward. Instead, it undergoes a review and remediation process</li>
+      </ul>
+    </li>
+  </ol>
+</p>
+<p>Pre-qualification categorization is technology agnostic; the frameworks and programming languages used to implement above do not matter. This allows the evaluation and submission of data to NHSN through multiple systems and pathways, provided pre-qualification results are acceptable. Similarly, the technology used to implement pre-qualification categorization to determine and assert only acceptable issues exist within a given submission dataset is not mandated.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+      <!-- Added Footer for NHSN -->
+      <br/>
+      <img src="assets\images\footer.png" width="100%" />
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">$(document).ready(function(){if(window.location.hash != "") {$('a[href="' + window.location.hash + '"]').click()}});</script>
+  <a name="bottom"> </a>
+  
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.cdc.gov/nhsn">CDC National Healthcare Safety Network (NHSN)</a>.  Package gov.cdc.nhsn.dqm#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 15, 2025 12:07-0400">2025-09-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: 
+<a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> | 
+<a style="color: #81BEF7" target="_blank" href="mailto:nhsn@cdc.gov?subject=dQM%20FHIR%20Implementation%20Guide%20Feedback&body=Thank%20you%20for%20contacting%20National%20Healthcare%20Safety%20Network%20to%20provide%20feedback%20for%20our%20FHIR%20Implementation%20Guide%20%28IG%29.%20Please%20provide%20responses%20in%20the%20form%20below%20to%20help%20us%20address%20your%20input.%20Please%20include%20any%20relevant%20attachments%20to%20this%20email.%20If%20you%20have%20questions%20or%20comments%20for%20NHSN%20non-FHIR%20IG%20matters%20please%20send%20a%20separate%20email%20to%20nhsn%40cdc.gov%20%28do%20not%20use%20this%20form%29.%20%0A%0A%0AType%20of%20feedback%20%28technical%20correction%2C%20change%20request%2C%20question%29%3A%0A%0A%0AThe%20specification%20involved%20in%20the%20feedback%3A%20CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG%0A%0A%0AVersion%20of%20the%20specification%3A%201.0.0%0A%0A%0AWhat%20part%20of%20the%20specification%20is%20related%20to%20the%20feedback%3F%3A%20%0A%0A%0ADescription%20of%20the%20feedback%3A%0A%0A%0AInitiating%20page%20%28for%20administrative%20use%29%3A%20Validation and Pre-Qualification%20(validation-pre-qualification.html)%0A">Provide Feedback</a>
+
+<!--<a style="color: #81BEF7" target="_blank" href="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/common/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a>-->
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover';anchors.add()</script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

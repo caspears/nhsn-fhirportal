@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-example-ach-monthly-pass3-cdiff",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-example-ach-monthly-pass3-cdiff</b></p><a name=\"observation-example-ach-monthly-pass3-cdiff\"> </a><a name=\"hcobservation-example-ach-monthly-pass3-cdiff\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-observation-lab.html\">ACH Monthly Event Lab Result Observation</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-servicerequest-example-ach-monthly-pass3-cdiff.html\">ServiceRequest Clostridioides difficile toxin A [Presence] in Stool by Immunoassay</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 5933001}\">C. Diff.</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass3.html\">Pass3 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass3-short-stay.html\">Hospital Admission, Short Stay</a></p><p><b>effective</b>: 2024-02-01 19:02:00-0500</p><p><b>issued</b>: 2024-02-02 15:30:00-0500</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 10828004}\">Positive (qualifier value)</span></p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-monthly-pass3-stool.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082905,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:45; type = Bloody stool specimen (specimen); receivedTime = 2024-02-01 19:12:00-0500</a></p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "ServiceRequest/servicerequest-example-ach-monthly-pass3-cdiff"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }],
+    "text" : "Laboratory"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "5933001",
+      "display" : "Clostridioides difficile (organism)"
+    }],
+    "text" : "C. Diff."
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass3",
+    "display" : "Pass3 ACH"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example-ach-monthly-pass3-short-stay",
+    "display" : "Hospital Admission, Short Stay"
+  },
+  "effectiveDateTime" : "2024-02-01T19:02:00-05:00",
+  "issued" : "2024-02-02T15:30:00-05:00",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "10828004",
+      "display" : "Positive (qualifier value)"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/specimen-example-ach-monthly-pass3-stool"
+  }
+}

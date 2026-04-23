@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-example-ach-monthly-pass3"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+      <code value="R"/>
+      <display value="Restricted"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient patient-example-ach-monthly-pass3</b></p><a name="patient-example-ach-monthly-pass3"> </a><a name="hcpatient-example-ach-monthly-pass3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cross-measure-patient.html">Cross-Measure Patient Profile</a></p><p style="margin-bottom: 0px">Security Label: Restricted (Details: Confidentiality code R = 'Restricted')</p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li><a href="mailto:ACHtestcase@testcase.com">ACHtestcase@testcase.com</a></li><li>5678 Sesame Lansing Lansing MI 48864 US </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Language spoken">Language:</td><td colspan="3"><span title="Codes:{urn:ietf:bcp:47 zh}">Chinese</span></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2186-5">Race &amp; Ethnicity - CDC 2186-5</a>: Not Hispanic or Latino</li><li>text: Non Hispanic or Latino</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9)."><a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a></td><td colspan="3">M</td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.">US Core Race Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2028-9">Race &amp; Ethnicity - CDC 2028-9</a>: Asian</li><li>text: White</li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2028-9"/>
+        <display value="Asian"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="White"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2186-5"/>
+        <display value="Not Hispanic or Latino"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Non Hispanic or Latino"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+    <valueCode value="M"/>
+  </extension>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical record number"/>
+      </coding>
+      <text value="MRN"/>
+    </type>
+    <system value="urn:oid:1.2.5.8.2.7"/>
+    <value value="1601191903010308"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <text value="Pass3 ACH"/>
+    <family value="ACH"/>
+    <given value="Pass3"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="ACHtestcase@testcase.com"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="2007-10-08"/>
+  <address>
+    <line value="5678 Sesame Lansing"/>
+    <city value="Lansing"/>
+    <state value="MI"/>
+    <postalCode value="48864"/>
+    <country value="US"/>
+  </address>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <code value="zh"/>
+        <display value="Chinese"/>
+      </coding>
+    </language>
+  </communication>
+</Patient>

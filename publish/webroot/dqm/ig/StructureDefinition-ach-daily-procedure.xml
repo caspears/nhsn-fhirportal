@@ -1,0 +1,2342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml version="1.0" encoding="UTF-8"??>
+<html>
+<head><meta name="data-accessibility-fixed" content="2026-04-16T14:14:54.143539"></head>
+<body><structuredefinition xmlns="http://hl7.org/fhir">
+  <id value="ach-daily-procedure"></id>
+  <text>
+    <status value="extensions"></status><div xmlns="http://www.w3.org/1999/xhtml">
+<p class="res-header-id"><b>Generated Narrative: StructureDefinition ach-daily-procedure</b></p>
+<a name="ach-daily-procedure"> </a><a name="hcach-daily-procedure"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top">
+<tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top">
+<th style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th>
+<th style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th>
+<th style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th>
+<th style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th>
+<th style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy">
+<a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"></a></span>
+</th>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_resource.png" alt="." style="background-color: inherit" title="Resource" class="hierarchy"> <a href="StructureDefinition-ach-daily-procedure-definitions.html#Procedure">Procedure</a><a name="Procedure"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">*</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-procedure.html">USCoreProcedureProfile</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">An action that is being or was performed on a patient</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-daily-procedure-definitions.html#Procedure.id">id</a><a name="Procedure.id"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">Logical id of this artifact</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-daily-procedure-definitions.html#Procedure.meta">meta</a><a name="Procedure.meta"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck103.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_slice.png" alt="." style="background-color: inherit" title="Slice Definition" class="hierarchy"> Slices for extension<a name="Procedure.meta.extension"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">Content/Rules for all slices</td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1024.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_slice_item.png" alt="." style="background-color: inherit" title="Slice Item" class="hierarchy"> <a href="StructureDefinition-ach-daily-procedure-definitions.html#Procedure.meta.extension:link-received-date-extension" title="Extension URL = http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension">extension:link-received-date-extension</a><a name="Procedure.meta.extension.2"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">Received Date</span><br><span style="font-weight: bold">URL: </span><a href="StructureDefinition-link-received-date-extension.html">http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension</a>
+</td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: #F7F7F7">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-daily-procedure-definitions.html#Procedure.encounter">encounter</a><a name="Procedure.encounter"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>)</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">Encounter created as part of</span></td>
+</tr>
+<tr style="border: 0px #F0F0F0 solid; padding: 0px; vertical-align: top; background-color: white">
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy">
+<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"><img src="icon_element.gif" alt="." style="background-color: inherit" title="Element" class="hierarchy"> <a href="StructureDefinition-ach-daily-procedure-definitions.html#Procedure.location">location</a><a name="Procedure.location"> </a>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span></td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<span style="opacity: 0.87; font-style: italic">0</span><span style="opacity: 0.87; font-style: italic">..</span><span style="opacity: 0.87; font-style: italic">1</span>
+</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy">
+<a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.87; font-style: italic" href="http://hl7.org/fhir/R4/location.html">Location</a>)</td>
+<td style="vertical-align: top; text-align: var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding: 0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.87; font-style: italic">Where the procedure happened</span></td>
+</tr>
+<tr><td colspan="5" class="hierarchy">
+<br><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"> Documentation for this format</a>
+</td></tr>
+</table>
+</div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueinteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valuecanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm"></valuecanonical>
+      </extension>
+    </valueinteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valuecode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valuecanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm"></valuecanonical>
+      </extension>
+    </valuecode>
+  </extension>
+  <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-procedure"></url>
+  <version value="1.0.0"></version>
+  <name value="AcuteCareHospitalDailyEventProcedure"></name>
+  <title value="ACH Daily Event Procedure"></title>
+  <status value="active"></status>
+  <date value="2025-09-15T11:51:36-04:00"></date>
+  <publisher value="CDC National Healthcare Safety Network (NHSN)"></publisher>
+  <contact>
+    <name value="CDC National Healthcare Safety Network (NHSN)"></name>
+    <telecom>
+      <system value="url"></system>
+      <value value="http://www.cdc.gov/nhsn"></value>
+    </telecom>
+    <telecom>
+      <system value="email"></system>
+      <value value="nhsn@cdc.gov"></value>
+    </telecom>
+  </contact>
+  <description value="This profile contains Required and Must Support data elements for reporting transmission-based precaution procedure information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Procedure Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-procedure.html)."></description>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"></system>
+      <code value="US"></code>
+    </coding>
+  </jurisdiction>
+  <fhirversion value="4.0.1"></fhirversion>
+  <mapping>
+    <identity value="argonaut-dq-dstu2"></identity>
+    <uri value="http://unknown.org/Argonaut-DQ-DSTU2"></uri>
+    <name value="Argonaut-DQ-DSTU2"></name>
+  </mapping>
+  <mapping>
+    <identity value="workflow"></identity>
+    <uri value="http://hl7.org/fhir/workflow"></uri>
+    <name value="Workflow Pattern"></name>
+  </mapping>
+  <mapping>
+    <identity value="rim"></identity>
+    <uri value="http://hl7.org/v3"></uri>
+    <name value="RIM Mapping"></name>
+  </mapping>
+  <mapping>
+    <identity value="w5"></identity>
+    <uri value="http://hl7.org/fhir/fivews"></uri>
+    <name value="FiveWs Pattern Mapping"></name>
+  </mapping>
+  <mapping>
+    <identity value="v2"></identity>
+    <uri value="http://hl7.org/v2"></uri>
+    <name value="HL7 v2 Mapping"></name>
+  </mapping>
+  <kind value="resource"></kind>
+  <abstract value="false"></abstract>
+  <type value="Procedure"></type>
+  <basedefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"></basedefinition>
+  <derivation value="constraint"></derivation>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valuestring value="3.1.1"></valuestring>
+    </extension>
+    <element id="Procedure">
+      <path value="Procedure"></path>
+      <short value="An action that is being or was performed on a patient"></short>
+      <definition value="The US Core Condition Profile is based upon the core FHIR Procedure Resource and created to meet the 2015 Edition Common Clinical Data Set 'Procedures' requirements."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <constraint>
+        <key value="dom-2"></key>
+        <severity value="error"></severity>
+        <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"></human>
+        <expression value="contained.contained.empty()"></expression>
+        <xpath value="not(parent::f:contained and f:contained)"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"></source>
+      </constraint>
+      <constraint>
+        <key value="dom-3"></key>
+        <severity value="error"></severity>
+        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource"></human>
+        <expression value="contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()"></expression>
+        <xpath value="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"></source>
+      </constraint>
+      <constraint>
+        <key value="dom-4"></key>
+        <severity value="error"></severity>
+        <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"></human>
+        <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"></expression>
+        <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"></source>
+      </constraint>
+      <constraint>
+        <key value="dom-5"></key>
+        <severity value="error"></severity>
+        <human value="If a resource is contained in another resource, it SHALL NOT have a security label"></human>
+        <expression value="contained.meta.security.empty()"></expression>
+        <xpath value="not(exists(f:contained/*/f:meta/f:security))"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"></source>
+      </constraint>
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice">
+          <valueboolean value="true"></valueboolean>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation">
+          <valuemarkdown value="When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."></valuemarkdown>
+        </extension>
+        <key value="dom-6"></key>
+        <severity value="warning"></severity>
+        <human value="A resource should have narrative for robust management"></human>
+        <expression value="text.`div`.exists()"></expression>
+        <xpath value="exists(f:text/h:div)"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"></source>
+      </constraint>
+      <mustsupport value="false"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Entity. Role, or Act"></map>
+      </mapping>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Procedure[moodCode=EVN]"></map>
+      </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"></identity>
+        <map value="Procedure"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.id">
+      <path value="Procedure.id"></path>
+      <short value="Logical id of this artifact"></short>
+      <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."></definition>
+      <comment value="The only time that a resource does not have an id is when it is being submitted to the server using a create operation."></comment>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Resource.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="id"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Procedure.meta">
+      <path value="Procedure.meta"></path>
+      <short value="Metadata about the resource"></short>
+      <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Resource.meta"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Meta"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Procedure.meta.id">
+      <path value="Procedure.meta.id"></path>
+      <representation value="xmlAttr"></representation>
+      <short value="Unique id for inter-element referencing"></short>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="string"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.meta.extension">
+      <path value="Procedure.meta.extension"></path>
+      <slicing>
+        <discriminator>
+          <type value="value"></type>
+          <path value="url"></path>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"></description>
+        <rules value="open"></rules>
+      </slicing>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.meta.extension:link-received-date-extension">
+      <path value="Procedure.meta.extension"></path>
+      <slicename value="link-received-date-extension"></slicename>
+      <short value="Received Date"></short>
+      <definition value="This extension stores the date and time a Resource was received by the processing system (e.g. NHSNLink)."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+        <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension"></profile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+    </element>
+    <element id="Procedure.meta.versionId">
+      <path value="Procedure.meta.versionId"></path>
+      <short value="Version specific identifier"></short>
+      <definition value="The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted."></definition>
+      <comment value="The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Meta.versionId"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="id"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Procedure.meta.lastUpdated">
+      <path value="Procedure.meta.lastUpdated"></path>
+      <short value="When the resource version last changed"></short>
+      <definition value="When the resource last changed - e.g. when the version changed."></definition>
+      <comment value="This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Meta.lastUpdated"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="instant"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Procedure.meta.source">
+      <path value="Procedure.meta.source"></path>
+      <short value="Identifies where the resource comes from"></short>
+      <definition value="A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](http://hl7.org/fhir/R4/provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc."></definition>
+      <comment value="In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. 
+
+This element can be used to indicate where the current master source of a resource that has a canonical URL if the resource is no longer hosted at the canonical URL."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Meta.source"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="uri"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Procedure.meta.profile">
+      <path value="Procedure.meta.profile"></path>
+      <short value="Profiles this resource claims to conform to"></short>
+      <definition value="A list of profiles (references to [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](http://hl7.org/fhir/R4/structuredefinition-definitions.html#StructureDefinition.url)."></definition>
+      <comment value="It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Meta.profile"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="canonical"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Procedure.meta.security">
+      <path value="Procedure.meta.security"></path>
+      <short value="Security Labels applied to this resource"></short>
+      <definition value="Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure."></definition>
+      <comment value="The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Meta.security"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Coding"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="SecurityLabels"></valuestring>
+        </extension>
+        <strength value="extensible"></strength>
+        <description value="Security Labels from the Healthcare Privacy and Security Classification System."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/security-labels|4.0.1"></valueset>
+      </binding>
+    </element>
+    <element id="Procedure.meta.tag">
+      <path value="Procedure.meta.tag"></path>
+      <short value="Tags applied to this resource"></short>
+      <definition value="Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource."></definition>
+      <comment value="The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Meta.tag"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Coding"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="Tags"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value='Codes that represent various types of tags, commonly workflow-related; e.g. "Needs review by Dr. Jones".'></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/common-tags|4.0.1"></valueset>
+      </binding>
+    </element>
+    <element id="Procedure.implicitRules">
+      <path value="Procedure.implicitRules"></path>
+      <short value="A set of rules under which this content was created"></short>
+      <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc."></definition>
+      <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Resource.implicitRules"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="uri"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation"></ismodifierreason>
+      <issummary value="true"></issummary>
+    </element>
+    <element id="Procedure.language">
+      <path value="Procedure.language"></path>
+      <short value="Language of the resource content"></short>
+      <definition value="The base language in which the resource is written."></definition>
+      <comment value="Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Resource.language"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="code"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+          <valuecanonical value="http://hl7.org/fhir/ValueSet/all-languages"></valuecanonical>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="Language"></valuestring>
+        </extension>
+        <strength value="preferred"></strength>
+        <description value="A human language."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/languages"></valueset>
+      </binding>
+    </element>
+    <element id="Procedure.text">
+      <path value="Procedure.text"></path>
+      <short value="Text summary of the resource, for human interpretation"></short>
+      <definition value='A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it "clinically safe" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.'></definition>
+      <comment value='Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a "text blob" or where text is additionally entered raw or narrated and encoded information is added later.'></comment>
+      <alias value="narrative"></alias>
+      <alias value="html"></alias>
+      <alias value="xhtml"></alias>
+      <alias value="display"></alias>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="DomainResource.text"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Narrative"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="Act.text?"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.contained">
+      <path value="Procedure.contained"></path>
+      <short value="Contained, inline Resources"></short>
+      <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."></definition>
+      <comment value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels."></comment>
+      <alias value="inline resources"></alias>
+      <alias value="anonymous resources"></alias>
+      <alias value="contained resources"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="DomainResource.contained"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Resource"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.extension">
+      <path value="Procedure.extension"></path>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="DomainResource.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.modifierExtension">
+      <path value="Procedure.modifierExtension"></path>
+      <short value="Extensions that cannot be ignored"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."></requirements>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="DomainResource.modifierExtension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them"></ismodifierreason>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.identifier">
+      <path value="Procedure.identifier"></path>
+      <short value="External Identifiers for this procedure"></short>
+      <definition value="Business identifiers assigned to this procedure by the performer or other systems which remain constant as the resource is updated and is propagated from server to server."></definition>
+      <comment value="This is a business identifier, not a resource identifier (see [discussion](http://hl7.org/fhir/R4/resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and Person resource instances might share the same social insurance number."></comment>
+      <requirements value="Allows identification of the procedure as it is known by various participating systems and in a way that remains consistent across servers."></requirements>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.identifier"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Identifier"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.identifier"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.identifier"></map>
+      </mapping>
+      <mapping>
+        <identity value="v2"></identity>
+        <map value="Some combination of ORC-2 / ORC-3 / OBR-2 / OBR-3 / IPC-1 / IPC-2 / IPC-3 / IPC-4"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".id"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.instantiatesCanonical">
+      <path value="Procedure.instantiatesCanonical"></path>
+      <short value="Instantiates FHIR protocol or definition"></short>
+      <definition value="The URL pointing to a FHIR-defined protocol, guideline, order set or other definition that is adhered to in whole or in part by this Procedure."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.instantiatesCanonical"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="canonical"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Measure"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Questionnaire"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.instantiatesCanonical"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".outboundRelationship[typeCode=DEFN].target"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.instantiatesUri">
+      <path value="Procedure.instantiatesUri"></path>
+      <short value="Instantiates external protocol or definition"></short>
+      <definition value="The URL pointing to an externally maintained protocol, guideline, order set or other definition that is adhered to in whole or in part by this Procedure."></definition>
+      <comment value="This might be an HTML page, PDF, etc. or could just be a non-resolvable URI identifier."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.instantiatesUri"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="uri"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.instantiatesUri"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".outboundRelationship[typeCode=DEFN].target"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.basedOn">
+      <path value="Procedure.basedOn"></path>
+      <short value="A request for this procedure"></short>
+      <definition value="A reference to a resource that contains details of the request for this procedure."></definition>
+      <alias value="fulfills"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.basedOn"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/CarePlan"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.basedOn"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".outboundRelationship[typeCode=FLFS].target[classCode=(various e.g. PROC, OBS, PCPR, ACT,  moodCode=RQO].code"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.partOf">
+      <path value="Procedure.partOf"></path>
+      <short value="Part of referenced event"></short>
+      <definition value="A larger event of which this particular procedure is a component or step."></definition>
+      <comment value="The MedicationAdministration resource has a partOf reference to Procedure, but this is not a circular reference.   For example, the anesthesia MedicationAdministration is part of the surgical Procedure (MedicationAdministration.partOf = Procedure).  For example, the procedure to insert the IV port for an IV medication administration is part of the medication administration (Procedure.partOf = MedicationAdministration)."></comment>
+      <alias value="container"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.partOf"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Procedure"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Observation"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.partOf"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".inboundRelationship[typeCode=COMP].source[classCode=SBADM or PROC or OBS, moodCode=EVN]"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.status">
+      <path value="Procedure.status"></path>
+      <short value="preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"></short>
+      <definition value="A code specifying the state of the procedure. Generally, this will be the in-progress or completed state."></definition>
+      <comment value="The &quot;unknown&quot; code is not to be used to convey other statuses.  The &quot;unknown&quot; code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the procedure.
+
+This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid."></comment>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.status"></path>
+        <min value="1"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="code"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid"></ismodifierreason>
+      <issummary value="true"></issummary>
+      <binding>
+        <strength value="required"></strength>
+        <valueset value="http://hl7.org/fhir/ValueSet/event-status"></valueset>
+      </binding>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.status"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.status"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="statusCode"></map>
+      </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"></identity>
+        <map value="Procedure.status"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.statusReason">
+      <path value="Procedure.statusReason"></path>
+      <short value="Reason for current status"></short>
+      <definition value="Captures the reason for the current state of the procedure."></definition>
+      <comment value='This is generally only used for "exception" statuses such as "not-done", "suspended" or "aborted". The reason for performing the event at all is captured in reasonCode, not here.'></comment>
+      <alias value="Suspended Reason"></alias>
+      <alias value="Cancelled Reason"></alias>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.statusReason"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="ProcedureNegationReason"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value="A code that identifies the reason a procedure was not performed."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/procedure-not-performed-reason"></valueset>
+      </binding>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.statusReason"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".reason.Observation.value"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.category">
+      <path value="Procedure.category"></path>
+      <short value="Classification of the procedure"></short>
+      <definition value='A code that classifies the procedure for searching, sorting and display purposes (e.g. "Surgical Procedure").'></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.category"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="ProcedureCategory"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value="A code that classifies a procedure for searching, sorting and display purposes."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/procedure-category"></valueset>
+      </binding>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.class"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value='.outboundRelationship[typeCode="COMP].target[classCode="LIST", moodCode="EVN"].code'></map>
+      </mapping>
+    </element>
+    <element id="Procedure.code">
+      <path value="Procedure.code"></path>
+      <short value="Procedure codes from SNOMED CT, CPT, HCPCS II, ICD-10PC, or CDT"></short>
+      <definition value='The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. "Laparoscopic Appendectomy").'></definition>
+      <requirements value="0..1 to account for primarily narrative only resources."></requirements>
+      <alias value="type"></alias>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.code"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <strength value="extensible"></strength>
+        <description value="Codes describing the type of  Procedure"></description>
+        <valueset value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"></valueset>
+      </binding>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.code"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.what[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="v2"></identity>
+        <map value="OBR-44/OBR-45"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".code"></map>
+      </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"></identity>
+        <map value="Procedure.code"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.subject">
+      <path value="Procedure.subject"></path>
+      <short value="Who the procedure was performed on"></short>
+      <definition value="The person, animal or group on which the procedure was performed."></definition>
+      <alias value="patient"></alias>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.subject"></path>
+        <min value="1"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.subject"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.subject[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="v2"></identity>
+        <map value="PID-3"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".participation[typeCode=SBJ].role"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.subject"></map>
+      </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"></identity>
+        <map value="Procedure.subject"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.encounter">
+      <path value="Procedure.encounter"></path>
+      <short value="Encounter created as part of"></short>
+      <definition value="The Encounter during which this Procedure was created or performed or to which the creation of this record is tightly associated."></definition>
+      <comment value="This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.encounter"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Encounter"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.context"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.context"></map>
+      </mapping>
+      <mapping>
+        <identity value="v2"></identity>
+        <map value="PV1-19"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.performed[x]">
+      <path value="Procedure.performed[x]"></path>
+      <short value="When the procedure was performed"></short>
+      <definition value="Estimated or actual date, date-time, period, or age when the procedure was performed.  Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured."></definition>
+      <comment value="Age is generally used when the patient reports an age at which the procedure was performed. Range is generally used when the patient reports an age range when the procedure was performed, such as sometime between 20-25 years old.  dateTime supports a range of precision due to some procedures being reported as past procedures that might not have millisecond precision while other procedures performed and documented during the encounter might have more precise UTC timestamps with timezone."></comment>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.performed[x]"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="dateTime"></code>
+      </type>
+      <type>
+        <code value="Period"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.occurrence[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.done[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="v2"></identity>
+        <map value="OBR-7"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".effectiveTime"></map>
+      </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"></identity>
+        <map value="Procedure.performed[x]"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.recorder">
+      <path value="Procedure.recorder"></path>
+      <short value="Who recorded the procedure"></short>
+      <definition value="Individual who recorded the record and takes responsibility for its content."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.recorder"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Patient"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Practitioner"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.author"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".participation[typeCode=AUT].role"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.asserter">
+      <path value="Procedure.asserter"></path>
+      <short value="Person who asserts this procedure"></short>
+      <definition value="Individual who is making the procedure statement."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.asserter"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Patient"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Practitioner"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.source"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".participation[typeCode=INF].role"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.performer">
+      <path value="Procedure.performer"></path>
+      <short value="The people who performed the procedure"></short>
+      <definition value='Limited to "real" people rather than equipment.'></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.performer"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="BackboneElement"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.performer"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".participation[typeCode=PRF]"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.performer.id">
+      <path value="Procedure.performer.id"></path>
+      <representation value="xmlAttr"></representation>
+      <short value="Unique id for inter-element referencing"></short>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="string"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.performer.extension">
+      <path value="Procedure.performer.extension"></path>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.performer.modifierExtension">
+      <path value="Procedure.performer.modifierExtension"></path>
+      <short value="Extensions that cannot be ignored even if unrecognized"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."></requirements>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <alias value="modifiers"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="BackboneElement.modifierExtension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"></ismodifierreason>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.performer.function">
+      <path value="Procedure.performer.function"></path>
+      <short value="Type of performance"></short>
+      <definition value="Distinguishes the type of involvement of the performer in the procedure. For example, surgeon, anaesthetist, endoscopist."></definition>
+      <requirements value="Allows disambiguation of the types of involvement of different performers."></requirements>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.performer.function"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="ProcedurePerformerRole"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value="A code that identifies the role of a performer of the procedure."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/performer-role"></valueset>
+      </binding>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.performer.function"></map>
+      </mapping>
+      <mapping>
+        <identity value="v2"></identity>
+        <map value="Some combination of STF-18 / PRA-3 / PRT-4 / ROL-3 / ORC-12 / OBR-16 / PV1-7 / PV1-8 / PV1-9 / PV1-17 / OBX-25"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".functionCode"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.performer.actor">
+      <path value="Procedure.performer.actor"></path>
+      <short value="The reference to the practitioner"></short>
+      <definition value="The practitioner who was involved in the procedure."></definition>
+      <requirements value="A reference to Device supports use cases, such as pacemakers."></requirements>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.performer.actor"></path>
+        <min value="1"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Practitioner"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Organization"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Patient"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Device"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.performer.actor"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.actor"></map>
+      </mapping>
+      <mapping>
+        <identity value="v2"></identity>
+        <map value="ORC-19/PRT-5"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".role"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.performer.onBehalfOf">
+      <path value="Procedure.performer.onBehalfOf"></path>
+      <short value="Organization the device or practitioner was acting for"></short>
+      <definition value="The organization the device or practitioner was acting on behalf of."></definition>
+      <requirements value="Practitioners and Devices can be associated with multiple organizations.  This element indicates which organization they were acting on behalf of when performing the action."></requirements>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.performer.onBehalfOf"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Organization"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".scoper"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.location">
+      <path value="Procedure.location"></path>
+      <short value="Where the procedure happened"></short>
+      <definition value="The location where the procedure actually happened.  E.g. a newborn at home, a tracheostomy at a restaurant."></definition>
+      <requirements value="Ties a procedure to where the records are likely kept."></requirements>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.location"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Location"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <mustsupport value="true"></mustsupport>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.where[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".participation[typeCode=LOC].role[classCode=SDLOC]"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.reasonCode">
+      <path value="Procedure.reasonCode"></path>
+      <short value="Coded reason procedure performed"></short>
+      <definition value="The coded reason why the procedure was performed. This may be a coded entity of some type, or may simply be present as text."></definition>
+      <comment value="Use Procedure.reasonCode when a code sufficiently describes the reason.  Use Procedure.reasonReference when referencing a resource, which allows more information to be conveyed, such as onset date. Procedure.reasonCode and Procedure.reasonReference are not meant to be duplicative.  For a single reason, either Procedure.reasonCode or Procedure.reasonReference can be used.  Procedure.reasonCode may be a summary code, or Procedure.reasonReference may be used to reference a very precise definition of the reason using Condition | Observation | Procedure | DiagnosticReport | DocumentReference.  Both Procedure.reasonCode and Procedure.reasonReference can be used if they are describing different reasons for the procedure."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.reasonCode"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="ProcedureReason"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value="A code that identifies the reason a procedure is  required."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/procedure-reason"></valueset>
+      </binding>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.reasonCode"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.why[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".reasonCode"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.reasonReference">
+      <path value="Procedure.reasonReference"></path>
+      <short value="The justification that the procedure was performed"></short>
+      <definition value="The justification of why the procedure was performed."></definition>
+      <comment value="It is possible for a procedure to be a reason (such as C-Section) for another procedure (such as an epidural). Other examples include endoscopy for dilatation and biopsy (a combination of diagnostic and therapeutic use). 
+Use Procedure.reasonCode when a code sufficiently describes the reason.  Use Procedure.reasonReference when referencing a resource, which allows more information to be conveyed, such as onset date. Procedure.reasonCode and Procedure.reasonReference are not meant to be duplicative.  For a single reason, either Procedure.reasonCode or Procedure.reasonReference can be used.  Procedure.reasonCode may be a summary code, or Procedure.reasonReference may be used to reference a very precise definition of the reason using Condition | Observation | Procedure | DiagnosticReport | DocumentReference.  Both Procedure.reasonCode and Procedure.reasonReference can be used if they are describing different reasons for the procedure."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.reasonReference"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Condition"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Observation"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Procedure"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.reasonReference"></map>
+      </mapping>
+      <mapping>
+        <identity value="w5"></identity>
+        <map value="FiveWs.why[x]"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".reasonCode"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.bodySite">
+      <path value="Procedure.bodySite"></path>
+      <short value="Target body sites"></short>
+      <definition value="Detailed and structured anatomical location information. Multiple locations are allowed - e.g. multiple punch biopsies of a lesion."></definition>
+      <comment value="If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [procedure-targetbodystructure](http://hl7.org/fhir/R4/extension-procedure-targetbodystructure.html)."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.bodySite"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="BodySite"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value="Codes describing anatomical locations. May include laterality."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/body-site"></valueset>
+      </binding>
+      <mapping>
+        <identity value="v2"></identity>
+        <map value="OBX-20"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".targetSiteCode"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.outcome">
+      <path value="Procedure.outcome"></path>
+      <short value="The result of procedure"></short>
+      <definition value="The outcome of the procedure - did it resolve the reasons for the procedure being performed?"></definition>
+      <comment value="If outcome contains narrative text only, it can be captured using the CodeableConcept.text."></comment>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.outcome"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="true"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="ProcedureOutcome"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value="An outcome of a procedure - whether it was resolved or otherwise."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/procedure-outcome"></valueset>
+      </binding>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".outboundRelationship[typeCode=OUT].target.text"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.report">
+      <path value="Procedure.report"></path>
+      <short value="Any report resulting from the procedure"></short>
+      <definition value="This could be a histology result, pathology report, surgical report, etc."></definition>
+      <comment value="There could potentially be multiple reports - e.g. if this was a procedure which took multiple biopsies resulting in a number of anatomical pathology reports."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.report"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Composition"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN]"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.complication">
+      <path value="Procedure.complication"></path>
+      <short value="Complication following the procedure"></short>
+      <definition value="Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure itself rather than any 'post procedure' issues."></definition>
+      <comment value="If complications are only expressed by the narrative text, they can be captured using the CodeableConcept.text."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.complication"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="ProcedureComplication"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value="Codes describing complications that resulted from a procedure."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/condition-code"></valueset>
+      </binding>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value='.outboundRelationship[typeCode=OUTC].target[classCode=OBS, code="complication", moodCode=EVN].value'></map>
+      </mapping>
+    </element>
+    <element id="Procedure.complicationDetail">
+      <path value="Procedure.complicationDetail"></path>
+      <short value="A condition that is a result of the procedure"></short>
+      <definition value="Any complications that occurred during the procedure, or in the immediate post-performance period."></definition>
+      <requirements value="This is used to document a condition that is a result of the procedure, not the condition that was the reason for the procedure."></requirements>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.complicationDetail"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Condition"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value='.outboundRelationship[typeCode=OUTC].target[classCode=OBS, code="complication", moodCode=EVN].value'></map>
+      </mapping>
+    </element>
+    <element id="Procedure.followUp">
+      <path value="Procedure.followUp"></path>
+      <short value="Instructions for follow up"></short>
+      <definition value="If the procedure required specific follow up - e.g. removal of sutures. The follow up may be represented as a simple note or could potentially be more complex, in which case the CarePlan resource can be used."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.followUp"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="ProcedureFollowUp"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value="Specific follow up required for a procedure e.g. removal of sutures."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/procedure-followup"></valueset>
+      </binding>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".outboundRelationship[typeCode=COMP].target[classCode=ACT, moodCode=INT].code"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.note">
+      <path value="Procedure.note"></path>
+      <short value="Additional information about the procedure"></short>
+      <definition value="Any other notes and comments about the procedure."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.note"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Annotation"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="workflow"></identity>
+        <map value="Event.note"></map>
+      </mapping>
+      <mapping>
+        <identity value="v2"></identity>
+        <map value="NTE"></map>
+      </mapping>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value='.inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code="annotation"].value'></map>
+      </mapping>
+    </element>
+    <element id="Procedure.focalDevice">
+      <path value="Procedure.focalDevice"></path>
+      <short value="Manipulated, implanted, or removed device"></short>
+      <definition value="A device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound-vac, etc.) as a focal portion of the Procedure."></definition>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.focalDevice"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="BackboneElement"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".participation[typeCode=DEV].role[classCode=MANU]"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.focalDevice.id">
+      <path value="Procedure.focalDevice.id"></path>
+      <representation value="xmlAttr"></representation>
+      <short value="Unique id for inter-element referencing"></short>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Element.id"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueurl value="string"></valueurl>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"></code>
+      </type>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.focalDevice.extension">
+      <path value="Procedure.focalDevice.extension"></path>
+      <short value="Additional content defined by implementations"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Element.extension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="n/a"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.focalDevice.modifierExtension">
+      <path value="Procedure.focalDevice.modifierExtension"></path>
+      <short value="Extensions that cannot be ignored even if unrecognized"></short>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."></definition>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."></requirements>
+      <alias value="extensions"></alias>
+      <alias value="user content"></alias>
+      <alias value="modifiers"></alias>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="BackboneElement.modifierExtension"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Extension"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <constraint>
+        <key value="ext-1"></key>
+        <severity value="error"></severity>
+        <human value="Must have either extensions or value[x], not both"></human>
+        <expression value="extension.exists() != value.exists()"></expression>
+        <xpath value='exists(f:extension)!=exists(f:*[starts-with(local-name(.), "value")])'></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+      </constraint>
+      <ismodifier value="true"></ismodifier>
+      <ismodifierreason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"></ismodifierreason>
+      <issummary value="true"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="N/A"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.focalDevice.action">
+      <path value="Procedure.focalDevice.action"></path>
+      <short value="Kind of change to device"></short>
+      <definition value="The kind of change that happened to the device during the procedure."></definition>
+      <min value="0"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.focalDevice.action"></path>
+        <min value="0"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="DeviceActionKind"></valuestring>
+        </extension>
+        <strength value="preferred"></strength>
+        <description value="A kind of change that happened to the device during the procedure."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/device-action"></valueset>
+      </binding>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value='.inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code="procedure device action"].value=:procedure device action codes'></map>
+      </mapping>
+    </element>
+    <element id="Procedure.focalDevice.manipulated">
+      <path value="Procedure.focalDevice.manipulated"></path>
+      <short value="Device that was changed"></short>
+      <definition value="The device that was manipulated (changed) during the procedure."></definition>
+      <min value="1"></min>
+      <max value="1"></max>
+      <base>
+        <path value="Procedure.focalDevice.manipulated"></path>
+        <min value="1"></min>
+        <max value="1"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Device"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".participation[typeCode=DEV].role[classCode=SDLOC]"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.usedReference">
+      <path value="Procedure.usedReference"></path>
+      <short value="Items used during procedure"></short>
+      <definition value="Identifies medications, devices and any other substance used as part of the procedure."></definition>
+      <comment value="For devices actually implanted or removed, use Procedure.device."></comment>
+      <requirements value="Used for tracking contamination, etc."></requirements>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.usedReference"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="Reference"></code>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Device"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Medication"></targetprofile>
+        <targetprofile value="http://hl7.org/fhir/StructureDefinition/Substance"></targetprofile>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value=".participation[typeCode=DEV].role[classCode=MANU] or
+.participation[typeCode=CSM].role[classCode=ADMM] (for Medication or Substance)"></map>
+      </mapping>
+    </element>
+    <element id="Procedure.usedCode">
+      <path value="Procedure.usedCode"></path>
+      <short value="Coded items used during the procedure"></short>
+      <definition value="Identifies coded items that were used as part of the procedure."></definition>
+      <comment value="For devices actually implanted or removed, use Procedure.device."></comment>
+      <min value="0"></min>
+      <max value="*"></max>
+      <base>
+        <path value="Procedure.usedCode"></path>
+        <min value="0"></min>
+        <max value="*"></max>
+      
+      <type>
+        <code value="CodeableConcept"></code>
+      </type>
+      <constraint>
+        <key value="ele-1"></key>
+        <severity value="error"></severity>
+        <human value="All FHIR elements must have a @value or children"></human>
+        <expression value="hasValue() or (children().count() &gt; id.count())"></expression>
+        <xpath value="@value|f:*|h:div"></xpath>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"></source>
+      </constraint>
+      <ismodifier value="false"></ismodifier>
+      <issummary value="false"></issummary>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valuestring value="ProcedureUsed"></valuestring>
+        </extension>
+        <strength value="example"></strength>
+        <description value="Codes describing items used during a procedure."></description>
+        <valueset value="http://hl7.org/fhir/ValueSet/device-kind"></valueset>
+      </binding>
+      <mapping>
+        <identity value="rim"></identity>
+        <map value="participation[typeCode=Dev].role[classCode=MANU]"></map>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Procedure">
+      <path value="Procedure"></path>
+    </element>
+    <element id="Procedure.id">
+      <path value="Procedure.id"></path>
+      <min value="1"></min>
+    </element>
+    <element id="Procedure.meta.extension:link-received-date-extension">
+      <path value="Procedure.meta.extension"></path>
+      <slicename value="link-received-date-extension"></slicename>
+      <min value="0"></min>
+      <max value="1"></max>
+      <type>
+        <code value="Extension"></code>
+        <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension"></profile>
+      </type>
+    </element>
+    <element id="Procedure.encounter">
+      <path value="Procedure.encounter"></path>
+      <mustsupport value="true"></mustsupport>
+    </element>
+    <element id="Procedure.location">
+      <path value="Procedure.location"></path>
+      <mustsupport value="true"></mustsupport>
+    </element>
+  </differential>
+</structuredefinition></body>
+</html>

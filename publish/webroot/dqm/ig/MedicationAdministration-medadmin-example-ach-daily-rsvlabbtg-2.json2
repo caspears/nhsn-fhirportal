@@ -1,0 +1,47 @@
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "medadmin-example-ach-daily-rsvlabbtg-2",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-daily-rsvlabbtg-2</b></p><a name=\"medadmin-example-ach-daily-rsvlabbtg-2\"> </a><a name=\"hcmedadmin-example-ach-daily-rsvlabbtg-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-medicationadministration.html\">ACH Daily Event Medication Administration</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"Medication-medication-example-ach-daily-rsvlabbtg-2.html\">Nasal Saline spray</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily, RSVLabBTG</a></p><p><b>effective</b>: 2024-01-01 12:30:00+0000 --&gt; 2024-01-02 17:30:09+0000</p><p><b>request</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-2.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Nasal Saline spray; authoredOn = 2024-01-01 11:45:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>Nasal Saline spray, one spray each nostril QID</td><td><span title=\"Codes:{http://snomed.info/sct 46713006}\">Nasal use</span></td><td>1 U<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeU = 'U')</span></td></tr></table></div>"
+  },
+  "status" : "completed",
+  "medicationReference" : {
+    "extension" : [{
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+      "valueString" : "Medication/eZeW55xkBH0DrR0Xj004fNid0iluLJl6nT2adScy2TI9SbXSOBJPdED7Qjms.Fj48j0.MQxtisgjhubwnqaIImzMAo7axKzx4khlfA7xEkUU3"
+    }],
+    "reference" : "Medication/medication-example-ach-daily-rsvlabbtg-2",
+    "display" : "Nasal Saline spray"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+    "display" : "ACHDaily, RSVLabBTG"
+  },
+  "effectivePeriod" : {
+    "start" : "2024-01-01T12:30:00Z",
+    "end" : "2024-01-02T17:30:09Z"
+  },
+  "request" : {
+    "reference" : "MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-2"
+  },
+  "dosage" : {
+    "text" : "Nasal Saline spray, one spray each nostril QID",
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "46713006",
+        "display" : "Nasal use"
+      }]
+    },
+    "dose" : {
+      "value" : 1,
+      "unit" : "U",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "U"
+    }
+  }
+}

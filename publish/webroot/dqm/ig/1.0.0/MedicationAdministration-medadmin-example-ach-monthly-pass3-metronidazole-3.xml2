@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="medadmin-example-ach-monthly-pass3-metronidazole-3"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass3-metronidazole-3</b></p><a name="medadmin-example-ach-monthly-pass3-metronidazole-3"> </a><a name="hcmedadmin-example-ach-monthly-pass3-metronidazole-3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/1018888323 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-metronidazole.html">Metronidazole 500 MG</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Short Stay</a></p><p><b>effective</b>: 2024-02-03 09:09:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888832 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Metronidazole 500 MG; authoredOn = 2024-02-01 20:33:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>5mg tablet by mouth twice daily</td><td><span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+    <value value="1018888323"/>
+  </identifier>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+      <code value="inpatient"/>
+      <display value="Inpatient"/>
+    </coding>
+    <text value="Inpatient Medication"/>
+  </category>
+  <medicationReference>
+    <reference value="Medication/medication-example-metronidazole"/>
+    <display value="Metronidazole 500 MG"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass3"/>
+    <display value="Pass2 ACH"/>
+  </subject>
+  <context>
+    <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+    <display value="Short Stay"/>
+  </context>
+  <effectiveDateTime value="2024-02-03T09:09:00-05:00"/>
+  <request>
+    <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole"/>
+  </request>
+  <dosage>
+    <text value="5mg tablet by mouth twice daily"/>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral Use"/>
+      </coding>
+      <text value="Oral"/>
+    </route>
+    <dose>
+      <value value="5"/>
+      <unit value="mg"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg"/>
+    </dose>
+  </dosage>
+</MedicationAdministration>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="medication-example-ach-daily-rsvlabbtg-1"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medication"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication medication-example-ach-daily-rsvlabbtg-1</b></p><a name="medication-example-ach-daily-rsvlabbtg-1"> </a><a name="hcmedication-example-ach-daily-rsvlabbtg-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-medication.html">ACH Daily Event Medication</a></p></div><p><b>Original Resource ID</b>: eZeW55xkBH0DrR0Xj004fNlA99h1sjXKwuhGs.PNpjjUi.Dh2-U-oGW0c9xZjPn2b29S.YZMgFiH.76i57tFS1PARcjzOMkC6TPHQQXiH6vA3</p><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 2108389}">Ribavirin inhalation solution 6g/vial via nebulizer</span></p><p><b>status</b>: Active</p><p><b>form</b>: <span title="Codes:{http://snomed.info/sct 385198000}">Nebulizer solution</span></p><h3>Ingredients</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 2108389}">Ribavirin inhalation solution 6g/vial via nebulizer</span></td><td>6 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span>/6 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span></td></tr></table></div>
+  </text>
+  <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension">
+    <valueString value="eZeW55xkBH0DrR0Xj004fNlA99h1sjXKwuhGs.PNpjjUi.Dh2-U-oGW0c9xZjPn2b29S.YZMgFiH.76i57tFS1PARcjzOMkC6TPHQQXiH6vA3"/>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="2108389"/>
+    </coding>
+    <text value="Ribavirin inhalation solution 6g/vial via nebulizer"/>
+  </code>
+  <status value="active"/>
+  <form>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="385198000"/>
+      <display value="Conventional release solution for nebuliser"/>
+    </coding>
+    <text value="Nebulizer solution"/>
+  </form>
+  <ingredient>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="2108389"/>
+      </coding>
+      <text value="Ribavirin inhalation solution 6g/vial via nebulizer"/>
+    </itemCodeableConcept>
+    <strength>
+      <numerator>
+        <value value="6"/>
+        <unit value="g"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="g"/>
+      </numerator>
+      <denominator>
+        <value value="6"/>
+        <unit value="g"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="g"/>
+      </denominator>
+    </strength>
+  </ingredient>
+</Medication>

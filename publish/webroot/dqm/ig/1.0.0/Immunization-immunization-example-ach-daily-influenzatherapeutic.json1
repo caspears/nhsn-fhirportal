@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Immunization",
+  "id" : "immunization-example-ach-daily-influenzatherapeutic",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization immunization-example-ach-daily-influenzatherapeutic</b></p><a name=\"immunization-example-ach-daily-influenzatherapeutic\"> </a><a name=\"hcimmunization-example-ach-daily-influenzatherapeutic\"> </a><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">URI</a>/urn:oid:1.3.6.1.4.1.21367.2005.3.7.1234</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{urn:oid:1.2.36.1.2001.1005.17 FLUVAX}\">Fluvax</span></p><p><b>patient</b>: <a href=\"Patient-patient-example-ach-daily-influenzatherapeutic.html\">ACHDaily InfluenzaTherapeutic(official) Male, DoB: 2020-02-29 ( MRN:\u00a01000009001\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-influenzatherapeutic.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987\u00a0(use:\u00a0usual,\u00a0); status = finished; class = Inpatient Acute (ActCode[9.0.0]#ACUTE); type = Emergency hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-04 12:00:00+0000; reasonCode = Fever with chills</a></p><p><b>occurrence</b>: 2024-01-02</p><p><b>primarySource</b>: true</p><p><b>lotNumber</b>: AAJN11K</p><p><b>expirationDate</b>: 2025-02-15</p><p><b>doseQuantity</b>: 5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p><p><b>note</b>: </p><blockquote><div><p>Notes on administration of vaccine</p>\n</div></blockquote><p><b>isSubpotent</b>: true</p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.21367.2005.3.7.1234"
+  }],
+  "status" : "completed",
+  "vaccineCode" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.36.1.2001.1005.17",
+      "code" : "FLUVAX"
+    }],
+    "text" : "Fluvax"
+  },
+  "patient" : {
+    "reference" : "Patient/patient-example-ach-daily-influenzatherapeutic"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example-ach-daily-influenzatherapeutic"
+  },
+  "occurrenceDateTime" : "2024-01-02",
+  "primarySource" : true,
+  "lotNumber" : "AAJN11K",
+  "expirationDate" : "2025-02-15",
+  "doseQuantity" : {
+    "value" : 5,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mg"
+  },
+  "note" : [{
+    "text" : "Notes on administration of vaccine"
+  }],
+  "isSubpotent" : true
+}

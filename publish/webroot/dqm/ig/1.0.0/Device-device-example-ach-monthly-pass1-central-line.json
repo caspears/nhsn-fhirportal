@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Device",
+  "id" : "device-example-ach-monthly-pass1-central-line",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-example-ach-monthly-pass1-central-line</b></p><a name=\"device-example-ach-monthly-pass1-central-line\"> </a><a name=\"hcdevice-example-ach-monthly-pass1-central-line\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-device.html\">ACH Monthly Event Device</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/1000510341\u00a0(use:\u00a0usual,\u00a0)</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 52124006}\">Central venous catheter, device</span></p><p><b>patient</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+    "value" : "1000510341"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "52124006",
+      "display" : "Central venous catheter, device (physical object)"
+    }],
+    "text" : "Central venous catheter, device"
+  },
+  "patient" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass1",
+    "display" : "Pass1 ACH"
+  }
+}

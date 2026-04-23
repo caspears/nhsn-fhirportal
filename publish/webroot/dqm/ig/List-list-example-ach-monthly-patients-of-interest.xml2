@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<List xmlns="http://hl7.org/fhir">
+  <id value="list-example-ach-monthly-patients-of-interest"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/poi-list"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: List list-example-ach-monthly-patients-of-interest</b></p><a name="list-example-ach-monthly-patients-of-interest"> </a><a name="hclist-example-ach-monthly-patients-of-interest"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-poi-list.html">Patients-Of-Interest List</a></p></div><table class="clstu"><tr><td>Date: 2021-07-28 00:00:00+0000 </td><td>Mode: Change List </td><td>Status: Current </td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr><tr><td><a href="Patient-patient-example-ach-monthly-pass1.html">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN: 1601191901010308 (use: usual, ))</a></td></tr><tr><td><a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</a></td></tr><tr><td><a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</a></td></tr></table></div>
+  </text>
+  <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-patient-list-applicable-period-extension">
+    <valuePeriod>
+      <start value="2021-07-28T00:00:00Z"/>
+      <end value="2021-08-28T00:00:00Z"/>
+    </valuePeriod>
+  </extension>
+  <identifier>
+    <system value="https://nhsnlink.org"/>
+    <value value="NHSNdQMAcuteCareHospitalMonthlyInitialPopulation"/>
+  </identifier>
+  <status value="current"/>
+  <mode value="changes"/>
+  <date value="2021-07-28T00:00:00Z"/>
+  <entry>
+    <item>
+      <reference value="Patient/patient-example-ach-monthly-pass1"/>
+    </item>
+  </entry>
+  <entry>
+    <item>
+      <reference value="Patient/patient-example-ach-monthly-pass2"/>
+    </item>
+  </entry>
+  <entry>
+    <item>
+      <reference value="Patient/patient-example-ach-monthly-pass3"/>
+    </item>
+  </entry>
+</List>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="medication-example-cipro-500"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication medication-example-cipro-500</b></p><a name="medication-example-cipro-500"> </a><a name="hcmedication-example-cipro-500"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medication.html">ACH Monthly Event Medication</a></p></div><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 328287}">Ciprofloxacin 500 MG</span></p><p><b>status</b>: Active</p><p><b>form</b>: <span title="Codes:{http://snomed.info/sct 385060002}">Extended-release tablet</span></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="328287"/>
+      <display value="ciprofloxacin 500 MG"/>
+    </coding>
+    <text value="Ciprofloxacin 500 MG"/>
+  </code>
+  <status value="active"/>
+  <form>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="385060002"/>
+      <display value="Prolonged-release oral tablet (dose form)"/>
+    </coding>
+    <text value="Extended-release tablet"/>
+  </form>
+</Medication>

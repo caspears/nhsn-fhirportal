@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="encounter-example-ach-daily-initialpopulationpass-2"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example-ach-daily-initialpopulationpass-2</b></p><a name="encounter-example-ach-daily-initialpopulationpass-2"> </a><a name="hcencounter-example-ach-daily-initialpopulationpass-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-encounter.html">ACH Daily Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/123456789987 (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">ActCode IMP</a>: inpatient encounter (version = 9.0.0 )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 24882007}">Medical consultation on hospital inpatient</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>period</b>: 2024-01-14 08:00:00+0000 --&gt; 2024-01-22 12:00:00+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 230145002}">Difficulty breathing</span></p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/admit-source other}">Direct admit</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition snf}">To skilled nursing unit</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-location-example-ach-daily-inpatient.html">Inpatient Hospital Ward</a></td><td>2024-01-14 09:00:00+0000 --&gt; 2024-01-22 12:00:00+0000</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+    <value value="123456789987"/>
+  </identifier>
+  <status value="finished">
+    <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension">
+      <valueString value="TRIAGED"/>
+    </extension>
+  </status>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <version value="9.0.0"/>
+    <code value="IMP"/>
+    <display value="inpatient encounter"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="24882007"/>
+      <display value="Medical consultation on hospital inpatient"/>
+    </coding>
+    <text value="Medical consultation on hospital inpatient"/>
+  </type>
+  <subject>
+    <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+    <display value="ACHDaily, InitialPopulationPass"/>
+  </subject>
+  <period>
+    <start value="2024-01-14T08:00:00Z"/>
+    <end value="2024-01-22T12:00:00Z"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="230145002"/>
+      <display value="Difficulty breathing"/>
+    </coding>
+    <text value="Difficulty breathing"/>
+  </reasonCode>
+  <hospitalization>
+    <admitSource>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+        <code value="other"/>
+        <display value="Other"/>
+      </coding>
+      <text value="Direct admit"/>
+    </admitSource>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+        <code value="snf"/>
+        <display value="Skilled nursing facility"/>
+      </coding>
+      <text value="To skilled nursing unit"/>
+    </dischargeDisposition>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/location-example-ach-daily-inpatient"/>
+      <display value="Inpatient Hospital Ward"/>
+    </location>
+    <period>
+      <start value="2024-01-14T09:00:00Z"/>
+      <end value="2024-01-22T12:00:00Z"/>
+    </period>
+  </location>
+</Encounter>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="location-example-ach-daily-emergency"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location location-example-ach-daily-emergency</b></p><a name="location-example-ach-daily-emergency"> </a><a name="hclocation-example-ach-daily-emergency"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-location.html">ACH Daily Event Location</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.6869</code>/100001090 (use: usual, )</p><p><b>name</b>: EMERGENCY - PAVILION</p><p><b>alias</b>: ED, EDPAV</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title="Codes:{https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html 1108-0}">Emergency Department</span></p><p><b>telecom</b>: ph: 916-734-3790, fax: 916-703-6549</p><p><b>address</b>: 2315 Stockton Boulevard Sacramento CALIFORNIA 95817-2201 </p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.6869"/>
+    <value value="100001090"/>
+  </identifier>
+  <name value="EMERGENCY - PAVILION"/>
+  <alias value="ED"/>
+  <alias value="EDPAV"/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"/>
+      <code value="1108-0"/>
+      <display value="Emergency Department"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="916-734-3790"/>
+    <rank value="1"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="916-703-6549"/>
+  </telecom>
+  <address>
+    <line value="2315 Stockton Boulevard"/>
+    <city value="Sacramento"/>
+    <state value="CALIFORNIA"/>
+    <postalCode value="95817-2201"/>
+  </address>
+</Location>

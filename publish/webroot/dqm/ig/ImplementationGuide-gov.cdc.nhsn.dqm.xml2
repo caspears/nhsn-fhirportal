@@ -1,0 +1,3346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="gov.cdc.nhsn.dqm"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide gov.cdc.nhsn.dqm</b></p><a name="gov.cdc.nhsn.dqm"> </a><a name="hcgov.cdc.nhsn.dqm"> </a><h2>NHSNMeasures</h2><p>The official URL for this implementation guide is: </p><pre>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm</pre><div><p>This content describes the specifications for the for the Health Level Seven International® (HL7) Fast Healthcare Interoperability Resources® (FHIR) digital quality measures (dQMs) reported to the National Healthcare Safety Network (NHSN).</p>
+</div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm"/>
+  <version value="1.0.0"/>
+  <name value="NHSNMeasures"/>
+  <title value="CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG"/>
+  <status value="active"/>
+  <date value="2025-06-24"/>
+  <publisher value="CDC National Healthcare Safety Network (NHSN)"/>
+  <contact>
+    <name value="CDC National Healthcare Safety Network (NHSN)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cdc.gov/nhsn"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="nhsn@cdc.gov"/>
+    </telecom>
+  </contact>
+  <description value="This content describes the specifications for the for the Health Level Seven International® (HL7) Fast Healthcare Interoperability Resources® (FHIR) digital quality measures (dQMs) reported to the National Healthcare Safety Network (NHSN)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="gov.cdc.nhsn.dqm"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.5.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="uscore">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.1"/>
+  </dependsOn>
+  <dependsOn id="cqf">
+    <uri value="http://fhir.org/guides/cqf/common/ImplementationGuide/fhir.cqf.common"/>
+    <packageId value="fhir.cqf.common"/>
+    <version value="4.0.1"/>
+  </dependsOn>
+  <dependsOn id="cqfm">
+    <uri value="http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures"/>
+    <packageId value="hl7.fhir.us.cqfmeasures"/>
+    <version value="3.0.0"/>
+  </dependsOn>
+  <dependsOn id="deqm">
+    <uri value="http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"/>
+    <packageId value="hl7.fhir.us.davinci-deqm"/>
+    <version value="3.1.0"/>
+  </dependsOn>
+  <dependsOn id="qicore">
+    <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <version value="4.1.1"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Release 1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../exp-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="templates\liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludemap"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="default-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="default-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="default-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url-base"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/5.0"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url-base"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/us/davinci-deqm"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url-base"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://fhir.org/guides/cqf/common/Library/FHIRCommon"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://fhir.org/guides/cqf/common/Library/FHIRHelpers"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.8.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Release 1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../exp-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="templates\liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludemap"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="default-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="default-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="default-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url-base"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/5.0"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url-base"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/us/davinci-deqm"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url-base"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://fhir.org/guides/cqf/common/Library/FHIRCommon"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://fhir.org/guides/cqf/common/Library/FHIRHelpers"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ach-daily-diagnostic-report-status"/>
+      </reference>
+      <name value="ACH Daily Diagnostic Report Status ValueSet"/>
+      <description value="A set of codes indicating the status of the diagnostic report."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ach-daily-encounter-class"/>
+      </reference>
+      <name value="ACH Daily Encounter Class ValueSet"/>
+      <description value="A set of codes indicating the encounter class that represent inpatient, observation and short stay concepts."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ach-daily-encounter-status"/>
+      </reference>
+      <name value="ACH Daily Encounter Status ValueSet"/>
+      <description value="A set of codes indicating the status of the encounter."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-diagnosticreport-lab"/>
+      </reference>
+      <name value="ACH Daily Event Diagnostic Report (Lab)"/>
+      <description value="This profile contains Required and Must Support data elements for reporting diagnostic report lab information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Diagnostic Report - Lab Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-diagnosticreport-lab.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-encounter"/>
+      </reference>
+      <name value="ACH Daily Event Encounter"/>
+      <description value="This profile contains Required and Must Support data elements for reporting encounter information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Encounter Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-encounter.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-observation-lab"/>
+      </reference>
+      <name value="ACH Daily Event Lab Result Observation"/>
+      <description value="This profile contains Required and Must Support data elements for reporting COVID-19, Influenza, and Respiratory Syncytial Virus (RSV) Daily laboratory result information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Laboratory Result Observation Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-observation-lab.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-location"/>
+      </reference>
+      <name value="ACH Daily Event Location"/>
+      <description value="This profile contains Required and Must Support data elements for reporting location information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Location Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-location.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-medication"/>
+      </reference>
+      <name value="ACH Daily Event Medication"/>
+      <description value="This profile contains Required and Must Support data elements for reporting medication information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Medication Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-medication.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-medicationadministration"/>
+      </reference>
+      <name value="ACH Daily Event Medication Administration"/>
+      <description value="This profile contains Required and Must Support data elements for reporting medication administration information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR R4 MedicationAdministration Resource v4.0.1](http://hl7.org/fhir/R4/medicationadministration.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-medicationrequest"/>
+      </reference>
+      <name value="ACH Daily Event Medication Request"/>
+      <description value="This profile contains Required and Must Support data elements for reporting medication request (order) information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core MedicationRequest Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-medicationrequest.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-observation"/>
+      </reference>
+      <name value="ACH Daily Event Observation"/>
+      <description value="This profile contains Required and Must Support data elements for reporting observation information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR® R4 Observation Resource v4.0.1](https://hl7.org/fhir/R4/observation.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-procedure"/>
+      </reference>
+      <name value="ACH Daily Event Procedure"/>
+      <description value="This profile contains Required and Must Support data elements for reporting transmission-based precaution procedure information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Procedure Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-procedure.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-servicerequest"/>
+      </reference>
+      <name value="ACH Daily Event ServiceRequest"/>
+      <description value="This profile contains Required and Must Support data elements for reporting COVID-19, Influenza, and Respiratory Syncytial Virus (RSV) laboratory order information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR R4 ServiceRequest Resource v4.0.1](http://hl7.org/fhir/R4/servicerequest.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-daily-specimen"/>
+      </reference>
+      <name value="ACH Daily Event Specimen"/>
+      <description value="This profile contains Required and Must Support data elements for reporting COVID-19, Influenza, and Respiratory Syncytial Virus (RSV) specimen information for the NHSN Acute Care Hospital (ACH) Daily Digital Quality Measure. This profile is based on the [HL7 FHIR R4 Specimen Resource v4.0.1](http://hl7.org/fhir/R4/specimen.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ach-monthly-encounter-class"/>
+      </reference>
+      <name value="ACH Monthly Encounter Class ValueSet"/>
+      <description value="A set of codes indicating the encounter class that represent inpatient, emergency, observation and short stay concepts."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ach-monthly-encounter-status"/>
+      </reference>
+      <name value="ACH Monthly Encounter Status ValueSet"/>
+      <description value="A set of codes indicating the status of the encounter."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-condition"/>
+      </reference>
+      <name value="ACH Monthly Event Condition"/>
+      <description value="This profile contains Required and Must Support data elements for reporting patient condition information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Condition Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-condition.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-coverage"/>
+      </reference>
+      <name value="ACH Monthly Event Coverage"/>
+      <description value="This profile contains Required and Must Support data elements for reporting coverage information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® R4 Coverage Profile v4.0.1](http://hl7.org/fhir/R4/coverage.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-device"/>
+      </reference>
+      <name value="ACH Monthly Event Device"/>
+      <description value="This profile contains Required and Must Support data elements for reporting device information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile covers both implantable and other types of devices and is based on the [HL7 FHIR® R4 Device Resource v4.0.1](https://hl7.org/fhir/R4/device.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-diagnosticreport-lab"/>
+      </reference>
+      <name value="ACH Monthly Event Diagnostic Report (Lab)"/>
+      <description value="This profile contains Required and Must Support data elements for reporting diagnostic report lab information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Diagnostic Report - Lab Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-diagnosticreport-lab.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-diagnosticreport-note"/>
+      </reference>
+      <name value="ACH Monthly Event Diagnostic Report - Report and Note"/>
+      <description value="This profile contains Required and Must Support data elements for reporting diagnostic report- report and note information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Diagnostic Report - Report and Note Exchange](https://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-diagnosticreport-note.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-encounter"/>
+      </reference>
+      <name value="ACH Monthly Event Encounter"/>
+      <description value="This profile contains Required and Must Support data elements for reporting encounter information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Encounter Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-encounter.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-diagnosticreport"/>
+      </reference>
+      <name value="ACH Monthly Event General Diagnostic Report"/>
+      <description value="This profile contains Required and Must Support data elements for reporting general diagnostic report information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® R4 DiagnosticReport Resource v4.0.1](https://hl7.org/fhir/R4/diagnosticreport.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-observation-lab"/>
+      </reference>
+      <name value="ACH Monthly Event Lab Result Observation"/>
+      <description value="This profile contains Required and Must Support data elements for reporting laboratory result information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Lab Observation Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-observation-lab.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-location"/>
+      </reference>
+      <name value="ACH Monthly Event Location"/>
+      <description value="This profile contains Required and Must Support data elements for reporting location information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Location Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-location.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-medication"/>
+      </reference>
+      <name value="ACH Monthly Event Medication"/>
+      <description value="This profile contains Required and Must Support data elements for reporting medication information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Medication Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-medication.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-medicationadministration"/>
+      </reference>
+      <name value="ACH Monthly Event MedicationAdministration"/>
+      <description value="This profile contains Required and Must Support data elements for reporting medication administration information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® R4 MedicationAdministration Resource v4.0.1](http://hl7.org/fhir/R4/medicationadministration.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-medicationrequest"/>
+      </reference>
+      <name value="ACH Monthly Event MedicationRequest"/>
+      <description value="This profile contains Required and Must Support data elements for reporting medication request (order) information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core MedicationRequest Profile v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-medicationrequest.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-observation"/>
+      </reference>
+      <name value="ACH Monthly Event Observation"/>
+      <description value="This profile contains Required and Must Support data elements for reporting observation information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® R4 Observation Resource v4.0.1](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-observation-lab.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-observation-vitals"/>
+      </reference>
+      <name value="ACH Monthly Event Observation - Vital Signs"/>
+      <description value="This profile contains Required and Must Support data elements for reporting observation-vital signs information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® R4 Observation Vital Signs Profile v4.0.1](https://hl7.org/fhir/R4/vitalsigns.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-procedure"/>
+      </reference>
+      <name value="ACH Monthly Event Procedure"/>
+      <description value="This profile contains Required and Must Support data elements for reporting procedure information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® US Core Procedure Profile v3.1.1](http://hl7.org/fhir/R4/servicerequest.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-servicerequest"/>
+      </reference>
+      <name value="ACH Monthly Event ServiceRequest"/>
+      <description value="This profile contains Required and Must Support data elements for reporting order information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® R4 ServiceRequest Profile v4.0.1](http://hl7.org/fhir/R4/servicerequest.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ach-monthly-specimen"/>
+      </reference>
+      <name value="ACH Monthly Event Specimen"/>
+      <description value="This profile contains Required and Must Support data elements for reporting specimen information to the NHSN Acute Care Hospital (ACH) Monthly Digital Quality Measure. This profile is based on the [HL7 FHIR® R4 Specimen Profile v4.0.1](http://hl7.org/fhir/R4/specimen.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example-diagnosis-ach-daily-influenzatherapeutic"/>
+      </reference>
+      <name value="Condition - ACH Daily Condition Example Influenza Therapeutic"/>
+      <description value="Condition - Example ACH Daily Condition Influenza Therapeutic"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example-diagnosis-ach-daily-initialpopulationpass"/>
+      </reference>
+      <name value="Condition - ACH Daily Condition Example Initial Population Pass"/>
+      <description value="Condition - Example ACH Daily Condition Initial Population Pass"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example-diagnosis-ach-daily-negativepcr"/>
+      </reference>
+      <name value="Condition - ACH Daily Condition Example Negative PCR"/>
+      <description value="Condition - Example ACH Daily Condition Negative PCR"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example-diagnosis-ach-daily-rsvlabbtg"/>
+      </reference>
+      <name value="Condition - ACH Daily Condition Example RSV Lab BTG"/>
+      <description value="Condition - Example ACH Daily Condition RSV Lab BTG"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example-diagnosis-ach-monthly-pass1"/>
+      </reference>
+      <name value="Condition - Example Diagnosis ACH Monthly Pass1"/>
+      <description value="Condition - Example Diagnosis ACH Monthly Pass1 - Encounter Diagnosis: Bacteremia"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example-diagnosis-ach-monthly-pass2"/>
+      </reference>
+      <name value="Condition - Example Diagnosis ACH Monthly Pass2"/>
+      <description value="Condition - Example Diagnosis ACH Monthly Pass2 - Encounter Diagnosis: Thrombophlebitis of deep femoral vein"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example-diagnosis-ach-monthly-pass2-problem"/>
+      </reference>
+      <name value="Condition - Example Diagnosis ACH Monthly Pass2 Problem"/>
+      <description value="Condition - Example Diagnosis ACH Monthly Pass2 - Problem List: Type 2 diabetes mellitus without complications"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example-diagnosis-ach-monthly-pass3"/>
+      </reference>
+      <name value="Condition - Example Diagnosis ACH Monthly Pass3"/>
+      <description value="Condition - Example Diagnosis ACH Monthly Pass3 - Encounter Diagnosis: Enterocolitis due to Clostridium difficile"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example-diagnosis-ach-monthly-pass3-problem"/>
+      </reference>
+      <name value="Condition - Example Diagnosis ACH Monthly Pass3 Problem"/>
+      <description value="Condition - Example Diagnosis ACH Monthly Pass3 - Problem List: Acute sinusitis"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/coverage-example-ach-daily-influenzatherapeutic"/>
+      </reference>
+      <name value="Coverage - ACH Daily Condition Example Influenza Therapeutic"/>
+      <description value="Coverage - Example ACH Daily Condition Influenza Therapeutic"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/coverage-example-ach-daily-initialpopulationpass"/>
+      </reference>
+      <name value="Coverage - ACH Daily Condition Example Initial Population Pass"/>
+      <description value="Coverage - Example ACH Daily Condition Initial Population Pass"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/coverage-example-ach-daily-negativepcr"/>
+      </reference>
+      <name value="Coverage - ACH Daily Condition Example Negative PCR"/>
+      <description value="Coverage - Example ACH Daily Condition Negative PCR"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/coverage-example-ach-daily-rsvlabbtg"/>
+      </reference>
+      <name value="Coverage - ACH Daily Condition Example RSV Lab BTG"/>
+      <description value="Coverage - Example ACH Daily Condition RSV Lab BTG"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/coverage-example-ach-monthly-pass1"/>
+      </reference>
+      <name value="Coverage - Example ACH Monthly Pass1"/>
+      <description value="Coverage - Example ACH Monthly Pass1 - Medicaid: Child Beneficiary"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/coverage-example-ach-monthly-pass2"/>
+      </reference>
+      <name value="Coverage - Example ACH Monthly Pass2"/>
+      <description value="Coverage - Example ACH Monthly Pass2 - Commercial HMO"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/coverage-example-ach-monthly-pass3"/>
+      </reference>
+      <name value="Coverage - Example ACH Monthly Pass3"/>
+      <description value="Coverage - Example ACH Monthly Pass3 - Commercial PPO"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/cqf-tooling"/>
+      </reference>
+      <name value="cqf-tooling"/>
+      <description value="Device - Software System Example"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cross-measure-patient"/>
+      </reference>
+      <name value="Cross-Measure Patient Profile"/>
+      <description value="This profile contains NHSN-specific Required and Must-Support elements for reporting Patient information on public-health surveillance measures to [NHSN](https://www.cdc.gov/nhsn/index.html).&#xD;&#xA;&#xD;&#xA;This profile is based on [US Core Patient 3.1.1](https://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html). &#xD;&#xA;&#xD;&#xA;NHSN only recognizes the data element 'sex', with male and female as the only accepted responses. These data are mapped from either the patient.extension (birthsex), or patient.gender FHIR standard data elements. These two FHIR standard data elements provide male/female options, per US Core 3.1.1.  &#xD;&#xA;&#xD;&#xA;For data submitted for patient.gender, and/or patient.extension (birthsex) that do not align with male or female, NHSN will label those responses as not reported. As national standards update, this resource will also be updated."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/device-example-ach-monthly-pass1-central-line"/>
+      </reference>
+      <name value="Device - Example ACH Monthly Pass1 Central Line"/>
+      <description value="Device - Example ACH Monthly Pass1 - Central venous catheter"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/device-example-ach-monthly-pass2-compress-hose"/>
+      </reference>
+      <name value="Device - Example ACH Monthly Pass2 Compress Hose"/>
+      <description value="Device - Example ACH Monthly Pass2 - Graduated compression elastic hosiery"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/device-example-ach-monthly-pass3-ivcs-pump"/>
+      </reference>
+      <name value="Device - Example ACH Monthly Pass3 Ivcs Pump"/>
+      <description value="Device - Example ACH Monthly Pass3 - Intermittent venous compression system pump"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/device-example-submitting-device"/>
+      </reference>
+      <name value="Device - Example Submitting Device 1"/>
+      <description value="Device - Submitting Device Example 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submitting-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnosticreport-example-ach-daily-initialpopulationpass"/>
+      </reference>
+      <name value="DiagnosticReport - Example ACH Daily - Initial Population Pass"/>
+      <description value="DiagnosticReport - Example ACH Daily - Initial Population Pass"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-diagnosticreport-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnosticreport-example-ach-monthly-pass2-lab-cbc"/>
+      </reference>
+      <name value="DiagnosticReport - Example ACH Monthly Initial Population Pass"/>
+      <description value="DiagnosticReport - Example Initial Population Pass - CBC panel - Blood by Automated count"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnosticreport-example-ach-monthly-pass2-cardiopulmonary"/>
+      </reference>
+      <name value="DiagnosticReport - Example ACH Monthly Pass2 Cardiopulmonary"/>
+      <description value="DiagnosticReport - Example ACH Monthly Pass2 - Cardiovascular stress testing"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnosticreport-example-ach-monthly-pass2-radiology"/>
+      </reference>
+      <name value="DiagnosticReport - Example ACH Monthly Pass2 Radiology"/>
+      <description value="DiagnosticReport - Example ACH Monthly Pass2 - Ultrasonography of right lower limb"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-note"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-daily-influenzatherapeutic"/>
+      </reference>
+      <name value="Encounter - ACH Daily Encounter Example Influenza Therapeutic"/>
+      <description value="Encounter - Example ACH Daily Encounter Influenza Therapeutic"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-daily-initialpopulationpass-1"/>
+      </reference>
+      <name value="Encounter - ACH Daily Encounter Example Initial Population Pass 1"/>
+      <description value="Encounter - Example ACH Daily Encounter Initial Population Pass 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-daily-initialpopulationpass-2"/>
+      </reference>
+      <name value="Encounter - ACH Daily Encounter Example Initial Population Pass 2"/>
+      <description value="Encounter - Example ACH Daily Encounter Initial Population Pass 2"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-daily-negativepcr-1"/>
+      </reference>
+      <name value="Encounter - ACH Daily Encounter Example Negative PCR 1"/>
+      <description value="Encounter - Example ACH Daily Encounter Negative PCR 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-daily-negativepcr-2"/>
+      </reference>
+      <name value="Encounter - ACH Daily Encounter Example Negative PCR 2"/>
+      <description value="Encounter - Example ACH Daily Encounter Negative PCR 2"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-daily-rsvlabbtg"/>
+      </reference>
+      <name value="Encounter - ACH Daily Encounter Example RSV Lab BTG"/>
+      <description value="Encounter - Example ACH Daily Encounter RSV Lab BTG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-monthly-pass1"/>
+      </reference>
+      <name value="Encounter - Example ACH Monthly Pass1 - Inpatient"/>
+      <description value="Encounter - Example ACH Monthly Pass1 - Hospital Admission"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-monthly-pass2-emergency"/>
+      </reference>
+      <name value="Encounter - Example ACH Monthly Pass2 - Emergency"/>
+      <description value="Encounter - Example ACH Monthly Pass2 - Emergency department visit"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+      </reference>
+      <name value="Encounter - Example ACH Monthly Pass2 - Inpatient"/>
+      <description value="Encounter - Example ACH Monthly Pass2 - Hospital admission"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-monthly-pass3-acute"/>
+      </reference>
+      <name value="Encounter - Example ACH Monthly Pass3 - Acute"/>
+      <description value="Encounter - Example ACH Monthly Pass3 - Acute critical care visit"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+      </reference>
+      <name value="Encounter - Example ACH Monthly Pass3 - Short Stay"/>
+      <description value="Encounter - Example ACH Monthly Pass3 - Hospital admission short stay"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example-ach-daily-header"/>
+      </reference>
+      <name value="Example ACH Daily Submission Header Bundle"/>
+      <description value="Example Separated ACH Daily Submission Header Bundle"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submission-header-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example-ach-daily-subject-influenzatherapeutic"/>
+      </reference>
+      <name value="Example ACH Daily Submission Influenza Therapeutic Bundle"/>
+      <description value="Example Separated ACH Daily Submission Influenza Therapeutic Bundle"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example-ach-daily-subject-initialpopulationpass"/>
+      </reference>
+      <name value="Example ACH Daily Submission Initial Population Pass Bundle"/>
+      <description value="Example Separated ACH Daily Submission Initial Population Pass Bundle"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example-ach-daily-subject-negativepcr"/>
+      </reference>
+      <name value="Example ACH Daily Submission Negative PCR Bundle"/>
+      <description value="Example Separated ACH Daily Submission Negative PCR Bundle"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example-ach-daily-subject-rsvlabbtg"/>
+      </reference>
+      <name value="Example ACH Daily Submission RSV Lab BTG Bundle"/>
+      <description value="Example Separated ACH Daily Submission RSV Lab BTG Bundle"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example-ach-monthly-header"/>
+      </reference>
+      <name value="Example ACH Monthly Submission Header Bundle"/>
+      <description value="Example Separated ACH Monthly Submission Header Bundle"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submission-header-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example-ach-monthly-subject-ach-pass1"/>
+      </reference>
+      <name value="Example ACH Monthly Submission Subject Bundle 1"/>
+      <description value="Example Separated ACH Monthly Submission Subject Bundle 1 for LOS/MEN"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example-ach-monthly-subject-ach-pass2"/>
+      </reference>
+      <name value="Example ACH Monthly Submission Subject Bundle 2"/>
+      <description value="Example Separated ACH Monthly Submission Subject Bundle 2 for Hypoglycemia and VTE"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example-ach-monthly-subject-ach-pass3"/>
+      </reference>
+      <name value="Example ACH Monthly Submission Subject Bundle 3"/>
+      <description value="Example Separated ACH Monthly Submission Subject Bundle 3 for CDI and VTE"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/FHIRHelpers"/>
+      </reference>
+      <name value="FHIR Helpers"/>
+      <description value="This library defines functions to convert between FHIR data types and CQL system-defined types, as well as functions to support FHIRPath implementation. For more information, the FHIRHelpers wiki page: https://github.com/cqframework/clinical_quality_language/wiki/FHIRHelpers. This locally defined version includes modifications from the original library."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example-ach-daily-full"/>
+      </reference>
+      <name value="Full ACH Daily Measure Submission Bundle"/>
+      <description value="Measure Bundle - Full ACH Daily Measure Submission Example"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-measurereport-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/submission-full-example1"/>
+      </reference>
+      <name value="Full ACH Monthly Measure Submission Bundle"/>
+      <description value="Measure Bundle - Full ACH Monthly Measure Submission Bundle"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-measurereport-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/immunization-example-ach-daily-influenzatherapeutic"/>
+      </reference>
+      <name value="Immunization - ACH Daily Immunization Example Influenza Therapeutic"/>
+      <description value="Immunization - Example ACH Daily Immunization Influenza Therapeutic"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/lab-observation-example-ach-daily-initialpopulationpass"/>
+      </reference>
+      <name value="Lab Observation - ACH Daily Observation Example Initial Population Pass"/>
+      <description value="Lab Observation - Example ACH Daily Observation Initial Population Pass"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/lab-observation-example-ach-daily-negativepcr-1"/>
+      </reference>
+      <name value="Lab Observation - ACH Daily Observation Example Negative PCR 1"/>
+      <description value="Lab Observation - Example ACH Daily Observation Negative PCR 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/lab-observation-example-ach-daily-negativepcr-2"/>
+      </reference>
+      <name value="Lab Observation - ACH Daily Observation Example Negative PCR 2"/>
+      <description value="Lab Observation - Example ACH Daily Observation Negative PCR 2"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/lab-observation-example-ach-daily-rsvlabbtg"/>
+      </reference>
+      <name value="Lab Observation - ACH Daily Observation Example RSV Lab BTG"/>
+      <description value="Lab Observation - Example ACH Daily Observation RSV Lab BTG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/list-example-ach-daily-individual-measurereport-list"/>
+      </reference>
+      <name value="List - Example ACH Daily Individual Measure Report List"/>
+      <description value="List - Example ACH Daily Individual Measure Report List Example"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ip-measurereport-list"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/list-example-ach-daily-patients-of-interest"/>
+      </reference>
+      <name value="List - Example ACH Daily Patients Of Interest"/>
+      <description value="List - Example ACH Daily Patients Of Interest"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/poi-list"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/list-example-ach-monthly-individual-measurereport-list"/>
+      </reference>
+      <name value="List - Example ACH Monthly Individual Measure Report List"/>
+      <description value="List - Example ACH Monthly Individual Measure Report List Example"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ip-measurereport-list"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/list-example-ach-monthly-patients-of-interest"/>
+      </reference>
+      <name value="List - Example ACH Monthly Patients Of Interest"/>
+      <description value="List - Example ACH Monthly Patients Of Interest"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/poi-list"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/location-example-ach-monthly-crit-part"/>
+      </reference>
+      <name value="Location (part of)- Example ACH Monthly - Medical Critical Care"/>
+      <description value="Location (part of) - Example ACH Monthly - Medical Critical Care, demonstrating location that is part of another"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/location-example-ach-daily-emergency"/>
+      </reference>
+      <name value="Location - Example ACH Daily - Emergency"/>
+      <description value="Location - Example ACH Daily - Emergency Department Pavilion"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/location-example-ach-daily-hospital"/>
+      </reference>
+      <name value="Location - Example ACH Daily - Hospital"/>
+      <description value="Location - Example ACH Daily - Health Hospital"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/location-example-ach-daily-inpatient"/>
+      </reference>
+      <name value="Location - Example ACH Daily - Inpatient"/>
+      <description value="Location - Example ACH Daily - Inpatient Hospital Ward"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/location-example-ach-monthly-emergency"/>
+      </reference>
+      <name value="Location - Example ACH Monthly - Emergency"/>
+      <description value="Location - Example ACH Monthly - Emergency Department"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/location-example-ach-monthly-inpatient"/>
+      </reference>
+      <name value="Location - Example ACH Monthly - Inpatient"/>
+      <description value="Location - Example ACH Monthly - Inpatient Hospital Ward"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/location-example-ach-monthly-crit"/>
+      </reference>
+      <name value="Location - Example ACH Monthly - Medical Critical Care"/>
+      <description value="Location - Example ACH Monthly - Medical Critical Care"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/location-example-ach-monthly-medsurg"/>
+      </reference>
+      <name value="Location - Example ACH Monthly - Medsurg"/>
+      <description value="Location - Example ACH Monthly - Medical-Surgical Ward"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/location-example-ach-monthly-nicu-level-iii"/>
+      </reference>
+      <name value="Location - Example ACH Monthly - NICU"/>
+      <description value="Location - Example ACH Monthly - Neonatal Critical Care (Level III)"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-criteriaReference"/>
+      </reference>
+      <name value="Measure Report Criteria Reference"/>
+      <description value="Measure Report Criteria Reference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-MeasureReport.supplementalDataElement.reference"/>
+      </reference>
+      <name value="Measure Report Supplemental Data Element Reference (R5 surrogate extension)"/>
+      <description value="Measure Report Supplemental Data Element Reference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/measurereport-example-ach-daily-subjectlist"/>
+      </reference>
+      <name value="MeasureReport - Example ACH Daily Subject List"/>
+      <description value="Measure Report - Example ACH Daily Subject List Example"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/subjectlist-measurereport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/measurereport-example-ach-monthly-subjectlist1"/>
+      </reference>
+      <name value="MeasureReport - Example ACH Monthly Subject List 1"/>
+      <description value="Measure Report - Example ACH Monthly Subject List Example 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/subjectlist-measurereport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/measurereport-example-ach-daily-influenzatherapeutic"/>
+      </reference>
+      <name value="MeasureReport - Example Individual ACH Daily Influenza Therapeutic"/>
+      <description value="MeasureReport - Example Individual ACH Daily Influenza Therapeutic"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/measurereport-example-ach-daily-initialpopulationpass"/>
+      </reference>
+      <name value="MeasureReport - Example Individual ACH Daily Initial Population Pass"/>
+      <description value="MeasureReport - Example Individual ACH Daily Initial Population Pass"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/measurereport-example-ach-daily-negativepcr"/>
+      </reference>
+      <name value="MeasureReport - Example Individual ACH Daily Negative PCR"/>
+      <description value="MeasureReport - Example Individual ACH Daily Negative PCR"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/measurereport-example-ach-daily-rsvlabbtg"/>
+      </reference>
+      <name value="MeasureReport - Example Individual ACH Daily RSV Lab BTG"/>
+      <description value="MeasureReport - Example Individual ACH Daily RSV Lab BTG"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/measurereport-example-individual-ach-monthly-pass1"/>
+      </reference>
+      <name value="MeasureReport - Example Individual ACH Monthly Pass1 - LOS/MEN"/>
+      <description value="MeasureReport - Example Individual ACH Monthly Pass1 - Late Onset Sepsis and Meningitis (LOS/MEN)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/measurereport-example-individual-ach-monthly-pass2"/>
+      </reference>
+      <name value="MeasureReport - Example Individual ACH Monthly Pass2 - Hypo"/>
+      <description value="MeasureReport - Example Individual ACH Monthly Pass2 - Hypoglycemia"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/measurereport-example-individual-ach-monthly-pass3"/>
+      </reference>
+      <name value="MeasureReport - Example Individual ACH Monthly Pass3 - C. diff"/>
+      <description value="MeasureReport - Example Individual ACH Monthly Pass3 - Healthcare facility-onset, antibiotic-treated Clostridioides difficile infection / Hospital-onset bacteremia and fungemia (CDI/HOB)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-ach-daily-influenzatherapeutic"/>
+      </reference>
+      <name value="Medication - ACH Daily Medication Example Influenza Therapeutic"/>
+      <description value="Medication - Example ACH Daily Medication Influenza Therapeutic"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-ach-daily-initialpopulationpass"/>
+      </reference>
+      <name value="Medication - ACH Daily Medication Example Initial Population Pass"/>
+      <description value="Medication - Example ACH Daily Medication Initial Population Pass"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-ach-daily-negativepcr"/>
+      </reference>
+      <name value="Medication - ACH Daily Medication Example Negative PCR"/>
+      <description value="Medication - Example ACH Daily Medication Negative PCR"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-ach-daily-rsvlabbtg-1"/>
+      </reference>
+      <name value="Medication - ACH Daily Medication Example RSV Lab BTG 1"/>
+      <description value="Medication - Example ACH Daily Medication RSV Lab BTG 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-ach-daily-rsvlabbtg-2"/>
+      </reference>
+      <name value="Medication - ACH Daily Medication Example RSV Lab BTG 2"/>
+      <description value="Medication - Example ACH Daily Medication RSV Lab BTG 2"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-cipro-500"/>
+      </reference>
+      <name value="Medication - Example ACH Monthly Cipro 500"/>
+      <description value="Medication - Example ACH Monthly - Ciprofloxacin 500 MG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-dex4-tablet"/>
+      </reference>
+      <name value="Medication - Example ACH Monthly Dex4 Tablet"/>
+      <description value="Medication - Example ACH Monthly - Metformin hydrochloride 1000 MG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-enoxaparin"/>
+      </reference>
+      <name value="Medication - Example ACH Monthly Enoxaparin"/>
+      <description value="Medication - Example ACH Monthly - Enoxaparin sodium, 0.4 ML,  100 MG/ML Prefilled Syringe"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-heparin"/>
+      </reference>
+      <name value="Medication - Example ACH Monthly Heparin"/>
+      <description value="Medication - Example ACH Monthly - Heparin sodium, 0.5 ML, porcine 10000 UNT/ML Prefilled Syringe"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-insulin-lispro"/>
+      </reference>
+      <name value="Medication - Example ACH Monthly Insulin Lispro"/>
+      <description value="Medication - Example ACH Monthly - Insulin lispro"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-metformin-1000"/>
+      </reference>
+      <name value="Medication - Example ACH Monthly Metformin 1000"/>
+      <description value="Medication - Example ACH Monthly - Metformin hydrochloride 1000 MG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-metronidazole"/>
+      </reference>
+      <name value="Medication - Example ACH Monthly Metronidazole"/>
+      <description value="Medication - Example ACH Monthly - Metronidazole 500 MG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medication-example-vancomycin-15"/>
+      </reference>
+      <name value="Medication - Example ACH Monthly Vancomycin 15"/>
+      <description value="Medication - Example ACH Monthly - Vancomycin Injectable Solution"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-daily-influenzatherapeutic"/>
+      </reference>
+      <name value="Medication Administration - ACH Daily Medication Administration Example Influenza Therapeutic"/>
+      <description value="Medication Administration - Example ACH Daily Medication Administration Influenza Therapeutic"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-1"/>
+      </reference>
+      <name value="Medication Administration - ACH Daily Medication Administration Example Initial Population Pass 1"/>
+      <description value="Medication Administration - ACH Daily Medication Administration Example Initial Population Pass 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-2"/>
+      </reference>
+      <name value="Medication Administration - ACH Daily Medication Administration Example Initial Population Pass 2"/>
+      <description value="Medication Administration - Example ACH Daily Medication Administration Initial Population Pass 2"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-daily-negativepcr"/>
+      </reference>
+      <name value="Medication Administration - ACH Daily Medication Administration Example Negative PCR"/>
+      <description value="Medication Administration - Example ACH Daily Medication Administration Negative PCR"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-daily-rsvlabbtg-1"/>
+      </reference>
+      <name value="Medication Administration - ACH Daily Medication Administration Example RSV Lab BTG 1"/>
+      <description value="Medication Administration - Example ACH Daily Medication Administration RSV Lab BTG 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-daily-rsvlabbtg-2"/>
+      </reference>
+      <name value="Medication Administration - ACH Daily Medication Administration Example RSV Lab BTG 2"/>
+      <description value="Medication Administration - Example ACH Daily Medication Administration RSV Lab BTG 2"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-daily-influenzatherapeutic"/>
+      </reference>
+      <name value="Medication Request - ACH Daily Medication Request Example Influenza Therapeutic"/>
+      <description value="Medication Request - Example ACH Daily Medication Request Influenza Therapeutic"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-daily-initialpopulationpass"/>
+      </reference>
+      <name value="Medication Request - ACH Daily Medication Request Example Initial Population Pass"/>
+      <description value="Medication Request - Example ACH Daily Medication Request Initial Population Pass"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-daily-negativepcr"/>
+      </reference>
+      <name value="Medication Request - ACH Daily Medication Request Example Negative PCR"/>
+      <description value="Medication Request - Example ACH Daily Medication Request Negative PCR"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-1"/>
+      </reference>
+      <name value="Medication Request - ACH Daily Medication Request Example RSV Lab BTG 1"/>
+      <description value="Medication Request - Example ACH Daily Medication Request RSV Lab BTG 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-2"/>
+      </reference>
+      <name value="Medication Request - ACH Daily Medication Request Example RSV Lab BTG 2"/>
+      <description value="Medication Request - Example ACH Daily Medication Request RSV Lab BTG 2"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass1-vancomycin"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass1 Vancomycin"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass1 - Vancomycin Injectable Solution 50MG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-dex4"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass2 Dex4"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass2 - Dex4 4 gm chewable tablet X1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-heparin-1"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass2 Heparin 1"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass2 - heparin sodium, 0.5 ML, porcine 10000 UNT/ML Prefilled Syringe - First Encounter Administration"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-heparin-2"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass2 Heparin 2"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass2 - heparin sodium, 0.5 ML, porcine 10000 UNT/ML Prefilled Syringe - Second Encounter Administration"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-1"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass2 Insulin Lispro 1"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass2 - Insulin Lispro - First Encounter Administration"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-2"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass2 Insulin Lispro 2"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass2 - Insulin Lispro - Second Encounter Administration"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-3"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass2 Insulin Lispro 3"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass2 - Insulin Lispro - Third Encounter Administration"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-4"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass2 Insulin Lispro 4"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass2 Insulin Lispro 4"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-enoxaparin"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass3 Enoxaparin"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass3 - Enoxaparin sodium, 0.4 ML, 100 MG/ML Prefilled Syringe"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-1"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass3 Metronidazole 1"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass3 - Metronidazole 500 MG - First Encounter Administration"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-2"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass3 Metronidazole 2"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass3 - Metronidazole 500 MG - Second Encounter Administration"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-3"/>
+      </reference>
+      <name value="MedicationAdministration - Example ACH Monthly Pass3 Metronidazole 3"/>
+      <description value="MedicationAdministration - Example ACH Monthly Pass3 - Metronidazole 500 MG - Third Encounter Administration"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass1-vancomycin"/>
+      </reference>
+      <name value="MedicationRequest - Example ACH Monthly Pass1 Vancomycin"/>
+      <description value="MedicationRequest - Example ACH Monthly Pass1 - Vancomycin Injectable Solution 50MG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-dex4-tablet"/>
+      </reference>
+      <name value="MedicationRequest - Example ACH Monthly Pass2 Dex4 Tablet"/>
+      <description value="MedicationRequest - Example ACH Monthly Pass2 - Dex4 4 gm chewable tablet X1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-heparin"/>
+      </reference>
+      <name value="MedicationRequest - Example ACH Monthly Pass2 Heparin"/>
+      <description value="MedicationRequest - Example ACH Monthly Pass2 - heparin sodium, 0.5 ML, porcine 10000 UNT/ML Prefilled Syringe"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-insulin-lispro"/>
+      </reference>
+      <name value="MedicationRequest - Example ACH Monthly Pass2 Insulin Lispro"/>
+      <description value="MedicationRequest - Example ACH Monthly Pass2 - Insulin Lispro"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-metformin"/>
+      </reference>
+      <name value="MedicationRequest - Example ACH Monthly Pass2 Metformin"/>
+      <description value="MedicationRequest - Example ACH Monthly Pass2 - Metformin hydrochloride 1000 MG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-cipro"/>
+      </reference>
+      <name value="MedicationRequest - Example ACH Monthly Pass3 Cipro"/>
+      <description value="MedicationRequest - Example ACH Monthly Pass3 - Ciprofloxacin 500 MG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-enoxaparin"/>
+      </reference>
+      <name value="MedicationRequest - Example ACH Monthly Pass3 Enoxaparin"/>
+      <description value="MedicationRequest - Example ACH Monthly Pass3 - enoxaparin sodium, 0.4 ML,  100 MG/ML Prefilled Syringe"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole"/>
+      </reference>
+      <name value="MedicationRequest - Example ACH Monthly Pass3 Metronidazole"/>
+      <description value="MedicationRequest - Example ACH Monthly Pass3 - Metronidazole 500 MG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/NHSNAcuteCareHospitalDailyInitialPopulation"/>
+      </reference>
+      <name value="NHSN Acute Care Hospital Daily Initial Population Library"/>
+      <description value="Library of NHSN dQM Acute Care Hospital Daily Initial Population Measure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/NHSNAcuteCareHospitalMonthlyInitialPopulation"/>
+      </reference>
+      <name value="NHSN Acute Care Hospital Monthly Initial Population Library"/>
+      <description value="Library of NHSN dQM Acute Care Hospital Monthly Initial Population Measure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <reference>
+        <reference value="Measure/NHSNAcuteCareHospitalDailyInitialPopulation"/>
+      </reference>
+      <name value="NHSN dQM Acute Care Hospital Daily Initial Population Measure"/>
+      <description value="All encounters with an inpatient, observation, or short stay status for patients of any age during the measurement period."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <reference>
+        <reference value="Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation"/>
+      </reference>
+      <name value="NHSN dQM Acute Care Hospital Monthly Initial Population Measure"/>
+      <description value="The Acute Care Hospital Monthly Initial Population includes all encounters for patients of any age in an ED, observation, or inpatient location or all encounters for patients of any age with an ED, observation, inpatient, or short stay status during the measurement period."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/NHSNHelpers"/>
+      </reference>
+      <name value="NHSN Helpers"/>
+      <description value="This library defines functions to convert between FHIR data types and CQL system-defined types, as well as functions to support FHIRPath implementation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ip-measurereport-list"/>
+      </reference>
+      <name value="NHSN Individual MeasureReport List"/>
+      <description value="An Individual MeasureReport List contains references to all Individual MeasureReports for a given NHSN measure; each MeasureReport pertains to an individual patient within the Initial Population of a given measure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nhsn-measurereport-bundle"/>
+      </reference>
+      <name value="NHSN MeasureReport Bundle"/>
+      <description value="This profile defines a valid Submission Bundle to NHSN with all resources contained within. The Bundle is comprised of entry slices representing the data source Organization, a Patients of Interest (POI) List, one Subject List MeasureReport per reportable measure, an Individual MeasureReport List, individual MeasureReports, and the underlying patient-centric clinical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nhsn-subject-bundle"/>
+      </reference>
+      <name value="NHSN Subject Bundle"/>
+      <description value="This profile defines a valid subject-specific dQM Bundle. The Bundle is comprised of entry slices representing a Patient, individual MeasureReports, and the underlying patient-centric clinical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nhsn-submission-header-bundle"/>
+      </reference>
+      <name value="NHSN Submission Header Bundle"/>
+      <description value="This profile defines a valid Submission Header Bundle. The Bundle is comprised of entry slices representing a Patient, individual MeasureReports, and the underlying patient-centric clinical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nhsn-submitting-device"/>
+      </reference>
+      <name value="NHSN Submitting Device"/>
+      <description value="This profile includes the name and version of the device or software submitting the report Bundle, and may include other information about the device."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nhsn-submitting-organization"/>
+      </reference>
+      <name value="NHSN Submitting Organization"/>
+      <description value="This profile includes the name and identifier of the organization submitting the report Bundle, and may include other information about the organization."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-daily-initialpopulationpass-isolation"/>
+      </reference>
+      <name value="Observation - Example ACH Daily Initial Population Pass Isolation"/>
+      <description value="Observation - Example ACH Daily Initial Population Pass - Lab: Isolation"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass1-blood"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass1 Blood"/>
+      <description value="Observation - Example ACH Monthly Pass1 - Lab: Bacteria identified in Blood by Culture"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass1-csf"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass1 Csf"/>
+      <description value="Observation - Example ACH Monthly Pass1 - Lab: Serratia marcescens DNA in Specimen by NAA with probe detection"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass1-gestational-age"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass1 Gestational Age"/>
+      <description value="Observation - Example ACH Monthly Pass1 - Lab: Gestational age at birth"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass1-vitals-weight"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass1 Vitals Weight"/>
+      <description value="Observation - Example ACH Monthly Pass1 - Vitals Signs: Birth weight Measured"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass2-aptt"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass2 aPTT"/>
+      <description value="Observation - Example ACH Monthly Pass2 Lab: aPTT in Blood by Coagulation assay"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass2-hemo"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass2 Hemo"/>
+      <description value="Observation - Example ACH Monthly Pass2 - Lab: Bacteria identified in Blood by Culture"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass2-hemo-a1c"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass2 Hemo A1C"/>
+      <description value="Observation - Example ACH Monthly Pass2 Hemo - Lab: Glucose in Capillary blood by Glucometer"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass2-poc-1"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass2 Poc 1"/>
+      <description value="Observation - Example ACH Monthly Pass2 Lab: Glucose in Capillary blood by Glucometer - First Encounter Observation"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass2-poc-2"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass2 Poc 2"/>
+      <description value="Observation - Example ACH Monthly Pass2 Lab: Glucose in Capillary blood by Glucometer - Second Encounter Observation"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass2-vitals-weight"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass2 Vitals Weight"/>
+      <description value="Observation - Example ACH Monthly Pass2 Vitals Signs: Body weight"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass3-cdiff"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass3 C. diff"/>
+      <description value="Observation - Example ACH Monthly Pass3 - Lab: Clostridioides difficile (C. diff)"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass3-vitals-height"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass3 Vitals Height"/>
+      <description value="Observation - Example ACH Monthly Pass3 Vitals Signs: Body height"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ach-monthly-pass3-vitals-weight"/>
+      </reference>
+      <name value="Observation - Example ACH Monthly Pass3 Vitals Weight"/>
+      <description value="Observation - Example ACH Monthly Pass3 Vitals Signs: Body weight"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-example-submitting-organization"/>
+      </reference>
+      <name value="Organization - Example Submitting Organization 1"/>
+      <description value="Organization - Submitting Organization Example 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submitting-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/link-original-element-value-extension"/>
+      </reference>
+      <name value="Original Element Value"/>
+      <description value="This extension stores the original value of an element from a source that was modified by a processing system (e.g., NHSNLink) to make it usable for NHSN. Modification may include changing logically invalid data, changing data that does not match specification requirements (this modification is used sparingly, for specific instances only), or normalizing data."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/link-original-mapped-concept-extension"/>
+      </reference>
+      <name value="Original Mapped Concept"/>
+      <description value="This extension stores an original Concept that was mapped during processing."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/link-original-resource-id-extension"/>
+      </reference>
+      <name value="Original Resource ID"/>
+      <description value="This extension stores the original {Resource}.id of a source that was modified by a processing system (e.g. NHSNLink) to make it usable for NHSN when the original did not meet FHIR-standard requirements. Resource IDs that are more than 64 characters long are not valid per the FHIR specification and must be modified."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+      </reference>
+      <name value="Patient - ACH Daily Patient Example Influenza Therapeutic"/>
+      <description value="Patient - Example ACH Daily Patient Influenza Therapeutic"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+      </reference>
+      <name value="Patient - ACH Daily Patient Example Initial Population Pass"/>
+      <description value="Patient - Example ACH Daily Patient Initial Population Pass"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-ach-daily-negativepcr"/>
+      </reference>
+      <name value="Patient - ACH Daily Patient Example Negative PCR"/>
+      <description value="Patient - Example ACH Daily Patient Negative PCR"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-ach-daily-rsvlabbtg"/>
+      </reference>
+      <name value="Patient - ACH Daily Patient Example RSV Lab BTG"/>
+      <description value="Patient - Example ACH Daily Patient RSV Lab BTG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-ach-monthly-pass1"/>
+      </reference>
+      <name value="Patient - Example ACH Monthly Pass1 - LOS/MEN"/>
+      <description value="Patient - Example ACH Monthly Pass1 - Late Onset Sepsis and Meningitis (LOS/MEN)"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-ach-monthly-pass2"/>
+      </reference>
+      <name value="Patient - Example ACH Monthly Pass2 - Hypo"/>
+      <description value="Patient - Example ACH Monthly Pass2 - Hypoglycemia"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-ach-monthly-pass3"/>
+      </reference>
+      <name value="Patient - Example ACH Monthly Pass3 - CDI/HOB"/>
+      <description value="Patient - Example ACH Monthly Pass3 - Healthcare facility-onset, antibiotic-treated Clostridioides difficile infection / Hospital-onset bacteremia and fungemia (CDI/HOB)"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/link-patient-list-applicable-period-extension"/>
+      </reference>
+      <name value="Patient List Applicable Period"/>
+      <description value="An extension used to indicate the reporting period associated with the patients of interest List."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/poi-list"/>
+      </reference>
+      <name value="Patients-Of-Interest List"/>
+      <description value="A Patients of Interest List defines all individual Patients considered for inclusion in NHSN Measure reporting."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-example-ach-daily-negativepcr-intubation"/>
+      </reference>
+      <name value="Procedure - Example ACH Daily Negative PCR Intubation"/>
+      <description value="Procedure - Example ACH Daily Negative PCR - Intubation"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-example-ach-monthly-pass1-central-line"/>
+      </reference>
+      <name value="Procedure - Example ACH Monthly Pass1 Central Line"/>
+      <description value="Procedure - Example ACH Monthly Pass1 - Placement procedure"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-example-ach-monthly-pass1-lumbar"/>
+      </reference>
+      <name value="Procedure - Example ACH Monthly Pass1 Lumbar"/>
+      <description value="Procedure - Example ACH Monthly Pass1 - Drainage of Spinal Canal, Percutaneous Approach, Diagnostic"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-example-ach-monthly-pass2-ivcf"/>
+      </reference>
+      <name value="Procedure - Example ACH Monthly Pass2 IVCF"/>
+      <description value="Procedure - Example ACH Monthly Pass2 - Percutaneous insertion of inferior vena cava filter"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-example-ach-monthly-pass3-transfusion"/>
+      </reference>
+      <name value="Procedure - Example ACH Monthly Pass3 Transfusion"/>
+      <description value="Procedure - Example ACH Monthly Pass3 - Transfusion of red blood cells"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/link-received-date-extension"/>
+      </reference>
+      <name value="Received Date"/>
+      <description value="This extension stores the date and time a Resource was received by the processing system (e.g. NHSNLink)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-daily-initialpopulationpass-covid"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Daily Initial Population Pass COVID"/>
+      <description value="ServiceRequest - Example ACH Daily Initial Population Pass COVID"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-1"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Daily Negative PCR COVID 1"/>
+      <description value="ServiceRequest - Example ACH Daily Negative PCR COVID 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-2"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Daily Negative PCR COVID 2"/>
+      <description value="ServiceRequest - Example ACH Daily Negative PCR COVID 2"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-daily-rsvlabbtg-rsv"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Daily RSV Lab BTG"/>
+      <description value="ServiceRequest - Example ACH Daily RSV Lab BTG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass1-blood"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Monthly Pass1 Blood"/>
+      <description value="ServiceRequest - Example ACH Monthly Pass1 Blood"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass1-csf"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Monthly Pass1 CSF"/>
+      <description value="ServiceRequest - Example ACH Monthly Pass1 - Differential panel - Cerebral spinal fluid"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-aptt"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Monthly Pass2 aPTT"/>
+      <description value="ServiceRequest - Example ACH Monthly Pass2 - aPTT in Blood by Coagulation assay"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-glucose"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Monthly Pass2 Glucose"/>
+      <description value="ServiceRequest - Example ACH Monthly Pass2 - Glucose in Capillary blood by Glucometer"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Monthly Pass2 Hemo"/>
+      <description value="ServiceRequest - Example ACH Monthly Pass2 - Hemoglobin in Venous blood"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo-a1c"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Monthly Pass2 Hemo A1C"/>
+      <description value="ServiceRequest - Example ACH Monthly Pass2 Hemo - Hemoglobin A1c in Blood"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass3-cdiff"/>
+      </reference>
+      <name value="ServiceRequest - Example ACH Monthly Pass3 Cdiff"/>
+      <description value="ServiceRequest - Example ACH Monthly Pass3 - Clostridioides difficile toxin A in Stool by Immunoassay"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/SharedResourceCreation"/>
+      </reference>
+      <name value="Shared Resource Creation"/>
+      <description value="Shared Resource Creation Library"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen-example-ach-daily-initialpopulationpass"/>
+      </reference>
+      <name value="Specimen - ACH Daily Specimen Example Initial Population Pass"/>
+      <description value="Specimen - Example ACH Daily Specimen Initial Population Pass"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen-example-ach-daily-negativepcr-1"/>
+      </reference>
+      <name value="Specimen - ACH Daily Specimen Example Negative PCR 1"/>
+      <description value="Specimen - Example ACH Daily Specimen Negative PCR 1"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen-example-ach-daily-negativepcr-2"/>
+      </reference>
+      <name value="Specimen - ACH Daily Specimen Example Negative PCR 2"/>
+      <description value="Specimen - Example ACH Daily Specimen Negative PCR 2"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen-example-ach-daily-rsvlabbtg"/>
+      </reference>
+      <name value="Specimen - ACH Daily Specimen Example RSV Lab BTG"/>
+      <description value="Specimen - Example ACH Daily Specimen RSV Lab BTG"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen-example-ach-monthly-pass1-blood"/>
+      </reference>
+      <name value="Specimen - Example ACH Monthly Pass1 Blood"/>
+      <description value="Specimen - Example ACH Monthly Pass1 - Blood venous from heel"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen-example-ach-monthly-pass1-csf"/>
+      </reference>
+      <name value="Specimen - Example ACH Monthly Pass1 CSF"/>
+      <description value="Specimen - Example ACH Monthly Pass1 - Cerebral spinal fluid from superior articular process of lumbar vertebra"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-1"/>
+      </reference>
+      <name value="Specimen - Example ACH Monthly Pass2 Blood 1"/>
+      <description value="Specimen - Example ACH Monthly Pass2 - Blood venous from blood vessel of left upper arm - First encounter collection"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-2"/>
+      </reference>
+      <name value="Specimen - Example ACH Monthly Pass2 Blood 2"/>
+      <description value="Specimen - Example ACH Monthly Pass2 - Blood venous from blood vessel of left upper arm - Second encounter collection"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen-example-ach-monthly-pass3-stool"/>
+      </reference>
+      <name value="Specimen - Example ACH Monthly Pass3 Stool"/>
+      <description value="Specimen - Example ACH Monthly Pass3 - Bloody stool"/>
+      <exampleCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/subjectlist-measurereport"/>
+      </reference>
+      <name value="Subject-List MeasureReport Profile"/>
+      <description value="A Subject-List MeasureReport contains the count of subjects (i.e. patients) in the Initial Population. It also references the Individual MeasureReport List."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="informative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="NHSN Measures Home"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="use_cases.html"/>
+        </extension>
+        <nameUrl value="use_cases.html"/>
+        <title value="Actors and Use Cases"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="validation-pre-qualification.html"/>
+        </extension>
+        <nameUrl value="validation-pre-qualification.html"/>
+        <title value="Validation and Pre-Qualification"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specification.html"/>
+        </extension>
+        <nameUrl value="specification.html"/>
+        <title value="Specification"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="artifact-listing.html"/>
+        </extension>
+        <nameUrl value="artifact-listing.html"/>
+        <title value="Artifact Listing"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="license.html"/>
+        </extension>
+        <nameUrl value="license.html"/>
+        <title value="License"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ImplementationGuide-gov.cdc.nhsn.dqm.html"/>
+        </extension>
+        <nameUrl value="ImplementationGuide-gov.cdc.nhsn.dqm.html"/>
+        <title value="NHSN Implementation Guide Resource"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changes.html"/>
+        </extension>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/intro-notes"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources/device"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources/library"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources/measure"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

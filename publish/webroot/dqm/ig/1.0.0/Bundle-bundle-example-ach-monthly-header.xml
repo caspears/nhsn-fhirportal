@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-example-ach-monthly-header"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submission-header-bundle"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:1eaddf4c-2ec0-4dc4-b26f-9586d7a777e9"/>
+  </identifier>
+  <type value="collection"/>
+  <timestamp value="2024-02-05T21:04:29.481+00:00"/>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Organization/organization-example-submitting-organization"/>
+    <resource>
+      <Organization>
+        <id value="organization-example-submitting-organization"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submitting-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_organization-example-submitting-organization"> </a><p class="res-header-id"><b>Generated Narrative: Organization organization-example-submitting-organization</b></p><a name="organization-example-submitting-organization"> </a><a name="hcorganization-example-submitting-organization"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nhsn-submitting-organization.html">NHSN Submitting Organization</a></p></div><p><b>identifier</b>: <code>https://www.cdc.gov/nhsn/OrgID</code>/ExampleNHSNSubmitterOrgID</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></p><p><b>name</b>: Example NHSN Submitter</p><p><b>telecom</b>: ph: 5555555551</p><p><b>address</b>: </p></div>
+        </text>
+        <identifier>
+          <system value="https://www.cdc.gov/nhsn/OrgID"/>
+          <value value="ExampleNHSNSubmitterOrgID"/>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <code value="prov"/>
+            <display value="Healthcare Provider"/>
+          </coding>
+        </type>
+        <name value="Example NHSN Submitter"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="5555555551"/>
+          <rank value="1"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="unknown"/>
+          </extension>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Device/device-example-submitting-device"/>
+    <resource>
+      <Device>
+        <id value="device-example-submitting-device"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submitting-device"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Device_device-example-submitting-device"> </a><p class="res-header-id"><b>Generated Narrative: Device device-example-submitting-device</b></p><a name="device-example-submitting-device"> </a><a name="hcdevice-example-submitting-device"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nhsn-submitting-device.html">NHSN Submitting Device</a></p></div><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>NHSN Link</td><td>Model name</td></tr></table><blockquote><p><b>version</b></p><p><b>component</b>: api</p><p><b>value</b>: 0.9.0</p></blockquote><blockquote><p><b>version</b></p><p><b>component</b>: api</p><p><b>value</b>: 20230713.1</p></blockquote><blockquote><p><b>version</b></p><p><b>component</b>: api</p><p><b>value</b>: 3f9662a8</p></blockquote><blockquote><p><b>version</b></p><p><b>component</b>: cqf-ruler</p><p><b>value</b>: 0.13.0</p></blockquote></div>
+        </text>
+        <deviceName>
+          <name value="NHSN Link"/>
+          <type value="model-name"/>
+        </deviceName>
+        <version>
+          <component>
+            <value value="api"/>
+          </component>
+          <value value="0.9.0"/>
+        </version>
+        <version>
+          <component>
+            <value value="api"/>
+          </component>
+          <value value="20230713.1"/>
+        </version>
+        <version>
+          <component>
+            <value value="api"/>
+          </component>
+          <value value="3f9662a8"/>
+        </version>
+        <version>
+          <component>
+            <value value="cqf-ruler"/>
+          </component>
+          <value value="0.13.0"/>
+        </version>
+      </Device>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/List/list-example-ach-monthly-patients-of-interest"/>
+    <resource>
+      <List>
+        <id value="list-example-ach-monthly-patients-of-interest"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/poi-list"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="List_list-example-ach-monthly-patients-of-interest"> </a><p class="res-header-id"><b>Generated Narrative: List list-example-ach-monthly-patients-of-interest</b></p><a name="list-example-ach-monthly-patients-of-interest"> </a><a name="hclist-example-ach-monthly-patients-of-interest"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-poi-list.html">Patients-Of-Interest List</a></p></div><table class="clstu"><tr><td>Date: 2021-07-28 00:00:00+0000 </td><td>Mode: Change List </td><td>Status: Current </td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr><tr><td><a href="Patient-patient-example-ach-monthly-pass1.html">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN: 1601191901010308 (use: usual, ))</a></td></tr><tr><td><a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</a></td></tr><tr><td><a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</a></td></tr></table></div>
+        </text>
+        <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-patient-list-applicable-period-extension">
+          <valuePeriod>
+            <start value="2021-07-28T00:00:00Z"/>
+            <end value="2021-08-28T00:00:00Z"/>
+          </valuePeriod>
+        </extension>
+        <identifier>
+          <system value="https://nhsnlink.org"/>
+          <value value="NHSNdQMAcuteCareHospitalMonthlyInitialPopulation"/>
+        </identifier>
+        <status value="current"/>
+        <mode value="changes"/>
+        <date value="2021-07-28T00:00:00Z"/>
+        <entry>
+          <item>
+            <reference value="Patient/patient-example-ach-monthly-pass1"/>
+          </item>
+        </entry>
+        <entry>
+          <item>
+            <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          </item>
+        </entry>
+        <entry>
+          <item>
+            <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          </item>
+        </entry>
+      </List>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MeasureReport/measurereport-example-ach-monthly-subjectlist1"/>
+    <resource>
+      <MeasureReport>
+        <id value="measurereport-example-ach-monthly-subjectlist1"/>
+        <meta>
+          <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension">
+            <valueDateTime value="2023-05-23T06:07:08Z"/>
+          </extension>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/subjectlist-measurereport"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MeasureReport_measurereport-example-ach-monthly-subjectlist1"> </a><p class="res-header-id"><b>Generated Narrative: MeasureReport measurereport-example-ach-monthly-subjectlist1</b></p><a name="measurereport-example-ach-monthly-subjectlist1"> </a><a name="hcmeasurereport-example-ach-monthly-subjectlist1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-subjectlist-measurereport.html">Subject-List MeasureReport Profile</a></p></div><p><b>status</b>: Complete</p><p><b>type</b>: Subject List</p><p><b>measure</b>: <a href="Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.html">NHSN dQM Acute Care Hospital Monthly Initial Populationversion: null1.0.0)</a></p><p><b>period</b>: 2022-08-01 00:00:00+0000 --&gt; 2022-08-31 23:59:59+0000</p><blockquote><p><b>group</b></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td><td><b>SubjectResults</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></td><td>1</td><td><a href="#hcmeasurereport-example-ach-monthly-subjectlist1/list-example-ach-monthly-individual-measurereport-list">List for 'Unspecified List Type' for 'Unspecified Subject'</a></td></tr></table></blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: List #list-example-ach-monthly-individual-measurereport-list</b></p><a name="measurereport-example-ach-monthly-subjectlist1/list-example-ach-monthly-individual-measurereport-list"> </a><a name="hcmeasurereport-example-ach-monthly-subjectlist1/list-example-ach-monthly-individual-measurereport-list"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ip-measurereport-list.html">NHSN Individual MeasureReport List</a></p></div><table class="clstu"><tr><td>Mode: Snapshot List </td><td>Status: Current </td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr><tr><td><a href="MeasureReport-measurereport-example-individual-ach-monthly-pass1.html">MeasureReport: extension = Cohort,-&gt;Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN: 1601191901010308 (use: usual, )),-&gt;Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104251 (use: usual, ); status = in-progress; class = inpatient acute (ActCode[9.0.0]#ACUTE); type = Hospital admission (procedure); period = 2024-02-01 16:02:00-0500 --&gt; 2024-02-04 19:00:00-0500; reasonCode = Fever, unspecified,-&gt;Coverage: identifier = Member Number: 084536836; status = active; type = subsidized health program; subscriberId = 98435938934; relationship = Child; period = 2020-08-01 --&gt; (ongoing),-&gt;Condition Bacteremia (finding),-&gt;Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#1000510341 (use: usual, ); type = Central venous catheter, device (physical object),-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888111 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;vancomycin Injectable Solution 50MG; effective[x] = 2024-02-02 14:34:00-0500,-&gt;MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888811 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;vancomycin Injectable Solution 50MG; authoredOn = 2024-02-02 13:43:00-0500,-&gt;Observation Bacteria identified in Blood by Culture,-&gt;Observation Serratia marcescens DNA [Presence] in Specimen by NAA with probe detection,-&gt;Observation Gestational age--at birth,-&gt;Observation Body weight,-&gt;Procedure Placement procedure (procedure),-&gt;Procedure Drainage of Spinal Canal, Percutaneous Approach, Diagnostic,-&gt;ServiceRequest Bacteria identified in Blood by Culture,-&gt;ServiceRequest Differential panel - Cerebral spinal fluid,-&gt;Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082901,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:41; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500,-&gt;Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Cerebrospinal fluid specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500; identifier = http://example.org/fhir/measurereport/id#123456789-pass1; status = complete; type = individual; measure = http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation|1.0.0-cibuild; date = 2024-02-05 21:04:29+0000; period = 2024-01-05 00:00:00+0000 --&gt; 2024-02-04 00:00:00+0000; improvementNotation = Increased score indicates improvement</a></td></tr><tr><td><a href="MeasureReport-measurereport-example-individual-ach-monthly-pass2.html">MeasureReport: extension = Cohort,-&gt;Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, )),-&gt;Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104252a (use: usual, ); status = triaged; class = emergency (ActCode[9.0.0]#EMER); type = Emergency department patient visit; period = 2024-01-31 02:35:00-0500 --&gt; 2024-01-31 22:02:00-0500; reasonCode = Pain in right lower leg,-&gt;Encounter: extension = eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3; identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104252b (use: usual, ); status = finished; class = inpatient encounter (ActCode[9.0.0]#IMP); type = Hospital admission (procedure); period = 2024-01-31 22:02:00-0500 --&gt; 2024-02-02 16:22:00-0500,-&gt;Coverage: identifier = Member Number: 93565936; status = active; type = health maintenance organization policy; subscriberId = 89345743; relationship = Self,-&gt;Condition Diabetes mellitus type 2 (disorder),-&gt;Condition Thrombophlebitis of deep femoral vein (disorder),-&gt;Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#100051034 (use: usual, ); type = Graduated compression elastic hosiery (physical object),-&gt;Diagnostic Report for 'Doppler ultrasonography of vascular structure of right lower limb (procedure)' for '-&gt;Pass2 ACH',-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888893 (use: usual, ); status = completed; category = Outpatient; medication[x] = -&gt;Dex4 4 gm chewable tablet X1; effective[x] = 2024-01-31 04:54:00-0500,-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; effective[x] = 2024-02-01 12:22:00-0500,-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; effective[x] = 2024-02-02 13:26:00-0500,-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888942 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-01 12:00:00-0500,-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888943 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-01 19:00:00-0500,-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888944 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-02 07:00:00-0500,-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888945 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-02 15:00:00-0500,-&gt;MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892 (use: usual, ); status = active; intent = plan; category = Outpatient; reported[x] = true; medication[x] = -&gt;Dex4 4 gm chewable tablet X1; authoredOn = 2024-01-31 04:46:00-0500,-&gt;MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; authoredOn = 2024-02-01 12:00:00-0500,-&gt;MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888894 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Insulin Lispro; authoredOn = 2024-02-01 12:00:00-0500,-&gt;MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892 (use: usual, ); status = active; intent = plan; category = Community; reported[x] = true; medication[x] = -&gt;Metformin hydrochloride 1000 MG; authoredOn = 2024-01-31 04:22:00-0500,-&gt;Observation aPTT in Blood by Coagulation assay,-&gt;Observation Glucose [Mass/volume] in Capillary blood by Glucometer,-&gt;Observation Glucose [Mass/volume] in Capillary blood by Glucometer,-&gt;Observation Hemoglobin A1c/Hemoglobin.total in Blood,-&gt;Observation Bacteria identified in Blood by Culture,-&gt;Observation Body weight,-&gt;Procedure Percutaneous insertion of inferior vena cava filter (procedure),-&gt;ServiceRequest aPTT in Blood by Coagulation assay,-&gt;ServiceRequest Glucose [Mass/volume] in Capillary blood by Glucometer,-&gt;ServiceRequest Hemoglobin A1c [Mass/volume] in Blood,-&gt;ServiceRequest Hemoglobin [Mass/volume] in Venous blood,-&gt;Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-01-31 22:50:00-0500,-&gt;Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 11:26:00-0500; identifier = http://example.org/fhir/measurereport/id#123456789-pass2; status = complete; type = individual; measure = http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation|1.0.0-cibuild; date = 2024-02-05 21:04:29+0000; period = 2024-01-05 00:00:00+0000 --&gt; 2024-02-04 00:00:00+0000; improvementNotation = Increased score indicates improvement</a></td></tr><tr><td><a href="MeasureReport-measurereport-example-individual-ach-monthly-pass3.html">MeasureReport: extension = Cohort,-&gt;Condition Acute sinusitis (disorder),-&gt;Condition Enterocolitis due to Clostridium difficile,-&gt;Coverage: identifier = Member Number: 0945345; status = active; type = preferred provider organization policy; subscriberId = 7843574536; relationship = Self,-&gt;Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#100051035 (use: usual, ); type = Intermittent venous compression system pump (physical object),-&gt;Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104253a (use: usual, ); status = finished; class = inpatient acute (ActCode[9.0.0]#ACUTE); type = In-person encounter; period = 2024-02-02 16:43:00-0500 --&gt; 2024-02-03 19:58:00-0500,-&gt;Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104253a (use: usual, ); status = in-progress; class = short stay (ActCode[9.0.0]#SS); type = Hospital admission, elective (procedure); period = 2024-02-01 14:12:00-0500 --&gt; 2024-02-02 16:43:00-0500; reasonCode = Diarrhea, unspecified,-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833 (use: usual, ); status = not-done; category = Inpatient; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; effective[x] = 2024-02-02 21:04:00-0500,-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888321 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-01 21:02:00-0500,-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888322 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-02 21:09:00-0500,-&gt;MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888323 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-03 09:09:00-0500,-&gt;MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892 (use: usual, ); status = active; intent = plan; category = Community; reported[x] = true; medication[x] = -&gt;Ciprofloxacin 500 MG; authoredOn = 2024-02-01 19:15:00-0500,-&gt;MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; authoredOn = 2024-02-02 12:21:00-0500,-&gt;MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888832 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Metronidazole 500 MG; authoredOn = 2024-02-01 20:33:00-0500,-&gt;Observation Clostridioides difficile (organism),-&gt;Observation Body height,-&gt;Observation Body weight,-&gt;Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, )),-&gt;Procedure Transfusion of red blood cells (procedure),-&gt;ServiceRequest Clostridioides difficile toxin A [Presence] in Stool by Immunoassay,-&gt;Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082905,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:45; type = Bloody stool specimen (specimen); receivedTime = 2024-02-01 19:12:00-0500; identifier = http://example.org/fhir/measurereport/id#123456789-pass3; status = complete; type = individual; measure = http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation|1.0.0-cibuild; date = 2024-02-05 21:04:29+0000; period = 2024-01-05 00:00:00+0000 --&gt; 2024-02-04 00:00:00+0000; improvementNotation = Increased score indicates improvement</a></td></tr></table></blockquote></div>
+        </text>
+        <contained>
+          <List>
+            <id value="list-example-ach-monthly-individual-measurereport-list"/>
+            <meta>
+              <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ip-measurereport-list"/>
+            </meta>
+            <status value="current"/>
+            <mode value="snapshot"/>
+            <entry>
+              <item>
+                <reference value="MeasureReport/measurereport-example-individual-ach-monthly-pass1"/>
+              </item>
+            </entry>
+            <entry>
+              <item>
+                <reference value="MeasureReport/measurereport-example-individual-ach-monthly-pass2"/>
+              </item>
+            </entry>
+            <entry>
+              <item>
+                <reference value="MeasureReport/measurereport-example-individual-ach-monthly-pass3"/>
+              </item>
+            </entry>
+          </List>
+        </contained>
+        <status value="complete"/>
+        <type value="subject-list"/>
+        <measure value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation|1.0.0-cibuild"/>
+        <period>
+          <start value="2022-08-01T00:00:00+00:00"/>
+          <end value="2022-08-31T23:59:59+00:00"/>
+        </period>
+        <group>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+                <display value="Initial Population"/>
+              </coding>
+            </code>
+            <count value="1"/>
+            <subjectResults>
+              <reference value="#list-example-ach-monthly-individual-measurereport-list"/>
+            </subjectResults>
+          </population>
+        </group>
+      </MeasureReport>
+    </resource>
+  </entry>
+</Bundle>

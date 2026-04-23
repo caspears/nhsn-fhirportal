@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="location-example-ach-daily-hospital"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location location-example-ach-daily-hospital</b></p><a name="location-example-ach-daily-hospital"> </a><a name="hclocation-example-ach-daily-hospital"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-location.html">ACH Daily Event Location</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.6865</code>/100 (use: usual, )</p><p><b>name</b>: Health Hospital Location</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span></p><p><b>telecom</b>: ph: 916-734-2011</p><p><b>address</b>: 2315 Stockton Blvd Sacramento CALIFORNIA 95817 </p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.6865"/>
+    <value value="100"/>
+  </identifier>
+  <name value="Health Hospital Location"/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HOSP"/>
+      <display value="Hospital"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="916-734-2011"/>
+    <rank value="1"/>
+  </telecom>
+  <address>
+    <line value="2315 Stockton Blvd"/>
+    <city value="Sacramento"/>
+    <state value="CALIFORNIA"/>
+    <postalCode value="95817"/>
+  </address>
+</Location>

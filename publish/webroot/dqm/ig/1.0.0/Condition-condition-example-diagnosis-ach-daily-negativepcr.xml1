@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="condition-example-diagnosis-ach-daily-negativepcr"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition condition-example-diagnosis-ach-daily-negativepcr</b></p><a name="condition-example-diagnosis-ach-daily-negativepcr"> </a><a name="hccondition-example-diagnosis-ach-daily-negativepcr"> </a><p><b>Original Resource ID</b>: eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm U07.1}">COVID-19</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-negativepcr.html">ACHDaily, NegativePCR</a></p><p><b>encounter</b>: Inpatient</p></div>
+  </text>
+  <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension">
+    <valueString value="eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3"/>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <version value="4.0.0"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Confirmed"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+    <text value="Encounter Diagnosis"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <code value="U07.1"/>
+      <display value="COVID-19"/>
+    </coding>
+    <text value="COVID-19"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ach-daily-negativepcr"/>
+    <display value="ACHDaily, NegativePCR"/>
+  </subject>
+  <encounter>
+    <display value="Inpatient"/>
+  </encounter>
+</Condition>

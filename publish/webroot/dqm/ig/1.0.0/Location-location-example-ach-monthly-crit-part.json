@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Location",
+  "id" : "location-example-ach-monthly-crit-part",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location location-example-ach-monthly-crit-part</b></p><a name=\"location-example-ach-monthly-crit-part\"> </a><a name=\"hclocation-example-ach-monthly-crit-part\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-location.html\">ACH Monthly Event Location</a></p></div><p><b>identifier</b>: <code>http://www.example.com/location</code>/2936</p><p><b>status</b>: Active</p><p><b>name</b>: ACH Monthly Medical Critical Care</p><p><b>description</b>: ACH Monthly Medical Critical Care</p><p><b>type</b>: <span title=\"Codes:{https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html 1027-2}\">Medical Critical Care</span></p><p><b>partOf</b>: <a href=\"Location-location-example-ach-monthly-crit.html\">Location ACH Monthly Medical Critical Care</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://www.example.com/location",
+    "value" : "2936"
+  }],
+  "status" : "active",
+  "name" : "ACH Monthly Medical Critical Care",
+  "description" : "ACH Monthly Medical Critical Care",
+  "type" : [{
+    "coding" : [{
+      "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "code" : "1027-2",
+      "display" : "Medical Critical Care"
+    }],
+    "text" : "Medical Critical Care"
+  }],
+  "partOf" : {
+    "reference" : "Location/location-example-ach-monthly-crit"
+  }
+}

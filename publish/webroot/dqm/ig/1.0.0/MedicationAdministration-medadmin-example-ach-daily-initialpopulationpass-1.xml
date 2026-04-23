@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="medadmin-example-ach-daily-initialpopulationpass-1"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-daily-initialpopulationpass-1</b></p><a name="medadmin-example-ach-daily-initialpopulationpass-1"> </a><a name="hcmedadmin-example-ach-daily-initialpopulationpass-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-medicationadministration.html">ACH Daily Event Medication Administration</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href="Medication-medication-example-ach-daily-initialpopulationpass.html">Remdesivir 200 mg IV</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>effective</b>: 2024-01-01 22:00:00+0000 --&gt; 2024-01-02 22:00:09+0000</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-daily-initialpopulationpass.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002 (use: usual, ); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;remdesivir 100 mg; authoredOn = 2024-01-14 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>Remdesivir 200 mg IV once a day on day 1, then 100 mg IV once a day on days 2-5</td><td><span title="Codes:{http://snomed.info/sct 47625008}">Intravenous use</span></td><td>200 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <medicationReference>
+    <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension">
+      <valueString value="Medication/eZeW55xkBH0DrR0Xj004fNid0iluLJl6nT2adScy2TI9SbXSOBJPdED7Qjms.Fj48j0.MQxtisgjhubwnqaIImzMAo7axKzx4khlfA7xEkUU3"/>
+    </extension>
+    <reference value="Medication/medication-example-ach-daily-initialpopulationpass"/>
+    <display value="Remdesivir 200 mg IV"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+    <display value="ACHDaily, InitialPopulationPass"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2024-01-01T22:00:00Z"/>
+    <end value="2024-01-02T22:00:09Z"/>
+  </effectivePeriod>
+  <request>
+    <reference value="MedicationRequest/medicationrequest-example-ach-daily-initialpopulationpass"/>
+  </request>
+  <dosage>
+    <text value="Remdesivir 200 mg IV once a day on day 1, then 100 mg IV once a day on days 2-5"/>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="47625008"/>
+        <display value="Intravenous use"/>
+      </coding>
+    </route>
+    <dose>
+      <value value="200"/>
+      <unit value="mg"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg"/>
+    </dose>
+  </dosage>
+</MedicationAdministration>

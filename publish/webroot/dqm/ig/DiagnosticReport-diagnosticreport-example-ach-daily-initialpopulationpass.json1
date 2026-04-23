@@ -1,0 +1,45 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "diagnosticreport-example-ach-daily-initialpopulationpass",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-diagnosticreport-lab"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport diagnosticreport-example-ach-daily-initialpopulationpass</b></p><a name=\"diagnosticreport-example-ach-daily-initialpopulationpass\"> </a><a name=\"hcdiagnosticreport-example-ach-daily-initialpopulationpass\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-diagnosticreport-lab.html\">ACH Daily Event Diagnostic Report (Lab)</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 258500001}\">Nasopharyngeal swab</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN:\u00a01000009001\u00a0(use:\u00a0usual,\u00a0))</td></tr><tr><td>When For</td><td>2024-02-01 23:14:00-0500</td></tr><tr><td>Reported</td><td>2024-02-02 08:52:00-0500</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://snomed.info/sct 840539006}\">Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)</span></li></ul></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "LAB",
+      "display" : "Laboratory"
+    }],
+    "text" : "Laboratory"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "258500001",
+      "display" : "Nasopharyngeal swab (specimen)"
+    }],
+    "text" : "Nasopharyngeal swab"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-daily-initialpopulationpass",
+    "display" : "InitialPopulationPass, ACHDaily"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example-ach-daily-initialpopulationpass-1",
+    "display" : "Hospital Admission"
+  },
+  "effectiveDateTime" : "2024-02-01T23:14:00-05:00",
+  "issued" : "2024-02-02T08:52:00-05:00",
+  "conclusionCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "840539006",
+      "display" : "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+    }]
+  }]
+}

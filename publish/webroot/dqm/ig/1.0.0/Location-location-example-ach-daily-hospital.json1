@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Location",
+  "id" : "location-example-ach-daily-hospital",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-location"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location location-example-ach-daily-hospital</b></p><a name=\"location-example-ach-daily-hospital\"> </a><a name=\"hclocation-example-ach-daily-hospital\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-location.html\">ACH Daily Event Location</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.6865</code>/100\u00a0(use:\u00a0usual,\u00a0)</p><p><b>name</b>: Health Hospital Location</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span></p><p><b>telecom</b>: ph: 916-734-2011</p><p><b>address</b>: 2315 Stockton Blvd Sacramento CALIFORNIA 95817 </p></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "urn:oid:2.16.840.1.113883.19.5.1.6865",
+    "value" : "100"
+  }],
+  "name" : "Health Hospital Location",
+  "mode" : "instance",
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "code" : "HOSP",
+      "display" : "Hospital"
+    }]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "916-734-2011",
+    "rank" : 1
+  }],
+  "address" : {
+    "line" : ["2315 Stockton Blvd"],
+    "city" : "Sacramento",
+    "state" : "CALIFORNIA",
+    "postalCode" : "95817"
+  }
+}

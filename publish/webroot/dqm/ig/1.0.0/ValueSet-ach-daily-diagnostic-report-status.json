@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ach-daily-diagnostic-report-status",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ach-daily-diagnostic-report-status</b></p><a name=\"ach-daily-diagnostic-report-status\"> </a><a name=\"hcach-daily-diagnostic-report-status\"> </a><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\"><code>http://hl7.org/fhir/diagnostic-report-status</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-final\">final</a></td><td>Final</td><td>The report is complete and verified by an authorized person.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-registered\">registered</a></td><td>Registered</td><td>The existence of the report is registered, but there is nothing yet available.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-preliminary\">preliminary</a></td><td>Preliminary</td><td>Verified early results are available, but not all  results are final.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-partial\">partial</a></td><td>Partial</td><td>This is a partial (e.g. initial, interim or preliminary) report: data in the report may be incomplete or unverified.</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm"
+      }]
+    }
+  }],
+  "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-diagnostic-report-status",
+  "version" : "1.0.0",
+  "name" : "AcuteCareHospitalDailyEventDiagnosticReportStatus",
+  "title" : "ACH Daily Diagnostic Report Status ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-15T11:51:36-04:00",
+  "publisher" : "CDC National Healthcare Safety Network (NHSN)",
+  "contact" : [{
+    "name" : "CDC National Healthcare Safety Network (NHSN)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cdc.gov/nhsn"
+    },
+    {
+      "system" : "email",
+      "value" : "nhsn@cdc.gov"
+    }]
+  }],
+  "description" : "A set of codes indicating the status of the diagnostic report.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "This Valueset is not copyrighted.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/diagnostic-report-status",
+      "concept" : [{
+        "code" : "final",
+        "display" : "Final"
+      },
+      {
+        "code" : "registered",
+        "display" : "Registered"
+      },
+      {
+        "code" : "preliminary",
+        "display" : "Preliminary"
+      },
+      {
+        "code" : "partial",
+        "display" : "Partial"
+      }]
+    }]
+  }
+}

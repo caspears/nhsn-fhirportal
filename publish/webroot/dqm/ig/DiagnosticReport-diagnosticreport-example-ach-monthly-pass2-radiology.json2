@@ -1,0 +1,45 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "diagnosticreport-example-ach-monthly-pass2-radiology",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-note"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport diagnosticreport-example-ach-monthly-pass2-radiology</b></p><a name=\"diagnosticreport-example-ach-monthly-pass2-radiology\"> </a><a name=\"hcdiagnosticreport-example-ach-monthly-pass2-radiology\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-diagnosticreport-note.html\">ACH Monthly Event Diagnostic Report - Report and Note</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 14331000087103}\">ultrasonography of right lower limb</span> (<span title=\"Codes:{http://loinc.org LP29684-5}\">Radiology</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN:\u00a01601191902010308\u00a0(use:\u00a0usual,\u00a0))</td></tr><tr><td>When For</td><td>2024-02-01 23:14:00-0500</td></tr><tr><td>Reported</td><td>2024-02-02 08:52:00-0500</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://snomed.info/sct 128053003}\">Deep venous thrombosis (disorder)</span></li></ul></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LP29684-5",
+      "display" : "Radiology"
+    }],
+    "text" : "Radiology"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "14331000087103",
+      "display" : "Doppler ultrasonography of vascular structure of right lower limb (procedure)"
+    }],
+    "text" : "ultrasonography of right lower limb"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass2",
+    "display" : "Pass2 ACH"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example-ach-monthly-pass2-inpatient",
+    "display" : "Hospital Admission"
+  },
+  "effectiveDateTime" : "2024-02-01T23:14:00-05:00",
+  "issued" : "2024-02-02T08:52:00-05:00",
+  "conclusionCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "128053003",
+      "display" : "Deep venous thrombosis (disorder)"
+    }]
+  }]
+}

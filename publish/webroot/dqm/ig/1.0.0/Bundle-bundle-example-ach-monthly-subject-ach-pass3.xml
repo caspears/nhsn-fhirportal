@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-example-ach-monthly-subject-ach-pass3"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:1eaddf4c-2ec0-4dc4-b26f-9586d7a777e2"/>
+  </identifier>
+  <type value="collection"/>
+  <timestamp value="2024-02-05T21:04:29.481+00:00"/>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MeasureReport/measurereport-example-individual-ach-monthly-pass3"/>
+    <resource>
+      <MeasureReport>
+        <id value="measurereport-example-individual-ach-monthly-pass3"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MeasureReport_measurereport-example-individual-ach-monthly-pass3"> </a><p class="res-header-id"><b>Generated Narrative: MeasureReport measurereport-example-individual-ach-monthly-pass3</b></p><a name="measurereport-example-individual-ach-monthly-pass3"> </a><a name="hcmeasurereport-example-individual-ach-monthly-pass3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/davinci-deqm/STU3.1/StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a></p></div><p><b>DEQM Measure Scoring Extension</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}">Cohort</span></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Condition-condition-example-diagnosis-ach-monthly-pass3-problem.html">Condition Acute sinusitis (disorder)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Condition-condition-example-diagnosis-ach-monthly-pass3.html">Condition Enterocolitis due to Clostridium difficile</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Coverage-coverage-example-ach-monthly-pass3.html">Coverage: identifier = Member Number: 0945345; status = active; type = preferred provider organization policy; subscriberId = 7843574536; relationship = Self</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Device-device-example-ach-monthly-pass3-ivcs-pump.html">Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#100051035 (use: usual, ); type = Intermittent venous compression system pump (physical object)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-acute.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104253a (use: usual, ); status = finished; class = inpatient acute (ActCode[9.0.0]#ACUTE); type = In-person encounter; period = 2024-02-02 16:43:00-0500 --&gt; 2024-02-03 19:58:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104253a (use: usual, ); status = in-progress; class = short stay (ActCode[9.0.0]#SS); type = Hospital admission, elective (procedure); period = 2024-02-01 14:12:00-0500 --&gt; 2024-02-02 16:43:00-0500; reasonCode = Diarrhea, unspecified</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass3-enoxaparin.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833 (use: usual, ); status = not-done; category = Inpatient; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; effective[x] = 2024-02-02 21:04:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-1.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888321 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-01 21:02:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-2.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888322 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-02 21:09:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-3.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888323 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-03 09:09:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-cipro.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892 (use: usual, ); status = active; intent = plan; category = Community; reported[x] = true; medication[x] = -&gt;Ciprofloxacin 500 MG; authoredOn = 2024-02-01 19:15:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-enoxaparin.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; authoredOn = 2024-02-02 12:21:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888832 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Metronidazole 500 MG; authoredOn = 2024-02-01 20:33:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-observation-example-ach-monthly-pass3-cdiff.html">Observation Clostridioides difficile (organism)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-observation-example-ach-monthly-pass3-vitals-height.html">Observation Body height</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-observation-example-ach-monthly-pass3-vitals-weight.html">Observation Body weight</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Procedure-procedure-example-ach-monthly-pass3-transfusion.html">Procedure Transfusion of red blood cells (procedure)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass3-cdiff.html">ServiceRequest Clostridioides difficile toxin A [Presence] in Stool by Immunoassay</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Specimen-specimen-example-ach-monthly-pass3-stool.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082905,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:45; type = Bloody stool specimen (specimen); receivedTime = 2024-02-01 19:12:00-0500</a></p><p><b>identifier</b>: <code>http://example.org/fhir/measurereport/id</code>/123456789-pass3</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href="Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.html">NHSN dQM Acute Care Hospital Monthly Initial Populationversion: null1.0.0)</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass1.html">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN: 1601191901010308 (use: usual, ))</a></p><p><b>date</b>: 2024-02-05 21:04:29+0000</p><p><b>reporter</b>: <a href="Organization-organization-example-submitting-organization.html">Organization Example NHSN Submitter</a></p><p><b>period</b>: 2024-01-05 00:00:00+0000 --&gt; 2024-02-04 00:00:00+0000</p><p><b>improvementNotation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></td><td>1</td></tr></table></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href="Condition-condition-example-diagnosis-ach-monthly-pass3-problem.html">Condition Acute sinusitis (disorder)</a></li><li><a href="Condition-condition-example-diagnosis-ach-monthly-pass3.html">Condition Enterocolitis due to Clostridium difficile</a></li><li><a href="Coverage-coverage-example-ach-monthly-pass3.html">Coverage: identifier = Member Number: 0945345; status = active; type = preferred provider organization policy; subscriberId = 7843574536; relationship = Self</a></li><li><a href="Device-device-example-ach-monthly-pass3-ivcs-pump.html">Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#100051035 (use: usual, ); type = Intermittent venous compression system pump (physical object)</a></li><li><a href="Encounter-encounter-example-ach-monthly-pass3-acute.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104253a (use: usual, ); status = finished; class = inpatient acute (ActCode[9.0.0]#ACUTE); type = In-person encounter; period = 2024-02-02 16:43:00-0500 --&gt; 2024-02-03 19:58:00-0500</a></li><li><a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104253a (use: usual, ); status = in-progress; class = short stay (ActCode[9.0.0]#SS); type = Hospital admission, elective (procedure); period = 2024-02-01 14:12:00-0500 --&gt; 2024-02-02 16:43:00-0500; reasonCode = Diarrhea, unspecified</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass3-enoxaparin.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833 (use: usual, ); status = not-done; category = Inpatient; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; effective[x] = 2024-02-02 21:04:00-0500</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-1.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888321 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-01 21:02:00-0500</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-2.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888322 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-02 21:09:00-0500</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-3.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888323 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-03 09:09:00-0500</a></li><li><a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-cipro.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892 (use: usual, ); status = active; intent = plan; category = Community; reported[x] = true; medication[x] = -&gt;Ciprofloxacin 500 MG; authoredOn = 2024-02-01 19:15:00-0500</a></li><li><a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-enoxaparin.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; authoredOn = 2024-02-02 12:21:00-0500</a></li><li><a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888832 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Metronidazole 500 MG; authoredOn = 2024-02-01 20:33:00-0500</a></li><li><a href="Observation-observation-example-ach-monthly-pass3-cdiff.html">Observation Clostridioides difficile (organism)</a></li><li><a href="Observation-observation-example-ach-monthly-pass3-vitals-height.html">Observation Body height</a></li><li><a href="Observation-observation-example-ach-monthly-pass3-vitals-weight.html">Observation Body weight</a></li><li><a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</a></li><li><a href="Procedure-procedure-example-ach-monthly-pass3-transfusion.html">Procedure Transfusion of red blood cells (procedure)</a></li><li><a href="ServiceRequest-servicerequest-example-ach-monthly-pass3-cdiff.html">ServiceRequest Clostridioides difficile toxin A [Presence] in Stool by Immunoassay</a></li><li><a href="Specimen-specimen-example-ach-monthly-pass3-stool.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082905,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:45; type = Bloody stool specimen (specimen); receivedTime = 2024-02-01 19:12:00-0500</a></li></ul></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+              <code value="cohort"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-condition"/>
+            </extension>
+            <reference value="Condition/condition-example-diagnosis-ach-monthly-pass3-problem"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-condition"/>
+            </extension>
+            <reference value="Condition/condition-example-diagnosis-ach-monthly-pass3"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-coverage"/>
+            </extension>
+            <reference value="Coverage/coverage-example-ach-monthly-pass3"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-device"/>
+            </extension>
+            <reference value="Device/device-example-ach-monthly-pass3-ivcs-pump"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-encounter"/>
+            </extension>
+            <reference value="Encounter/encounter-example-ach-monthly-pass3-acute"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-encounter"/>
+            </extension>
+            <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-enoxaparin"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-1"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-2"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-3"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-request"/>
+            </extension>
+            <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-cipro"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-request"/>
+            </extension>
+            <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-enoxaparin"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-request"/>
+            </extension>
+            <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-observation-lab-category"/>
+            </extension>
+            <reference value="Observation/observation-example-ach-monthly-pass3-cdiff"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-observation-vital-signs"/>
+            </extension>
+            <reference value="Observation/observation-example-ach-monthly-pass3-vitals-height"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-observation-vital-signs"/>
+            </extension>
+            <reference value="Observation/observation-example-ach-monthly-pass3-vitals-weight"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-minimal-patient"/>
+            </extension>
+            <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-procedure"/>
+            </extension>
+            <reference value="Procedure/procedure-example-ach-monthly-pass3-transfusion"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-servicerequest"/>
+            </extension>
+            <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass3-cdiff"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-specimen"/>
+            </extension>
+            <reference value="Specimen/specimen-example-ach-monthly-pass3-stool"/>
+          </valueReference>
+        </extension>
+        <identifier>
+          <system value="http://example.org/fhir/measurereport/id"/>
+          <value value="123456789-pass3"/>
+        </identifier>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation|1.0.0-cibuild"/>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass1"/>
+        </subject>
+        <date value="2024-02-05T21:04:29.481+00:00"/>
+        <reporter>
+          <reference value="Organization/organization-example-submitting-organization"/>
+        </reporter>
+        <period>
+          <start value="2024-01-05T00:00:00.000+00:00"/>
+          <end value="2024-02-04T00:00:00.000+00:00"/>
+        </period>
+        <improvementNotation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/measure-improvement-notation"/>
+            <code value="increase"/>
+          </coding>
+        </improvementNotation>
+        <group>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+                <display value="Initial Population"/>
+              </coding>
+            </code>
+            <count value="1"/>
+          </population>
+        </group>
+        <evaluatedResource>
+          <reference value="Condition/condition-example-diagnosis-ach-monthly-pass3-problem"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Condition/condition-example-diagnosis-ach-monthly-pass3"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Coverage/coverage-example-ach-monthly-pass3"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Device/device-example-ach-monthly-pass3-ivcs-pump"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-acute"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-enoxaparin"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-1"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-2"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-3"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-cipro"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-enoxaparin"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Observation/observation-example-ach-monthly-pass3-cdiff"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Observation/observation-example-ach-monthly-pass3-vitals-height"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Observation/observation-example-ach-monthly-pass3-vitals-weight"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Procedure/procedure-example-ach-monthly-pass3-transfusion"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass3-cdiff"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Specimen/specimen-example-ach-monthly-pass3-stool"/>
+        </evaluatedResource>
+      </MeasureReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Patient/patient-example-ach-monthly-pass3"/>
+    <resource>
+      <Patient>
+        <id value="patient-example-ach-monthly-pass3"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+          <security>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+            <code value="R"/>
+            <display value="Restricted"/>
+          </security>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-example-ach-monthly-pass3"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-example-ach-monthly-pass3</b></p><a name="patient-example-ach-monthly-pass3"> </a><a name="hcpatient-example-ach-monthly-pass3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cross-measure-patient.html">Cross-Measure Patient Profile</a></p><p style="margin-bottom: 0px">Security Label: Restricted (Details: Confidentiality code R = 'Restricted')</p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li><a href="mailto:ACHtestcase@testcase.com">ACHtestcase@testcase.com</a></li><li>5678 Sesame Lansing Lansing MI 48864 US </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Language spoken">Language:</td><td colspan="3"><span title="Codes:{urn:ietf:bcp:47 zh}">Chinese</span></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2186-5">Race &amp; Ethnicity - CDC 2186-5</a>: Not Hispanic or Latino</li><li>text: Non Hispanic or Latino</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9)."><a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a></td><td colspan="3">M</td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.">US Core Race Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2028-9">Race &amp; Ethnicity - CDC 2028-9</a>: Asian</li><li>text: White</li></ul></td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2028-9"/>
+              <display value="Asian"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="White"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2186-5"/>
+              <display value="Not Hispanic or Latino"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Non Hispanic or Latino"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+          <valueCode value="M"/>
+        </extension>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical record number"/>
+            </coding>
+            <text value="MRN"/>
+          </type>
+          <system value="urn:oid:1.2.5.8.2.7"/>
+          <value value="1601191903010308"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="Pass3 ACH"/>
+          <family value="ACH"/>
+          <given value="Pass3"/>
+        </name>
+        <telecom>
+          <system value="email"/>
+          <value value="ACHtestcase@testcase.com"/>
+          <use value="home"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="2007-10-08"/>
+        <address>
+          <line value="5678 Sesame Lansing"/>
+          <city value="Lansing"/>
+          <state value="MI"/>
+          <postalCode value="48864"/>
+          <country value="US"/>
+        </address>
+        <communication>
+          <language>
+            <coding>
+              <system value="urn:ietf:bcp:47"/>
+              <code value="zh"/>
+              <display value="Chinese"/>
+            </coding>
+          </language>
+        </communication>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Encounter/encounter-example-ach-monthly-pass3-acute"/>
+    <resource>
+      <Encounter>
+        <id value="encounter-example-ach-monthly-pass3-acute"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-example-ach-monthly-pass3-acute"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example-ach-monthly-pass3-acute</b></p><a name="encounter-example-ach-monthly-pass3-acute"> </a><a name="hcencounter-example-ach-monthly-pass3-acute"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-encounter.html">ACH Monthly Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/10005104253a (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE">ActCode ACUTE</a>: inpatient acute (version = 9.0.0 )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 453701000124103}">Critical care visit</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>period</b>: 2024-02-02 16:43:00-0500 --&gt; 2024-02-03 19:58:00-0500</p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/admit-source other}">From Short Stay</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition home}">Home</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-location-example-ach-monthly-crit-part.html">ACH Monthly Medical Critical Care</a></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type wa}">Ward</span></td><td>2024-02-02 16:43:00-0500 --&gt; 2024-03-02 19:58:00-0500</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="10005104253a"/>
+        </identifier>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <version value="9.0.0"/>
+          <code value="ACUTE"/>
+          <display value="inpatient acute"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="453701000124103"/>
+            <display value="In-person encounter"/>
+          </coding>
+          <text value="Critical care visit"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </subject>
+        <period>
+          <start value="2024-02-02T16:43:00-05:00"/>
+          <end value="2024-02-03T19:58:00-05:00"/>
+        </period>
+        <hospitalization>
+          <admitSource>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+              <code value="other"/>
+              <display value="Other"/>
+            </coding>
+            <text value="From Short Stay"/>
+          </admitSource>
+          <dischargeDisposition>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+              <code value="home"/>
+              <display value="Home"/>
+            </coding>
+            <text value="Home"/>
+          </dischargeDisposition>
+        </hospitalization>
+        <location>
+          <location>
+            <reference value="Location/location-example-ach-monthly-crit-part"/>
+            <display value="ACH Monthly Medical Critical Care"/>
+          </location>
+          <physicalType>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+              <code value="wa"/>
+              <display value="Ward"/>
+            </coding>
+          </physicalType>
+          <period>
+            <start value="2024-02-02T16:43:00-05:00"/>
+            <end value="2024-03-02T19:58:00-05:00"/>
+          </period>
+        </location>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+    <resource>
+      <Encounter>
+        <id value="encounter-example-ach-monthly-pass3-short-stay"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-example-ach-monthly-pass3-short-stay"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example-ach-monthly-pass3-short-stay</b></p><a name="encounter-example-ach-monthly-pass3-short-stay"> </a><a name="hcencounter-example-ach-monthly-pass3-short-stay"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-encounter.html">ACH Monthly Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/10005104253a (use: usual, )</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-SS">ActCode SS</a>: short stay (version = 9.0.0 )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 8715000}">Hospital Admission, Elective Procedure</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>period</b>: 2024-02-01 14:12:00-0500 --&gt; 2024-02-02 16:43:00-0500</p><p><b>reasonCode</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm R19.7}">Diarrhea</span></p><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Condition</b></td></tr><tr><td style="display: none">*</td><td><a href="Condition-condition-example-diagnosis-ach-monthly-pass3.html">Enterocolitis due to Clostridium difficile</a></td></tr></table><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/admit-source outp}">Outpatient</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-location-example-ach-monthly-medsurg.html">ACH Monthly Medical-Surgical Ward</a></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type wa}">Ward</span></td><td>2024-02-01 14:12:00-0500 --&gt; 2024-02-02 16:43:00-0500</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="10005104253a"/>
+        </identifier>
+        <status value="in-progress"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <version value="9.0.0"/>
+          <code value="SS"/>
+          <display value="short stay"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="8715000"/>
+            <display value="Hospital admission, elective (procedure)"/>
+          </coding>
+          <text value="Hospital Admission, Elective Procedure"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </subject>
+        <period>
+          <start value="2024-02-01T14:12:00-05:00"/>
+          <end value="2024-02-02T16:43:00-05:00"/>
+        </period>
+        <reasonCode>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="R19.7"/>
+            <display value="Diarrhea, unspecified"/>
+          </coding>
+          <text value="Diarrhea"/>
+        </reasonCode>
+        <diagnosis>
+          <condition>
+            <reference value="Condition/condition-example-diagnosis-ach-monthly-pass3"/>
+            <display value="Enterocolitis due to Clostridium difficile"/>
+          </condition>
+        </diagnosis>
+        <hospitalization>
+          <admitSource>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+              <code value="outp"/>
+              <display value="From outpatient department"/>
+            </coding>
+            <text value="Outpatient"/>
+          </admitSource>
+        </hospitalization>
+        <location>
+          <location>
+            <reference value="Location/location-example-ach-monthly-medsurg"/>
+            <display value="ACH Monthly Medical-Surgical Ward"/>
+          </location>
+          <physicalType>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+              <code value="wa"/>
+              <display value="Ward"/>
+            </coding>
+          </physicalType>
+          <period>
+            <start value="2024-02-01T14:12:00-05:00"/>
+            <end value="2024-02-02T16:43:00-05:00"/>
+          </period>
+        </location>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Coverage/coverage-example-ach-monthly-pass3"/>
+    <resource>
+      <Coverage>
+        <id value="coverage-example-ach-monthly-pass3"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Coverage_coverage-example-ach-monthly-pass3"> </a><p class="res-header-id"><b>Generated Narrative: Coverage coverage-example-ach-monthly-pass3</b></p><a name="coverage-example-ach-monthly-pass3"> </a><a name="hccoverage-example-ach-monthly-pass3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-coverage.html">ACH Monthly Event Coverage</a></p></div><p><b>identifier</b>: Member Number/0945345</p><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PPO}">preferred provider organization policy</span></p><p><b>subscriberId</b>: 7843574536</p><p><b>beneficiary</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span></p><p><b>payor</b>: <a href="http://example.org/fhir/Organization/NationFirst">Nation First Health Care</a></p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MB"/>
+              <display value="Member Number"/>
+            </coding>
+          </type>
+          <system value="http://example.org/fhir/memberidentifier"/>
+          <value value="0945345"/>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <version value="9.0.0"/>
+            <code value="PPO"/>
+            <display value="preferred provider organization policy"/>
+          </coding>
+        </type>
+        <subscriberId value="7843574536"/>
+        <beneficiary>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+        </beneficiary>
+        <relationship>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+            <code value="self"/>
+            <display value="Self"/>
+          </coding>
+        </relationship>
+        <payor>
+          <reference value="http://example.org/fhir/Organization/NationFirst"/>
+          <display value="Nation First Health Care"/>
+        </payor>
+      </Coverage>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Condition/condition-example-diagnosis-ach-monthly-pass3-problem"/>
+    <resource>
+      <Condition>
+        <id value="condition-example-diagnosis-ach-monthly-pass3-problem"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-example-diagnosis-ach-monthly-pass3-problem"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-example-diagnosis-ach-monthly-pass3-problem</b></p><a name="condition-example-diagnosis-ach-monthly-pass3-problem"> </a><a name="hccondition-example-diagnosis-ach-monthly-pass3-problem"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-condition.html">ACH Monthly Event Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 15805002}, {http://hl7.org/fhir/sid/icd-10-cm J01.90}">Acute sinusitis</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>onset</b>: 2024-01-21 07:32:00-0500</p><p><b>abatement</b>: 2024-02-02 16:43:00-0500</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="resolved"/>
+            <display value="Resolved"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <version value="4.0.0"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+            <display value="Problem List Item"/>
+          </coding>
+          <text value="Problem List Item"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="15805002"/>
+            <display value="Acute sinusitis (disorder)"/>
+          </coding>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="J01.90"/>
+            <display value="Acute sinusitis, unspecified"/>
+          </coding>
+          <text value="Acute sinusitis"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </subject>
+        <onsetDateTime value="2024-01-21T07:32:00-05:00"/>
+        <abatementDateTime value="2024-02-02T16:43:00-05:00"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Condition/condition-example-diagnosis-ach-monthly-pass3"/>
+    <resource>
+      <Condition>
+        <id value="condition-example-diagnosis-ach-monthly-pass3"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-example-diagnosis-ach-monthly-pass3"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-example-diagnosis-ach-monthly-pass3</b></p><a name="condition-example-diagnosis-ach-monthly-pass3"> </a><a name="hccondition-example-diagnosis-ach-monthly-pass3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-condition.html">ACH Monthly Event Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm A04.7}">Enterocolitis due to Clostridium difficile</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <version value="4.0.0"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </coding>
+          <text value="Encounter Diagnosis"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="A04.7"/>
+            <display value="Enterocolitis due to Clostridium difficile"/>
+          </coding>
+          <text value="Enterocolitis due to Clostridium difficile"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Device/device-example-ach-monthly-pass3-ivcs-pump"/>
+    <resource>
+      <Device>
+        <id value="device-example-ach-monthly-pass3-ivcs-pump"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Device_device-example-ach-monthly-pass3-ivcs-pump"> </a><p class="res-header-id"><b>Generated Narrative: Device device-example-ach-monthly-pass3-ivcs-pump</b></p><a name="device-example-ach-monthly-pass3-ivcs-pump"> </a><a name="hcdevice-example-ach-monthly-pass3-ivcs-pump"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-device.html">ACH Monthly Event Device</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/100051035 (use: usual, )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 469317002}">Intermittent venous compression system pump</span></p><p><b>patient</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="100051035"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="469317002"/>
+            <display value="Intermittent venous compression system pump (physical object)"/>
+          </coding>
+          <text value="Intermittent venous compression system pump"/>
+        </type>
+        <patient>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </patient>
+      </Device>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass3-enoxaparin"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass3-enoxaparin"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass3-enoxaparin"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass3-enoxaparin</b></p><a name="medadmin-example-ach-monthly-pass3-enoxaparin"> </a><a name="hcmedadmin-example-ach-monthly-pass3-enoxaparin"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888833 (use: usual, )</p><p><b>status</b>: Not Done</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-enoxaparin.html">0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-acute.html">Critical care visit</a></p><p><b>effective</b>: 2024-02-02 21:04:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-enoxaparin.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; authoredOn = 2024-02-02 12:21:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>0.4ml subcutaneous once daily in abdomen</td><td><span title="Codes:{http://snomed.info/sct 42972002}">Subcutaneous tissue structure of anterior abdominal wall (body structure)</span></td><td><span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></td><td>4000 uL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeuL = 'uL')</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888833"/>
+        </identifier>
+        <status value="not-done"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-enoxaparin"/>
+          <display value="0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-acute"/>
+          <display value="Critical care visit"/>
+        </context>
+        <effectiveDateTime value="2024-02-02T21:04:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-enoxaparin"/>
+        </request>
+        <dosage>
+          <text value="0.4ml subcutaneous once daily in abdomen"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="42972002"/>
+              <display value="Subcutaneous tissue structure of anterior abdominal wall (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral Use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <dose>
+            <value value="4000"/>
+            <unit value="uL"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="uL"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-1"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass3-metronidazole-1"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass3-metronidazole-1"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass3-metronidazole-1</b></p><a name="medadmin-example-ach-monthly-pass3-metronidazole-1"> </a><a name="hcmedadmin-example-ach-monthly-pass3-metronidazole-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/1018888321 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-metronidazole.html">Metronidazole 500 MG</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Short Stay</a></p><p><b>effective</b>: 2024-02-01 21:02:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888832 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Metronidazole 500 MG; authoredOn = 2024-02-01 20:33:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>5mg tablet by mouth twice daily</td><td><span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1018888321"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-metronidazole"/>
+          <display value="Metronidazole 500 MG"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+          <display value="Short Stay"/>
+        </context>
+        <effectiveDateTime value="2024-02-01T21:02:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole"/>
+        </request>
+        <dosage>
+          <text value="5mg tablet by mouth twice daily"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral Use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <dose>
+            <value value="5"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-2"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass3-metronidazole-2"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass3-metronidazole-2"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass3-metronidazole-2</b></p><a name="medadmin-example-ach-monthly-pass3-metronidazole-2"> </a><a name="hcmedadmin-example-ach-monthly-pass3-metronidazole-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/1018888322 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-metronidazole.html">Metronidazole 500 MG</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Short Stay</a></p><p><b>effective</b>: 2024-02-02 21:09:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888832 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Metronidazole 500 MG; authoredOn = 2024-02-01 20:33:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>5mg tablet by mouth twice daily</td><td><span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1018888322"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-metronidazole"/>
+          <display value="Metronidazole 500 MG"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+          <display value="Short Stay"/>
+        </context>
+        <effectiveDateTime value="2024-02-02T21:09:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole"/>
+        </request>
+        <dosage>
+          <text value="5mg tablet by mouth twice daily"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral Use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <dose>
+            <value value="5"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-3"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass3-metronidazole-3"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass3-metronidazole-3"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass3-metronidazole-3</b></p><a name="medadmin-example-ach-monthly-pass3-metronidazole-3"> </a><a name="hcmedadmin-example-ach-monthly-pass3-metronidazole-3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/1018888323 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-metronidazole.html">Metronidazole 500 MG</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Short Stay</a></p><p><b>effective</b>: 2024-02-03 09:09:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888832 (use: usual, ); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Metronidazole 500 MG; authoredOn = 2024-02-01 20:33:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>5mg tablet by mouth twice daily</td><td><span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1018888323"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-metronidazole"/>
+          <display value="Metronidazole 500 MG"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+          <display value="Short Stay"/>
+        </context>
+        <effectiveDateTime value="2024-02-03T09:09:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole"/>
+        </request>
+        <dosage>
+          <text value="5mg tablet by mouth twice daily"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral Use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <dose>
+            <value value="5"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-monthly-pass3-cipro"/>
+    <resource>
+      <MedicationRequest>
+        <id value="medicationrequest-example-ach-monthly-pass3-cipro"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_medicationrequest-example-ach-monthly-pass3-cipro"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-monthly-pass3-cipro</b></p><a name="medicationrequest-example-ach-monthly-pass3-cipro"> </a><a name="hcmedicationrequest-example-ach-monthly-pass3-cipro"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationrequest.html">ACH Monthly Event MedicationRequest</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888892 (use: usual, )</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category community}">Home Medication</span></p><p><b>reported</b>: true</p><p><b>medication</b>: <a href="Medication-medication-example-cipro-500.html">Ciprofloxacin 500 MG</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Short Stay</a></p><p><b>authoredOn</b>: 2024-02-01 19:15:00-0500</p><p><b>requester</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</a></p><p><b>recorder</b>: Patient Identified</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 500mg tablet by mouth twice daily</p><p><b>timing</b>: 2 per 1 day</p><p><b>asNeeded</b>: false</p><p><b>route</b>: <span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type calculated}">calculated</span></td><td>500 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888892"/>
+        </identifier>
+        <status value="active"/>
+        <intent value="plan"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="community"/>
+            <display value="Community"/>
+          </coding>
+          <text value="Home Medication"/>
+        </category>
+        <reportedBoolean value="true"/>
+        <medicationReference>
+          <reference value="Medication/medication-example-cipro-500"/>
+          <display value="Ciprofloxacin 500 MG"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+          <display value="Short Stay"/>
+        </encounter>
+        <authoredOn value="2024-02-01T19:15:00-05:00"/>
+        <requester>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+        </requester>
+        <recorder>
+          <display value="Patient Identified"/>
+        </recorder>
+        <dosageInstruction>
+          <text value="500mg tablet by mouth twice daily"/>
+          <timing>
+            <repeat>
+              <frequency value="2"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral Use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <doseAndRate>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                <code value="calculated"/>
+                <display value="Calculated"/>
+              </coding>
+              <text value="calculated"/>
+            </type>
+            <doseQuantity>
+              <value value="500"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-monthly-pass3-enoxaparin"/>
+    <resource>
+      <MedicationRequest>
+        <id value="medicationrequest-example-ach-monthly-pass3-enoxaparin"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_medicationrequest-example-ach-monthly-pass3-enoxaparin"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-monthly-pass3-enoxaparin</b></p><a name="medicationrequest-example-ach-monthly-pass3-enoxaparin"> </a><a name="hcmedicationrequest-example-ach-monthly-pass3-enoxaparin"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationrequest.html">ACH Monthly Event MedicationRequest</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888833 (use: usual, )</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>reported</b>: false</p><p><b>medication</b>: <a href="Medication-medication-example-enoxaparin.html">0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-acute.html">Critical care visit</a></p><p><b>authoredOn</b>: 2024-02-02 12:21:00-0500</p><p><b>requester</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 0.4ml subcutaneous once daily in abdomen</p><p><b>timing</b>: Once per 1 day</p><p><b>asNeeded</b>: false</p><p><b>site</b>: <span title="Codes:{http://snomed.info/sct 42972002}">Subcutaneous tissue structure of anterior abdominal wall (body structure)</span></p><p><b>route</b>: <span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type calculated}">calculated</span></td><td>4000 uL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeuL = 'uL')</span></td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888833"/>
+        </identifier>
+        <status value="active"/>
+        <intent value="order"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <reportedBoolean value="false"/>
+        <medicationReference>
+          <reference value="Medication/medication-example-enoxaparin"/>
+          <display value="0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-acute"/>
+          <display value="Critical care visit"/>
+        </encounter>
+        <authoredOn value="2024-02-02T12:21:00-05:00"/>
+        <requester>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+        </requester>
+        <dosageInstruction>
+          <text value="0.4ml subcutaneous once daily in abdomen"/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="42972002"/>
+              <display value="Subcutaneous tissue structure of anterior abdominal wall (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral Use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <doseAndRate>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                <code value="calculated"/>
+                <display value="Calculated"/>
+              </coding>
+              <text value="calculated"/>
+            </type>
+            <doseQuantity>
+              <value value="4000"/>
+              <unit value="uL"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="uL"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole"/>
+    <resource>
+      <MedicationRequest>
+        <id value="medicationrequest-example-ach-monthly-pass3-metronidazole"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_medicationrequest-example-ach-monthly-pass3-metronidazole"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-monthly-pass3-metronidazole</b></p><a name="medicationrequest-example-ach-monthly-pass3-metronidazole"> </a><a name="hcmedicationrequest-example-ach-monthly-pass3-metronidazole"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationrequest.html">ACH Monthly Event MedicationRequest</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888832 (use: usual, )</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>reported</b>: false</p><p><b>medication</b>: <a href="Medication-medication-example-metronidazole.html">Metronidazole 500 MG</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Short Stay</a></p><p><b>authoredOn</b>: 2024-02-01 20:33:00-0500</p><p><b>requester</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 5mg tablet by mouth twice daily</p><p><b>timing</b>: 2 per 1 day</p><p><b>asNeeded</b>: false</p><p><b>route</b>: <span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type calculated}">calculated</span></td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888832"/>
+        </identifier>
+        <status value="active"/>
+        <intent value="order"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <reportedBoolean value="false"/>
+        <medicationReference>
+          <reference value="Medication/medication-example-metronidazole"/>
+          <display value="Metronidazole 500 MG"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+          <display value="Short Stay"/>
+        </encounter>
+        <authoredOn value="2024-02-01T20:33:00-05:00"/>
+        <requester>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+        </requester>
+        <dosageInstruction>
+          <text value="5mg tablet by mouth twice daily"/>
+          <timing>
+            <repeat>
+              <frequency value="2"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral Use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <doseAndRate>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                <code value="calculated"/>
+                <display value="Calculated"/>
+              </coding>
+              <text value="calculated"/>
+            </type>
+            <doseQuantity>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass3-cdiff"/>
+    <resource>
+      <Observation>
+        <id value="observation-example-ach-monthly-pass3-cdiff"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-example-ach-monthly-pass3-cdiff"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass3-cdiff</b></p><a name="observation-example-ach-monthly-pass3-cdiff"> </a><a name="hcobservation-example-ach-monthly-pass3-cdiff"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-lab.html">ACH Monthly Event Lab Result Observation</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass3-cdiff.html">ServiceRequest Clostridioides difficile toxin A [Presence] in Stool by Immunoassay</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 5933001}">C. Diff.</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Hospital Admission, Short Stay</a></p><p><b>effective</b>: 2024-02-01 19:02:00-0500</p><p><b>issued</b>: 2024-02-02 15:30:00-0500</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 10828004}">Positive (qualifier value)</span></p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-monthly-pass3-stool.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082905,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:45; type = Bloody stool specimen (specimen); receivedTime = 2024-02-01 19:12:00-0500</a></p></div>
+        </text>
+        <basedOn>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass3-cdiff"/>
+        </basedOn>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+          <text value="Laboratory"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="5933001"/>
+            <display value="Clostridioides difficile (organism)"/>
+          </coding>
+          <text value="C. Diff."/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+          <display value="Hospital Admission, Short Stay"/>
+        </encounter>
+        <effectiveDateTime value="2024-02-01T19:02:00-05:00"/>
+        <issued value="2024-02-02T15:30:00-05:00"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="10828004"/>
+            <display value="Positive (qualifier value)"/>
+          </coding>
+        </valueCodeableConcept>
+        <specimen>
+          <reference value="Specimen/specimen-example-ach-monthly-pass3-stool"/>
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass3-vitals-height"/>
+    <resource>
+      <Observation>
+        <id value="observation-example-ach-monthly-pass3-vitals-height"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-example-ach-monthly-pass3-vitals-height"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass3-vitals-height</b></p><a name="observation-example-ach-monthly-pass3-vitals-height"> </a><a name="hcobservation-example-ach-monthly-pass3-vitals-height"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-vitals.html">ACH Monthly Event Observation - Vital Signs</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8302-2}">Height</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Short Stay</a></p><p><b>effective</b>: 2024-02-01 19:21:00-0500</p><p><b>issued</b>: 2024-02-01 19:21:00-0500</p><p><b>value</b>: 176.8 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+          <text value="Vital Signs"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8302-2"/>
+            <display value="Body height"/>
+          </coding>
+          <text value="Height"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+          <display value="Short Stay"/>
+        </encounter>
+        <effectiveDateTime value="2024-02-01T19:21:00-05:00"/>
+        <issued value="2024-02-01T19:21:00-05:00"/>
+        <valueQuantity>
+          <value value="176.8"/>
+          <unit value="cm"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass3-vitals-weight"/>
+    <resource>
+      <Observation>
+        <id value="observation-example-ach-monthly-pass3-vitals-weight"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-example-ach-monthly-pass3-vitals-weight"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass3-vitals-weight</b></p><a name="observation-example-ach-monthly-pass3-vitals-weight"> </a><a name="hcobservation-example-ach-monthly-pass3-vitals-weight"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-vitals.html">ACH Monthly Event Observation - Vital Signs</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}">Weight</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Short Stay</a></p><p><b>effective</b>: 2024-02-01 19:21:00-0500</p><p><b>issued</b>: 2024-02-01 19:21:00-0500</p><p><b>value</b>: 54.4 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+          <text value="Vital Signs"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
+          </coding>
+          <text value="Weight"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+          <display value="Short Stay"/>
+        </encounter>
+        <effectiveDateTime value="2024-02-01T19:21:00-05:00"/>
+        <issued value="2024-02-01T19:21:00-05:00"/>
+        <valueQuantity>
+          <value value="54.4"/>
+          <unit value="kg"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="kg"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Procedure/procedure-example-ach-monthly-pass3-transfusion"/>
+    <resource>
+      <Procedure>
+        <id value="procedure-example-ach-monthly-pass3-transfusion"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Procedure_procedure-example-ach-monthly-pass3-transfusion"> </a><p class="res-header-id"><b>Generated Narrative: Procedure procedure-example-ach-monthly-pass3-transfusion</b></p><a name="procedure-example-ach-monthly-pass3-transfusion"> </a><a name="hcprocedure-example-ach-monthly-pass3-transfusion"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-procedure.html">ACH Monthly Event Procedure</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/100051035264 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 116863004}">Transfusion of red blood cells (procedure)</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-acute.html">Critical care visit</a></p><p><b>performed</b>: 2024-02-02 20:43:00-0500</p></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="100051035264"/>
+        </identifier>
+        <status value="completed"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="116863004"/>
+            <display value="Transfusion of red blood cells (procedure)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-acute"/>
+          <display value="Critical care visit"/>
+        </encounter>
+        <performedDateTime value="2024-02-02T20:43:00-05:00"/>
+      </Procedure>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-monthly-pass3-cdiff"/>
+    <resource>
+      <ServiceRequest>
+        <id value="servicerequest-example-ach-monthly-pass3-cdiff"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_servicerequest-example-ach-monthly-pass3-cdiff"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-monthly-pass3-cdiff</b></p><a name="servicerequest-example-ach-monthly-pass3-cdiff"> </a><a name="hcservicerequest-example-ach-monthly-pass3-cdiff"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-servicerequest.html">ACH Monthly Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631826 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 108252007}">Laboratory procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 13957-6}">C. Diff. toxin</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-short-stay.html">Hospital Admission, Short Stay</a></p><p><b>occurrence</b>: Code , Events: 2024-02-01 18:12:00-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-02-01 18:12:00-0500</p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-monthly-pass3-stool.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082905,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:45; type = Bloody stool specimen (specimen); receivedTime = 2024-02-01 19:12:00-0500</a></p></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PLAC"/>
+              <display value="Placer Identifier"/>
+            </coding>
+            <text value="Placer Identifier"/>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1019631826"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="original-order"/>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="108252007"/>
+            <display value="Laboratory procedure"/>
+          </coding>
+          <text value="Laboratory procedure"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="13957-6"/>
+            <display value="Clostridioides difficile toxin A [Presence] in Stool by Immunoassay"/>
+          </coding>
+          <text value="C. Diff. toxin"/>
+        </code>
+        <quantityQuantity>
+          <value value="1"/>
+        </quantityQuantity>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass3-short-stay"/>
+          <display value="Hospital Admission, Short Stay"/>
+        </encounter>
+        <occurrenceTiming>
+          <event value="2024-02-01T18:12:00-05:00"/>
+          <repeat>
+            <count value="1"/>
+          </repeat>
+          <code>
+            <text value="Once"/>
+          </code>
+        </occurrenceTiming>
+        <authoredOn value="2024-02-01T18:12:00-05:00"/>
+        <specimen>
+          <reference value="Specimen/specimen-example-ach-monthly-pass3-stool"/>
+        </specimen>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Specimen/specimen-example-ach-monthly-pass3-stool"/>
+    <resource>
+      <Specimen>
+        <id value="specimen-example-ach-monthly-pass3-stool"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Specimen_specimen-example-ach-monthly-pass3-stool"> </a><p class="res-header-id"><b>Generated Narrative: Specimen specimen-example-ach-monthly-pass3-stool</b></p><a name="specimen-example-ach-monthly-pass3-stool"> </a><a name="hcspecimen-example-ach-monthly-pass3-stool"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-specimen.html">ACH Monthly Event Specimen</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798.32</code>/C104082905, <code>urn:oid:2.16.840.1.113883.19.5.1.798.800</code>/C10408290:45</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 429901000124102}">Bloody stool specimen (specimen)</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>receivedTime</b>: 2024-02-01 19:12:00-0500</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style="display: none">*</td><td>2024-02-01 19:02:00-0500</td><td><span title="Codes:{http://snomed.info/sct 181261002}">Entire rectum (body structure)</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798.32"/>
+          <value value="C104082905"/>
+          <assigner>
+            <display value="LIS"/>
+          </assigner>
+        </identifier>
+        <identifier>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798.800"/>
+          <value value="C10408290:45"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="429901000124102"/>
+            <display value="Bloody stool specimen (specimen)"/>
+          </coding>
+          <text value="Bloody stool specimen (specimen)"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass3"/>
+          <display value="Pass3 ACH"/>
+        </subject>
+        <receivedTime value="2024-02-01T19:12:00-05:00"/>
+        <collection>
+          <collectedDateTime value="2024-02-01T19:02:00-05:00"/>
+          <bodySite>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="181261002"/>
+              <display value="Entire rectum (body structure)"/>
+            </coding>
+          </bodySite>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+</Bundle>

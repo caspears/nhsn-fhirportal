@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Library xmlns="http://hl7.org/fhir">
+  <id value="NHSNHelpers"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<div>
+    <table class="grid dict">
+        
+        
+
+        
+        
+        <tr>
+            <th scope="row"><b>Id: </b></th>
+            <td style="padding-left: 4px;">NHSNHelpers</td>
+        </tr>
+        
+
+        
+        
+        <tr>
+            <th scope="row"><b>Version: </b></th>
+            <td style="padding-left: 4px;">1.0.0</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Url: </b></th>
+            <td style="padding-left: 4px;"><a href="Library-NHSNHelpers.html">NHSNHelpers</a></td>
+        </tr>
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Status: </b></th>
+            <td style="padding-left: 4px;">draft</td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Type: </b></th>
+            <td style="padding-left: 4px;">
+                
+                    
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>system: </b> <span><a href="http://terminology.hl7.org/6.5.0/CodeSystem-library-type.html">http://terminology.hl7.org/CodeSystem/library-type</a></span>
+                        </p>
+                        
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>code: </b> <span>logic-library</span>
+                        </p>
+                        
+                        
+                    
+                
+                
+            </td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Date: </b></th>
+            <td style="padding-left: 4px;">2025-09-15 11:51:36-0400</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Publisher: </b></th>
+            <td style="padding-left: 4px;">CDC National Healthcare Safety Network (NHSN)</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Jurisdiction: </b></th>
+            <td style="padding-left: 4px;">US</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Related Artifacts: </b></th>
+            <td style="padding-left: 4px;">
+                
+                
+                
+                <p><b>Dependencies</b></p>
+                <ul>
+                  
+                    <li><a href="http://fhir.org/guides/cqf/common/4.0.1/4.0.1/Library-FHIR-ModelInfo.html">http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1</a></li>
+                  
+                    <li><code>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/FHIRHelpers|4.0.2</code></li>
+                  
+                </ul>
+                
+                
+                
+                
+                
+            </td>
+        </tr>
+        
+
+        
+        <tr>
+          <th scope="row"><b>Parameters: </b></th>
+          <td style="padding-left: 4px;">
+            <table class="grid-dict">
+              <tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Min</b></th><th><b>Max</b></th><th><b>In/Out</b></th></tr>
+              
+                <tr><th>Patient</th><th>Patient</th><th>0</th><th>1</th><th>Out</th></tr>
+              
+            </table>
+          </td>
+        </tr>
+        
+
+        
+        <tr>
+          <th scope="row"><b>Data Requirements:</b></th>
+          <td style="padding-left: 4px;">
+            <table class="grid-dict">
+              <tr><th><b>Type</b></th><th><b>Profile</b></th><th><b>MS</b></th><th><b>Code Filter</b></th></tr>
+              
+                <tr>
+                  <th>Patient</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Patient</th>
+                  <th/>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+                <tr>
+                  <th>Location</th>
+                  <th>http://hl7.org/fhir/StructureDefinition/Location</th>
+                  <th>;</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+              
+            </table>
+          </td>
+        </tr>
+        
+
+        
+        
+        <tr>
+          <td colspan="2">
+            <table>
+              <tr><th><a id="cql-content"><b>Content: </b></a> text/cql</th></tr>
+              <tr><td><pre><code class="language-cql">library NHSNHelpers version '0.0.002'
+
+using FHIR version '4.0.1'
+
+include FHIRHelpers version '4.0.2'
+
+context Patient
+
+define function &quot;Normalize Interval&quot;(choice Choice&lt;FHIR.dateTime, FHIR.Period, FHIR.Timing, FHIR.instant, FHIR.string, FHIR.Age, FHIR.Range&gt;):
+  case
+	  when choice is FHIR.dateTime then
+    	Interval[FHIRHelpers.ToDateTime(choice as FHIR.dateTime), FHIRHelpers.ToDateTime(choice as FHIR.dateTime)]
+		when choice is FHIR.Period then
+  		FHIRHelpers.ToInterval(choice as FHIR.Period)
+		when choice is FHIR.instant then
+			Interval[FHIRHelpers.ToDateTime(choice as FHIR.instant), FHIRHelpers.ToDateTime(choice as FHIR.instant)]
+		when choice is FHIR.Age then
+		  Interval[FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity(choice as FHIR.Age),
+			  FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity(choice as FHIR.Age) + 1 year)
+		when choice is FHIR.Range then
+		  Interval[FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity((choice as FHIR.Range).low),
+			  FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity((choice as FHIR.Range).high) + 1 year)
+		when choice is FHIR.Timing then
+		  Message(null as Interval&lt;DateTime&gt;, true, '1', 'Error', 'Cannot compute a single interval from a Timing type')
+    when choice is FHIR.string then
+      Message(null as Interval&lt;DateTime&gt;, true, '1', 'Error', 'Cannot compute an interval from a String value')
+		else
+			null as Interval&lt;DateTime&gt;
+	end
+
+define function &quot;ToDateInterval&quot;(period FHIR.Period):
+  Interval[date from period.start, date from period.end]
+
+define function &quot;GetLocation&quot;(reference Reference ):
+  singleton from (
+	[Location] Locations
+		where Locations.id = GetId(reference.reference)
+  )
+
+define function &quot;GetId&quot;(uri String ):
+  Last(Split(uri, '/'))</code></pre></td></tr>
+            </table>
+          </td>
+        </tr>
+        
+        
+        
+    </table>
+</div>
+</div>
+  </text>
+  <contained>
+    <Parameters>
+      <id value="options"/>
+      <parameter>
+        <name value="translatorVersion"/>
+        <valueString value="3.25.0"/>
+      </parameter>
+      <parameter>
+        <name value="option"/>
+        <valueString value="EnableDateRangeOptimization"/>
+      </parameter>
+      <parameter>
+        <name value="option"/>
+        <valueString value="EnableAnnotations"/>
+      </parameter>
+      <parameter>
+        <name value="option"/>
+        <valueString value="EnableLocators"/>
+      </parameter>
+      <parameter>
+        <name value="option"/>
+        <valueString value="DisableListDemotion"/>
+      </parameter>
+      <parameter>
+        <name value="option"/>
+        <valueString value="DisableListPromotion"/>
+      </parameter>
+      <parameter>
+        <name value="analyzeDataRequirements"/>
+        <valueBoolean value="false"/>
+      </parameter>
+      <parameter>
+        <name value="collapseDataRequirements"/>
+        <valueBoolean value="true"/>
+      </parameter>
+      <parameter>
+        <name value="compatibilityLevel"/>
+        <valueString value="1.5"/>
+      </parameter>
+      <parameter>
+        <name value="enableCqlOnly"/>
+        <valueBoolean value="false"/>
+      </parameter>
+      <parameter>
+        <name value="errorLevel"/>
+        <valueString value="Info"/>
+      </parameter>
+      <parameter>
+        <name value="signatureLevel"/>
+        <valueString value="Overloads"/>
+      </parameter>
+      <parameter>
+        <name value="validateUnits"/>
+        <valueBoolean value="true"/>
+      </parameter>
+      <parameter>
+        <name value="verifyOnly"/>
+        <valueBoolean value="false"/>
+      </parameter>
+    </Parameters>
+  </contained>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-cqlOptions">
+    <valueReference>
+      <reference value="#options"/>
+    </valueReference>
+  </extension>
+  <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNHelpers"/>
+  <version value="1.0.0"/>
+  <name value="NHSNHelpers"/>
+  <status value="draft"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+      <code value="logic-library"/>
+    </coding>
+  </type>
+  <date value="2025-09-15T11:51:36-04:00"/>
+  <publisher value="CDC National Healthcare Safety Network (NHSN)"/>
+  <contact>
+    <name value="CDC National Healthcare Safety Network (NHSN)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cdc.gov/nhsn"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="nhsn@cdc.gov"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="FHIR model information"/>
+    <resource value="http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <display value="Library FHIRHelpers"/>
+    <resource value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/FHIRHelpers|4.0.2"/>
+  </relatedArtifact>
+  <parameter>
+    <name value="Patient"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type value="Patient"/>
+  </parameter>
+  <dataRequirement>
+    <type value="Patient"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Location"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+    <mustSupport value="id"/>
+  </dataRequirement>
+  <content>
+    <contentType value="text/cql"/>
+    <data value="bGlicmFyeSBOSFNOSGVscGVycyB2ZXJzaW9uICcwLjAuMDAyJw0KDQp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4xJw0KDQppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4yJw0KDQpjb250ZXh0IFBhdGllbnQNCg0KZGVmaW5lIGZ1bmN0aW9uICJOb3JtYWxpemUgSW50ZXJ2YWwiKGNob2ljZSBDaG9pY2U8RkhJUi5kYXRlVGltZSwgRkhJUi5QZXJpb2QsIEZISVIuVGltaW5nLCBGSElSLmluc3RhbnQsIEZISVIuc3RyaW5nLCBGSElSLkFnZSwgRkhJUi5SYW5nZT4pOg0KICBjYXNlDQoJICB3aGVuIGNob2ljZSBpcyBGSElSLmRhdGVUaW1lIHRoZW4NCiAgICAJSW50ZXJ2YWxbRkhJUkhlbHBlcnMuVG9EYXRlVGltZShjaG9pY2UgYXMgRkhJUi5kYXRlVGltZSksIEZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoY2hvaWNlIGFzIEZISVIuZGF0ZVRpbWUpXQ0KCQl3aGVuIGNob2ljZSBpcyBGSElSLlBlcmlvZCB0aGVuDQogIAkJRkhJUkhlbHBlcnMuVG9JbnRlcnZhbChjaG9pY2UgYXMgRkhJUi5QZXJpb2QpDQoJCXdoZW4gY2hvaWNlIGlzIEZISVIuaW5zdGFudCB0aGVuDQoJCQlJbnRlcnZhbFtGSElSSGVscGVycy5Ub0RhdGVUaW1lKGNob2ljZSBhcyBGSElSLmluc3RhbnQpLCBGSElSSGVscGVycy5Ub0RhdGVUaW1lKGNob2ljZSBhcyBGSElSLmluc3RhbnQpXQ0KCQl3aGVuIGNob2ljZSBpcyBGSElSLkFnZSB0aGVuDQoJCSAgSW50ZXJ2YWxbRkhJUkhlbHBlcnMuVG9EYXRlKFBhdGllbnQuYmlydGhEYXRlKSArIEZISVJIZWxwZXJzLlRvUXVhbnRpdHkoY2hvaWNlIGFzIEZISVIuQWdlKSwNCgkJCSAgRkhJUkhlbHBlcnMuVG9EYXRlKFBhdGllbnQuYmlydGhEYXRlKSArIEZISVJIZWxwZXJzLlRvUXVhbnRpdHkoY2hvaWNlIGFzIEZISVIuQWdlKSArIDEgeWVhcikNCgkJd2hlbiBjaG9pY2UgaXMgRkhJUi5SYW5nZSB0aGVuDQoJCSAgSW50ZXJ2YWxbRkhJUkhlbHBlcnMuVG9EYXRlKFBhdGllbnQuYmlydGhEYXRlKSArIEZISVJIZWxwZXJzLlRvUXVhbnRpdHkoKGNob2ljZSBhcyBGSElSLlJhbmdlKS5sb3cpLA0KCQkJICBGSElSSGVscGVycy5Ub0RhdGUoUGF0aWVudC5iaXJ0aERhdGUpICsgRkhJUkhlbHBlcnMuVG9RdWFudGl0eSgoY2hvaWNlIGFzIEZISVIuUmFuZ2UpLmhpZ2gpICsgMSB5ZWFyKQ0KCQl3aGVuIGNob2ljZSBpcyBGSElSLlRpbWluZyB0aGVuDQoJCSAgTWVzc2FnZShudWxsIGFzIEludGVydmFsPERhdGVUaW1lPiwgdHJ1ZSwgJzEnLCAnRXJyb3InLCAnQ2Fubm90IGNvbXB1dGUgYSBzaW5nbGUgaW50ZXJ2YWwgZnJvbSBhIFRpbWluZyB0eXBlJykNCiAgICB3aGVuIGNob2ljZSBpcyBGSElSLnN0cmluZyB0aGVuDQogICAgICBNZXNzYWdlKG51bGwgYXMgSW50ZXJ2YWw8RGF0ZVRpbWU+LCB0cnVlLCAnMScsICdFcnJvcicsICdDYW5ub3QgY29tcHV0ZSBhbiBpbnRlcnZhbCBmcm9tIGEgU3RyaW5nIHZhbHVlJykNCgkJZWxzZQ0KCQkJbnVsbCBhcyBJbnRlcnZhbDxEYXRlVGltZT4NCgllbmQNCg0KZGVmaW5lIGZ1bmN0aW9uICJUb0RhdGVJbnRlcnZhbCIocGVyaW9kIEZISVIuUGVyaW9kKToNCiAgSW50ZXJ2YWxbZGF0ZSBmcm9tIHBlcmlvZC5zdGFydCwgZGF0ZSBmcm9tIHBlcmlvZC5lbmRdDQoNCmRlZmluZSBmdW5jdGlvbiAiR2V0TG9jYXRpb24iKHJlZmVyZW5jZSBSZWZlcmVuY2UgKToNCiAgc2luZ2xldG9uIGZyb20gKA0KCVtMb2NhdGlvbl0gTG9jYXRpb25zDQoJCXdoZXJlIExvY2F0aW9ucy5pZCA9IEdldElkKHJlZmVyZW5jZS5yZWZlcmVuY2UpDQogICkNCg0KZGVmaW5lIGZ1bmN0aW9uICJHZXRJZCIodXJpIFN0cmluZyApOg0KICBMYXN0KFNwbGl0KHVyaSwgJy8nKSk="/>
+  </content>
+</Library>

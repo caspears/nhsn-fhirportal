@@ -1,0 +1,77 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "medicationrequest-example-ach-monthly-pass1-vancomycin",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-monthly-pass1-vancomycin</b></p><a name=\"medicationrequest-example-ach-monthly-pass1-vancomycin\"> </a><a name=\"hcmedicationrequest-example-ach-monthly-pass1-vancomycin\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-medicationrequest.html\">ACH Monthly Event MedicationRequest</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888811\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}\">Inpatient</span></p><p><b>reported</b>: false</p><p><b>medication</b>: <a href=\"Medication-medication-example-vancomycin-15.html\">vancomycin Injectable Solution 50MG</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>authoredOn</b>: 2024-02-02 13:43:00-0500</p><p><b>requester</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN:\u00a01601191901010308\u00a0(use:\u00a0usual,\u00a0))</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 15mg/kg every 12 hours</p><p><b>timing</b>: Once per 12 hours</p><p><b>asNeeded</b>: false</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 47625008}\">IV</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type calculated}\">calculated</span></td><td>15 mg/kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/kg = 'mg/kg')</span></td></tr></table></blockquote></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+    "value" : "101888811"
+  }],
+  "status" : "completed",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+      "code" : "inpatient",
+      "display" : "Inpatient"
+    }],
+    "text" : "Inpatient"
+  }],
+  "reportedBoolean" : false,
+  "medicationReference" : {
+    "reference" : "Medication/medication-example-vancomycin-15",
+    "display" : "vancomycin Injectable Solution 50MG"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass1",
+    "display" : "Pass1 ACH"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+    "display" : "Hospital Admission"
+  },
+  "authoredOn" : "2024-02-02T13:43:00-05:00",
+  "requester" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass1"
+  },
+  "dosageInstruction" : [{
+    "text" : "15mg/kg every 12 hours",
+    "timing" : {
+      "repeat" : {
+        "period" : 12,
+        "periodUnit" : "h"
+      }
+    },
+    "asNeededBoolean" : false,
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "47625008",
+        "display" : "Intravenous route"
+      }],
+      "text" : "IV"
+    },
+    "doseAndRate" : [{
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+          "code" : "calculated",
+          "display" : "Calculated"
+        }],
+        "text" : "calculated"
+      },
+      "doseQuantity" : {
+        "value" : 15,
+        "unit" : "mg/kg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg/kg"
+      }
+    }]
+  }]
+}

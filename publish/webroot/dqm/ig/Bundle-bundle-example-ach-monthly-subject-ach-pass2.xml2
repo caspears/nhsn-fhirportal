@@ -1,0 +1,2456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-example-ach-monthly-subject-ach-pass2"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:1eaddf4c-2ec0-4dc4-b26f-9586d7a777e1"/>
+  </identifier>
+  <type value="collection"/>
+  <timestamp value="2024-02-05T21:04:29.481+00:00"/>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MeasureReport/measurereport-example-individual-ach-monthly-pass2"/>
+    <resource>
+      <MeasureReport>
+        <id value="measurereport-example-individual-ach-monthly-pass2"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MeasureReport_measurereport-example-individual-ach-monthly-pass2"> </a><p class="res-header-id"><b>Generated Narrative: MeasureReport measurereport-example-individual-ach-monthly-pass2</b></p><a name="measurereport-example-individual-ach-monthly-pass2"> </a><a name="hcmeasurereport-example-individual-ach-monthly-pass2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/davinci-deqm/STU3.1/StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a></p></div><p><b>DEQM Measure Scoring Extension</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}">Cohort</span></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-emergency.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104252a (use: usual, ); status = triaged; class = emergency (ActCode[9.0.0]#EMER); type = Emergency department patient visit; period = 2024-01-31 02:35:00-0500 --&gt; 2024-01-31 22:02:00-0500; reasonCode = Pain in right lower leg</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Encounter: extension = eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3; identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104252b (use: usual, ); status = finished; class = inpatient encounter (ActCode[9.0.0]#IMP); type = Hospital admission (procedure); period = 2024-01-31 22:02:00-0500 --&gt; 2024-02-02 16:22:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Coverage-coverage-example-ach-monthly-pass2.html">Coverage: identifier = Member Number: 93565936; status = active; type = health maintenance organization policy; subscriberId = 89345743; relationship = Self</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Condition-condition-example-diagnosis-ach-monthly-pass2-problem.html">Condition Diabetes mellitus type 2 (disorder)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Condition-condition-example-diagnosis-ach-monthly-pass2.html">Condition Thrombophlebitis of deep femoral vein (disorder)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Device-device-example-ach-monthly-pass2-compress-hose.html">Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#100051034 (use: usual, ); type = Graduated compression elastic hosiery (physical object)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-radiology.html">Diagnostic Report for 'Doppler ultrasonography of vascular structure of right lower limb (procedure)' for '-&gt;Pass2 ACH'</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-dex4.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888893 (use: usual, ); status = completed; category = Outpatient; medication[x] = -&gt;Dex4 4 gm chewable tablet X1; effective[x] = 2024-01-31 04:54:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-heparin-1.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; effective[x] = 2024-02-01 12:22:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-heparin-2.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; effective[x] = 2024-02-02 13:26:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-1.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888942 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-01 12:00:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-2.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888943 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-01 19:00:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-3.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888944 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-02 07:00:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-4.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888945 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-02 15:00:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-dex4-tablet.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892 (use: usual, ); status = active; intent = plan; category = Outpatient; reported[x] = true; medication[x] = -&gt;Dex4 4 gm chewable tablet X1; authoredOn = 2024-01-31 04:46:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-heparin.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; authoredOn = 2024-02-01 12:00:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-insulin-lispro.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888894 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Insulin Lispro; authoredOn = 2024-02-01 12:00:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-metformin.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892 (use: usual, ); status = active; intent = plan; category = Community; reported[x] = true; medication[x] = -&gt;Metformin hydrochloride 1000 MG; authoredOn = 2024-01-31 04:22:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-observation-example-ach-monthly-pass2-aptt.html">Observation aPTT in Blood by Coagulation assay</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-observation-example-ach-monthly-pass2-poc-1.html">Observation Glucose [Mass/volume] in Capillary blood by Glucometer</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-observation-example-ach-monthly-pass2-poc-2.html">Observation Glucose [Mass/volume] in Capillary blood by Glucometer</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-observation-example-ach-monthly-pass2-hemo-a1c.html">Observation Hemoglobin A1c/Hemoglobin.total in Blood</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-observation-example-ach-monthly-pass2-hemo.html">Observation Bacteria identified in Blood by Culture</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-observation-example-ach-monthly-pass2-vitals-weight.html">Observation Body weight</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Procedure-procedure-example-ach-monthly-pass2-ivcf.html">Procedure Percutaneous insertion of inferior vena cava filter (procedure)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-aptt.html">ServiceRequest aPTT in Blood by Coagulation assay</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-glucose.html">ServiceRequest Glucose [Mass/volume] in Capillary blood by Glucometer</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo-a1c.html">ServiceRequest Hemoglobin A1c [Mass/volume] in Blood</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo.html">ServiceRequest Hemoglobin [Mass/volume] in Venous blood</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Specimen-specimen-example-ach-monthly-pass2-blood-1.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-01-31 22:50:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Specimen-specimen-example-ach-monthly-pass2-blood-2.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 11:26:00-0500</a></p><p><b>identifier</b>: <code>http://example.org/fhir/measurereport/id</code>/123456789-pass2</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href="Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.html">NHSN dQM Acute Care Hospital Monthly Initial Populationversion: null1.0.0)</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass1.html">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN: 1601191901010308 (use: usual, ))</a></p><p><b>date</b>: 2024-02-05 21:04:29+0000</p><p><b>reporter</b>: <a href="Organization-organization-example-submitting-organization.html">Organization Example NHSN Submitter</a></p><p><b>period</b>: 2024-01-05 00:00:00+0000 --&gt; 2024-02-04 00:00:00+0000</p><p><b>improvementNotation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></td><td>1</td></tr></table></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</a></li><li><a href="Encounter-encounter-example-ach-monthly-pass2-emergency.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104252a (use: usual, ); status = triaged; class = emergency (ActCode[9.0.0]#EMER); type = Emergency department patient visit; period = 2024-01-31 02:35:00-0500 --&gt; 2024-01-31 22:02:00-0500; reasonCode = Pain in right lower leg</a></li><li><a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Encounter: extension = eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3; identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104252b (use: usual, ); status = finished; class = inpatient encounter (ActCode[9.0.0]#IMP); type = Hospital admission (procedure); period = 2024-01-31 22:02:00-0500 --&gt; 2024-02-02 16:22:00-0500</a></li><li><a href="Coverage-coverage-example-ach-monthly-pass2.html">Coverage: identifier = Member Number: 93565936; status = active; type = health maintenance organization policy; subscriberId = 89345743; relationship = Self</a></li><li><a href="Condition-condition-example-diagnosis-ach-monthly-pass2-problem.html">Condition Diabetes mellitus type 2 (disorder)</a></li><li><a href="Condition-condition-example-diagnosis-ach-monthly-pass2.html">Condition Thrombophlebitis of deep femoral vein (disorder)</a></li><li><a href="Device-device-example-ach-monthly-pass2-compress-hose.html">Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#100051034 (use: usual, ); type = Graduated compression elastic hosiery (physical object)</a></li><li><a href="DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-radiology.html">Diagnostic Report for 'Doppler ultrasonography of vascular structure of right lower limb (procedure)' for '-&gt;Pass2 ACH'</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-dex4.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888893 (use: usual, ); status = completed; category = Outpatient; medication[x] = -&gt;Dex4 4 gm chewable tablet X1; effective[x] = 2024-01-31 04:54:00-0500</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-heparin-1.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; effective[x] = 2024-02-01 12:22:00-0500</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-heparin-2.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; effective[x] = 2024-02-02 13:26:00-0500</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-1.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888942 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-01 12:00:00-0500</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-2.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888943 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-01 19:00:00-0500</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-3.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888944 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-02 07:00:00-0500</a></li><li><a href="MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-4.html">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888945 (use: usual, ); status = completed; category = Inpatient; medication[x] = -&gt;Insulin Lispro; effective[x] = 2024-02-02 15:00:00-0500</a></li><li><a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-dex4-tablet.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892 (use: usual, ); status = active; intent = plan; category = Outpatient; reported[x] = true; medication[x] = -&gt;Dex4 4 gm chewable tablet X1; authoredOn = 2024-01-31 04:46:00-0500</a></li><li><a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-heparin.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; authoredOn = 2024-02-01 12:00:00-0500</a></li><li><a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-insulin-lispro.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888894 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Insulin Lispro; authoredOn = 2024-02-01 12:00:00-0500</a></li><li><a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-metformin.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892 (use: usual, ); status = active; intent = plan; category = Community; reported[x] = true; medication[x] = -&gt;Metformin hydrochloride 1000 MG; authoredOn = 2024-01-31 04:22:00-0500</a></li><li><a href="Observation-observation-example-ach-monthly-pass2-aptt.html">Observation aPTT in Blood by Coagulation assay</a></li><li><a href="Observation-observation-example-ach-monthly-pass2-poc-1.html">Observation Glucose [Mass/volume] in Capillary blood by Glucometer</a></li><li><a href="Observation-observation-example-ach-monthly-pass2-poc-2.html">Observation Glucose [Mass/volume] in Capillary blood by Glucometer</a></li><li><a href="Observation-observation-example-ach-monthly-pass2-hemo-a1c.html">Observation Hemoglobin A1c/Hemoglobin.total in Blood</a></li><li><a href="Observation-observation-example-ach-monthly-pass2-hemo.html">Observation Bacteria identified in Blood by Culture</a></li><li><a href="Observation-observation-example-ach-monthly-pass2-vitals-weight.html">Observation Body weight</a></li><li><a href="Procedure-procedure-example-ach-monthly-pass2-ivcf.html">Procedure Percutaneous insertion of inferior vena cava filter (procedure)</a></li><li><a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-aptt.html">ServiceRequest aPTT in Blood by Coagulation assay</a></li><li><a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-glucose.html">ServiceRequest Glucose [Mass/volume] in Capillary blood by Glucometer</a></li><li><a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo-a1c.html">ServiceRequest Hemoglobin A1c [Mass/volume] in Blood</a></li><li><a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo.html">ServiceRequest Hemoglobin [Mass/volume] in Venous blood</a></li><li><a href="Specimen-specimen-example-ach-monthly-pass2-blood-1.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-01-31 22:50:00-0500</a></li><li><a href="Specimen-specimen-example-ach-monthly-pass2-blood-2.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 11:26:00-0500</a></li></ul></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+              <code value="cohort"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-minimal-patient"/>
+            </extension>
+            <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-encounter"/>
+            </extension>
+            <reference value="Encounter/encounter-example-ach-monthly-pass2-emergency"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-encounter"/>
+            </extension>
+            <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-coverage"/>
+            </extension>
+            <reference value="Coverage/coverage-example-ach-monthly-pass2"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-condition"/>
+            </extension>
+            <reference value="Condition/condition-example-diagnosis-ach-monthly-pass2-problem"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-condition"/>
+            </extension>
+            <reference value="Condition/condition-example-diagnosis-ach-monthly-pass2"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-device"/>
+            </extension>
+            <reference value="Device/device-example-ach-monthly-pass2-compress-hose"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-diagnosticreport-lab"/>
+            </extension>
+            <reference value="DiagnosticReport/diagnosticreport-example-ach-monthly-pass2-radiology"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-dex4"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-heparin-1"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-heparin-2"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-1"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-2"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-3"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-4"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-request"/>
+            </extension>
+            <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-dex4-tablet"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-request"/>
+            </extension>
+            <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-heparin"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-request"/>
+            </extension>
+            <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-insulin-lispro"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-request"/>
+            </extension>
+            <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-metformin"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-observation-lab-category"/>
+            </extension>
+            <reference value="Observation/observation-example-ach-monthly-pass2-aptt"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-observation-lab-category"/>
+            </extension>
+            <reference value="Observation/observation-example-ach-monthly-pass2-poc-1"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-observation-lab-category"/>
+            </extension>
+            <reference value="Observation/observation-example-ach-monthly-pass2-poc-2"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-observation-lab-category"/>
+            </extension>
+            <reference value="Observation/observation-example-ach-monthly-pass2-hemo-a1c"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-observation-lab-category"/>
+            </extension>
+            <reference value="Observation/observation-example-ach-monthly-pass2-hemo"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-observation-vital-signs"/>
+            </extension>
+            <reference value="Observation/observation-example-ach-monthly-pass2-vitals-weight"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-procedure"/>
+            </extension>
+            <reference value="Procedure/procedure-example-ach-monthly-pass2-ivcf"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-service-request"/>
+            </extension>
+            <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-aptt"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-service-request"/>
+            </extension>
+            <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-glucose"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-service-request"/>
+            </extension>
+            <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo-a1c"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-service-request"/>
+            </extension>
+            <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-specimen"/>
+            </extension>
+            <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-1"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-specimen"/>
+            </extension>
+            <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-2"/>
+          </valueReference>
+        </extension>
+        <identifier>
+          <system value="http://example.org/fhir/measurereport/id"/>
+          <value value="123456789-pass2"/>
+        </identifier>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation|1.0.0-cibuild"/>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass1"/>
+        </subject>
+        <date value="2024-02-05T21:04:29.481+00:00"/>
+        <reporter>
+          <reference value="Organization/organization-example-submitting-organization"/>
+        </reporter>
+        <period>
+          <start value="2024-01-05T00:00:00.000+00:00"/>
+          <end value="2024-02-04T00:00:00.000+00:00"/>
+        </period>
+        <improvementNotation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/measure-improvement-notation"/>
+            <code value="increase"/>
+          </coding>
+        </improvementNotation>
+        <group>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+                <display value="Initial Population"/>
+              </coding>
+            </code>
+            <count value="1"/>
+          </population>
+        </group>
+        <evaluatedResource>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-emergency"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Coverage/coverage-example-ach-monthly-pass2"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Condition/condition-example-diagnosis-ach-monthly-pass2-problem"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Condition/condition-example-diagnosis-ach-monthly-pass2"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Device/device-example-ach-monthly-pass2-compress-hose"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="DiagnosticReport/diagnosticreport-example-ach-monthly-pass2-radiology"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-dex4"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-heparin-1"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-heparin-2"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-1"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-2"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-3"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-4"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-dex4-tablet"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-heparin"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-insulin-lispro"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-metformin"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Observation/observation-example-ach-monthly-pass2-aptt"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Observation/observation-example-ach-monthly-pass2-poc-1"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Observation/observation-example-ach-monthly-pass2-poc-2"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Observation/observation-example-ach-monthly-pass2-hemo-a1c"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Observation/observation-example-ach-monthly-pass2-hemo"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Observation/observation-example-ach-monthly-pass2-vitals-weight"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Procedure/procedure-example-ach-monthly-pass2-ivcf"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-aptt"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-glucose"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo-a1c"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-1"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-2"/>
+        </evaluatedResource>
+      </MeasureReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Patient/patient-example-ach-monthly-pass2"/>
+    <resource>
+      <Patient>
+        <id value="patient-example-ach-monthly-pass2"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-example-ach-monthly-pass2"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-example-ach-monthly-pass2</b></p><a name="patient-example-ach-monthly-pass2"> </a><a name="hcpatient-example-ach-monthly-pass2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cross-measure-patient.html">Cross-Measure Patient Profile</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">2024-02-02 16:22:00-0500</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 999-999-9999(Home)</li><li>123 Sesame Street Lansing Lansing MI 48864 US </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2186-5">Race &amp; Ethnicity - CDC 2186-5</a>: Not Hispanic or Latino</li><li>text: Non Hispanic or Latino</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9)."><a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a></td><td colspan="3">F</td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.">US Core Race Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2106-3">Race &amp; Ethnicity - CDC 2106-3</a>: White</li><li>text: White</li></ul></td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2106-3"/>
+              <display value="White"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="White"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2186-5"/>
+              <display value="Not Hispanic or Latino"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Non Hispanic or Latino"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+          <valueCode value="F"/>
+        </extension>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical record number"/>
+            </coding>
+            <text value="MRN"/>
+          </type>
+          <system value="urn:oid:1.2.5.8.2.7"/>
+          <value value="1601191902010308"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="Pass2 ACH"/>
+          <family value="ACH"/>
+          <given value="Pass2"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="999-999-9999"/>
+          <use value="home"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1965-12-22"/>
+        <deceasedDateTime value="2024-02-02T16:22:00-05:00"/>
+        <address>
+          <line value="123 Sesame Street Lansing"/>
+          <city value="Lansing"/>
+          <district value="Ingham County"/>
+          <state value="MI"/>
+          <postalCode value="48864"/>
+          <country value="US"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Encounter/encounter-example-ach-monthly-pass2-emergency"/>
+    <resource>
+      <Encounter>
+        <id value="encounter-example-ach-monthly-pass2-emergency"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-example-ach-monthly-pass2-emergency"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example-ach-monthly-pass2-emergency</b></p><a name="encounter-example-ach-monthly-pass2-emergency"> </a><a name="hcencounter-example-ach-monthly-pass2-emergency"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-encounter.html">ACH Monthly Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/10005104252a (use: usual, )</p><p><b>status</b>: Triaged</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER">ActCode EMER</a>: emergency (version = 9.0.0 )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 4525004}">Emergency department patient visit</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>period</b>: 2024-01-31 02:35:00-0500 --&gt; 2024-01-31 22:02:00-0500</p><p><b>reasonCode</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm M79.661}">Leg pain, lower right</span></p><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Condition</b></td></tr><tr><td style="display: none">*</td><td><a href="Condition-condition-example-diagnosis-ach-monthly-pass2.html">Thrombophlebitis</a></td></tr></table><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/admit-source other}">Walk-in</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-location-example-ach-monthly-emergency.html">ACH Monthly Emergency Department</a></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type wa}">Ward</span></td><td>2024-01-31 02:35:00-0500 --&gt; 2024-02-01 01:02:00-0500</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="10005104252a"/>
+        </identifier>
+        <status value="triaged"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <version value="9.0.0"/>
+          <code value="EMER"/>
+          <display value="emergency"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="4525004"/>
+            <display value="Emergency department patient visit"/>
+          </coding>
+          <text value="Emergency department patient visit"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <period>
+          <start value="2024-01-31T02:35:00-05:00"/>
+          <end value="2024-01-31T22:02:00-05:00"/>
+        </period>
+        <reasonCode>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="M79.661"/>
+            <display value="Pain in right lower leg"/>
+          </coding>
+          <text value="Leg pain, lower right"/>
+        </reasonCode>
+        <diagnosis>
+          <condition>
+            <reference value="Condition/condition-example-diagnosis-ach-monthly-pass2"/>
+            <display value="Thrombophlebitis"/>
+          </condition>
+        </diagnosis>
+        <hospitalization>
+          <admitSource>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+              <code value="other"/>
+              <display value="Other"/>
+            </coding>
+            <text value="Walk-in"/>
+          </admitSource>
+        </hospitalization>
+        <location>
+          <location>
+            <reference value="Location/location-example-ach-monthly-emergency"/>
+            <display value="ACH Monthly Emergency Department"/>
+          </location>
+          <physicalType>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+              <code value="wa"/>
+              <display value="Ward"/>
+            </coding>
+          </physicalType>
+          <period>
+            <start value="2024-01-31T02:35:00-05:00"/>
+            <end value="2024-02-01T01:02:00-05:00"/>
+          </period>
+        </location>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+    <resource>
+      <Encounter>
+        <id value="encounter-example-ach-monthly-pass2-inpatient"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-example-ach-monthly-pass2-inpatient"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example-ach-monthly-pass2-inpatient</b></p><a name="encounter-example-ach-monthly-pass2-inpatient"> </a><a name="hcencounter-example-ach-monthly-pass2-inpatient"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-encounter.html">ACH Monthly Event Encounter</a></p></div><p><b>Original Resource ID</b>: eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3</p><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/10005104252b (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">ActCode IMP</a>: inpatient encounter (version = 9.0.0 )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 32485007}">Hospital Admission</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>period</b>: 2024-01-31 22:02:00-0500 --&gt; 2024-02-02 16:22:00-0500</p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/admit-source emd}">Emergency Department</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition exp}">Expired</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-location-example-ach-monthly-inpatient.html">ACH Monthly Inpatient Hospital Ward</a></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type wa}">Ward</span></td><td>2024-02-01 01:02:00-0500 --&gt; 2024-02-02 16:22:00-0500</td></tr></table></div>
+        </text>
+        <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension">
+          <valueString value="eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3"/>
+        </extension>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="10005104252b"/>
+        </identifier>
+        <status value="finished">
+          <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension">
+            <valueString value="COMPLETED"/>
+          </extension>
+        </status>
+        <class>
+          <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-mapped-concept-extension">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://www.example.com/prorpietary"/>
+                <code value="I"/>
+                <display value="Inpatient"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <version value="9.0.0"/>
+          <code value="IMP"/>
+          <display value="inpatient encounter"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="32485007"/>
+            <display value="Hospital admission (procedure)"/>
+          </coding>
+          <text value="Hospital Admission"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <period>
+          <start value="2024-01-31T22:02:00-05:00"/>
+          <end value="2024-02-02T16:22:00-05:00"/>
+        </period>
+        <hospitalization>
+          <admitSource>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+              <code value="emd"/>
+              <display value="From accident/emergency department"/>
+            </coding>
+            <text value="Emergency Department"/>
+          </admitSource>
+          <dischargeDisposition>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+              <code value="exp"/>
+              <display value="expired"/>
+            </coding>
+            <text value="Expired"/>
+          </dischargeDisposition>
+        </hospitalization>
+        <location>
+          <location>
+            <reference value="Location/location-example-ach-monthly-inpatient"/>
+            <display value="ACH Monthly Inpatient Hospital Ward"/>
+          </location>
+          <physicalType>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+              <code value="wa"/>
+              <display value="Ward"/>
+            </coding>
+          </physicalType>
+          <period>
+            <start value="2024-02-01T01:02:00-05:00"/>
+            <end value="2024-02-02T16:22:00-05:00"/>
+          </period>
+        </location>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Coverage/coverage-example-ach-monthly-pass2"/>
+    <resource>
+      <Coverage>
+        <id value="coverage-example-ach-monthly-pass2"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Coverage_coverage-example-ach-monthly-pass2"> </a><p class="res-header-id"><b>Generated Narrative: Coverage coverage-example-ach-monthly-pass2</b></p><a name="coverage-example-ach-monthly-pass2"> </a><a name="hccoverage-example-ach-monthly-pass2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-coverage.html">ACH Monthly Event Coverage</a></p></div><p><b>identifier</b>: Member Number/93565936</p><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode HMO}">health maintenance organization policy</span></p><p><b>subscriberId</b>: 89345743</p><p><b>beneficiary</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span></p><p><b>payor</b>: <a href="http://example.org/fhir/Organization/PayerComm">PayerComm</a></p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MB"/>
+              <display value="Member Number"/>
+            </coding>
+          </type>
+          <system value="http://example.org/fhir/memberidentifier"/>
+          <value value="93565936"/>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <version value="9.0.0"/>
+            <code value="HMO"/>
+            <display value="health maintenance organization policy"/>
+          </coding>
+        </type>
+        <subscriberId value="89345743"/>
+        <beneficiary>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+        </beneficiary>
+        <relationship>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+            <code value="self"/>
+            <display value="Self"/>
+          </coding>
+        </relationship>
+        <payor>
+          <reference value="http://example.org/fhir/Organization/PayerComm"/>
+          <display value="PayerComm"/>
+        </payor>
+      </Coverage>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Condition/condition-example-diagnosis-ach-monthly-pass2-problem"/>
+    <resource>
+      <Condition>
+        <id value="condition-example-diagnosis-ach-monthly-pass2-problem"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-example-diagnosis-ach-monthly-pass2-problem"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-example-diagnosis-ach-monthly-pass2-problem</b></p><a name="condition-example-diagnosis-ach-monthly-pass2-problem"> </a><a name="hccondition-example-diagnosis-ach-monthly-pass2-problem"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-condition.html">ACH Monthly Event Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 44054006}, {http://hl7.org/fhir/sid/icd-10-cm E11.9}">Diabetes mellitus without complication</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <version value="4.0.0"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+            <display value="Problem List Item"/>
+          </coding>
+          <text value="Problem List Item"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="44054006"/>
+            <display value="Diabetes mellitus type 2 (disorder)"/>
+          </coding>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="E11.9"/>
+            <display value="Type 2 diabetes mellitus without complications"/>
+          </coding>
+          <text value="Diabetes mellitus without complication"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Condition/condition-example-diagnosis-ach-monthly-pass2"/>
+    <resource>
+      <Condition>
+        <id value="condition-example-diagnosis-ach-monthly-pass2"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-example-diagnosis-ach-monthly-pass2"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-example-diagnosis-ach-monthly-pass2</b></p><a name="condition-example-diagnosis-ach-monthly-pass2"> </a><a name="hccondition-example-diagnosis-ach-monthly-pass2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-condition.html">ACH Monthly Event Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1748006}">Thrombophlebitis</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <version value="4.0.0"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </coding>
+          <text value="Encounter Diagnosis"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1748006"/>
+            <display value="Thrombophlebitis of deep femoral vein (disorder)"/>
+          </coding>
+          <text value="Thrombophlebitis"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Device/device-example-ach-monthly-pass2-compress-hose"/>
+    <resource>
+      <Device>
+        <id value="device-example-ach-monthly-pass2-compress-hose"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Device_device-example-ach-monthly-pass2-compress-hose"> </a><p class="res-header-id"><b>Generated Narrative: Device device-example-ach-monthly-pass2-compress-hose</b></p><a name="device-example-ach-monthly-pass2-compress-hose"> </a><a name="hcdevice-example-ach-monthly-pass2-compress-hose"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-device.html">ACH Monthly Event Device</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/100051034 (use: usual, )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 348681001}">Graduated compression elastic hosiery</span></p><p><b>patient</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="100051034"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="348681001"/>
+            <display value="Graduated compression elastic hosiery (physical object)"/>
+          </coding>
+          <text value="Graduated compression elastic hosiery"/>
+        </type>
+        <patient>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </patient>
+      </Device>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/DiagnosticReport/diagnosticreport-example-ach-monthly-pass2-radiology"/>
+    <resource>
+      <DiagnosticReport>
+        <id value="diagnosticreport-example-ach-monthly-pass2-radiology"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-note"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DiagnosticReport_diagnosticreport-example-ach-monthly-pass2-radiology"> </a><p class="res-header-id"><b>Generated Narrative: DiagnosticReport diagnosticreport-example-ach-monthly-pass2-radiology</b></p><a name="diagnosticreport-example-ach-monthly-pass2-radiology"> </a><a name="hcdiagnosticreport-example-ach-monthly-pass2-radiology"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-diagnosticreport-note.html">ACH Monthly Event Diagnostic Report - Report and Note</a></p></div><h2><span title="Codes:{http://snomed.info/sct 14331000087103}">ultrasonography of right lower limb</span> (<span title="Codes:{http://loinc.org LP29684-5}">Radiology</span>) </h2><table class="grid"><tr><td>Subject</td><td>Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</td></tr><tr><td>When For</td><td>2024-02-01 23:14:00-0500</td></tr><tr><td>Reported</td><td>2024-02-02 08:52:00-0500</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions:</b></p><ul><li><span title="Codes:{http://snomed.info/sct 128053003}">Deep venous thrombosis (disorder)</span></li></ul></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="LP29684-5"/>
+            <display value="Radiology"/>
+          </coding>
+          <text value="Radiology"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="14331000087103"/>
+            <display value="Doppler ultrasonography of vascular structure of right lower limb (procedure)"/>
+          </coding>
+          <text value="ultrasonography of right lower limb"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <effectiveDateTime value="2024-02-01T23:14:00-05:00"/>
+        <issued value="2024-02-02T08:52:00-05:00"/>
+        <conclusionCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="128053003"/>
+            <display value="Deep venous thrombosis (disorder)"/>
+          </coding>
+        </conclusionCode>
+      </DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass2-dex4"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass2-dex4"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass2-dex4"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass2-dex4</b></p><a name="medadmin-example-ach-monthly-pass2-dex4"> </a><a name="hcmedadmin-example-ach-monthly-pass2-dex4"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888893 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category outpatient}">Outpatient</span></p><p><b>medication</b>: <a href="Medication-medication-example-dex4-tablet.html">Dex4 4 gm chewable tablet X1</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-emergency.html">Emergency Encounter</a></p><p><b>effective</b>: 2024-01-31 04:54:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-dex4-tablet.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892 (use: usual, ); status = active; intent = plan; category = Outpatient; reported[x] = true; medication[x] = -&gt;Dex4 4 gm chewable tablet X1; authoredOn = 2024-01-31 04:46:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>4 gm chewable tablet X1</td><td><span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></td><td>4 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888893"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="outpatient"/>
+            <display value="Outpatient"/>
+          </coding>
+          <text value="Outpatient"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-dex4-tablet"/>
+          <display value="Dex4 4 gm chewable tablet X1"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-emergency"/>
+          <display value="Emergency Encounter"/>
+        </context>
+        <effectiveDateTime value="2024-01-31T04:54:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-dex4-tablet"/>
+        </request>
+        <dosage>
+          <text value="4 gm chewable tablet X1"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral Use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <dose>
+            <value value="4"/>
+            <unit value="g"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="g"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass2-heparin-1"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass2-heparin-1"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass2-heparin-1"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass2-heparin-1</b></p><a name="medadmin-example-ach-monthly-pass2-heparin-1"> </a><a name="hcmedadmin-example-ach-monthly-pass2-heparin-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888895 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-heparin.html">0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-01 12:22:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-heparin.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; authoredOn = 2024-02-01 12:00:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>0.5 mL</td><td><span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></td><td><span title="Codes:{http://snomed.info/sct 47625008}">IV</span></td><td>5000 uL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeuL = 'uL')</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888895"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-heparin"/>
+          <display value="0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </context>
+        <effectiveDateTime value="2024-02-01T12:22:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-heparin"/>
+        </request>
+        <dosage>
+          <text value="0.5 mL"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous route"/>
+            </coding>
+            <text value="IV"/>
+          </route>
+          <dose>
+            <value value="5000"/>
+            <unit value="uL"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="uL"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass2-heparin-2"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass2-heparin-2"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass2-heparin-2"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass2-heparin-2</b></p><a name="medadmin-example-ach-monthly-pass2-heparin-2"> </a><a name="hcmedadmin-example-ach-monthly-pass2-heparin-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888895 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-heparin.html">0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 13:26:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-heparin.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888895 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe; authoredOn = 2024-02-01 12:00:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>0.5 mL</td><td><span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></td><td><span title="Codes:{http://snomed.info/sct 47625008}">IV</span></td><td>5000 uL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeuL = 'uL')</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888895"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-heparin"/>
+          <display value="0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </context>
+        <effectiveDateTime value="2024-02-02T13:26:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-heparin"/>
+        </request>
+        <dosage>
+          <text value="0.5 mL"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous route"/>
+            </coding>
+            <text value="IV"/>
+          </route>
+          <dose>
+            <value value="5000"/>
+            <unit value="uL"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="uL"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-1"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass2-insulin-lispro-1"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass2-insulin-lispro-1"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass2-insulin-lispro-1</b></p><a name="medadmin-example-ach-monthly-pass2-insulin-lispro-1"> </a><a name="hcmedadmin-example-ach-monthly-pass2-insulin-lispro-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/1018888942 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-insulin-lispro.html">Insulin Lispro</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-01 12:00:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-insulin-lispro.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888894 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Insulin Lispro; authoredOn = 2024-02-01 12:00:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>Give 5 units before breakfast</td><td><span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></td><td><span title="Codes:{http://snomed.info/sct 47625008}">IV</span></td><td>5</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1018888942"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-insulin-lispro"/>
+          <display value="Insulin Lispro"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </context>
+        <effectiveDateTime value="2024-02-01T12:00:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-insulin-lispro"/>
+        </request>
+        <dosage>
+          <text value="Give 5 units before breakfast"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous route"/>
+            </coding>
+            <text value="IV"/>
+          </route>
+          <dose>
+            <value value="5"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-2"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass2-insulin-lispro-2"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass2-insulin-lispro-2"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass2-insulin-lispro-2</b></p><a name="medadmin-example-ach-monthly-pass2-insulin-lispro-2"> </a><a name="hcmedadmin-example-ach-monthly-pass2-insulin-lispro-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/1018888943 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-insulin-lispro.html">Insulin Lispro</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-01 19:00:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-insulin-lispro.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888894 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Insulin Lispro; authoredOn = 2024-02-01 12:00:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>Give 5 units before dinner</td><td><span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></td><td><span title="Codes:{http://snomed.info/sct 47625008}">IV</span></td><td>4</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1018888943"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-insulin-lispro"/>
+          <display value="Insulin Lispro"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </context>
+        <effectiveDateTime value="2024-02-01T19:00:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-insulin-lispro"/>
+        </request>
+        <dosage>
+          <text value="Give 5 units before dinner"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous route"/>
+            </coding>
+            <text value="IV"/>
+          </route>
+          <dose>
+            <value value="4"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-3"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass2-insulin-lispro-3"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass2-insulin-lispro-3"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass2-insulin-lispro-3</b></p><a name="medadmin-example-ach-monthly-pass2-insulin-lispro-3"> </a><a name="hcmedadmin-example-ach-monthly-pass2-insulin-lispro-3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/1018888944 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-insulin-lispro.html">Insulin Lispro</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 07:00:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-insulin-lispro.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888894 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Insulin Lispro; authoredOn = 2024-02-01 12:00:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>Give 5 units before breakfast</td><td><span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></td><td><span title="Codes:{http://snomed.info/sct 47625008}">IV</span></td><td>5</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1018888944"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-insulin-lispro"/>
+          <display value="Insulin Lispro"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </context>
+        <effectiveDateTime value="2024-02-02T07:00:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-insulin-lispro"/>
+        </request>
+        <dosage>
+          <text value="Give 5 units before breakfast"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous route"/>
+            </coding>
+            <text value="IV"/>
+          </route>
+          <dose>
+            <value value="5"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass2-insulin-lispro-4"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-monthly-pass2-insulin-lispro-4"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-monthly-pass2-insulin-lispro-4"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass2-insulin-lispro-4</b></p><a name="medadmin-example-ach-monthly-pass2-insulin-lispro-4"> </a><a name="hcmedadmin-example-ach-monthly-pass2-insulin-lispro-4"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/1018888945 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-insulin-lispro.html">Insulin Lispro</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 15:00:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-insulin-lispro.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888894 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Insulin Lispro; authoredOn = 2024-02-01 12:00:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>Give 5 units before dinner</td><td><span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></td><td><span title="Codes:{http://snomed.info/sct 47625008}">IV</span></td><td>4</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1018888945"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-insulin-lispro"/>
+          <display value="Insulin Lispro"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <context>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </context>
+        <effectiveDateTime value="2024-02-02T15:00:00-05:00"/>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-insulin-lispro"/>
+        </request>
+        <dosage>
+          <text value="Give 5 units before dinner"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous route"/>
+            </coding>
+            <text value="IV"/>
+          </route>
+          <dose>
+            <value value="4"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-monthly-pass2-dex4-tablet"/>
+    <resource>
+      <MedicationRequest>
+        <id value="medicationrequest-example-ach-monthly-pass2-dex4-tablet"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_medicationrequest-example-ach-monthly-pass2-dex4-tablet"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-monthly-pass2-dex4-tablet</b></p><a name="medicationrequest-example-ach-monthly-pass2-dex4-tablet"> </a><a name="hcmedicationrequest-example-ach-monthly-pass2-dex4-tablet"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationrequest.html">ACH Monthly Event MedicationRequest</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888892 (use: usual, )</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category outpatient}">Outpatient</span></p><p><b>reported</b>: true</p><p><b>medication</b>: <a href="Medication-medication-example-dex4-tablet.html">Dex4 4 gm chewable tablet X1</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-emergency.html">Emergency Encounter</a></p><p><b>authoredOn</b>: 2024-01-31 04:46:00-0500</p><p><b>requester</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 4 gm chewable tablet X1</p><p><b>timing</b>: Once per 1 day</p><p><b>asNeeded</b>: false</p><p><b>route</b>: <span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type calculated}">calculated</span></td><td>4 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span></td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888892"/>
+        </identifier>
+        <status value="active"/>
+        <intent value="plan"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="outpatient"/>
+            <display value="Outpatient"/>
+          </coding>
+          <text value="Outpatient"/>
+        </category>
+        <reportedBoolean value="true"/>
+        <medicationReference>
+          <reference value="Medication/medication-example-dex4-tablet"/>
+          <display value="Dex4 4 gm chewable tablet X1"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-emergency"/>
+          <display value="Emergency Encounter"/>
+        </encounter>
+        <authoredOn value="2024-01-31T04:46:00-05:00"/>
+        <requester>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+        </requester>
+        <dosageInstruction>
+          <text value="4 gm chewable tablet X1"/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral Use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <doseAndRate>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                <code value="calculated"/>
+                <display value="Calculated"/>
+              </coding>
+              <text value="calculated"/>
+            </type>
+            <doseQuantity>
+              <value value="4"/>
+              <unit value="g"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="g"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-monthly-pass2-heparin"/>
+    <resource>
+      <MedicationRequest>
+        <id value="medicationrequest-example-ach-monthly-pass2-heparin"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_medicationrequest-example-ach-monthly-pass2-heparin"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-monthly-pass2-heparin</b></p><a name="medicationrequest-example-ach-monthly-pass2-heparin"> </a><a name="hcmedicationrequest-example-ach-monthly-pass2-heparin"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationrequest.html">ACH Monthly Event MedicationRequest</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888895 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>reported</b>: false</p><p><b>medication</b>: <a href="Medication-medication-example-heparin.html">0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>authoredOn</b>: 2024-02-01 12:00:00-0500</p><p><b>requester</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 0.5 mL</p><p><b>timing</b>: 2 per 1 day</p><p><b>asNeeded</b>: false</p><p><b>site</b>: <span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></p><p><b>route</b>: <span title="Codes:{http://snomed.info/sct 47625008}">IV</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5000 uL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeuL = 'uL')</span></td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888895"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="order"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <reportedBoolean value="false"/>
+        <medicationReference>
+          <reference value="Medication/medication-example-heparin"/>
+          <display value="0.5 ML heparin sodium, porcine 10000 UNT/ML Prefilled Syringe"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <authoredOn value="2024-02-01T12:00:00-05:00"/>
+        <requester>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+        </requester>
+        <dosageInstruction>
+          <text value="0.5 mL"/>
+          <timing>
+            <repeat>
+              <frequency value="2"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous route"/>
+            </coding>
+            <text value="IV"/>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5000"/>
+              <unit value="uL"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="uL"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-monthly-pass2-insulin-lispro"/>
+    <resource>
+      <MedicationRequest>
+        <id value="medicationrequest-example-ach-monthly-pass2-insulin-lispro"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_medicationrequest-example-ach-monthly-pass2-insulin-lispro"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-monthly-pass2-insulin-lispro</b></p><a name="medicationrequest-example-ach-monthly-pass2-insulin-lispro"> </a><a name="hcmedicationrequest-example-ach-monthly-pass2-insulin-lispro"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationrequest.html">ACH Monthly Event MedicationRequest</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888894 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>reported</b>: false</p><p><b>medication</b>: <a href="Medication-medication-example-insulin-lispro.html">Insulin Lispro</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>authoredOn</b>: 2024-02-01 12:00:00-0500</p><p><b>requester</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Give 5 units before breakfast</p><p><b>timing</b>: Code , Once per 1 day</p><p><b>asNeeded</b>: false</p><p><b>site</b>: <span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></p><p><b>route</b>: <span title="Codes:{http://snomed.info/sct 47625008}">IV</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>5</td></tr></table></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Give 4 units before dinner</p><p><b>timing</b>: Code , Once per 1 day</p><p><b>asNeeded</b>: false</p><p><b>site</b>: <span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></p><p><b>route</b>: <span title="Codes:{http://snomed.info/sct 47625008}">IV</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>4</td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888894"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="order"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient Medication"/>
+        </category>
+        <reportedBoolean value="false"/>
+        <medicationReference>
+          <reference value="Medication/medication-example-insulin-lispro"/>
+          <display value="Insulin Lispro"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <authoredOn value="2024-02-01T12:00:00-05:00"/>
+        <requester>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+        </requester>
+        <dosageInstruction>
+          <text value="Give 5 units before breakfast"/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation"/>
+                <code value="AM"/>
+              </coding>
+            </code>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous route"/>
+            </coding>
+            <text value="IV"/>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="5"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+        <dosageInstruction>
+          <text value="Give 4 units before dinner"/>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation"/>
+                <code value="BED"/>
+              </coding>
+            </code>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous route"/>
+            </coding>
+            <text value="IV"/>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="4"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-monthly-pass2-metformin"/>
+    <resource>
+      <MedicationRequest>
+        <id value="medicationrequest-example-ach-monthly-pass2-metformin"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_medicationrequest-example-ach-monthly-pass2-metformin"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-monthly-pass2-metformin</b></p><a name="medicationrequest-example-ach-monthly-pass2-metformin"> </a><a name="hcmedicationrequest-example-ach-monthly-pass2-metformin"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationrequest.html">ACH Monthly Event MedicationRequest</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888892 (use: usual, )</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category community}">Home Medication</span></p><p><b>reported</b>: true</p><p><b>medication</b>: <a href="Medication-medication-example-metformin-1000.html">Metformin hydrochloride 1000 MG</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-emergency.html">Emergency Encounter</a></p><p><b>authoredOn</b>: 2024-01-31 04:22:00-0500</p><p><b>requester</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</a></p><p><b>recorder</b>: Patient Identified</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 1000 mg tablet by mouth twice daily</p><p><b>timing</b>: 2 per 1 day</p><p><b>asNeeded</b>: false</p><p><b>route</b>: <span title="Codes:{http://snomed.info/sct 26643006}">Oral</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type calculated}">calculated</span></td><td>1000 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101888892"/>
+        </identifier>
+        <status value="active"/>
+        <intent value="plan"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="community"/>
+            <display value="Community"/>
+          </coding>
+          <text value="Home Medication"/>
+        </category>
+        <reportedBoolean value="true"/>
+        <medicationReference>
+          <reference value="Medication/medication-example-metformin-1000"/>
+          <display value="Metformin hydrochloride 1000 MG"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-emergency"/>
+          <display value="Emergency Encounter"/>
+        </encounter>
+        <authoredOn value="2024-01-31T04:22:00-05:00"/>
+        <requester>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+        </requester>
+        <recorder>
+          <display value="Patient Identified"/>
+        </recorder>
+        <dosageInstruction>
+          <text value="1000 mg tablet by mouth twice daily"/>
+          <timing>
+            <repeat>
+              <frequency value="2"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral Use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <doseAndRate>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                <code value="calculated"/>
+                <display value="Calculated"/>
+              </coding>
+              <text value="calculated"/>
+            </type>
+            <doseQuantity>
+              <value value="1000"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass2-aptt"/>
+    <resource>
+      <Observation>
+        <id value="observation-example-ach-monthly-pass2-aptt"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-example-ach-monthly-pass2-aptt"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass2-aptt</b></p><a name="observation-example-ach-monthly-pass2-aptt"> </a><a name="hcobservation-example-ach-monthly-pass2-aptt"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-lab.html">ACH Monthly Event Lab Result Observation</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-aptt.html">ServiceRequest aPTT in Blood by Coagulation assay</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 3173-2}">aPTT</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 11:24:00-0500</p><p><b>issued</b>: 2024-02-02 11:29:00-0500</p><p><b>value</b>: 8 s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codes = 's')</span></p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-monthly-pass2-blood-1.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-01-31 22:50:00-0500</a></p></div>
+        </text>
+        <basedOn>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-aptt"/>
+        </basedOn>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+          <text value="Laboratory"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="3173-2"/>
+            <display value="aPTT in Blood by Coagulation assay"/>
+          </coding>
+          <text value="aPTT"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <effectiveDateTime value="2024-02-02T11:24:00-05:00"/>
+        <issued value="2024-02-02T11:29:00-05:00"/>
+        <valueQuantity>
+          <value value="8"/>
+          <unit value="s"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="s"/>
+        </valueQuantity>
+        <specimen>
+          <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-1"/>
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass2-poc-1"/>
+    <resource>
+      <Observation>
+        <id value="observation-example-ach-monthly-pass2-poc-1"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-example-ach-monthly-pass2-poc-1"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass2-poc-1</b></p><a name="observation-example-ach-monthly-pass2-poc-1"> </a><a name="hcobservation-example-ach-monthly-pass2-poc-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-lab.html">ACH Monthly Event Lab Result Observation</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-glucose.html">ServiceRequest Glucose [Mass/volume] in Capillary blood by Glucometer</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 41653-7}">Glucose</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-01-31 23:01:00-0500</p><p><b>issued</b>: 2024-01-31 23:02:00-0500</p><p><b>value</b>: 53 d/gL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg/dL = 'g/dL')</span></p></div>
+        </text>
+        <basedOn>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-glucose"/>
+        </basedOn>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+          <text value="Laboratory"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="41653-7"/>
+            <display value="Glucose [Mass/volume] in Capillary blood by Glucometer"/>
+          </coding>
+          <text value="Glucose"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <effectiveDateTime value="2024-01-31T23:01:00-05:00"/>
+        <issued value="2024-01-31T23:02:00-05:00"/>
+        <valueQuantity>
+          <value value="53"/>
+          <unit value="d/gL"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="g/dL"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass2-poc-2"/>
+    <resource>
+      <Observation>
+        <id value="observation-example-ach-monthly-pass2-poc-2"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-example-ach-monthly-pass2-poc-2"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass2-poc-2</b></p><a name="observation-example-ach-monthly-pass2-poc-2"> </a><a name="hcobservation-example-ach-monthly-pass2-poc-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-lab.html">ACH Monthly Event Lab Result Observation</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-glucose.html">ServiceRequest Glucose [Mass/volume] in Capillary blood by Glucometer</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 41653-7}">Glucose</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 10:14:00-0500</p><p><b>issued</b>: 2024-02-02 10:15:00-0500</p><p><b>value</b>: 105 d/gL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg/dL = 'g/dL')</span></p></div>
+        </text>
+        <basedOn>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-glucose"/>
+        </basedOn>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+          <text value="Laboratory"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="41653-7"/>
+            <display value="Glucose [Mass/volume] in Capillary blood by Glucometer"/>
+          </coding>
+          <text value="Glucose"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <effectiveDateTime value="2024-02-02T10:14:00-05:00"/>
+        <issued value="2024-02-02T10:15:00-05:00"/>
+        <valueQuantity>
+          <value value="105"/>
+          <unit value="d/gL"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="g/dL"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass2-hemo-a1c"/>
+    <resource>
+      <Observation>
+        <id value="observation-example-ach-monthly-pass2-hemo-a1c"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-example-ach-monthly-pass2-hemo-a1c"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass2-hemo-a1c</b></p><a name="observation-example-ach-monthly-pass2-hemo-a1c"> </a><a name="hcobservation-example-ach-monthly-pass2-hemo-a1c"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-lab.html">ACH Monthly Event Lab Result Observation</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo-a1c.html">ServiceRequest Hemoglobin A1c [Mass/volume] in Blood</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 4548-4}">Hemoglobin A1c</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-01-31 23:01:00-0500</p><p><b>issued</b>: 2024-01-31 23:52:00-0500</p><p><b>value</b>: 7.5 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-monthly-pass2-blood-1.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-01-31 22:50:00-0500</a></p></div>
+        </text>
+        <basedOn>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo-a1c"/>
+        </basedOn>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+          <text value="Laboratory"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="4548-4"/>
+            <display value="Hemoglobin A1c/Hemoglobin.total in Blood"/>
+          </coding>
+          <text value="Hemoglobin A1c"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <effectiveDateTime value="2024-01-31T23:01:00-05:00"/>
+        <issued value="2024-01-31T23:52:00-05:00"/>
+        <valueQuantity>
+          <value value="7.5"/>
+          <unit value="%"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="%"/>
+        </valueQuantity>
+        <specimen>
+          <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-1"/>
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass2-hemo"/>
+    <resource>
+      <Observation>
+        <id value="observation-example-ach-monthly-pass2-hemo"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-example-ach-monthly-pass2-hemo"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass2-hemo</b></p><a name="observation-example-ach-monthly-pass2-hemo"> </a><a name="hcobservation-example-ach-monthly-pass2-hemo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-lab.html">ACH Monthly Event Lab Result Observation</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo.html">ServiceRequest Hemoglobin [Mass/volume] in Venous blood</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 600-7}">Bacteria identified in Blood by Culture</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 11:24:00-0500</p><p><b>issued</b>: 2024-02-02 11:29:00-0500</p><p><b>value</b>: 8 d/gL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg/dL = 'g/dL')</span></p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-monthly-pass2-blood-2.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 11:26:00-0500</a></p></div>
+        </text>
+        <basedOn>
+          <reference value="ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo"/>
+        </basedOn>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+          <text value="Laboratory"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="600-7"/>
+            <display value="Bacteria identified in Blood by Culture"/>
+          </coding>
+          <text value="Bacteria identified in Blood by Culture"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <effectiveDateTime value="2024-02-02T11:24:00-05:00"/>
+        <issued value="2024-02-02T11:29:00-05:00"/>
+        <valueQuantity>
+          <value value="8"/>
+          <unit value="d/gL"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="g/dL"/>
+        </valueQuantity>
+        <specimen>
+          <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-2"/>
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass2-vitals-weight"/>
+    <resource>
+      <Observation>
+        <id value="observation-example-ach-monthly-pass2-vitals-weight"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-example-ach-monthly-pass2-vitals-weight"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ach-monthly-pass2-vitals-weight</b></p><a name="observation-example-ach-monthly-pass2-vitals-weight"> </a><a name="hcobservation-example-ach-monthly-pass2-vitals-weight"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-observation-vitals.html">ACH Monthly Event Observation - Vital Signs</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}">Weight</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-emergency.html">Emergency Encounter</a></p><p><b>effective</b>: 2024-01-31 01:42:00-0500</p><p><b>issued</b>: 2024-01-31 01:42:00-0500</p><p><b>value</b>: 113.4 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+          <text value="Vital Signs"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
+          </coding>
+          <text value="Weight"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-emergency"/>
+          <display value="Emergency Encounter"/>
+        </encounter>
+        <effectiveDateTime value="2024-01-31T01:42:00-05:00"/>
+        <issued value="2024-01-31T01:42:00-05:00"/>
+        <valueQuantity>
+          <value value="113.4"/>
+          <unit value="kg"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="kg"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Procedure/procedure-example-ach-monthly-pass2-ivcf"/>
+    <resource>
+      <Procedure>
+        <id value="procedure-example-ach-monthly-pass2-ivcf"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Procedure_procedure-example-ach-monthly-pass2-ivcf"> </a><p class="res-header-id"><b>Generated Narrative: Procedure procedure-example-ach-monthly-pass2-ivcf</b></p><a name="procedure-example-ach-monthly-pass2-ivcf"> </a><a name="hcprocedure-example-ach-monthly-pass2-ivcf"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-procedure.html">ACH Monthly Event Procedure</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/10005103526 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 397913009}">Percutaneous insertion of inferior vena cava filter (procedure)</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>performed</b>: 2024-02-01 05:02:00-0500</p></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="10005103526"/>
+        </identifier>
+        <status value="completed"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="397913009"/>
+            <display value="Percutaneous insertion of inferior vena cava filter (procedure)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <performedDateTime value="2024-02-01T05:02:00-05:00"/>
+      </Procedure>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-monthly-pass2-aptt"/>
+    <resource>
+      <ServiceRequest>
+        <id value="servicerequest-example-ach-monthly-pass2-aptt"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_servicerequest-example-ach-monthly-pass2-aptt"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-monthly-pass2-aptt</b></p><a name="servicerequest-example-ach-monthly-pass2-aptt"> </a><a name="hcservicerequest-example-ach-monthly-pass2-aptt"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-servicerequest.html">ACH Monthly Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631824 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 108252007}">Laboratory procedure</span></p><p><b>priority</b>: STAT</p><p><b>code</b>: <span title="Codes:{http://loinc.org 3173-2}">aPTT</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>occurrence</b>: Code , Events: 2024-01-31 22:21:00-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-01-31 22:21:00-0500</p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-monthly-pass2-blood-1.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-01-31 22:50:00-0500</a></p></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PLAC"/>
+              <display value="Placer Identifier"/>
+            </coding>
+            <text value="Placer Identifier"/>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1019631824"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="original-order"/>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="108252007"/>
+            <display value="Laboratory procedure"/>
+          </coding>
+          <text value="Laboratory procedure"/>
+        </category>
+        <priority value="stat"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="3173-2"/>
+            <display value="aPTT in Blood by Coagulation assay"/>
+          </coding>
+          <text value="aPTT"/>
+        </code>
+        <quantityQuantity>
+          <value value="1"/>
+        </quantityQuantity>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <occurrenceTiming>
+          <event value="2024-01-31T22:21:00-05:00"/>
+          <repeat>
+            <count value="1"/>
+          </repeat>
+          <code>
+            <text value="Once"/>
+          </code>
+        </occurrenceTiming>
+        <authoredOn value="2024-01-31T22:21:00-05:00"/>
+        <specimen>
+          <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-1"/>
+        </specimen>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-monthly-pass2-glucose"/>
+    <resource>
+      <ServiceRequest>
+        <id value="servicerequest-example-ach-monthly-pass2-glucose"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_servicerequest-example-ach-monthly-pass2-glucose"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-monthly-pass2-glucose</b></p><a name="servicerequest-example-ach-monthly-pass2-glucose"> </a><a name="hcservicerequest-example-ach-monthly-pass2-glucose"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-servicerequest.html">ACH Monthly Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631824 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 108252007}">Laboratory procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 41653-7}">Glucose</span></p><p><b>quantity</b>: 2</p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>occurrence</b>: Code , Count 2  times, Once per 1 day</p><p><b>authoredOn</b>: 2024-01-31 22:21:00-0500</p></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PLAC"/>
+              <display value="Placer Identifier"/>
+            </coding>
+            <text value="Placer Identifier"/>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1019631824"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="original-order"/>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="108252007"/>
+            <display value="Laboratory procedure"/>
+          </coding>
+          <text value="Laboratory procedure"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="41653-7"/>
+            <display value="Glucose [Mass/volume] in Capillary blood by Glucometer"/>
+          </coding>
+          <text value="Glucose"/>
+        </code>
+        <quantityQuantity>
+          <value value="2"/>
+        </quantityQuantity>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <occurrenceTiming>
+          <repeat>
+            <count value="2"/>
+            <period value="1"/>
+            <periodUnit value="d"/>
+          </repeat>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation"/>
+              <code value="BID"/>
+              <display value="BID"/>
+            </coding>
+          </code>
+        </occurrenceTiming>
+        <authoredOn value="2024-01-31T22:21:00-05:00"/>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo-a1c"/>
+    <resource>
+      <ServiceRequest>
+        <id value="servicerequest-example-ach-monthly-pass2-hemo-a1c"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_servicerequest-example-ach-monthly-pass2-hemo-a1c"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-monthly-pass2-hemo-a1c</b></p><a name="servicerequest-example-ach-monthly-pass2-hemo-a1c"> </a><a name="hcservicerequest-example-ach-monthly-pass2-hemo-a1c"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-servicerequest.html">ACH Monthly Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631823 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 108252007}">Laboratory procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 41995-2}">Hemoglobin A1c</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>occurrence</b>: Code , Events: 2024-01-31 22:21:00-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-01-31 22:21:00-0500</p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-monthly-pass2-blood-1.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-01-31 22:50:00-0500</a></p></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PLAC"/>
+              <display value="Placer Identifier"/>
+            </coding>
+            <text value="Placer Identifier"/>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1019631823"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="original-order"/>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="108252007"/>
+            <display value="Laboratory procedure"/>
+          </coding>
+          <text value="Laboratory procedure"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="41995-2"/>
+            <display value="Hemoglobin A1c [Mass/volume] in Blood"/>
+          </coding>
+          <text value="Hemoglobin A1c"/>
+        </code>
+        <quantityQuantity>
+          <value value="1"/>
+        </quantityQuantity>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <occurrenceTiming>
+          <event value="2024-01-31T22:21:00-05:00"/>
+          <repeat>
+            <count value="1"/>
+          </repeat>
+          <code>
+            <text value="Once"/>
+          </code>
+        </occurrenceTiming>
+        <authoredOn value="2024-01-31T22:21:00-05:00"/>
+        <specimen>
+          <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-1"/>
+        </specimen>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-monthly-pass2-hemo"/>
+    <resource>
+      <ServiceRequest>
+        <id value="servicerequest-example-ach-monthly-pass2-hemo"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_servicerequest-example-ach-monthly-pass2-hemo"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-monthly-pass2-hemo</b></p><a name="servicerequest-example-ach-monthly-pass2-hemo"> </a><a name="hcservicerequest-example-ach-monthly-pass2-hemo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-servicerequest.html">ACH Monthly Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631824 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 108252007}">Laboratory procedure</span></p><p><b>priority</b>: STAT</p><p><b>code</b>: <span title="Codes:{http://loinc.org 30350-3}">Hemoglobin</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>occurrence</b>: Code , Events: 2024-02-02 11:22:00-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-02-02 11:22:00-0500</p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-monthly-pass2-blood-2.html">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 11:26:00-0500</a></p></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PLAC"/>
+              <display value="Placer Identifier"/>
+            </coding>
+            <text value="Placer Identifier"/>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1019631824"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="original-order"/>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="108252007"/>
+            <display value="Laboratory procedure"/>
+          </coding>
+          <text value="Laboratory procedure"/>
+        </category>
+        <priority value="stat"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="30350-3"/>
+            <display value="Hemoglobin [Mass/volume] in Venous blood"/>
+          </coding>
+          <text value="Hemoglobin"/>
+        </code>
+        <quantityQuantity>
+          <value value="1"/>
+        </quantityQuantity>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass2 ACH"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <occurrenceTiming>
+          <event value="2024-02-02T11:22:00-05:00"/>
+          <repeat>
+            <count value="1"/>
+          </repeat>
+          <code>
+            <text value="Once"/>
+          </code>
+        </occurrenceTiming>
+        <authoredOn value="2024-02-02T11:22:00-05:00"/>
+        <specimen>
+          <reference value="Specimen/specimen-example-ach-monthly-pass2-blood-2"/>
+        </specimen>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Specimen/specimen-example-ach-monthly-pass2-blood-1"/>
+    <resource>
+      <Specimen>
+        <id value="specimen-example-ach-monthly-pass2-blood-1"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Specimen_specimen-example-ach-monthly-pass2-blood-1"> </a><p class="res-header-id"><b>Generated Narrative: Specimen specimen-example-ach-monthly-pass2-blood-1</b></p><a name="specimen-example-ach-monthly-pass2-blood-1"> </a><a name="hcspecimen-example-ach-monthly-pass2-blood-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-specimen.html">ACH Monthly Event Specimen</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798.32</code>/C104082902, <code>urn:oid:2.16.840.1.113883.19.5.1.798.800</code>/C10408290:42</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 122555007}">Venous blood specimen (specimen)</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass1 ACH</a></p><p><b>receivedTime</b>: 2024-01-31 22:50:00-0500</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style="display: none">*</td><td>2024-01-31 22:42:00-0500</td><td><span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798.32"/>
+          <value value="C104082902"/>
+          <assigner>
+            <display value="LIS"/>
+          </assigner>
+        </identifier>
+        <identifier>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798.800"/>
+          <value value="C10408290:42"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="122555007"/>
+            <display value="Venous blood specimen (specimen)"/>
+          </coding>
+          <text value="Venous blood specimen (specimen)"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass1 ACH"/>
+        </subject>
+        <receivedTime value="2024-01-31T22:50:00-05:00"/>
+        <collection>
+          <collectedDateTime value="2024-01-31T22:42:00-05:00"/>
+          <bodySite>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </bodySite>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Specimen/specimen-example-ach-monthly-pass2-blood-2"/>
+    <resource>
+      <Specimen>
+        <id value="specimen-example-ach-monthly-pass2-blood-2"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Specimen_specimen-example-ach-monthly-pass2-blood-2"> </a><p class="res-header-id"><b>Generated Narrative: Specimen specimen-example-ach-monthly-pass2-blood-2</b></p><a name="specimen-example-ach-monthly-pass2-blood-2"> </a><a name="hcspecimen-example-ach-monthly-pass2-blood-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-specimen.html">ACH Monthly Event Specimen</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798.32</code>/C104082902, <code>urn:oid:2.16.840.1.113883.19.5.1.798.800</code>/C10408290:42</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 122555007}">Venous blood specimen (specimen)</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass1 ACH</a></p><p><b>receivedTime</b>: 2024-02-02 11:26:00-0500</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style="display: none">*</td><td>2024-02-02 11:24:00-0500</td><td><span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798.32"/>
+          <value value="C104082902"/>
+          <assigner>
+            <display value="LIS"/>
+          </assigner>
+        </identifier>
+        <identifier>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798.800"/>
+          <value value="C10408290:42"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="122555007"/>
+            <display value="Venous blood specimen (specimen)"/>
+          </coding>
+          <text value="Venous blood specimen (specimen)"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-monthly-pass2"/>
+          <display value="Pass1 ACH"/>
+        </subject>
+        <receivedTime value="2024-02-02T11:26:00-05:00"/>
+        <collection>
+          <collectedDateTime value="2024-02-02T11:24:00-05:00"/>
+          <bodySite>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1255295007"/>
+              <display value="Structure of blood vessel of left upper arm (body structure)"/>
+            </coding>
+          </bodySite>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+</Bundle>

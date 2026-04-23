@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="coverage-example-ach-monthly-pass3"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Coverage coverage-example-ach-monthly-pass3</b></p><a name="coverage-example-ach-monthly-pass3"> </a><a name="hccoverage-example-ach-monthly-pass3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-coverage.html">ACH Monthly Event Coverage</a></p></div><p><b>identifier</b>: Member Number/0945345</p><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PPO}">preferred provider organization policy</span></p><p><b>subscriberId</b>: 7843574536</p><p><b>beneficiary</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN: 1601191903010308 (use: usual, ))</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span></p><p><b>payor</b>: <a href="http://example.org/fhir/Organization/NationFirst">Nation First Health Care</a></p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MB"/>
+        <display value="Member Number"/>
+      </coding>
+    </type>
+    <system value="http://example.org/fhir/memberidentifier"/>
+    <value value="0945345"/>
+  </identifier>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="9.0.0"/>
+      <code value="PPO"/>
+      <display value="preferred provider organization policy"/>
+    </coding>
+  </type>
+  <subscriberId value="7843574536"/>
+  <beneficiary>
+    <reference value="Patient/patient-example-ach-monthly-pass3"/>
+  </beneficiary>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+      <code value="self"/>
+      <display value="Self"/>
+    </coding>
+  </relationship>
+  <payor>
+    <reference value="http://example.org/fhir/Organization/NationFirst"/>
+    <display value="Nation First Health Care"/>
+  </payor>
+</Coverage>

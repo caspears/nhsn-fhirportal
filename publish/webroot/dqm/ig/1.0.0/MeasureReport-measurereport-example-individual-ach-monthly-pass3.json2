@@ -1,0 +1,316 @@
+{
+  "resourceType" : "MeasureReport",
+  "id" : "measurereport-example-individual-ach-monthly-pass3",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MeasureReport measurereport-example-individual-ach-monthly-pass3</b></p><a name=\"measurereport-example-individual-ach-monthly-pass3\"> </a><a name=\"hcmeasurereport-example-individual-ach-monthly-pass3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/davinci-deqm/STU3.1/StructureDefinition-indv-measurereport-deqm.html\">DEQM Individual MeasureReport Profile</a></p></div><p><b>DEQM Measure Scoring Extension</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}\">Cohort</span></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Condition-condition-example-diagnosis-ach-monthly-pass3-problem.html\">Condition Acute sinusitis (disorder)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Condition-condition-example-diagnosis-ach-monthly-pass3.html\">Condition Enterocolitis due to Clostridium difficile</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Coverage-coverage-example-ach-monthly-pass3.html\">Coverage: identifier = Member Number: 0945345; status = active; type = preferred provider organization policy; subscriberId = 7843574536; relationship = Self</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Device-device-example-ach-monthly-pass3-ivcs-pump.html\">Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#100051035\u00a0(use:\u00a0usual,\u00a0); type = Intermittent venous compression system pump (physical object)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass3-acute.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104253a\u00a0(use:\u00a0usual,\u00a0); status = finished; class = inpatient acute (ActCode[9.0.0]#ACUTE); type = In-person encounter; period = 2024-02-02 16:43:00-0500 --&gt; 2024-02-03 19:58:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass3-short-stay.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104253a\u00a0(use:\u00a0usual,\u00a0); status = in-progress; class = short stay (ActCode[9.0.0]#SS); type = Hospital admission, elective (procedure); period = 2024-02-01 14:12:00-0500 --&gt; 2024-02-02 16:43:00-0500; reasonCode = Diarrhea, unspecified</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationAdministration-medadmin-example-ach-monthly-pass3-enoxaparin.html\">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833\u00a0(use:\u00a0usual,\u00a0); status = not-done; category = Inpatient; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; effective[x] = 2024-02-02 21:04:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-1.html\">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888321\u00a0(use:\u00a0usual,\u00a0); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-01 21:02:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-2.html\">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888322\u00a0(use:\u00a0usual,\u00a0); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-02 21:09:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-3.html\">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888323\u00a0(use:\u00a0usual,\u00a0); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-03 09:09:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-monthly-pass3-cipro.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892\u00a0(use:\u00a0usual,\u00a0); status = active; intent = plan; category = Community; reported[x] = true; medication[x] = -&gt;Ciprofloxacin 500 MG; authoredOn = 2024-02-01 19:15:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-monthly-pass3-enoxaparin.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833\u00a0(use:\u00a0usual,\u00a0); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; authoredOn = 2024-02-02 12:21:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888832\u00a0(use:\u00a0usual,\u00a0); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Metronidazole 500 MG; authoredOn = 2024-02-01 20:33:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-observation-example-ach-monthly-pass3-cdiff.html\">Observation Clostridioides difficile (organism)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-observation-example-ach-monthly-pass3-vitals-height.html\">Observation Body height</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-observation-example-ach-monthly-pass3-vitals-weight.html\">Observation Body weight</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Patient-patient-example-ach-monthly-pass3.html\">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN:\u00a01601191903010308\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Procedure-procedure-example-ach-monthly-pass3-transfusion.html\">Procedure Transfusion of red blood cells (procedure)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"ServiceRequest-servicerequest-example-ach-monthly-pass3-cdiff.html\">ServiceRequest Clostridioides difficile toxin A [Presence] in Stool by Immunoassay</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Specimen-specimen-example-ach-monthly-pass3-stool.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082905,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:45; type = Bloody stool specimen (specimen); receivedTime = 2024-02-01 19:12:00-0500</a></p><p><b>identifier</b>: <code>http://example.org/fhir/measurereport/id</code>/123456789-pass3</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href=\"Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.html\">NHSN dQM Acute Care Hospital Monthly Initial Populationversion: null1.0.0)</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN:\u00a01601191901010308\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>date</b>: 2024-02-05 21:04:29+0000</p><p><b>reporter</b>: <a href=\"Organization-organization-example-submitting-organization.html\">Organization Example NHSN Submitter</a></p><p><b>period</b>: 2024-01-05 00:00:00+0000 --&gt; 2024-02-04 00:00:00+0000</p><p><b>improvementNotation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td><td>1</td></tr></table></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href=\"Condition-condition-example-diagnosis-ach-monthly-pass3-problem.html\">Condition Acute sinusitis (disorder)</a></li><li><a href=\"Condition-condition-example-diagnosis-ach-monthly-pass3.html\">Condition Enterocolitis due to Clostridium difficile</a></li><li><a href=\"Coverage-coverage-example-ach-monthly-pass3.html\">Coverage: identifier = Member Number: 0945345; status = active; type = preferred provider organization policy; subscriberId = 7843574536; relationship = Self</a></li><li><a href=\"Device-device-example-ach-monthly-pass3-ivcs-pump.html\">Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#100051035\u00a0(use:\u00a0usual,\u00a0); type = Intermittent venous compression system pump (physical object)</a></li><li><a href=\"Encounter-encounter-example-ach-monthly-pass3-acute.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104253a\u00a0(use:\u00a0usual,\u00a0); status = finished; class = inpatient acute (ActCode[9.0.0]#ACUTE); type = In-person encounter; period = 2024-02-02 16:43:00-0500 --&gt; 2024-02-03 19:58:00-0500</a></li><li><a href=\"Encounter-encounter-example-ach-monthly-pass3-short-stay.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104253a\u00a0(use:\u00a0usual,\u00a0); status = in-progress; class = short stay (ActCode[9.0.0]#SS); type = Hospital admission, elective (procedure); period = 2024-02-01 14:12:00-0500 --&gt; 2024-02-02 16:43:00-0500; reasonCode = Diarrhea, unspecified</a></li><li><a href=\"MedicationAdministration-medadmin-example-ach-monthly-pass3-enoxaparin.html\">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833\u00a0(use:\u00a0usual,\u00a0); status = not-done; category = Inpatient; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; effective[x] = 2024-02-02 21:04:00-0500</a></li><li><a href=\"MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-1.html\">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888321\u00a0(use:\u00a0usual,\u00a0); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-01 21:02:00-0500</a></li><li><a href=\"MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-2.html\">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888322\u00a0(use:\u00a0usual,\u00a0); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-02 21:09:00-0500</a></li><li><a href=\"MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-3.html\">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888323\u00a0(use:\u00a0usual,\u00a0); status = completed; category = Inpatient; medication[x] = -&gt;Metronidazole 500 MG; effective[x] = 2024-02-03 09:09:00-0500</a></li><li><a href=\"MedicationRequest-medicationrequest-example-ach-monthly-pass3-cipro.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888892\u00a0(use:\u00a0usual,\u00a0); status = active; intent = plan; category = Community; reported[x] = true; medication[x] = -&gt;Ciprofloxacin 500 MG; authoredOn = 2024-02-01 19:15:00-0500</a></li><li><a href=\"MedicationRequest-medicationrequest-example-ach-monthly-pass3-enoxaparin.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888833\u00a0(use:\u00a0usual,\u00a0); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe; authoredOn = 2024-02-02 12:21:00-0500</a></li><li><a href=\"MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888832\u00a0(use:\u00a0usual,\u00a0); status = active; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Metronidazole 500 MG; authoredOn = 2024-02-01 20:33:00-0500</a></li><li><a href=\"Observation-observation-example-ach-monthly-pass3-cdiff.html\">Observation Clostridioides difficile (organism)</a></li><li><a href=\"Observation-observation-example-ach-monthly-pass3-vitals-height.html\">Observation Body height</a></li><li><a href=\"Observation-observation-example-ach-monthly-pass3-vitals-weight.html\">Observation Body weight</a></li><li><a href=\"Patient-patient-example-ach-monthly-pass3.html\">Pass3 ACH(official) Female, DoB: 2007-10-08 ( MRN:\u00a01601191903010308\u00a0(use:\u00a0usual,\u00a0))</a></li><li><a href=\"Procedure-procedure-example-ach-monthly-pass3-transfusion.html\">Procedure Transfusion of red blood cells (procedure)</a></li><li><a href=\"ServiceRequest-servicerequest-example-ach-monthly-pass3-cdiff.html\">ServiceRequest Clostridioides difficile toxin A [Presence] in Stool by Immunoassay</a></li><li><a href=\"Specimen-specimen-example-ach-monthly-pass3-stool.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082905,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:45; type = Bloody stool specimen (specimen); receivedTime = 2024-02-01 19:12:00-0500</a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code" : "cohort"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-condition"
+      }],
+      "reference" : "Condition/condition-example-diagnosis-ach-monthly-pass3-problem"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-condition"
+      }],
+      "reference" : "Condition/condition-example-diagnosis-ach-monthly-pass3"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-coverage"
+      }],
+      "reference" : "Coverage/coverage-example-ach-monthly-pass3"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-device"
+      }],
+      "reference" : "Device/device-example-ach-monthly-pass3-ivcs-pump"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-encounter"
+      }],
+      "reference" : "Encounter/encounter-example-ach-monthly-pass3-acute"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-encounter"
+      }],
+      "reference" : "Encounter/encounter-example-ach-monthly-pass3-short-stay"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-medication-administration"
+      }],
+      "reference" : "MedicationAdministration/medadmin-example-ach-monthly-pass3-enoxaparin"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-medication-administration"
+      }],
+      "reference" : "MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-1"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-medication-administration"
+      }],
+      "reference" : "MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-2"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-medication-administration"
+      }],
+      "reference" : "MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-3"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-medication-request"
+      }],
+      "reference" : "MedicationRequest/medicationrequest-example-ach-monthly-pass3-cipro"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-medication-request"
+      }],
+      "reference" : "MedicationRequest/medicationrequest-example-ach-monthly-pass3-enoxaparin"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-medication-request"
+      }],
+      "reference" : "MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-observation-lab-category"
+      }],
+      "reference" : "Observation/observation-example-ach-monthly-pass3-cdiff"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-observation-vital-signs"
+      }],
+      "reference" : "Observation/observation-example-ach-monthly-pass3-vitals-height"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-observation-vital-signs"
+      }],
+      "reference" : "Observation/observation-example-ach-monthly-pass3-vitals-weight"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-minimal-patient"
+      }],
+      "reference" : "Patient/patient-example-ach-monthly-pass3"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-procedure"
+      }],
+      "reference" : "Procedure/procedure-example-ach-monthly-pass3-transfusion"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-servicerequest"
+      }],
+      "reference" : "ServiceRequest/servicerequest-example-ach-monthly-pass3-cdiff"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-specimen"
+      }],
+      "reference" : "Specimen/specimen-example-ach-monthly-pass3-stool"
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/measurereport/id",
+    "value" : "123456789-pass3"
+  }],
+  "status" : "complete",
+  "type" : "individual",
+  "measure" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation|1.0.0-cibuild",
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass1"
+  },
+  "date" : "2024-02-05T21:04:29.481+00:00",
+  "reporter" : {
+    "reference" : "Organization/organization-example-submitting-organization"
+  },
+  "period" : {
+    "start" : "2024-01-05T00:00:00.000+00:00",
+    "end" : "2024-02-04T00:00:00.000+00:00"
+  },
+  "improvementNotation" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+      "code" : "increase"
+    }]
+  },
+  "group" : [{
+    "population" : [{
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "initial-population",
+          "display" : "Initial Population"
+        }]
+      },
+      "count" : 1
+    }]
+  }],
+  "evaluatedResource" : [{
+    "reference" : "Condition/condition-example-diagnosis-ach-monthly-pass3-problem"
+  },
+  {
+    "reference" : "Condition/condition-example-diagnosis-ach-monthly-pass3"
+  },
+  {
+    "reference" : "Coverage/coverage-example-ach-monthly-pass3"
+  },
+  {
+    "reference" : "Device/device-example-ach-monthly-pass3-ivcs-pump"
+  },
+  {
+    "reference" : "Encounter/encounter-example-ach-monthly-pass3-acute"
+  },
+  {
+    "reference" : "Encounter/encounter-example-ach-monthly-pass3-short-stay"
+  },
+  {
+    "reference" : "MedicationAdministration/medadmin-example-ach-monthly-pass3-enoxaparin"
+  },
+  {
+    "reference" : "MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-1"
+  },
+  {
+    "reference" : "MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-2"
+  },
+  {
+    "reference" : "MedicationAdministration/medadmin-example-ach-monthly-pass3-metronidazole-3"
+  },
+  {
+    "reference" : "MedicationRequest/medicationrequest-example-ach-monthly-pass3-cipro"
+  },
+  {
+    "reference" : "MedicationRequest/medicationrequest-example-ach-monthly-pass3-enoxaparin"
+  },
+  {
+    "reference" : "MedicationRequest/medicationrequest-example-ach-monthly-pass3-metronidazole"
+  },
+  {
+    "reference" : "Observation/observation-example-ach-monthly-pass3-cdiff"
+  },
+  {
+    "reference" : "Observation/observation-example-ach-monthly-pass3-vitals-height"
+  },
+  {
+    "reference" : "Observation/observation-example-ach-monthly-pass3-vitals-weight"
+  },
+  {
+    "reference" : "Patient/patient-example-ach-monthly-pass3"
+  },
+  {
+    "reference" : "Procedure/procedure-example-ach-monthly-pass3-transfusion"
+  },
+  {
+    "reference" : "ServiceRequest/servicerequest-example-ach-monthly-pass3-cdiff"
+  },
+  {
+    "reference" : "Specimen/specimen-example-ach-monthly-pass3-stool"
+  }]
+}

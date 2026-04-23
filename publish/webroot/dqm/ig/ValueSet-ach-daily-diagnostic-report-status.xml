@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ach-daily-diagnostic-report-status"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ach-daily-diagnostic-report-status</b></p><a name="ach-daily-diagnostic-report-status"> </a><a name="hcach-daily-diagnostic-report-status"> </a><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html"><code>http://hl7.org/fhir/diagnostic-report-status</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-final">final</a></td><td>Final</td><td>The report is complete and verified by an authorized person.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-registered">registered</a></td><td>Registered</td><td>The existence of the report is registered, but there is nothing yet available.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-preliminary">preliminary</a></td><td>Preliminary</td><td>Verified early results are available, but not all  results are final.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-partial">partial</a></td><td>Partial</td><td>This is a partial (e.g. initial, interim or preliminary) report: data in the report may be incomplete or unverified.</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-diagnostic-report-status"/>
+  <version value="1.0.0"/>
+  <name value="AcuteCareHospitalDailyEventDiagnosticReportStatus"/>
+  <title value="ACH Daily Diagnostic Report Status ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-09-15T11:51:36-04:00"/>
+  <publisher value="CDC National Healthcare Safety Network (NHSN)"/>
+  <contact>
+    <name value="CDC National Healthcare Safety Network (NHSN)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cdc.gov/nhsn"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="nhsn@cdc.gov"/>
+    </telecom>
+  </contact>
+  <description value="A set of codes indicating the status of the diagnostic report."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This Valueset is not copyrighted."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+      <concept>
+        <code value="final"/>
+        <display value="Final"/>
+      </concept>
+      <concept>
+        <code value="registered"/>
+        <display value="Registered"/>
+      </concept>
+      <concept>
+        <code value="preliminary"/>
+        <display value="Preliminary"/>
+      </concept>
+      <concept>
+        <code value="partial"/>
+        <display value="Partial"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,499 @@
+NHSNMeasures : Validation Results
+=========================================
+
+err = 41, warn = 4, info = 1
+IG Publisher Version: 2.0.17
+Generated Mon Sep 15 12:32:24 EDT 2025. FHIR version 4.0.1 for gov.cdc.nhsn.dqm#1.0.0 (canonical = http://www.cdc.gov/nhsn/fhirportal/dqm/ig)
+ Build Errors : 0 / 2 / 0
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-full : 11 / 32 / 216
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-header : 0 / 4 / 20
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-subject-influenzatherapeutic : 2 / 3 / 32
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-subject-initialpopulationpass : 2 / 7 / 50
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-subject-negativepcr : 2 / 11 / 62
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-subject-rsvlabbtg : 2 / 7 / 50
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-monthly-header : 0 / 4 / 20
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-monthly-subject-ach-pass1 : 2 / 21 / 79
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-monthly-subject-ach-pass2 : 2 / 38 / 148
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-monthly-subject-ach-pass3 : 2 / 22 / 101
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-submission-full-example1 : 9 / 86 / 350
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-daily-influenzatherapeutic : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-daily-initialpopulationpass : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-daily-negativepcr : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-daily-rsvlabbtg : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-monthly-pass1 : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-monthly-pass2 : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-monthly-pass2-problem : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-monthly-pass3 : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-monthly-pass3-problem : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-daily-influenzatherapeutic : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-daily-initialpopulationpass : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-daily-negativepcr : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-daily-rsvlabbtg : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-monthly-pass1 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-monthly-pass2 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-monthly-pass3 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Device-device-example-ach-monthly-pass1-central-line : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Device-device-example-ach-monthly-pass2-compress-hose : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Device-device-example-ach-monthly-pass3-ivcs-pump : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Device-device-example-submitting-device : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\DiagnosticReport-diagnosticreport-example-ach-daily-initialpopulationpass : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-cardiopulmonary : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-lab-cbc : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-radiology : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-influenzatherapeutic : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-initialpopulationpass-1 : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-initialpopulationpass-2 : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-negativepcr-1 : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-negativepcr-2 : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-rsvlabbtg : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-monthly-pass1 : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-monthly-pass2-emergency : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-monthly-pass2-inpatient : 0 / 2 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-monthly-pass3-acute : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-monthly-pass3-short-stay : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Immunization-immunization-example-ach-daily-influenzatherapeutic : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\List-list-example-ach-daily-individual-measurereport-list : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\List-list-example-ach-daily-patients-of-interest : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\List-list-example-ach-monthly-individual-measurereport-list : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\List-list-example-ach-monthly-patients-of-interest : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-daily-emergency : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-daily-hospital : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-daily-inpatient : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-crit : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-crit-part : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-emergency : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-inpatient : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-medsurg : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-nicu-level-iii : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-daily-influenzatherapeutic : 1 / 0 / 8
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-daily-initialpopulationpass : 1 / 0 / 12
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-daily-negativepcr : 1 / 0 / 15
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-daily-rsvlabbtg : 1 / 0 / 12
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-daily-subjectlist : 0 / 0 / 5
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-monthly-subjectlist1 : 0 / 0 / 5
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-individual-ach-monthly-pass1 : 1 / 0 / 18
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-individual-ach-monthly-pass2 : 1 / 0 / 33
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-individual-ach-monthly-pass3 : 1 / 0 / 21
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-ach-daily-influenzatherapeutic : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-ach-daily-initialpopulationpass : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-ach-daily-negativepcr : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-ach-daily-rsvlabbtg-1 : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-ach-daily-rsvlabbtg-2 : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-cipro-500 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-dex4-tablet : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-enoxaparin : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-heparin : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-insulin-lispro : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-metformin-1000 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-metronidazole : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-vancomycin-15 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-influenzatherapeutic : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-1 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-2 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-negativepcr : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-rsvlabbtg-1 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-rsvlabbtg-2 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass1-vancomycin : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-dex4 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-heparin-1 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-heparin-2 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-1 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-2 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-3 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-4 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass3-enoxaparin : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-1 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-2 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-3 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-daily-influenzatherapeutic : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-daily-initialpopulationpass : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-daily-negativepcr : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-1 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-2 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass1-vancomycin : 0 / 1 / 3
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass2-dex4-tablet : 0 / 1 / 3
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass2-heparin : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass2-insulin-lispro : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass2-metformin : 0 / 1 / 3
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass3-cipro : 0 / 1 / 3
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass3-enoxaparin : 0 / 1 / 3
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole : 0 / 1 / 3
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-lab-observation-example-ach-daily-initialpopulationpass : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-lab-observation-example-ach-daily-negativepcr-1 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-lab-observation-example-ach-daily-negativepcr-2 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-lab-observation-example-ach-daily-rsvlabbtg : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-daily-initialpopulationpass-isolation : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass1-blood : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass1-csf : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass1-gestational-age : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass1-vitals-weight : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-aptt : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-hemo : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-hemo-a1c : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-poc-1 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-poc-2 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-vitals-weight : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass3-cdiff : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass3-vitals-height : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass3-vitals-weight : 0 / 1 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Organization-organization-example-submitting-organization : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-daily-influenzatherapeutic : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-daily-initialpopulationpass : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-daily-negativepcr : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-daily-rsvlabbtg : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-monthly-pass1 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-monthly-pass2 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-monthly-pass3 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Procedure-procedure-example-ach-daily-negativepcr-intubation : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Procedure-procedure-example-ach-monthly-pass1-central-line : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Procedure-procedure-example-ach-monthly-pass1-lumbar : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Procedure-procedure-example-ach-monthly-pass2-ivcf : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Procedure-procedure-example-ach-monthly-pass3-transfusion : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-daily-initialpopulationpass-covid : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-1 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-2 : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-daily-rsvlabbtg-rsv : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass1-blood : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass1-csf : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass2-aptt : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass2-glucose : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo-a1c : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass3-cdiff : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-daily-initialpopulationpass : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-daily-negativepcr-1 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-daily-negativepcr-2 : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-daily-rsvlabbtg : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-monthly-pass1-blood : 0 / 2 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-monthly-pass1-csf : 0 / 2 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-monthly-pass2-blood-1 : 0 / 2 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-monthly-pass2-blood-2 : 0 / 2 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-monthly-pass3-stool : 0 / 2 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-diagnosticreport-lab : 0 / 0 / 3
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-encounter : 0 / 0 / 4
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-location : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-medication : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-medicationadministration : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-medicationrequest : 0 / 0 / 3
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-observation : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-observation-lab : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-procedure : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-servicerequest : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-specimen : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-condition : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-coverage : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-device : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-diagnosticreport : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-diagnosticreport-lab : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-diagnosticreport-note : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-encounter : 0 / 0 / 4
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-location : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-medication : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-medicationadministration : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-medicationrequest : 0 / 0 / 3
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-observation : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-observation-lab : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-observation-vitals : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-procedure : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-servicerequest : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-specimen : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-cross-measure-patient : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ip-measurereport-list : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-link-original-element-value-extension : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-link-original-mapped-concept-extension : 0 / 1 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-link-original-resource-id-extension : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-link-patient-list-applicable-period-extension : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-link-received-date-extension : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-nhsn-measurereport-bundle : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-nhsn-subject-bundle : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-nhsn-submission-header-bundle : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-nhsn-submitting-device : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-nhsn-submitting-organization : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-poi-list : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-subjectlist-measurereport : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ValueSet-ach-daily-diagnostic-report-status : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ValueSet-ach-daily-encounter-class : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ValueSet-ach-daily-encounter-status : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ValueSet-ach-monthly-encounter-class : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ValueSet-ach-monthly-encounter-status : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\device\cqf-tooling : 0 / 0 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\extension-MeasureReport.supplementalDataElement.reference : 0 / 2 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\extension-criteriaReference : 0 / 2 / 1
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\library\FHIRHelpers : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\library\NHSNAcuteCareHospitalDailyInitialPopulation : 0 / 15 / 5
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\library\NHSNAcuteCareHospitalMonthlyInitialPopulation : 0 / 0 / 7
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\library\NHSNHelpers : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\library\SharedResourceCreation : 0 / 0 / 2
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\measure\measure-NHSNAcuteCareHospitalDailyInitialPopulation : 0 / 18 / 11
+ C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\measure\measure-NHSNAcuteCareHospitalMonthlyInitialPopulation : 0 / 4 / 12
+ c:\temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ImplementationGuide-gov.cdc.nhsn.dqm : 0 / 4 / 1
+</table>
+== n/a ==
+WARNING: c:\temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\output\Measure-NHSNAcuteCareHospitalDailyInitialPopulation.html: The html source has duplicate anchor Ids: fhirhelpers-todatetime,fhirhelpers-tostring,nhsnacutecarehospitaldailyinitialpopulation-references
+WARNING: c:\temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\output\Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.html: The html source has duplicate anchor Ids: fhirhelpers-tostring
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-full.json ==
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle: Slice 'Bundle.entry:subject-list': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-measurereport-bundle|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle.entry[3].resource/*MeasureReport/measurereport-example-ach-daily-subjectlist*/.contained.entry[0].item: Unable to find a profile match for MeasureReport/measurereport-example-ach-daily-initialpopulationpass among choices: http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle.entry[3].resource/*MeasureReport/measurereport-example-ach-daily-subjectlist*/.contained.entry[1].item: Unable to find a profile match for MeasureReport/measurereport-example-ach-daily-negativepcr among choices: http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle.entry[3].resource/*MeasureReport/measurereport-example-ach-daily-subjectlist*/.contained.entry[2].item: Unable to find a profile match for MeasureReport/measurereport-example-ach-daily-influenzatherapeutic among choices: http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle.entry[3].resource/*MeasureReport/measurereport-example-ach-daily-subjectlist*/.contained.entry[3].item: Unable to find a profile match for MeasureReport/measurereport-example-ach-daily-rsvlabbtg among choices: http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle.entry[3].resource: Slice 'MeasureReport.contained:ip-measurereport-list': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/subjectlist-measurereport|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle.entry[3].resource.group[0].population[0].subjectResults: Unable to find a profile match for #list-example-ach-daily-individual-measurereport-list among choices: http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ip-measurereport-list
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle.entry[4].resource/*MeasureReport/measurereport-example-ach-daily-initialpopulationpass*/.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle.entry[16].resource/*MeasureReport/measurereport-example-ach-daily-negativepcr*/.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle.entry[31].resource/*MeasureReport/measurereport-example-ach-daily-influenzatherapeutic*/.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+ERROR: Bundle/bundle-example-ach-daily-full: Bundle.entry[39].resource/*MeasureReport/measurereport-example-ach-daily-rsvlabbtg*/.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-header.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-subject-influenzatherapeutic.json ==
+ERROR: Bundle/bundle-example-ach-daily-subject-influenzatherapeutic: Bundle: Slice 'Bundle.entry:individual-measurereport': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/bundle-example-ach-daily-subject-influenzatherapeutic: Bundle.entry[0].resource.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-subject-initialpopulationpass.json ==
+ERROR: Bundle/bundle-example-ach-daily-subject-initialpopulationpass: Bundle: Slice 'Bundle.entry:individual-measurereport': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/bundle-example-ach-daily-subject-initialpopulationpass: Bundle.entry[0].resource.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-subject-negativepcr.json ==
+ERROR: Bundle/bundle-example-ach-daily-subject-negativepcr: Bundle: Slice 'Bundle.entry:individual-measurereport': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/bundle-example-ach-daily-subject-negativepcr: Bundle.entry[0].resource.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-daily-subject-rsvlabbtg.json ==
+ERROR: Bundle/bundle-example-ach-daily-subject-rsvlabbtg: Bundle: Slice 'Bundle.entry:individual-measurereport': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/bundle-example-ach-daily-subject-rsvlabbtg: Bundle.entry[0].resource.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-monthly-header.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-monthly-subject-ach-pass1.json ==
+ERROR: Bundle/bundle-example-ach-monthly-subject-ach-pass1: Bundle: Slice 'Bundle.entry:individual-measurereport': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/bundle-example-ach-monthly-subject-ach-pass1: Bundle.entry[0].resource.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-monthly-subject-ach-pass2.json ==
+ERROR: Bundle/bundle-example-ach-monthly-subject-ach-pass2: Bundle: Slice 'Bundle.entry:individual-measurereport': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/bundle-example-ach-monthly-subject-ach-pass2: Bundle.entry[0].resource.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-bundle-example-ach-monthly-subject-ach-pass3.json ==
+ERROR: Bundle/bundle-example-ach-monthly-subject-ach-pass3: Bundle: Slice 'Bundle.entry:individual-measurereport': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/bundle-example-ach-monthly-subject-ach-pass3: Bundle.entry[0].resource.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Bundle-submission-full-example1.json ==
+ERROR: Bundle/submission-full-example1: Bundle: Slice 'Bundle.entry:subject-list': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-measurereport-bundle|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/submission-full-example1: Bundle.entry[3].resource/*MeasureReport/measurereport-example-ach-monthly-subjectlist1*/.contained.entry[0].item: Unable to find a profile match for MeasureReport/measurereport-example-individual-ach-monthly-pass1 among choices: http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm
+ERROR: Bundle/submission-full-example1: Bundle.entry[3].resource/*MeasureReport/measurereport-example-ach-monthly-subjectlist1*/.contained.entry[1].item: Unable to find a profile match for MeasureReport/measurereport-example-individual-ach-monthly-pass2 among choices: http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm
+ERROR: Bundle/submission-full-example1: Bundle.entry[3].resource/*MeasureReport/measurereport-example-ach-monthly-subjectlist1*/.contained.entry[2].item: Unable to find a profile match for MeasureReport/measurereport-example-individual-ach-monthly-pass3 among choices: http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm
+ERROR: Bundle/submission-full-example1: Bundle.entry[3].resource: Slice 'MeasureReport.contained:ip-measurereport-list': a matching slice is required, but not found (from http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/subjectlist-measurereport|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/submission-full-example1: Bundle.entry[3].resource.group[0].population[0].subjectResults: Unable to find a profile match for #list-example-ach-monthly-individual-measurereport-list among choices: http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ip-measurereport-list
+ERROR: Bundle/submission-full-example1: Bundle.entry[4].resource/*MeasureReport/measurereport-example-individual-ach-monthly-pass1*/.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+ERROR: Bundle/submission-full-example1: Bundle.entry[22].resource/*MeasureReport/measurereport-example-individual-ach-monthly-pass2*/.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+ERROR: Bundle/submission-full-example1: Bundle.entry[55].resource/*MeasureReport/measurereport-example-individual-ach-monthly-pass3*/.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-daily-influenzatherapeutic.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-daily-initialpopulationpass.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-daily-negativepcr.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-daily-rsvlabbtg.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-monthly-pass1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-monthly-pass2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-monthly-pass2-problem.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-monthly-pass3.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Condition-condition-example-diagnosis-ach-monthly-pass3-problem.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-daily-influenzatherapeutic.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-daily-initialpopulationpass.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-daily-negativepcr.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-daily-rsvlabbtg.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-monthly-pass1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-monthly-pass2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Coverage-coverage-example-ach-monthly-pass3.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Device-device-example-ach-monthly-pass1-central-line.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Device-device-example-ach-monthly-pass2-compress-hose.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Device-device-example-ach-monthly-pass3-ivcs-pump.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Device-device-example-submitting-device.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\DiagnosticReport-diagnosticreport-example-ach-daily-initialpopulationpass.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-cardiopulmonary.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-lab-cbc.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\DiagnosticReport-diagnosticreport-example-ach-monthly-pass2-radiology.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-influenzatherapeutic.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-initialpopulationpass-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-initialpopulationpass-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-negativepcr-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-negativepcr-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-daily-rsvlabbtg.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-monthly-pass1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-monthly-pass2-emergency.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-monthly-pass2-inpatient.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-monthly-pass3-acute.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Encounter-encounter-example-ach-monthly-pass3-short-stay.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Immunization-immunization-example-ach-daily-influenzatherapeutic.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\List-list-example-ach-daily-individual-measurereport-list.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\List-list-example-ach-daily-patients-of-interest.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\List-list-example-ach-monthly-individual-measurereport-list.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\List-list-example-ach-monthly-patients-of-interest.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-daily-emergency.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-daily-hospital.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-daily-inpatient.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-crit.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-crit-part.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-emergency.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-inpatient.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-medsurg.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Location-location-example-ach-monthly-nicu-level-iii.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-daily-influenzatherapeutic.json ==
+ERROR: MeasureReport/measurereport-example-ach-daily-influenzatherapeutic: MeasureReport.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-daily-initialpopulationpass.json ==
+ERROR: MeasureReport/measurereport-example-ach-daily-initialpopulationpass: MeasureReport.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-daily-negativepcr.json ==
+ERROR: MeasureReport/measurereport-example-ach-daily-negativepcr: MeasureReport.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-daily-rsvlabbtg.json ==
+ERROR: MeasureReport/measurereport-example-ach-daily-rsvlabbtg: MeasureReport.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-daily-subjectlist.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-ach-monthly-subjectlist1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-individual-ach-monthly-pass1.json ==
+ERROR: MeasureReport/measurereport-example-individual-ach-monthly-pass1: MeasureReport.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-individual-ach-monthly-pass2.json ==
+ERROR: MeasureReport/measurereport-example-individual-ach-monthly-pass2: MeasureReport.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MeasureReport-measurereport-example-individual-ach-monthly-pass3.json ==
+ERROR: MeasureReport/measurereport-example-individual-ach-monthly-pass3: MeasureReport.group[0]: MeasureReport.group.measureScore: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm|3.1.0)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-ach-daily-influenzatherapeutic.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-ach-daily-initialpopulationpass.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-ach-daily-negativepcr.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-ach-daily-rsvlabbtg-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-ach-daily-rsvlabbtg-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-cipro-500.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-dex4-tablet.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-enoxaparin.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-heparin.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-insulin-lispro.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-metformin-1000.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-metronidazole.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Medication-medication-example-vancomycin-15.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-influenzatherapeutic.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-negativepcr.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-rsvlabbtg-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-daily-rsvlabbtg-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass1-vancomycin.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-dex4.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-heparin-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-heparin-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-3.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass2-insulin-lispro-4.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass3-enoxaparin.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationAdministration-medadmin-example-ach-monthly-pass3-metronidazole-3.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-daily-influenzatherapeutic.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-daily-initialpopulationpass.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-daily-negativepcr.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass1-vancomycin.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass2-dex4-tablet.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass2-heparin.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass2-insulin-lispro.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass2-metformin.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass3-cipro.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass3-enoxaparin.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\MedicationRequest-medicationrequest-example-ach-monthly-pass3-metronidazole.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-lab-observation-example-ach-daily-initialpopulationpass.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-lab-observation-example-ach-daily-negativepcr-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-lab-observation-example-ach-daily-negativepcr-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-lab-observation-example-ach-daily-rsvlabbtg.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-daily-initialpopulationpass-isolation.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass1-blood.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass1-csf.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass1-gestational-age.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass1-vitals-weight.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-aptt.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-hemo.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-hemo-a1c.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-poc-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-poc-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass2-vitals-weight.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass3-cdiff.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass3-vitals-height.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Observation-observation-example-ach-monthly-pass3-vitals-weight.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Organization-organization-example-submitting-organization.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-daily-influenzatherapeutic.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-daily-initialpopulationpass.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-daily-negativepcr.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-daily-rsvlabbtg.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-monthly-pass1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-monthly-pass2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Patient-patient-example-ach-monthly-pass3.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Procedure-procedure-example-ach-daily-negativepcr-intubation.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Procedure-procedure-example-ach-monthly-pass1-central-line.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Procedure-procedure-example-ach-monthly-pass1-lumbar.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Procedure-procedure-example-ach-monthly-pass2-ivcf.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Procedure-procedure-example-ach-monthly-pass3-transfusion.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-daily-initialpopulationpass-covid.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-daily-rsvlabbtg-rsv.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass1-blood.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass1-csf.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass2-aptt.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass2-glucose.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass2-hemo-a1c.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ServiceRequest-servicerequest-example-ach-monthly-pass3-cdiff.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-daily-initialpopulationpass.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-daily-negativepcr-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-daily-negativepcr-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-daily-rsvlabbtg.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-monthly-pass1-blood.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-monthly-pass1-csf.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-monthly-pass2-blood-1.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-monthly-pass2-blood-2.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\Specimen-specimen-example-ach-monthly-pass3-stool.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-diagnosticreport-lab.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-encounter.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-location.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-medication.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-medicationadministration.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-medicationrequest.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-observation.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-observation-lab.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-procedure.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-servicerequest.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-daily-specimen.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-condition.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-coverage.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-device.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-diagnosticreport.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-diagnosticreport-lab.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-diagnosticreport-note.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-encounter.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-location.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-medication.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-medicationadministration.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-medicationrequest.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-observation.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-observation-lab.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-observation-vitals.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-procedure.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-servicerequest.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ach-monthly-specimen.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-cross-measure-patient.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-ip-measurereport-list.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-link-original-element-value-extension.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-link-original-mapped-concept-extension.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-link-original-resource-id-extension.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-link-patient-list-applicable-period-extension.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-link-received-date-extension.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-nhsn-measurereport-bundle.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-nhsn-subject-bundle.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-nhsn-submission-header-bundle.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-nhsn-submitting-device.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-nhsn-submitting-organization.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-poi-list.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\StructureDefinition-subjectlist-measurereport.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ValueSet-ach-daily-diagnostic-report-status.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ValueSet-ach-daily-encounter-class.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ValueSet-ach-daily-encounter-status.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ValueSet-ach-monthly-encounter-class.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ValueSet-ach-monthly-encounter-status.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\device\cqf-tooling.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\extension-MeasureReport.supplementalDataElement.reference.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\extension-criteriaReference.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\library\FHIRHelpers.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\library\NHSNAcuteCareHospitalDailyInitialPopulation.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\library\NHSNAcuteCareHospitalMonthlyInitialPopulation.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\library\NHSNHelpers.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\library\SharedResourceCreation.json ==
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\measure\measure-NHSNAcuteCareHospitalDailyInitialPopulation.xml ==
+WARNING: Measure/NHSNAcuteCareHospitalDailyInitialPopulation: Measure.text.div: The XHTML  the resource contains more than one node for each of the following node ids and anchor names: fhirhelpers-todatetime (2x), fhirhelpers-tostring (7x), nhsnacutecarehospitaldailyinitialpopulation-references (2x)
+INFORMATION: Measure/NHSNAcuteCareHospitalDailyInitialPopulation: Measure.contained[0]/*Library/effective-data-requirements*/.extension[87].extension[2].value.ofType(string): The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\input\resources\measure\measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.xml ==
+WARNING: Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation: Measure.text.div: The XHTML  the resource contains more than one node for each of the following node ids and anchor names: fhirhelpers-tostring (2x)
+== C:\Temp\ig-builds\gov.cdc.nhsn.dqm#1.0.0\fsh-generated\resources\ImplementationGuide-gov.cdc.nhsn.dqm.json ==

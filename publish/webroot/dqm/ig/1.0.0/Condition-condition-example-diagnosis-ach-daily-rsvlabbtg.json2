@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Condition",
+  "id" : "condition-example-diagnosis-ach-daily-rsvlabbtg",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-example-diagnosis-ach-daily-rsvlabbtg</b></p><a name=\"condition-example-diagnosis-ach-daily-rsvlabbtg\"> </a><a name=\"hccondition-example-diagnosis-ach-daily-rsvlabbtg\"> </a><p><b>Original Resource ID</b>: eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm B97.4}\">RSV</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily, RSVLabBTG</a></p><p><b>encounter</b>: Inpatient</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+    "valueString" : "eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "version" : "4.0.0",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }],
+    "text" : "Confirmed"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis",
+      "display" : "Encounter Diagnosis"
+    }],
+    "text" : "Encounter Diagnosis"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "B97.4",
+      "display" : "Respiratory syncytial virus as the cause of diseases classified elsewhere"
+    }],
+    "text" : "RSV"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+    "display" : "ACHDaily, RSVLabBTG"
+  },
+  "encounter" : {
+    "display" : "Inpatient"
+  }
+}

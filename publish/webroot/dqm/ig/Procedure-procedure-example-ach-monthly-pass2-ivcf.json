@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "procedure-example-ach-monthly-pass2-ivcf",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure procedure-example-ach-monthly-pass2-ivcf</b></p><a name=\"procedure-example-ach-monthly-pass2-ivcf\"> </a><a name=\"hcprocedure-example-ach-monthly-pass2-ivcf\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-procedure.html\">ACH Monthly Event Procedure</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/10005103526\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 397913009}\">Percutaneous insertion of inferior vena cava filter (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass2.html\">Pass2 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass2-inpatient.html\">Hospital Admission</a></p><p><b>performed</b>: 2024-02-01 05:02:00-0500</p></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+    "value" : "10005103526"
+  }],
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "397913009",
+      "display" : "Percutaneous insertion of inferior vena cava filter (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass2",
+    "display" : "Pass2 ACH"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example-ach-monthly-pass2-inpatient",
+    "display" : "Hospital Admission"
+  },
+  "performedDateTime" : "2024-02-01T05:02:00-05:00"
+}

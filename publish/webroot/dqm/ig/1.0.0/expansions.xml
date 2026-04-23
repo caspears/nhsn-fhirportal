@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="9b5f5f05-4f46-4f28-8ca0-b2df4c63dc8e"/>
+  <meta>
+    <lastUpdated value="2025-09-15T12:07:16.254-04:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-diagnostic-report-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">codesystem DiagnosticReportStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/diagnostic-report-status-final"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-final">final</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Final</td>
+                <td>The report is complete and verified by an authorized person.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/diagnostic-report-status-registered"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-registered">registered</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Registered</td>
+                <td>The existence of the report is registered, but there is nothing yet available.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/diagnostic-report-status-preliminary"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-preliminary">preliminary</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Preliminary</td>
+                <td>Verified early results are available, but not all  results are final.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/diagnostic-report-status-partial"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-partial">partial</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Partial</td>
+                <td>This is a partial (e.g. initial, interim or preliminary) report: data in the report may be incomplete or unverified.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-diagnostic-report-status"/>
+        <version value="1.0.0"/>
+        <name value="AcuteCareHospitalDailyEventDiagnosticReportStatus"/>
+        <title value="ACH Daily Diagnostic Report Status ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-09-15T11:51:36-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5812f1f3-c078-4520-8f64-a68fc8c566d6"/>
+          <timestamp value="2025-09-15T12:16:09-04:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://hl7.org/fhir/diagnostic-report-status|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/diagnostic-report-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="final"/>
+            <display value="Final"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="registered"/>
+            <display value="Registered"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="preliminary"/>
+            <display value="Preliminary"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="partial"/>
+            <display value="Partial"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-encounter-class"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html">codesystem ActCode v9.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-ACUTE"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE">ACUTE</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>inpatient acute</td>
+                <td>
+                  <div>
+                    <p>An acute inpatient encounter.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-IMP"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">IMP</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>inpatient encounter</td>
+                <td>
+                  <div>
+                    <p>A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-NONAC"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-NONAC">NONAC</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>inpatient non-acute</td>
+                <td>
+                  <div>
+                    <p>Any category of inpatient encounter except 'acute'</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-OBSENC"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-OBSENC">OBSENC</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>observation encounter</td>
+                <td>
+                  <div>
+                    <p>An encounter where the patient usually will start in different encounter, such as one in the emergency department (EMER) but then transition to this type of encounter because they require a significant period of treatment and monitoring to determine whether or not their condition warrants an inpatient admission or discharge. In the majority of cases the decision about admission or discharge will occur within a time period determined by local, regional or national regulation, often between 24 and 48 hours.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-SS"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-SS">SS</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>short stay</td>
+                <td>
+                  <div>
+                    <p>An encounter where the patient is admitted to a health care facility for a predetermined length of time, usually less than 24 hours.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-encounter-class"/>
+        <version value="1.0.0"/>
+        <name value="AcuteCareHospitalDailyEventEncounterClass"/>
+        <title value="ACH Daily Encounter Class ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-09-15T11:51:36-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bfec495a-c99a-4e48-adee-93cbd11ae4df"/>
+          <timestamp value="2025-09-15T12:16:10-04:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="ACUTE"/>
+            <display value="inpatient acute"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="IMP"/>
+            <display value="inpatient encounter"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="NONAC"/>
+            <display value="inpatient non-acute"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="OBSENC"/>
+            <display value="observation encounter"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="SS"/>
+            <display value="short stay"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-encounter-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html">codesystem EncounterStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/encounter-status-in-progress"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-in-progress">in-progress</a>
+                </td>
+                <td>http://hl7.org/fhir/encounter-status</td>
+                <td>In Progress</td>
+                <td>The Encounter has begun and the patient is present / the practitioner and the patient are meeting.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/encounter-status-finished"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-finished">finished</a>
+                </td>
+                <td>http://hl7.org/fhir/encounter-status</td>
+                <td>Finished</td>
+                <td>The Encounter has ended.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/encounter-status-triaged"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-triaged">triaged</a>
+                </td>
+                <td>http://hl7.org/fhir/encounter-status</td>
+                <td>Triaged</td>
+                <td>The patient has been assessed for the priority of their treatment based on the severity of their condition.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/encounter-status-onleave"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-onleave">onleave</a>
+                </td>
+                <td>http://hl7.org/fhir/encounter-status</td>
+                <td>On Leave</td>
+                <td>The Encounter has begun, but the patient is temporarily on leave.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/encounter-status-entered-in-error"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-entered-in-error">entered-in-error</a>
+                </td>
+                <td>http://hl7.org/fhir/encounter-status</td>
+                <td>Entered in Error</td>
+                <td>This instance should not have been part of this patient's medical record.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-encounter-status"/>
+        <version value="1.0.0"/>
+        <name value="AcuteCareHospitalDailyEncounterStatus"/>
+        <title value="ACH Daily Encounter Status ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-09-15T11:51:36-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2d7f746c-8950-4a1d-9d7a-8d64ea4414ab"/>
+          <timestamp value="2025-09-15T12:16:10-04:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://hl7.org/fhir/encounter-status|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/encounter-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/encounter-status"/>
+            <code value="in-progress"/>
+            <display value="In Progress"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/encounter-status"/>
+            <code value="finished"/>
+            <display value="Finished"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/encounter-status"/>
+            <code value="triaged"/>
+            <display value="Triaged"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/encounter-status"/>
+            <code value="onleave"/>
+            <display value="On Leave"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/encounter-status"/>
+            <code value="entered-in-error"/>
+            <display value="Entered in Error"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-monthly-encounter-class"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html">codesystem ActCode v9.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-EMER"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER">EMER</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>emergency</td>
+                <td>
+                  <div>
+                    <p>A patient encounter that takes place at a dedicated healthcare service delivery location where the patient receives immediate evaluation and treatment, provided until the patient can be discharged or responsibility for the patient's care is transferred elsewhere (for example, the patient could be admitted as an inpatient or transferred to another facility.)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-ACUTE"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE">ACUTE</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>inpatient acute</td>
+                <td>
+                  <div>
+                    <p>An acute inpatient encounter.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-IMP"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">IMP</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>inpatient encounter</td>
+                <td>
+                  <div>
+                    <p>A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-NONAC"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-NONAC">NONAC</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>inpatient non-acute</td>
+                <td>
+                  <div>
+                    <p>Any category of inpatient encounter except 'acute'</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-OBSENC"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-OBSENC">OBSENC</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>observation encounter</td>
+                <td>
+                  <div>
+                    <p>An encounter where the patient usually will start in different encounter, such as one in the emergency department (EMER) but then transition to this type of encounter because they require a significant period of treatment and monitoring to determine whether or not their condition warrants an inpatient admission or discharge. In the majority of cases the decision about admission or discharge will occur within a time period determined by local, regional or national regulation, often between 24 and 48 hours.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-SS"> </a>  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-SS">SS</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>short stay</td>
+                <td>
+                  <div>
+                    <p>An encounter where the patient is admitted to a health care facility for a predetermined length of time, usually less than 24 hours.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-monthly-encounter-class"/>
+        <version value="1.0.0"/>
+        <name value="AcuteCareHospitalMonthlyEncounterClass"/>
+        <title value="ACH Monthly Encounter Class ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-09-15T11:51:36-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3737d7c8-41ac-4ecd-8d7f-ea985dad5cdf"/>
+          <timestamp value="2025-09-15T12:16:10-04:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="EMER"/>
+            <display value="emergency"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="ACUTE"/>
+            <display value="inpatient acute"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="IMP"/>
+            <display value="inpatient encounter"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="NONAC"/>
+            <display value="inpatient non-acute"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="OBSENC"/>
+            <display value="observation encounter"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="SS"/>
+            <display value="short stay"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-monthly-encounter-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html">codesystem EncounterStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/encounter-status-in-progress"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-in-progress">in-progress</a>
+                </td>
+                <td>http://hl7.org/fhir/encounter-status</td>
+                <td>In Progress</td>
+                <td>The Encounter has begun and the patient is present / the practitioner and the patient are meeting.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/encounter-status-finished"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-finished">finished</a>
+                </td>
+                <td>http://hl7.org/fhir/encounter-status</td>
+                <td>Finished</td>
+                <td>The Encounter has ended.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/encounter-status-triaged"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-triaged">triaged</a>
+                </td>
+                <td>http://hl7.org/fhir/encounter-status</td>
+                <td>Triaged</td>
+                <td>The patient has been assessed for the priority of their treatment based on the severity of their condition.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/encounter-status-onleave"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-onleave">onleave</a>
+                </td>
+                <td>http://hl7.org/fhir/encounter-status</td>
+                <td>On Leave</td>
+                <td>The Encounter has begun, but the patient is temporarily on leave.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/encounter-status-entered-in-error"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-entered-in-error">entered-in-error</a>
+                </td>
+                <td>http://hl7.org/fhir/encounter-status</td>
+                <td>Entered in Error</td>
+                <td>This instance should not have been part of this patient's medical record.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-monthly-encounter-status"/>
+        <version value="1.0.0"/>
+        <name value="AcuteCareHospitalMonthlyEncounterStatus"/>
+        <title value="ACH Monthly Encounter Status ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-09-15T11:51:36-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:8535d0d5-6278-4d13-ba39-c0d115280738"/>
+          <timestamp value="2025-09-15T12:16:11-04:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://hl7.org/fhir/encounter-status|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/encounter-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/encounter-status"/>
+            <code value="in-progress"/>
+            <display value="In Progress"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/encounter-status"/>
+            <code value="finished"/>
+            <display value="Finished"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/encounter-status"/>
+            <code value="triaged"/>
+            <display value="Triaged"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/encounter-status"/>
+            <code value="onleave"/>
+            <display value="On Leave"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/encounter-status"/>
+            <code value="entered-in-error"/>
+            <display value="Entered in Error"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

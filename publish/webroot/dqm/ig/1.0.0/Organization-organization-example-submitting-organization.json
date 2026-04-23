@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Organization",
+  "id" : "organization-example-submitting-organization",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submitting-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization organization-example-submitting-organization</b></p><a name=\"organization-example-submitting-organization\"> </a><a name=\"hcorganization-example-submitting-organization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nhsn-submitting-organization.html\">NHSN Submitting Organization</a></p></div><p><b>identifier</b>: <code>https://www.cdc.gov/nhsn/OrgID</code>/ExampleNHSNSubmitterOrgID</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Example NHSN Submitter</p><p><b>telecom</b>: ph: 5555555551</p><p><b>address</b>: </p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.cdc.gov/nhsn/OrgID",
+    "value" : "ExampleNHSNSubmitterOrgID"
+  }],
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "code" : "prov",
+      "display" : "Healthcare Provider"
+    }]
+  }],
+  "name" : "Example NHSN Submitter",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "5555555551",
+    "rank" : 1
+  }],
+  "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "unknown"
+    }]
+  }]
+}

@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "servicerequest-example-ach-monthly-pass3-cdiff",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-monthly-pass3-cdiff</b></p><a name=\"servicerequest-example-ach-monthly-pass3-cdiff\"> </a><a name=\"hcservicerequest-example-ach-monthly-pass3-cdiff\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-servicerequest.html\">ACH Monthly Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631826\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 13957-6}\">C. Diff. toxin</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass3.html\">Pass3 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass3-short-stay.html\">Hospital Admission, Short Stay</a></p><p><b>occurrence</b>: Code , Events: 2024-02-01 18:12:00-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-02-01 18:12:00-0500</p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-monthly-pass3-stool.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082905,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:45; type = Bloody stool specimen (specimen); receivedTime = 2024-02-01 19:12:00-0500</a></p></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC",
+        "display" : "Placer Identifier"
+      }],
+      "text" : "Placer Identifier"
+    },
+    "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+    "value" : "1019631826"
+  }],
+  "status" : "completed",
+  "intent" : "original-order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108252007",
+      "display" : "Laboratory procedure"
+    }],
+    "text" : "Laboratory procedure"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "13957-6",
+      "display" : "Clostridioides difficile toxin A [Presence] in Stool by Immunoassay"
+    }],
+    "text" : "C. Diff. toxin"
+  },
+  "quantityQuantity" : {
+    "value" : 1
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass3",
+    "display" : "Pass3 ACH"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example-ach-monthly-pass3-short-stay",
+    "display" : "Hospital Admission, Short Stay"
+  },
+  "occurrenceTiming" : {
+    "event" : ["2024-02-01T18:12:00-05:00"],
+    "repeat" : {
+      "count" : 1
+    },
+    "code" : {
+      "text" : "Once"
+    }
+  },
+  "authoredOn" : "2024-02-01T18:12:00-05:00",
+  "specimen" : [{
+    "reference" : "Specimen/specimen-example-ach-monthly-pass3-stool"
+  }]
+}

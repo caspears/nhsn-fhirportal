@@ -1,0 +1,45 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "diagnosticreport-example-ach-monthly-pass2-cardiopulmonary",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport diagnosticreport-example-ach-monthly-pass2-cardiopulmonary</b></p><a name=\"diagnosticreport-example-ach-monthly-pass2-cardiopulmonary\"> </a><a name=\"hcdiagnosticreport-example-ach-monthly-pass2-cardiopulmonary\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-diagnosticreport.html\">ACH Monthly Event General Diagnostic Report</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 76746007}\">Cardiovascular stress testing</span> (<span title=\"Codes:{http://loinc.org LP172861-9}\">Cardiopulmonary</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN:\u00a01601191902010308\u00a0(use:\u00a0usual,\u00a0))</td></tr><tr><td>When For</td><td>2024-03-01 23:14:00-0500</td></tr><tr><td>Reported</td><td>2024-03-02 08:52:00-0500</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://snomed.info/sct 710031008}\">Inducible ischemia manifest on stress test post myocardial infarction (finding)</span></li></ul></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LP172861-9",
+      "display" : "Cardiopulmonary"
+    }],
+    "text" : "Cardiopulmonary"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "76746007",
+      "display" : "Cardiovascular stress testing"
+    }],
+    "text" : "Cardiovascular stress testing"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass2",
+    "display" : "Pass2 ACH"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-example-ach-monthly-pass2-inpatient",
+    "display" : "Hospital Admission"
+  },
+  "effectiveDateTime" : "2024-03-01T23:14:00-05:00",
+  "issued" : "2024-03-02T08:52:00-05:00",
+  "conclusionCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "710031008",
+      "display" : "Inducible ischemia manifest on stress test post myocardial infarction (finding)"
+    }]
+  }]
+}

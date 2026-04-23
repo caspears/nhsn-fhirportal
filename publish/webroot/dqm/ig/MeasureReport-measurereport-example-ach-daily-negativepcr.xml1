@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MeasureReport xmlns="http://hl7.org/fhir">
+  <id value="measurereport-example-ach-daily-negativepcr"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MeasureReport measurereport-example-ach-daily-negativepcr</b></p><a name="measurereport-example-ach-daily-negativepcr"> </a><a name="hcmeasurereport-example-ach-daily-negativepcr"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/davinci-deqm/STU3.1/StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a></p></div><p><b>DEQM Measure Scoring Extension</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}">Cohort</span></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Patient-patient-example-ach-daily-negativepcr.html">ACHDaily NegativePCR(official) Other, DoB: 2005-02-01 ( MRN: 1000009001 (use: usual, ))</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Encounter-encounter-example-ach-daily-negativepcr-1.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789986 (use: usual, ); status = finished; class = Observation Encounter (ActCode[9.0.0]#OBSENC); type = Hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-02 06:00:00+0000; reasonCode = shortness of breath</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Encounter-encounter-example-ach-daily-negativepcr-2.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789986 (use: usual, ); status = finished; class = Inpatient Encounter (ActCode[9.0.0]#IMP); type = Hospital admission (procedure); period = 2024-01-02 06:01:00+0000 --&gt; 2024-01-16 08:30:00+0000; reasonCode = shortness of breath</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Coverage-coverage-example-ach-daily-negativepcr.html">Coverage: identifier = Member Number: 88800933501; status = active; type = subsidized health program; subscriberId = 123456789; relationship = Self; period = 2023-01-01 --&gt; (ongoing)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Condition-condition-example-diagnosis-ach-daily-negativepcr.html">Condition COVID-19</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-daily-negativepcr.html">MedicationAdministration: status = completed; medication[x] = -&gt;Molnupiravir 200 mg PO BID; effective[x] = 2024-01-02 09:00:00+0000 --&gt; 2024-01-06 08:59:09+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationRequest-medicationrequest-example-ach-daily-negativepcr.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002 (use: usual, ); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Molnupiravir 200 mg; authoredOn = 2024-01-02 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-lab-observation-example-ach-daily-negativepcr-1.html">Observation SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-lab-observation-example-ach-daily-negativepcr-2.html">Observation SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-1.html">ServiceRequest SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-2.html">ServiceRequest SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Specimen-specimen-example-ach-daily-negativepcr-1.html">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Specimen-specimen-example-ach-daily-negativepcr-2.html">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-02 16:30:00+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Procedure-procedure-example-ach-daily-negativepcr-intubation.html">Procedure Intubation of respiratory tract (procedure)</a></p><p><b>identifier</b>: <code>http://example.org/fhir/measurereport/id</code>/123456789-pass1</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href="Measure-NHSNAcuteCareHospitalDailyInitialPopulation.html">NHSN Acute Care Hospital Daily Initial Populationversion: null1.0.0)</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-negativepcr.html">ACHDaily NegativePCR(official) Other, DoB: 2005-02-01 ( MRN: 1000009001 (use: usual, ))</a></p><p><b>date</b>: 2024-01-06 21:04:29+0000</p><p><b>reporter</b>: <a href="Organization-organization-example-submitting-organization.html">Organization Example NHSN Submitter</a></p><p><b>period</b>: 2024-01-05 00:00:00+0000 --&gt; 2024-01-06 00:00:00+0000</p><p><b>improvementNotation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></td><td>1</td></tr></table></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href="Patient-patient-example-ach-daily-negativepcr.html">ACHDaily NegativePCR(official) Other, DoB: 2005-02-01 ( MRN: 1000009001 (use: usual, ))</a></li><li><a href="Encounter-encounter-example-ach-daily-negativepcr-1.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789986 (use: usual, ); status = finished; class = Observation Encounter (ActCode[9.0.0]#OBSENC); type = Hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-02 06:00:00+0000; reasonCode = shortness of breath</a></li><li><a href="Encounter-encounter-example-ach-daily-negativepcr-2.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789986 (use: usual, ); status = finished; class = Inpatient Encounter (ActCode[9.0.0]#IMP); type = Hospital admission (procedure); period = 2024-01-02 06:01:00+0000 --&gt; 2024-01-16 08:30:00+0000; reasonCode = shortness of breath</a></li><li><a href="Coverage-coverage-example-ach-daily-negativepcr.html">Coverage: identifier = Member Number: 88800933501; status = active; type = subsidized health program; subscriberId = 123456789; relationship = Self; period = 2023-01-01 --&gt; (ongoing)</a></li><li><a href="Condition-condition-example-diagnosis-ach-daily-negativepcr.html">Condition COVID-19</a></li><li><a href="MedicationAdministration-medadmin-example-ach-daily-negativepcr.html">MedicationAdministration: status = completed; medication[x] = -&gt;Molnupiravir 200 mg PO BID; effective[x] = 2024-01-02 09:00:00+0000 --&gt; 2024-01-06 08:59:09+0000</a></li><li><a href="MedicationRequest-medicationrequest-example-ach-daily-negativepcr.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002 (use: usual, ); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Molnupiravir 200 mg; authoredOn = 2024-01-02 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></li><li><a href="Observation-lab-observation-example-ach-daily-negativepcr-1.html">Observation SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></li><li><a href="Observation-lab-observation-example-ach-daily-negativepcr-2.html">Observation SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></li><li><a href="ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-1.html">ServiceRequest SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></li><li><a href="ServiceRequest-servicerequest-example-ach-daily-negativepcr-covid-2.html">ServiceRequest SARS-CoV-2 (COVID-19) N gene [Presence] in Specimen by Nucleic acid amplification using CDC primer-probe set N1</a></li><li><a href="Specimen-specimen-example-ach-daily-negativepcr-1.html">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></li><li><a href="Specimen-specimen-example-ach-daily-negativepcr-2.html">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-02 16:30:00+0000</a></li><li><a href="Procedure-procedure-example-ach-daily-negativepcr-intubation.html">Procedure Intubation of respiratory tract (procedure)</a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+        <code value="cohort"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-minimal-patient"/>
+      </extension>
+      <reference value="Patient/patient-example-ach-daily-negativepcr"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-encounter"/>
+      </extension>
+      <reference value="Encounter/encounter-example-ach-daily-negativepcr-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-encounter"/>
+      </extension>
+      <reference value="Encounter/encounter-example-ach-daily-negativepcr-2"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-coverage"/>
+      </extension>
+      <reference value="Coverage/coverage-example-ach-daily-negativepcr"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-condition"/>
+      </extension>
+      <reference value="Condition/condition-example-diagnosis-ach-daily-negativepcr"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-medication-administration"/>
+      </extension>
+      <reference value="MedicationAdministration/medadmin-example-ach-daily-negativepcr"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-medication-request"/>
+      </extension>
+      <reference value="MedicationRequest/medicationrequest-example-ach-daily-negativepcr"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-observation-lab-category"/>
+      </extension>
+      <reference value="Observation/lab-observation-example-ach-daily-negativepcr-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-observation-lab-category"/>
+      </extension>
+      <reference value="Observation/lab-observation-example-ach-daily-negativepcr-2"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-service-request"/>
+      </extension>
+      <reference value="ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-service-request"/>
+      </extension>
+      <reference value="ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-2"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-specimen"/>
+      </extension>
+      <reference value="Specimen/specimen-example-ach-daily-negativepcr-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-specimen"/>
+      </extension>
+      <reference value="Specimen/specimen-example-ach-daily-negativepcr-2"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+    <valueReference>
+      <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+        <valueString value="sde-procedure"/>
+      </extension>
+      <reference value="Procedure/procedure-example-ach-daily-negativepcr-intubation"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/measurereport/id"/>
+    <value value="123456789-pass1"/>
+  </identifier>
+  <status value="complete"/>
+  <type value="individual"/>
+  <measure value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalDailyInitialPopulation|1.0.0-cibuild"/>
+  <subject>
+    <reference value="Patient/patient-example-ach-daily-negativepcr"/>
+  </subject>
+  <date value="2024-01-06T21:04:29.481+00:00"/>
+  <reporter>
+    <reference value="Organization/organization-example-submitting-organization"/>
+  </reporter>
+  <period>
+    <start value="2024-01-05T00:00:00.000+00:00"/>
+    <end value="2024-01-06T00:00:00.000+00:00"/>
+  </period>
+  <improvementNotation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-improvement-notation"/>
+      <code value="increase"/>
+    </coding>
+  </improvementNotation>
+  <group>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+          <display value="Initial Population"/>
+        </coding>
+      </code>
+      <count value="1"/>
+    </population>
+  </group>
+  <evaluatedResource>
+    <reference value="Patient/patient-example-ach-daily-negativepcr"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="Encounter/encounter-example-ach-daily-negativepcr-1"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="Encounter/encounter-example-ach-daily-negativepcr-2"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="Coverage/coverage-example-ach-daily-negativepcr"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="Condition/condition-example-diagnosis-ach-daily-negativepcr"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="MedicationAdministration/medadmin-example-ach-daily-negativepcr"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="MedicationRequest/medicationrequest-example-ach-daily-negativepcr"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="Observation/lab-observation-example-ach-daily-negativepcr-1"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="Observation/lab-observation-example-ach-daily-negativepcr-2"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-1"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="ServiceRequest/servicerequest-example-ach-daily-negativepcr-covid-2"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="Specimen/specimen-example-ach-daily-negativepcr-1"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="Specimen/specimen-example-ach-daily-negativepcr-2"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <reference value="Procedure/procedure-example-ach-daily-negativepcr-intubation"/>
+  </evaluatedResource>
+</MeasureReport>

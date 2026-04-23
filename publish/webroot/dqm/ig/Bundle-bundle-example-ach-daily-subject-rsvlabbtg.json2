@@ -1,0 +1,907 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "bundle-example-ach-daily-subject-rsvlabbtg",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"]
+  },
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:1eaddf4c-2ec0-4dc4-b26f-9586d7a75525"
+  },
+  "type" : "collection",
+  "timestamp" : "2024-02-05T21:04:29.481+00:00",
+  "entry" : [{
+    "fullUrl" : "http://nhsnlink.org/fhir/MeasureReport/measurereport-example-ach-daily-rsvlabbtg",
+    "resource" : {
+      "resourceType" : "MeasureReport",
+      "id" : "measurereport-example-ach-daily-rsvlabbtg",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MeasureReport_measurereport-example-ach-daily-rsvlabbtg\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MeasureReport measurereport-example-ach-daily-rsvlabbtg</b></p><a name=\"measurereport-example-ach-daily-rsvlabbtg\"> </a><a name=\"hcmeasurereport-example-ach-daily-rsvlabbtg\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/davinci-deqm/STU3.1/StructureDefinition-indv-measurereport-deqm.html\">DEQM Individual MeasureReport Profile</a></p></div><p><b>DEQM Measure Scoring Extension</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}\">Cohort</span></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily RSVLabBTG(official) Female, DoB: 2015-05-05 ( MRN:\u00a01000009002\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Encounter-encounter-example-ach-daily-rsvlabbtg.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987\u00a0(use:\u00a0usual,\u00a0); status = finished; class = Short Stay (ActCode[9.0.0]#SS); type = Emergency hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-02 06:00:00+0000; reasonCode = Throat pain</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Coverage-coverage-example-ach-daily-rsvlabbtg.html\">Coverage: status = active; relationship = Self</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Condition-condition-example-diagnosis-ach-daily-rsvlabbtg.html\">Condition Respiratory syncytial virus as the cause of diseases classified elsewhere</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationAdministration-medadmin-example-ach-daily-rsvlabbtg-1.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Ribavirin inhalation solution 6g/vial via nebulizer; effective[x] = 2024-01-01 12:30:00+0000 --&gt; 2024-01-01 17:30:09+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-1.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Ribavirin inhalation solution 6g/vial via nebulizer; authoredOn = 2024-01-01 11:45:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationAdministration-medadmin-example-ach-daily-rsvlabbtg-2.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Nasal Saline spray; effective[x] = 2024-01-01 12:30:00+0000 --&gt; 2024-01-02 17:30:09+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-2.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Nasal Saline spray; authoredOn = 2024-01-01 11:45:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-lab-observation-example-ach-daily-rsvlabbtg.html\">Observation Respiratory syncytial virus Ag [Presence] in Throat</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"ServiceRequest-servicerequest-example-ach-daily-rsvlabbtg-rsv.html\">ServiceRequest Respiratory syncytial virus Ag [Presence] in Throat</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Specimen-specimen-example-ach-daily-rsvlabbtg.html\">Specimen: type = Nasopharyngeal swab (specimen); receivedTime = 2024-01-01 15:00:00+0000</a></p><p><b>identifier</b>: <code>http://example.org/fhir/measurereport/id</code>/123456789-pass1</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href=\"Measure-NHSNAcuteCareHospitalDailyInitialPopulation.html\">NHSN Acute Care Hospital Daily Initial Populationversion: null1.0.0)</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily RSVLabBTG(official) Female, DoB: 2015-05-05 ( MRN:\u00a01000009002\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>date</b>: 2024-01-06 21:04:29+0000</p><p><b>reporter</b>: <a href=\"Organization-organization-example-submitting-organization.html\">Organization Example NHSN Submitter</a></p><p><b>period</b>: 2024-01-05 00:00:00+0000 --&gt; 2024-01-06 00:00:00+0000</p><p><b>improvementNotation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td><td>1</td></tr></table></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily RSVLabBTG(official) Female, DoB: 2015-05-05 ( MRN:\u00a01000009002\u00a0(use:\u00a0usual,\u00a0))</a></li><li><a href=\"Encounter-encounter-example-ach-daily-rsvlabbtg.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987\u00a0(use:\u00a0usual,\u00a0); status = finished; class = Short Stay (ActCode[9.0.0]#SS); type = Emergency hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-02 06:00:00+0000; reasonCode = Throat pain</a></li><li><a href=\"Coverage-coverage-example-ach-daily-rsvlabbtg.html\">Coverage: status = active; relationship = Self</a></li><li><a href=\"Condition-condition-example-diagnosis-ach-daily-rsvlabbtg.html\">Condition Respiratory syncytial virus as the cause of diseases classified elsewhere</a></li><li><a href=\"MedicationAdministration-medadmin-example-ach-daily-rsvlabbtg-1.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Ribavirin inhalation solution 6g/vial via nebulizer; effective[x] = 2024-01-01 12:30:00+0000 --&gt; 2024-01-01 17:30:09+0000</a></li><li><a href=\"MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-1.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Ribavirin inhalation solution 6g/vial via nebulizer; authoredOn = 2024-01-01 11:45:15+0000; courseOfTherapyType = Short course (acute) therapy</a></li><li><a href=\"MedicationAdministration-medadmin-example-ach-daily-rsvlabbtg-2.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Nasal Saline spray; effective[x] = 2024-01-01 12:30:00+0000 --&gt; 2024-01-02 17:30:09+0000</a></li><li><a href=\"MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-2.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Nasal Saline spray; authoredOn = 2024-01-01 11:45:15+0000; courseOfTherapyType = Short course (acute) therapy</a></li><li><a href=\"Observation-lab-observation-example-ach-daily-rsvlabbtg.html\">Observation Respiratory syncytial virus Ag [Presence] in Throat</a></li><li><a href=\"ServiceRequest-servicerequest-example-ach-daily-rsvlabbtg-rsv.html\">ServiceRequest Respiratory syncytial virus Ag [Presence] in Throat</a></li><li><a href=\"Specimen-specimen-example-ach-daily-rsvlabbtg.html\">Specimen: type = Nasopharyngeal swab (specimen); receivedTime = 2024-01-01 15:00:00+0000</a></li></ul></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+            "code" : "cohort"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-minimal-patient"
+          }],
+          "reference" : "Patient/patient-example-ach-daily-rsvlabbtg"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-encounter"
+          }],
+          "reference" : "Encounter/encounter-example-ach-daily-rsvlabbtg"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-coverage"
+          }],
+          "reference" : "Coverage/coverage-example-ach-daily-rsvlabbtg"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-condition"
+          }],
+          "reference" : "Condition/condition-example-diagnosis-ach-daily-rsvlabbtg"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-medication-administration"
+          }],
+          "reference" : "MedicationAdministration/medadmin-example-ach-daily-rsvlabbtg-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-medication-request"
+          }],
+          "reference" : "MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-medication-administration"
+          }],
+          "reference" : "MedicationAdministration/medadmin-example-ach-daily-rsvlabbtg-2"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-medication-request"
+          }],
+          "reference" : "MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-2"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-observation-lab-category"
+          }],
+          "reference" : "Observation/lab-observation-example-ach-daily-rsvlabbtg"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-service-request"
+          }],
+          "reference" : "ServiceRequest/servicerequest-example-ach-daily-rsvlabbtg-rsv"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-specimen"
+          }],
+          "reference" : "Specimen/specimen-example-ach-daily-rsvlabbtg"
+        }
+      }],
+      "identifier" : [{
+        "system" : "http://example.org/fhir/measurereport/id",
+        "value" : "123456789-pass1"
+      }],
+      "status" : "complete",
+      "type" : "individual",
+      "measure" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalDailyInitialPopulation|1.0.0-cibuild",
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg"
+      },
+      "date" : "2024-01-06T21:04:29.481+00:00",
+      "reporter" : {
+        "reference" : "Organization/organization-example-submitting-organization"
+      },
+      "period" : {
+        "start" : "2024-01-05T00:00:00.000+00:00",
+        "end" : "2024-01-06T00:00:00.000+00:00"
+      },
+      "improvementNotation" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+          "code" : "increase"
+        }]
+      },
+      "group" : [{
+        "population" : [{
+          "code" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code" : "initial-population",
+              "display" : "Initial Population"
+            }]
+          },
+          "count" : 1
+        }]
+      }],
+      "evaluatedResource" : [{
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg"
+      },
+      {
+        "reference" : "Encounter/encounter-example-ach-daily-rsvlabbtg"
+      },
+      {
+        "reference" : "Coverage/coverage-example-ach-daily-rsvlabbtg"
+      },
+      {
+        "reference" : "Condition/condition-example-diagnosis-ach-daily-rsvlabbtg"
+      },
+      {
+        "reference" : "MedicationAdministration/medadmin-example-ach-daily-rsvlabbtg-1"
+      },
+      {
+        "reference" : "MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-1"
+      },
+      {
+        "reference" : "MedicationAdministration/medadmin-example-ach-daily-rsvlabbtg-2"
+      },
+      {
+        "reference" : "MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-2"
+      },
+      {
+        "reference" : "Observation/lab-observation-example-ach-daily-rsvlabbtg"
+      },
+      {
+        "reference" : "ServiceRequest/servicerequest-example-ach-daily-rsvlabbtg-rsv"
+      },
+      {
+        "reference" : "Specimen/specimen-example-ach-daily-rsvlabbtg"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Patient/patient-example-ach-daily-rsvlabbtg",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-example-ach-daily-rsvlabbtg",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-example-ach-daily-rsvlabbtg\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-example-ach-daily-rsvlabbtg</b></p><a name=\"patient-example-ach-daily-rsvlabbtg\"> </a><a name=\"hcpatient-example-ach-daily-rsvlabbtg\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cross-measure-patient.html\">Cross-Measure Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">ACHDaily RSVLabBTG(official) Female, DoB: 2015-05-05 ( MRN:\u00a01000009002\u00a0(use:\u00a0usual,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 999-999-9999(Home)</li><li>123 Happy Place Charlotte MI 48813 US (home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: mother\">mother:</td><td colspan=\"3\"><ul><li>Mother Nature</li><li>123 Happy Place Charlotte MI 48813 US (home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2186-5\">Race &amp; Ethnicity - CDC 2186-5</a>: Not Hispanic or Latino</li><li>text: Non Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9).\"><a href=\"http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-birthsex.html\">US Core Birth Sex Extension</a></td><td colspan=\"3\">F</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2076-8\">Race &amp; Ethnicity - CDC 2076-8</a>: Native Hawaiian or Other Pacific Islander</li><li>text: Native Hawaiian or Other Pacific Islander</li></ul></td></tr></table></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "ombCategory",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2076-8",
+            "display" : "Native Hawaiian or Other Pacific Islander"
+          }
+        },
+        {
+          "url" : "text",
+          "valueString" : "Native Hawaiian or Other Pacific Islander"
+        }],
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+      },
+      {
+        "extension" : [{
+          "url" : "ombCategory",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2186-5",
+            "display" : "Not Hispanic or Latino"
+          }
+        },
+        {
+          "url" : "text",
+          "valueString" : "Non Hispanic or Latino"
+        }],
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+        "valueCode" : "F"
+      }],
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR",
+            "display" : "Medical record number"
+          }],
+          "text" : "MRN"
+        },
+        "system" : "urn:oid:1.2.5.8.2.7",
+        "value" : "1000009002"
+      }],
+      "active" : true,
+      "name" : [{
+        "use" : "official",
+        "text" : "ACHDaily RSVLabBTG",
+        "family" : "RSVLabBTG",
+        "given" : ["ACHDaily"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "999-999-9999",
+        "use" : "home"
+      }],
+      "gender" : "female",
+      "birthDate" : "2015-05-05",
+      "deceasedBoolean" : false,
+      "address" : [{
+        "use" : "home",
+        "line" : ["123 Happy Place"],
+        "city" : "Charlotte",
+        "state" : "MI",
+        "postalCode" : "48813",
+        "country" : "US"
+      }],
+      "contact" : [{
+        "relationship" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code" : "MTH",
+            "display" : "mother"
+          }]
+        }],
+        "name" : {
+          "text" : "Mother Nature",
+          "family" : "Nature",
+          "given" : ["Mother"]
+        },
+        "address" : {
+          "use" : "home",
+          "line" : ["123 Happy Place"],
+          "city" : "Charlotte",
+          "state" : "MI",
+          "postalCode" : "48813",
+          "country" : "US"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Encounter/encounter-example-ach-daily-rsvlabbtg",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "encounter-example-ach-daily-rsvlabbtg",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounter-example-ach-daily-rsvlabbtg\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-example-ach-daily-rsvlabbtg</b></p><a name=\"encounter-example-ach-daily-rsvlabbtg\"> </a><a name=\"hcencounter-example-ach-daily-rsvlabbtg\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-encounter.html\">ACH Daily Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/123456789987\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-SS\">ActCode SS</a>: Short Stay (version = 9.0.0 )</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 183452005}\">Emergency hospital admission</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily, rsvlabbtg</a></p><p><b>period</b>: 2024-01-01 08:00:00+0000 --&gt; 2024-01-02 06:00:00+0000</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 162397003}\">Sore throat</span></p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/admit-source gp}\">Pediatrician's office</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition home}\">Home</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-location-example-ach-daily-emergency.html\">EMERGENCY - PAVILION</a></td><td>2024-01-14 08:00:00+0000 --&gt; 2024-01-22 12:00:00+0000</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+        "value" : "123456789987"
+      }],
+      "status" : "finished",
+      "_status" : {
+        "extension" : [{
+          "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension",
+          "valueString" : "TRIAGED"
+        }]
+      },
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version" : "9.0.0",
+        "code" : "SS",
+        "display" : "Short Stay"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "183452005",
+          "display" : "Emergency hospital admission (procedure)"
+        }],
+        "text" : "Emergency hospital admission"
+      }],
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+        "display" : "ACHDaily, rsvlabbtg"
+      },
+      "period" : {
+        "start" : "2024-01-01T08:00:00Z",
+        "end" : "2024-01-02T06:00:00Z"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "162397003",
+          "display" : "Throat pain"
+        }],
+        "text" : "Sore throat"
+      }],
+      "hospitalization" : {
+        "admitSource" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/admit-source",
+            "code" : "gp",
+            "display" : "General Practitioner referral"
+          }],
+          "text" : "Pediatrician's office"
+        },
+        "dischargeDisposition" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+            "code" : "home",
+            "display" : "Home"
+          }],
+          "text" : "Home"
+        }
+      },
+      "location" : [{
+        "location" : {
+          "reference" : "Location/location-example-ach-daily-emergency",
+          "display" : "EMERGENCY - PAVILION"
+        },
+        "period" : {
+          "start" : "2024-01-14T08:00:00Z",
+          "end" : "2024-01-22T12:00:00Z"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Coverage/coverage-example-ach-daily-rsvlabbtg",
+    "resource" : {
+      "resourceType" : "Coverage",
+      "id" : "coverage-example-ach-daily-rsvlabbtg",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Coverage_coverage-example-ach-daily-rsvlabbtg\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Coverage coverage-example-ach-daily-rsvlabbtg</b></p><a name=\"coverage-example-ach-daily-rsvlabbtg\"> </a><a name=\"hccoverage-example-ach-daily-rsvlabbtg\"> </a><p><b>status</b>: Active</p><p><b>beneficiary</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily RSVLabBTG(official) Female, DoB: 2015-05-05 ( MRN:\u00a01000009002\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span></p><p><b>payor</b>: Self Pay</p></div>"
+      },
+      "status" : "active",
+      "beneficiary" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg"
+      },
+      "relationship" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+          "code" : "self"
+        }],
+        "text" : "Self"
+      },
+      "payor" : [{
+        "display" : "Self Pay"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Condition/condition-example-diagnosis-ach-daily-rsvlabbtg",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "condition-example-diagnosis-ach-daily-rsvlabbtg",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_condition-example-diagnosis-ach-daily-rsvlabbtg\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-example-diagnosis-ach-daily-rsvlabbtg</b></p><a name=\"condition-example-diagnosis-ach-daily-rsvlabbtg\"> </a><a name=\"hccondition-example-diagnosis-ach-daily-rsvlabbtg\"> </a><p><b>Original Resource ID</b>: eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm B97.4}\">RSV</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily, RSVLabBTG</a></p><p><b>encounter</b>: Inpatient</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+        "valueString" : "eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "version" : "4.0.0",
+          "code" : "confirmed",
+          "display" : "Confirmed"
+        }],
+        "text" : "Confirmed"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis",
+          "display" : "Encounter Diagnosis"
+        }],
+        "text" : "Encounter Diagnosis"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "B97.4",
+          "display" : "Respiratory syncytial virus as the cause of diseases classified elsewhere"
+        }],
+        "text" : "RSV"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+        "display" : "ACHDaily, RSVLabBTG"
+      },
+      "encounter" : {
+        "display" : "Inpatient"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-daily-rsvlabbtg-1",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "medadmin-example-ach-daily-rsvlabbtg-1",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationAdministration_medadmin-example-ach-daily-rsvlabbtg-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-daily-rsvlabbtg-1</b></p><a name=\"medadmin-example-ach-daily-rsvlabbtg-1\"> </a><a name=\"hcmedadmin-example-ach-daily-rsvlabbtg-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-medicationadministration.html\">ACH Daily Event Medication Administration</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"Medication-medication-example-ach-daily-rsvlabbtg-1.html\">Ribavirin inhalation solution 6g/vial via nebulizer</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily, RSVLabBTG</a></p><p><b>effective</b>: 2024-01-01 12:30:00+0000 --&gt; 2024-01-01 17:30:09+0000</p><p><b>request</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-1.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Ribavirin inhalation solution 6g/vial via nebulizer; authoredOn = 2024-01-01 11:45:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>Ribavirin inhalation solution 6g/vial via nebulizer every hour x 6</td><td><span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route</span></td><td>6 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></td></tr></table></div>"
+      },
+      "status" : "completed",
+      "medicationReference" : {
+        "extension" : [{
+          "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+          "valueString" : "Medication/eZeW55xkBH0DrR0Xj004fNid0iluLJl6nT2adScy2TI9SbXSOBJPdED7Qjms.Fj48j0.MQxtisgjhubwnqaIImzMAo7axKzx4khlfA7xEkUU3"
+        }],
+        "reference" : "Medication/medication-example-ach-daily-rsvlabbtg-1",
+        "display" : "Ribavirin inhalation solution 6g/vial via nebulizer"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+        "display" : "ACHDaily, RSVLabBTG"
+      },
+      "effectivePeriod" : {
+        "start" : "2024-01-01T12:30:00Z",
+        "end" : "2024-01-01T17:30:09Z"
+      },
+      "request" : {
+        "reference" : "MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-1"
+      },
+      "dosage" : {
+        "text" : "Ribavirin inhalation solution 6g/vial via nebulizer every hour x 6",
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "26643006",
+            "display" : "Oral route"
+          }]
+        },
+        "dose" : {
+          "value" : 6,
+          "unit" : "g",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "g"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-1",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "medicationrequest-example-ach-daily-rsvlabbtg-1",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_medicationrequest-example-ach-daily-rsvlabbtg-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-daily-rsvlabbtg-1</b></p><a name=\"medicationrequest-example-ach-daily-rsvlabbtg-1\"> </a><a name=\"hcmedicationrequest-example-ach-daily-rsvlabbtg-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-medicationrequest.html\">ACH Daily Event Medication Request</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101903002\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"Medication-medication-example-ach-daily-rsvlabbtg-1.html\">Ribavirin inhalation solution 6g/vial via nebulizer</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily, RSVLabBTG</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-rsvlabbtg.html\">Hospital Encounter</a></p><p><b>authoredOn</b>: 2024-01-01 11:45:15+0000</p><p><b>requester</b>: Faculty Physician Um_Cln, MD</p><p><b>recorder</b>: Faculty Physician Um_Cln, MD</p><p><b>courseOfTherapyType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy acute}\">Short course (acute) therapy</span></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>AsNeeded[x]</b></td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>Ribavirin inhalation solution 6g/vial via nebulizer every hour x 6</td><td>Code , Once per 6 hours</td><td>false</td><td><span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral use</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+        "value" : "101903002"
+      }],
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }],
+        "text" : "Inpatient"
+      }],
+      "medicationReference" : {
+        "reference" : "Medication/medication-example-ach-daily-rsvlabbtg-1",
+        "display" : "Ribavirin inhalation solution 6g/vial via nebulizer"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+        "display" : "ACHDaily, RSVLabBTG"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-daily-rsvlabbtg",
+        "display" : "Hospital Encounter"
+      },
+      "authoredOn" : "2024-01-01T11:45:15Z",
+      "requester" : {
+        "type" : "Practitioner",
+        "display" : "Faculty Physician Um_Cln, MD"
+      },
+      "recorder" : {
+        "type" : "Practitioner",
+        "display" : "Faculty Physician Um_Cln, MD"
+      },
+      "courseOfTherapyType" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+          "code" : "acute",
+          "display" : "Short course (acute) therapy"
+        }],
+        "text" : "Short course (acute) therapy"
+      },
+      "dosageInstruction" : [{
+        "text" : "Ribavirin inhalation solution 6g/vial via nebulizer every hour x 6",
+        "timing" : {
+          "repeat" : {
+            "boundsPeriod" : {
+              "start" : "2024-01-01T12:30:15Z",
+              "end" : "2024-01-01T17:30:15Z"
+            },
+            "frequency" : 1,
+            "period" : 6,
+            "periodUnit" : "h"
+          },
+          "code" : {
+            "text" : "Ribavirin inhalation solution 6g/vial via nebulizer every hour x 6"
+          }
+        },
+        "asNeededBoolean" : false,
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "26643006",
+            "display" : "Oral use"
+          }],
+          "text" : "Oral use"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-daily-rsvlabbtg-2",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "medadmin-example-ach-daily-rsvlabbtg-2",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationAdministration_medadmin-example-ach-daily-rsvlabbtg-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-daily-rsvlabbtg-2</b></p><a name=\"medadmin-example-ach-daily-rsvlabbtg-2\"> </a><a name=\"hcmedadmin-example-ach-daily-rsvlabbtg-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-medicationadministration.html\">ACH Daily Event Medication Administration</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"Medication-medication-example-ach-daily-rsvlabbtg-2.html\">Nasal Saline spray</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily, RSVLabBTG</a></p><p><b>effective</b>: 2024-01-01 12:30:00+0000 --&gt; 2024-01-02 17:30:09+0000</p><p><b>request</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-daily-rsvlabbtg-2.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Nasal Saline spray; authoredOn = 2024-01-01 11:45:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>Nasal Saline spray, one spray each nostril QID</td><td><span title=\"Codes:{http://snomed.info/sct 46713006}\">Nasal use</span></td><td>1 U<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeU = 'U')</span></td></tr></table></div>"
+      },
+      "status" : "completed",
+      "medicationReference" : {
+        "extension" : [{
+          "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+          "valueString" : "Medication/eZeW55xkBH0DrR0Xj004fNid0iluLJl6nT2adScy2TI9SbXSOBJPdED7Qjms.Fj48j0.MQxtisgjhubwnqaIImzMAo7axKzx4khlfA7xEkUU3"
+        }],
+        "reference" : "Medication/medication-example-ach-daily-rsvlabbtg-2",
+        "display" : "Nasal Saline spray"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+        "display" : "ACHDaily, RSVLabBTG"
+      },
+      "effectivePeriod" : {
+        "start" : "2024-01-01T12:30:00Z",
+        "end" : "2024-01-02T17:30:09Z"
+      },
+      "request" : {
+        "reference" : "MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-2"
+      },
+      "dosage" : {
+        "text" : "Nasal Saline spray, one spray each nostril QID",
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "46713006",
+            "display" : "Nasal use"
+          }]
+        },
+        "dose" : {
+          "value" : 1,
+          "unit" : "U",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "U"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-daily-rsvlabbtg-2",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "medicationrequest-example-ach-daily-rsvlabbtg-2",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_medicationrequest-example-ach-daily-rsvlabbtg-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-daily-rsvlabbtg-2</b></p><a name=\"medicationrequest-example-ach-daily-rsvlabbtg-2\"> </a><a name=\"hcmedicationrequest-example-ach-daily-rsvlabbtg-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-medicationrequest.html\">ACH Daily Event Medication Request</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101903002\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"Medication-medication-example-ach-daily-rsvlabbtg-2.html\">Nasal Saline spray</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily, RSVLabBTG</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-rsvlabbtg.html\">Hospital Encounter</a></p><p><b>authoredOn</b>: 2024-01-01 11:45:15+0000</p><p><b>requester</b>: Faculty Physician Um_Cln, MD</p><p><b>recorder</b>: Faculty Physician Um_Cln, MD</p><p><b>courseOfTherapyType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy acute}\">Short course (acute) therapy</span></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>AsNeeded[x]</b></td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>Nasal Saline spray, one spray each nostril QID</td><td>Code , Once</td><td>false</td><td><span title=\"Codes:{http://snomed.info/sct 46713006}\">Nasal use</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+        "value" : "101903002"
+      }],
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }],
+        "text" : "Inpatient"
+      }],
+      "medicationReference" : {
+        "reference" : "Medication/medication-example-ach-daily-rsvlabbtg-2",
+        "display" : "Nasal Saline spray"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+        "display" : "ACHDaily, RSVLabBTG"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-daily-rsvlabbtg",
+        "display" : "Hospital Encounter"
+      },
+      "authoredOn" : "2024-01-01T11:45:15Z",
+      "requester" : {
+        "type" : "Practitioner",
+        "display" : "Faculty Physician Um_Cln, MD"
+      },
+      "recorder" : {
+        "type" : "Practitioner",
+        "display" : "Faculty Physician Um_Cln, MD"
+      },
+      "courseOfTherapyType" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+          "code" : "acute",
+          "display" : "Short course (acute) therapy"
+        }],
+        "text" : "Short course (acute) therapy"
+      },
+      "dosageInstruction" : [{
+        "text" : "Nasal Saline spray, one spray each nostril QID",
+        "timing" : {
+          "repeat" : {
+            "boundsPeriod" : {
+              "start" : "2024-01-01T12:00:15Z",
+              "end" : "2024-01-02T07:00:15Z"
+            }
+          },
+          "code" : {
+            "text" : "Nasal Saline spray, one spray each nostril QID"
+          }
+        },
+        "asNeededBoolean" : false,
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "46713006",
+            "display" : "Nasal use"
+          }],
+          "text" : "Nasal use"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Observation/lab-observation-example-ach-daily-rsvlabbtg",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "lab-observation-example-ach-daily-rsvlabbtg",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_lab-observation-example-ach-daily-rsvlabbtg\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-observation-example-ach-daily-rsvlabbtg</b></p><a name=\"lab-observation-example-ach-daily-rsvlabbtg\"> </a><a name=\"hclab-observation-example-ach-daily-rsvlabbtg\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-observation-lab.html\">ACH Daily Event Lab Result Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 31949-1}\">RSV Ag Ql (Throat)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily, RSVLabBTG</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-rsvlabbtg.html\">Hospital Encounter</a></p><p><b>effective</b>: 2024-01-01 12:15:00+0000</p><p><b>issued</b>: 2024-01-01 12:15:00+0000</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 720735008}\">Presumptive positive</span></p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-daily-rsvlabbtg.html\">Specimen: type = Nasopharyngeal swab (specimen); receivedTime = 2024-01-01 15:00:00+0000</a></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }],
+        "text" : "Laboratory"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "31949-1",
+          "display" : "Respiratory syncytial virus Ag [Presence] in Throat"
+        }],
+        "text" : "RSV Ag Ql (Throat)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+        "display" : "ACHDaily, RSVLabBTG"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-daily-rsvlabbtg",
+        "display" : "Hospital Encounter"
+      },
+      "effectiveDateTime" : "2024-01-01T12:15:00Z",
+      "issued" : "2024-01-01T12:15:00Z",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "720735008",
+          "display" : "Presumptive positive"
+        }],
+        "text" : "Presumptive positive"
+      },
+      "specimen" : {
+        "reference" : "Specimen/specimen-example-ach-daily-rsvlabbtg"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-daily-rsvlabbtg-rsv",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "servicerequest-example-ach-daily-rsvlabbtg-rsv",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_servicerequest-example-ach-daily-rsvlabbtg-rsv\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-daily-rsvlabbtg-rsv</b></p><a name=\"servicerequest-example-ach-daily-rsvlabbtg-rsv\"> </a><a name=\"hcservicerequest-example-ach-daily-rsvlabbtg-rsv\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-servicerequest.html\">ACH Daily Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631821\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 31949-1}\">RSV Ag Ql (Throat)</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily RSVLabBTG</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-daily-rsvlabbtg.html\">Hospital Admission</a></p><p><b>occurrence</b>: Code , Events: 2024-02-02 17:22:00-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-01-02 17:22:00-0500</p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-daily-rsvlabbtg.html\">Specimen: type = Nasopharyngeal swab (specimen); receivedTime = 2024-01-01 15:00:00+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PLAC",
+            "display" : "Placer Identifier"
+          }],
+          "text" : "Placer Identifier"
+        },
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+        "value" : "1019631821"
+      }],
+      "status" : "completed",
+      "intent" : "original-order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "108252007",
+          "display" : "Laboratory procedure"
+        }],
+        "text" : "Laboratory procedure"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "31949-1",
+          "display" : "Respiratory syncytial virus Ag [Presence] in Throat"
+        }],
+        "text" : "RSV Ag Ql (Throat)"
+      },
+      "quantityQuantity" : {
+        "value" : 1
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+        "display" : "ACHDaily RSVLabBTG"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-daily-rsvlabbtg",
+        "display" : "Hospital Admission"
+      },
+      "occurrenceTiming" : {
+        "event" : ["2024-02-02T17:22:00-05:00"],
+        "repeat" : {
+          "count" : 1
+        },
+        "code" : {
+          "text" : "Once"
+        }
+      },
+      "authoredOn" : "2024-01-02T17:22:00-05:00",
+      "specimen" : [{
+        "reference" : "Specimen/specimen-example-ach-daily-rsvlabbtg"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Specimen/specimen-example-ach-daily-rsvlabbtg",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "specimen-example-ach-daily-rsvlabbtg",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_specimen-example-ach-daily-rsvlabbtg\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Specimen specimen-example-ach-daily-rsvlabbtg</b></p><a name=\"specimen-example-ach-daily-rsvlabbtg\"> </a><a name=\"hcspecimen-example-ach-daily-rsvlabbtg\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-specimen.html\">ACH Daily Event Specimen</a></p></div><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 258500001}\">Nasopharyngeal swab (specimen)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-rsvlabbtg.html\">ACHDaily, RSVLabBTG</a></p><p><b>receivedTime</b>: 2024-01-01 15:00:00+0000</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-01-01 14:00:00+0000</td><td><span title=\"Codes:{http://snomed.info/sct 1825009}\">Entire root of nose (body structure)</span></td></tr></table></div>"
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "258500001",
+          "display" : "Nasopharyngeal swab (specimen)"
+        }],
+        "text" : "Nasopharyngeal swab (specimen)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-daily-rsvlabbtg",
+        "display" : "ACHDaily, RSVLabBTG"
+      },
+      "receivedTime" : "2024-01-01T15:00:00Z",
+      "collection" : {
+        "collectedDateTime" : "2024-01-01T14:00:00Z",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "1825009",
+            "display" : "Entire root of nose (body structure)"
+          }]
+        }
+      }
+    }
+  }]
+}

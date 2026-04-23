@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Device",
+  "id" : "device-example-ach-monthly-pass2-compress-hose",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-example-ach-monthly-pass2-compress-hose</b></p><a name=\"device-example-ach-monthly-pass2-compress-hose\"> </a><a name=\"hcdevice-example-ach-monthly-pass2-compress-hose\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-device.html\">ACH Monthly Event Device</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/100051034\u00a0(use:\u00a0usual,\u00a0)</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 348681001}\">Graduated compression elastic hosiery</span></p><p><b>patient</b>: <a href=\"Patient-patient-example-ach-monthly-pass2.html\">Pass2 ACH</a></p></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+    "value" : "100051034"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "348681001",
+      "display" : "Graduated compression elastic hosiery (physical object)"
+    }],
+    "text" : "Graduated compression elastic hosiery"
+  },
+  "patient" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass2",
+    "display" : "Pass2 ACH"
+  }
+}

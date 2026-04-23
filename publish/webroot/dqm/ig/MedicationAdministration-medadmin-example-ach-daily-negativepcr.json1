@@ -1,0 +1,47 @@
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "medadmin-example-ach-daily-negativepcr",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-daily-negativepcr</b></p><a name=\"medadmin-example-ach-daily-negativepcr\"> </a><a name=\"hcmedadmin-example-ach-daily-negativepcr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-daily-medicationadministration.html\">ACH Daily Event Medication Administration</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"Medication-medication-example-ach-daily-negativepcr.html\">Molnupiravir 200 mg PO BID</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-negativepcr.html\">ACHDaily, NegativePCR</a></p><p><b>effective</b>: 2024-01-02 09:00:00+0000 --&gt; 2024-01-06 08:59:09+0000</p><p><b>request</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-daily-negativepcr.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;Molnupiravir 200 mg; authoredOn = 2024-01-02 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>Take Molnupiravir 200 mg 4 capsules by mouth twice a day x 5 days</td><td><span title=\"Codes:{http://snomed.info/sct 385049006}\">Capsule</span></td><td>200 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>"
+  },
+  "status" : "completed",
+  "medicationReference" : {
+    "extension" : [{
+      "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+      "valueString" : "Medication/eZeW55xkBH0DrR0Xj004fNid0iluLJl6nT2adScy2TI9SbXSOBJPdED7Qjms.Fj48j0.MQxtisgjhubwnqaIImzMAo7axKzx4khlfA7xEkUU3"
+    }],
+    "reference" : "Medication/medication-example-ach-daily-negativepcr",
+    "display" : "Molnupiravir 200 mg PO BID"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-daily-negativepcr",
+    "display" : "ACHDaily, NegativePCR"
+  },
+  "effectivePeriod" : {
+    "start" : "2024-01-02T09:00:00Z",
+    "end" : "2024-01-06T08:59:09Z"
+  },
+  "request" : {
+    "reference" : "MedicationRequest/medicationrequest-example-ach-daily-negativepcr"
+  },
+  "dosage" : {
+    "text" : "Take Molnupiravir 200 mg 4 capsules by mouth twice a day x 5 days",
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "385049006",
+        "display" : "Capsule"
+      }]
+    },
+    "dose" : {
+      "value" : 200,
+      "unit" : "mg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg"
+    }
+  }
+}

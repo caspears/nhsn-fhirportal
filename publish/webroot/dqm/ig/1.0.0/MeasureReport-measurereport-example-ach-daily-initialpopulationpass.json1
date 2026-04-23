@@ -1,0 +1,199 @@
+{
+  "resourceType" : "MeasureReport",
+  "id" : "measurereport-example-ach-daily-initialpopulationpass",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MeasureReport measurereport-example-ach-daily-initialpopulationpass</b></p><a name=\"measurereport-example-ach-daily-initialpopulationpass\"> </a><a name=\"hcmeasurereport-example-ach-daily-initialpopulationpass\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/davinci-deqm/STU3.1/StructureDefinition-indv-measurereport-deqm.html\">DEQM Individual MeasureReport Profile</a></p></div><p><b>DEQM Measure Scoring Extension</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}\">Cohort</span></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Patient-patient-example-ach-daily-initialpopulationpass.html\">ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN:\u00a01000009001\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Encounter-encounter-example-ach-daily-initialpopulationpass-1.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987\u00a0(use:\u00a0usual,\u00a0); status = finished; class = emergency (ActCode[9.0.0]#EMER); type = Emergency hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-01 12:00:00+0000; reasonCode = shortness of breath</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Encounter-encounter-example-ach-daily-initialpopulationpass-2.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987\u00a0(use:\u00a0usual,\u00a0); status = finished; class = inpatient encounter (ActCode[9.0.0]#IMP); type = Medical consultation on hospital inpatient; period = 2024-01-14 08:00:00+0000 --&gt; 2024-01-22 12:00:00+0000; reasonCode = Difficulty breathing</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Coverage-coverage-example-ach-daily-initialpopulationpass.html\">Coverage: identifier = Member Number: 88800933501; status = active; type = subsidized health program; subscriberId = 123456789; relationship = Self; period = 2008-07-01 --&gt; (ongoing)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Condition-condition-example-diagnosis-ach-daily-initialpopulationpass.html\">Condition Shortness of breath</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-1.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Remdesivir 200 mg IV; effective[x] = 2024-01-01 22:00:00+0000 --&gt; 2024-01-02 22:00:09+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-daily-initialpopulationpass.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;remdesivir 100 mg; authoredOn = 2024-01-14 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-2.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Remdesivir 100 mg IV; effective[x] = 2024-01-02 22:00:00+0000 --&gt; 2024-01-05 22:00:09+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-lab-observation-example-ach-daily-initialpopulationpass.html\">Observation SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"ServiceRequest-servicerequest-example-ach-daily-initialpopulationpass-covid.html\">ServiceRequest SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Specimen-specimen-example-ach-daily-initialpopulationpass.html\">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></p><p><b>identifier</b>: <code>http://example.org/fhir/measurereport/id</code>/123456789-pass1</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href=\"Measure-NHSNAcuteCareHospitalDailyInitialPopulation.html\">NHSN Acute Care Hospital Daily Initial Populationversion: null1.0.0)</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-daily-initialpopulationpass.html\">ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN:\u00a01000009001\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>date</b>: 2024-02-05 21:04:29+0000</p><p><b>reporter</b>: <a href=\"Organization-organization-example-submitting-organization.html\">Organization Example NHSN Submitter</a></p><p><b>period</b>: 2024-01-05 00:00:00+0000 --&gt; 2024-01-06 00:00:00+0000</p><p><b>improvementNotation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td><td>1</td></tr></table></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href=\"Patient-patient-example-ach-daily-initialpopulationpass.html\">ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN:\u00a01000009001\u00a0(use:\u00a0usual,\u00a0))</a></li><li><a href=\"Encounter-encounter-example-ach-daily-initialpopulationpass-1.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987\u00a0(use:\u00a0usual,\u00a0); status = finished; class = emergency (ActCode[9.0.0]#EMER); type = Emergency hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-01 12:00:00+0000; reasonCode = shortness of breath</a></li><li><a href=\"Encounter-encounter-example-ach-daily-initialpopulationpass-2.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987\u00a0(use:\u00a0usual,\u00a0); status = finished; class = inpatient encounter (ActCode[9.0.0]#IMP); type = Medical consultation on hospital inpatient; period = 2024-01-14 08:00:00+0000 --&gt; 2024-01-22 12:00:00+0000; reasonCode = Difficulty breathing</a></li><li><a href=\"Coverage-coverage-example-ach-daily-initialpopulationpass.html\">Coverage: identifier = Member Number: 88800933501; status = active; type = subsidized health program; subscriberId = 123456789; relationship = Self; period = 2008-07-01 --&gt; (ongoing)</a></li><li><a href=\"Condition-condition-example-diagnosis-ach-daily-initialpopulationpass.html\">Condition Shortness of breath</a></li><li><a href=\"MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-1.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Remdesivir 200 mg IV; effective[x] = 2024-01-01 22:00:00+0000 --&gt; 2024-01-02 22:00:09+0000</a></li><li><a href=\"MedicationRequest-medicationrequest-example-ach-daily-initialpopulationpass.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;remdesivir 100 mg; authoredOn = 2024-01-14 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></li><li><a href=\"MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-2.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Remdesivir 100 mg IV; effective[x] = 2024-01-02 22:00:00+0000 --&gt; 2024-01-05 22:00:09+0000</a></li><li><a href=\"Observation-lab-observation-example-ach-daily-initialpopulationpass.html\">Observation SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection</a></li><li><a href=\"ServiceRequest-servicerequest-example-ach-daily-initialpopulationpass-covid.html\">ServiceRequest SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection</a></li><li><a href=\"Specimen-specimen-example-ach-daily-initialpopulationpass.html\">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code" : "cohort"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-minimal-patient"
+      }],
+      "reference" : "Patient/patient-example-ach-daily-initialpopulationpass"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-encounter"
+      }],
+      "reference" : "Encounter/encounter-example-ach-daily-initialpopulationpass-1"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-encounter"
+      }],
+      "reference" : "Encounter/encounter-example-ach-daily-initialpopulationpass-2"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-coverage"
+      }],
+      "reference" : "Coverage/coverage-example-ach-daily-initialpopulationpass"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-condition"
+      }],
+      "reference" : "Condition/condition-example-diagnosis-ach-daily-initialpopulationpass"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-medication-administration"
+      }],
+      "reference" : "MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-1"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-medication-request"
+      }],
+      "reference" : "MedicationRequest/medicationrequest-example-ach-daily-initialpopulationpass"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-medication-administration"
+      }],
+      "reference" : "MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-2"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-observation-lab-category"
+      }],
+      "reference" : "Observation/lab-observation-example-ach-daily-initialpopulationpass"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-service-request"
+      }],
+      "reference" : "ServiceRequest/servicerequest-example-ach-daily-initialpopulationpass-covid"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "valueReference" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+        "valueString" : "sde-specimen"
+      }],
+      "reference" : "Specimen/specimen-example-ach-daily-initialpopulationpass"
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/measurereport/id",
+    "value" : "123456789-pass1"
+  }],
+  "status" : "complete",
+  "type" : "individual",
+  "measure" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalDailyInitialPopulation|1.0.0-cibuild",
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-daily-initialpopulationpass"
+  },
+  "date" : "2024-02-05T21:04:29.481+00:00",
+  "reporter" : {
+    "reference" : "Organization/organization-example-submitting-organization"
+  },
+  "period" : {
+    "start" : "2024-01-05T00:00:00.000+00:00",
+    "end" : "2024-01-06T00:00:00.000+00:00"
+  },
+  "improvementNotation" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+      "code" : "increase"
+    }]
+  },
+  "group" : [{
+    "population" : [{
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "initial-population",
+          "display" : "Initial Population"
+        }]
+      },
+      "count" : 1
+    }]
+  }],
+  "evaluatedResource" : [{
+    "reference" : "Patient/patient-example-ach-daily-initialpopulationpass"
+  },
+  {
+    "reference" : "Encounter/encounter-example-ach-daily-initialpopulationpass-1"
+  },
+  {
+    "reference" : "Encounter/encounter-example-ach-daily-initialpopulationpass-2"
+  },
+  {
+    "reference" : "Coverage/coverage-example-ach-daily-initialpopulationpass"
+  },
+  {
+    "reference" : "Condition/condition-example-diagnosis-ach-daily-initialpopulationpass"
+  },
+  {
+    "reference" : "MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-1"
+  },
+  {
+    "reference" : "MedicationRequest/medicationrequest-example-ach-daily-initialpopulationpass"
+  },
+  {
+    "reference" : "MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-2"
+  },
+  {
+    "reference" : "Observation/lab-observation-example-ach-daily-initialpopulationpass"
+  },
+  {
+    "reference" : "ServiceRequest/servicerequest-example-ach-daily-initialpopulationpass-covid"
+  },
+  {
+    "reference" : "Specimen/specimen-example-ach-daily-initialpopulationpass"
+  }]
+}

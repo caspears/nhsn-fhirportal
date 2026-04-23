@@ -1,0 +1,20 @@
+{
+  "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm",
+  "name" : "NHSNMeasures",
+  "title" : "CDC National Healthcare Safety Network (NHSN) Digital Quality Measures (dQM) Content Package IG",
+  "description" : "This content describes the specifications for the for the Health Level Seven International® (HL7) Fast Healthcare Interoperability Resources® (FHIR) digital quality measures (dQMs) reported to the National Healthcare Safety Network (NHSN).",
+  "ig-date" : "2025-06-24",
+  "status" : "active",
+  "package-id" : "gov.cdc.nhsn.dqm",
+  "ig-ver" : "1.0.0",
+  "date" : "Mon, 15 Sep, 2025 12:07:16 -0400",
+  "dateISO8601" : "2025-09-15T12:07:16-04:00",
+  "errs" : 41,
+  "warnings" : 4,
+  "hints" : 1,
+  "suppressed-hints" : 797,
+  "suppressed-warnings" : 379,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2744178512
+}

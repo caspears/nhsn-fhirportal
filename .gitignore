@@ -1,14 +1,12 @@
 # Temporary folders and files #
 #####################
-temp
-template
-output
-fsh-generated
-dry_run
-bundles
+
 **/*.jar
-publish
-!publish/webroot
+publish/ig*
+publish/temp*
+publish/nhsn*
+publish/safr*
+
 
 
 

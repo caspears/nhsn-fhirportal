@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="medadmin-example-ach-monthly-pass2-insulin-lispro-3"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass2-insulin-lispro-3</b></p><a name="medadmin-example-ach-monthly-pass2-insulin-lispro-3"> </a><a name="hcmedadmin-example-ach-monthly-pass2-insulin-lispro-3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-medicationadministration.html">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/1018888944 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient Medication</span></p><p><b>medication</b>: <a href="Medication-medication-example-insulin-lispro.html">Insulin Lispro</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass2.html">Pass2 ACH</a></p><p><b>context</b>: <a href="Encounter-encounter-example-ach-monthly-pass2-inpatient.html">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 07:00:00-0500</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-monthly-pass2-insulin-lispro.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888894 (use: usual, ); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;Insulin Lispro; authoredOn = 2024-02-01 12:00:00-0500</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>Give 5 units before breakfast</td><td><span title="Codes:{http://snomed.info/sct 1255295007}">Structure of blood vessel of left upper arm (body structure)</span></td><td><span title="Codes:{http://snomed.info/sct 47625008}">IV</span></td><td>5</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+    <value value="1018888944"/>
+  </identifier>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+      <code value="inpatient"/>
+      <display value="Inpatient"/>
+    </coding>
+    <text value="Inpatient Medication"/>
+  </category>
+  <medicationReference>
+    <reference value="Medication/medication-example-insulin-lispro"/>
+    <display value="Insulin Lispro"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass2"/>
+    <display value="Pass2 ACH"/>
+  </subject>
+  <context>
+    <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+    <display value="Hospital Admission"/>
+  </context>
+  <effectiveDateTime value="2024-02-02T07:00:00-05:00"/>
+  <request>
+    <reference value="MedicationRequest/medicationrequest-example-ach-monthly-pass2-insulin-lispro"/>
+  </request>
+  <dosage>
+    <text value="Give 5 units before breakfast"/>
+    <site>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="1255295007"/>
+        <display value="Structure of blood vessel of left upper arm (body structure)"/>
+      </coding>
+    </site>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="47625008"/>
+        <display value="Intravenous route"/>
+      </coding>
+      <text value="IV"/>
+    </route>
+    <dose>
+      <value value="5"/>
+    </dose>
+  </dosage>
+</MedicationAdministration>

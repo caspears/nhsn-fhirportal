@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<List xmlns="http://hl7.org/fhir">
+  <id value="list-example-ach-daily-patients-of-interest"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/poi-list"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: List list-example-ach-daily-patients-of-interest</b></p><a name="list-example-ach-daily-patients-of-interest"> </a><a name="hclist-example-ach-daily-patients-of-interest"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-poi-list.html">Patients-Of-Interest List</a></p></div><table class="clstu"><tr><td>Date: 2021-07-28 00:00:00+0000 </td><td>Mode: Change List </td><td>Status: Current </td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr><tr><td><a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN: 1000009001 (use: usual, ))</a></td></tr><tr><td><a href="Patient-patient-example-ach-daily-negativepcr.html">ACHDaily NegativePCR(official) Other, DoB: 2005-02-01 ( MRN: 1000009001 (use: usual, ))</a></td></tr><tr><td><a href="Patient-patient-example-ach-daily-influenzatherapeutic.html">ACHDaily InfluenzaTherapeutic(official) Male, DoB: 2020-02-29 ( MRN: 1000009001 (use: usual, ))</a></td></tr><tr><td><a href="Patient-patient-example-ach-daily-rsvlabbtg.html">ACHDaily RSVLabBTG(official) Female, DoB: 2015-05-05 ( MRN: 1000009002 (use: usual, ))</a></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://nhsnlink.org"/>
+    <value value="NHSNdQMAcuteCareHospitalInitialPopulation"/>
+  </identifier>
+  <status value="current"/>
+  <mode value="changes"/>
+  <date value="2021-07-28T00:00:00Z"/>
+  <entry>
+    <item>
+      <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+    </item>
+  </entry>
+  <entry>
+    <item>
+      <reference value="Patient/patient-example-ach-daily-negativepcr"/>
+    </item>
+  </entry>
+  <entry>
+    <item>
+      <reference value="Patient/patient-example-ach-daily-influenzatherapeutic"/>
+    </item>
+  </entry>
+  <entry>
+    <item>
+      <reference value="Patient/patient-example-ach-daily-rsvlabbtg"/>
+    </item>
+  </entry>
+</List>

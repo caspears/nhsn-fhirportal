@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="procedure-example-ach-monthly-pass3-transfusion"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure procedure-example-ach-monthly-pass3-transfusion</b></p><a name="procedure-example-ach-monthly-pass3-transfusion"> </a><a name="hcprocedure-example-ach-monthly-pass3-transfusion"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-procedure.html">ACH Monthly Event Procedure</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/100051035264 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 116863004}">Transfusion of red blood cells (procedure)</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-monthly-pass3.html">Pass3 ACH</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-monthly-pass3-acute.html">Critical care visit</a></p><p><b>performed</b>: 2024-02-02 20:43:00-0500</p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+    <value value="100051035264"/>
+  </identifier>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="116863004"/>
+      <display value="Transfusion of red blood cells (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass3"/>
+    <display value="Pass3 ACH"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example-ach-monthly-pass3-acute"/>
+    <display value="Critical care visit"/>
+  </encounter>
+  <performedDateTime value="2024-02-02T20:43:00-05:00"/>
+</Procedure>

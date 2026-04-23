@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-example-ach-daily-subject-initialpopulationpass"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:1eaddf4c-2ec0-4dc4-b26f-9586d7a78d8d"/>
+  </identifier>
+  <type value="collection"/>
+  <timestamp value="2024-02-05T21:04:29.481+00:00"/>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MeasureReport/measurereport-example-ach-daily-initialpopulationpass"/>
+    <resource>
+      <MeasureReport>
+        <id value="measurereport-example-ach-daily-initialpopulationpass"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MeasureReport_measurereport-example-ach-daily-initialpopulationpass"> </a><p class="res-header-id"><b>Generated Narrative: MeasureReport measurereport-example-ach-daily-initialpopulationpass</b></p><a name="measurereport-example-ach-daily-initialpopulationpass"> </a><a name="hcmeasurereport-example-ach-daily-initialpopulationpass"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/davinci-deqm/STU3.1/StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a></p></div><p><b>DEQM Measure Scoring Extension</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}">Cohort</span></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN: 1000009001 (use: usual, ))</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Encounter-encounter-example-ach-daily-initialpopulationpass-1.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987 (use: usual, ); status = finished; class = emergency (ActCode[9.0.0]#EMER); type = Emergency hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-01 12:00:00+0000; reasonCode = shortness of breath</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Encounter-encounter-example-ach-daily-initialpopulationpass-2.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987 (use: usual, ); status = finished; class = inpatient encounter (ActCode[9.0.0]#IMP); type = Medical consultation on hospital inpatient; period = 2024-01-14 08:00:00+0000 --&gt; 2024-01-22 12:00:00+0000; reasonCode = Difficulty breathing</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Coverage-coverage-example-ach-daily-initialpopulationpass.html">Coverage: identifier = Member Number: 88800933501; status = active; type = subsidized health program; subscriberId = 123456789; relationship = Self; period = 2008-07-01 --&gt; (ongoing)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Condition-condition-example-diagnosis-ach-daily-initialpopulationpass.html">Condition Shortness of breath</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-1.html">MedicationAdministration: status = completed; medication[x] = -&gt;Remdesivir 200 mg IV; effective[x] = 2024-01-01 22:00:00+0000 --&gt; 2024-01-02 22:00:09+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationRequest-medicationrequest-example-ach-daily-initialpopulationpass.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002 (use: usual, ); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;remdesivir 100 mg; authoredOn = 2024-01-14 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-2.html">MedicationAdministration: status = completed; medication[x] = -&gt;Remdesivir 100 mg IV; effective[x] = 2024-01-02 22:00:00+0000 --&gt; 2024-01-05 22:00:09+0000</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Observation-lab-observation-example-ach-daily-initialpopulationpass.html">Observation SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="ServiceRequest-servicerequest-example-ach-daily-initialpopulationpass-covid.html">ServiceRequest SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href="Specimen-specimen-example-ach-daily-initialpopulationpass.html">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></p><p><b>identifier</b>: <code>http://example.org/fhir/measurereport/id</code>/123456789-pass1</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href="Measure-NHSNAcuteCareHospitalDailyInitialPopulation.html">NHSN Acute Care Hospital Daily Initial Populationversion: null1.0.0)</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN: 1000009001 (use: usual, ))</a></p><p><b>date</b>: 2024-02-05 21:04:29+0000</p><p><b>reporter</b>: <a href="Organization-organization-example-submitting-organization.html">Organization Example NHSN Submitter</a></p><p><b>period</b>: 2024-01-05 00:00:00+0000 --&gt; 2024-01-06 00:00:00+0000</p><p><b>improvementNotation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></td><td>1</td></tr></table></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN: 1000009001 (use: usual, ))</a></li><li><a href="Encounter-encounter-example-ach-daily-initialpopulationpass-1.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987 (use: usual, ); status = finished; class = emergency (ActCode[9.0.0]#EMER); type = Emergency hospital admission (procedure); period = 2024-01-01 08:00:00+0000 --&gt; 2024-01-01 12:00:00+0000; reasonCode = shortness of breath</a></li><li><a href="Encounter-encounter-example-ach-daily-initialpopulationpass-2.html">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#123456789987 (use: usual, ); status = finished; class = inpatient encounter (ActCode[9.0.0]#IMP); type = Medical consultation on hospital inpatient; period = 2024-01-14 08:00:00+0000 --&gt; 2024-01-22 12:00:00+0000; reasonCode = Difficulty breathing</a></li><li><a href="Coverage-coverage-example-ach-daily-initialpopulationpass.html">Coverage: identifier = Member Number: 88800933501; status = active; type = subsidized health program; subscriberId = 123456789; relationship = Self; period = 2008-07-01 --&gt; (ongoing)</a></li><li><a href="Condition-condition-example-diagnosis-ach-daily-initialpopulationpass.html">Condition Shortness of breath</a></li><li><a href="MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-1.html">MedicationAdministration: status = completed; medication[x] = -&gt;Remdesivir 200 mg IV; effective[x] = 2024-01-01 22:00:00+0000 --&gt; 2024-01-02 22:00:09+0000</a></li><li><a href="MedicationRequest-medicationrequest-example-ach-daily-initialpopulationpass.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002 (use: usual, ); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;remdesivir 100 mg; authoredOn = 2024-01-14 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></li><li><a href="MedicationAdministration-medadmin-example-ach-daily-initialpopulationpass-2.html">MedicationAdministration: status = completed; medication[x] = -&gt;Remdesivir 100 mg IV; effective[x] = 2024-01-02 22:00:00+0000 --&gt; 2024-01-05 22:00:09+0000</a></li><li><a href="Observation-lab-observation-example-ach-daily-initialpopulationpass.html">Observation SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection</a></li><li><a href="ServiceRequest-servicerequest-example-ach-daily-initialpopulationpass-covid.html">ServiceRequest SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection</a></li><li><a href="Specimen-specimen-example-ach-daily-initialpopulationpass.html">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></li></ul></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+              <code value="cohort"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-minimal-patient"/>
+            </extension>
+            <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-encounter"/>
+            </extension>
+            <reference value="Encounter/encounter-example-ach-daily-initialpopulationpass-1"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-encounter"/>
+            </extension>
+            <reference value="Encounter/encounter-example-ach-daily-initialpopulationpass-2"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-coverage"/>
+            </extension>
+            <reference value="Coverage/coverage-example-ach-daily-initialpopulationpass"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-condition"/>
+            </extension>
+            <reference value="Condition/condition-example-diagnosis-ach-daily-initialpopulationpass"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-1"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-request"/>
+            </extension>
+            <reference value="MedicationRequest/medicationrequest-example-ach-daily-initialpopulationpass"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-medication-administration"/>
+            </extension>
+            <reference value="MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-2"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-observation-lab-category"/>
+            </extension>
+            <reference value="Observation/lab-observation-example-ach-daily-initialpopulationpass"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-service-request"/>
+            </extension>
+            <reference value="ServiceRequest/servicerequest-example-ach-daily-initialpopulationpass-covid"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference">
+          <valueReference>
+            <extension url="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference">
+              <valueString value="sde-specimen"/>
+            </extension>
+            <reference value="Specimen/specimen-example-ach-daily-initialpopulationpass"/>
+          </valueReference>
+        </extension>
+        <identifier>
+          <system value="http://example.org/fhir/measurereport/id"/>
+          <value value="123456789-pass1"/>
+        </identifier>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalDailyInitialPopulation|1.0.0-cibuild"/>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+        </subject>
+        <date value="2024-02-05T21:04:29.481+00:00"/>
+        <reporter>
+          <reference value="Organization/organization-example-submitting-organization"/>
+        </reporter>
+        <period>
+          <start value="2024-01-05T00:00:00.000+00:00"/>
+          <end value="2024-01-06T00:00:00.000+00:00"/>
+        </period>
+        <improvementNotation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/measure-improvement-notation"/>
+            <code value="increase"/>
+          </coding>
+        </improvementNotation>
+        <group>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+                <display value="Initial Population"/>
+              </coding>
+            </code>
+            <count value="1"/>
+          </population>
+        </group>
+        <evaluatedResource>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Encounter/encounter-example-ach-daily-initialpopulationpass-1"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Encounter/encounter-example-ach-daily-initialpopulationpass-2"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Coverage/coverage-example-ach-daily-initialpopulationpass"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Condition/condition-example-diagnosis-ach-daily-initialpopulationpass"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-1"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationRequest/medicationrequest-example-ach-daily-initialpopulationpass"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-2"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Observation/lab-observation-example-ach-daily-initialpopulationpass"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="ServiceRequest/servicerequest-example-ach-daily-initialpopulationpass-covid"/>
+        </evaluatedResource>
+        <evaluatedResource>
+          <reference value="Specimen/specimen-example-ach-daily-initialpopulationpass"/>
+        </evaluatedResource>
+      </MeasureReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Patient/patient-example-ach-daily-initialpopulationpass"/>
+    <resource>
+      <Patient>
+        <id value="patient-example-ach-daily-initialpopulationpass"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-example-ach-daily-initialpopulationpass"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-example-ach-daily-initialpopulationpass</b></p><a name="patient-example-ach-daily-initialpopulationpass"> </a><a name="hcpatient-example-ach-daily-initialpopulationpass"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cross-measure-patient.html">Cross-Measure Patient Profile</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN: 1000009001 (use: usual, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 999-999-9999(Home)</li><li>123 Alphabet Street Lansing MI 48864 US (home)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2186-5">Race &amp; Ethnicity - CDC 2186-5</a>: Not Hispanic or Latino</li><li>text: Non Hispanic or Latino</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9)."><a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a></td><td colspan="3">F</td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.">US Core Race Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-1002-5">Race &amp; Ethnicity - CDC 1002-5</a>: American Indian or Alaska Native</li><li>text: Asian</li></ul></td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="1002-5"/>
+              <display value="American Indian or Alaska Native"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Asian"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2186-5"/>
+              <display value="Not Hispanic or Latino"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Non Hispanic or Latino"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+          <valueCode value="F"/>
+        </extension>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical record number"/>
+            </coding>
+            <text value="MRN"/>
+          </type>
+          <system value="urn:oid:1.2.5.8.2.7"/>
+          <value value="1000009001"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <text value="ACHDaily, InitialPopulationPass"/>
+          <family value="InitialPopulationPass"/>
+          <given value="ACHDaily"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="999-999-9999"/>
+          <use value="home"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="2005-01-15"/>
+        <deceasedBoolean value="false"/>
+        <address>
+          <use value="home"/>
+          <line value="123 Alphabet Street"/>
+          <city value="Lansing"/>
+          <state value="MI"/>
+          <postalCode value="48864"/>
+          <country value="US"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Encounter/encounter-example-ach-daily-initialpopulationpass-1"/>
+    <resource>
+      <Encounter>
+        <id value="encounter-example-ach-daily-initialpopulationpass-1"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-example-ach-daily-initialpopulationpass-1"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example-ach-daily-initialpopulationpass-1</b></p><a name="encounter-example-ach-daily-initialpopulationpass-1"> </a><a name="hcencounter-example-ach-daily-initialpopulationpass-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-encounter.html">ACH Daily Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/123456789987 (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER">ActCode EMER</a>: emergency (version = 9.0.0 )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 183452005}">Emergency hospital admission</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>period</b>: 2024-01-01 08:00:00+0000 --&gt; 2024-01-01 12:00:00+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 267036007}">Shortness of breath</span></p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/admit-source emd}">Emergency Department</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition home}">Home</span></td></tr></table><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Location-location-example-ach-daily-emergency.html">EMERGENCY - PAVILION</a></p><p><b>period</b>: 2022-08-17 16:25:00+0000 --&gt; 2022-08-17 17:01:00+0000</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Location-location-example-ach-daily-hospital.html">Health Hospital Location</a></p><p><b>period</b>: 2022-08-11 18:52:00+0000 --&gt; 2022-08-17 16:09:00+0000</p></blockquote></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="123456789987"/>
+        </identifier>
+        <status value="finished">
+          <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension">
+            <valueString value="TRIAGED"/>
+          </extension>
+        </status>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <version value="9.0.0"/>
+          <code value="EMER"/>
+          <display value="emergency"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="183452005"/>
+            <display value="Emergency hospital admission (procedure)"/>
+          </coding>
+          <text value="Emergency hospital admission"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+          <display value="ACHDaily, InitialPopulationPass"/>
+        </subject>
+        <period>
+          <start value="2024-01-01T08:00:00Z"/>
+          <end value="2024-01-01T12:00:00Z"/>
+        </period>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="267036007"/>
+            <display value="shortness of breath"/>
+          </coding>
+          <text value="Shortness of breath"/>
+        </reasonCode>
+        <hospitalization>
+          <admitSource>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+              <code value="emd"/>
+              <display value="From accident/emergency department"/>
+            </coding>
+            <text value="Emergency Department"/>
+          </admitSource>
+          <dischargeDisposition>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+              <code value="home"/>
+              <display value="Home"/>
+            </coding>
+            <text value="Home"/>
+          </dischargeDisposition>
+        </hospitalization>
+        <location>
+          <location>
+            <reference value="Location/location-example-ach-daily-emergency"/>
+            <display value="EMERGENCY - PAVILION"/>
+          </location>
+          <period>
+            <start value="2022-08-17T16:25:00Z"/>
+            <end value="2022-08-17T17:01:00Z"/>
+          </period>
+        </location>
+        <location>
+          <location>
+            <reference value="Location/location-example-ach-daily-hospital"/>
+            <display value="Health Hospital Location"/>
+          </location>
+          <period>
+            <start value="2022-08-11T18:52:00Z"/>
+            <end value="2022-08-17T16:09:00Z"/>
+          </period>
+        </location>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Encounter/encounter-example-ach-daily-initialpopulationpass-2"/>
+    <resource>
+      <Encounter>
+        <id value="encounter-example-ach-daily-initialpopulationpass-2"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-example-ach-daily-initialpopulationpass-2"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-example-ach-daily-initialpopulationpass-2</b></p><a name="encounter-example-ach-daily-initialpopulationpass-2"> </a><a name="hcencounter-example-ach-daily-initialpopulationpass-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-encounter.html">ACH Daily Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/123456789987 (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">ActCode IMP</a>: inpatient encounter (version = 9.0.0 )</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 24882007}">Medical consultation on hospital inpatient</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>period</b>: 2024-01-14 08:00:00+0000 --&gt; 2024-01-22 12:00:00+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 230145002}">Difficulty breathing</span></p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/admit-source other}">Direct admit</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition snf}">To skilled nursing unit</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-location-example-ach-daily-inpatient.html">Inpatient Hospital Ward</a></td><td>2024-01-14 09:00:00+0000 --&gt; 2024-01-22 12:00:00+0000</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.698.8"/>
+          <value value="123456789987"/>
+        </identifier>
+        <status value="finished">
+          <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension">
+            <valueString value="TRIAGED"/>
+          </extension>
+        </status>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <version value="9.0.0"/>
+          <code value="IMP"/>
+          <display value="inpatient encounter"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="24882007"/>
+            <display value="Medical consultation on hospital inpatient"/>
+          </coding>
+          <text value="Medical consultation on hospital inpatient"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+          <display value="ACHDaily, InitialPopulationPass"/>
+        </subject>
+        <period>
+          <start value="2024-01-14T08:00:00Z"/>
+          <end value="2024-01-22T12:00:00Z"/>
+        </period>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="230145002"/>
+            <display value="Difficulty breathing"/>
+          </coding>
+          <text value="Difficulty breathing"/>
+        </reasonCode>
+        <hospitalization>
+          <admitSource>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+              <code value="other"/>
+              <display value="Other"/>
+            </coding>
+            <text value="Direct admit"/>
+          </admitSource>
+          <dischargeDisposition>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+              <code value="snf"/>
+              <display value="Skilled nursing facility"/>
+            </coding>
+            <text value="To skilled nursing unit"/>
+          </dischargeDisposition>
+        </hospitalization>
+        <location>
+          <location>
+            <reference value="Location/location-example-ach-daily-inpatient"/>
+            <display value="Inpatient Hospital Ward"/>
+          </location>
+          <period>
+            <start value="2024-01-14T09:00:00Z"/>
+            <end value="2024-01-22T12:00:00Z"/>
+          </period>
+        </location>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Coverage/coverage-example-ach-daily-initialpopulationpass"/>
+    <resource>
+      <Coverage>
+        <id value="coverage-example-ach-daily-initialpopulationpass"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Coverage_coverage-example-ach-daily-initialpopulationpass"> </a><p class="res-header-id"><b>Generated Narrative: Coverage coverage-example-ach-daily-initialpopulationpass</b></p><a name="coverage-example-ach-daily-initialpopulationpass"> </a><a name="hccoverage-example-ach-daily-initialpopulationpass"> </a><p><b>identifier</b>: Member Number/88800933501</p><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode SUBSIDIZ}">MEDICARE</span></p><p><b>subscriberId</b>: 123456789</p><p><b>beneficiary</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass(official) Female, DoB: 2005-01-15 ( MRN: 1000009001 (use: usual, ))</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span></p><p><b>period</b>: 2008-07-01 --&gt; (ongoing)</p><p><b>payor</b>: Medicare Coverage</p><h3>Classes</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value</b></td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/coverage-class group}">Medicare</span></td><td>Medicare</td><td>Medicare</td></tr></table></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MB"/>
+              <display value="Member Number"/>
+            </coding>
+          </type>
+          <system value="http://example.org/fhir/memberidentifier"/>
+          <value value="88800933501"/>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <version value="9.0.0"/>
+            <code value="SUBSIDIZ"/>
+            <display value="subsidized health program"/>
+          </coding>
+          <text value="MEDICARE"/>
+        </type>
+        <subscriberId value="123456789"/>
+        <beneficiary>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+        </beneficiary>
+        <relationship>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+            <code value="self"/>
+          </coding>
+          <text value="Self"/>
+        </relationship>
+        <period>
+          <start value="2008-07-01"/>
+        </period>
+        <payor>
+          <display value="Medicare Coverage"/>
+        </payor>
+        <class>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
+              <code value="group"/>
+              <display value="Group"/>
+            </coding>
+            <text value="Medicare"/>
+          </type>
+          <value value="Medicare"/>
+          <name value="Medicare"/>
+        </class>
+      </Coverage>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Condition/condition-example-diagnosis-ach-daily-initialpopulationpass"/>
+    <resource>
+      <Condition>
+        <id value="condition-example-diagnosis-ach-daily-initialpopulationpass"/>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-example-diagnosis-ach-daily-initialpopulationpass"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-example-diagnosis-ach-daily-initialpopulationpass</b></p><a name="condition-example-diagnosis-ach-daily-initialpopulationpass"> </a><a name="hccondition-example-diagnosis-ach-daily-initialpopulationpass"> </a><p><b>Original Resource ID</b>: eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm R06.02}">Hyperglycemia</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>encounter</b>: Emergency</p></div>
+        </text>
+        <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension">
+          <valueString value="eloBHVi6UskNwFJ55XgUq294CfCWyE3tytd.P4NomlhQprDjGoqWBeK2-ed8C2oMs3"/>
+        </extension>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <version value="4.0.0"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </coding>
+          <text value="Encounter Diagnosis"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="R06.02"/>
+            <display value="Shortness of breath"/>
+          </coding>
+          <text value="Hyperglycemia"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+          <display value="ACHDaily, InitialPopulationPass"/>
+        </subject>
+        <encounter>
+          <display value="Emergency"/>
+        </encounter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-1"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-daily-initialpopulationpass-1"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-daily-initialpopulationpass-1"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-daily-initialpopulationpass-1</b></p><a name="medadmin-example-ach-daily-initialpopulationpass-1"> </a><a name="hcmedadmin-example-ach-daily-initialpopulationpass-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-medicationadministration.html">ACH Daily Event Medication Administration</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href="Medication-medication-example-ach-daily-initialpopulationpass.html">Remdesivir 200 mg IV</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>effective</b>: 2024-01-01 22:00:00+0000 --&gt; 2024-01-02 22:00:09+0000</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-daily-initialpopulationpass.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002 (use: usual, ); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;remdesivir 100 mg; authoredOn = 2024-01-14 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>Remdesivir 200 mg IV once a day on day 1, then 100 mg IV once a day on days 2-5</td><td><span title="Codes:{http://snomed.info/sct 47625008}">Intravenous use</span></td><td>200 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>
+        </text>
+        <status value="completed"/>
+        <medicationReference>
+          <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension">
+            <valueString value="Medication/eZeW55xkBH0DrR0Xj004fNid0iluLJl6nT2adScy2TI9SbXSOBJPdED7Qjms.Fj48j0.MQxtisgjhubwnqaIImzMAo7axKzx4khlfA7xEkUU3"/>
+          </extension>
+          <reference value="Medication/medication-example-ach-daily-initialpopulationpass"/>
+          <display value="Remdesivir 200 mg IV"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+          <display value="ACHDaily, InitialPopulationPass"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2024-01-01T22:00:00Z"/>
+          <end value="2024-01-02T22:00:09Z"/>
+        </effectivePeriod>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-daily-initialpopulationpass"/>
+        </request>
+        <dosage>
+          <text value="Remdesivir 200 mg IV once a day on day 1, then 100 mg IV once a day on days 2-5"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous use"/>
+            </coding>
+          </route>
+          <dose>
+            <value value="200"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-daily-initialpopulationpass"/>
+    <resource>
+      <MedicationRequest>
+        <id value="medicationrequest-example-ach-daily-initialpopulationpass"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_medicationrequest-example-ach-daily-initialpopulationpass"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-daily-initialpopulationpass</b></p><a name="medicationrequest-example-ach-daily-initialpopulationpass"> </a><a name="hcmedicationrequest-example-ach-daily-initialpopulationpass"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-medicationrequest.html">ACH Daily Event Medication Request</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101903002 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}">Inpatient</span></p><p><b>medication</b>: <a href="Medication-medication-example-ach-daily-initialpopulationpass.html">remdesivir 100 mg</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-daily-initialpopulationpass-2.html">Hospital Encounter</a></p><p><b>authoredOn</b>: 2024-01-14 21:30:15+0000</p><p><b>requester</b>: Faculty Physician Um_Cln, MD</p><p><b>recorder</b>: Faculty Physician Um_Cln, MD</p><p><b>courseOfTherapyType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy acute}">Short course (acute) therapy</span></p><h3>DosageInstructions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>AsNeeded[x]</b></td><td><b>Route</b></td></tr><tr><td style="display: none">*</td><td>Remdesivir 200 mg IV once a day on day 1, then 100 mg IV once a day on days 2-5</td><td>Code , 4 per 1 day</td><td>false</td><td><span title="Codes:{http://snomed.info/sct 47625008}">Intravenous</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="101903002"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="order"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+          <text value="Inpatient"/>
+        </category>
+        <medicationReference>
+          <reference value="Medication/medication-example-ach-daily-initialpopulationpass"/>
+          <display value="remdesivir 100 mg"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+          <display value="ACHDaily, InitialPopulationPass"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-daily-initialpopulationpass-2"/>
+          <display value="Hospital Encounter"/>
+        </encounter>
+        <authoredOn value="2024-01-14T21:30:15Z"/>
+        <requester>
+          <type value="Practitioner"/>
+          <display value="Faculty Physician Um_Cln, MD"/>
+        </requester>
+        <recorder>
+          <type value="Practitioner"/>
+          <display value="Faculty Physician Um_Cln, MD"/>
+        </recorder>
+        <courseOfTherapyType>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+            <code value="acute"/>
+            <display value="Short course (acute) therapy"/>
+          </coding>
+          <text value="Short course (acute) therapy"/>
+        </courseOfTherapyType>
+        <dosageInstruction>
+          <text value="Remdesivir 200 mg IV once a day on day 1, then 100 mg IV once a day on days 2-5"/>
+          <timing>
+            <repeat>
+              <boundsPeriod>
+                <start value="2024-01-15T21:30:15Z"/>
+                <end value="2024-01-19T21:30:15Z"/>
+              </boundsPeriod>
+              <frequency value="4"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+            <code>
+              <text value="100 Remdesivir mg IV once a day on days 2-5"/>
+            </code>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous use"/>
+            </coding>
+            <text value="Intravenous"/>
+          </route>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-daily-initialpopulationpass-2"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medadmin-example-ach-daily-initialpopulationpass-2"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medadmin-example-ach-daily-initialpopulationpass-2"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-daily-initialpopulationpass-2</b></p><a name="medadmin-example-ach-daily-initialpopulationpass-2"> </a><a name="hcmedadmin-example-ach-daily-initialpopulationpass-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-medicationadministration.html">ACH Daily Event Medication Administration</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href="Medication-medication-example-ach-daily-initialpopulationpass.html">Remdesivir 100 mg IV</a></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>effective</b>: 2024-01-02 22:00:00+0000 --&gt; 2024-01-05 22:00:09+0000</p><p><b>request</b>: <a href="MedicationRequest-medicationrequest-example-ach-daily-initialpopulationpass.html">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101903002 (use: usual, ); status = completed; intent = order; category = Inpatient; medication[x] = -&gt;remdesivir 100 mg; authoredOn = 2024-01-14 21:30:15+0000; courseOfTherapyType = Short course (acute) therapy</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>Remdesivir 200 mg IV once a day on day 1, then 100 mg IV once a day on days 2-5</td><td><span title="Codes:{http://snomed.info/sct 47625008}">Intravenous use</span></td><td>100 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>
+        </text>
+        <status value="completed"/>
+        <medicationReference>
+          <extension url="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension">
+            <valueString value="Medication/eZeW55xkBH0DrR0Xj004fNid0iluLJl6nT2adScy2TI9SbXSOBJPdED7Qjms.Fj48j0.MQxtisgjhubwnqaIImzMAo7axKzx4khlfA7xEkUU3"/>
+          </extension>
+          <reference value="Medication/medication-example-ach-daily-initialpopulationpass"/>
+          <display value="Remdesivir 100 mg IV"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+          <display value="ACHDaily, InitialPopulationPass"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2024-01-02T22:00:00Z"/>
+          <end value="2024-01-05T22:00:09Z"/>
+        </effectivePeriod>
+        <request>
+          <reference value="MedicationRequest/medicationrequest-example-ach-daily-initialpopulationpass"/>
+        </request>
+        <dosage>
+          <text value="Remdesivir 200 mg IV once a day on day 1, then 100 mg IV once a day on days 2-5"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="47625008"/>
+              <display value="Intravenous use"/>
+            </coding>
+          </route>
+          <dose>
+            <value value="100"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Observation/lab-observation-example-ach-daily-initialpopulationpass"/>
+    <resource>
+      <Observation>
+        <id value="lab-observation-example-ach-daily-initialpopulationpass"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_lab-observation-example-ach-daily-initialpopulationpass"> </a><p class="res-header-id"><b>Generated Narrative: Observation lab-observation-example-ach-daily-initialpopulationpass</b></p><a name="lab-observation-example-ach-daily-initialpopulationpass"> </a><a name="hclab-observation-example-ach-daily-initialpopulationpass"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-observation-lab.html">ACH Daily Event Lab Result Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 94500-6}">SARS-CoV-2 RNA Resp Ql NAA+probe</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-daily-initialpopulationpass-1.html">Hospital Encounter</a></p><p><b>effective</b>: 2023-01-01 15:04:25+0000</p><p><b>issued</b>: 2023-01-01 15:04:25+0000</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 10828004}">Positive</span></p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-daily-initialpopulationpass.html">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+          <text value="Laboratory"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="94500-6"/>
+            <display value="SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection"/>
+          </coding>
+          <text value="SARS-CoV-2 RNA Resp Ql NAA+probe"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+          <display value="ACHDaily, InitialPopulationPass"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-daily-initialpopulationpass-1"/>
+          <display value="Hospital Encounter"/>
+        </encounter>
+        <effectiveDateTime value="2023-01-01T15:04:25Z"/>
+        <issued value="2023-01-01T15:04:25Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="10828004"/>
+            <display value="Positive"/>
+          </coding>
+          <text value="Positive"/>
+        </valueCodeableConcept>
+        <specimen>
+          <reference value="Specimen/specimen-example-ach-daily-initialpopulationpass"/>
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-daily-initialpopulationpass-covid"/>
+    <resource>
+      <ServiceRequest>
+        <id value="servicerequest-example-ach-daily-initialpopulationpass-covid"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_servicerequest-example-ach-daily-initialpopulationpass-covid"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-daily-initialpopulationpass-covid</b></p><a name="servicerequest-example-ach-daily-initialpopulationpass-covid"> </a><a name="hcservicerequest-example-ach-daily-initialpopulationpass-covid"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-servicerequest.html">ACH Daily Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631821 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 108252007}">Laboratory procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 94500-6}">SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily InitialPopulationPass</a></p><p><b>encounter</b>: <a href="Encounter-encounter-example-ach-daily-initialpopulationpass-1.html">Hospital Admission</a></p><p><b>occurrence</b>: Code , Events: 2024-02-02 17:22:00-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-01-01 17:22:00-0500</p><p><b>specimen</b>: <a href="Specimen-specimen-example-ach-daily-initialpopulationpass.html">Specimen: type = Nasal fluid specimen (specimen); receivedTime = 2024-01-01 08:30:00+0000</a></p></div>
+        </text>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PLAC"/>
+              <display value="Placer Identifier"/>
+            </coding>
+            <text value="Placer Identifier"/>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.19.5.1.798"/>
+          <value value="1019631821"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="original-order"/>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="108252007"/>
+            <display value="Laboratory procedure"/>
+          </coding>
+          <text value="Laboratory procedure"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="94500-6"/>
+            <display value="SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection"/>
+          </coding>
+          <text value="SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection"/>
+        </code>
+        <quantityQuantity>
+          <value value="1"/>
+        </quantityQuantity>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+          <display value="ACHDaily InitialPopulationPass"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encounter-example-ach-daily-initialpopulationpass-1"/>
+          <display value="Hospital Admission"/>
+        </encounter>
+        <occurrenceTiming>
+          <event value="2024-02-02T17:22:00-05:00"/>
+          <repeat>
+            <count value="1"/>
+          </repeat>
+          <code>
+            <text value="Once"/>
+          </code>
+        </occurrenceTiming>
+        <authoredOn value="2024-01-01T17:22:00-05:00"/>
+        <specimen>
+          <reference value="Specimen/specimen-example-ach-daily-initialpopulationpass"/>
+        </specimen>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhsnlink.org/fhir/Specimen/specimen-example-ach-daily-initialpopulationpass"/>
+    <resource>
+      <Specimen>
+        <id value="specimen-example-ach-daily-initialpopulationpass"/>
+        <meta>
+          <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Specimen_specimen-example-ach-daily-initialpopulationpass"> </a><p class="res-header-id"><b>Generated Narrative: Specimen specimen-example-ach-daily-initialpopulationpass</b></p><a name="specimen-example-ach-daily-initialpopulationpass"> </a><a name="hcspecimen-example-ach-daily-initialpopulationpass"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-daily-specimen.html">ACH Daily Event Specimen</a></p></div><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 168141000}">Nasal fluid specimen (specimen)</span></p><p><b>subject</b>: <a href="Patient-patient-example-ach-daily-initialpopulationpass.html">ACHDaily, InitialPopulationPass</a></p><p><b>receivedTime</b>: 2024-01-01 08:30:00+0000</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style="display: none">*</td><td>2024-01-01 09:00:00+0000</td><td><span title="Codes:{http://snomed.info/sct 1825009}">Entire root of nose (body structure)</span></td></tr></table></div>
+        </text>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="168141000"/>
+            <display value="Nasal fluid specimen (specimen)"/>
+          </coding>
+          <text value="Nasal fluid specimen (specimen)"/>
+        </type>
+        <subject>
+          <reference value="Patient/patient-example-ach-daily-initialpopulationpass"/>
+          <display value="ACHDaily, InitialPopulationPass"/>
+        </subject>
+        <receivedTime value="2024-01-01T08:30:00Z"/>
+        <collection>
+          <collectedDateTime value="2024-01-01T09:00:00Z"/>
+          <bodySite>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1825009"/>
+              <display value="Entire root of nose (body structure)"/>
+            </coding>
+          </bodySite>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Condition",
+  "id" : "condition-example-diagnosis-ach-monthly-pass1",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-example-diagnosis-ach-monthly-pass1</b></p><a name=\"condition-example-diagnosis-ach-monthly-pass1\"> </a><a name=\"hccondition-example-diagnosis-ach-monthly-pass1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-condition.html\">ACH Monthly Event Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 5758002}, {http://hl7.org/fhir/sid/icd-10-cm R78.81}\">Bacteremia</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "version" : "4.0.0",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }],
+    "text" : "Confirmed"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis",
+      "display" : "Encounter Diagnosis"
+    }],
+    "text" : "Encounter Diagnosis"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "5758002",
+      "display" : "Bacteremia (finding)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "R78.81",
+      "display" : "Bacteremia"
+    }],
+    "text" : "Bacteremia"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-ach-monthly-pass1",
+    "display" : "Pass1 ACH"
+  }
+}

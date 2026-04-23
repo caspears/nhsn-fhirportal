@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="diagnosticreport-example-ach-monthly-pass2-radiology"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-note"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport diagnosticreport-example-ach-monthly-pass2-radiology</b></p><a name="diagnosticreport-example-ach-monthly-pass2-radiology"> </a><a name="hcdiagnosticreport-example-ach-monthly-pass2-radiology"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-diagnosticreport-note.html">ACH Monthly Event Diagnostic Report - Report and Note</a></p></div><h2><span title="Codes:{http://snomed.info/sct 14331000087103}">ultrasonography of right lower limb</span> (<span title="Codes:{http://loinc.org LP29684-5}">Radiology</span>) </h2><table class="grid"><tr><td>Subject</td><td>Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</td></tr><tr><td>When For</td><td>2024-02-01 23:14:00-0500</td></tr><tr><td>Reported</td><td>2024-02-02 08:52:00-0500</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions:</b></p><ul><li><span title="Codes:{http://snomed.info/sct 128053003}">Deep venous thrombosis (disorder)</span></li></ul></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LP29684-5"/>
+      <display value="Radiology"/>
+    </coding>
+    <text value="Radiology"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="14331000087103"/>
+      <display value="Doppler ultrasonography of vascular structure of right lower limb (procedure)"/>
+    </coding>
+    <text value="ultrasonography of right lower limb"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass2"/>
+    <display value="Pass2 ACH"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+    <display value="Hospital Admission"/>
+  </encounter>
+  <effectiveDateTime value="2024-02-01T23:14:00-05:00"/>
+  <issued value="2024-02-02T08:52:00-05:00"/>
+  <conclusionCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="128053003"/>
+      <display value="Deep venous thrombosis (disorder)"/>
+    </coding>
+  </conclusionCode>
+</DiagnosticReport>

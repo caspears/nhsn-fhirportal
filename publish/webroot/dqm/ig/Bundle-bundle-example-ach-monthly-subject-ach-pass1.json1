@@ -1,0 +1,1302 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "bundle-example-ach-monthly-subject-ach-pass1",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle"]
+  },
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:1eaddf4c-2ec0-4dc4-b26f-9586d7a777e1"
+  },
+  "type" : "collection",
+  "timestamp" : "2024-02-05T21:04:29.481+00:00",
+  "entry" : [{
+    "fullUrl" : "http://nhsnlink.org/fhir/MeasureReport/measurereport-example-individual-ach-monthly-pass1",
+    "resource" : {
+      "resourceType" : "MeasureReport",
+      "id" : "measurereport-example-individual-ach-monthly-pass1",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MeasureReport_measurereport-example-individual-ach-monthly-pass1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MeasureReport measurereport-example-individual-ach-monthly-pass1</b></p><a name=\"measurereport-example-individual-ach-monthly-pass1\"> </a><a name=\"hcmeasurereport-example-individual-ach-monthly-pass1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/davinci-deqm/STU3.1/StructureDefinition-indv-measurereport-deqm.html\">DEQM Individual MeasureReport Profile</a></p></div><p><b>DEQM Measure Scoring Extension</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}\">Cohort</span></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN:\u00a01601191901010308\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104251\u00a0(use:\u00a0usual,\u00a0); status = in-progress; class = inpatient acute (ActCode[9.0.0]#ACUTE); type = Hospital admission (procedure); period = 2024-02-01 16:02:00-0500 --&gt; 2024-02-04 19:00:00-0500; reasonCode = Fever, unspecified</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Coverage-coverage-example-ach-monthly-pass1.html\">Coverage: identifier = Member Number: 084536836; status = active; type = subsidized health program; subscriberId = 98435938934; relationship = Child; period = 2020-08-01 --&gt; (ongoing)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Condition-condition-example-diagnosis-ach-monthly-pass1.html\">Condition Bacteremia (finding)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Device-device-example-ach-monthly-pass1-central-line.html\">Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#1000510341\u00a0(use:\u00a0usual,\u00a0); type = Central venous catheter, device (physical object)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationAdministration-medadmin-example-ach-monthly-pass1-vancomycin.html\">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888111\u00a0(use:\u00a0usual,\u00a0); status = completed; category = Inpatient; medication[x] = -&gt;vancomycin Injectable Solution 50MG; effective[x] = 2024-02-02 14:34:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-monthly-pass1-vancomycin.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888811\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;vancomycin Injectable Solution 50MG; authoredOn = 2024-02-02 13:43:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-observation-example-ach-monthly-pass1-blood.html\">Observation Bacteria identified in Blood by Culture</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-observation-example-ach-monthly-pass1-csf.html\">Observation Serratia marcescens DNA [Presence] in Specimen by NAA with probe detection</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-observation-example-ach-monthly-pass1-gestational-age.html\">Observation Gestational age--at birth</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Observation-observation-example-ach-monthly-pass1-vitals-weight.html\">Observation Body weight</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Procedure-procedure-example-ach-monthly-pass1-central-line.html\">Procedure Placement procedure (procedure)</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Procedure-procedure-example-ach-monthly-pass1-lumbar.html\">Procedure Drainage of Spinal Canal, Percutaneous Approach, Diagnostic</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"ServiceRequest-servicerequest-example-ach-monthly-pass1-blood.html\">ServiceRequest Bacteria identified in Blood by Culture</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"ServiceRequest-servicerequest-example-ach-monthly-pass1-csf.html\">ServiceRequest Differential panel - Cerebral spinal fluid</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Specimen-specimen-example-ach-monthly-pass1-blood.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082901,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:41; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500</a></p><p><b>Measure Report Supplemental Data Element Reference (R5 surrogate extension)</b>: <a href=\"Specimen-specimen-example-ach-monthly-pass1-csf.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Cerebrospinal fluid specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500</a></p><p><b>identifier</b>: <code>http://example.org/fhir/measurereport/id</code>/123456789-pass1</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href=\"Measure-NHSNAcuteCareHospitalMonthlyInitialPopulation.html\">NHSN dQM Acute Care Hospital Monthly Initial Populationversion: null1.0.0)</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN:\u00a01601191901010308\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>date</b>: 2024-02-05 21:04:29+0000</p><p><b>reporter</b>: <a href=\"Organization-organization-example-submitting-organization.html\">Organization Example NHSN Submitter</a></p><p><b>period</b>: 2024-01-05 00:00:00+0000 --&gt; 2024-02-04 00:00:00+0000</p><p><b>improvementNotation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td><td>1</td></tr></table></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN:\u00a01601191901010308\u00a0(use:\u00a0usual,\u00a0))</a></li><li><a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Encounter: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#10005104251\u00a0(use:\u00a0usual,\u00a0); status = in-progress; class = inpatient acute (ActCode[9.0.0]#ACUTE); type = Hospital admission (procedure); period = 2024-02-01 16:02:00-0500 --&gt; 2024-02-04 19:00:00-0500; reasonCode = Fever, unspecified</a></li><li><a href=\"Coverage-coverage-example-ach-monthly-pass1.html\">Coverage: identifier = Member Number: 084536836; status = active; type = subsidized health program; subscriberId = 98435938934; relationship = Child; period = 2020-08-01 --&gt; (ongoing)</a></li><li><a href=\"Condition-condition-example-diagnosis-ach-monthly-pass1.html\">Condition Bacteremia (finding)</a></li><li><a href=\"Device-device-example-ach-monthly-pass1-central-line.html\">Device: identifier = urn:oid:2.16.840.1.113883.19.5.1.698.8#1000510341\u00a0(use:\u00a0usual,\u00a0); type = Central venous catheter, device (physical object)</a></li><li><a href=\"MedicationAdministration-medadmin-example-ach-monthly-pass1-vancomycin.html\">MedicationAdministration: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#1018888111\u00a0(use:\u00a0usual,\u00a0); status = completed; category = Inpatient; medication[x] = -&gt;vancomycin Injectable Solution 50MG; effective[x] = 2024-02-02 14:34:00-0500</a></li><li><a href=\"MedicationRequest-medicationrequest-example-ach-monthly-pass1-vancomycin.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888811\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;vancomycin Injectable Solution 50MG; authoredOn = 2024-02-02 13:43:00-0500</a></li><li><a href=\"Observation-observation-example-ach-monthly-pass1-blood.html\">Observation Bacteria identified in Blood by Culture</a></li><li><a href=\"Observation-observation-example-ach-monthly-pass1-csf.html\">Observation Serratia marcescens DNA [Presence] in Specimen by NAA with probe detection</a></li><li><a href=\"Observation-observation-example-ach-monthly-pass1-gestational-age.html\">Observation Gestational age--at birth</a></li><li><a href=\"Observation-observation-example-ach-monthly-pass1-vitals-weight.html\">Observation Body weight</a></li><li><a href=\"Procedure-procedure-example-ach-monthly-pass1-central-line.html\">Procedure Placement procedure (procedure)</a></li><li><a href=\"Procedure-procedure-example-ach-monthly-pass1-lumbar.html\">Procedure Drainage of Spinal Canal, Percutaneous Approach, Diagnostic</a></li><li><a href=\"ServiceRequest-servicerequest-example-ach-monthly-pass1-blood.html\">ServiceRequest Bacteria identified in Blood by Culture</a></li><li><a href=\"ServiceRequest-servicerequest-example-ach-monthly-pass1-csf.html\">ServiceRequest Differential panel - Cerebral spinal fluid</a></li><li><a href=\"Specimen-specimen-example-ach-monthly-pass1-blood.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082901,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:41; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500</a></li><li><a href=\"Specimen-specimen-example-ach-monthly-pass1-csf.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Cerebrospinal fluid specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500</a></li></ul></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+            "code" : "cohort"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-minimal-patient"
+          }],
+          "reference" : "Patient/patient-example-ach-monthly-pass1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-encounter"
+          }],
+          "reference" : "Encounter/encounter-example-ach-monthly-pass1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-coverage"
+          }],
+          "reference" : "Coverage/coverage-example-ach-monthly-pass1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-condition"
+          }],
+          "reference" : "Condition/condition-example-diagnosis-ach-monthly-pass1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-device"
+          }],
+          "reference" : "Device/device-example-ach-monthly-pass1-central-line"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-medication-administration"
+          }],
+          "reference" : "MedicationAdministration/medadmin-example-ach-monthly-pass1-vancomycin"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-medication-request"
+          }],
+          "reference" : "MedicationRequest/medicationrequest-example-ach-monthly-pass1-vancomycin"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-observation-lab-category"
+          }],
+          "reference" : "Observation/observation-example-ach-monthly-pass1-blood"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-observation-lab-category"
+          }],
+          "reference" : "Observation/observation-example-ach-monthly-pass1-csf"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-observation-category"
+          }],
+          "reference" : "Observation/observation-example-ach-monthly-pass1-gestational-age"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-observation-vital-signs-category"
+          }],
+          "reference" : "Observation/observation-example-ach-monthly-pass1-vitals-weight"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-procedure"
+          }],
+          "reference" : "Procedure/procedure-example-ach-monthly-pass1-central-line"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-procedure"
+          }],
+          "reference" : "Procedure/procedure-example-ach-monthly-pass1-lumbar"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-service-request"
+          }],
+          "reference" : "ServiceRequest/servicerequest-example-ach-monthly-pass1-blood"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-service-request"
+          }],
+          "reference" : "ServiceRequest/servicerequest-example-ach-monthly-pass1-csf"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-specimen"
+          }],
+          "reference" : "Specimen/specimen-example-ach-monthly-pass1-blood"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+        "valueReference" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+            "valueString" : "sde-specimen"
+          }],
+          "reference" : "Specimen/specimen-example-ach-monthly-pass1-csf"
+        }
+      }],
+      "identifier" : [{
+        "system" : "http://example.org/fhir/measurereport/id",
+        "value" : "123456789-pass1"
+      }],
+      "status" : "complete",
+      "type" : "individual",
+      "measure" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation|1.0.0-cibuild",
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1"
+      },
+      "date" : "2024-02-05T21:04:29.481+00:00",
+      "reporter" : {
+        "reference" : "Organization/organization-example-submitting-organization"
+      },
+      "period" : {
+        "start" : "2024-01-05T00:00:00.000+00:00",
+        "end" : "2024-02-04T00:00:00.000+00:00"
+      },
+      "improvementNotation" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+          "code" : "increase"
+        }]
+      },
+      "group" : [{
+        "population" : [{
+          "code" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code" : "initial-population",
+              "display" : "Initial Population"
+            }]
+          },
+          "count" : 1
+        }]
+      }],
+      "evaluatedResource" : [{
+        "reference" : "Patient/patient-example-ach-monthly-pass1"
+      },
+      {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1"
+      },
+      {
+        "reference" : "Coverage/coverage-example-ach-monthly-pass1"
+      },
+      {
+        "reference" : "Condition/condition-example-diagnosis-ach-monthly-pass1"
+      },
+      {
+        "reference" : "Device/device-example-ach-monthly-pass1-central-line"
+      },
+      {
+        "reference" : "MedicationAdministration/medadmin-example-ach-monthly-pass1-vancomycin"
+      },
+      {
+        "reference" : "MedicationRequest/medicationrequest-example-ach-monthly-pass1-vancomycin"
+      },
+      {
+        "reference" : "Observation/observation-example-ach-monthly-pass1-blood"
+      },
+      {
+        "reference" : "Observation/observation-example-ach-monthly-pass1-csf"
+      },
+      {
+        "reference" : "Observation/observation-example-ach-monthly-pass1-gestational-age"
+      },
+      {
+        "reference" : "Observation/observation-example-ach-monthly-pass1-vitals-weight"
+      },
+      {
+        "reference" : "Procedure/procedure-example-ach-monthly-pass1-central-line"
+      },
+      {
+        "reference" : "Procedure/procedure-example-ach-monthly-pass1-lumbar"
+      },
+      {
+        "reference" : "ServiceRequest/servicerequest-example-ach-monthly-pass1-blood"
+      },
+      {
+        "reference" : "ServiceRequest/servicerequest-example-ach-monthly-pass1-csf"
+      },
+      {
+        "reference" : "Specimen/specimen-example-ach-monthly-pass1-blood"
+      },
+      {
+        "reference" : "Specimen/specimen-example-ach-monthly-pass1-csf"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Patient/patient-example-ach-monthly-pass1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-example-ach-monthly-pass1",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-example-ach-monthly-pass1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-example-ach-monthly-pass1</b></p><a name=\"patient-example-ach-monthly-pass1\"> </a><a name=\"hcpatient-example-ach-monthly-pass1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cross-measure-patient.html\">Cross-Measure Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN:\u00a01601191901010308\u00a0(use:\u00a0usual,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 999-999-9999(Home)</li><li>456 Alphabet Street Lansing MI 48864 US (home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Language spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes:{urn:ietf:bcp:47 en-US}\">English (United States)</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Next-of-Kin\">Next-of-Kin:</td><td colspan=\"3\"><ul><li>Mom Parent</li><li>456 Alphabet Street Lansing MI 48864 </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2135-2\">Race &amp; Ethnicity - CDC 2135-2</a>: Hispanic or Latino</li><li>text: Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9).\"><a href=\"http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-birthsex.html\">US Core Birth Sex Extension</a></td><td colspan=\"3\">M</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2054-5\">Race &amp; Ethnicity - CDC 2054-5</a>: Black or African American</li><li>text: Black or African American</li></ul></td></tr></table></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "ombCategory",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2054-5",
+            "display" : "Black or African American"
+          }
+        },
+        {
+          "url" : "text",
+          "valueString" : "Black or African American"
+        }],
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+      },
+      {
+        "extension" : [{
+          "url" : "ombCategory",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2135-2",
+            "display" : "Hispanic or Latino"
+          }
+        },
+        {
+          "url" : "text",
+          "valueString" : "Hispanic or Latino"
+        }],
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+        "valueCode" : "M"
+      }],
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR",
+            "display" : "Medical record number"
+          }],
+          "text" : "MRN"
+        },
+        "system" : "urn:oid:1.2.5.8.2.7",
+        "value" : "1601191901010308"
+      }],
+      "active" : true,
+      "name" : [{
+        "use" : "official",
+        "text" : "Pass1 ACH",
+        "family" : "ACH",
+        "given" : ["Pass1"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "999-999-9999",
+        "use" : "home"
+      }],
+      "gender" : "female",
+      "birthDate" : "2024-02-01",
+      "deceasedBoolean" : false,
+      "address" : [{
+        "use" : "home",
+        "type" : "both",
+        "line" : ["456 Alphabet Street"],
+        "city" : "Lansing",
+        "district" : "Ingham County",
+        "state" : "MI",
+        "postalCode" : "48864",
+        "country" : "US"
+      }],
+      "contact" : [{
+        "relationship" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code" : "N",
+            "display" : "Next-of-Kin"
+          }]
+        }],
+        "name" : {
+          "text" : "Mom Parent",
+          "family" : "Parent",
+          "given" : ["Mom"]
+        },
+        "address" : {
+          "line" : ["456 Alphabet Street"],
+          "city" : "Lansing",
+          "state" : "MI",
+          "postalCode" : "48864"
+        }
+      }],
+      "communication" : [{
+        "language" : {
+          "coding" : [{
+            "system" : "urn:ietf:bcp:47",
+            "code" : "en-US",
+            "display" : "English (United States)"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Encounter/encounter-example-ach-monthly-pass1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "encounter-example-ach-monthly-pass1",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounter-example-ach-monthly-pass1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-example-ach-monthly-pass1</b></p><a name=\"encounter-example-ach-monthly-pass1\"> </a><a name=\"hcencounter-example-ach-monthly-pass1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-encounter.html\">ACH Monthly Event Encounter</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/10005104251\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE\">ActCode ACUTE</a>: inpatient acute (version = 9.0.0 )</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 32485007}\">Hospital Admission</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>period</b>: 2024-02-01 16:02:00-0500 --&gt; 2024-02-04 19:00:00-0500</p><p><b>reasonCode</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm R50.9}\">Fever</span></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition-condition-example-diagnosis-ach-monthly-pass1.html\">Thrombophlebitis</a></td></tr></table><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/admit-source born}\">Born in hospital</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/discharge-disposition oth}\">Other</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-location-example-ach-monthly-nicu-level-iii.html\">ACH Monthly Neonatal critical care</a></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type wa}\">Ward</span></td><td>2024-02-01 16:02:00-0500 --&gt; 2024-02-02 16:02:00-0500</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+        "value" : "10005104251"
+      }],
+      "status" : "in-progress",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version" : "9.0.0",
+        "code" : "ACUTE",
+        "display" : "inpatient acute"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "32485007",
+          "display" : "Hospital admission (procedure)"
+        }],
+        "text" : "Hospital Admission"
+      }],
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "period" : {
+        "start" : "2024-02-01T16:02:00-05:00",
+        "end" : "2024-02-04T19:00:00-05:00"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "R50.9",
+          "display" : "Fever, unspecified"
+        }],
+        "text" : "Fever"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "Condition/condition-example-diagnosis-ach-monthly-pass1",
+          "display" : "Thrombophlebitis"
+        }
+      }],
+      "hospitalization" : {
+        "admitSource" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/admit-source",
+            "code" : "born",
+            "display" : "Born in hospital"
+          }],
+          "text" : "Born in hospital"
+        },
+        "dischargeDisposition" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+            "code" : "oth",
+            "display" : "Other"
+          }],
+          "text" : "Other"
+        }
+      },
+      "location" : [{
+        "location" : {
+          "reference" : "Location/location-example-ach-monthly-nicu-level-iii",
+          "display" : "ACH Monthly Neonatal critical care"
+        },
+        "physicalType" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+            "code" : "wa",
+            "display" : "Ward"
+          }]
+        },
+        "period" : {
+          "start" : "2024-02-01T16:02:00-05:00",
+          "end" : "2024-02-02T16:02:00-05:00"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Coverage/coverage-example-ach-monthly-pass1",
+    "resource" : {
+      "resourceType" : "Coverage",
+      "id" : "coverage-example-ach-monthly-pass1",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Coverage_coverage-example-ach-monthly-pass1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Coverage coverage-example-ach-monthly-pass1</b></p><a name=\"coverage-example-ach-monthly-pass1\"> </a><a name=\"hccoverage-example-ach-monthly-pass1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-coverage.html\">ACH Monthly Event Coverage</a></p></div><p><b>identifier</b>: Member Number/084536836</p><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode SUBSIDIZ}\">subsidized health program</span></p><p><b>policyHolder</b>: <a href=\"http://example.org/fhir/RelatedPerson/exampleMom\">Mom Parent</a></p><p><b>subscriberId</b>: 98435938934</p><p><b>beneficiary</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN:\u00a01601191901010308\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship child}\">Child</span></p><p><b>period</b>: 2020-08-01 --&gt; (ongoing)</p><p><b>payor</b>: <a href=\"http://example.org/fhir/Organization/Medicaid\">Medicaid</a></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MB",
+            "display" : "Member Number"
+          }]
+        },
+        "system" : "http://example.org/fhir/memberidentifier",
+        "value" : "084536836"
+      }],
+      "status" : "active",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "version" : "9.0.0",
+          "code" : "SUBSIDIZ",
+          "display" : "subsidized health program"
+        }]
+      },
+      "policyHolder" : {
+        "reference" : "http://example.org/fhir/RelatedPerson/exampleMom",
+        "display" : "Mom Parent"
+      },
+      "subscriberId" : "98435938934",
+      "beneficiary" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1"
+      },
+      "relationship" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+          "code" : "child",
+          "display" : "Child"
+        }],
+        "text" : "Child"
+      },
+      "period" : {
+        "start" : "2020-08-01"
+      },
+      "payor" : [{
+        "reference" : "http://example.org/fhir/Organization/Medicaid",
+        "display" : "Medicaid"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Condition/condition-example-diagnosis-ach-monthly-pass1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "condition-example-diagnosis-ach-monthly-pass1",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_condition-example-diagnosis-ach-monthly-pass1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-example-diagnosis-ach-monthly-pass1</b></p><a name=\"condition-example-diagnosis-ach-monthly-pass1\"> </a><a name=\"hccondition-example-diagnosis-ach-monthly-pass1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-condition.html\">ACH Monthly Event Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 5758002}, {http://hl7.org/fhir/sid/icd-10-cm R78.81}\">Bacteremia</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "version" : "4.0.0",
+          "code" : "confirmed",
+          "display" : "Confirmed"
+        }],
+        "text" : "Confirmed"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis",
+          "display" : "Encounter Diagnosis"
+        }],
+        "text" : "Encounter Diagnosis"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "5758002",
+          "display" : "Bacteremia (finding)"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "R78.81",
+          "display" : "Bacteremia"
+        }],
+        "text" : "Bacteremia"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Device/device-example-ach-monthly-pass1-central-line",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "device-example-ach-monthly-pass1-central-line",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_device-example-ach-monthly-pass1-central-line\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device device-example-ach-monthly-pass1-central-line</b></p><a name=\"device-example-ach-monthly-pass1-central-line\"> </a><a name=\"hcdevice-example-ach-monthly-pass1-central-line\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-device.html\">ACH Monthly Event Device</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/1000510341\u00a0(use:\u00a0usual,\u00a0)</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 52124006}\">Central venous catheter, device</span></p><p><b>patient</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+        "value" : "1000510341"
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "52124006",
+          "display" : "Central venous catheter, device (physical object)"
+        }],
+        "text" : "Central venous catheter, device"
+      },
+      "patient" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/MedicationAdministration/medadmin-example-ach-monthly-pass1-vancomycin",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "medadmin-example-ach-monthly-pass1-vancomycin",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationAdministration_medadmin-example-ach-monthly-pass1-vancomycin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration medadmin-example-ach-monthly-pass1-vancomycin</b></p><a name=\"medadmin-example-ach-monthly-pass1-vancomycin\"> </a><a name=\"hcmedadmin-example-ach-monthly-pass1-vancomycin\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-medicationadministration.html\">ACH Monthly Event MedicationAdministration</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/1018888111\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"Medication-medication-example-vancomycin-15.html\">vancomycin Injectable Solution 50MG</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>context</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 14:34:00-0500</p><p><b>request</b>: <a href=\"MedicationRequest-medicationrequest-example-ach-monthly-pass1-vancomycin.html\">MedicationRequest: identifier = urn:oid:2.16.840.1.113883.19.5.1.798#101888811\u00a0(use:\u00a0usual,\u00a0); status = completed; intent = order; category = Inpatient; reported[x] = false; medication[x] = -&gt;vancomycin Injectable Solution 50MG; authoredOn = 2024-02-02 13:43:00-0500</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>15mg/kg</td><td><span title=\"Codes:{http://snomed.info/sct 47625008}\">IV</span></td><td>15 mg/kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/kg = 'mg/kg')</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+        "value" : "1018888111"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }],
+        "text" : "Inpatient"
+      },
+      "medicationReference" : {
+        "reference" : "Medication/medication-example-vancomycin-15",
+        "display" : "vancomycin Injectable Solution 50MG"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "context" : {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+        "display" : "Hospital Admission"
+      },
+      "effectiveDateTime" : "2024-02-02T14:34:00-05:00",
+      "request" : {
+        "reference" : "MedicationRequest/medicationrequest-example-ach-monthly-pass1-vancomycin"
+      },
+      "dosage" : {
+        "text" : "15mg/kg",
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "47625008",
+            "display" : "Intravenous route"
+          }],
+          "text" : "IV"
+        },
+        "dose" : {
+          "value" : 15,
+          "unit" : "mg/kg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg/kg"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/MedicationRequest/medicationrequest-example-ach-monthly-pass1-vancomycin",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "medicationrequest-example-ach-monthly-pass1-vancomycin",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_medicationrequest-example-ach-monthly-pass1-vancomycin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest medicationrequest-example-ach-monthly-pass1-vancomycin</b></p><a name=\"medicationrequest-example-ach-monthly-pass1-vancomycin\"> </a><a name=\"hcmedicationrequest-example-ach-monthly-pass1-vancomycin\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-medicationrequest.html\">ACH Monthly Event MedicationRequest</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798</code>/101888811\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category inpatient}\">Inpatient</span></p><p><b>reported</b>: false</p><p><b>medication</b>: <a href=\"Medication-medication-example-vancomycin-15.html\">vancomycin Injectable Solution 50MG</a></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>authoredOn</b>: 2024-02-02 13:43:00-0500</p><p><b>requester</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH(official) Female, DoB: 2024-02-01 ( MRN:\u00a01601191901010308\u00a0(use:\u00a0usual,\u00a0))</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 15mg/kg every 12 hours</p><p><b>timing</b>: Once per 12 hours</p><p><b>asNeeded</b>: false</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 47625008}\">IV</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type calculated}\">calculated</span></td><td>15 mg/kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/kg = 'mg/kg')</span></td></tr></table></blockquote></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+        "value" : "101888811"
+      }],
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }],
+        "text" : "Inpatient"
+      }],
+      "reportedBoolean" : false,
+      "medicationReference" : {
+        "reference" : "Medication/medication-example-vancomycin-15",
+        "display" : "vancomycin Injectable Solution 50MG"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+        "display" : "Hospital Admission"
+      },
+      "authoredOn" : "2024-02-02T13:43:00-05:00",
+      "requester" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1"
+      },
+      "dosageInstruction" : [{
+        "text" : "15mg/kg every 12 hours",
+        "timing" : {
+          "repeat" : {
+            "period" : 12,
+            "periodUnit" : "h"
+          }
+        },
+        "asNeededBoolean" : false,
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "47625008",
+            "display" : "Intravenous route"
+          }],
+          "text" : "IV"
+        },
+        "doseAndRate" : [{
+          "type" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+              "code" : "calculated",
+              "display" : "Calculated"
+            }],
+            "text" : "calculated"
+          },
+          "doseQuantity" : {
+            "value" : 15,
+            "unit" : "mg/kg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg/kg"
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass1-blood",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-example-ach-monthly-pass1-blood",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-example-ach-monthly-pass1-blood\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-example-ach-monthly-pass1-blood</b></p><a name=\"observation-example-ach-monthly-pass1-blood\"> </a><a name=\"hcobservation-example-ach-monthly-pass1-blood\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-observation-lab.html\">ACH Monthly Event Lab Result Observation</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-servicerequest-example-ach-monthly-pass1-blood.html\">ServiceRequest Bacteria identified in Blood by Culture</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 600-7}\">Bacteria identified in Blood by Culture</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 18:12:00-0500</p><p><b>issued</b>: 2024-02-03 11:42:00-0500</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 113962001}\">Staphylococcus capitis</span></p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-monthly-pass1-blood.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082901,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:41; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500</a></p></div>"
+      },
+      "basedOn" : [{
+        "reference" : "ServiceRequest/servicerequest-example-ach-monthly-pass1-blood"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }],
+        "text" : "Laboratory"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "600-7",
+          "display" : "Bacteria identified in Blood by Culture"
+        }],
+        "text" : "Bacteria identified in Blood by Culture"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+        "display" : "Hospital Admission"
+      },
+      "effectiveDateTime" : "2024-02-02T18:12:00-05:00",
+      "issued" : "2024-02-03T11:42:00-05:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "113962001",
+          "display" : "Staphylococcus capitis ss capitis (organism)"
+        }],
+        "text" : "Staphylococcus capitis"
+      },
+      "specimen" : {
+        "reference" : "Specimen/specimen-example-ach-monthly-pass1-blood"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass1-csf",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-example-ach-monthly-pass1-csf",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-example-ach-monthly-pass1-csf\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-example-ach-monthly-pass1-csf</b></p><a name=\"observation-example-ach-monthly-pass1-csf\"> </a><a name=\"hcobservation-example-ach-monthly-pass1-csf\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-observation-lab.html\">ACH Monthly Event Lab Result Observation</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-servicerequest-example-ach-monthly-pass1-csf.html\">ServiceRequest Differential panel - Cerebral spinal fluid</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 61402-4}\">Serratia marcescens DNA</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>effective</b>: 2024-02-02 18:13:00-0500</p><p><b>issued</b>: 2024-02-03 11:47:00-0500</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 260373001}\">Detected (qualifier value)</span></p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-monthly-pass1-csf.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Cerebrospinal fluid specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500</a></p></div>"
+      },
+      "basedOn" : [{
+        "reference" : "ServiceRequest/servicerequest-example-ach-monthly-pass1-csf"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }],
+        "text" : "Laboratory"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "61402-4",
+          "display" : "Serratia marcescens DNA [Presence] in Specimen by NAA with probe detection"
+        }],
+        "text" : "Serratia marcescens DNA"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+        "display" : "Hospital Admission"
+      },
+      "effectiveDateTime" : "2024-02-02T18:13:00-05:00",
+      "issued" : "2024-02-03T11:47:00-05:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "260373001",
+          "display" : "Detected (qualifier value)"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/specimen-example-ach-monthly-pass1-csf"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass1-gestational-age",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-example-ach-monthly-pass1-gestational-age",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-example-ach-monthly-pass1-gestational-age\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-example-ach-monthly-pass1-gestational-age</b></p><a name=\"observation-example-ach-monthly-pass1-gestational-age\"> </a><a name=\"hcobservation-example-ach-monthly-pass1-gestational-age\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-observation.html\">ACH Monthly Event Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 76516-4}\">Gestational age at birth</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>effective</b>: 2024-02-01 16:02:00-0500</p><p><b>issued</b>: 2024-02-01 16:02:00-0500</p><p><b>value</b>: 164 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "exam",
+          "display" : "exam"
+        }],
+        "text" : "Exam"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "76516-4",
+          "display" : "Gestational age--at birth"
+        }],
+        "text" : "Gestational age at birth"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+        "display" : "Hospital Admission"
+      },
+      "effectiveDateTime" : "2024-02-01T16:02:00-05:00",
+      "issued" : "2024-02-01T16:02:00-05:00",
+      "valueQuantity" : {
+        "value" : 164,
+        "unit" : "day",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "d"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Observation/observation-example-ach-monthly-pass1-vitals-weight",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-example-ach-monthly-pass1-vitals-weight",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-example-ach-monthly-pass1-vitals-weight\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-example-ach-monthly-pass1-vitals-weight</b></p><a name=\"observation-example-ach-monthly-pass1-vitals-weight\"> </a><a name=\"hcobservation-example-ach-monthly-pass1-vitals-weight\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-observation-vitals.html\">ACH Monthly Event Observation - Vital Signs</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Weight</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>effective</b>: 2024-02-01 16:02:00-0500</p><p><b>issued</b>: 2024-02-01 16:02:00-0500</p><p><b>value</b>: 0.58 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs",
+          "display" : "Vital Signs"
+        }],
+        "text" : "Vital Signs"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29463-7",
+          "display" : "Body weight"
+        }],
+        "text" : "Weight"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+        "display" : "Hospital Admission"
+      },
+      "effectiveDateTime" : "2024-02-01T16:02:00-05:00",
+      "issued" : "2024-02-01T16:02:00-05:00",
+      "valueQuantity" : {
+        "value" : 0.58,
+        "unit" : "kg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kg"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Procedure/procedure-example-ach-monthly-pass1-central-line",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "procedure-example-ach-monthly-pass1-central-line",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_procedure-example-ach-monthly-pass1-central-line\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure procedure-example-ach-monthly-pass1-central-line</b></p><a name=\"procedure-example-ach-monthly-pass1-central-line\"> </a><a name=\"hcprocedure-example-ach-monthly-pass1-central-line\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-procedure.html\">ACH Monthly Event Procedure</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/1000510352\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 312052002}\">Placement procedure (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>performed</b>: 2024-02-02 18:12:00-0500</p></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+        "value" : "1000510352"
+      }],
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "312052002",
+          "display" : "Placement procedure (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+        "display" : "Hospital Admission"
+      },
+      "performedDateTime" : "2024-02-02T18:12:00-05:00"
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Procedure/procedure-example-ach-monthly-pass1-lumbar",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "procedure-example-ach-monthly-pass1-lumbar",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_procedure-example-ach-monthly-pass1-lumbar\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure procedure-example-ach-monthly-pass1-lumbar</b></p><a name=\"procedure-example-ach-monthly-pass1-lumbar\"> </a><a name=\"hcprocedure-example-ach-monthly-pass1-lumbar\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-procedure.html\">ACH Monthly Event Procedure</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.698.8</code>/1000510352\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://www.cms.gov/Medicare/Coding/ICD10 009U3ZX}\">Drainage of Spinal Canal, Percutaneous Approach, Diagnostic</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>performed</b>: 2024-02-02 18:56:00-0500</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 272005}\">Structure of superior articular process of lumbar vertebra</span></p></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.698.8",
+        "value" : "1000510352"
+      }],
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "http://www.cms.gov/Medicare/Coding/ICD10",
+          "code" : "009U3ZX",
+          "display" : "Drainage of Spinal Canal, Percutaneous Approach, Diagnostic"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+        "display" : "Hospital Admission"
+      },
+      "performedDateTime" : "2024-02-02T18:56:00-05:00",
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "272005",
+          "display" : "Structure of superior articular process of lumbar vertebra (body structure)"
+        }],
+        "text" : "Structure of superior articular process of lumbar vertebra"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-monthly-pass1-blood",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "servicerequest-example-ach-monthly-pass1-blood",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_servicerequest-example-ach-monthly-pass1-blood\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-monthly-pass1-blood</b></p><a name=\"servicerequest-example-ach-monthly-pass1-blood\"> </a><a name=\"hcservicerequest-example-ach-monthly-pass1-blood\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-servicerequest.html\">ACH Monthly Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631821\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 600-7}\">Bacteria identified in Blood by Culture</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>occurrence</b>: Code , Events: 2024-02-02 17:22:00-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-02-02 17:22:00-0500</p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-monthly-pass1-blood.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082901,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:41; type = Venous blood specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PLAC",
+            "display" : "Placer Identifier"
+          }],
+          "text" : "Placer Identifier"
+        },
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+        "value" : "1019631821"
+      }],
+      "status" : "completed",
+      "intent" : "original-order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "108252007",
+          "display" : "Laboratory procedure"
+        }],
+        "text" : "Laboratory procedure"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "600-7",
+          "display" : "Bacteria identified in Blood by Culture"
+        }],
+        "text" : "Bacteria identified in Blood by Culture"
+      },
+      "quantityQuantity" : {
+        "value" : 1
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+        "display" : "Hospital Admission"
+      },
+      "occurrenceTiming" : {
+        "event" : ["2024-02-02T17:22:00-05:00"],
+        "repeat" : {
+          "count" : 1
+        },
+        "code" : {
+          "text" : "Once"
+        }
+      },
+      "authoredOn" : "2024-02-02T17:22:00-05:00",
+      "specimen" : [{
+        "reference" : "Specimen/specimen-example-ach-monthly-pass1-blood"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/ServiceRequest/servicerequest-example-ach-monthly-pass1-csf",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "servicerequest-example-ach-monthly-pass1-csf",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_servicerequest-example-ach-monthly-pass1-csf\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest servicerequest-example-ach-monthly-pass1-csf</b></p><a name=\"servicerequest-example-ach-monthly-pass1-csf\"> </a><a name=\"hcservicerequest-example-ach-monthly-pass1-csf\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-servicerequest.html\">ACH Monthly Event ServiceRequest</a></p></div><p><b>identifier</b>: Placer Identifier/1019631822\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Completed</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29584-0}\">Differential panel - Cerebral spinal fluid</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-example-ach-monthly-pass1.html\">Hospital Admission</a></p><p><b>occurrence</b>: Code , Events: 2024-02-02 17:22:30-0500 , Count 1  times, Once</p><p><b>authoredOn</b>: 2024-02-02 17:22:30-0500</p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-ach-monthly-pass1-csf.html\">Specimen: identifier = urn:oid:2.16.840.1.113883.19.5.1.798.32#C104082902,urn:oid:2.16.840.1.113883.19.5.1.798.800#C10408290:42; type = Cerebrospinal fluid specimen (specimen); receivedTime = 2024-02-02 18:20:00-0500</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PLAC",
+            "display" : "Placer Identifier"
+          }],
+          "text" : "Placer Identifier"
+        },
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798",
+        "value" : "1019631822"
+      }],
+      "status" : "completed",
+      "intent" : "original-order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "108252007",
+          "display" : "Laboratory procedure"
+        }],
+        "text" : "Laboratory procedure"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29584-0",
+          "display" : "Differential panel - Cerebral spinal fluid"
+        }],
+        "text" : "Differential panel - Cerebral spinal fluid"
+      },
+      "quantityQuantity" : {
+        "value" : 1
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-example-ach-monthly-pass1",
+        "display" : "Hospital Admission"
+      },
+      "occurrenceTiming" : {
+        "event" : ["2024-02-02T17:22:30-05:00"],
+        "repeat" : {
+          "count" : 1
+        },
+        "code" : {
+          "text" : "Once"
+        }
+      },
+      "authoredOn" : "2024-02-02T17:22:30-05:00",
+      "specimen" : [{
+        "reference" : "Specimen/specimen-example-ach-monthly-pass1-csf"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Specimen/specimen-example-ach-monthly-pass1-blood",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "specimen-example-ach-monthly-pass1-blood",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_specimen-example-ach-monthly-pass1-blood\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Specimen specimen-example-ach-monthly-pass1-blood</b></p><a name=\"specimen-example-ach-monthly-pass1-blood\"> </a><a name=\"hcspecimen-example-ach-monthly-pass1-blood\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-specimen.html\">ACH Monthly Event Specimen</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798.32</code>/C104082901, <code>urn:oid:2.16.840.1.113883.19.5.1.798.800</code>/C10408290:41</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 122555007}\">Venous blood specimen (specimen)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>receivedTime</b>: 2024-02-02 18:20:00-0500</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-02-02 18:12:00-0500</td><td><span title=\"Codes:{http://snomed.info/sct 76853006}\">Heel structure</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798.32",
+        "value" : "C104082901",
+        "assigner" : {
+          "display" : "LIS"
+        }
+      },
+      {
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798.800",
+        "value" : "C10408290:41"
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "122555007",
+          "display" : "Venous blood specimen (specimen)"
+        }],
+        "text" : "Venous blood specimen (specimen)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "receivedTime" : "2024-02-02T18:20:00-05:00",
+      "collection" : {
+        "collectedDateTime" : "2024-02-02T18:12:00-05:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "76853006",
+            "display" : "Heel structure (body structure)"
+          }],
+          "text" : "Heel structure"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhsnlink.org/fhir/Specimen/specimen-example-ach-monthly-pass1-csf",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "specimen-example-ach-monthly-pass1-csf",
+      "meta" : {
+        "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_specimen-example-ach-monthly-pass1-csf\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Specimen specimen-example-ach-monthly-pass1-csf</b></p><a name=\"specimen-example-ach-monthly-pass1-csf\"> </a><a name=\"hcspecimen-example-ach-monthly-pass1-csf\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-specimen.html\">ACH Monthly Event Specimen</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.19.5.1.798.32</code>/C104082902, <code>urn:oid:2.16.840.1.113883.19.5.1.798.800</code>/C10408290:42</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 258450006}\">Cerebrospinal fluid specimen (specimen)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-ach-monthly-pass1.html\">Pass1 ACH</a></p><p><b>receivedTime</b>: 2024-02-02 18:20:00-0500</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-02-02 18:13:00-0500</td><td><span title=\"Codes:{http://snomed.info/sct 272005}\">Structure of superior articular process of lumbar vertebra</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798.32",
+        "value" : "C104082902",
+        "assigner" : {
+          "display" : "LIS"
+        }
+      },
+      {
+        "system" : "urn:oid:2.16.840.1.113883.19.5.1.798.800",
+        "value" : "C10408290:42"
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "258450006",
+          "display" : "Cerebrospinal fluid specimen (specimen)"
+        }],
+        "text" : "Cerebrospinal fluid specimen (specimen)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-example-ach-monthly-pass1",
+        "display" : "Pass1 ACH"
+      },
+      "receivedTime" : "2024-02-02T18:20:00-05:00",
+      "collection" : {
+        "collectedDateTime" : "2024-02-02T18:13:00-05:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "272005",
+            "display" : "Structure of superior articular process of lumbar vertebra (body structure)"
+          }],
+          "text" : "Structure of superior articular process of lumbar vertebra"
+        }
+      }
+    }
+  }]
+}

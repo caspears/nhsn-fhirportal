@@ -1,0 +1,384 @@
+{
+  "package": "gov.cdc.nhsn.dqm",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+      "title": "Measure Report Supplemental Data Element Reference (R5 surrogate extension)",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+      "title": "Measure Report Criteria Reference",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension",
+      "title": "Original Element Value",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-mapped-concept-extension",
+      "title": "Original Mapped Concept",
+      "types": [
+        "code",
+        "CodeableConcept",
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+      "title": "Original Resource ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-patient-list-applicable-period-extension",
+      "title": "Patient List Applicable Period",
+      "types": [
+        "Period",
+        "Period"
+      ]
+    },
+    {
+      "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension",
+      "title": "Received Date",
+      "types": [
+        "dateTime"
+      ]
+    }
+  ],
+  "profiles": {
+    "DiagnosticReport": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport",
+        "title": "ACH Monthly Event General Diagnostic Report"
+      },
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-lab",
+        "title": "ACH Monthly Event Diagnostic Report (Lab)"
+      },
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-note",
+        "title": "ACH Monthly Event Diagnostic Report - Report and Note"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter",
+        "title": "ACH Monthly Event Encounter"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location",
+        "title": "ACH Monthly Event Location"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication",
+        "title": "ACH Monthly Event Medication"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration",
+        "title": "ACH Monthly Event MedicationAdministration"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest",
+        "title": "ACH Monthly Event MedicationRequest"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation",
+        "title": "ACH Monthly Event Observation"
+      },
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab",
+        "title": "ACH Monthly Event Lab Result Observation"
+      },
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals",
+        "title": "ACH Monthly Event Observation - Vital Signs"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure",
+        "title": "ACH Monthly Event Procedure"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest",
+        "title": "ACH Monthly Event ServiceRequest"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen",
+        "title": "ACH Monthly Event Specimen"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition",
+        "title": "ACH Monthly Event Condition"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage",
+        "title": "ACH Monthly Event Coverage"
+      }
+    ],
+    "Device": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submitting-device",
+        "title": "NHSN Submitting Device"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient",
+        "title": "Cross-Measure Patient Profile"
+      }
+    ],
+    "List": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/poi-list",
+        "title": "Patients-Of-Interest List"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-measurereport-bundle",
+        "title": "NHSN MeasureReport Bundle"
+      },
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle",
+        "title": "NHSN Subject Bundle"
+      },
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submission-header-bundle",
+        "title": "NHSN Submission Header Bundle"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submitting-organization",
+        "title": "NHSN Submitting Organization"
+      }
+    ],
+    "MeasureReport": [
+      {
+        "url": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/subjectlist-measurereport",
+        "title": "Subject-List MeasureReport Profile"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference": [
+      "Bundle.entry.resource",
+      "MeasureReport"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-cqlOptions": [
+      "Library"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Bundle.entry.resource.address",
+      "Organization.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "ImplementationGuide",
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode": [
+      "Measure.contained"
+    ],
+    "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements": [
+      "Measure"
+    ],
+    "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition": [
+      "Measure.contained"
+    ],
+    "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis": [
+      "Measure"
+    ],
+    "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem": [
+      "Measure"
+    ],
+    "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring": [
+      "Bundle.entry.resource",
+      "MeasureReport"
+    ],
+    "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension": [
+      "Bundle.entry.resource.status",
+      "Encounter.status"
+    ],
+    "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-mapped-concept-extension": [
+      "Bundle.entry.resource.class",
+      "Encounter.class"
+    ],
+    "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.medicationReference",
+      "Condition",
+      "Encounter",
+      "Medication",
+      "MedicationAdministration.medicationReference"
+    ],
+    "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-patient-list-applicable-period-extension": [
+      "Bundle.entry.resource",
+      "List"
+    ],
+    "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension": [
+      "Bundle.entry.resource.meta",
+      "Condition.meta",
+      "Coverage.meta",
+      "Device.meta",
+      "DiagnosticReport.meta",
+      "Encounter.meta",
+      "List.meta",
+      "Location.meta",
+      "MeasureReport.meta",
+      "Medication.meta",
+      "MedicationAdministration.meta",
+      "MedicationRequest.meta",
+      "Observation.meta",
+      "Patient.meta",
+      "Procedure.meta",
+      "ServiceRequest.meta",
+      "Specimen.meta"
+    ]
+  }
+}

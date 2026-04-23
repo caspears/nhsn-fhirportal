@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Medication",
+  "id" : "medication-example-metronidazole",
+  "meta" : {
+    "profile" : ["http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication medication-example-metronidazole</b></p><a name=\"medication-example-metronidazole\"> </a><a name=\"hcmedication-example-metronidazole\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ach-monthly-medication.html\">ACH Monthly Event Medication</a></p></div><p><b>code</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 317428}\">Metronidazole 500 MG</span></p><p><b>status</b>: Active</p><p><b>form</b>: <span title=\"Codes:{http://snomed.info/sct 421026006}\">Oral tablet</span></p></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "317428",
+      "display" : "metroNIDAZOLE 500 MG"
+    }],
+    "text" : "Metronidazole 500 MG"
+  },
+  "status" : "active",
+  "form" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "421026006",
+      "display" : "Oral tablet"
+    }],
+    "text" : "Oral tablet"
+  }
+}

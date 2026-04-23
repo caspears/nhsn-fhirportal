@@ -1,0 +1,401 @@
+[
+  {
+    "id" : "extension-MeasureReport.supplementalDataElement.reference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalDataElement.reference",
+    "version" : "1.0.0",
+    "name" : "MeasureReportSupplementalDataElementReference"
+  },
+  {
+    "id" : "extension-criteriaReference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference",
+    "version" : "1.0.0",
+    "name" : "MeasureReportCriteriaReference"
+  },
+  {
+    "id" : "gov.cdc.nhsn.dqm",
+    "type" : "ImplementationGuide",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ImplementationGuide/gov.cdc.nhsn.dqm",
+    "version" : "1.0.0",
+    "name" : "NHSNMeasures"
+  },
+  {
+    "id" : "FHIRHelpers",
+    "type" : "Library",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/FHIRHelpers",
+    "version" : "1.0.0",
+    "name" : "FHIRHelpers"
+  },
+  {
+    "id" : "NHSNAcuteCareHospitalDailyInitialPopulation",
+    "type" : "Library",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNAcuteCareHospitalDailyInitialPopulation",
+    "version" : "1.0.0",
+    "name" : "NHSNAcuteCareHospitalDailyInitialPopulation"
+  },
+  {
+    "id" : "NHSNAcuteCareHospitalMonthlyInitialPopulation",
+    "type" : "Library",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNAcuteCareHospitalMonthlyInitialPopulation",
+    "version" : "1.0.0",
+    "name" : "NHSNAcuteCareHospitalMonthlyInitialPopulation"
+  },
+  {
+    "id" : "NHSNHelpers",
+    "type" : "Library",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNHelpers",
+    "version" : "1.0.0",
+    "name" : "NHSNHelpers"
+  },
+  {
+    "id" : "SharedResourceCreation",
+    "type" : "Library",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/SharedResourceCreation",
+    "version" : "1.0.0",
+    "name" : "SharedResourceCreation"
+  },
+  {
+    "id" : "NHSNAcuteCareHospitalDailyInitialPopulation",
+    "type" : "Measure",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalDailyInitialPopulation",
+    "version" : "1.0.0",
+    "name" : "NHSNAcuteCareHospitalDailyInitialPopulation"
+  },
+  {
+    "id" : "NHSNAcuteCareHospitalMonthlyInitialPopulation",
+    "type" : "Measure",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Measure/NHSNAcuteCareHospitalMonthlyInitialPopulation",
+    "version" : "1.0.0",
+    "name" : "NHSNAcuteCareHospitalMonthlyInitialPopulation"
+  },
+  {
+    "id" : "ach-daily-diagnosticreport-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-diagnosticreport-lab",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventLabDiagnosticReport"
+  },
+  {
+    "id" : "ach-daily-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventEncounter"
+  },
+  {
+    "id" : "ach-daily-location",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-location",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventLocation"
+  },
+  {
+    "id" : "ach-daily-medication",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medication",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventMedication"
+  },
+  {
+    "id" : "ach-daily-medicationadministration",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventMedicationAdministration"
+  },
+  {
+    "id" : "ach-daily-medicationrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventMedicationRequest"
+  },
+  {
+    "id" : "ach-daily-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventObservation"
+  },
+  {
+    "id" : "ach-daily-observation-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventLabObservation"
+  },
+  {
+    "id" : "ach-daily-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-procedure",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventProcedure"
+  },
+  {
+    "id" : "ach-daily-servicerequest",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventServiceRequest"
+  },
+  {
+    "id" : "ach-daily-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventSpecimen"
+  },
+  {
+    "id" : "ach-monthly-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-condition",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingCondition"
+  },
+  {
+    "id" : "ach-monthly-coverage",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-coverage",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingCoverage"
+  },
+  {
+    "id" : "ach-monthly-device",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-device",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyDevice"
+  },
+  {
+    "id" : "ach-monthly-diagnosticreport",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyDiagnosticReport"
+  },
+  {
+    "id" : "ach-monthly-diagnosticreport-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-lab",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyLabDiagnosticReport"
+  },
+  {
+    "id" : "ach-monthly-diagnosticreport-note",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-note",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyNoteDiagnosticReport"
+  },
+  {
+    "id" : "ach-monthly-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-encounter",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingEncounter"
+  },
+  {
+    "id" : "ach-monthly-location",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-location",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingLocation"
+  },
+  {
+    "id" : "ach-monthly-medication",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medication",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingMedication"
+  },
+  {
+    "id" : "ach-monthly-medicationadministration",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationadministration",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingMedicationAdministration"
+  },
+  {
+    "id" : "ach-monthly-medicationrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-medicationrequest",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingMedicationRequest"
+  },
+  {
+    "id" : "ach-monthly-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingObservation"
+  },
+  {
+    "id" : "ach-monthly-observation-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-lab",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingLabObservation"
+  },
+  {
+    "id" : "ach-monthly-observation-vitals",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-observation-vitals",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingVitalsObservation"
+  },
+  {
+    "id" : "ach-monthly-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-procedure",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingProcedure"
+  },
+  {
+    "id" : "ach-monthly-servicerequest",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-servicerequest",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingServiceRequest"
+  },
+  {
+    "id" : "ach-monthly-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-specimen",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyReportingSpecimen"
+  },
+  {
+    "id" : "cross-measure-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient",
+    "version" : "1.0.0",
+    "name" : "CrossMeasurePatient"
+  },
+  {
+    "id" : "ip-measurereport-list",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ip-measurereport-list",
+    "version" : "1.0.0",
+    "name" : "IndividualMeasureReportList"
+  },
+  {
+    "id" : "link-original-element-value-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-element-value-extension",
+    "version" : "1.0.0",
+    "name" : "OriginalElementValue"
+  },
+  {
+    "id" : "link-original-mapped-concept-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-mapped-concept-extension",
+    "version" : "1.0.0",
+    "name" : "OriginalMappedConcept"
+  },
+  {
+    "id" : "link-original-resource-id-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-original-resource-id-extension",
+    "version" : "1.0.0",
+    "name" : "OriginalResourceId"
+  },
+  {
+    "id" : "link-patient-list-applicable-period-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-patient-list-applicable-period-extension",
+    "version" : "1.0.0",
+    "name" : "PatientListApplicablePeriod"
+  },
+  {
+    "id" : "link-received-date-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/link-received-date-extension",
+    "version" : "1.0.0",
+    "name" : "ReceivedDate"
+  },
+  {
+    "id" : "nhsn-measurereport-bundle",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-measurereport-bundle",
+    "version" : "1.0.0",
+    "name" : "NHSNMeasureReportBundleProfile"
+  },
+  {
+    "id" : "nhsn-subject-bundle",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-subject-bundle",
+    "version" : "1.0.0",
+    "name" : "NHSNSubjectBundle"
+  },
+  {
+    "id" : "nhsn-submission-header-bundle",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submission-header-bundle",
+    "version" : "1.0.0",
+    "name" : "NHSNSubmissionHeaderBundle"
+  },
+  {
+    "id" : "nhsn-submitting-device",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submitting-device",
+    "version" : "1.0.0",
+    "name" : "NHSNSubmittingDevice"
+  },
+  {
+    "id" : "nhsn-submitting-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/nhsn-submitting-organization",
+    "version" : "1.0.0",
+    "name" : "SubmittingOrganization"
+  },
+  {
+    "id" : "poi-list",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/poi-list",
+    "version" : "1.0.0",
+    "name" : "PatientsOfInterestList"
+  },
+  {
+    "id" : "subjectlist-measurereport",
+    "type" : "StructureDefinition",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/subjectlist-measurereport",
+    "version" : "1.0.0",
+    "name" : "SubjectListMeasureReportProfile"
+  },
+  {
+    "id" : "ach-daily-diagnostic-report-status",
+    "type" : "ValueSet",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-diagnostic-report-status",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventDiagnosticReportStatus"
+  },
+  {
+    "id" : "ach-daily-encounter-class",
+    "type" : "ValueSet",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-encounter-class",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEventEncounterClass"
+  },
+  {
+    "id" : "ach-daily-encounter-status",
+    "type" : "ValueSet",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-daily-encounter-status",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalDailyEncounterStatus"
+  },
+  {
+    "id" : "ach-monthly-encounter-class",
+    "type" : "ValueSet",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-monthly-encounter-class",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyEncounterClass"
+  },
+  {
+    "id" : "ach-monthly-encounter-status",
+    "type" : "ValueSet",
+    "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/ValueSet/ach-monthly-encounter-status",
+    "version" : "1.0.0",
+    "name" : "AcuteCareHospitalMonthlyEncounterStatus"
+  }
+]

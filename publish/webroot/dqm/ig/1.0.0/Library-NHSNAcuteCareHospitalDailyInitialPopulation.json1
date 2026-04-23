@@ -1,0 +1,1050 @@
+{
+  "resourceType" : "Library",
+  "id" : "NHSNAcuteCareHospitalDailyInitialPopulation",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n        \n        \n\n        \n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">NHSNAcuteCareHospitalDailyInitialPopulation</td>\n        </tr>\n        \n\n        \n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">1.0.0</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Url: </b></th>\n            <td style=\"padding-left: 4px;\"><a href=\"Library-NHSNAcuteCareHospitalDailyInitialPopulation.html\">NHSNAcuteCareHospitalDailyInitialPopulation</a></td>\n        </tr>\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Status: </b></th>\n            <td style=\"padding-left: 4px;\">draft</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Type: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                    \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>system: </b> <span><a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-library-type.html\">http://terminology.hl7.org/CodeSystem/library-type</a></span>\n                        </p>\n                        \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>code: </b> <span>logic-library</span>\n                        </p>\n                        \n                        \n                    \n                \n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date: </b></th>\n            <td style=\"padding-left: 4px;\">2025-09-15 11:51:36-0400</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher: </b></th>\n            <td style=\"padding-left: 4px;\">CDC National Healthcare Safety Network (NHSN)</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Jurisdiction: </b></th>\n            <td style=\"padding-left: 4px;\">US</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Related Artifacts: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                \n                \n                <p><b>Dependencies</b></p>\n                <ul>\n                  \n                    <li><a href=\"http://fhir.org/guides/cqf/common/4.0.1/4.0.1/Library-FHIR-ModelInfo.html\">http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1</a></li>\n                  \n                    <li><code>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/FHIRHelpers|4.0.2</code></li>\n                  \n                    <li><code>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNHelpers|0.0.002</code></li>\n                  \n                    <li><code>http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/SharedResourceCreation|0.1.010</code></li>\n                  \n                    <li><a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html\">ActCodeversion: null9.0.0)</a></li>\n                  \n                    <li><a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html\">Logical Observation Identifiers, Names and Codes (LOINC)</a></li>\n                  \n                    <li><a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-observation-category.html\">Observation Category Codesversion: null1.0.1)</a></li>\n                  \n                    <li><a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-rxNorm.html\">RxNorm</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.307/expansion\">Encounter Inpatient</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.265/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.143/expansion\">Observation Services</a></li>\n                  \n                    <li><a href=\"http://terminology.hl7.org/6.5.0/ValueSet-encounter-discharge-disposition.html\">Discharge dispositionversion: null1.0.1)</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.1142/expansion\">COVID_19 (Tests for SARS_CoV_2 Nucleic Acid)</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.1158/expansion\">COVID_19\u00a0(Tests for\u00a0SARS_CoV_2\u00a0Antigen)</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.1143/expansion\">COVID_19 (Organism or Substance in Lab Results)</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.336/expansion\">Influenza (Tests for influenza A or B virus Nucleic Acid)</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.337/expansion\">Influenza (Tests for influenza A or B virus Antigen)</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.340/expansion\">Influenza (influenza A or B virus in Lab Results)</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.1311/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1311</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.1312/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1312</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.1308/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1308</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1114.10/expansion\">LIVD SARS CoV2 Test Result Codes</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2046/expansion\">Baricitinib</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2054/expansion\">Anakinra</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2084/expansion\">Sarilumab</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2087/expansion\">COVID19 RxNorm Value Set for Tocilizumab</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2097/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2097</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2098/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2098</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2099/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2099</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2100/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2100</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2101/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2101</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2102/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2102</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2103/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2103</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2119/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2119</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2081/expansion\">Remdesivir</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2104/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2104</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2105/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2105</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1190.85/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.85</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1190.86/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.86</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1190.87/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.87</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3616.200.110.102.2078/expansion\">Oseltamivir</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.10.20.22.5.300/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.22.5.300</a></li>\n                  \n                    <li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.274/expansion\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274</a></li>\n                  \n                </ul>\n                \n                \n                \n                \n                \n            </td>\n        </tr>\n        \n\n        \n        <tr>\n          <th scope=\"row\"><b>Parameters: </b></th>\n          <td style=\"padding-left: 4px;\">\n            <table class=\"grid-dict\">\n              <tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Min</b></th><th><b>Max</b></th><th><b>In/Out</b></th></tr>\n              \n                <tr><th>Measurement Period</th><th>Period</th><th>0</th><th>1</th><th>In</th></tr>\n              \n                <tr><th>Patient</th><th>Patient</th><th>0</th><th>1</th><th>Out</th></tr>\n              \n                <tr><th>EncounterInpatient</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>EncounterObservation</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>Encounters with Patient Hospital Locations</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>Initial Population</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>COVID And Influenza Observation</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>RSV Observation</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>ACH Daily Observation</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>COVID And Influenza PRE Admission Observation</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>RSV PRE Admission Observation</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>COVID And Influenza DiagnosticReport</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>RSV DiagnosticReport</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>ACH Daily DiagnosticReport</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>COVID And Influenza DiagnosticReport PRE Admission</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>RSV DiagnosticReport PRE Admission</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>DiagnosticReports</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>Observations</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>COVID and Influenza DiagnosticReport Observations</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>COVID and Influenza DiagnosticReport Result from Lab</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>RSV Observations</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>RSV DiagnosticReport Observations</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>RSV DiagnosticReport Result from Lab</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>ACH Daily DiagnosticReport Result from Lab</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>COVID and Influenza DiagnosticReport Result from Lab PRE Admission</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>RSV DiagnosticReport Result from Lab PRE Admission</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE IP Encounters</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>Encounters</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE Encounter</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE Minimal Patient</th><th>Patient</th><th>0</th><th>1</th><th>Out</th></tr>\n              \n                <tr><th>SDE Location</th><th>Location</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE Encounter Discharge Dispositions</th><th>Encounter</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE ACH Daily Observation</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE RSV PRE Admission Observation</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE COVID And Influenza PRE Admission Observation</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE ACH Daily Specimen</th><th>Specimen</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE RSV Specimen</th><th>Specimen</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE COVID And Influenza Specimen</th><th>Specimen</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE ACH Daily DiagnosticReport</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE COVID And Influenza DiagnosticReport</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE RSV DiagnosticReport</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE ACH Daily DiagnosticReport Result from Lab</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE COVID and Influenza DiagnosticReport Result from Lab</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE RSV DiagnosticReport Result from Lab</th><th>DiagnosticReport</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE ACH Daily ServiceRequest</th><th>ServiceRequest</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE Isolation Precautions Implemented</th><th>Procedure</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE Covid or Influenza Medication Administered</th><th>MedicationAdministration</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE Covid or Influenza Medication Ordered</th><th>MedicationRequest</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE Medication</th><th>Medication</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE All Observations</th><th>Observation</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE All ServiceRequests</th><th>ServiceRequest</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n                <tr><th>SDE All Procedures</th><th>Procedure</th><th>0</th><th>*</th><th>Out</th></tr>\n              \n            </table>\n          </td>\n        </tr>\n        \n\n        \n        <tr>\n          <th scope=\"row\"><b>Data Requirements:</b></th>\n          <td style=\"padding-left: 4px;\">\n            <table class=\"grid-dict\">\n              <tr><th><b>Type</b></th><th><b>Profile</b></th><th><b>MS</b></th><th><b>Code Filter</b></th></tr>\n              \n                <tr>\n                  <th>Patient</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Patient</th>\n                  <th/>\n                  <th>\n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Encounter</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>\n                  <th>;;;;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>type</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Encounter</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>\n                  <th>;;;;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>class</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Encounter</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>\n                  <th>;;;;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>type</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Encounter</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>\n                  <th>;;;;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>class</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      \n                          \n                          <p style=\"margin-bottom: 5px;\">\n                              <b>system: </b> <span><a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html\">http://terminology.hl7.org/CodeSystem/v3-ActCode</a></span>\n                          </p>\n                          \n                          \n                          <p style=\"margin-bottom: 5px;\">\n                              <b>code: </b> <span>OBSENC</span>\n                          </p>\n                          \n                          \n                          <p style=\"margin-bottom: 5px;\">\n                              <b>display: </b> <span>observation encounter</span>\n                          </p>\n                          \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Encounter</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Encounter</th>\n                  <th>;;;;;;</th>\n                  <th>\n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Observation</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Observation</th>\n                  <th>;;;;;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.336</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Observation</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Observation</th>\n                  <th>;;;;;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.337</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Observation</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Observation</th>\n                  <th>;;;;;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1142</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Observation</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Observation</th>\n                  <th>;;;;;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1158</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Observation</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Observation</th>\n                  <th>;;;;;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1312</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Observation</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Observation</th>\n                  <th>;;;;;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1311</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Observation</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Observation</th>\n                  <th>;;;;;;;</th>\n                  <th>\n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Specimen</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Specimen</th>\n                  <th>;</th>\n                  <th>\n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>DiagnosticReport</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/DiagnosticReport</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1142</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>DiagnosticReport</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/DiagnosticReport</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1158</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>DiagnosticReport</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/DiagnosticReport</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.336</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>DiagnosticReport</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/DiagnosticReport</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.337</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>DiagnosticReport</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/DiagnosticReport</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1312</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>DiagnosticReport</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/DiagnosticReport</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1311</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>DiagnosticReport</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/DiagnosticReport</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Location</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Location</th>\n                  <th/>\n                  <th>\n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>ServiceRequest</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/ServiceRequest</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1142</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>ServiceRequest</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/ServiceRequest</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1158</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>ServiceRequest</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/ServiceRequest</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.336</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>ServiceRequest</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/ServiceRequest</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.337</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>ServiceRequest</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/ServiceRequest</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1312</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>ServiceRequest</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/ServiceRequest</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1311</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>ServiceRequest</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/ServiceRequest</th>\n                  <th>;;</th>\n                  <th>\n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Procedure</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Procedure</th>\n                  <th>;;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>code</span>\n                      </span>\n                      \n                      <br/>\n                      \n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>value set: </b><span>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.22.5.300</span>\n                      </span>\n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Procedure</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Procedure</th>\n                  <th/>\n                  <th>\n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>Medication</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/Medication</th>\n                  <th>;</th>\n                  <th>\n                    \n                      <b>code filter: </b>\n                      \n                      <br/>\n                      \n                      \n                      <span style=\"padding-left: 4px;\">\n                          <b>path: </b><span>id</span>\n                      </span>\n                      \n                      \n                      \n                      \n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>MedicationAdministration</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/MedicationAdministration</th>\n                  <th>;;;</th>\n                  <th>\n                    \n                  </th>\n                </tr>\n              \n                <tr>\n                  <th>MedicationRequest</th>\n                  <th>http://hl7.org/fhir/StructureDefinition/MedicationRequest</th>\n                  <th>;;</th>\n                  <th>\n                    \n                  </th>\n                </tr>\n              \n            </table>\n          </td>\n        </tr>\n        \n\n        \n        \n        <tr>\n          <td colspan=\"2\">\n            <table>\n              <tr><th><a id=\"cql-content\"><b>Content: </b></a> text/cql</th></tr>\n              <tr><td><pre><code class=\"language-cql\">library NHSNAcuteCareHospitalDailyInitialPopulation version '1.0.0-dev'\r\n\r\nusing FHIR version '4.0.1'\r\n\r\ninclude FHIRHelpers version '4.0.2' called FHIRHelpers\r\ninclude NHSNHelpers version '0.0.002' called NHSNHelpers\r\ninclude SharedResourceCreation version '0.1.010' called SharedResource\r\n\r\ncodesystem &quot;ActCode&quot;: 'http://terminology.hl7.org/CodeSystem/v3-ActCode' \r\ncodesystem &quot;LOINC&quot;: 'http://loinc.org' \r\ncodesystem &quot;Observation Category&quot;: 'http://terminology.hl7.org/CodeSystem/observation-category' \r\ncodesystem &quot;RXNORM&quot;: 'http://www.nlm.nih.gov/research/umls/rxnorm'\r\n\r\nvalueset &quot;Encounter Inpatient&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307' \r\nvalueset &quot;Inpatient, Emergency, and Observation Locations&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265' \r\nvalueset &quot;Observation Services&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143' \r\nvalueset &quot;Discharge Disposition&quot;: 'http://terminology.hl7.org/ValueSet/encounter-discharge-disposition'\r\n\r\n//COVID-19 lab tests\r\nvalueset &quot;COVID_19 (Tests for SARS_CoV_2 Nucleic Acid)&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1142'\r\nvalueset &quot;COVID_19 (Tests for SARS_CoV_2 Antigen)&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1158'\r\n\r\n//COVID-19 test results (unused)\r\nvalueset &quot;COVID_19 (Organism or Substance in Lab Results)&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1143'\r\n\r\n//Influenza lab tests\r\nvalueset &quot;Influenza (Tests for influenza A or B virus Nucleic Acid)&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.336'\r\nvalueset &quot;Influenza (Tests for influenza A or B virus Antigen)&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.337'\r\n\r\n//Influenza test Results (unused)\r\nvalueset &quot;Influenza (influenza A or B virus in Lab Results)&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.340'\r\n\r\n//RSV lab tests\r\nvalueset &quot;RSV (Tests for RSV Antigen)&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1311'\r\nvalueset &quot;RSV (Tests for RSV Nucleic Acid)&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1312'\r\n\r\n//RSV test results (unused)\r\nvalueset &quot;RSV (Organism or Substance in Lab Results)&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1308'\r\n\r\n//Test results shared among COVID-19, Influenza and RSV (unused)\r\nvalueset &quot;LIVD SARS CoV2 Test Result Codes&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1114.10'\r\n\r\n//COVID-19 medications\r\nvalueset &quot;Baricitinib&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2046'\r\nvalueset &quot;Anakinra&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2054'\r\nvalueset &quot;Sarilumab&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2084'\r\nvalueset &quot;COVID19 RxNorm Value Set for Tocilizumab&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2087'\r\nvalueset &quot;Casirivimab&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2097'\r\nvalueset &quot;Imdevimab&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2098'\r\nvalueset &quot;Bamlanivimab&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2099'\r\nvalueset &quot;Etesevimab&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2100'\r\nvalueset &quot;Sotrovimab&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2101'\r\nvalueset &quot;Tofacitinib&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2102'\r\nvalueset &quot;Casirivimab / Imdevimab&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2103'\r\nvalueset &quot;Molnupiravir&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2119'\r\nvalueset &quot;Remdesivir&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2081'\r\nvalueset &quot;Nirmatrelvir / Ritonavir&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2104'\r\nvalueset &quot;Bebtelovimab&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2105'\r\n\r\n//Influenza medications\r\nvalueset &quot;Baloxavir&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.85'\r\nvalueset &quot;Peramivir&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.86'\r\nvalueset &quot;Zanamivir&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.87'\r\nvalueset &quot;Oseltamivir&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2078'\r\n\r\n//Isolation Precautions\r\nvalueset &quot;Transmission Based Precaution Types&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.22.5.300'\r\n\r\n//Encounter Class Codes\r\nvalueset &quot;NHSN Inpatient Encounter Class Codes&quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274'\r\n\r\n//Observation Category Codes\r\ncode &quot;laboratory&quot;: 'laboratory' from &quot;Observation Category&quot; display 'Laboratory'\r\n\r\n//Observation Encounter Class Code\r\ncode &quot;observation encounter&quot;: 'OBSENC' from &quot;ActCode&quot; display 'observation encounter'\r\n\r\nparameter &quot;Measurement Period&quot; \r\n  default Interval[@2022-01-01T00:00:00.0, @2022-01-02T00:00:00.0)\r\n\r\ncontext Patient\r\n\r\n//----------------------------------\r\n// Initial Population\r\n//----------------------------------\r\ndefine &quot;Initial Population&quot;:\r\n  EncounterInpatient\r\n  union EncounterObservation\r\n  union &quot;Encounters with Patient Hospital Locations&quot;\r\n\r\ndefine &quot;EncounterInpatient&quot;:\r\n  ([Encounter: &quot;Encounter Inpatient&quot;]\r\n    union [Encounter: class in &quot;NHSN Inpatient Encounter Class Codes&quot;]) Encounters\r\n  where Encounters.status in {'in-progress', 'finished', 'triaged', 'onleave', 'entered-in-error'}\r\n    and Encounters.period overlaps &quot;Measurement Period&quot;\r\n\r\ndefine &quot;EncounterObservation&quot;:\r\n  ([Encounter: &quot;Observation Services&quot;]\r\n    union [Encounter: class in {&quot;observation encounter&quot;}]) Encounters\r\n  where Encounters.status in {'in-progress', 'finished', 'triaged', 'onleave', 'entered-in-error'}\r\n    and Encounters.period overlaps &quot;Measurement Period&quot;\r\n\r\ndefine &quot;Encounters with Patient Hospital Locations&quot;:\r\n  [Encounter] Encounters\r\n  where exists(\r\n    Encounters.location EncounterLocation\r\n    let types: NHSNHelpers.GetLocation(EncounterLocation.location).type\r\n    where exists(\r\n      types type\r\n      where type in &quot;Inpatient, Emergency, and Observation Locations&quot;\r\n    )\r\n    and EncounterLocation.period overlaps Encounters.period\r\n    and Encounters.status in {'in-progress', 'finished', 'triaged', 'onleave', 'entered-in-error' }\r\n    and Encounters.period overlaps &quot;Measurement Period&quot;\r\n  )\r\n\r\n\r\n//-----------------------------------------------\r\n// Logic related to Laboratory\r\n//-----------------------------------------------\r\n//Lab Observations\r\ndefine &quot;COVID And Influenza Observation&quot;:\r\n  ([Observation: &quot;Influenza (Tests for influenza A or B virus Nucleic Acid)&quot;] \r\n  union [Observation: &quot;Influenza (Tests for influenza A or B virus Antigen)&quot;]\r\n  union [Observation: &quot;COVID_19 (Tests for SARS_CoV_2 Nucleic Acid)&quot;]\r\n  union [Observation: &quot;COVID_19 (Tests for SARS_CoV_2 Antigen)&quot;]\r\n  ) Observations\r\n    where exists(Observations.category Category where Category ~ &quot;laboratory&quot;)\r\n      and Observations.status in {'final','registered','preliminary','partial'}\r\n      and exists(&quot;Initial Population&quot;)\r\n\r\ndefine &quot;RSV Observation&quot;:\r\n  ([Observation: &quot;RSV (Tests for RSV Nucleic Acid)&quot;]\r\n  union [Observation: &quot;RSV (Tests for RSV Antigen)&quot;]   \r\n  ) Observations\r\n    where exists(Observations.category Category where Category ~ &quot;laboratory&quot;)\r\n      and Observations.status in {'final','registered','preliminary','partial'}\r\n      and exists(&quot;Initial Population&quot;)\r\n\r\ndefine &quot;ACH Daily Observation&quot;:\r\n  &quot;RSV Observation&quot;\r\n  union &quot;COVID And Influenza Observation&quot;\r\n\r\n//further constrain COVID-19 and Influenza Observations for 14 day lookback\r\ndefine &quot;COVID And Influenza PRE Admission Observation&quot;:\r\n  &quot;COVID And Influenza Observation&quot; O \r\n   where exists( EncounterInpatient E \r\n    where (\r\n      NHSNHelpers.&quot;Normalize Interval&quot;(O.effective) 14 days or less on or before start of E.period\r\n      or NHSNHelpers.&quot;Normalize Interval&quot;(GetSpecimen(O.specimen).collection.collected) 14 days or less on or before start of E.period\r\n      )\r\n      and start of E.period during &quot;Measurement Period&quot;\r\n    )  \r\n\r\n//further constrain RSV observation for 8 day lookback\r\ndefine &quot;RSV PRE Admission Observation&quot;:\r\n  &quot;RSV Observation&quot; O \r\n  where exists(EncounterInpatient E \r\n    where (\r\n      NHSNHelpers.&quot;Normalize Interval&quot;(O.effective) 8 days or less on or before start of E.period\r\n      or NHSNHelpers.&quot;Normalize Interval&quot;(GetSpecimen(O.specimen).collection.collected) 8 days or less on or before start of E.period\r\n      )\r\n      and start of E.period during &quot;Measurement Period&quot;\r\n    )\r\n\r\n//Lab DiagnosticReport\r\ndefine &quot;COVID And Influenza DiagnosticReport&quot;:\r\n  ([DiagnosticReport: &quot;COVID_19 (Tests for SARS_CoV_2 Nucleic Acid)&quot;]\r\n    union [DiagnosticReport: &quot;COVID_19 (Tests for SARS_CoV_2 Antigen)&quot;]\r\n    union [DiagnosticReport: &quot;Influenza (Tests for influenza A or B virus Nucleic Acid)&quot;]\r\n    union [DiagnosticReport: &quot;Influenza (Tests for influenza A or B virus Antigen)&quot;]\r\n  ) Reports\r\n    where exists(&quot;Initial Population&quot;)\r\n      and Reports.status in {'final','registered','preliminary','partial'}\r\n\r\ndefine &quot;RSV DiagnosticReport&quot;:\r\n  ([DiagnosticReport: &quot;RSV (Tests for RSV Nucleic Acid)&quot;]\r\n    union [DiagnosticReport: &quot;RSV (Tests for RSV Antigen)&quot;]\r\n  ) Reports\r\n    where exists(&quot;Initial Population&quot;)\r\n      and Reports.status in {'final','registered','preliminary','partial'}\r\n\r\ndefine &quot;ACH Daily DiagnosticReport&quot;:\r\n  &quot;COVID And Influenza DiagnosticReport&quot;\r\n    union &quot;RSV DiagnosticReport&quot;\r\n\r\n//further constrain COVID-19 and Influenza with 14 day lookback \r\ndefine &quot;COVID And Influenza DiagnosticReport PRE Admission&quot;:\r\n  &quot;COVID And Influenza DiagnosticReport&quot; R \r\n  where exists(EncounterInpatient E \r\n    where (\r\n      NHSNHelpers.&quot;Normalize Interval&quot;(R.effective) 14 days or less on or before start of E.period)\r\n      and start of E.period during &quot;Measurement Period&quot;\r\n    )\r\n\r\n//further constrain RSV for 8 day lookback\r\ndefine &quot;RSV DiagnosticReport PRE Admission&quot;:\r\n  &quot;RSV DiagnosticReport&quot; R \r\n  where exists(EncounterInpatient E \r\n    where (\r\n      NHSNHelpers.&quot;Normalize Interval&quot;(R.effective) 8 days or less on or before start of E.period)\r\n      and start of E.period during &quot;Measurement Period&quot;\r\n    )\r\n\r\ndefine &quot;COVID and Influenza DiagnosticReport Result from Lab&quot;:\r\n  &quot;DiagnosticReports&quot; Reports\r\n    where exists(\r\n      &quot;COVID and Influenza DiagnosticReport Observations&quot; Observations\r\n      where Reports.result.references(Observations)\r\n    )\r\n    and Reports.status in {'final','registered','preliminary','partial'}\r\n    and exists(&quot;Initial Population&quot;)\r\n\r\ndefine &quot;COVID and Influenza DiagnosticReport Observations&quot;:\r\n  &quot;Observations&quot; Observations\r\n  where Observations.code in &quot;COVID_19 (Tests for SARS_CoV_2 Nucleic Acid)&quot;\r\n    or Observations.code in &quot;COVID_19 (Tests for SARS_CoV_2 Antigen)&quot;\r\n    or Observations.code in &quot;Influenza (Tests for influenza A or B virus Nucleic Acid)&quot;\r\n    or Observations.code in &quot;Influenza (Tests for influenza A or B virus Antigen)&quot;\r\n\r\n \r\ndefine &quot;RSV DiagnosticReport Result from Lab&quot;:\r\n  [DiagnosticReport] Reports\r\n    where exists(&quot;RSV DiagnosticReport Observations&quot;)\r\n      and Reports.status in {'final','registered','preliminary','partial'}\r\n      and exists(&quot;Initial Population&quot;)\r\n\r\ndefine &quot;RSV Observations&quot;:\r\n  &quot;Observations&quot; Observations\r\n  where Observations.code in &quot;RSV (Tests for RSV Nucleic Acid)&quot;\r\n    or Observations.code in &quot;RSV (Tests for RSV Antigen)&quot;\r\n    \r\ndefine &quot;RSV DiagnosticReport Observations&quot;:\r\n  &quot;DiagnosticReports&quot; Reports\r\n  where exists(\r\n    &quot;RSV Observations&quot; Observations\r\n    where Reports.result.references(Observations)\r\n  )\r\n\r\ndefine &quot;ACH Daily DiagnosticReport Result from Lab&quot;:\r\n  &quot;COVID and Influenza DiagnosticReport Result from Lab&quot;\r\n    union &quot;RSV DiagnosticReport Result from Lab&quot;\r\n\r\n//further constrain COVID-19 and Influenza with 14 day lookback\r\ndefine &quot;COVID and Influenza DiagnosticReport Result from Lab PRE Admission&quot;:\r\n  &quot;COVID and Influenza DiagnosticReport Result from Lab&quot; R \r\n  where exists(EncounterInpatient E \r\n    where (\r\n      NHSNHelpers.&quot;Normalize Interval&quot;(R.effective) 14 days or less on or before start of E.period)\r\n      and start of E.period during &quot;Measurement Period&quot;\r\n    )\r\n\r\n//further constrain RSV with 8 day lookback\r\ndefine &quot;RSV DiagnosticReport Result from Lab PRE Admission&quot;:\r\n  &quot;RSV DiagnosticReport Result from Lab&quot; R \r\n  where exists(EncounterInpatient E \r\n    where (\r\n      NHSNHelpers.&quot;Normalize Interval&quot;(R.effective) 8 days or less on or before start of E.period)\r\n      and start of E.period during &quot;Measurement Period&quot;\r\n    )\r\n    \r\n//----------------------------------\r\n// SDE\r\n//----------------------------------\r\ndefine &quot;SDE IP Encounters&quot;:\r\n  &quot;Initial Population&quot; IP\r\n  return SharedResource.EncounterResource(IP, \r\n  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter'}})\r\n\r\ndefine &quot;SDE Encounter&quot;: \r\n  &quot;Encounters&quot; Encounters\r\n  where not CheckIP(Encounters)\r\n  and exists(\r\n    &quot;Initial Population&quot; IP\r\n    where Encounters.period overlaps IP.period)\r\n  return SharedResource.EncounterResource(Encounters,\r\n  {FHIR.canonical{value: 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'}})\r\n\r\ndefine &quot;SDE Minimal Patient&quot;:\r\n  Patient p\r\n  where exists(&quot;Initial Population&quot;)\r\n  return SharedResource.PatientResource(p, \r\n  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/cross-measure-patient'}})\r\n\r\ndefine &quot;SDE Location&quot;:\r\n  [Location] Locations\r\n  where exists(&quot;Initial Population&quot;)\r\n  return SharedResource.LocationResource(Locations,\r\n  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-location'}})\r\n   \r\ndefine &quot;SDE Encounter Discharge Dispositions&quot;:\r\n\t&quot;Initial Population&quot; DischargeDispositions \r\n  where DischargeDispositions.hospitalization.dischargeDisposition in &quot;Discharge Disposition&quot;\r\n  return SharedResource.EncounterResource(DischargeDispositions,\r\n  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-encounter'}})\r\n\r\n//return the Observation during the Measurement Period\r\ndefine &quot;SDE ACH Daily Observation&quot;:\r\n  &quot;ACH Daily Observation&quot; Observations\r\n    return SharedResource.ObservationLabResource(Observations,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab'}})\r\n\r\n//return the RSV Observation Pre Admission    \r\ndefine &quot;SDE RSV PRE Admission Observation&quot;:\r\n  &quot;RSV PRE Admission Observation&quot; Observations\r\n    return SharedResource.ObservationLabResource(Observations, \r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab'}})\r\n\r\n//return the COVID-19 and Influenza Observation Pre Admission\r\ndefine &quot;SDE COVID And Influenza PRE Admission Observation&quot;:\r\n  &quot;COVID And Influenza PRE Admission Observation&quot; Observations\r\n    return SharedResource.ObservationLabResource(Observations,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation-lab'}})\r\n\r\n//return the Specimen related to the Observation during the Measurement Period\r\ndefine &quot;SDE ACH Daily Specimen&quot;:\r\n  &quot;ACH Daily Observation&quot; ObservationWithSpecimen\r\n    let Specimen: GetSpecimen(ObservationWithSpecimen.specimen)\r\n    return SharedResource.SpecimenResource(Specimen,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen'}})\r\n\r\n//return the Specimen related to the RSV Observation Pre Admission\r\ndefine &quot;SDE RSV Specimen&quot;:\r\n  &quot;RSV PRE Admission Observation&quot; ObservationWithSpecimen\r\n    let Specimen: GetSpecimen(ObservationWithSpecimen.specimen)\r\n    return SharedResource.SpecimenResource(Specimen,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen'}})\r\n\r\n//return the Specimen related to the COVID-19 And Influenza Observation Pre Admission\r\ndefine &quot;SDE COVID And Influenza Specimen&quot;:\r\n  &quot;COVID And Influenza PRE Admission Observation&quot; ObservationWithSpecimen\r\n    let Specimen: GetSpecimen(ObservationWithSpecimen.specimen)\r\n    return SharedResource.SpecimenResource(Specimen,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-specimen'}})\r\n\r\n//return the DiagnosticReport during the Measurement Period\r\ndefine &quot;SDE ACH Daily DiagnosticReport&quot;:\r\n  &quot;ACH Daily DiagnosticReport&quot; Reports\r\n    return SharedResource.DiagnosticReportLabResource(Reports,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-diagnosticreport-lab'}})\r\n\r\n//return the COVID-19 And Influenza DiagnosticReport pre admission\r\ndefine &quot;SDE COVID And Influenza DiagnosticReport&quot;:\r\n  &quot;COVID And Influenza DiagnosticReport&quot; Reports\r\n    return SharedResource.DiagnosticReportLabResource(Reports,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-diagnosticreport-lab'}})\r\n\r\n//return the RSV DiagnosticReport pre admission\r\ndefine &quot;SDE RSV DiagnosticReport&quot;:\r\n  &quot;RSV DiagnosticReport&quot; Reports\r\n    return SharedResource.DiagnosticReportLabResource(Reports,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-diagnosticreport-lab'}})\r\n\r\n//return the DiagnosticReport based on the result during the Measurement Period    \r\ndefine &quot;SDE ACH Daily DiagnosticReport Result from Lab&quot;:\r\n  &quot;ACH Daily DiagnosticReport Result from Lab&quot; Reports\r\n    return SharedResource.DiagnosticReportLabResource(Reports,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-diagnosticreport-lab'}})\r\n\r\n//return the COVID-19 and Influenza DiagnosticReport based on the result pre admission\r\ndefine &quot;SDE COVID and Influenza DiagnosticReport Result from Lab&quot;:\r\n  &quot;COVID and Influenza DiagnosticReport Result from Lab&quot; Reports\r\n    return SharedResource.DiagnosticReportLabResource(Reports,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-diagnosticreport-lab'}})\r\n\r\n//return the RSV DiagnosticReport based on the result pre admission\r\ndefine &quot;SDE RSV DiagnosticReport Result from Lab&quot;:\r\n  &quot;RSV DiagnosticReport Result from Lab&quot; Reports\r\n    return SharedResource.DiagnosticReportLabResource(Reports,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-diagnosticreport-lab'}})\r\n  \r\ndefine &quot;SDE ACH Daily ServiceRequest&quot;:\r\n  ([ServiceRequest: &quot;COVID_19 (Tests for SARS_CoV_2 Nucleic Acid)&quot;] \r\n  union  [ServiceRequest: &quot;COVID_19 (Tests for SARS_CoV_2 Antigen)&quot;] \r\n  union  [ServiceRequest: &quot;Influenza (Tests for influenza A or B virus Nucleic Acid)&quot;]\r\n  union  [ServiceRequest: &quot;Influenza (Tests for influenza A or B virus Antigen)&quot;]\r\n  union  [ServiceRequest: &quot;RSV (Tests for RSV Nucleic Acid)&quot;]\r\n  union  [ServiceRequest: &quot;RSV (Tests for RSV Antigen)&quot;]\r\n  ) ServiceRequests\r\n    where ServiceRequests.intent ~ 'order'\r\n      and ServiceRequests.status ~ 'completed'\r\n      and exists(&quot;Initial Population&quot;)\r\n  return SharedResource.ServiceRequestResource(ServiceRequests,\r\n  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest'}})\r\n\r\ndefine &quot;SDE Isolation Precautions Implemented&quot;:\r\n  [Procedure: &quot;Transmission Based Precaution Types&quot;] IsolationPrecautions\r\n    where NHSNHelpers.&quot;Normalize Interval&quot;(IsolationPrecautions.performed) during &quot;Measurement Period&quot;\r\n    and exists(&quot;Initial Population&quot;)\r\n  return SharedResource.ProcedureResource(IsolationPrecautions,\r\n  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-procedure'}})\r\n\r\ndefine &quot;SDE Covid or Influenza Medication Administered&quot;:\r\n  [MedicationAdministration] RPSMedAdmin\r\n    let Meds: GetMedicationCode(RPSMedAdmin.medication)\r\n   where (Meds in &quot;Anakinra&quot;\r\n            or Meds in &quot;Bamlanivimab&quot;\r\n            or Meds in &quot;Baloxavir&quot;\r\n            or Meds in &quot;Baricitinib&quot;\r\n            or Meds in &quot;Bebtelovimab&quot;\r\n            or Meds in &quot;Casirivimab&quot;\r\n            or Meds in &quot;Casirivimab / Imdevimab&quot;\r\n            or Meds in &quot;COVID19 RxNorm Value Set for Tocilizumab&quot;\r\n            or Meds in &quot;Etesevimab&quot;\r\n            or Meds in &quot;Imdevimab&quot;\r\n            or Meds in &quot;Molnupiravir&quot;\r\n            or Meds in &quot;Nirmatrelvir / Ritonavir&quot;\r\n            or Meds in &quot;Oseltamivir&quot;\r\n            or Meds in &quot;Peramivir&quot;\r\n            or Meds in &quot;Remdesivir&quot;\r\n            or Meds in &quot;Sarilumab&quot;\r\n            or Meds in &quot;Sotrovimab&quot;    \r\n            or Meds in &quot;Tofacitinib&quot;\r\n            or Meds in &quot;Zanamivir&quot;)\r\n      and RPSMedAdmin.status ~ 'completed'\r\n      and exists(&quot;Initial Population&quot;)\r\n      and NHSNHelpers.&quot;Normalize Interval&quot;(RPSMedAdmin.effective) during &quot;Measurement Period&quot;\r\n    return SharedResource.MedicationAdministrationResource(RPSMedAdmin,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationadministration'}})\r\n\r\ndefine &quot;SDE Covid or Influenza Medication Ordered&quot;:\r\n  [MedicationRequest] RPSMedRequest\r\n    let Meds: GetMedicationCode(RPSMedRequest.medication)\r\n    where (Meds in &quot;Anakinra&quot;\r\n            or Meds in &quot;Baloxavir&quot;\r\n            or Meds in &quot;Bamlanivimab&quot;\r\n            or Meds in &quot;Baricitinib&quot;\r\n            or Meds in &quot;Bebtelovimab&quot;\r\n            or Meds in &quot;Casirivimab&quot;\r\n            or Meds in &quot;Casirivimab / Imdevimab&quot;\r\n            or Meds in &quot;COVID19 RxNorm Value Set for Tocilizumab&quot;\r\n            or Meds in &quot;Etesevimab&quot;\r\n            or Meds in &quot;Imdevimab&quot;\r\n            or Meds in &quot;Molnupiravir&quot;\r\n            or Meds in &quot;Nirmatrelvir / Ritonavir&quot;\r\n            or Meds in &quot;Oseltamivir&quot;\r\n            or Meds in &quot;Peramivir&quot;\r\n            or Meds in &quot;Remdesivir&quot;\r\n            or Meds in &quot;Sarilumab&quot;\r\n            or Meds in &quot;Sotrovimab&quot;    \r\n            or Meds in &quot;Tofacitinib&quot;\r\n            or Meds in &quot;Zanamivir&quot;)\r\n      and exists(&quot;Initial Population&quot;)\r\n      and NHSNHelpers.&quot;Normalize Interval&quot;(RPSMedRequest.authoredOn) during &quot;Measurement Period&quot;\r\n    return SharedResource.MedicationRequestResource(RPSMedRequest,\r\n    {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medicationrequest'}})\r\n\r\ndefine &quot;SDE Medication&quot;:\r\n  (&quot;SDE Covid or Influenza Medication Ordered&quot;\r\n  union &quot;SDE Covid or Influenza Medication Administered&quot;) MedReqOrAdmin\r\n  where MedReqOrAdmin.medication is FHIR.Reference\r\n  return SharedResource.MedicationResource(GetMedicationFrom(MedReqOrAdmin.medication),\r\n  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-medication'}})\r\n\r\n//To catch all isolation precautions\r\ndefine &quot;SDE All Observations&quot;:\r\n  &quot;Observations&quot; O\r\n  where exists(&quot;Initial Population&quot;)\r\n  return SharedResource.ObservationLabResource(O,\r\n  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-observation'}})\r\n\r\n//To catch all isolation precautions\r\ndefine &quot;SDE All ServiceRequests&quot;:\r\n  [ServiceRequest] SR\r\n  where exists(&quot;Initial Population&quot;)\r\n  return SharedResource.ServiceRequestResource(SR,\r\n  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-servicerequest'}})\r\n\r\n//To catch all isolation precautions\r\ndefine &quot;SDE All Procedures&quot;:\r\n  [Procedure] P\r\n  where exists(&quot;Initial Population&quot;)\r\n  return SharedResource.ProcedureResource(P,\r\n  {FHIR.canonical{value: 'http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-daily-procedure'}})\r\n\r\n\r\n//-----------------------------------------------------\r\n//functions\r\n//-----------------------------------------------------\r\ndefine function &quot;CheckIP&quot;(encounter Encounter):\r\n  exists(&quot;Initial Population&quot; IP\r\n  where encounter.id = IP.id)\r\n\r\ndefine function &quot;GetMedication&quot;(reference Reference ):\r\n  singleton from (\r\n    [Medication: id in {NHSNHelpers.GetId(reference.reference)}]\r\n  )\r\n\r\ndefine function &quot;GetMedicationCode&quot;(choice Choice&lt;FHIR.CodeableConcept, FHIR.Reference&gt;):\r\n  case\r\n    when choice is FHIR.CodeableConcept then\r\n      choice as FHIR.CodeableConcept\r\n    when choice is FHIR.Reference then\r\n      GetMedication(choice as FHIR.Reference).code\r\n    else\r\n      null as FHIR.CodeableConcept\r\n  end\r\n\r\ndefine function &quot;GetMedicationFrom&quot;(choice Choice&lt;FHIR.CodeableConcept, FHIR.Reference&gt;):\r\n  case\r\n    when choice is FHIR.Reference then\r\n      GetMedication(choice as FHIR.Reference)\r\n    else\r\n      null\r\n  end\r\n\r\ndefine function &quot;GetSpecimen&quot;(reference FHIR.Reference):\r\n  singleton from (\r\n    [Specimen] Specimens\r\n    where Specimens.id = NHSNHelpers.GetId(reference.reference)\r\n  )\r\n\r\ndefine function &quot;GetEncounter&quot;(reference FHIR.Reference):\r\n  singleton from (\r\n    &quot;Encounters&quot; Encounters\r\n    where Encounters.id = NHSNHelpers.GetId(reference.reference)\r\n  )\r\n\r\ndefine fluent function references(reference FHIR.Reference, resource FHIR.Resource):\r\n  resource.id = Last(Split(reference.reference, '/'))\r\n\r\ndefine fluent function references(references List&lt;FHIR.Reference&gt;, resource FHIR.Resource):\r\n  exists(references R where R.references(resource))\r\n\r\n//Common Retrievals\r\ndefine &quot;Encounters&quot;:\r\n  [Encounter]\r\n\r\ndefine &quot;Observations&quot;:\r\n  [Observation]\r\n\r\ndefine &quot;DiagnosticReports&quot;:\r\n  [DiagnosticReport]\r\n</code></pre></td></tr>\n            </table>\n          </td>\n        </tr>\n        \n        \n        \n    </table>\n</div>\n</div>"
+  },
+  "contained" : [{
+    "resourceType" : "Parameters",
+    "id" : "options",
+    "parameter" : [{
+      "name" : "translatorVersion",
+      "valueString" : "3.25.0"
+    },
+    {
+      "name" : "option",
+      "valueString" : "EnableDateRangeOptimization"
+    },
+    {
+      "name" : "option",
+      "valueString" : "EnableAnnotations"
+    },
+    {
+      "name" : "option",
+      "valueString" : "EnableLocators"
+    },
+    {
+      "name" : "option",
+      "valueString" : "DisableListDemotion"
+    },
+    {
+      "name" : "option",
+      "valueString" : "DisableListPromotion"
+    },
+    {
+      "name" : "analyzeDataRequirements",
+      "valueBoolean" : false
+    },
+    {
+      "name" : "collapseDataRequirements",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "compatibilityLevel",
+      "valueString" : "1.5"
+    },
+    {
+      "name" : "enableCqlOnly",
+      "valueBoolean" : false
+    },
+    {
+      "name" : "errorLevel",
+      "valueString" : "Info"
+    },
+    {
+      "name" : "signatureLevel",
+      "valueString" : "Overloads"
+    },
+    {
+      "name" : "validateUnits",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "verifyOnly",
+      "valueBoolean" : false
+    }]
+  }],
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-cqlOptions",
+    "valueReference" : {
+      "reference" : "#options"
+    }
+  }],
+  "url" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNAcuteCareHospitalDailyInitialPopulation",
+  "version" : "1.0.0",
+  "name" : "NHSNAcuteCareHospitalDailyInitialPopulation",
+  "status" : "draft",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+      "code" : "logic-library"
+    }]
+  },
+  "date" : "2025-09-15T11:51:36-04:00",
+  "publisher" : "CDC National Healthcare Safety Network (NHSN)",
+  "contact" : [{
+    "name" : "CDC National Healthcare Safety Network (NHSN)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.cdc.gov/nhsn"
+    },
+    {
+      "system" : "email",
+      "value" : "nhsn@cdc.gov"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "relatedArtifact" : [{
+    "type" : "depends-on",
+    "display" : "FHIR model information",
+    "resource" : "http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Library FHIRHelpers",
+    "resource" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/FHIRHelpers|4.0.2"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Library NHSNHelpers",
+    "resource" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/NHSNHelpers|0.0.002"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Library SharedResource",
+    "resource" : "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/Library/SharedResourceCreation|0.1.010"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Code system ActCode",
+    "resource" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Code system LOINC",
+    "resource" : "http://loinc.org"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Code system Observation Category",
+    "resource" : "http://terminology.hl7.org/CodeSystem/observation-category|1.0.1"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Code system RXNORM",
+    "resource" : "http://www.nlm.nih.gov/research/umls/rxnorm"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Encounter Inpatient",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Inpatient, Emergency, and Observation Locations",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Observation Services",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Discharge Disposition",
+    "resource" : "http://terminology.hl7.org/ValueSet/encounter-discharge-disposition|1.0.1"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set COVID_19 (Tests for SARS_CoV_2 Nucleic Acid)",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1142"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set COVID_19 (Tests for SARS_CoV_2 Antigen)",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1158"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set COVID_19 (Organism or Substance in Lab Results)",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1143"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Influenza (Tests for influenza A or B virus Nucleic Acid)",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.336"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Influenza (Tests for influenza A or B virus Antigen)",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.337"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Influenza (influenza A or B virus in Lab Results)",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.340"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set RSV (Tests for RSV Antigen)",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1311"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set RSV (Tests for RSV Nucleic Acid)",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1312"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set RSV (Organism or Substance in Lab Results)",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1308"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set LIVD SARS CoV2 Test Result Codes",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1114.10"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Baricitinib",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2046"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Anakinra",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2054"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Sarilumab",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2084"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set COVID19 RxNorm Value Set for Tocilizumab",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2087"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Casirivimab",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2097"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Imdevimab",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2098"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Bamlanivimab",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2099"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Etesevimab",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2100"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Sotrovimab",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2101"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Tofacitinib",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2102"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Casirivimab / Imdevimab",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2103"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Molnupiravir",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2119"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Remdesivir",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2081"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Nirmatrelvir / Ritonavir",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2104"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Bebtelovimab",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2105"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Baloxavir",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.85"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Peramivir",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.86"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Zanamivir",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.87"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Oseltamivir",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3616.200.110.102.2078"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set Transmission Based Precaution Types",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.22.5.300"
+  },
+  {
+    "type" : "depends-on",
+    "display" : "Value set NHSN Inpatient Encounter Class Codes",
+    "resource" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274"
+  }],
+  "parameter" : [{
+    "name" : "Measurement Period",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "type" : "Period"
+  },
+  {
+    "name" : "Patient",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "type" : "Patient"
+  },
+  {
+    "name" : "EncounterInpatient",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Encounter"
+  },
+  {
+    "name" : "EncounterObservation",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Encounter"
+  },
+  {
+    "name" : "Encounters with Patient Hospital Locations",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Encounter"
+  },
+  {
+    "name" : "Initial Population",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Encounter"
+  },
+  {
+    "name" : "COVID And Influenza Observation",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "RSV Observation",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "ACH Daily Observation",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "COVID And Influenza PRE Admission Observation",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "RSV PRE Admission Observation",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "COVID And Influenza DiagnosticReport",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "RSV DiagnosticReport",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "ACH Daily DiagnosticReport",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "COVID And Influenza DiagnosticReport PRE Admission",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "RSV DiagnosticReport PRE Admission",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "DiagnosticReports",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "Observations",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "COVID and Influenza DiagnosticReport Observations",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "COVID and Influenza DiagnosticReport Result from Lab",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "RSV Observations",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "RSV DiagnosticReport Observations",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "RSV DiagnosticReport Result from Lab",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "ACH Daily DiagnosticReport Result from Lab",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "COVID and Influenza DiagnosticReport Result from Lab PRE Admission",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "RSV DiagnosticReport Result from Lab PRE Admission",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "SDE IP Encounters",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Encounter"
+  },
+  {
+    "name" : "Encounters",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Encounter"
+  },
+  {
+    "name" : "SDE Encounter",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Encounter"
+  },
+  {
+    "name" : "SDE Minimal Patient",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "type" : "Patient"
+  },
+  {
+    "name" : "SDE Location",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Location"
+  },
+  {
+    "name" : "SDE Encounter Discharge Dispositions",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Encounter"
+  },
+  {
+    "name" : "SDE ACH Daily Observation",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "SDE RSV PRE Admission Observation",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "SDE COVID And Influenza PRE Admission Observation",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "SDE ACH Daily Specimen",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Specimen"
+  },
+  {
+    "name" : "SDE RSV Specimen",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Specimen"
+  },
+  {
+    "name" : "SDE COVID And Influenza Specimen",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Specimen"
+  },
+  {
+    "name" : "SDE ACH Daily DiagnosticReport",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "SDE COVID And Influenza DiagnosticReport",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "SDE RSV DiagnosticReport",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "SDE ACH Daily DiagnosticReport Result from Lab",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "SDE COVID and Influenza DiagnosticReport Result from Lab",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "SDE RSV DiagnosticReport Result from Lab",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "DiagnosticReport"
+  },
+  {
+    "name" : "SDE ACH Daily ServiceRequest",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "ServiceRequest"
+  },
+  {
+    "name" : "SDE Isolation Precautions Implemented",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Procedure"
+  },
+  {
+    "name" : "SDE Covid or Influenza Medication Administered",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "MedicationAdministration"
+  },
+  {
+    "name" : "SDE Covid or Influenza Medication Ordered",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "MedicationRequest"
+  },
+  {
+    "name" : "SDE Medication",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Medication"
+  },
+  {
+    "name" : "SDE All Observations",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Observation"
+  },
+  {
+    "name" : "SDE All ServiceRequests",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "ServiceRequest"
+  },
+  {
+    "name" : "SDE All Procedures",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "type" : "Procedure"
+  }],
+  "dataRequirement" : [{
+    "type" : "Patient",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+  },
+  {
+    "type" : "Encounter",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"],
+    "mustSupport" : ["type",
+    "status",
+    "period",
+    "id",
+    "hospitalization",
+    "hospitalization.dischargeDisposition"],
+    "codeFilter" : [{
+      "path" : "type",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"
+    }]
+  },
+  {
+    "type" : "Encounter",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"],
+    "mustSupport" : ["class",
+    "status",
+    "period",
+    "id",
+    "hospitalization",
+    "hospitalization.dischargeDisposition"],
+    "codeFilter" : [{
+      "path" : "class",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.274"
+    }]
+  },
+  {
+    "type" : "Encounter",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"],
+    "mustSupport" : ["type",
+    "status",
+    "period",
+    "id",
+    "hospitalization",
+    "hospitalization.dischargeDisposition"],
+    "codeFilter" : [{
+      "path" : "type",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"
+    }]
+  },
+  {
+    "type" : "Encounter",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"],
+    "mustSupport" : ["class",
+    "status",
+    "period",
+    "id",
+    "hospitalization",
+    "hospitalization.dischargeDisposition"],
+    "codeFilter" : [{
+      "path" : "class",
+      "code" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "OBSENC",
+        "display" : "observation encounter"
+      }]
+    }]
+  },
+  {
+    "type" : "Encounter",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"],
+    "mustSupport" : ["location",
+    "period",
+    "status",
+    "id",
+    "hospitalization",
+    "hospitalization.dischargeDisposition"]
+  },
+  {
+    "type" : "Observation",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Observation"],
+    "mustSupport" : ["code",
+    "category",
+    "status",
+    "effective",
+    "specimen",
+    "specimen.collection",
+    "specimen.collection.collected"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.336"
+    }]
+  },
+  {
+    "type" : "Observation",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Observation"],
+    "mustSupport" : ["code",
+    "category",
+    "status",
+    "effective",
+    "specimen",
+    "specimen.collection",
+    "specimen.collection.collected"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.337"
+    }]
+  },
+  {
+    "type" : "Observation",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Observation"],
+    "mustSupport" : ["code",
+    "category",
+    "status",
+    "effective",
+    "specimen",
+    "specimen.collection",
+    "specimen.collection.collected"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1142"
+    }]
+  },
+  {
+    "type" : "Observation",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Observation"],
+    "mustSupport" : ["code",
+    "category",
+    "status",
+    "effective",
+    "specimen",
+    "specimen.collection",
+    "specimen.collection.collected"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1158"
+    }]
+  },
+  {
+    "type" : "Observation",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Observation"],
+    "mustSupport" : ["code",
+    "category",
+    "status",
+    "effective",
+    "specimen",
+    "specimen.collection",
+    "specimen.collection.collected"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1312"
+    }]
+  },
+  {
+    "type" : "Observation",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Observation"],
+    "mustSupport" : ["code",
+    "category",
+    "status",
+    "effective",
+    "specimen",
+    "specimen.collection",
+    "specimen.collection.collected"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1311"
+    }]
+  },
+  {
+    "type" : "Observation",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Observation"],
+    "mustSupport" : ["category",
+    "status",
+    "effective",
+    "specimen",
+    "specimen.collection",
+    "specimen.collection.collected",
+    "code"]
+  },
+  {
+    "type" : "Specimen",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Specimen"],
+    "mustSupport" : ["id"]
+  },
+  {
+    "type" : "DiagnosticReport",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport"],
+    "mustSupport" : ["code",
+    "status",
+    "effective"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1142"
+    }]
+  },
+  {
+    "type" : "DiagnosticReport",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport"],
+    "mustSupport" : ["code",
+    "status",
+    "effective"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1158"
+    }]
+  },
+  {
+    "type" : "DiagnosticReport",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport"],
+    "mustSupport" : ["code",
+    "status",
+    "effective"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.336"
+    }]
+  },
+  {
+    "type" : "DiagnosticReport",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport"],
+    "mustSupport" : ["code",
+    "status",
+    "effective"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.337"
+    }]
+  },
+  {
+    "type" : "DiagnosticReport",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport"],
+    "mustSupport" : ["code",
+    "status",
+    "effective"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1312"
+    }]
+  },
+  {
+    "type" : "DiagnosticReport",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport"],
+    "mustSupport" : ["code",
+    "status",
+    "effective"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1311"
+    }]
+  },
+  {
+    "type" : "DiagnosticReport",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport"],
+    "mustSupport" : ["status",
+    "effective",
+    "result"]
+  },
+  {
+    "type" : "Location",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Location"]
+  },
+  {
+    "type" : "ServiceRequest",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"],
+    "mustSupport" : ["code",
+    "intent",
+    "status"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1142"
+    }]
+  },
+  {
+    "type" : "ServiceRequest",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"],
+    "mustSupport" : ["code",
+    "intent",
+    "status"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1158"
+    }]
+  },
+  {
+    "type" : "ServiceRequest",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"],
+    "mustSupport" : ["code",
+    "intent",
+    "status"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.336"
+    }]
+  },
+  {
+    "type" : "ServiceRequest",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"],
+    "mustSupport" : ["code",
+    "intent",
+    "status"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.337"
+    }]
+  },
+  {
+    "type" : "ServiceRequest",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"],
+    "mustSupport" : ["code",
+    "intent",
+    "status"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1312"
+    }]
+  },
+  {
+    "type" : "ServiceRequest",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"],
+    "mustSupport" : ["code",
+    "intent",
+    "status"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1311"
+    }]
+  },
+  {
+    "type" : "ServiceRequest",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"],
+    "mustSupport" : ["intent",
+    "status"]
+  },
+  {
+    "type" : "Procedure",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Procedure"],
+    "mustSupport" : ["code",
+    "performed"],
+    "codeFilter" : [{
+      "path" : "code",
+      "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.22.5.300"
+    }]
+  },
+  {
+    "type" : "Procedure",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Procedure"]
+  },
+  {
+    "type" : "Medication",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Medication"],
+    "mustSupport" : ["id"],
+    "codeFilter" : [{
+      "path" : "id"
+    }]
+  },
+  {
+    "type" : "MedicationAdministration",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/MedicationAdministration"],
+    "mustSupport" : ["medication",
+    "status",
+    "effective"]
+  },
+  {
+    "type" : "MedicationRequest",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/MedicationRequest"],
+    "mustSupport" : ["medication",
+    "authoredOn"]
+  }],
+  "content" : [{
+    "contentType" : "text/cql",
+    "data" : "bGlicmFyeSBOSFNOQWN1dGVDYXJlSG9zcGl0YWxEYWlseUluaXRpYWxQb3B1bGF0aW9uIHZlcnNpb24gJzEuMC4wLWRldicNCg0KdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMScNCg0KaW5jbHVkZSBGSElSSGVscGVycyB2ZXJzaW9uICc0LjAuMicgY2FsbGVkIEZISVJIZWxwZXJzDQppbmNsdWRlIE5IU05IZWxwZXJzIHZlcnNpb24gJzAuMC4wMDInIGNhbGxlZCBOSFNOSGVscGVycw0KaW5jbHVkZSBTaGFyZWRSZXNvdXJjZUNyZWF0aW9uIHZlcnNpb24gJzAuMS4wMTAnIGNhbGxlZCBTaGFyZWRSZXNvdXJjZQ0KDQpjb2Rlc3lzdGVtICJBY3RDb2RlIjogJ2h0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL0NvZGVTeXN0ZW0vdjMtQWN0Q29kZScgDQpjb2Rlc3lzdGVtICJMT0lOQyI6ICdodHRwOi8vbG9pbmMub3JnJyANCmNvZGVzeXN0ZW0gIk9ic2VydmF0aW9uIENhdGVnb3J5IjogJ2h0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL0NvZGVTeXN0ZW0vb2JzZXJ2YXRpb24tY2F0ZWdvcnknIA0KY29kZXN5c3RlbSAiUlhOT1JNIjogJ2h0dHA6Ly93d3cubmxtLm5paC5nb3YvcmVzZWFyY2gvdW1scy9yeG5vcm0nDQoNCnZhbHVlc2V0ICJFbmNvdW50ZXIgSW5wYXRpZW50IjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjY2Ni41LjMwNycgDQp2YWx1ZXNldCAiSW5wYXRpZW50LCBFbWVyZ2VuY3ksIGFuZCBPYnNlcnZhdGlvbiBMb2NhdGlvbnMiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzNzYyLjEuNC4xMDQ2LjI2NScgDQp2YWx1ZXNldCAiT2JzZXJ2YXRpb24gU2VydmljZXMiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzNzYyLjEuNC4xMTExLjE0MycgDQp2YWx1ZXNldCAiRGlzY2hhcmdlIERpc3Bvc2l0aW9uIjogJ2h0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL1ZhbHVlU2V0L2VuY291bnRlci1kaXNjaGFyZ2UtZGlzcG9zaXRpb24nDQoNCi8vQ09WSUQtMTkgbGFiIHRlc3RzDQp2YWx1ZXNldCAiQ09WSURfMTkgKFRlc3RzIGZvciBTQVJTX0NvVl8yIE51Y2xlaWMgQWNpZCkiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzNzYyLjEuNC4xMTQ2LjExNDInDQp2YWx1ZXNldCAiQ09WSURfMTkgKFRlc3RzIGZvciBTQVJTX0NvVl8yIEFudGlnZW4pIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzc2Mi4xLjQuMTE0Ni4xMTU4Jw0KDQovL0NPVklELTE5IHRlc3QgcmVzdWx0cyAodW51c2VkKQ0KdmFsdWVzZXQgIkNPVklEXzE5IChPcmdhbmlzbSBvciBTdWJzdGFuY2UgaW4gTGFiIFJlc3VsdHMpIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzc2Mi4xLjQuMTE0Ni4xMTQzJw0KDQovL0luZmx1ZW56YSBsYWIgdGVzdHMNCnZhbHVlc2V0ICJJbmZsdWVuemEgKFRlc3RzIGZvciBpbmZsdWVuemEgQSBvciBCIHZpcnVzIE51Y2xlaWMgQWNpZCkiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzNzYyLjEuNC4xMTQ2LjMzNicNCnZhbHVlc2V0ICJJbmZsdWVuemEgKFRlc3RzIGZvciBpbmZsdWVuemEgQSBvciBCIHZpcnVzIEFudGlnZW4pIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzc2Mi4xLjQuMTE0Ni4zMzcnDQoNCi8vSW5mbHVlbnphIHRlc3QgUmVzdWx0cyAodW51c2VkKQ0KdmFsdWVzZXQgIkluZmx1ZW56YSAoaW5mbHVlbnphIEEgb3IgQiB2aXJ1cyBpbiBMYWIgUmVzdWx0cykiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzNzYyLjEuNC4xMTQ2LjM0MCcNCg0KLy9SU1YgbGFiIHRlc3RzDQp2YWx1ZXNldCAiUlNWIChUZXN0cyBmb3IgUlNWIEFudGlnZW4pIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzc2Mi4xLjQuMTE0Ni4xMzExJw0KdmFsdWVzZXQgIlJTViAoVGVzdHMgZm9yIFJTViBOdWNsZWljIEFjaWQpIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzc2Mi4xLjQuMTE0Ni4xMzEyJw0KDQovL1JTViB0ZXN0IHJlc3VsdHMgKHVudXNlZCkNCnZhbHVlc2V0ICJSU1YgKE9yZ2FuaXNtIG9yIFN1YnN0YW5jZSBpbiBMYWIgUmVzdWx0cykiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzNzYyLjEuNC4xMTQ2LjEzMDgnDQoNCi8vVGVzdCByZXN1bHRzIHNoYXJlZCBhbW9uZyBDT1ZJRC0xOSwgSW5mbHVlbnphIGFuZCBSU1YgKHVudXNlZCkNCnZhbHVlc2V0ICJMSVZEIFNBUlMgQ29WMiBUZXN0IFJlc3VsdCBDb2RlcyI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM3NjIuMS40LjExMTQuMTAnDQoNCi8vQ09WSUQtMTkgbWVkaWNhdGlvbnMNCnZhbHVlc2V0ICJCYXJpY2l0aW5pYiI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy4zNjE2LjIwMC4xMTAuMTAyLjIwNDYnDQp2YWx1ZXNldCAiQW5ha2lucmEiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuMzYxNi4yMDAuMTEwLjEwMi4yMDU0Jw0KdmFsdWVzZXQgIlNhcmlsdW1hYiI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy4zNjE2LjIwMC4xMTAuMTAyLjIwODQnDQp2YWx1ZXNldCAiQ09WSUQxOSBSeE5vcm0gVmFsdWUgU2V0IGZvciBUb2NpbGl6dW1hYiI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy4zNjE2LjIwMC4xMTAuMTAyLjIwODcnDQp2YWx1ZXNldCAiQ2FzaXJpdmltYWIiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuMzYxNi4yMDAuMTEwLjEwMi4yMDk3Jw0KdmFsdWVzZXQgIkltZGV2aW1hYiI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy4zNjE2LjIwMC4xMTAuMTAyLjIwOTgnDQp2YWx1ZXNldCAiQmFtbGFuaXZpbWFiIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjM2MTYuMjAwLjExMC4xMDIuMjA5OScNCnZhbHVlc2V0ICJFdGVzZXZpbWFiIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjM2MTYuMjAwLjExMC4xMDIuMjEwMCcNCnZhbHVlc2V0ICJTb3Ryb3ZpbWFiIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjM2MTYuMjAwLjExMC4xMDIuMjEwMScNCnZhbHVlc2V0ICJUb2ZhY2l0aW5pYiI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy4zNjE2LjIwMC4xMTAuMTAyLjIxMDInDQp2YWx1ZXNldCAiQ2FzaXJpdmltYWIgLyBJbWRldmltYWIiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuMzYxNi4yMDAuMTEwLjEwMi4yMTAzJw0KdmFsdWVzZXQgIk1vbG51cGlyYXZpciI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy4zNjE2LjIwMC4xMTAuMTAyLjIxMTknDQp2YWx1ZXNldCAiUmVtZGVzaXZpciI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy4zNjE2LjIwMC4xMTAuMTAyLjIwODEnDQp2YWx1ZXNldCAiTmlybWF0cmVsdmlyIC8gUml0b25hdmlyIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjM2MTYuMjAwLjExMC4xMDIuMjEwNCcNCnZhbHVlc2V0ICJCZWJ0ZWxvdmltYWIiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuMzYxNi4yMDAuMTEwLjEwMi4yMTA1Jw0KDQovL0luZmx1ZW56YSBtZWRpY2F0aW9ucw0KdmFsdWVzZXQgIkJhbG94YXZpciI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM3NjIuMS40LjExOTAuODUnDQp2YWx1ZXNldCAiUGVyYW1pdmlyIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzc2Mi4xLjQuMTE5MC44NicNCnZhbHVlc2V0ICJaYW5hbWl2aXIiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzNzYyLjEuNC4xMTkwLjg3Jw0KdmFsdWVzZXQgIk9zZWx0YW1pdmlyIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjM2MTYuMjAwLjExMC4xMDIuMjA3OCcNCg0KLy9Jc29sYXRpb24gUHJlY2F1dGlvbnMNCnZhbHVlc2V0ICJUcmFuc21pc3Npb24gQmFzZWQgUHJlY2F1dGlvbiBUeXBlcyI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMTAuMjAuMjIuNS4zMDAnDQoNCi8vRW5jb3VudGVyIENsYXNzIENvZGVzDQp2YWx1ZXNldCAiTkhTTiBJbnBhdGllbnQgRW5jb3VudGVyIENsYXNzIENvZGVzIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzc2Mi4xLjQuMTA0Ni4yNzQnDQoNCi8vT2JzZXJ2YXRpb24gQ2F0ZWdvcnkgQ29kZXMNCmNvZGUgImxhYm9yYXRvcnkiOiAnbGFib3JhdG9yeScgZnJvbSAiT2JzZXJ2YXRpb24gQ2F0ZWdvcnkiIGRpc3BsYXkgJ0xhYm9yYXRvcnknDQoNCi8vT2JzZXJ2YXRpb24gRW5jb3VudGVyIENsYXNzIENvZGUNCmNvZGUgIm9ic2VydmF0aW9uIGVuY291bnRlciI6ICdPQlNFTkMnIGZyb20gIkFjdENvZGUiIGRpc3BsYXkgJ29ic2VydmF0aW9uIGVuY291bnRlcicNCg0KcGFyYW1ldGVyICJNZWFzdXJlbWVudCBQZXJpb2QiIA0KICBkZWZhdWx0IEludGVydmFsW0AyMDIyLTAxLTAxVDAwOjAwOjAwLjAsIEAyMDIyLTAxLTAyVDAwOjAwOjAwLjApDQoNCmNvbnRleHQgUGF0aWVudA0KDQovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCi8vIEluaXRpYWwgUG9wdWxhdGlvbg0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQpkZWZpbmUgIkluaXRpYWwgUG9wdWxhdGlvbiI6DQogIEVuY291bnRlcklucGF0aWVudA0KICB1bmlvbiBFbmNvdW50ZXJPYnNlcnZhdGlvbg0KICB1bmlvbiAiRW5jb3VudGVycyB3aXRoIFBhdGllbnQgSG9zcGl0YWwgTG9jYXRpb25zIg0KDQpkZWZpbmUgIkVuY291bnRlcklucGF0aWVudCI6DQogIChbRW5jb3VudGVyOiAiRW5jb3VudGVyIElucGF0aWVudCJdDQogICAgdW5pb24gW0VuY291bnRlcjogY2xhc3MgaW4gIk5IU04gSW5wYXRpZW50IEVuY291bnRlciBDbGFzcyBDb2RlcyJdKSBFbmNvdW50ZXJzDQogIHdoZXJlIEVuY291bnRlcnMuc3RhdHVzIGluIHsnaW4tcHJvZ3Jlc3MnLCAnZmluaXNoZWQnLCAndHJpYWdlZCcsICdvbmxlYXZlJywgJ2VudGVyZWQtaW4tZXJyb3InfQ0KICAgIGFuZCBFbmNvdW50ZXJzLnBlcmlvZCBvdmVybGFwcyAiTWVhc3VyZW1lbnQgUGVyaW9kIg0KDQpkZWZpbmUgIkVuY291bnRlck9ic2VydmF0aW9uIjoNCiAgKFtFbmNvdW50ZXI6ICJPYnNlcnZhdGlvbiBTZXJ2aWNlcyJdDQogICAgdW5pb24gW0VuY291bnRlcjogY2xhc3MgaW4geyJvYnNlcnZhdGlvbiBlbmNvdW50ZXIifV0pIEVuY291bnRlcnMNCiAgd2hlcmUgRW5jb3VudGVycy5zdGF0dXMgaW4geydpbi1wcm9ncmVzcycsICdmaW5pc2hlZCcsICd0cmlhZ2VkJywgJ29ubGVhdmUnLCAnZW50ZXJlZC1pbi1lcnJvcid9DQogICAgYW5kIEVuY291bnRlcnMucGVyaW9kIG92ZXJsYXBzICJNZWFzdXJlbWVudCBQZXJpb2QiDQoNCmRlZmluZSAiRW5jb3VudGVycyB3aXRoIFBhdGllbnQgSG9zcGl0YWwgTG9jYXRpb25zIjoNCiAgW0VuY291bnRlcl0gRW5jb3VudGVycw0KICB3aGVyZSBleGlzdHMoDQogICAgRW5jb3VudGVycy5sb2NhdGlvbiBFbmNvdW50ZXJMb2NhdGlvbg0KICAgIGxldCB0eXBlczogTkhTTkhlbHBlcnMuR2V0TG9jYXRpb24oRW5jb3VudGVyTG9jYXRpb24ubG9jYXRpb24pLnR5cGUNCiAgICB3aGVyZSBleGlzdHMoDQogICAgICB0eXBlcyB0eXBlDQogICAgICB3aGVyZSB0eXBlIGluICJJbnBhdGllbnQsIEVtZXJnZW5jeSwgYW5kIE9ic2VydmF0aW9uIExvY2F0aW9ucyINCiAgICApDQogICAgYW5kIEVuY291bnRlckxvY2F0aW9uLnBlcmlvZCBvdmVybGFwcyBFbmNvdW50ZXJzLnBlcmlvZA0KICAgIGFuZCBFbmNvdW50ZXJzLnN0YXR1cyBpbiB7J2luLXByb2dyZXNzJywgJ2ZpbmlzaGVkJywgJ3RyaWFnZWQnLCAnb25sZWF2ZScsICdlbnRlcmVkLWluLWVycm9yJyB9DQogICAgYW5kIEVuY291bnRlcnMucGVyaW9kIG92ZXJsYXBzICJNZWFzdXJlbWVudCBQZXJpb2QiDQogICkNCg0KDQovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQovLyBMb2dpYyByZWxhdGVkIHRvIExhYm9yYXRvcnkNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCi8vTGFiIE9ic2VydmF0aW9ucw0KZGVmaW5lICJDT1ZJRCBBbmQgSW5mbHVlbnphIE9ic2VydmF0aW9uIjoNCiAgKFtPYnNlcnZhdGlvbjogIkluZmx1ZW56YSAoVGVzdHMgZm9yIGluZmx1ZW56YSBBIG9yIEIgdmlydXMgTnVjbGVpYyBBY2lkKSJdIA0KICB1bmlvbiBbT2JzZXJ2YXRpb246ICJJbmZsdWVuemEgKFRlc3RzIGZvciBpbmZsdWVuemEgQSBvciBCIHZpcnVzIEFudGlnZW4pIl0NCiAgdW5pb24gW09ic2VydmF0aW9uOiAiQ09WSURfMTkgKFRlc3RzIGZvciBTQVJTX0NvVl8yIE51Y2xlaWMgQWNpZCkiXQ0KICB1bmlvbiBbT2JzZXJ2YXRpb246ICJDT1ZJRF8xOSAoVGVzdHMgZm9yIFNBUlNfQ29WXzIgQW50aWdlbikiXQ0KICApIE9ic2VydmF0aW9ucw0KICAgIHdoZXJlIGV4aXN0cyhPYnNlcnZhdGlvbnMuY2F0ZWdvcnkgQ2F0ZWdvcnkgd2hlcmUgQ2F0ZWdvcnkgfiAibGFib3JhdG9yeSIpDQogICAgICBhbmQgT2JzZXJ2YXRpb25zLnN0YXR1cyBpbiB7J2ZpbmFsJywncmVnaXN0ZXJlZCcsJ3ByZWxpbWluYXJ5JywncGFydGlhbCd9DQogICAgICBhbmQgZXhpc3RzKCJJbml0aWFsIFBvcHVsYXRpb24iKQ0KDQpkZWZpbmUgIlJTViBPYnNlcnZhdGlvbiI6DQogIChbT2JzZXJ2YXRpb246ICJSU1YgKFRlc3RzIGZvciBSU1YgTnVjbGVpYyBBY2lkKSJdDQogIHVuaW9uIFtPYnNlcnZhdGlvbjogIlJTViAoVGVzdHMgZm9yIFJTViBBbnRpZ2VuKSJdICAgDQogICkgT2JzZXJ2YXRpb25zDQogICAgd2hlcmUgZXhpc3RzKE9ic2VydmF0aW9ucy5jYXRlZ29yeSBDYXRlZ29yeSB3aGVyZSBDYXRlZ29yeSB+ICJsYWJvcmF0b3J5IikNCiAgICAgIGFuZCBPYnNlcnZhdGlvbnMuc3RhdHVzIGluIHsnZmluYWwnLCdyZWdpc3RlcmVkJywncHJlbGltaW5hcnknLCdwYXJ0aWFsJ30NCiAgICAgIGFuZCBleGlzdHMoIkluaXRpYWwgUG9wdWxhdGlvbiIpDQoNCmRlZmluZSAiQUNIIERhaWx5IE9ic2VydmF0aW9uIjoNCiAgIlJTViBPYnNlcnZhdGlvbiINCiAgdW5pb24gIkNPVklEIEFuZCBJbmZsdWVuemEgT2JzZXJ2YXRpb24iDQoNCi8vZnVydGhlciBjb25zdHJhaW4gQ09WSUQtMTkgYW5kIEluZmx1ZW56YSBPYnNlcnZhdGlvbnMgZm9yIDE0IGRheSBsb29rYmFjaw0KZGVmaW5lICJDT1ZJRCBBbmQgSW5mbHVlbnphIFBSRSBBZG1pc3Npb24gT2JzZXJ2YXRpb24iOg0KICAiQ09WSUQgQW5kIEluZmx1ZW56YSBPYnNlcnZhdGlvbiIgTyANCiAgIHdoZXJlIGV4aXN0cyggRW5jb3VudGVySW5wYXRpZW50IEUgDQogICAgd2hlcmUgKA0KICAgICAgTkhTTkhlbHBlcnMuIk5vcm1hbGl6ZSBJbnRlcnZhbCIoTy5lZmZlY3RpdmUpIDE0IGRheXMgb3IgbGVzcyBvbiBvciBiZWZvcmUgc3RhcnQgb2YgRS5wZXJpb2QNCiAgICAgIG9yIE5IU05IZWxwZXJzLiJOb3JtYWxpemUgSW50ZXJ2YWwiKEdldFNwZWNpbWVuKE8uc3BlY2ltZW4pLmNvbGxlY3Rpb24uY29sbGVjdGVkKSAxNCBkYXlzIG9yIGxlc3Mgb24gb3IgYmVmb3JlIHN0YXJ0IG9mIEUucGVyaW9kDQogICAgICApDQogICAgICBhbmQgc3RhcnQgb2YgRS5wZXJpb2QgZHVyaW5nICJNZWFzdXJlbWVudCBQZXJpb2QiDQogICAgKSAgDQoNCi8vZnVydGhlciBjb25zdHJhaW4gUlNWIG9ic2VydmF0aW9uIGZvciA4IGRheSBsb29rYmFjaw0KZGVmaW5lICJSU1YgUFJFIEFkbWlzc2lvbiBPYnNlcnZhdGlvbiI6DQogICJSU1YgT2JzZXJ2YXRpb24iIE8gDQogIHdoZXJlIGV4aXN0cyhFbmNvdW50ZXJJbnBhdGllbnQgRSANCiAgICB3aGVyZSAoDQogICAgICBOSFNOSGVscGVycy4iTm9ybWFsaXplIEludGVydmFsIihPLmVmZmVjdGl2ZSkgOCBkYXlzIG9yIGxlc3Mgb24gb3IgYmVmb3JlIHN0YXJ0IG9mIEUucGVyaW9kDQogICAgICBvciBOSFNOSGVscGVycy4iTm9ybWFsaXplIEludGVydmFsIihHZXRTcGVjaW1lbihPLnNwZWNpbWVuKS5jb2xsZWN0aW9uLmNvbGxlY3RlZCkgOCBkYXlzIG9yIGxlc3Mgb24gb3IgYmVmb3JlIHN0YXJ0IG9mIEUucGVyaW9kDQogICAgICApDQogICAgICBhbmQgc3RhcnQgb2YgRS5wZXJpb2QgZHVyaW5nICJNZWFzdXJlbWVudCBQZXJpb2QiDQogICAgKQ0KDQovL0xhYiBEaWFnbm9zdGljUmVwb3J0DQpkZWZpbmUgIkNPVklEIEFuZCBJbmZsdWVuemEgRGlhZ25vc3RpY1JlcG9ydCI6DQogIChbRGlhZ25vc3RpY1JlcG9ydDogIkNPVklEXzE5IChUZXN0cyBmb3IgU0FSU19Db1ZfMiBOdWNsZWljIEFjaWQpIl0NCiAgICB1bmlvbiBbRGlhZ25vc3RpY1JlcG9ydDogIkNPVklEXzE5IChUZXN0cyBmb3IgU0FSU19Db1ZfMiBBbnRpZ2VuKSJdDQogICAgdW5pb24gW0RpYWdub3N0aWNSZXBvcnQ6ICJJbmZsdWVuemEgKFRlc3RzIGZvciBpbmZsdWVuemEgQSBvciBCIHZpcnVzIE51Y2xlaWMgQWNpZCkiXQ0KICAgIHVuaW9uIFtEaWFnbm9zdGljUmVwb3J0OiAiSW5mbHVlbnphIChUZXN0cyBmb3IgaW5mbHVlbnphIEEgb3IgQiB2aXJ1cyBBbnRpZ2VuKSJdDQogICkgUmVwb3J0cw0KICAgIHdoZXJlIGV4aXN0cygiSW5pdGlhbCBQb3B1bGF0aW9uIikNCiAgICAgIGFuZCBSZXBvcnRzLnN0YXR1cyBpbiB7J2ZpbmFsJywncmVnaXN0ZXJlZCcsJ3ByZWxpbWluYXJ5JywncGFydGlhbCd9DQoNCmRlZmluZSAiUlNWIERpYWdub3N0aWNSZXBvcnQiOg0KICAoW0RpYWdub3N0aWNSZXBvcnQ6ICJSU1YgKFRlc3RzIGZvciBSU1YgTnVjbGVpYyBBY2lkKSJdDQogICAgdW5pb24gW0RpYWdub3N0aWNSZXBvcnQ6ICJSU1YgKFRlc3RzIGZvciBSU1YgQW50aWdlbikiXQ0KICApIFJlcG9ydHMNCiAgICB3aGVyZSBleGlzdHMoIkluaXRpYWwgUG9wdWxhdGlvbiIpDQogICAgICBhbmQgUmVwb3J0cy5zdGF0dXMgaW4geydmaW5hbCcsJ3JlZ2lzdGVyZWQnLCdwcmVsaW1pbmFyeScsJ3BhcnRpYWwnfQ0KDQpkZWZpbmUgIkFDSCBEYWlseSBEaWFnbm9zdGljUmVwb3J0IjoNCiAgIkNPVklEIEFuZCBJbmZsdWVuemEgRGlhZ25vc3RpY1JlcG9ydCINCiAgICB1bmlvbiAiUlNWIERpYWdub3N0aWNSZXBvcnQiDQoNCi8vZnVydGhlciBjb25zdHJhaW4gQ09WSUQtMTkgYW5kIEluZmx1ZW56YSB3aXRoIDE0IGRheSBsb29rYmFjayANCmRlZmluZSAiQ09WSUQgQW5kIEluZmx1ZW56YSBEaWFnbm9zdGljUmVwb3J0IFBSRSBBZG1pc3Npb24iOg0KICAiQ09WSUQgQW5kIEluZmx1ZW56YSBEaWFnbm9zdGljUmVwb3J0IiBSIA0KICB3aGVyZSBleGlzdHMoRW5jb3VudGVySW5wYXRpZW50IEUgDQogICAgd2hlcmUgKA0KICAgICAgTkhTTkhlbHBlcnMuIk5vcm1hbGl6ZSBJbnRlcnZhbCIoUi5lZmZlY3RpdmUpIDE0IGRheXMgb3IgbGVzcyBvbiBvciBiZWZvcmUgc3RhcnQgb2YgRS5wZXJpb2QpDQogICAgICBhbmQgc3RhcnQgb2YgRS5wZXJpb2QgZHVyaW5nICJNZWFzdXJlbWVudCBQZXJpb2QiDQogICAgKQ0KDQovL2Z1cnRoZXIgY29uc3RyYWluIFJTViBmb3IgOCBkYXkgbG9va2JhY2sNCmRlZmluZSAiUlNWIERpYWdub3N0aWNSZXBvcnQgUFJFIEFkbWlzc2lvbiI6DQogICJSU1YgRGlhZ25vc3RpY1JlcG9ydCIgUiANCiAgd2hlcmUgZXhpc3RzKEVuY291bnRlcklucGF0aWVudCBFIA0KICAgIHdoZXJlICgNCiAgICAgIE5IU05IZWxwZXJzLiJOb3JtYWxpemUgSW50ZXJ2YWwiKFIuZWZmZWN0aXZlKSA4IGRheXMgb3IgbGVzcyBvbiBvciBiZWZvcmUgc3RhcnQgb2YgRS5wZXJpb2QpDQogICAgICBhbmQgc3RhcnQgb2YgRS5wZXJpb2QgZHVyaW5nICJNZWFzdXJlbWVudCBQZXJpb2QiDQogICAgKQ0KDQpkZWZpbmUgIkNPVklEIGFuZCBJbmZsdWVuemEgRGlhZ25vc3RpY1JlcG9ydCBSZXN1bHQgZnJvbSBMYWIiOg0KICAiRGlhZ25vc3RpY1JlcG9ydHMiIFJlcG9ydHMNCiAgICB3aGVyZSBleGlzdHMoDQogICAgICAiQ09WSUQgYW5kIEluZmx1ZW56YSBEaWFnbm9zdGljUmVwb3J0IE9ic2VydmF0aW9ucyIgT2JzZXJ2YXRpb25zDQogICAgICB3aGVyZSBSZXBvcnRzLnJlc3VsdC5yZWZlcmVuY2VzKE9ic2VydmF0aW9ucykNCiAgICApDQogICAgYW5kIFJlcG9ydHMuc3RhdHVzIGluIHsnZmluYWwnLCdyZWdpc3RlcmVkJywncHJlbGltaW5hcnknLCdwYXJ0aWFsJ30NCiAgICBhbmQgZXhpc3RzKCJJbml0aWFsIFBvcHVsYXRpb24iKQ0KDQpkZWZpbmUgIkNPVklEIGFuZCBJbmZsdWVuemEgRGlhZ25vc3RpY1JlcG9ydCBPYnNlcnZhdGlvbnMiOg0KICAiT2JzZXJ2YXRpb25zIiBPYnNlcnZhdGlvbnMNCiAgd2hlcmUgT2JzZXJ2YXRpb25zLmNvZGUgaW4gIkNPVklEXzE5IChUZXN0cyBmb3IgU0FSU19Db1ZfMiBOdWNsZWljIEFjaWQpIg0KICAgIG9yIE9ic2VydmF0aW9ucy5jb2RlIGluICJDT1ZJRF8xOSAoVGVzdHMgZm9yIFNBUlNfQ29WXzIgQW50aWdlbikiDQogICAgb3IgT2JzZXJ2YXRpb25zLmNvZGUgaW4gIkluZmx1ZW56YSAoVGVzdHMgZm9yIGluZmx1ZW56YSBBIG9yIEIgdmlydXMgTnVjbGVpYyBBY2lkKSINCiAgICBvciBPYnNlcnZhdGlvbnMuY29kZSBpbiAiSW5mbHVlbnphIChUZXN0cyBmb3IgaW5mbHVlbnphIEEgb3IgQiB2aXJ1cyBBbnRpZ2VuKSINCg0KIA0KZGVmaW5lICJSU1YgRGlhZ25vc3RpY1JlcG9ydCBSZXN1bHQgZnJvbSBMYWIiOg0KICBbRGlhZ25vc3RpY1JlcG9ydF0gUmVwb3J0cw0KICAgIHdoZXJlIGV4aXN0cygiUlNWIERpYWdub3N0aWNSZXBvcnQgT2JzZXJ2YXRpb25zIikNCiAgICAgIGFuZCBSZXBvcnRzLnN0YXR1cyBpbiB7J2ZpbmFsJywncmVnaXN0ZXJlZCcsJ3ByZWxpbWluYXJ5JywncGFydGlhbCd9DQogICAgICBhbmQgZXhpc3RzKCJJbml0aWFsIFBvcHVsYXRpb24iKQ0KDQpkZWZpbmUgIlJTViBPYnNlcnZhdGlvbnMiOg0KICAiT2JzZXJ2YXRpb25zIiBPYnNlcnZhdGlvbnMNCiAgd2hlcmUgT2JzZXJ2YXRpb25zLmNvZGUgaW4gIlJTViAoVGVzdHMgZm9yIFJTViBOdWNsZWljIEFjaWQpIg0KICAgIG9yIE9ic2VydmF0aW9ucy5jb2RlIGluICJSU1YgKFRlc3RzIGZvciBSU1YgQW50aWdlbikiDQogICAgDQpkZWZpbmUgIlJTViBEaWFnbm9zdGljUmVwb3J0IE9ic2VydmF0aW9ucyI6DQogICJEaWFnbm9zdGljUmVwb3J0cyIgUmVwb3J0cw0KICB3aGVyZSBleGlzdHMoDQogICAgIlJTViBPYnNlcnZhdGlvbnMiIE9ic2VydmF0aW9ucw0KICAgIHdoZXJlIFJlcG9ydHMucmVzdWx0LnJlZmVyZW5jZXMoT2JzZXJ2YXRpb25zKQ0KICApDQoNCmRlZmluZSAiQUNIIERhaWx5IERpYWdub3N0aWNSZXBvcnQgUmVzdWx0IGZyb20gTGFiIjoNCiAgIkNPVklEIGFuZCBJbmZsdWVuemEgRGlhZ25vc3RpY1JlcG9ydCBSZXN1bHQgZnJvbSBMYWIiDQogICAgdW5pb24gIlJTViBEaWFnbm9zdGljUmVwb3J0IFJlc3VsdCBmcm9tIExhYiINCg0KLy9mdXJ0aGVyIGNvbnN0cmFpbiBDT1ZJRC0xOSBhbmQgSW5mbHVlbnphIHdpdGggMTQgZGF5IGxvb2tiYWNrDQpkZWZpbmUgIkNPVklEIGFuZCBJbmZsdWVuemEgRGlhZ25vc3RpY1JlcG9ydCBSZXN1bHQgZnJvbSBMYWIgUFJFIEFkbWlzc2lvbiI6DQogICJDT1ZJRCBhbmQgSW5mbHVlbnphIERpYWdub3N0aWNSZXBvcnQgUmVzdWx0IGZyb20gTGFiIiBSIA0KICB3aGVyZSBleGlzdHMoRW5jb3VudGVySW5wYXRpZW50IEUgDQogICAgd2hlcmUgKA0KICAgICAgTkhTTkhlbHBlcnMuIk5vcm1hbGl6ZSBJbnRlcnZhbCIoUi5lZmZlY3RpdmUpIDE0IGRheXMgb3IgbGVzcyBvbiBvciBiZWZvcmUgc3RhcnQgb2YgRS5wZXJpb2QpDQogICAgICBhbmQgc3RhcnQgb2YgRS5wZXJpb2QgZHVyaW5nICJNZWFzdXJlbWVudCBQZXJpb2QiDQogICAgKQ0KDQovL2Z1cnRoZXIgY29uc3RyYWluIFJTViB3aXRoIDggZGF5IGxvb2tiYWNrDQpkZWZpbmUgIlJTViBEaWFnbm9zdGljUmVwb3J0IFJlc3VsdCBmcm9tIExhYiBQUkUgQWRtaXNzaW9uIjoNCiAgIlJTViBEaWFnbm9zdGljUmVwb3J0IFJlc3VsdCBmcm9tIExhYiIgUiANCiAgd2hlcmUgZXhpc3RzKEVuY291bnRlcklucGF0aWVudCBFIA0KICAgIHdoZXJlICgNCiAgICAgIE5IU05IZWxwZXJzLiJOb3JtYWxpemUgSW50ZXJ2YWwiKFIuZWZmZWN0aXZlKSA4IGRheXMgb3IgbGVzcyBvbiBvciBiZWZvcmUgc3RhcnQgb2YgRS5wZXJpb2QpDQogICAgICBhbmQgc3RhcnQgb2YgRS5wZXJpb2QgZHVyaW5nICJNZWFzdXJlbWVudCBQZXJpb2QiDQogICAgKQ0KICAgIA0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQovLyBTREUNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KZGVmaW5lICJTREUgSVAgRW5jb3VudGVycyI6DQogICJJbml0aWFsIFBvcHVsYXRpb24iIElQDQogIHJldHVybiBTaGFyZWRSZXNvdXJjZS5FbmNvdW50ZXJSZXNvdXJjZShJUCwgDQogIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLWRhaWx5LWVuY291bnRlcid9fSkNCg0KZGVmaW5lICJTREUgRW5jb3VudGVyIjogDQogICJFbmNvdW50ZXJzIiBFbmNvdW50ZXJzDQogIHdoZXJlIG5vdCBDaGVja0lQKEVuY291bnRlcnMpDQogIGFuZCBleGlzdHMoDQogICAgIkluaXRpYWwgUG9wdWxhdGlvbiIgSVANCiAgICB3aGVyZSBFbmNvdW50ZXJzLnBlcmlvZCBvdmVybGFwcyBJUC5wZXJpb2QpDQogIHJldHVybiBTaGFyZWRSZXNvdXJjZS5FbmNvdW50ZXJSZXNvdXJjZShFbmNvdW50ZXJzLA0KICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NvcmUvU3RydWN0dXJlRGVmaW5pdGlvbi91cy1jb3JlLWVuY291bnRlcid9fSkNCg0KZGVmaW5lICJTREUgTWluaW1hbCBQYXRpZW50IjoNCiAgUGF0aWVudCBwDQogIHdoZXJlIGV4aXN0cygiSW5pdGlhbCBQb3B1bGF0aW9uIikNCiAgcmV0dXJuIFNoYXJlZFJlc291cmNlLlBhdGllbnRSZXNvdXJjZShwLCANCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9jcm9zcy1tZWFzdXJlLXBhdGllbnQnfX0pDQoNCmRlZmluZSAiU0RFIExvY2F0aW9uIjoNCiAgW0xvY2F0aW9uXSBMb2NhdGlvbnMNCiAgd2hlcmUgZXhpc3RzKCJJbml0aWFsIFBvcHVsYXRpb24iKQ0KICByZXR1cm4gU2hhcmVkUmVzb3VyY2UuTG9jYXRpb25SZXNvdXJjZShMb2NhdGlvbnMsDQogIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLWRhaWx5LWxvY2F0aW9uJ319KQ0KICAgDQpkZWZpbmUgIlNERSBFbmNvdW50ZXIgRGlzY2hhcmdlIERpc3Bvc2l0aW9ucyI6DQoJIkluaXRpYWwgUG9wdWxhdGlvbiIgRGlzY2hhcmdlRGlzcG9zaXRpb25zIA0KICB3aGVyZSBEaXNjaGFyZ2VEaXNwb3NpdGlvbnMuaG9zcGl0YWxpemF0aW9uLmRpc2NoYXJnZURpc3Bvc2l0aW9uIGluICJEaXNjaGFyZ2UgRGlzcG9zaXRpb24iDQogIHJldHVybiBTaGFyZWRSZXNvdXJjZS5FbmNvdW50ZXJSZXNvdXJjZShEaXNjaGFyZ2VEaXNwb3NpdGlvbnMsDQogIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLWRhaWx5LWVuY291bnRlcid9fSkNCg0KLy9yZXR1cm4gdGhlIE9ic2VydmF0aW9uIGR1cmluZyB0aGUgTWVhc3VyZW1lbnQgUGVyaW9kDQpkZWZpbmUgIlNERSBBQ0ggRGFpbHkgT2JzZXJ2YXRpb24iOg0KICAiQUNIIERhaWx5IE9ic2VydmF0aW9uIiBPYnNlcnZhdGlvbnMNCiAgICByZXR1cm4gU2hhcmVkUmVzb3VyY2UuT2JzZXJ2YXRpb25MYWJSZXNvdXJjZShPYnNlcnZhdGlvbnMsDQogICAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtZGFpbHktb2JzZXJ2YXRpb24tbGFiJ319KQ0KDQovL3JldHVybiB0aGUgUlNWIE9ic2VydmF0aW9uIFByZSBBZG1pc3Npb24gICAgDQpkZWZpbmUgIlNERSBSU1YgUFJFIEFkbWlzc2lvbiBPYnNlcnZhdGlvbiI6DQogICJSU1YgUFJFIEFkbWlzc2lvbiBPYnNlcnZhdGlvbiIgT2JzZXJ2YXRpb25zDQogICAgcmV0dXJuIFNoYXJlZFJlc291cmNlLk9ic2VydmF0aW9uTGFiUmVzb3VyY2UoT2JzZXJ2YXRpb25zLCANCiAgICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1kYWlseS1vYnNlcnZhdGlvbi1sYWInfX0pDQoNCi8vcmV0dXJuIHRoZSBDT1ZJRC0xOSBhbmQgSW5mbHVlbnphIE9ic2VydmF0aW9uIFByZSBBZG1pc3Npb24NCmRlZmluZSAiU0RFIENPVklEIEFuZCBJbmZsdWVuemEgUFJFIEFkbWlzc2lvbiBPYnNlcnZhdGlvbiI6DQogICJDT1ZJRCBBbmQgSW5mbHVlbnphIFBSRSBBZG1pc3Npb24gT2JzZXJ2YXRpb24iIE9ic2VydmF0aW9ucw0KICAgIHJldHVybiBTaGFyZWRSZXNvdXJjZS5PYnNlcnZhdGlvbkxhYlJlc291cmNlKE9ic2VydmF0aW9ucywNCiAgICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1kYWlseS1vYnNlcnZhdGlvbi1sYWInfX0pDQoNCi8vcmV0dXJuIHRoZSBTcGVjaW1lbiByZWxhdGVkIHRvIHRoZSBPYnNlcnZhdGlvbiBkdXJpbmcgdGhlIE1lYXN1cmVtZW50IFBlcmlvZA0KZGVmaW5lICJTREUgQUNIIERhaWx5IFNwZWNpbWVuIjoNCiAgIkFDSCBEYWlseSBPYnNlcnZhdGlvbiIgT2JzZXJ2YXRpb25XaXRoU3BlY2ltZW4NCiAgICBsZXQgU3BlY2ltZW46IEdldFNwZWNpbWVuKE9ic2VydmF0aW9uV2l0aFNwZWNpbWVuLnNwZWNpbWVuKQ0KICAgIHJldHVybiBTaGFyZWRSZXNvdXJjZS5TcGVjaW1lblJlc291cmNlKFNwZWNpbWVuLA0KICAgIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLWRhaWx5LXNwZWNpbWVuJ319KQ0KDQovL3JldHVybiB0aGUgU3BlY2ltZW4gcmVsYXRlZCB0byB0aGUgUlNWIE9ic2VydmF0aW9uIFByZSBBZG1pc3Npb24NCmRlZmluZSAiU0RFIFJTViBTcGVjaW1lbiI6DQogICJSU1YgUFJFIEFkbWlzc2lvbiBPYnNlcnZhdGlvbiIgT2JzZXJ2YXRpb25XaXRoU3BlY2ltZW4NCiAgICBsZXQgU3BlY2ltZW46IEdldFNwZWNpbWVuKE9ic2VydmF0aW9uV2l0aFNwZWNpbWVuLnNwZWNpbWVuKQ0KICAgIHJldHVybiBTaGFyZWRSZXNvdXJjZS5TcGVjaW1lblJlc291cmNlKFNwZWNpbWVuLA0KICAgIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLWRhaWx5LXNwZWNpbWVuJ319KQ0KDQovL3JldHVybiB0aGUgU3BlY2ltZW4gcmVsYXRlZCB0byB0aGUgQ09WSUQtMTkgQW5kIEluZmx1ZW56YSBPYnNlcnZhdGlvbiBQcmUgQWRtaXNzaW9uDQpkZWZpbmUgIlNERSBDT1ZJRCBBbmQgSW5mbHVlbnphIFNwZWNpbWVuIjoNCiAgIkNPVklEIEFuZCBJbmZsdWVuemEgUFJFIEFkbWlzc2lvbiBPYnNlcnZhdGlvbiIgT2JzZXJ2YXRpb25XaXRoU3BlY2ltZW4NCiAgICBsZXQgU3BlY2ltZW46IEdldFNwZWNpbWVuKE9ic2VydmF0aW9uV2l0aFNwZWNpbWVuLnNwZWNpbWVuKQ0KICAgIHJldHVybiBTaGFyZWRSZXNvdXJjZS5TcGVjaW1lblJlc291cmNlKFNwZWNpbWVuLA0KICAgIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLWRhaWx5LXNwZWNpbWVuJ319KQ0KDQovL3JldHVybiB0aGUgRGlhZ25vc3RpY1JlcG9ydCBkdXJpbmcgdGhlIE1lYXN1cmVtZW50IFBlcmlvZA0KZGVmaW5lICJTREUgQUNIIERhaWx5IERpYWdub3N0aWNSZXBvcnQiOg0KICAiQUNIIERhaWx5IERpYWdub3N0aWNSZXBvcnQiIFJlcG9ydHMNCiAgICByZXR1cm4gU2hhcmVkUmVzb3VyY2UuRGlhZ25vc3RpY1JlcG9ydExhYlJlc291cmNlKFJlcG9ydHMsDQogICAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtZGFpbHktZGlhZ25vc3RpY3JlcG9ydC1sYWInfX0pDQoNCi8vcmV0dXJuIHRoZSBDT1ZJRC0xOSBBbmQgSW5mbHVlbnphIERpYWdub3N0aWNSZXBvcnQgcHJlIGFkbWlzc2lvbg0KZGVmaW5lICJTREUgQ09WSUQgQW5kIEluZmx1ZW56YSBEaWFnbm9zdGljUmVwb3J0IjoNCiAgIkNPVklEIEFuZCBJbmZsdWVuemEgRGlhZ25vc3RpY1JlcG9ydCIgUmVwb3J0cw0KICAgIHJldHVybiBTaGFyZWRSZXNvdXJjZS5EaWFnbm9zdGljUmVwb3J0TGFiUmVzb3VyY2UoUmVwb3J0cywNCiAgICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1kYWlseS1kaWFnbm9zdGljcmVwb3J0LWxhYid9fSkNCg0KLy9yZXR1cm4gdGhlIFJTViBEaWFnbm9zdGljUmVwb3J0IHByZSBhZG1pc3Npb24NCmRlZmluZSAiU0RFIFJTViBEaWFnbm9zdGljUmVwb3J0IjoNCiAgIlJTViBEaWFnbm9zdGljUmVwb3J0IiBSZXBvcnRzDQogICAgcmV0dXJuIFNoYXJlZFJlc291cmNlLkRpYWdub3N0aWNSZXBvcnRMYWJSZXNvdXJjZShSZXBvcnRzLA0KICAgIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLWRhaWx5LWRpYWdub3N0aWNyZXBvcnQtbGFiJ319KQ0KDQovL3JldHVybiB0aGUgRGlhZ25vc3RpY1JlcG9ydCBiYXNlZCBvbiB0aGUgcmVzdWx0IGR1cmluZyB0aGUgTWVhc3VyZW1lbnQgUGVyaW9kICAgIA0KZGVmaW5lICJTREUgQUNIIERhaWx5IERpYWdub3N0aWNSZXBvcnQgUmVzdWx0IGZyb20gTGFiIjoNCiAgIkFDSCBEYWlseSBEaWFnbm9zdGljUmVwb3J0IFJlc3VsdCBmcm9tIExhYiIgUmVwb3J0cw0KICAgIHJldHVybiBTaGFyZWRSZXNvdXJjZS5EaWFnbm9zdGljUmVwb3J0TGFiUmVzb3VyY2UoUmVwb3J0cywNCiAgICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1kYWlseS1kaWFnbm9zdGljcmVwb3J0LWxhYid9fSkNCg0KLy9yZXR1cm4gdGhlIENPVklELTE5IGFuZCBJbmZsdWVuemEgRGlhZ25vc3RpY1JlcG9ydCBiYXNlZCBvbiB0aGUgcmVzdWx0IHByZSBhZG1pc3Npb24NCmRlZmluZSAiU0RFIENPVklEIGFuZCBJbmZsdWVuemEgRGlhZ25vc3RpY1JlcG9ydCBSZXN1bHQgZnJvbSBMYWIiOg0KICAiQ09WSUQgYW5kIEluZmx1ZW56YSBEaWFnbm9zdGljUmVwb3J0IFJlc3VsdCBmcm9tIExhYiIgUmVwb3J0cw0KICAgIHJldHVybiBTaGFyZWRSZXNvdXJjZS5EaWFnbm9zdGljUmVwb3J0TGFiUmVzb3VyY2UoUmVwb3J0cywNCiAgICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1kYWlseS1kaWFnbm9zdGljcmVwb3J0LWxhYid9fSkNCg0KLy9yZXR1cm4gdGhlIFJTViBEaWFnbm9zdGljUmVwb3J0IGJhc2VkIG9uIHRoZSByZXN1bHQgcHJlIGFkbWlzc2lvbg0KZGVmaW5lICJTREUgUlNWIERpYWdub3N0aWNSZXBvcnQgUmVzdWx0IGZyb20gTGFiIjoNCiAgIlJTViBEaWFnbm9zdGljUmVwb3J0IFJlc3VsdCBmcm9tIExhYiIgUmVwb3J0cw0KICAgIHJldHVybiBTaGFyZWRSZXNvdXJjZS5EaWFnbm9zdGljUmVwb3J0TGFiUmVzb3VyY2UoUmVwb3J0cywNCiAgICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1kYWlseS1kaWFnbm9zdGljcmVwb3J0LWxhYid9fSkNCiAgDQpkZWZpbmUgIlNERSBBQ0ggRGFpbHkgU2VydmljZVJlcXVlc3QiOg0KICAoW1NlcnZpY2VSZXF1ZXN0OiAiQ09WSURfMTkgKFRlc3RzIGZvciBTQVJTX0NvVl8yIE51Y2xlaWMgQWNpZCkiXSANCiAgdW5pb24gIFtTZXJ2aWNlUmVxdWVzdDogIkNPVklEXzE5IChUZXN0cyBmb3IgU0FSU19Db1ZfMiBBbnRpZ2VuKSJdIA0KICB1bmlvbiAgW1NlcnZpY2VSZXF1ZXN0OiAiSW5mbHVlbnphIChUZXN0cyBmb3IgaW5mbHVlbnphIEEgb3IgQiB2aXJ1cyBOdWNsZWljIEFjaWQpIl0NCiAgdW5pb24gIFtTZXJ2aWNlUmVxdWVzdDogIkluZmx1ZW56YSAoVGVzdHMgZm9yIGluZmx1ZW56YSBBIG9yIEIgdmlydXMgQW50aWdlbikiXQ0KICB1bmlvbiAgW1NlcnZpY2VSZXF1ZXN0OiAiUlNWIChUZXN0cyBmb3IgUlNWIE51Y2xlaWMgQWNpZCkiXQ0KICB1bmlvbiAgW1NlcnZpY2VSZXF1ZXN0OiAiUlNWIChUZXN0cyBmb3IgUlNWIEFudGlnZW4pIl0NCiAgKSBTZXJ2aWNlUmVxdWVzdHMNCiAgICB3aGVyZSBTZXJ2aWNlUmVxdWVzdHMuaW50ZW50IH4gJ29yZGVyJw0KICAgICAgYW5kIFNlcnZpY2VSZXF1ZXN0cy5zdGF0dXMgfiAnY29tcGxldGVkJw0KICAgICAgYW5kIGV4aXN0cygiSW5pdGlhbCBQb3B1bGF0aW9uIikNCiAgcmV0dXJuIFNoYXJlZFJlc291cmNlLlNlcnZpY2VSZXF1ZXN0UmVzb3VyY2UoU2VydmljZVJlcXVlc3RzLA0KICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1kYWlseS1zZXJ2aWNlcmVxdWVzdCd9fSkNCg0KZGVmaW5lICJTREUgSXNvbGF0aW9uIFByZWNhdXRpb25zIEltcGxlbWVudGVkIjoNCiAgW1Byb2NlZHVyZTogIlRyYW5zbWlzc2lvbiBCYXNlZCBQcmVjYXV0aW9uIFR5cGVzIl0gSXNvbGF0aW9uUHJlY2F1dGlvbnMNCiAgICB3aGVyZSBOSFNOSGVscGVycy4iTm9ybWFsaXplIEludGVydmFsIihJc29sYXRpb25QcmVjYXV0aW9ucy5wZXJmb3JtZWQpIGR1cmluZyAiTWVhc3VyZW1lbnQgUGVyaW9kIg0KICAgIGFuZCBleGlzdHMoIkluaXRpYWwgUG9wdWxhdGlvbiIpDQogIHJldHVybiBTaGFyZWRSZXNvdXJjZS5Qcm9jZWR1cmVSZXNvdXJjZShJc29sYXRpb25QcmVjYXV0aW9ucywNCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtZGFpbHktcHJvY2VkdXJlJ319KQ0KDQpkZWZpbmUgIlNERSBDb3ZpZCBvciBJbmZsdWVuemEgTWVkaWNhdGlvbiBBZG1pbmlzdGVyZWQiOg0KICBbTWVkaWNhdGlvbkFkbWluaXN0cmF0aW9uXSBSUFNNZWRBZG1pbg0KICAgIGxldCBNZWRzOiBHZXRNZWRpY2F0aW9uQ29kZShSUFNNZWRBZG1pbi5tZWRpY2F0aW9uKQ0KICAgd2hlcmUgKE1lZHMgaW4gIkFuYWtpbnJhIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiQmFtbGFuaXZpbWFiIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiQmFsb3hhdmlyIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiQmFyaWNpdGluaWIiDQogICAgICAgICAgICBvciBNZWRzIGluICJCZWJ0ZWxvdmltYWIiDQogICAgICAgICAgICBvciBNZWRzIGluICJDYXNpcml2aW1hYiINCiAgICAgICAgICAgIG9yIE1lZHMgaW4gIkNhc2lyaXZpbWFiIC8gSW1kZXZpbWFiIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiQ09WSUQxOSBSeE5vcm0gVmFsdWUgU2V0IGZvciBUb2NpbGl6dW1hYiINCiAgICAgICAgICAgIG9yIE1lZHMgaW4gIkV0ZXNldmltYWIiDQogICAgICAgICAgICBvciBNZWRzIGluICJJbWRldmltYWIiDQogICAgICAgICAgICBvciBNZWRzIGluICJNb2xudXBpcmF2aXIiDQogICAgICAgICAgICBvciBNZWRzIGluICJOaXJtYXRyZWx2aXIgLyBSaXRvbmF2aXIiDQogICAgICAgICAgICBvciBNZWRzIGluICJPc2VsdGFtaXZpciINCiAgICAgICAgICAgIG9yIE1lZHMgaW4gIlBlcmFtaXZpciINCiAgICAgICAgICAgIG9yIE1lZHMgaW4gIlJlbWRlc2l2aXIiDQogICAgICAgICAgICBvciBNZWRzIGluICJTYXJpbHVtYWIiDQogICAgICAgICAgICBvciBNZWRzIGluICJTb3Ryb3ZpbWFiIiAgICANCiAgICAgICAgICAgIG9yIE1lZHMgaW4gIlRvZmFjaXRpbmliIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiWmFuYW1pdmlyIikNCiAgICAgIGFuZCBSUFNNZWRBZG1pbi5zdGF0dXMgfiAnY29tcGxldGVkJw0KICAgICAgYW5kIGV4aXN0cygiSW5pdGlhbCBQb3B1bGF0aW9uIikNCiAgICAgIGFuZCBOSFNOSGVscGVycy4iTm9ybWFsaXplIEludGVydmFsIihSUFNNZWRBZG1pbi5lZmZlY3RpdmUpIGR1cmluZyAiTWVhc3VyZW1lbnQgUGVyaW9kIg0KICAgIHJldHVybiBTaGFyZWRSZXNvdXJjZS5NZWRpY2F0aW9uQWRtaW5pc3RyYXRpb25SZXNvdXJjZShSUFNNZWRBZG1pbiwNCiAgICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1kYWlseS1tZWRpY2F0aW9uYWRtaW5pc3RyYXRpb24nfX0pDQoNCmRlZmluZSAiU0RFIENvdmlkIG9yIEluZmx1ZW56YSBNZWRpY2F0aW9uIE9yZGVyZWQiOg0KICBbTWVkaWNhdGlvblJlcXVlc3RdIFJQU01lZFJlcXVlc3QNCiAgICBsZXQgTWVkczogR2V0TWVkaWNhdGlvbkNvZGUoUlBTTWVkUmVxdWVzdC5tZWRpY2F0aW9uKQ0KICAgIHdoZXJlIChNZWRzIGluICJBbmFraW5yYSINCiAgICAgICAgICAgIG9yIE1lZHMgaW4gIkJhbG94YXZpciINCiAgICAgICAgICAgIG9yIE1lZHMgaW4gIkJhbWxhbml2aW1hYiINCiAgICAgICAgICAgIG9yIE1lZHMgaW4gIkJhcmljaXRpbmliIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiQmVidGVsb3ZpbWFiIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiQ2FzaXJpdmltYWIiDQogICAgICAgICAgICBvciBNZWRzIGluICJDYXNpcml2aW1hYiAvIEltZGV2aW1hYiINCiAgICAgICAgICAgIG9yIE1lZHMgaW4gIkNPVklEMTkgUnhOb3JtIFZhbHVlIFNldCBmb3IgVG9jaWxpenVtYWIiDQogICAgICAgICAgICBvciBNZWRzIGluICJFdGVzZXZpbWFiIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiSW1kZXZpbWFiIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiTW9sbnVwaXJhdmlyIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiTmlybWF0cmVsdmlyIC8gUml0b25hdmlyIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiT3NlbHRhbWl2aXIiDQogICAgICAgICAgICBvciBNZWRzIGluICJQZXJhbWl2aXIiDQogICAgICAgICAgICBvciBNZWRzIGluICJSZW1kZXNpdmlyIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiU2FyaWx1bWFiIg0KICAgICAgICAgICAgb3IgTWVkcyBpbiAiU290cm92aW1hYiIgICAgDQogICAgICAgICAgICBvciBNZWRzIGluICJUb2ZhY2l0aW5pYiINCiAgICAgICAgICAgIG9yIE1lZHMgaW4gIlphbmFtaXZpciIpDQogICAgICBhbmQgZXhpc3RzKCJJbml0aWFsIFBvcHVsYXRpb24iKQ0KICAgICAgYW5kIE5IU05IZWxwZXJzLiJOb3JtYWxpemUgSW50ZXJ2YWwiKFJQU01lZFJlcXVlc3QuYXV0aG9yZWRPbikgZHVyaW5nICJNZWFzdXJlbWVudCBQZXJpb2QiDQogICAgcmV0dXJuIFNoYXJlZFJlc291cmNlLk1lZGljYXRpb25SZXF1ZXN0UmVzb3VyY2UoUlBTTWVkUmVxdWVzdCwNCiAgICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1kYWlseS1tZWRpY2F0aW9ucmVxdWVzdCd9fSkNCg0KZGVmaW5lICJTREUgTWVkaWNhdGlvbiI6DQogICgiU0RFIENvdmlkIG9yIEluZmx1ZW56YSBNZWRpY2F0aW9uIE9yZGVyZWQiDQogIHVuaW9uICJTREUgQ292aWQgb3IgSW5mbHVlbnphIE1lZGljYXRpb24gQWRtaW5pc3RlcmVkIikgTWVkUmVxT3JBZG1pbg0KICB3aGVyZSBNZWRSZXFPckFkbWluLm1lZGljYXRpb24gaXMgRkhJUi5SZWZlcmVuY2UNCiAgcmV0dXJuIFNoYXJlZFJlc291cmNlLk1lZGljYXRpb25SZXNvdXJjZShHZXRNZWRpY2F0aW9uRnJvbShNZWRSZXFPckFkbWluLm1lZGljYXRpb24pLA0KICB7RkhJUi5jYW5vbmljYWx7dmFsdWU6ICdodHRwOi8vd3d3LmNkYy5nb3Yvbmhzbi9maGlycG9ydGFsL2RxbS9pZy9TdHJ1Y3R1cmVEZWZpbml0aW9uL2FjaC1kYWlseS1tZWRpY2F0aW9uJ319KQ0KDQovL1RvIGNhdGNoIGFsbCBpc29sYXRpb24gcHJlY2F1dGlvbnMNCmRlZmluZSAiU0RFIEFsbCBPYnNlcnZhdGlvbnMiOg0KICAiT2JzZXJ2YXRpb25zIiBPDQogIHdoZXJlIGV4aXN0cygiSW5pdGlhbCBQb3B1bGF0aW9uIikNCiAgcmV0dXJuIFNoYXJlZFJlc291cmNlLk9ic2VydmF0aW9uTGFiUmVzb3VyY2UoTywNCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtZGFpbHktb2JzZXJ2YXRpb24nfX0pDQoNCi8vVG8gY2F0Y2ggYWxsIGlzb2xhdGlvbiBwcmVjYXV0aW9ucw0KZGVmaW5lICJTREUgQWxsIFNlcnZpY2VSZXF1ZXN0cyI6DQogIFtTZXJ2aWNlUmVxdWVzdF0gU1INCiAgd2hlcmUgZXhpc3RzKCJJbml0aWFsIFBvcHVsYXRpb24iKQ0KICByZXR1cm4gU2hhcmVkUmVzb3VyY2UuU2VydmljZVJlcXVlc3RSZXNvdXJjZShTUiwNCiAge0ZISVIuY2Fub25pY2Fse3ZhbHVlOiAnaHR0cDovL3d3dy5jZGMuZ292L25oc24vZmhpcnBvcnRhbC9kcW0vaWcvU3RydWN0dXJlRGVmaW5pdGlvbi9hY2gtZGFpbHktc2VydmljZXJlcXVlc3QnfX0pDQoNCi8vVG8gY2F0Y2ggYWxsIGlzb2xhdGlvbiBwcmVjYXV0aW9ucw0KZGVmaW5lICJTREUgQWxsIFByb2NlZHVyZXMiOg0KICBbUHJvY2VkdXJlXSBQDQogIHdoZXJlIGV4aXN0cygiSW5pdGlhbCBQb3B1bGF0aW9uIikNCiAgcmV0dXJuIFNoYXJlZFJlc291cmNlLlByb2NlZHVyZVJlc291cmNlKFAsDQogIHtGSElSLmNhbm9uaWNhbHt2YWx1ZTogJ2h0dHA6Ly93d3cuY2RjLmdvdi9uaHNuL2ZoaXJwb3J0YWwvZHFtL2lnL1N0cnVjdHVyZURlZmluaXRpb24vYWNoLWRhaWx5LXByb2NlZHVyZSd9fSkNCg0KDQovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQovL2Z1bmN0aW9ucw0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KZGVmaW5lIGZ1bmN0aW9uICJDaGVja0lQIihlbmNvdW50ZXIgRW5jb3VudGVyKToNCiAgZXhpc3RzKCJJbml0aWFsIFBvcHVsYXRpb24iIElQDQogIHdoZXJlIGVuY291bnRlci5pZCA9IElQLmlkKQ0KDQpkZWZpbmUgZnVuY3Rpb24gIkdldE1lZGljYXRpb24iKHJlZmVyZW5jZSBSZWZlcmVuY2UgKToNCiAgc2luZ2xldG9uIGZyb20gKA0KICAgIFtNZWRpY2F0aW9uOiBpZCBpbiB7TkhTTkhlbHBlcnMuR2V0SWQocmVmZXJlbmNlLnJlZmVyZW5jZSl9XQ0KICApDQoNCmRlZmluZSBmdW5jdGlvbiAiR2V0TWVkaWNhdGlvbkNvZGUiKGNob2ljZSBDaG9pY2U8RkhJUi5Db2RlYWJsZUNvbmNlcHQsIEZISVIuUmVmZXJlbmNlPik6DQogIGNhc2UNCiAgICB3aGVuIGNob2ljZSBpcyBGSElSLkNvZGVhYmxlQ29uY2VwdCB0aGVuDQogICAgICBjaG9pY2UgYXMgRkhJUi5Db2RlYWJsZUNvbmNlcHQNCiAgICB3aGVuIGNob2ljZSBpcyBGSElSLlJlZmVyZW5jZSB0aGVuDQogICAgICBHZXRNZWRpY2F0aW9uKGNob2ljZSBhcyBGSElSLlJlZmVyZW5jZSkuY29kZQ0KICAgIGVsc2UNCiAgICAgIG51bGwgYXMgRkhJUi5Db2RlYWJsZUNvbmNlcHQNCiAgZW5kDQoNCmRlZmluZSBmdW5jdGlvbiAiR2V0TWVkaWNhdGlvbkZyb20iKGNob2ljZSBDaG9pY2U8RkhJUi5Db2RlYWJsZUNvbmNlcHQsIEZISVIuUmVmZXJlbmNlPik6DQogIGNhc2UNCiAgICB3aGVuIGNob2ljZSBpcyBGSElSLlJlZmVyZW5jZSB0aGVuDQogICAgICBHZXRNZWRpY2F0aW9uKGNob2ljZSBhcyBGSElSLlJlZmVyZW5jZSkNCiAgICBlbHNlDQogICAgICBudWxsDQogIGVuZA0KDQpkZWZpbmUgZnVuY3Rpb24gIkdldFNwZWNpbWVuIihyZWZlcmVuY2UgRkhJUi5SZWZlcmVuY2UpOg0KICBzaW5nbGV0b24gZnJvbSAoDQogICAgW1NwZWNpbWVuXSBTcGVjaW1lbnMNCiAgICB3aGVyZSBTcGVjaW1lbnMuaWQgPSBOSFNOSGVscGVycy5HZXRJZChyZWZlcmVuY2UucmVmZXJlbmNlKQ0KICApDQoNCmRlZmluZSBmdW5jdGlvbiAiR2V0RW5jb3VudGVyIihyZWZlcmVuY2UgRkhJUi5SZWZlcmVuY2UpOg0KICBzaW5nbGV0b24gZnJvbSAoDQogICAgIkVuY291bnRlcnMiIEVuY291bnRlcnMNCiAgICB3aGVyZSBFbmNvdW50ZXJzLmlkID0gTkhTTkhlbHBlcnMuR2V0SWQocmVmZXJlbmNlLnJlZmVyZW5jZSkNCiAgKQ0KDQpkZWZpbmUgZmx1ZW50IGZ1bmN0aW9uIHJlZmVyZW5jZXMocmVmZXJlbmNlIEZISVIuUmVmZXJlbmNlLCByZXNvdXJjZSBGSElSLlJlc291cmNlKToNCiAgcmVzb3VyY2UuaWQgPSBMYXN0KFNwbGl0KHJlZmVyZW5jZS5yZWZlcmVuY2UsICcvJykpDQoNCmRlZmluZSBmbHVlbnQgZnVuY3Rpb24gcmVmZXJlbmNlcyhyZWZlcmVuY2VzIExpc3Q8RkhJUi5SZWZlcmVuY2U+LCByZXNvdXJjZSBGSElSLlJlc291cmNlKToNCiAgZXhpc3RzKHJlZmVyZW5jZXMgUiB3aGVyZSBSLnJlZmVyZW5jZXMocmVzb3VyY2UpKQ0KDQovL0NvbW1vbiBSZXRyaWV2YWxzDQpkZWZpbmUgIkVuY291bnRlcnMiOg0KICBbRW5jb3VudGVyXQ0KDQpkZWZpbmUgIk9ic2VydmF0aW9ucyI6DQogIFtPYnNlcnZhdGlvbl0NCg0KZGVmaW5lICJEaWFnbm9zdGljUmVwb3J0cyI6DQogIFtEaWFnbm9zdGljUmVwb3J0XQ0K"
+  }]
+}

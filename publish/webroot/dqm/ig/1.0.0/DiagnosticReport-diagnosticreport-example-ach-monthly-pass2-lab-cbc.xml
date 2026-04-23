@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="diagnosticreport-example-ach-monthly-pass2-lab-cbc"/>
+  <meta>
+    <profile value="http://www.cdc.gov/nhsn/fhirportal/dqm/ig/StructureDefinition/ach-monthly-diagnosticreport-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport diagnosticreport-example-ach-monthly-pass2-lab-cbc</b></p><a name="diagnosticreport-example-ach-monthly-pass2-lab-cbc"> </a><a name="hcdiagnosticreport-example-ach-monthly-pass2-lab-cbc"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ach-monthly-diagnosticreport-lab.html">ACH Monthly Event Diagnostic Report (Lab)</a></p></div><h2><span title="Codes:{http://loinc.org 58410-2}">CBC Panel</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td>Pass2 ACH(official) Female, DoB: 1965-12-22 ( MRN: 1601191902010308 (use: usual, ))</td></tr><tr><td>When For</td><td>2024-01-31 23:01:00-0500</td></tr><tr><td>Reported</td><td>2024-01-31 23:02:00-0500</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Reported</b></td></tr><tr><td><a href="Observation-observation-example-ach-monthly-pass2-hemo-a1c.html"><span title="Codes:{http://loinc.org 4548-4}">Hemoglobin A1c</span></a></td><td>7.5 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></td><td>Final</td><td>2024-01-31 23:52:00-0500</td></tr><tr><td><a href="Observation-observation-example-ach-monthly-pass2-poc-1.html"><span title="Codes:{http://loinc.org 41653-7}">Glucose</span></a></td><td>53 d/gL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg/dL = 'g/dL')</span></td><td>Final</td><td/></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="Laboratory"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="58410-2"/>
+      <display value="CBC panel - Blood by Automated count"/>
+    </coding>
+    <text value="CBC Panel"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ach-monthly-pass2"/>
+    <display value="Pass2 ACH"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example-ach-monthly-pass2-inpatient"/>
+    <display value="Hospital Admission"/>
+  </encounter>
+  <effectiveDateTime value="2024-01-31T23:01:00-05:00"/>
+  <issued value="2024-01-31T23:02:00-05:00"/>
+  <result>
+    <reference value="Observation/observation-example-ach-monthly-pass2-hemo-a1c"/>
+  </result>
+  <result>
+    <reference value="Observation/observation-example-ach-monthly-pass2-poc-1"/>
+  </result>
+</DiagnosticReport>
