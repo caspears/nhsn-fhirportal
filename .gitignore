@@ -7,9 +7,10 @@ fsh-generated
 dry_run
 bundles
 **/*.jar
-publish/*
-!publish/webroot/*.xml
-!publish/webroot/*.json
+publish
+!publish/webroot
+
+
 
 
 

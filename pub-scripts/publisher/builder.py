@@ -121,7 +121,7 @@ def run_full_build(publish_path, ig_repo_path, dry_run: bool = False):
         temp_dir.mkdir(exist_ok=True)
 
     full_build_cmd = [
-        "java", "-Dfile.encoding=UTF-8", "-jar", "publisher.jar", "-go-publish",
+        "java", "-jar", "publisher.jar", "-go-publish",
         "-source", str(Path(ig_repo_path).resolve()),
         "-web", str(base_path.joinpath('webroot')),
         "-registry", str(base_path.joinpath('ig-registry/fhir-ig-list.json')),

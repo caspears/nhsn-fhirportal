@@ -10,6 +10,9 @@ import json
 from lxml import etree
 
 
+# TODO Fix accessibilities hould only be run on new version being published, not on all versions in webroot/ig. This will require some changes to the accessibility fixer function to only target the new version folder, and not run on all subfolders in webroot/ig. This will likely require passing the publication version as an argument to the function, and then targeting only that version folder for accessibility fixes, rather than looping through all subfolders in webroot/ig. This will help prevent unintended modifications to previously published versions that may still be hosted in webroot/ig.
+
+
 def format_file_size(size_in_bytes: int) -> str:
     """Format a byte count into a human-readable string."""
     if size_in_bytes < 1024:
@@ -134,14 +137,15 @@ def write_web_configs(ig_repo_path, publish_path, dry_run: bool = False):
         logger.error(f"Failed to write root web.config: {e}")
 
     try:
+        # Remove the child / version folder web.config. Not needed with the root
         if version_web_config.is_file():
             version_web_config.unlink()
             
-        version_web_config.parent.mkdir(parents=True, exist_ok=True)
-        with open(version_web_config, "w+", encoding='utf-8') as web_config_file:
-            web_config_file.write(web_config)
+        # version_web_config.parent.mkdir(parents=True, exist_ok=True)
+        # with open(version_web_config, "w+", encoding='utf-8') as web_config_file:
+        #     web_config_file.write(web_config)
     except Exception as e:
-        logger.error(f"Failed to write version web.config: {e}")
+        logger.error(f"Failed to remove version web.config: {e}")
 
 
 # def update_ig_suite_feeds(webroot_path, ig_repo_path):
